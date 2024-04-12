@@ -4,7 +4,7 @@ const Careers = () => {
 
     return (
         <div>
-            
+            career
         </div>
     )
 }
