@@ -122,7 +122,7 @@ const AttendentSystem = () => {
                 <path d="M0 7.62939e-06H100V100H0V7.62939e-06Z" fill="white"/>
                 </mask>
                 <g mask="url(#mask1_51_3216)">
-                <path d="M48.4375 96.0938H15.625C9.15293 96.0938 3.90625 90.8471 3.90625 84.375V23.4375C3.90625 16.9654 9.15293 11.7188 15.625 11.7188H84.375C90.8471 11.7188 96.0937 16.9654 96.0937 23.4375V51.1719" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.4375 96.0938H15.625C9.15293 96.0938 3.90625 90.8471 3.90625 84.375V23.4375C3.90625 16.9654 9.15293 11.7188 15.625 11.7188H84.375C90.8471 11.7188 96.0937 16.9654 96.0937 23.4375V51.1719" stroke="black" strokeWidth="8" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M24.4141 37.1094C22.2566 37.1094 20.5078 38.8582 20.5078 41.0156C20.5078 43.173 22.2566 44.9219 24.4141 44.9219C26.5715 44.9219 28.3203 43.173 28.3203 41.0156C28.3203 38.8582 26.5715 37.1094 24.4141 37.1094Z" fill="black"/>
                 <path d="M41.4062 37.1094C39.2488 37.1094 37.5 38.8582 37.5 41.0156C37.5 43.173 39.2488 44.9219 41.4062 44.9219C43.5637 44.9219 45.3125 43.173 45.3125 41.0156C45.3125 38.8582 43.5637 37.1094 41.4062 37.1094Z" fill="black"/>
                 <path d="M58.3984 37.1094C56.241 37.1094 54.4922 38.8582 54.4922 41.0156C54.4922 43.173 56.241 44.9219 58.3984 44.9219C60.5559 44.9219 62.3047 43.173 62.3047 41.0156C62.3047 38.8582 60.5559 37.1094 58.3984 37.1094Z" fill="black"/>
@@ -134,12 +134,12 @@ const AttendentSystem = () => {
                 <path d="M41.4062 37.1094C39.2488 37.1094 37.5 38.8582 37.5 41.0156C37.5 43.173 39.2488 44.9219 41.4062 44.9219C43.5637 44.9219 45.3125 43.173 45.3125 41.0156C45.3125 38.8582 43.5637 37.1094 41.4062 37.1094Z" fill="black"/>
                 <path d="M45.3125 58.0078C45.3125 55.8504 43.5637 54.1016 41.4062 54.1016C39.2488 54.1016 37.5 55.8504 37.5 58.0078C37.5 60.1652 39.2488 61.9141 41.4062 61.9141C43.5637 61.9141 45.3125 60.1652 45.3125 58.0078Z" fill="black"/>
                 <path d="M45.3125 75C45.3125 72.8426 43.5637 71.0938 41.4062 71.0938C39.2488 71.0938 37.5 72.8426 37.5 75C37.5 77.1574 39.2488 78.9062 41.4062 78.9062C43.5637 78.9062 45.3125 77.1574 45.3125 75Z" fill="black"/>
-                <path d="M24.4141 3.90625V19.5312" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M75.3906 19.5312V3.90625" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24.4141 3.90625V19.5312" stroke="black" strokeWidth="8" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M75.3906 19.5312V3.90625" stroke="black" strokeWidth="8" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M62.3047 58.0078C62.3047 55.8504 60.5559 54.1016 58.3984 54.1016C56.241 54.1016 54.4922 55.8504 54.4922 58.0078C54.4922 60.1652 56.241 61.9141 58.3984 61.9141C60.5559 61.9141 62.3047 60.1652 62.3047 58.0078Z" fill="black"/>
                 <path d="M79.2969 58.0078C79.2969 55.8504 77.548 54.1016 75.3906 54.1016C73.2332 54.1016 71.4844 55.8504 71.4844 58.0078C71.4844 60.1652 73.2332 61.9141 75.3906 61.9141C77.548 61.9141 79.2969 60.1652 79.2969 58.0078Z" fill="black"/>
-                <path d="M49.8047 3.90625V19.5312" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M55.2812 82.2374L67.7463 94.4017C70.3482 96.8784 74.5115 96.6009 76.7615 93.8009L96.0939 66.7968" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M49.8047 3.90625V19.5312" stroke="black" strokeWidth="8" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M55.2812 82.2374L67.7463 94.4017C70.3482 96.8784 74.5115 96.6009 76.7615 93.8009L96.0939 66.7968" stroke="black" strokeWidth="8" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                 </g>
             </g>
         </svg>
