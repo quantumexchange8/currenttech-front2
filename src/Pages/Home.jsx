@@ -1,8 +1,18 @@
 import React from 'react';
+import {useState} from 'react';
 import { Software, Website, MobileApp, ManagementSystem, PosSystem, SupportService } from '../Components/Outline.jsx';
 import { WhatsApp, Gmail } from '../Components/Brand.jsx';
+import ButtonComponent from '../Components/ButtonComponent.jsx';
 
 const Home = () => {
+
+    const [openButton, setOpenButton] = useState(false);
+    const [selectedButton, setSelectedButton] = useState(null);
+
+    const handleButtonClick = (button) => {
+        setOpenButton(true);
+        setSelectedButton(button);
+    };
 
     return (
         <div>
@@ -261,7 +271,7 @@ const Home = () => {
                             <div className='flex flex-col text-white text-xl font-semibold text-right'>
                                 <span>Bulk discounts on goods, wholesale </span>
                                 <span>prices on merchandise, our intelligent</span>
-                                <span>system specialises in sourcing solutions</span>
+                                <span>system specializes in sourcing solutions</span>
                                 <span>for businesses and retailers.</span>
                             </div>
                         </div>
@@ -313,23 +323,31 @@ const Home = () => {
                             <span>hesitate to contact us for efficient solutions tailored just  </span>
                             <span>for you. </span>
                         </div>
-                    </div>
-                    <div className='flex items-center gap-10'>
-                        <div className='w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4'>
-                            <WhatsApp/>
-                            <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                <span>Show QR to start</span>
-                                <span>communicate with us</span>
+                        <div 
+                        className='flex items-center gap-10'>
+                            <div 
+                            className=' w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                            onClick={() => handleButtonClick('whatsapp')}>
+                                <WhatsApp/>
+                                <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                    <span>Show QR to start</span>
+                                    <span>communicate with us</span>
+                                </div>
+                            </div>
+                            <div 
+                            className='w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                            onClick={() => handleButtonClick('gmail')}>
+                                <Gmail/>
+                                <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                    <span>Don't hesitate!</span>
+                                    <span>Send us a message</span>
+                                </div>
                             </div>
                         </div>
-                        <div className='w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4'>
-                            <Gmail/>
-                            <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                <span>Don't hesitate!</span>
-                                <span>Send us a message</span>
-                            </div>
-                        </div>
+                        <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
                     </div>
+                </div>
+                <div id="Button_Component" class="fixed inset-0 flex justify-center z-50 items-center transition-colors invisible">
                 </div>
             </div>
         </div>
@@ -337,3 +355,76 @@ const Home = () => {
 }
 
 export default Home;
+
+
+
+
+
+// {/* <div id="Button_Component" class="fixed inset-0 flex justify-center z-50 items-center transition-colors invisible">
+//                     <div class="p-7 md:w-[500px] w-[349px] h-auto md:h-[800px] bg-white rounded-[20px] md:rounded-[30px] shadow transition-all scale-125 opacity-0">
+//                         <div class="flex flex-col gap-10">
+//                             <div class="flex flex-col gap-5">
+//                                 <div class="relative">
+//                                     <div class="flex justify-center items-center">
+//                                         <div class="rounded-[20px] flex justify-center">
+//                                             <img class="w-[70px] h-[70px] md:w-[100px] md:h-[100px]" src={CT_Logo} alt="icon"/>
+//                                             {/* <img src={LogoSvg} alt="icon" className='w-full h-full'/> */}
+//                                         </div>
+//                                         <button class="absolute top-0 right-0 w-[24.5px] h-[24.5px] md:w-[35px] md:h-[35px] bg-gray-300 rounded-full flex justify-center items-center">
+//                                             {/* <img class="w-[12.95px] h-[12.25px] md:w-[21px] md:h-[21px]" src="/static/media/close.11feea34c15d5f8f975c8add840302ed.svg" alt="close"> */}
+//                                         </button>
+//                                     </div>
+//                                 </div>
+//                                 <div class="flex flex-col items-center gap-2">
+//                                     <div class="flex w-full md:w-[250px] md:h-[80px] flex-col justify-center flex-shrink-0 text-black text-center text-[20px] md:text-[36px] font-bold"> 
+//                                         <div class="font-family: SF-Pro-Display-Bold; font-style: normal; line-height: normal;">Install the TTpay.io Wallet</div>
+//                                     </div>
+//                                     <div class="flex w-[210px] md:w-[300px] md:h-[50px] flex-col justify-center flex-shrink-0 text-black text-center text-[12px] md:text-[16px] font-medium"> 
+//                                         <div class="font-family: SF-Pro-Display-Medium; font-style: normal; line-height: normal;">Scan this QR code with your device's camera, then follow the instructions to download the app.</div>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                             <div class="w-full flex flex-col items-center gap-12">
+//                                 <div class="w-[245px] h-[46.2px] md:w-[350px] md:h-[66px] flex-shrink-0 rounded-[10px] bg-[#CCCCCC] flex flex-row justify-center items-center" role="tablist" aria-orientation="horizontal">
+//                                     <button class="w-[119.7px] py-2 md:w-[171px] md:h-[58px] flex-shrink-0 rounded-[10px] ring-white/60 bg-white text-black focus:outline-none" id="headlessui-tabs-tab-:r6:" role="tab" type="button" aria-selected="true" tabindex="0" data-headlessui-state="selected" aria-controls="headlessui-tabs-panel-:r8:">
+//                                         <div class="flex flex-row justify-center items-center ml-[9px] md:ml-0">
+//                                             <div class="flex flex-col justify-center items-center">
+//                                                 <div class="ml-1">
+//                                                     {/* <img class="w-[5px] h-[6px] md:w-full md:h-full" src="/static/media/appstore-leaf-black.68b78b0ec23255444475dc04a7c00d09.svg" alt="ios"> */}
+//                                                 </div>
+//                                                 {/* <img class="w-[19px] h-[17px] md:w-full md:h-full" src="/static/media/appstore-black.2c3bbc27e7fbfdbceae9101c86966ba0.svg" alt="ios"></div> */}
+//                                                 <div class="flex w-[81px] h-4 flex-col justify-center flex-shrink-0 text-center text-[10px] font-bold md:font-normal md:text-[16px]"> 
+//                                                     <div class="font-family: SF-Pro-Display-Bold; font-style: normal; line-height: normal;">App Store</div>
+//                                                 </div>
+//                                             </div>
+//                                         </div>
+//                                     </button>
+//                                     <button class="w-[119.7px] py-2 md:w-[171px] md:h-[58px] flex-shrink-0 rounded-[10px] ring-white/60 text-[#888]" id="headlessui-tabs-tab-:r7:" role="tab" type="button" aria-selected="false" tabindex="-1" data-headlessui-state="" aria-controls="headlessui-tabs-panel-:r9:">
+//                                         <div class="flex flex-row justify-center items-center md:gap-[10px] ml-[9px] md:ml-0">
+//                                             {/* <img class="w-[20px] md:w-[30px]" src="/static/media/playstore.fb0cdada8a4f0e6a389ee812a56e99b4.svg" alt="android"> */}
+//                                             <div class="flex w-[81px] h-4 flex-col justify-center flex-shrink-0 text-center text-[10px] md:text-[16px]"> 
+//                                                 <div class="font-family: SF-Pro-Display-Bold; font-style: normal; line-height: normal;">Google Play</div>
+//                                             </div>
+//                                         </div>
+//                                     </button>
+//                                 </div>
+//                             <div class="hidden sm:block">
+//                                 <div class="mt-[8px]">
+//                                     <div class="bg-white ring-white/60 " id="headlessui-tabs-panel-:r8:" role="tabpanel" tabindex="0" data-headlessui-state="selected" aria-labelledby="headlessui-tabs-tab-:r6:">
+//                                         <div class="w-[256px] h-[256px] flex-shrink-0 rounded-[50px] flex mx-[122px] mb-[48px] mt-[50px]">
+//                                             {/* <img src="/static/media/appstore-code.58a17c72e4fa2e59256f372c56a26427.svg" alt="ios"> */}
+//                                         </div>
+//                                     </div>
+//                                     <span aria-hidden="true" id="headlessui-tabs-panel-:r9:" role="tabpanel" tabindex="-1" aria-labelledby="headlessui-tabs-tab-:r7:"> 
+//                                         <div class="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"></div>
+//                                     </span>
+//                                 </div>
+//                             </div>
+//                             <div class="sm:hidden">
+//                                 <div class="flex w-full justify-center">
+//                                     {/* <img class="w-[60px] h-[50.4px]" src="/static/media/download-phone.3b18ae896e8b394e210d5db5ee097903.svg" alt="Download Phone Icon" style="cursor: pointer;"> */}
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div></div> */}

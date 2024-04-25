@@ -1,8 +1,18 @@
 import React from 'react';
 import { Website, ManagementSystem, PosSystem, SupportService, FrontBackend, AttendentSystem, ProjectTask, Reward } from '../Components/Outline.jsx';
 import { WhatsApp, Gmail } from '../Components/Brand.jsx';
+import {useState} from 'react';
+import ButtonComponent from '../Components/ButtonComponent.jsx';
 
 const Advantage = () => {
+
+        const [openButton, setOpenButton] = useState(false);
+        const [selectedButton, setSelectedButton] = useState(null);
+    
+        const handleButtonClick = (button) => {
+            setOpenButton(true);
+            setSelectedButton(button);
+        };    
 
     return (
         <div>
@@ -32,7 +42,7 @@ const Advantage = () => {
                             <div className='text-[#666] text-4xl font-medium text-left md:w-[950px]'>
                                 For self-employed individuals like you, regardless of the 
                                 industry you're in, we firmly believe that your relationship 
-                                with technology is indispensable. We specialise in 
+                                with technology is indispensable. We specialize in 
                                 tailoring high-quality systems specifically for you, 
                                 ensuring that your business reaches new heights and 
                                 making managing your relationships with customers 
@@ -129,15 +139,20 @@ const Advantage = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className='flex items-center gap-10'>
-                                    <div className='w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4'>
+                                <div 
+                                    className='flex items-center gap-10'>
+                                    <div 
+                                        className=' w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                        onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                             <span>Show QR to start</span>
                                             <span>communicate with us</span>
                                         </div>
                                     </div>
-                                    <div className='w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4'>
+                                    <div 
+                                        className='w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                        onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                             <span>Don't hesitate!</span>
@@ -297,23 +312,29 @@ const Advantage = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className='flex items-center gap-10'>
-                                <div className='w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4'>
-                                    <WhatsApp/>
-                                    <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                        <span>Show QR to start</span>
-                                        <span>communicate with us</span>
+                            <div 
+                                className='flex items-center gap-10'>
+                                    <div 
+                                    className=' w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    onClick={() => handleButtonClick('whatsapp')}>
+                                        <WhatsApp/>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                            <span>Show QR to start</span>
+                                            <span>communicate with us</span>
+                                        </div>
+                                    </div>
+                                    <div 
+                                    className='w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    onClick={() => handleButtonClick('gmail')}>
+                                        <Gmail/>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                            <span>Don't hesitate!</span>
+                                            <span>Send us a message</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className='w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4'>
-                                    <Gmail/>
-                                    <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                        <span>Don't hesitate!</span>
-                                        <span>Send us a message</span>
-                                    </div>
-                                </div>
+                                <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
