@@ -34,7 +34,7 @@ const handleButtonClick = (button) => {
 
     return (
         <div>
-            <div className='Product_Video'>
+            <div className='relative'>
                 <video autoPlay muted playsInline loop className='w-full'>
                     <source src="\assets\videos\JobView.mp4" type="video/mp4"/>
                 </video>
@@ -115,7 +115,7 @@ const handleButtonClick = (button) => {
                                 
                             </div>
 
-                            <div class="w-[62.5rem] h-[29.44rem] shrink-0">
+                            <div className="w-[62.5rem] h-[29.44rem] shrink-0">
                                 <img src={Devices} alt="Devices" />
                             </div>
 
@@ -447,7 +447,7 @@ const handleButtonClick = (button) => {
                                 <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
                             </div>
                         </div>
-                        <div id="Button_Component" class="fixed inset-0 flex justify-center z-50 items-center transition-colors invisible"></div>
+                        <div id="Button_Component" className="fixed inset-0 flex justify-center z-50 items-center transition-colors invisible"></div>
                 </div>
             </div>
 

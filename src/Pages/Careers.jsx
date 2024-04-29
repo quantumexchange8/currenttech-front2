@@ -16,7 +16,7 @@ const Careers = () => {
 
     return (
         <div>
-            <div className='Product_Video'>
+            <div className='relative'>
                 <video autoPlay muted playsInline loop className='w-full'>
                     <source src="\assets\videos\Career.mp4" type="video/mp4"/>
                 </video>
@@ -141,7 +141,7 @@ const Careers = () => {
                                         
                                     </div>
 
-                                <ul class="list-disc list-inside text-[#666] text-4xl text-left font-bold mx-24"> 
+                                <ul className="list-disc list-inside text-[#666] text-4xl text-left font-bold mx-24"> 
                                     <li>FIGMA</li>
                                     <li>PHOTOSHOP</li>
                                     <li>ILLUSTRATOR</li>
@@ -192,7 +192,7 @@ const Careers = () => {
                                         </div>
                                     </div>
 
-                                <ul class="list-disc list-inside text-[#666] text-4xl text-left font-bold mx-24"> 
+                                <ul className="list-disc list-inside text-[#666] text-4xl text-left font-bold mx-24"> 
                                     <li>LARAVEL PHP</li>
                                     <li>REACT JS</li>
                                     <li>VUE JS</li>
@@ -231,7 +231,7 @@ const Careers = () => {
                                     fulfillment. Let's build a brighter future together.
                                 </div>
 
-                                <div class='mt-6'>
+                                <div className='mt-6'>
                                 <div 
                                     className='flex items-center gap-10'>
                                     <div 

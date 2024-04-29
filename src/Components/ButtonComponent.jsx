@@ -13,11 +13,8 @@ function classNames(...classes) {
 export default function MyButton({ open, onClose, selectedButton}) {
   const [selectedTab, setSelectedTab] = useState(selectedButton);
   const [panelHeight, setPanelHeight] = useState(); // Default height for whatsapp panel
-
-  // Define state for the content of each tab
-const [whatsappContent, setWhatsappContent] = useState({});
-
-const [gmailContent, setGmailContent] = useState({});
+  const [whatsappContent, setWhatsappContent] = useState({});// Define state for the content of each tab
+  const [gmailContent, setGmailContent] = useState({});
 
 // Inside the useEffect hook that updates panelHeight based on selectedTab
 useEffect(() => {

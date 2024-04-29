@@ -5,8 +5,8 @@ import { QR, Calendar, FooterWhatsApp, FooterGmail } from '../Components/Brand.j
 const Footer = () => {
 
     return (
-        <div className="w-full h-[300px] bg-[#aaaaaa80] flex justify-center items-center">
-            <div className='max-w-[1000px] w-full flex justify-between'>
+        <div className="w-full h-[400px] sm:h-[300px] bg-[#aaaaaa80] flex justify-center items-center">
+            <div className='max-w-[1000px] w-full flex justify-between ml-5 sm:ml-0'>
                 <div className='flex flex-col gap-[26px]'>
                     <div className='flex flex-col gap-4'>
                         <div>
@@ -23,7 +23,7 @@ const Footer = () => {
                         Copyright © Current Tech Industries 2023. All rights reserved.
                     </div>
                 </div>
-                <div className='flex flex-col gap-4 items-end justify-center'>
+                <div className='hidden sm:flex flex-col gap-4 items-end justify-center'>
                     <div className='text-sm font-bold'>
                         Start to connect with us:
                     </div>
