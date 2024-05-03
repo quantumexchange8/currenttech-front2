@@ -67,7 +67,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className='w-[353px] md:w-full h-[1px] bg-[#333] ml-5 md:ml-0'></div>
+                        <div className='md:w-full h-[1px] bg-[#333] ml-5 md:ml-0 mr-5 md:mr-0'></div>
 
                         <div className='flex flex-col gap-5 md:gap-[40px] ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div className='text-base md:text-5xl font-bold text-left justify-center'>
@@ -83,7 +83,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className='w-[353px] md:w-full h-[1px] bg-[#333] ml-5 md:ml-0'></div>
+                        <div className='md:w-full h-[1px] bg-[#333] ml-5 md:ml-0 mr-5 md:mr-0'></div>
                     </div>
 
                     <div className='flex flex-col gap-[50px] md:gap-[200px] mt-[50px]'>
@@ -193,7 +193,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className='w-[353px] md:w-full h-[1px] bg-[#333] ml-5 md:ml-0'></div>
+                        <div className='md:w-full h-[1px] bg-[#333] ml-5 md:ml-0 mr-5 md:mr-0'></div>
                     </div>
 
                     <div className='flex flex-col gap-5 md:gap-10 mt-[50px] mb-[50px] md:mb-[150px] space-x-5 md:space-x-0'>
@@ -339,7 +339,7 @@ const Home = () => {
                 <div className='flex flex-col max-w-[1000px] w-full'>
                 <div className='flex flex-col gap-[66px] my-[50px] md:my-[150px] ml-5 md:ml-0 mr-5 md:mr-0'>
                     <div className='flex flex-col gap-6 md:gap-10'>
-                        <div className='flex flex-col gap-3 md:gap-0'>
+                        <div className='flex flex-col gap-3 md:gap-10'>
                             <div className='text-base md:text-5xl font-bold text-left'>
                                 No matter what field or industry you're in
                             </div>

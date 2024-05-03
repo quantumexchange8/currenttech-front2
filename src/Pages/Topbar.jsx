@@ -82,8 +82,8 @@ const Topbar = () => {
                                 leaveFrom="transform opacity-100 scale-100"
                                 leaveTo="transform opacity-0 scale-95"
                             >
-                                <Menu.Items className="absolute right-0 mt-4 w-[160px] origin-top-right rounded-md bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right">
-                                    <div className="px-1">
+                                <Menu.Items className="absolute right-0 mt-4 w-[160px] origin-top-right rounded-[15px] bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right">
+                                    
                                         <Link
                                             to="/"
                                             className={`${
@@ -95,7 +95,7 @@ const Topbar = () => {
                                                     <button
                                                         className={`${
                                                             active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full items-center rounded-md px-2 py-2`}
+                                                        } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
                                                     >
                                                         Home
                                                     </button>
@@ -113,7 +113,7 @@ const Topbar = () => {
                                                     <button
                                                         className={`${
                                                             active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full items-center rounded-md px-2 py-2`}
+                                                        } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
                                                     >
                                                         Advantage
                                                     </button>
@@ -132,7 +132,7 @@ const Topbar = () => {
                                                     <button
                                                         className={`${
                                                             active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full items-center rounded-md px-2 py-2`}
+                                                        } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
                                                     >
                                                         Products
                                                     </button>
@@ -150,7 +150,7 @@ const Topbar = () => {
                                                     <button
                                                         className={`${
                                                             active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full items-center rounded-md px-2 py-2`}
+                                                        } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
                                                     >
                                                         Careers
                                                     </button>
@@ -164,13 +164,13 @@ const Topbar = () => {
                                                 onClick={() => handleButtonClick('gmail')}
                                                     className={`${
                                                         active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full items-center rounded-md px-2 py-2`}
+                                                    } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
                                                 >
                                                     Support
                                                 </button>
                                             )}
                                         </Menu.Item>
-                                    </div>
+                                    
                                 </Menu.Items>
                             </Transition>
                         </Menu>

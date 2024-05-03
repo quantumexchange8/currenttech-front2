@@ -69,7 +69,7 @@ const handleButtonClick = (button) => {
                                     solutions for our customers.
                                 </div>
                             </div>
-                            <div className='w-[353px] md:w-full h-[1px] bg-[#333]'></div>
+                            <div className='w-full h-[1px] bg-[#333]'></div>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ const handleButtonClick = (button) => {
 
             <div>
                 <div className='w-full flex flex-col items-center justify-center'>
-                    <div className='max-w-[1000px] w-full mt-[80px] md:mt-[200px]'>
+                    <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
                         <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                             <div className=' text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
                                 EDUCATION
@@ -123,16 +123,16 @@ const handleButtonClick = (button) => {
                                 <img src={Devices} alt="Devices" />
                             </div>
 
-                            <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0'>
+                            <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
                             A child's learning journey begins in the classroom, using tools that are flexible, 
                             user-friendly, prioritize privacy, accessibility, and sustainability. That's why 
                             we have developed this product for education, enabling parents, teachers, and school 
                             owners to better understand their child's growth in kindergarten. Additionally, we are 
                             in the process of developing a series of educational software for primary schools, 
                             secondary schools, universities, and tuition centres in the future.
+                            <div className='w-full h-[1px] bg-[#333] '></div>
                             </div>
-                            <div className='flex flex-col gap-[50px] md:hidden'></div>
-                            <div className='w-[353px] md:w-full h-[1px] bg-[#333] self-center'></div>
+                            
                             
                         </div>
                     </div>
@@ -141,8 +141,8 @@ const handleButtonClick = (button) => {
 
             <div>
                 <div className='w-full flex flex-col items-center justify-center'>
-                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[200px]'>
-                            <div className='flex flex-col gap-[50px] md:gap-[200px]'>
+                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
+                            <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
                                     ATTENDANCE
                                     <div className='hidden md:flex text-[#666] text-2xl font-medium text-center justify-center'>
@@ -169,7 +169,7 @@ const handleButtonClick = (button) => {
                                     <img src={Mocap_Interface} alt="User Interface" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
                                     In the current corporate landscape, businesses are confronted with challenges 
                                     such as inconsistent employee efficiency, talent attrition, and cost management. 
                                     Therefore, we have meticulously developed reward mechanisms and recognition programs 
@@ -178,9 +178,8 @@ const handleButtonClick = (button) => {
                                     quality. Moreover, we firmly believe that recognizing and rewarding employees fosters 
                                     a positive organizational culture, where employees feel supported and appreciated in 
                                     their roles, thus aiding in mitigating talent turnover.
+                                    <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
-                                <div className='flex flex-col gap-[50px] md:hidden'></div>
-                                <div className='w-[353px] md:w-full h-[1px] bg-[#333] self-center'></div>
                             </div>
                         </div>
                 </div>
@@ -190,8 +189,8 @@ const handleButtonClick = (button) => {
 
             <div>
                 <div className='w-full flex flex-col items-center justify-center'>
-                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[200px]'>
-                            <div className='flex flex-col gap-[50px] md:gap-[200px]'>
+                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
+                            <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
                                     FINANCIAL
                                     <div className='hidden md:flex text-[#666] text-2xl font-medium text-center justify-center'>
@@ -217,7 +216,7 @@ const handleButtonClick = (button) => {
                                     <img src={Smart_Dash_Interface} alt="Smart Dash User Interface" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
                                     In the current corporate landscape, businesses are confronted with challenges 
                                     such as inconsistent employee efficiency, talent attrition, and cost management. 
                                     Therefore, we have meticulously developed reward mechanisms and recognition programs 
@@ -226,17 +225,16 @@ const handleButtonClick = (button) => {
                                     quality. Moreover, we firmly believe that recognizing and rewarding employees fosters 
                                     a positive organizational culture, where employees feel supported and appreciated in 
                                     their roles, thus aiding in mitigating talent turnover.
+                                    <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
-                                <div className='flex flex-col gap-[50px] md:hidden'></div>
-                                <div className='w-[353px] md:w-full h-[1px] bg-[#333] self-center'></div>
                             </div>
                         </div>
                 </div>
             </div>
             <div>
                 <div className='w-full flex flex-col items-center justify-center'>
-                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[200px]'>
-                            <div className='flex flex-col gap-[50px] md:gap-[200px]'>
+                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
+                            <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
                                     MANAGEMENT
                                     <div className='hidden md:flex text-[#666] text-2xl font-medium text-center justify-center'>
@@ -263,7 +261,7 @@ const handleButtonClick = (button) => {
                                     <img src={Financial_Board_Interface} alt="Financial Board User Interface" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
                                 We fully understand that as a highly skilled and renowned trader, managing 
                                 numerous investors and substantial funds requires not only delivering 
                                 substantial and objective investment returns but also maintaining strict risk 
@@ -273,9 +271,8 @@ const handleButtonClick = (button) => {
                                 added personalized design to the dashboard but also incorporated simple and easy-to-operate 
                                 modes, ensuring that investors and traders need not worry about encountering operational 
                                 difficulties due to lack of understanding.
+                                <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
-                                <div className='flex flex-col gap-[50px] md:hidden'></div>
-                                <div className='w-[353px] md:w-full h-[1px] bg-[#333] self-center'></div>
                             </div>
                         </div>
                 </div>
@@ -284,8 +281,8 @@ const handleButtonClick = (button) => {
 
             <div>
                 <div className='w-full flex flex-col items-center justify-center'>
-                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[200px]'>
-                            <div className='flex flex-col gap-[50px] md:gap-[200px]'>
+                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
+                            <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
                                     <div className='hidden md:flex justify-center'>LABEL SOLUTIONS</div>
                                     <div className='flex flex-col leading-tight md:hidden'>
@@ -336,15 +333,14 @@ const handleButtonClick = (button) => {
                                     <img src={Trader_Interface_1} alt="Trader_Interface_1" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
                                 Not only do we seamlessly integrate the trading platform interface with our 
                                 intelligent backend, but we also offer Metaquote (MT5) and cTrader white label 
                                 and main label solutions. The advantage of our one-stop service ensures that 
                                 you are relieved of many unnecessary hassles and allows you to accelerate the 
                                 launch of operations, avoiding missing the absolute best timing for operations.
+                                <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
-                                <div className='flex flex-col gap-[50px] md:hidden'></div>
-                                <div className='w-[353px] md:w-full h-[1px] bg-[#333] self-center'></div>
                             </div>
                         </div>
                 </div>
@@ -353,8 +349,8 @@ const handleButtonClick = (button) => {
 
             <div>
                 <div className='w-full flex flex-col items-center justify-center'>
-                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[200px]'>
-                            <div className='flex flex-col gap-[50px] md:gap-[200px]'>
+                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
+                            <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
                                     META EDITOR
                                     {/* <div className='flex flex-col gap-9 md:hidden'></div> */}
@@ -397,16 +393,15 @@ const handleButtonClick = (button) => {
                                 </div>
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
                                 This is undoubtedly great news for traders, as the widespread use of AI is 
                                 becoming an inevitable trend. Many investment firms and top traders have 
                                 begun to adopt AI automated trading systems, and we specialize in the 
                                 development of such intelligent trading systems. We can fully transform 
                                 the mindset and strategies of top traders into AI trading systems and apply 
                                 them to trading on MetaTrader 4, MetaTrader 5, and cTrader trading platforms.
+                                <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
-                                <div className='flex flex-col gap-[50px] md:hidden'></div>
-                                <div className='w-[353px] md:w-full h-[1px] bg-[#333] self-center'></div>
                             </div>
                         </div>
                 </div>
@@ -415,8 +410,8 @@ const handleButtonClick = (button) => {
 
             <div>
                 <div className='w-full flex flex-col items-center justify-center'>
-                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[200px]'>
-                            <div className='flex flex-col gap-[50px] md:gap-[200px]'>
+                        <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
+                            <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center'>
                                     CRYPTO WALLET
                                     <div className='hidden md:flex text-[#666] text-2xl font-medium text-center justify-center'>
@@ -442,7 +437,7 @@ const handleButtonClick = (button) => {
                                     <img src={TT_Pay_Interface} alt="TT_Pay_Interface" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
                                     Many multinational operating companies conduct business through websites, 
                                     and even investment firms are not limited to operating solely within their 
                                     own countries. Therefore, it is essential to have a comprehensive and highly 
@@ -450,15 +445,12 @@ const handleButtonClick = (button) => {
                                     challenges of cross-border payments but also significantly enhances the security 
                                     advantages for merchants. Moreover, the application for a TTPAY payment system 
                                     account is free.
+                                    <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
-                                <div className='flex flex-col gap-[50px] md:hidden'></div>
-                                <div className='w-[353px] md:w-full h-[1px] bg-[#333] self-center'></div>
                             </div>
                         </div>
                 </div>
             </div>
-
-
 
             <div>
                 <div className='w-[353px] md:w-full flex flex-col items-center ml-5 md:ml-0 mr-5 md:mr-0'>

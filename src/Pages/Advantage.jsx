@@ -1,5 +1,5 @@
 import React from 'react';
-import { Website, ManagementSystem, PosSystem, SupportService, FrontBackend, ProjectTask, Reward } from '../Components/Outline.jsx';
+import { Website, ManagementSystem, PosSystem, SupportService, FrontBackend, ProjectTask, Reward,ManagementSystemMobile } from '../Components/Outline.jsx';
 import { WhatsApp, Gmail } from '../Components/Brand.jsx';
 import {useState} from 'react';
 import ButtonComponent from '../Components/ButtonComponent.jsx';
@@ -52,83 +52,84 @@ const Advantage = () => {
                                 easier and more intimate.
                             </div>
                         </div>
-
-                        <div className='flex flex-col'>
-                            <div className='w-[353px] md:w-full h-[1px] bg-[#333]'></div>
-                            <div className='flex flex-col md:gap-[150px] mt-[50px]'>
-                                <div className='text-base md:text-5xl font-bold text-left'>
-                                    “We Tailor For You”
-                                </div>
-                                <div className='flex gap-[20px] md:gap-[100px] space-y-[50px] md:space-y-0'>
-                                    <div className='mt-[50px] md:mt-0'>
-                                        <Website/>
-                                    </div>
-                                    <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                        <div className='text-base md:text-4xl font-semibold text-left'>
-                                            Website
-                                        </div>
-                                        <div className='text-base md:text-2xl font-medium text-[#666] text-left leading-tight'>
-                                            From domain registration to web design, we have service personnel 
-                                            who will communicate with you in detail throughout the production 
-                                            process to ensure that the final product fully meets your conceptual 
-                                            requirements.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='flex gap-[20px] md:gap-[100px] space-y-[50px] md:space-y-0'>
-                                    <div className='mt-[50px] md:mt-0'>
-                                        <ManagementSystem/>
-                                    </div>
-                                    <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                        <div className='text-base md:text-4xl font-semibold text-left'>
-                                            Management System
-                                        </div>
-                                        <div className='text-base md:text-2xl font-medium text-[#666] text-left leading-tight'>
-                                            Whether your independent business is large or small, you still need a 
-                                            comprehensive management system. That's why we approach this 
-                                            task with rigour to ensure that your business management is free 
-                                            from any obstacles.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='flex gap-[20px] md:gap-[100px] space-y-[50px] md:space-y-0'>
-                                    <div className='mt-[50px] md:mt-0'>
-                                        <PosSystem/>
-                                    </div>
-                                    <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                        <div className='text-base md:text-4xl font-semibold text-left'>
-                                            Payment System
-                                        </div>
-                                        <div className='text-base md:text-2xl font-medium text-[#666] text-left leading-tight'>
-                                            This is undoubtedly the most crucial service that businesses are 
-                                            concerned about, and we excel in handling it flawlessly.
-                                            Self-employed individuals can choose to use existing payment 
-                                            channels or apply to integrate new payment solutions with us.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='flex gap-[20px] md:gap-[100px] space-y-[50px] md:space-y-0'>
-                                    <div className='mt-[50px] md:mt-0'>
-                                        <SupportService/>
-                                    </div>
-                                    <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                        <div className='text-base md:text-4xl font-semibold text-left'>
-                                            Support & Service
-                                        </div>
-                                        <div className='text-base md:text-2xl font-medium text-[#666] text-left leading-tight'>
-                                            This is also one of the most important aspects we prioritise. We 
-                                            provide the most comprehensive 24/5 service to ensure smooth 
-                                            operation of your system, even if you need to add any new features 
-                                            or additional services.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='md:hidden flex w-[353px] md:w-full h-[1px] bg-[#333] md:mb-[200px] mt-[50px]'></div>
+                        <div className='w-full h-[1px] bg-[#333]'></div>
+                        <div className='flex flex-col md:gap-[150px] mt-[50px]'>
+                            <div className='text-base md:text-5xl font-bold text-left'>
+                                “We Tailor For You”
                             </div>
+                            <div className='flex gap-[20px] md:gap-[100px] space-y-[50px] md:space-y-0'>
+                                <div className='mt-[50px] md:mt-0'>
+                                    <Website/>
+                                </div>
+                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
+                                    <div className='text-base md:text-4xl font-semibold text-left'>
+                                        Website
+                                    </div>
+                                    <div className='text-base md:text-2xl font-medium text-[#666] text-left leading-tight'>
+                                        From domain registration to web design, we have service personnel 
+                                        who will communicate with you in detail throughout the production 
+                                        process to ensure that the final product fully meets your conceptual 
+                                        requirements.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='flex gap-[20px] md:gap-[100px] space-y-[50px] md:space-y-0'>
+                                <div className='md:flex mt-[50px] md:mt-0'>
+                                    <ManagementSystem/>
+                                </div>
+                                <div className='mt-[50px] md:mt-0'>
+                                    <ManagementSystemMobile/>
+                                </div>
+                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
+                                    <div className='text-base md:text-4xl font-semibold text-left'>
+                                        Management System
+                                    </div>
+                                    <div className='text-base md:text-2xl font-medium text-[#666] text-left leading-tight'>
+                                        Whether your independent business is large or small, you still need a 
+                                        comprehensive management system. That's why we approach this 
+                                        task with rigour to ensure that your business management is free 
+                                        from any obstacles.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='flex gap-[20px] md:gap-[100px] space-y-[50px] md:space-y-0'>
+                                <div className='mt-[50px] md:mt-0'>
+                                    <PosSystem/>
+                                </div>
+                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
+                                    <div className='text-base md:text-4xl font-semibold text-left'>
+                                        Payment System
+                                    </div>
+                                    <div className='text-base md:text-2xl font-medium text-[#666] text-left leading-tight'>
+                                        This is undoubtedly the most crucial service that businesses are 
+                                        concerned about, and we excel in handling it flawlessly.
+                                        Self-employed individuals can choose to use existing payment 
+                                        channels or apply to integrate new payment solutions with us.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='flex gap-[20px] md:gap-[100px] space-y-[50px] md:space-y-0'>
+                                <div className='mt-[50px] md:mt-0'>
+                                    <SupportService/>
+                                </div>
+                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
+                                    <div className='text-base md:text-4xl font-semibold text-left'>
+                                        Support & Service
+                                    </div>
+                                    <div className='text-base md:text-2xl font-medium text-[#666] text-left leading-tight'>
+                                        This is also one of the most important aspects we prioritise. We 
+                                        provide the most comprehensive 24/5 service to ensure smooth 
+                                        operation of your system, even if you need to add any new features 
+                                        or additional services.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='md:hidden flex w-full h-[1px] bg-[#333] md:mb-[200px] mt-[50px]'></div>
                         </div>
+                        
 
                         <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                             <div className='flex flex-col gap-[20px] md:gap-[50px]'>
@@ -190,7 +191,7 @@ const Advantage = () => {
                                 </div>
                             </div>
                             
-                            <div className='w-[353px] md:w-full h-[1px] bg-[#333] mb-[50px] md:mb-[200px]'></div>
+                            <div className='w-full h-[1px] bg-[#333] mb-[50px] md:mb-[200px]'></div>
                         </div>
                     </div>
                 </div>
@@ -238,7 +239,7 @@ const Advantage = () => {
                         </div>
 
                         <div className='flex flex-col ml-5 md:ml-0 mr-5 md:mr-0'>
-                            <div className='w-[353px] md:w-full h-[1px] bg-[#333]'></div>
+                            <div className='w-full h-[1px] bg-[#333]'></div>
                             <div className='flex flex-col md:gap-[150px] mt-[50px]'>
                                 <div className='text-base md:text-5xl font-bold text-left mb-[30px] md:mb-0'>
                                     “We Customise For You”

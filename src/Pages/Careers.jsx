@@ -37,16 +37,16 @@ const Careers = () => {
                     <div className='max-w-[1000px] w-full mt-[50px] md:mt-[200px]'>
                         <div className='flex flex-col gap-[50px] md:gap-[200px] ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div className='flex flex-col gap-5 md:gap-10'>
-                                <div className='flex w-[230px] md:w-[863px] text-base md:text-5xl font-bold text-left'>
+                                <div className='flex w-[230px] md:w-[863px] text-base md:text-5xl font-bold text-left leading-tight'>
                                 Join Our Team for Exciting Career Opportunities
                                 </div>
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] leading-tight'>
                                 Empower your future with Current Tech Industries. Join our visionary team, 
                                 embrace diversity, and work on impactful projects. Explore career opportunities 
                                 that fuel your growth and make a difference.
                                 </div>  
                             </div>
-                            <div className='w-[353px] md:w-full h-[1px] bg-[#333]'></div>
+                            <div className='w-full h-[1px] bg-[#333]'></div>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ const Careers = () => {
                                 <div className='md:w-[863px] text-base md:text-5xl font-bold text-left'>
                                     IT Programmer
                                 </div>
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] leading-tight'>
                                     We welcome IT programmers to join our team. They should be proficient in 
                                     programming, testing, and maintaining code for software applications, 
                                     capable of solving complex programming problems, collaborating with teams, 
@@ -82,7 +82,7 @@ const Careers = () => {
                                         
                                     </div>
 
-                                <ul className="list-disc list-inside text-[#666] text-base md:text-4xl text-left font-bold mx-[65px] md:mx-24"> 
+                                <ul className="list-disc list-inside text-[#666] text-base md:text-4xl text-left font-bold mx-[65px] md:mx-24 leading-tight"> 
                                     <li>LARAVEL PHP</li>
                                     <li>REACT JS</li>
                                     <li>VUE JS</li>
@@ -94,7 +94,7 @@ const Careers = () => {
                                 </ul> 
                             </div>
                             <div className='flex flex-col gap-[50px] md:hidden'></div>
-                            <div className='w-[353px] md:w-full h-[1px] bg-[#333] self-center'></div>
+                            <div className='w-full h-[1px] bg-[#333] self-center'></div>
                         </div>
                     </div>
                 </div>
@@ -103,12 +103,12 @@ const Careers = () => {
             <div>
                 <div className='w-full flex flex-col items-center justify-center'>
                     <div className='max-w-[1000px] w-full mt-[100px] md:mt-[150px]'>
-                        <div className='flex flex-col gap-[50px] md:gap-[100px] space-x-5 md:space-x-0'>
-                            <div className='flex flex-col gap-10 space-x-5 md:space-x-0'>
-                                <div className='md:w-[863px] text-base md:text-5xl font-bold text-left ml-5 md:ml-0'>
+                        <div className='flex flex-col gap-[50px] md:gap-[100px] ml-5 md:ml-0 mr-5 md:mr-0'>
+                            <div className='flex flex-col gap-5 md:gap-10'>
+                                <div className='md:w-[863px] text-base md:text-5xl font-bold text-left'>
                                     UI/UX & Designer
                                 </div>
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] leading-tight'>
                                 UI/UX & Graphic designer focuses on creating user-friendly interfaces, 
                                 conducting research, wireframing, prototyping, and collaborating with 
                                 stakeholders. They aim to enhance user satisfaction, engagement, and 
@@ -129,7 +129,7 @@ const Careers = () => {
                                         
                                     </div>
 
-                                <ul className="list-disc list-inside text-[#666] text-base md:text-4xl text-left font-bold mx-[65px] md:mx-24"> 
+                                <ul className="list-disc list-inside text-[#666] text-base md:text-4xl text-left font-bold mx-[65px] md:mx-24 leading-tight"> 
                                     <li>FIGMA</li>
                                     <li>PHOTOSHOP</li>
                                     <li>ILLUSTRATOR</li>
@@ -149,12 +149,12 @@ const Careers = () => {
             <div>
                 <div className='w-full flex flex-col items-center justify-center'>
                     <div className='max-w-[1000px] w-full mt-[100px] md:mt-[150px]'>
-                        <div className='flex flex-col gap-[50px] md:gap-[100px] space-x-5 md:space-x-0'>
-                            <div className='flex flex-col gap-10 space-x-5 md:space-x-0'>
-                                <div className='md:w-[863px] text-base md:text-5xl font-bold text-left ml-5 md:ml-0'>
+                        <div className='flex flex-col gap-[50px] md:gap-[100px] ml-5 md:ml-0 mr-5 md:mr-0'>
+                            <div className='flex flex-col gap-5 md:gap-10'>
+                                <div className='md:w-[863px] text-base md:text-5xl font-bold text-left'>
                                     Internship
                                 </div>
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] leading-tight'>
                                     We offer internship opportunities to students or recent graduates to 
                                     participate in programming, UI/UX, and graphic design within our company, 
                                     providing them with practical experience in specific fields. Interns 
@@ -175,7 +175,7 @@ const Careers = () => {
                                         </div>
                                     </div>
 
-                                <ul className="list-disc list-inside text-[#666] text-base md:text-4xl text-left font-bold mx-[65px] md:mx-24"> 
+                                <ul className="list-disc list-inside text-[#666] text-base md:text-4xl text-left font-bold mx-[65px] md:mx-24 leading-tight"> 
                                     <li>LARAVEL PHP</li>
                                     <li>REACT JS</li>
                                     <li>VUE JS</li>
@@ -189,7 +189,6 @@ const Careers = () => {
                                     <li>SKETCH</li>
                                     <li>ADOBE XD</li>
                                     <li className='mt-5 md:mt-12' >DEGREE HOLDER</li>
-                                    
                                 </ul> 
                             </div>
                         </div>
@@ -204,7 +203,7 @@ const Careers = () => {
                             <div className='text-xl md:text-5xl font-bold text-left'>
                                 Don't hesitate!
                             </div>
-                            <div className='flex flex-col text-[#000] text-base md:text-2xl font-semibold md:font-bold text-left'>
+                            <div className='flex flex-col text-[#000] text-base md:text-2xl font-semibold md:font-bold text-left leading-tight'>
                                 Join us on an exciting journey towards endless possibilities and growth.
                                 Embrace diverse career opportunities, unleash your potential, and become
                                 part of a supportive community that values lifelong learning and personal
