@@ -12,7 +12,7 @@ const Footer = () => {
                         <div>
                             <img src={ct_logo} alt='ct logo'/>
                         </div>
-                        <div className='flex flex-col text-base font-normal text-left'>
+                        <div className='flex flex-col text-base font-normal text-left leading-normal'>
                             <span>Current Tech Industries is a leading technology solutions development provider. Founded in 2006,</span>
                             <span>with a primary focus on technology development and distribution, the company is dedicated to </span>
                             <span>driving innovative solutions for digital transformation. By offering cutting-edge IT solutions, Current </span>
