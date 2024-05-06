@@ -42,12 +42,20 @@ const handleButtonClick = (button) => {
 
                 <div className='absolute right-5 md:right-[100px] bottom-5 md:bottom-[100px] flex flex-col text-white text-right gap-5'>
                     <span className='text-xl md:text-5xl font-bold'>Developed </span>
-                    <div className='flex flex-col text-base md:text-4xl font-medium leading-tight'>
+                    <div className='hidden md:flex flex-col text-base md:text-4xl font-medium leading-[1.20]'>
                         <span>Development must go through drafting </span>
                         <span>frameworks, understanding details,</span>
                         <span>detailed communication, careful</span>
                         <span>planning, rigorous testing before it can</span>
                         <span>become a finished product.</span>
+                    </div>
+
+                    <div className='flex flex-col text-base md:text-4xl font-medium leading-[1.20] md:hidden'>
+                        <span>Development must go through drafting</span>
+                        <span>frameworks, understanding details,</span>
+                        <span>detailed communication, careful planning, </span>
+                        <span>rigorous testing before it can become</span>
+                        <span>a finished product.</span>
                     </div>
                 </div>
             </div>
@@ -57,16 +65,24 @@ const handleButtonClick = (button) => {
                     <div className='max-w-[1000px] w-full mt-[50px] md:mt-[200px]'>
                         <div className='flex flex-col gap-[50px] md:gap-[200px] ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div className='flex flex-col gap-5 md:gap-10'>
-                                <div className='flex w-[260px] md:w-[863px] text-base md:text-5xl font-bold text-left'>
-                                High-quality products developed through cutting-edge technology
+                                <div className='flex w-full md:w-[863px] text-base md:text-5xl font-bold text-left'>
+                                    <div className='hidden md:flex flex-col'>
+                                        <span>High-quality products developed</span>
+                                        <span>through cutting-edge technology</span>
+                                    </div>
+                                    
+                                    <div className='flex flex-col md:hidden'>
+                                        <span>High-quality products developed through</span>
+                                        <span>cutting-edge technology</span>
+                                    </div>
                                 </div>
                                 <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
-                                <span className='text-orange-400 text-[32px] md:text-[64px]'>Yes,</span> 
-                                    we have meticulously developed software in these fields, and our 
-                                    collaboration with businesses in these sectors is indispensable. 
-                                    That's why we translate the most outstanding ideas from our technical 
-                                    engineers into the most innovative creations and find more effective 
-                                    solutions for our customers.
+                                        <span className='text-orange-400 text-[32px] md:text-[64px]'>Yes,</span> 
+                                        we have meticulously developed software in these fields, and our 
+                                        collaboration with businesses in these sectors is indispensable. 
+                                        That's why we translate the most outstanding ideas from our technical 
+                                        engineers into the most innovative creations and find more effective 
+                                        solutions for our customers.
                                 </div>
                             </div>
                             <div className='w-full h-[1px] bg-[#333]'></div>
@@ -123,13 +139,33 @@ const handleButtonClick = (button) => {
                                 <img src={Devices} alt="Devices" />
                             </div>
 
-                            <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
-                            A child's learning journey begins in the classroom, using tools that are flexible, 
-                            user-friendly, prioritize privacy, accessibility, and sustainability. That's why 
-                            we have developed this product for education, enabling parents, teachers, and school 
-                            owners to better understand their child's growth in kindergarten. Additionally, we are 
-                            in the process of developing a series of educational software for primary schools, 
-                            secondary schools, universities, and tuition centres in the future.
+                            <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px]'>
+                            <div className='hidden md:flex flex-col leading-[1.20]'>
+                                <span>A child's learning journey begins in the classroom, using</span>
+                                <span>tools that are flexible, user-friendly, prioritise privacy,</span>
+                                <span>accessibility, and sustainability. That's why we have</span>
+                                <span>developed this product for education, enabling parents,</span>
+                                <span>teachers, and school owners to better understand their</span>
+                                <span>child's growth in kindergarten. Additionally, we are in the</span>
+                                <span>process of developing a series of educational software for</span>
+                                <span>primary schools, secondary schools, universities, and</span>
+                                <span>tuition centres in the future.</span>
+                            </div>
+
+                            <div className='flex flex-col leading-[1.20] md:hidden'>
+                                <span>A child's learning journey begins in the</span>
+                                <span>classroom, using tools that are flexible,</span>
+                                <span>user-friendly, prioritise privacy, accessibility,</span>
+                                <span>and sustainability. That's why we have</span>
+                                <span>developed this product for education,</span>
+                                <span>enabling parents, teachers, and school</span>
+                                <span>owners to better understand their child's</span>
+                                <span>growth in kindergarten. Additionally, we are</span>
+                                <span>in the process of developing a series of</span>
+                                <span>educational software for primary schools,</span>
+                                <span>secondary schools, universities, and tuition</span>
+                                <span>centres in the future.</span>
+                            </div>
                             <div className='w-full h-[1px] bg-[#333] '></div>
                             </div>
                             
@@ -169,15 +205,41 @@ const handleButtonClick = (button) => {
                                     <img src={Mocap_Interface} alt="User Interface" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
-                                    In the current corporate landscape, businesses are confronted with challenges 
-                                    such as inconsistent employee efficiency, talent attrition, and cost management. 
-                                    Therefore, we have meticulously developed reward mechanisms and recognition programs 
-                                    to assist companies in addressing these challenges effectively. The Moment Seize not 
-                                    only significantly boosts employee productivity but also enhances morale and output 
-                                    quality. Moreover, we firmly believe that recognizing and rewarding employees fosters 
-                                    a positive organizational culture, where employees feel supported and appreciated in 
-                                    their roles, thus aiding in mitigating talent turnover.
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px]'>
+                                    <div className='hidden md:flex flex-col leading-[1.20]'>
+                                        <span>In the current corporate landscape, businesses are</span>
+                                        <span>confronted with challenges such as inconsistent</span>
+                                        <span>employee efficiency, talent attrition, and cost</span>
+                                        <span>management. Therefore, we have meticulously developed</span>
+                                        <span>reward mechanisms and recognition programs to assist</span>
+                                        <span>companies in addressing these challenges effectively.</span>
+                                        <span>The Motion Capture “MOCAP” not only significantly</span>
+                                        <span>boosts employee productivity but also enhances morale</span>
+                                        <span>and output quality. Moreover, we firmly believe that</span>
+                                        <span>recognising and rewarding employees fosters a positive</span>
+                                        <span>organisational culture, where employees feel supported</span>
+                                        <span>and appreciated in their roles, thus aiding in mitigating</span>
+                                        <span>talent turnover.</span>
+                                    </div>
+
+                                    <div className='flex flex-col leading-[1.20] md:hidden'>
+                                        <span>In the current corporate landscape,</span>
+                                        <span>businesses are confronted with challenges</span>
+                                        <span>such as inconsistent employee efficiency,</span>
+                                        <span>talent attrition, and cost management.</span>
+                                        <span>Therefore, we have meticulously developed</span>
+                                        <span>reward mechanisms and recognition</span>
+                                        <span>programs to assist companies in addressing</span>
+                                        <span>these challenges effectively. The Motion</span>
+                                        <span>Capture “MOCAP” not only significantly</span>
+                                        <span>boosts employee productivity but also</span>
+                                        <span>enhances morale and output quality. </span>
+                                        <span>Moreover, we firmly believe that recognising</span>
+                                        <span>and rewarding employees fosters a positive</span>
+                                        <span>organisational culture, where employees feel</span>
+                                        <span>supported and appreciated in their roles, thus</span>
+                                        <span>aiding in mitigating talent turnover.</span>
+                                    </div>
                                     <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
                             </div>
@@ -216,15 +278,35 @@ const handleButtonClick = (button) => {
                                     <img src={Smart_Dash_Interface} alt="Smart Dash User Interface" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
-                                    In the current corporate landscape, businesses are confronted with challenges 
-                                    such as inconsistent employee efficiency, talent attrition, and cost management. 
-                                    Therefore, we have meticulously developed reward mechanisms and recognition programs 
-                                    to assist companies in addressing these challenges effectively. The Moment Seize not 
-                                    only significantly boosts employee productivity but also enhances morale and output 
-                                    quality. Moreover, we firmly believe that recognizing and rewarding employees fosters 
-                                    a positive organizational culture, where employees feel supported and appreciated in 
-                                    their roles, thus aiding in mitigating talent turnover.
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px]'>
+                                    <div className='hidden md:flex flex-col leading-[1.20]'>
+                                        <span>Our IT technical team specialises in developing intelligent</span>
+                                        <span>back-office solutions for MetaQuote (MT4 / MT5) and</span>
+                                        <span>cTrader white label and main label operators. We excel in </span>
+                                        <span>customising web design, client frontend, agent interface,</span>
+                                        <span>admin backend, and commission rebate systems</span>
+                                        <span>according to the requirements of white label providers</span>
+                                        <span>and main label operators. Our Smart Dash are designed to</span>
+                                        <span>perfectly display the data clients want to see, and we</span>
+                                        <span>prioritise providing the most robust security for client</span>
+                                        <span>funds and personal information.</span>
+                                    </div>
+
+                                    <div className='flex flex-col leading-[1.20] md:hidden'>
+                                        <span>Our IT technical team specialises in</span>
+                                        <span>developing intelligent back-office solutions</span>
+                                        <span>for MetaQuote (MT4 / MT5) and cTrader</span>
+                                        <span>white label and main label operators. We</span>
+                                        <span>excel in customising web design, client</span>
+                                        <span>frontend, agent interface, admin backend, </span>
+                                        <span>and commission rebate systems according to</span>
+                                        <span>the requirements of white label providers and</span>
+                                        <span>main label operators. Our Smart Dash are</span>
+                                        <span>designed to perfectly display the data clients</span>
+                                        <span>want to see, and we prioritise providing the</span>
+                                        <span>most robust security for client funds and</span>
+                                        <span>personal information.</span>
+                                    </div>
                                     <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
                             </div>
@@ -261,17 +343,43 @@ const handleButtonClick = (button) => {
                                     <img src={Financial_Board_Interface} alt="Financial Board User Interface" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
-                                We fully understand that as a highly skilled and renowned trader, managing 
-                                numerous investors and substantial funds requires not only delivering 
-                                substantial and objective investment returns but also maintaining strict risk 
-                                management in investments. Therefore, traders inevitably require a sophisticated 
-                                and intelligent financial trading fund management system. Our proficient IT team 
-                                is fully capable of undertaking the development of such a system. We have not only 
-                                added personalized design to the dashboard but also incorporated simple and easy-to-operate 
-                                modes, ensuring that investors and traders need not worry about encountering operational 
-                                difficulties due to lack of understanding.
-                                <div className='w-full h-[1px] bg-[#333] '></div>
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px]'>
+                                    <div className='hidden md:flex flex-col leading-[1.20]'>
+                                        <span>We fully understand that as a highly skilled and renowned</span>
+                                        <span>trader, managing numerous investors and substantial </span>
+                                        <span>funds requires not only delivering substantial and</span>
+                                        <span>objective investment returns but also maintaining strict</span>
+                                        <span>risk management in investments. Therefore, traders</span>
+                                        <span>inevitably require a sophisticated and intelligent financial</span>
+                                        <span>trading fund management system. Our proficient IT team</span>
+                                        <span>is fully capable of undertaking the development of such a</span>
+                                        <span>system. We have not only added personalised design to</span>
+                                        <span>the dashboard but also incorporated simple and easy-to-</span>
+                                        <span>operate modes, ensuring that investors and traders need </span>
+                                        <span>not worry about encountering operational difficulties due</span>
+                                        <span>to lack of understanding.</span>
+                                    </div>
+
+                                    <div className='flex flex-col leading-[1.20] md:hidden'>
+                                        <span>We fully understand that as a highly skilled</span>
+                                        <span>and renowned trader, managing numerous</span>
+                                        <span>investors and substantial funds requires not</span>
+                                        <span>only delivering substantial and objective</span>
+                                        <span>investment returns but also maintaining strict</span>
+                                        <span>risk management in investments. Therefore,</span>
+                                        <span>traders inevitably require a sophisticated and</span>
+                                        <span>intelligent financial trading fund management</span>
+                                        <span>system. Our proficient IT team is fully capable</span>
+                                        <span>of undertaking the development of such a</span>
+                                        <span>system. We have not only added</span>
+                                        <span>personalised design to the dashboard but</span>
+                                        <span>also incorporated simple and easy-to-operate</span>
+                                        <span>modes, ensuring that investors and traders</span>
+                                        <span>need not worry about encountering</span>
+                                        <span>operational difficulties due to lack of</span>
+                                        <span>understanding.</span>
+                                    </div>
+                                    <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
                             </div>
                         </div>
@@ -333,12 +441,29 @@ const handleButtonClick = (button) => {
                                     <img src={Trader_Interface_1} alt="Trader_Interface_1" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
-                                Not only do we seamlessly integrate the trading platform interface with our 
-                                intelligent backend, but we also offer Metaquote (MT5) and cTrader white label 
-                                and main label solutions. The advantage of our one-stop service ensures that 
-                                you are relieved of many unnecessary hassles and allows you to accelerate the 
-                                launch of operations, avoiding missing the absolute best timing for operations.
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px]'>
+                                <div className='hidden md:flex flex-col leading-[1.20]'>
+                                        <span>Not only do we seamlessly integrate the trading platform</span>
+                                        <span>interface with our intelligent backend, but we also offer</span>
+                                        <span>Metaquote (MT5) and cTrader white label and main label</span>
+                                        <span>solutions. The advantage of our one-stop service ensures</span>
+                                        <span>that you are relieved of many unnecessary hassles and</span>
+                                        <span>allows you to accelerate the launch of operations,</span>
+                                        <span>avoiding missing the absolute best timing for operations.</span>
+                                    </div>
+
+                                    <div className='flex flex-col leading-[1.20] md:hidden'>
+                                        <span>Not only do we seamlessly integrate the</span>
+                                        <span>trading platform interface with our intelligent</span>
+                                        <span>backend, but we also offer Metaquote (MT5)</span>
+                                        <span>and cTrader white label and main label</span>
+                                        <span>solutions. The advantage of our one-stop</span>
+                                        <span>service ensures that you are relieved of</span>
+                                        <span>many unnecessary hassles and allows</span>
+                                        <span>you to accelerate the launch of operations,</span>
+                                        <span>avoiding missing the absolute best timing for</span>
+                                        <span>operations.</span>
+                                    </div>
                                 <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
                             </div>
@@ -394,12 +519,31 @@ const handleButtonClick = (button) => {
                                 </div>
 
                                 <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
-                                This is undoubtedly great news for traders, as the widespread use of AI is 
-                                becoming an inevitable trend. Many investment firms and top traders have 
-                                begun to adopt AI automated trading systems, and we specialize in the 
-                                development of such intelligent trading systems. We can fully transform 
-                                the mindset and strategies of top traders into AI trading systems and apply 
-                                them to trading on MetaTrader 4, MetaTrader 5, and cTrader trading platforms.
+                                <div className='hidden md:flex flex-col leading-[1.20]'>
+                                        <span>This is undoubtedly great news for traders, as the </span>
+                                        <span>widespread use of AI is becoming an inevitable trend.</span>
+                                        <span>Many investment firms and top traders have begun to</span>
+                                        <span>adopt AI automated trading systems, and we specialise</span>
+                                        <span>in the development of such intelligent trading systems.</span>
+                                        <span>We can fully transform the mindset and strategies of top</span>
+                                        <span>traders into AI trading systems and apply them to trading</span>
+                                        <span>on MetaTrader 4, MetaTrader 5, and cTrader trading</span>
+                                        <span>platforms.</span>
+                                    </div>
+
+                                    <div className='flex flex-col leading-[1.20] md:hidden'>
+                                        <span>This is undoubtedly great news for traders, </span>
+                                        <span>as the widespread use of AI is becoming</span>
+                                        <span>an inevitable trend. Many investment firms</span>
+                                        <span>and top traders have begun to adopt AI</span>
+                                        <span>automated trading systems, and we</span>
+                                        <span>specialise in the development of such</span>
+                                        <span>intelligent trading systems. We can fully</span>
+                                        <span>transform the mindset and strategies of top</span>
+                                        <span>traders into AI trading systems and apply</span>
+                                        <span>them to trading on MetaTrader 4,</span>
+                                        <span>MetaTrader 5, and cTrader trading platforms.</span>
+                                    </div>
                                 <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
                             </div>
@@ -437,14 +581,34 @@ const handleButtonClick = (button) => {
                                     <img src={TT_Pay_Interface} alt="TT_Pay_Interface" />
                                 </div>
 
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
-                                    Many multinational operating companies conduct business through websites, 
-                                    and even investment firms are not limited to operating solely within their 
-                                    own countries. Therefore, it is essential to have a comprehensive and highly 
-                                    secure payment system. The TTPAY payment system not only addresses the 
-                                    challenges of cross-border payments but also significantly enhances the security 
-                                    advantages for merchants. Moreover, the application for a TTPAY payment system 
-                                    account is free.
+                                <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px]'>
+                                    <div className='hidden md:flex flex-col leading-[1.20]'>
+                                        <span>Many multinational operating companies conduct</span>
+                                        <span>business through websites, and even investment</span>
+                                        <span>firms are not limited to operating solely within their</span>
+                                        <span>own countries. Therefore, it is essential to have a</span>
+                                        <span>comprehensive and highly secure payment system.</span>
+                                        <span>The TTPAY payment system not only addresses the</span>
+                                        <span>challenges of cross-border payments but also</span>
+                                        <span>significantly enhances the security advantages</span>
+                                        <span>for merchants. Moreover, the application for a TTPAY</span>
+                                        <span>payment system account is free.</span>
+                                    </div>
+
+                                    <div className='flex flex-col leading-[1.20] md:hidden'>
+                                        <span>Many multinational operating companies</span>
+                                        <span>conduct business through websites, and even</span>
+                                        <span>investment firms are not limited to operating</span>
+                                        <span>solely within their own countries. Therefore,</span>
+                                        <span>it is essential to have a comprehensive and</span>
+                                        <span>highly secure payment system. The TTPAY</span>
+                                        <span>payment system not only addresses the</span>
+                                        <span>challenges of cross-border payments but</span>
+                                        <span>also significantly enhances the security</span>
+                                        <span>advantages for merchants. Moreover, the</span>
+                                        <span>application for a TTPAY payment system</span>
+                                        <span>account is free.</span>
+                                    </div>
                                     <div className='w-full h-[1px] bg-[#333] '></div>
                                 </div>
                             </div>
@@ -466,7 +630,7 @@ const handleButtonClick = (button) => {
                                 </div>
 
                                 {/* mobile version */}
-                                <div className='flex flex-col text-[#666] text-base md:text-4xl font-medium text-left md:hidden'>
+                                <div className='flex flex-col text-[#666] text-base md:text-4xl font-medium text-left leading-[1.20] md:hidden'>
                                     <span>having your own intelligent system is worth it.</span>
                                     <span>Don't hesitate to contact us for efficient</span>
                                     <span>solutions tailored just for you. </span>

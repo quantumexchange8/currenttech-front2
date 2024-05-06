@@ -5,25 +5,45 @@ import { QR, Calendar, FooterWhatsApp, FooterGmail } from '../Components/Brand.j
 const Footer = () => {
 
     return (
-        <div className="w-full h-[400px] sm:h-[300px] bg-[#aaaaaa80] flex justify-center items-center">
-            <div className='max-w-[1000px] w-full flex justify-between ml-5 sm:ml-0'>
+        <div className="w-full h-[400px] md:h-[300px] bg-[#aaaaaa80] flex justify-center items-center">
+            <div className='max-w-[1000px] w-full flex justify-between ml-5 md:ml-0'>
                 <div className='flex flex-col gap-[26px]'>
                     <div className='flex flex-col gap-4'>
                         <div>
                             <img src={ct_logo} alt='ct logo'/>
                         </div>
-                        <div className='flex flex-col text-base font-normal text-left leading-tight'>
-                            <span>Current Tech Industries is a leading technology solutions development provider. Founded in 2006,</span>
-                            <span>with a primary focus on technology development and distribution, the company is dedicated to </span>
-                            <span>driving innovative solutions for digital transformation. By offering cutting-edge IT solutions, Current </span>
-                            <span>Tech Industries aims to meet the diverse needs of its partners and customers.</span>
+                        <div className='flex flex-col text-base font-normal text-left'>
+                            <div className='hidden md:flex flex-col leading-[1.20]'>
+                                <span>Current Tech Industries is a leading technology solutions development provider. Founded in 2006,</span>
+                                <span>with a primary focus on technology development and distribution, the company is dedicated to </span>
+                                <span>driving innovative solutions for digital transformation. By offering cutting-edge IT solutions, Current </span>
+                                <span>Tech Industries aims to meet the diverse needs of its partners and customers.</span>
+                            </div>
+
+                            <div className='flex flex-col leading-[1.20] md:hidden'>
+                                <span>Current Tech Industries is a leading</span>
+                                <span>technology solutions development provider.</span>
+                                <span>Founded in 2006, with a primary focus on</span>
+                                <span>technology development and distribution,</span>
+                                <span>the company is dedicated to driving</span>
+                                <span>innovative solutions for digital transformation.</span>
+                                <span>By offering cutting-edge IT solutions, Current</span>
+                                <span>Tech Industries aims to meet the diverse</span>
+                                <span>needs of its partners and customers.</span>
+                            </div>
                         </div>
                     </div>
                     <div className='text-base font-bold text-left'>
-                        Copyright © Current Tech Industries 2023. All rights reserved.
+                        <div className='hidden md:flex flex-col leading-[1.20]'>
+                            <span>Copyright © Current Tech Industries 2023. All rights reserved.</span>
+                        </div>
+                        <div className='flex flex-col leading-[1.20] md:hidden'>
+                            <span>Copyright © Current Tech Industries 2023.</span>
+                            <span>All rights reserved.</span>
+                        </div>
                     </div>
                 </div>
-                <div className='hidden sm:flex flex-col gap-4 items-end justify-center'>
+                <div className='hidden md:flex flex-col gap-4 items-end justify-center'>
                     <div className='text-sm font-bold'>
                         Start to connect with us:
                     </div>
