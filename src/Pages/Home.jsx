@@ -158,7 +158,6 @@ const Home = () => {
                                             <span>and reliable software tailored to your</span>
                                             <span>specific needs.</span>
                                         </div>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -405,7 +404,6 @@ const Home = () => {
                                     <span className="block md:hidden">records, or employee attendance, all you need</span>
                                     <span className="block md:hidden">is one intelligent system.</span>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>

@@ -53,7 +53,7 @@ useEffect(() => {
     onClick={onClose}
     className={`fixed inset-0 flex justify-center z-50 items-center transition-colors ${open ? "visible bg-black/20" : "invisible"}`}>
       {selectedButton === 'whatsapp' && (
-        <div onClick={(e) => e.stopPropagation()} className={`px-4 md:px-7 py-4 md:py-7 w-[353px md:w-[500px] ] ${
+        <div onClick={(e) => e.stopPropagation()} className={`px-4 md:px-7 py-4 md:py-7 w-[353px] md:w-[500px] ${
             selectedTab === 'whatsapp' ? 'h-[500px] md:h-[800px]' :
             selectedTab === 'gmail' ? 'h-[810px] md:h-[930px]' :
             ''} ease-out duration-100 bg-white rounded-[20px] rounded-md[20px] shadow transition-all ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"}`}>
@@ -64,7 +64,7 @@ useEffect(() => {
                         <div className="rounded-[20px] flex justify-center">
                             <img className="w-[70px] md:w-[99px]" src={CT_Logo} alt="icon"/>
                         </div>
-                        <button className="absolute top-0 right-0 w-[24.5px] h-[24.5px] md:w-[35px] md:h-[35px] bg-gray-300 rounded-full flex justify-center items-center" onClick={onClose}>
+                        <button className="absolute w-[24.5px] h-[24.5px] md:w-[35px] md:h-[35px] bg-gray-300 rounded-full flex justify-center items-center" onClick={onClose}>
                           <img className="w-[12.95px] h-[12.25px] md:w-[21px] md:h-[21px]" src={X} alt="close"/>
                         </button>
                     </div>

@@ -22,7 +22,7 @@ const Advantage = () => {
                     <source src="/assets/videos/advantage.mp4" type="video/mp4"/>
                 </video>
 
-                <div className='absolute left-[20px] md:left-[100px] bottom-[20px] md:bottom-[100px] flex flex-col text-white text-left gap-5'>
+                <div className='absolute left-5 md:left-[100px] bottom-5 md:bottom-[100px] flex flex-col text-white text-left gap-5'>
                     <span className=' text-xl md:text-5xl font-bold'>Independent </span>
                     <div className='flex flex-col text-base md:text-4xl font-medium leading-[1.20]'>
                         <span>Having a powerful personal</span>

@@ -76,13 +76,40 @@ const handleButtonClick = (button) => {
                                         <span>cutting-edge technology</span>
                                     </div>
                                 </div>
-                                <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
-                                        <span className='text-orange-400 text-[32px] md:text-[64px]'>Yes,</span> 
-                                        we have meticulously developed software in these fields, and our 
-                                        collaboration with businesses in these sectors is indispensable. 
-                                        That's why we translate the most outstanding ideas from our technical 
-                                        engineers into the most innovative creations and find more effective 
-                                        solutions for our customers.
+
+                                {/* <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
+                                    <span className='text-orange-400 text-[64px]'>Yes,</span> 
+                                    we have meticulously developed software in 
+                                    these fields, and our collaboration with businesses in
+                                    these sectors is indispensable. That's why we translate 
+                                    the most outstanding ideas from our technical engineers
+                                    into the most innovative creations and find more effective 
+                                    solutions for our customers.
+                                </div> */}
+                                <div className='hidden md:flex flex-col text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] leading-[1.20]'>
+                                    <div className="flex items-baseline">
+                                        <span className='text-orange-400 text-[64px]'>Yes,</span> 
+                                        <span className="inline-block">we have meticulously developed software in </span> 
+                                    </div>
+                                    <span className="inline-block">these fields, and our collaboration with businesses in </span> 
+                                    <span className="inline-block">these sectors is indispensable. That's why we translate </span> 
+                                    <span className="inline-block">the most outstanding ideas from our technical engineers </span> 
+                                    <span className="inline-block">into the most innovative creations and find more effective </span> 
+                                    <span className="inline-block">solutions for our customers.</span> 
+                                </div>
+
+                                <div className='flex flex-col text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] md:hidden leading-[1.20]'>
+                                    <div className="flex items-baseline">
+                                        <span className='text-orange-400 text-[32px] align-text-top'>Yes,</span> 
+                                        <span className="inline-block">we have meticulously developed</span> 
+                                    </div>
+                                    <span className="inline-block">software in these fields, and our collaboration</span> 
+                                    <span className="inline-block">with businesses in these sectors is</span> 
+                                    <span className="inline-block">indispensable. That's why we translate the</span> 
+                                    <span className="inline-block">most outstanding ideas from our technical</span> 
+                                    <span className="inline-block">engineers into the most innovative creations</span> 
+                                    <span className="inline-block">and find more effective solutions for our</span> 
+                                    <span className="inline-block">customers.</span> 
                                 </div>
                             </div>
                             <div className='w-full h-[1px] bg-[#333]'></div>
