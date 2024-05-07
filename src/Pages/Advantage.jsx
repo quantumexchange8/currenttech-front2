@@ -41,7 +41,7 @@ const Advantage = () => {
                                 The advantage of our technology for Self-Employed
 
                             </div>
-                            <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[950px]'>
+                            <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
                                 <div className='hidden md:flex flex-col leading-[1.20]'>
                                     <span>For self-employed individuals like you, regardless of the</span>
                                     <span>industry you're in, we firmly believe that your relationship</span>
@@ -282,7 +282,7 @@ const Advantage = () => {
                             <div className='md:w-[863px] text-base md:text-5xl font-bold text-left'>
                                 The advantage of our technology for Enterprise
                             </div>
-                            <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[950px] mb-[50px] md:mb-0'>
+                            <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] mb-[50px] md:mb-0'>
                                 <div className='hidden md:flex flex-col leading-[1.20]'>
                                     <span>Excellent enterprise management encompasses human</span>
                                     <span>resources, administration, finance, as well as employee</span>
