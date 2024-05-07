@@ -15,7 +15,7 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <div className='mt-[60px] md:mt-0'>
             <div className='relative'>
                 <video autoPlay muted playsInline loop className='w-full'>
                     <source src="/assets/videos/earth.mp4" type="video/mp4"/>

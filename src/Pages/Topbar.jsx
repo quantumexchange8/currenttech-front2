@@ -5,7 +5,7 @@ import { Earphone, Lang } from '../Components/Outline';
 import LogoSvg from '../Assets/Images/logo.svg';
 import { Link, useLocation } from "react-router-dom";
 import Menu_Option from "../Assets/Images/Menu.png"
-import ButtonComponent from '../Components/ButtonComponent.jsx';
+import ButtonComponent from '../Components/ButtonComponent';
 
 const Topbar = () => {
     const location = useLocation();
@@ -19,9 +19,9 @@ const Topbar = () => {
     };
 
     return (
-        <div className='flex flex-col mb-[54px] md:mb-0'> 
-            <div className="md:h-[60px] w-full fixed z-50 bg-[#aaaaaae6] flex justify-center">
-                <div className="h-[54px] md:h-full w-[393px] md:w-full max-w-full flex justify-center items-center gap-[50px]">
+        <div className='flex flex-col'> 
+            <div className="md:h-[60px] h-[60px] w-full fixed z-50 bg-[#aaaaaae6] flex justify-center backdrop-blur-sm">
+                <div className="w-[393px] md:w-full max-w-full flex justify-center items-center gap-[50px]">
                     {/* LogoSvg only shown on web version */}
                     <div className='hidden md:flex'>
                         <Link to="/" className='w-10 h-[26px]'>
@@ -180,12 +180,12 @@ const Topbar = () => {
                     <div className='hidden md:flex justify-center gap-[30px] cursor-pointer' onClick={() => handleButtonClick('gmail')}>
                         <Earphone/>
                     </div>
-                    <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
                     <div className='hidden md:flex justify-center gap-[30px] cursor-pointer'>
                         <Lang/> 
                     </div>
                 </div>
             </div>
+            <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     );
 };

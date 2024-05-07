@@ -11,7 +11,7 @@ import ScrollToTop from './Pages/ScrollToTop';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="overflow-x-hidden sm:overflow-auto">
         <Topbar />
         <ScrollToTop />
         <Routes>
