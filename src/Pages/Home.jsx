@@ -2,7 +2,8 @@ import React from 'react';
 import {useState} from 'react';
 import { Software, Website, MobileApp, ManagementSystem, PosSystem, SupportService} from '../Components/Outline.jsx';
 import { WhatsApp, Gmail } from '../Components/Brand.jsx';
-import ButtonComponent from '../Components/ButtonComponent.jsx';
+// import ButtonComponent from '../Components/ButtonComponent.jsx';
+import Modal from '../Components/Modal';
 
 const Home = () => {
 
@@ -13,6 +14,8 @@ const Home = () => {
         setOpenButton(true);
         setSelectedButton(button);
     };
+
+    
 
     return (
         <div className='mt-[60px] md:mt-0'>
@@ -545,13 +548,15 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
+                        {/* <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/> */}
                     </div>
                 </div>
                 </div>
                 <div id="Button_Component" className="fixed inset-0 flex justify-center z-50 items-center transition-colors invisible">
                 </div>
             </div>
+
+            <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import Gear from '../Assets/Images/Gear.png';
-import { WhatsApp, Gmail } from '../Components/Brand.jsx';
+import { WhatsApp, Gmail, GmailIcon } from '../Components/Brand.jsx';
 import {useState} from 'react';
-import ButtonComponent from '../Components/ButtonComponent.jsx';
+import ButtonContact from '../Components/ButtonContact.jsx';
 
 const Careers = () => {
 
@@ -292,7 +292,7 @@ const Careers = () => {
                                 <div 
                                 className='hidden md:flex w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                 onClick={() => handleButtonClick('gmail')}>
-                                    <Gmail/>
+                                    <GmailIcon/>
                                     <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                         <span>Don't hesitate!</span>
                                         <span>Send us a message</span>
@@ -323,13 +323,13 @@ const Careers = () => {
                                         </div>
                                     </div>
                                 </div>
-
-                            <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <ButtonContact open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     )
 }

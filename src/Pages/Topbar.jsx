@@ -5,7 +5,7 @@ import { Earphone, Lang } from '../Components/Outline';
 import LogoSvg from '../Assets/Images/logo.svg';
 import { Link, useLocation } from "react-router-dom";
 import Menu_Option from "../Assets/Images/Menu.png"
-import ButtonComponent from '../Components/ButtonComponent';
+import Modal from '../Components/Modal';
 
 const Topbar = () => {
     const location = useLocation();
@@ -32,25 +32,25 @@ const Topbar = () => {
                     {/* Navigation links */}
                     <div className="hidden md:flex justify-center gap-[30px]">
                         <Link
-                            to="/Advantage"
+                            to="/advantage"
                             className={`text-base font-medium ${
-                                location.pathname === '/Advantage' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
+                                location.pathname === '/advantage' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
                             Advantage
                         </Link>
                         <Link
-                            to="/Products"
+                            to="/products"
                             className={`text-base font-medium ${
-                                location.pathname === '/Products' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
+                                location.pathname === '/products' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
                             Products
                         </Link>
                         <Link
-                            to="/Careers"
+                            to="/careers"
                             className={`text-base font-medium ${
-                                location.pathname === '/Careers' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
+                                location.pathname === '/careers' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
                             Career
@@ -103,7 +103,7 @@ const Topbar = () => {
                                             </Menu.Item>
                                         </Link>
                                         <Link
-                                            to="/Advantage"
+                                            to="/advantage"
                                             className={`${
                                                 location.pathname === '/Advantage' 
                                             }`}
@@ -122,7 +122,7 @@ const Topbar = () => {
                                         </Link>
                                     
                                         <Link
-                                            to="/Products"
+                                            to="/products"
                                             className={`${
                                                 location.pathname === '/Products' 
                                             }`}
@@ -140,7 +140,7 @@ const Topbar = () => {
                                             </Menu.Item>
                                         </Link>
                                         <Link
-                                            to="/Careers"
+                                            to="/careers"
                                             className={`${
                                                 location.pathname === '/Careers' 
                                             }`}
@@ -161,7 +161,7 @@ const Topbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <button
-                                                onClick={() => handleButtonClick('gmail')}
+                                                onClick={() => handleButtonClick('whatsapp')}
                                                     className={`${
                                                         active ? 'bg-violet-500 text-white' : 'text-gray-900'
                                                     } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
@@ -185,7 +185,7 @@ const Topbar = () => {
                     </div>
                 </div>
             </div>
-            <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
+            <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     );
 };
