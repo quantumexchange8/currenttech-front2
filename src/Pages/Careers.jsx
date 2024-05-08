@@ -2,7 +2,8 @@ import React from 'react';
 import Gear from '../Assets/Images/Gear.png';
 import { WhatsApp, Gmail, GmailIcon } from '../Components/Brand.jsx';
 import {useState} from 'react';
-import ButtonContact from '../Components/ButtonContact.jsx';
+// import ButtonContact from '../Components/ButtonContact.jsx';
+import Modal from '../Components/Modal';
 
 const Careers = () => {
 
@@ -48,8 +49,9 @@ const Careers = () => {
                     <div className='max-w-[1000px] w-full mt-[50px] md:mt-[200px]'>
                         <div className='flex flex-col gap-[50px] md:gap-[200px] ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div className='flex flex-col gap-5 md:gap-10'>
-                                <div className='flex w-[230px] md:w-[863px] text-base md:text-5xl font-bold text-left leading-[1.20]'>
-                                Join Our Team for Exciting Career Opportunities
+                                <div className='flex flex-col w-[230px] md:w-[863px] text-base md:text-5xl font-bold text-left leading-[1.20]'>
+                                    <span>Join Our Team for Exciting</span>
+                                    <span>Career Opportunities</span>
                                 </div>
                                 <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
                                     <div className='hidden md:flex flex-col leading-[1.20]'>
@@ -266,7 +268,7 @@ const Careers = () => {
             <div>
                 <div className='flex flex-col items-center justify-center'>
                     <div className='max-w-[1000px] mt-[100px] md:mt-[150px] mb-[100px] md:mb-[150px]'>
-                        <div className='flex flex-col gap-5 md:gap-[50px] ml-5 md:ml-0 mr-5 md:mr-0'>
+                        <div className='flex flex-col gap-5 md:gap-[30px] ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div className='text-xl md:text-5xl font-bold text-left'>
                                 Don't hesitate!
                             </div>
@@ -275,6 +277,10 @@ const Careers = () => {
                                 Embrace diverse career opportunities, unleash your potential, and become
                                 part of a supportive community that values lifelong learning and personal
                                 fulfillment. Let's build a brighter future together.
+                                {/* <span>Join us on an exciting journey towards endless possibilities and growth.</span>
+                                <span>Embrace diverse career opportunities, unleash your potential, and become</span>
+                                <span>part of a supportive community that values lifelong learning and personal</span>
+                                <span>fulfillment. Let's build a brighter future together.</span> */}
                             </div>
 
                             <div className='mt-6'>
@@ -304,22 +310,28 @@ const Careers = () => {
                             <div 
                                     className='flex flex-col items-left gap-5 md:hidden'>
                                     <div 
-                                    className='flex w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full md:w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
-                                        <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                        <div className='hidden md:flex flex-col text-[#666] text-base font-medium text-left'>
                                             <span>Link to whatsapp start</span>
                                             <span>communicate with us.</span>
+                                        </div>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left md:hidden w-full'>
+                                            Link to whatsapp start communicate with us.
                                         </div>
                                     </div>
 
                                     <div 
-                                    className='flex w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full md:w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
-                                        <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                        <div className='hidden md:flex flex-col text-[#666] text-base font-medium text-left'>
                                             <span>Don't hesitate!</span>
                                             <span>Send us a message</span>
+                                        </div>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left md:hidden w-full'>
+                                            Don't hesitate! Send us a message.
                                         </div>
                                     </div>
                                 </div>
@@ -328,8 +340,7 @@ const Careers = () => {
                     </div>
                 </div>
             </div>
-
-            <ButtonContact open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
+            <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     )
 }

@@ -2,8 +2,8 @@ import React from 'react';
 import { Website, ManagementSystem, PosSystem, SupportService, FrontBackend, ProjectTask, Reward} from '../Components/Outline.jsx';
 import { WhatsApp, Gmail } from '../Components/Brand.jsx';
 import {useState} from 'react';
-import ButtonComponent from '../Components/ButtonComponent.jsx';
 import AttendantSystem from '../Assets/Images/AttendentSystemLogo.png';
+import Modal from '../Components/Modal';
 
 const Advantage = () => {
 
@@ -35,7 +35,7 @@ const Advantage = () => {
 
             <div className='w-full flex flex-col items-center justify-center '>
                 <div className='max-w-[1000px] w-full mt-[50px] md:mt-[200px]'>
-                    <div className='flex flex-col gap-[50px] md:gap-[200px] ml-5 md:ml-0 mr-5 md:mr-0'>
+                    <div className='flex flex-col gap-[50px] ml-5 md:ml-0 mr-5 md:mr-0'>
                         <div className='flex flex-col gap-5 md:gap-10'>
                             <div className='flex w-[260px] md:w-[863px] text-base md:text-5xl font-bold text-left'>
                                 The advantage of our technology for Self-Employed
@@ -49,7 +49,7 @@ const Advantage = () => {
                                     <span>tailoring high-quality systems specifically for you, </span>
                                     <span>ensuring that your business reaches new heights and</span>
                                     <span>making managing your relationships with customers</span>
-                                    <span> easier and more intimate.</span>
+                                    <span>easier and more intimate.</span>
                                 </div>
                                 
                                 <div className='flex flex-col leading-[1.20] md:hidden'>
@@ -65,7 +65,7 @@ const Advantage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-full h-[1px] bg-[#333]'></div>
+                        <div className='w-full h-[1px] bg-[#333] md:mt-[150px]'></div>
                         <div className='flex flex-col gap-[30px] md:gap-[150px]'>
                             <div className='text-base md:text-5xl font-bold text-left'>
                                 “We Tailor For You”
@@ -184,11 +184,10 @@ const Advantage = () => {
                             <div className='md:hidden flex w-full h-[1px] bg-[#333] md:mb-[200px] mt-[20px]'></div>
                         </div>
                         
-
                         <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                             <div className='flex flex-col gap-[20px] md:gap-[50px]'>
                                 <div className='flex flex-col gap-[20px] md:gap-[30px]'>
-                                    <div className=' text-xl md:text-5xl font-bold text-left'>
+                                    <div className=' text-xl md:text-5xl font-bold text-left md:mt-[150px]'>
                                         Don't hesitate!
                                     </div>
                                     <div>
@@ -224,22 +223,28 @@ const Advantage = () => {
                                 <div 
                                     className='flex flex-col items-left gap-5 md:hidden'>
                                     <div 
-                                    className='flex w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full md:w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
-                                        <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                        <div className='hidden md:flex flex-col text-[#666] text-base font-medium text-left'>
                                             <span>Link to whatsapp start</span>
                                             <span>communicate with us.</span>
+                                        </div>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left md:hidden w-full'>
+                                            Link to whatsapp start communicate with us.
                                         </div>
                                     </div>
 
                                     <div 
-                                    className='flex w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full md:w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
-                                        <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                        <div className='hidden md:flex flex-col text-[#666] text-base font-medium text-left'>
                                             <span>Don't hesitate!</span>
                                             <span>Send us a message</span>
+                                        </div>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left md:hidden w-full'>
+                                            Don't hesitate! Send us a message.
                                         </div>
                                     </div>
                                 </div>
@@ -483,9 +488,10 @@ const Advantage = () => {
                                     Don't hesitate!
                                 </div>
                                 <div>
-                                    <ul className="list-disc pl-8 text-left text-base md:text-2xl font-bold md:w-[900px] flex flex-col gap-6">
+                                    <ul className="list-disc pl-8 text-left text-base md:text-2xl font-bold md:w-[950px] flex flex-col gap-6 leading-[1.20]">
                                         <li>Request a quote now for developing your Enterprise system.</li>
-                                        <li>Your company can also schedule consultations with our service staff to discuss any development ideas. We do not charge any consultation fees for this service.</li>
+                                        <li>Your company can also schedule consultations with our service staff to discuss 
+                                            any development ideas. We do not charge any consultation fees for this service.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -514,30 +520,37 @@ const Advantage = () => {
                             {/* Mobile Version */}
                             <div className='flex flex-col mt-10 md:mt-0 mb-[100px] md:mb-0 ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div 
-                                className='md:hidden flex flex-col items-left gap-5 '>
-                                <div 
-                                className='flex w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
-                                onClick={() => handleButtonClick('whatsapp')}>
-                                    <WhatsApp/>
-                                    <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                        <span>Link to whatsapp start</span>
-                                        <span>communicate with us.</span>
+                                    className='flex flex-col items-left gap-5 md:hidden'>
+                                    <div 
+                                    className='flex w-full md:w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    onClick={() => handleButtonClick('whatsapp')}>
+                                        <WhatsApp/>
+                                        <div className='hidden md:flex flex-col text-[#666] text-base font-medium text-left'>
+                                            <span>Link to whatsapp start</span>
+                                            <span>communicate with us.</span>
+                                        </div>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left md:hidden w-full'>
+                                            Link to whatsapp start communicate with us.
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div 
-                                className='flex w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
-                                onClick={() => handleButtonClick('gmail')}>
-                                    <Gmail/>
-                                    <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                        <span>Don't hesitate!</span>
-                                        <span>Send us a message</span>
+                                    <div 
+                                    className='flex w-full md:w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    onClick={() => handleButtonClick('gmail')}>
+                                        <Gmail/>
+                                        <div className='hidden md:flex flex-col text-[#666] text-base font-medium text-left'>
+                                            <span>Don't hesitate!</span>
+                                            <span>Send us a message</span>
+                                        </div>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left md:hidden w-full'>
+                                            Don't hesitate! Send us a message.
+                                        </div>
                                     </div>
                                 </div>
-                            </div></div>
-                        </div><ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
-                
+                            </div>
+                        </div>
             </div>
+            <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     )
 }

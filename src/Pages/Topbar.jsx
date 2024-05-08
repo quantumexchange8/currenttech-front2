@@ -59,9 +59,81 @@ const Topbar = () => {
 
                     {/* LogoSvg between Earphone and Lang on mobile version */}
                     <div className='flex flex-row justify-center gap-[130px] md:hidden space-y-1'>
-                        <div className='mt-1'>
-                            <Lang />
-                        </div>
+                        {/* Language  component */}
+                        <Menu as="div" className="relative text-left">
+                            <div>
+                                <Menu.Button className="inline-flex w-full justify-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 mt-1">
+                                <Lang />
+                                </Menu.Button>
+                            </div>
+                            <Transition
+                                as={Fragment}
+                                enter="transition ease-out duration-100"
+                                enterFrom="transform opacity-0 scale-95"
+                                enterTo="transform opacity-100 scale-100"
+                                leave="transition ease-in duration-75"
+                                leaveFrom="transform opacity-100 scale-100"
+                                leaveTo="transform opacity-0 scale-95"
+                            >
+                                <Menu.Items className="absolute left-0 mt-4 w-[120px] rounded-[15px] bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right">
+                                        <Link
+                                            to="/"
+                                            className={`${
+                                                location.pathname === '/' 
+                                            }`}
+                                        >
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <button
+                                                        className={`${
+                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                        } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                                    >
+                                                        English
+                                                    </button>
+                                                )}
+                                            </Menu.Item>
+                                        </Link>
+                                        <Link
+                                            to="/Advantage"
+                                            className={`${
+                                                location.pathname === '/Advantage' 
+                                            }`}
+                                        >
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <button
+                                                        className={`${
+                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                        } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                                    >
+                                                        Malay
+                                                    </button>
+                                                )}
+                                            </Menu.Item>
+                                        </Link>
+                                    
+                                        <Link
+                                            to="/Products"
+                                            className={`${
+                                                location.pathname === '/Products' 
+                                            }`}
+                                        >
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <button
+                                                        className={`${
+                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                        } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                                    >
+                                                        中文
+                                                    </button>
+                                                )}
+                                            </Menu.Item>
+                                        </Link>
+                                </Menu.Items>
+                            </Transition>
+                        </Menu>
                         
                         <Link to="/" className='w-10 h-[26px]'>
                             <img src={LogoSvg} alt="icon" className='h-full'/>
@@ -181,8 +253,83 @@ const Topbar = () => {
                         <Earphone/>
                     </div>
                     <div className='hidden md:flex justify-center gap-[30px] cursor-pointer'>
-                        <Lang/> 
+                        <Menu as="div" className="relative text-left">
+                            <div className="flex items-center">
+                                <Menu.Button className="inline-flex justify-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 mt-1">
+                                    <Lang />
+                                </Menu.Button>
+                            </div>
+                            <Transition
+                                as={Fragment}
+                                enter="transition ease-out duration-100"
+                                enterFrom="transform opacity-0 scale-95"
+                                enterTo="transform opacity-100 scale-100"
+                                leave="transition ease-in duration-75"
+                                leaveFrom="transform opacity-100 scale-100"
+                                leaveTo="transform opacity-0 scale-95"
+                            >
+                                <Menu.Items className="absolute mt-5 w-[300px] h-[64px] rounded-[30px] bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
+                                    <div className="flex flex-row">
+                                        <Link
+                                            to="/"
+                                            className={`${
+                                                location.pathname === '/' 
+                                            }`}
+                                        >
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <button
+                                                        className={`${
+                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                        } group flex flex-row w-full text-base place-items-center rounded-[30px] px-7 py-5`}
+                                                    >
+                                                        English
+                                                    </button>
+                                                )}
+                                            </Menu.Item>
+                                        </Link>
+                                        <Link
+                                            to="/Advantage"
+                                            className={`${
+                                                location.pathname === '/Advantage' 
+                                            }`}
+                                        >
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <button
+                                                        className={`${
+                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                        } group flex flex-row w-full text-base place-items-center rounded-[30px] px-7 py-5`}
+                                                    >
+                                                        Malay
+                                                    </button>
+                                                )}
+                                            </Menu.Item>
+                                        </Link>
+                                        <Link
+                                            to="/Products"
+                                            className={`${
+                                                location.pathname === '/Products' 
+                                            }`}
+                                        >
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <button
+                                                        className={`${
+                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                        } group flex flex-row w-full text-base place-items-center rounded-[30px] px-[30px] py-5`}
+                                                    >
+                                                        中文
+                                                    </button>
+                                                )}
+                                            </Menu.Item>
+                                        </Link>
+                                    </div>
+                                </Menu.Items>
+                            </Transition>
+                        </Menu> 
                     </div>
+
                 </div>
             </div>
             <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>

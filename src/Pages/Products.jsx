@@ -21,7 +21,7 @@ import TT_Pay from'../Assets/Images/TT_Pay.png';
 import TT_Pay_Interface from'../Assets/Images/TT_Pay_Interface.png';
 import { WhatsApp, Gmail } from '../Components/Brand.jsx';
 import {useState} from 'react';
-import ButtonComponent from '../Components/ButtonComponent.jsx';
+import Modal from '../Components/Modal';
 
 const Products = () => {
 
@@ -688,32 +688,37 @@ const handleButtonClick = (button) => {
                                 <div 
                                     className='flex flex-col items-left gap-5 md:hidden'>
                                     <div 
-                                    className='flex w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full md:w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
-                                        <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                        <div className='hidden md:flex flex-col text-[#666] text-base font-medium text-left'>
                                             <span>Link to whatsapp start</span>
                                             <span>communicate with us.</span>
+                                        </div>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left md:hidden w-full'>
+                                            Link to whatsapp start communicate with us.
                                         </div>
                                     </div>
 
                                     <div 
-                                    className='flex w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full md:w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
-                                        <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                        <div className='hidden md:flex flex-col text-[#666] text-base font-medium text-left'>
                                             <span>Don't hesitate!</span>
                                             <span>Send us a message</span>
                                         </div>
+                                        <div className='flex flex-col text-[#666] text-base font-medium text-left md:hidden w-full'>
+                                            Don't hesitate! Send us a message.
+                                        </div>
                                     </div>
                                 </div>
-                                <ButtonComponent open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
                             </div>
                         </div>
                         <div id="Button_Component" className="fixed inset-0 flex justify-center z-50 items-center transition-colors invisible"></div>
                 </div>
             </div>
-
+            <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     )
 }

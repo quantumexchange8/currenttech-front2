@@ -71,7 +71,7 @@ const ModalContact = ({ open, onClose }) => {
                                 <FormField label='message' type="textarea" value={message} onChange={setMessage} />
                             </div>
                             <div className="send-button">
-                                <button type="submit" className="w-[139.6px] h-[34.9px] md:w-[200px] md:h-[50px] rounded-[10px] bg-gradient-to-br from-indigo-600 via-indigo-800 to-black text-white flex items-center justify-center text-[13.96px] md:text-[20px] font-bold" style={{ cursor: 'pointer' }}>
+                                <button type="submit"className="w-[139.6px] h-[34.9px] md:w-[200px] md:h-[50px] rounded-[10px] bg-gradient-to-br from-indigo-600 via-indigo-800 to-black text-white flex items-center justify-center text-[13.96px] md:text-[20px] font-bold" style={{ cursor: 'pointer' }}>
                                     send
                                 </button>
                             </div>

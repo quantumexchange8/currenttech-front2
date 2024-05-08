@@ -2,7 +2,6 @@ import React from 'react';
 import {useState} from 'react';
 import { Software, Website, MobileApp, ManagementSystem, PosSystem, SupportService} from '../Components/Outline.jsx';
 import { WhatsApp, Gmail } from '../Components/Brand.jsx';
-// import ButtonComponent from '../Components/ButtonComponent.jsx';
 import Modal from '../Components/Modal';
 
 const Home = () => {
@@ -343,14 +342,14 @@ const Home = () => {
                             <div className='text-white text-xl md:text-5xl font-bold text-left'>
                                 <span>Education </span>
                             </div>
-                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold leading-[1.20]'>
-                                <div className='flex-flex-col text-left'>
+                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold'>
+                                <div className='flex-flex-col text-left leading-[1.20]'>
                                     <span className="hidden md:block">Learning without limits. </span>
                                     <span className="hidden md:block">Schools are using our technology to </span>
                                     <span className="hidden md:block">do incredible things in the classroom </span>
                                     <span className="hidden md:block">and in their communities. </span>
                                 </div>
-                                <div className='flex-flex-col text-left'>
+                                <div className='flex-flex-col text-left leading-[1.20]'>
                                     <span className="block md:hidden">Learning without limits. Schools are using our</span>
                                     <span className="block md:hidden">technology to do incredible things in the classroom</span>
                                     <span className="block md:hidden">and in their communities.</span>
@@ -368,14 +367,14 @@ const Home = () => {
                             <div className='text-white text-xl md:text-5xl font-bold text-right'>
                                 <span>Food & Beverage</span>
                             </div>
-                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold leading-[1.20]'>
-                                <div className='flex-flex-col text-right'>
+                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold'>
+                                <div className='flex-flex-col text-right leading-[1.20]'>
                                     <span className="hidden md:block">While enjoying delicious and enticing meal, </span>
                                     <span className="hidden md:block">both ordering applications and payment</span>
                                     <span className="hidden md:block">methods contribute to providing customers</span>
                                     <span className="hidden md:block">with a delightful dining experience.</span>
                                 </div>
-                                <div className='flex-flex-col text-right'>
+                                <div className='flex-flex-col text-right leading-[1.20]'>
                                     <span className="block md:hidden">While enjoying delicious and enticing meal,</span>
                                     <span className="block md:hidden">both ordering applications and payment methods</span>
                                     <span className="block md:hidden">contribute to providing customers with a delightful</span>
@@ -395,14 +394,14 @@ const Home = () => {
                             <div className='text-white text-xl md:text-5xl font-bold text-left'>
                                 <span>Retail </span>
                             </div>
-                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold leading-[1.20]'>
-                                <div className='flex-flex-col text-left'>
+                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold'>
+                                <div className='flex-flex-col text-left leading-[1.20]'>
                                     <span className="hidden md:block">Whether it's customer lists, orders,</span>
                                     <span className="hidden md:block">inventory records, or employee </span>
                                     <span className="hidden md:block">attendance, all you need is one </span>
                                     <span className="hidden md:block">intelligent system. </span>
                                 </div>
-                                <div className='flex-flex-col text-left'>
+                                <div className='flex-flex-col text-left leading-[1.20]'>
                                     <span className="block md:hidden">Whether it's customer lists, orders, inventory</span>
                                     <span className="block md:hidden">records, or employee attendance, all you need</span>
                                     <span className="block md:hidden">is one intelligent system.</span>
@@ -419,14 +418,14 @@ const Home = () => {
                             <div className='text-white text-xl md:text-5xl font-bold text-right'>
                                 <span>Wholesale</span>
                             </div>
-                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold leading-[1.20]'>
-                                <div className='flex-flex-col text-right'>
+                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold'>
+                                <div className='flex-flex-col text-right leading-[1.20]'>
                                     <span className="hidden md:block">Bulk discounts on goods, wholesale </span>
                                     <span className="hidden md:block">prices on merchandise, our intelligent</span>
                                     <span className="hidden md:block">system specializes in sourcing solutions</span>
                                     <span className="hidden md:block">for businesses and retailers.</span>
                                 </div>
-                                <div className='flex-flex-col text-right'>
+                                <div className='flex-flex-col text-right leading-[1.20]'>
                                     <span className="block md:hidden">Bulk discounts on goods, wholesale prices on</span>
                                     <span className="block md:hidden">merchandise, our intelligent system specialises in</span>
                                     <span className="block md:hidden">sourcing solutions for businesses and retailers.</span>
@@ -444,14 +443,14 @@ const Home = () => {
                             <div className='text-white text-xl md:text-5xl font-bold text-left'>
                                 <span>Logistic </span>
                             </div>
-                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold leading-[1.20]'>
-                                <div className='flex-flex-col text-left'>
+                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold'>
+                                <div className='flex-flex-col text-left leading-[1.20]'>
                                     <span className="hidden md:block">Designing an efficient transportation, </span>
                                     <span className="hidden md:block">logistics, and supply chain system is </span>
                                     <span className="hidden md:block">no longer a daunting task; it's all </span>
                                     <span className="hidden md:block">within our grasp. </span>
                                 </div>
-                                <div className='flex-flex-col text-left'>
+                                <div className='flex-flex-col text-left leading-[1.20]'>
                                     <span className="block md:hidden">Designing an efficient transportation, logistics, and </span>
                                     <span className="block md:hidden">supply chain system is no longer a daunting task; it's </span>
                                     <span className="block md:hidden">all within our grasp.</span>
@@ -468,14 +467,14 @@ const Home = () => {
                             <div className='text-white text-xl md:text-5xl font-bold text-right'>
                                 <span>Enterprise</span>
                             </div>
-                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold leading-[1.20]'>
-                                <div className='flex-flex-col text-right'>
+                            <div className='flex flex-col text-white text-sm md:text-xl font-medium md:font-semibold'>
+                                <div className='flex-flex-col text-right leading-[1.20]'>
                                     <span className="hidden md:block">The characteristics of an efficient enterprise management </span>
                                     <span className="hidden md:block">system include enhancing communication between the</span>
                                     <span className="hidden md:block">company and employees, and employing methods that</span>
                                     <span className="hidden md:block">influence employee attitudes and work progress.</span>
                                 </div>
-                                <div className='flex-flex-col text-right'>
+                                <div className='flex-flex-col text-right leading-[1.20]'>
                                     <span className="block md:hidden">The characteristics of an efficient enterprise</span>
                                     <span className="block md:hidden">management system include enhancing</span>
                                     <span className="block md:hidden">communication between the company and </span>
@@ -555,7 +554,6 @@ const Home = () => {
                 <div id="Button_Component" className="fixed inset-0 flex justify-center z-50 items-center transition-colors invisible">
                 </div>
             </div>
-
             <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     )
