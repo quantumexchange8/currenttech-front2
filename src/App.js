@@ -11,21 +11,23 @@ import { LanguageProvider } from "./LanguagesContext.js";
 
 function App() {
   return (
-    <LanguageProvider>
-    <BrowserRouter>
-      <div className="overflow-x-hidden sm:overflow-auto">
-        <Topbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="advantage" element={<Advantage />} />
-          <Route path="products" element={<Products />} />
-          <Route path="careers" element={<Careers />} />
-        </Routes>
-        <Footer/>
-      </div>
-    </BrowserRouter>
-    </LanguageProvider>
+    <div>
+      <LanguageProvider>
+  
+        <div className="overflow-x-hidden sm:overflow-auto">
+          <Topbar />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="advantage" element={<Advantage />} />
+            <Route path="products" element={<Products />} />
+            <Route path="careers" element={<Careers />} />
+          </Routes>
+          <Footer/>
+        </div>
+      
+      </LanguageProvider>
+    </div>
   );
 }
 
