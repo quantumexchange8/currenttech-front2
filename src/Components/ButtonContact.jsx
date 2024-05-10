@@ -1,7 +1,28 @@
 import { useState, useEffect } from 'react';
 import Icon from '../Assets/Images/icon.svg';
 import Close from '../Assets/Images/close.svg';
+import emailjs from 'emailjs-com';
 // import { useTranslation } from 'react-i18next';
+
+const sendEmail = (formData) => {
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+      })
+      .catch((error) => {
+        console.error('Email sending failed:', error);
+      });
+  };
+  
+  const handleSendButtonClick = (e) => {
+    e.preventDefault();
+    const formData = {
+      name: name,
+      email: email,
+      message: message
+    };
+    sendEmail(formData);
+  };
 
 const ModalContact = ({ open, onClose }) => {
     // const { t } = useTranslation();
@@ -74,6 +95,7 @@ const ModalContact = ({ open, onClose }) => {
                                 <button type="submit"className="w-[139.6px] h-[34.9px] md:w-[200px] md:h-[50px] rounded-[10px] bg-gradient-to-br from-indigo-600 via-indigo-800 to-black text-white flex items-center justify-center text-[13.96px] md:text-[20px] font-bold" style={{ cursor: 'pointer' }}>
                                     send
                                 </button>
+                                <button type="submit" onClick={handleSendButtonClick}>Send</button>
                             </div>
                         </form>
                     </div>

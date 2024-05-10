@@ -24,7 +24,7 @@ const Careers = () => {
 
                 <div className='absolute left-5 md:left-[100px] bottom-5 md:bottom-[100px] flex flex-col text-white text-left gap-5'>
                     <span className='text-xl md:text-5xl font-bold'>Career Opportunities </span>
-                    <div className='flex flex-col text-base md:text-4xl font-medium leading-[1.20]'>
+                    <div className='flex flex-col text-base md:text-4xl font-medium'>
                         <div className='hidden md:flex flex-col leading-[1.20]'>
                             <span>We're not just creating products. </span>
                             <span>We're crafting solutions to </span>

@@ -3,9 +3,10 @@ import {useState} from 'react';
 import { Software, Website, MobileApp, ManagementSystem, PosSystem, SupportService} from '../Components/Outline.jsx';
 import { WhatsApp, Gmail } from '../Components/Brand.jsx';
 import Modal from '../Components/Modal';
+import useTranslation from '../useTranslation.js'
 
 const Home = () => {
-
+    const { t } = useTranslation();
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
 
@@ -27,8 +28,8 @@ const Home = () => {
                     className='absolute inset-0 flex flex-col justify-center items-center text-white text-xl md:text-5xl font-bold' 
                     style={{ textShadow: '2px 4px 4px rgba(255, 255, 255, 0.40)' }}
                 >
-                    <span>You cannot stop the </span>
-                    <span>Evolution of Technology </span>
+                    <span className='w-[566px] text-center'>{t("Home.videoTitle")}</span>
+                    
                 </div>
             </div>
 

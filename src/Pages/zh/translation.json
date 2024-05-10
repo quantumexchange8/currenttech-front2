@@ -1,0 +1,25 @@
+{
+    "Topbar":{
+        "advantagePage":"好处",
+        "productsPage":"产品",
+        "careerPage": "职业"
+      },
+
+    "Home":{
+        "videoTitle":"科技的进步无法阻挡",
+        "industriesTitle":"CURRENT TECH INDUSTRIES",
+        "industriesDescription":"Current Tech Industries Sdn Bhd was established in 2006 as a high-tech software enterprise focused on research, development, production, and sales of technology products. Headquartered in Kuala Lumpur, Malaysia, we have plans to establish branches in Penang, Sabah, and Sarawak. With strong technological expertise and research capabilities, we are developers of projects across multiple fields and recognised as a \"New Technology Enterprise\" in the market.",
+        "industriesDescription2":"Since our inception, we have adhered to the principles of talent-oriented management and integrity-based operation, attracting industry elites. We integrate advanced information and software technologies, management methods, and corporate experience from both domestic and international sources, providing comprehensive solutions to assist enterprises in enhancing management capabilities and production capacity. Our goal is to help businesses maintain competitiveness in the fierce market competition, achieving rapid and stable development.",
+        "technologyTitle":"Technology",
+        "technologyDescription":"Is the key to unlocking a sustainable and prosperous future. Through innovation and technological advancements. Technology has ushered in an era of intelligence, automation, and digitisation, propelling the transformation and upgrading of industries.",
+        "serviceTitle":"Our Service",
+        "serviceSubTitle":{
+        "softwareTitle":"Software",
+        "websiteTitle":"Website",
+        "mobileAppTitle":"Mobile App",
+        "managementSystemTitle":"Management System",
+        "posSystemTitle":"POS System",
+        "support&serviceTitle":"Support & Service"
+        }
+    }
+}

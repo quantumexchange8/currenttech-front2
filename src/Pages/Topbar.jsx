@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Menu, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
 import { Earphone, Lang } from '../Components/Outline';
 import LogoSvg from '../Assets/Images/logo.svg';
 import { Link, useLocation } from "react-router-dom";
 import Menu_Option from "../Assets/Images/Menu.png"
 import Modal from '../Components/Modal';
+import { LanguageContext } from "../LanguagesContext";
 
 const Topbar = () => {
     const location = useLocation();
-
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
+    const [isMenuOpen, setIsMenuOpen] = useState(false); // Define isMenuOpen state
+    const { t, language, updateLanguage } = useContext(LanguageContext);
+
+    console.log(language)
 
     const handleButtonClick = (button) => {
         setOpenButton(true);
         setSelectedButton(button);
+    };
+
+    const handleLanguageChange = (lang) => {
+        updateLanguage(lang);
+        setIsMenuOpen(false); // Close the menu after language change
     };
 
     return (
@@ -33,11 +42,15 @@ const Topbar = () => {
                     <div className="hidden md:flex justify-center gap-[30px]">
                         <Link
                             to="/advantage"
-                            className={`text-base font-medium ${
+                            className={`text-base ${
                                 location.pathname === '/advantage' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
-                            }`}
+                            }
+                            `}
                         >
-                            Advantage
+                            <span className={language === 'en' ? 'font-medium' : 'font-semibold'}>
+                                {t("Topbar.advantagePage")}
+                            </span>
+                            
                         </Link>
                         <Link
                             to="/products"
@@ -45,7 +58,7 @@ const Topbar = () => {
                                 location.pathname === '/products' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
-                            Products
+                            {t("Topbar.productsPage")}
                         </Link>
                         <Link
                             to="/careers"
@@ -53,7 +66,7 @@ const Topbar = () => {
                                 location.pathname === '/careers' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
-                            Career
+                            {t("Topbar.careerPage")}
                         </Link>
                     </div>
 
@@ -88,6 +101,7 @@ const Topbar = () => {
                                                         className={`${
                                                             active ? 'bg-violet-500 text-white' : 'text-gray-900'
                                                         } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                                        onClick={() => handleLanguageChange('en')}
                                                     >
                                                         English
                                                     </button>
@@ -125,6 +139,7 @@ const Topbar = () => {
                                                         className={`${
                                                             active ? 'bg-violet-500 text-white' : 'text-gray-900'
                                                         } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                                        onClick={() => handleLanguageChange('zh')}
                                                     >
                                                         中文
                                                     </button>
@@ -270,30 +285,21 @@ const Topbar = () => {
                             >
                                 <Menu.Items className="absolute mt-5 w-[300px] h-[64px] rounded-[30px] bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
                                     <div className="flex flex-row">
-                                        <Link
-                                            to="/"
-                                            className={`${
-                                                location.pathname === '/' 
-                                            }`}
-                                        >
+                                        
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button
                                                         className={`${
                                                             active ? 'bg-violet-500 text-white' : 'text-gray-900'
                                                         } group flex flex-row w-full text-base place-items-center rounded-[30px] px-7 py-5`}
+                                                        onClick={() => handleLanguageChange('en')}
                                                     >
-                                                        English
+                                                        English {language === 'en'}
                                                     </button>
                                                 )}
                                             </Menu.Item>
-                                        </Link>
-                                        <Link
-                                            to="/Advantage"
-                                            className={`${
-                                                location.pathname === '/Advantage' 
-                                            }`}
-                                        >
+                                        
+                                        
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button
@@ -305,25 +311,21 @@ const Topbar = () => {
                                                     </button>
                                                 )}
                                             </Menu.Item>
-                                        </Link>
-                                        <Link
-                                            to="/Products"
-                                            className={`${
-                                                location.pathname === '/Products' 
-                                            }`}
-                                        >
+                                        
+                                        
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button
                                                         className={`${
                                                             active ? 'bg-violet-500 text-white' : 'text-gray-900'
                                                         } group flex flex-row w-full text-base place-items-center rounded-[30px] px-[30px] py-5`}
+                                                        onClick={() => handleLanguageChange('zh')}
                                                     >
-                                                        中文
+                                                        中文 {language === 'zh'}
                                                     </button>
                                                 )}
                                             </Menu.Item>
-                                        </Link>
+                                        
                                     </div>
                                 </Menu.Items>
                             </Transition>
