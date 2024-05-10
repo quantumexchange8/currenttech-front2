@@ -109,9 +109,9 @@ const Topbar = () => {
                                             </Menu.Item>
                                         </Link>
                                         <Link
-                                            to="/Advantage"
+                                            to="/advantage"
                                             className={`${
-                                                location.pathname === '/Advantage' 
+                                                location.pathname === '/advantage' 
                                             }`}
                                         >
                                             <Menu.Item>
@@ -128,9 +128,9 @@ const Topbar = () => {
                                         </Link>
                                     
                                         <Link
-                                            to="/Products"
+                                            to="/products"
                                             className={`${
-                                                location.pathname === '/Products' 
+                                                location.pathname === '/products' 
                                             }`}
                                         >
                                             <Menu.Item>
@@ -192,7 +192,7 @@ const Topbar = () => {
                                         <Link
                                             to="/advantage"
                                             className={`${
-                                                location.pathname === '/Advantage' 
+                                                location.pathname === '/advantage' 
                                             }`}
                                         >
                                             <Menu.Item>
@@ -211,7 +211,7 @@ const Topbar = () => {
                                         <Link
                                             to="/products"
                                             className={`${
-                                                location.pathname === '/Products' 
+                                                location.pathname === '/products' 
                                             }`}
                                         >
                                             <Menu.Item>
@@ -229,7 +229,7 @@ const Topbar = () => {
                                         <Link
                                             to="/careers"
                                             className={`${
-                                                location.pathname === '/Careers' 
+                                                location.pathname === '/careers' 
                                             }`}
                                         >
                                             <Menu.Item>
