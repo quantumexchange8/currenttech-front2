@@ -1,7 +1,7 @@
 import './App.css';
 import Topbar from './Pages/Topbar';
 import Footer from './Pages/Footer';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Advantage from "./Pages/Advantage";
 import Products from "./Pages/Products";
