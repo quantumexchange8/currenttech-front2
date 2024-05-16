@@ -1,0 +1,316 @@
+{
+    "Topbar": {
+      "advantagePage": "Kelebihan",
+      "productsPage": "Produk",
+      "careerPage": "Kerjaya"
+    },
+
+    "mobileTopbar": {
+      "homePage":"Utama",
+      "advantagePage": "Kelebihan",
+      "productsPage": "Produk",
+      "careerPage": "Kerjaya",
+      "supportPage":"Sokongan"
+    },
+
+    "Home": {
+      "homeVideoTitle": "Anda tidak boleh ",
+      "homeVideoTitle2":"menghentikan Evolusi Teknologi",
+      "industriesTitle": "CURRENT TECH INDUSTRIES",
+      "industriesDescription": "Current Tech Industries Sdn Bhd ditubuhkan pada tahun 2006 sebagai perusahaan perisian berteknologi tinggi yang berfokus kepada penyelidikan, pembangunan, pengeluaran, dan penjualan produk teknologi. Berpangkalan di Kuala Lumpur, Malaysia, kami mempunyai rancangan untuk menubuhkan cawangan di Pulau Pinang, Sabah, dan Sarawak. Dengan kepakaran teknologi yang kukuh dan kemampuan penyelidikan, kami adalah pembangun projek di pelbagai bidang dan diiktiraf sebagai \"Perusahaan Teknologi Baru\" di pasaran.",
+      "industriesDescription2": "Sejak penubuhan kami, kami mematuhi prinsip pengurusan berorientasikan bakat dan operasi berasaskan integriti, menarik perhatian golongan elit industri. Kami mengintegrasikan teknologi maklumat dan perisian yang canggih, kaedah pengurusan, dan pengalaman korporat dari sumber domestik dan antarabangsa, menyediakan penyelesaian komprehensif untuk membantu perniagaan meningkatkan keupayaan pengurusan dan kapasiti pengeluaran. Matlamat kami adalah membantu perniagaan mengekalkan daya saing dalam persaingan pasaran yang sengit, mencapai pembangunan yang cepat dan stabil.",
+      "technologyTitle": "Teknologi",
+      "technologyDescription": "Kunci untuk membuka masa depan yang mampan dan sejahtera. Melalui inovasi dan kemajuan teknologi. Teknologi telah membawa era kecerdasan, automatik, dan digitalisasi, mendorong transformasi dan peningkatan industri.",
+      "serviceTitle": "Perkhidmatan Kami",
+      "serviceSubTitle": {
+        "softwareTitle": "Perisian",
+        "websiteTitle": "Laman web",
+        "mobileAppTitle": "Aplikasi Mudah Alih",
+        "managementSystemTitle": "Sistem Pengurusan",
+        "posSystemTitle": "Sistem POS ",
+        "support&serviceTitle": "Sokongan & Perkhidmatan"
+      },
+      "serviceSubTitle_Description": {
+        "softwareDescription": "Memperkasakan perniagaan anda dengan penyelesaian perisian yang ",
+        "softwareDescription2":"disesuaikan. Pasukan pakar pembangun kami akan menjadikan idea anda menjadi kenyataan, memberikan perisian yang inovatif dan boleh dipercayai yang direka khas mengikut keperluan anda.",
+        "websiteDescription": "Kami membangunkan laman web, tidak kira besar atau kecil, melalui pendekatan secara berperingkat. Dari perancangan pra-produksi, pembuatan reka bentuk GUI, hingga pembangunan “backend”; kami melaksanakannya dengan teliti.",
+        "mobileAppDescription": "Kami menukarkan idea asas pelanggan kami menjadi aplikasi inovatif untuk telefon bimbit, cloud, atau web. Kami memastikan aplikasi yang dibangunkan serasi dengan platform utama serta memenuhi keperluan pelbagai peranti. ",
+        "managementSystemDescription": "Employee Intelligence Management System (EIMS) adalah alat ",
+        "managementSystemDescription2":"sumber manusia revolusioner yang direka untuk mengoptimumkan kecekapan aliran kerja. Ia mendorong pertumbuhan organisasi dan membuka potensi pekerja melalui papan pemuka intuitif dan pengautomatan, dengan menggunakan analitik prediktif.",
+        "posSystemDescription": "Tingkatkan operasi perniagaan anda dengan sistem POS kami yang bersepadu. Menguruskan jualan, inventori, dan data pelanggan dengan lancar, sambil menyediakan proses pembayaran yang lancar untuk pelanggan anda.",
+        "support&serviceDescription": "Optimumkan prestasi sistem dengan sokongan pakar kami. Pasukan kami memastikan pembaruan dan penyelesaian masalah tepat pada masanya untuk operasi yang lancar, menjaga sistem anda berfungsi pada tahap kecekapan maksimum."
+      },
+      "innovativeTitle": "Penyelesaian Inovatif untuk Perniagaan Anda",
+      "innovativeDescription": "Gunakan sistem yang kami bangunkan untuk meningkatkan kecekapan, kelestarian, dan interaksi pelanggan dalam perniagaan anda. Penyelesaian revolusioner mengubah landskap, memenuhi permintaan moden, dan memastikan daya saing.",
+      "videoCombinationTitle": {
+        "educationVideoTitle": "Pendidikan",
+        "F&BVideoTitle": "Makanan & Minuman",
+        "retailVideoTitle": "Runcit",
+        "wholesaleVideoTitle": "Pukal",
+        "logisticVideoTitle": "Logistik",
+        "enterpriseVideoTitle": "Perniagaan"
+      },
+      "videoCombinationDescription": {
+        "educationVideoDescription": "Pelajaran tanpa had. Sekolah menggunakan",
+        "educationVideoDescription2": "teknologi kami untuk melakukan perkara-perkara luar biasa di dalam bilik darjah dan dalam komuniti mereka.",
+        "F&BVideoDescription": "Sambil menikmati hidangan yang lazat dan memikat, kedua-dua aplikasi pesanan dan kaedah pembayaran menyumbang dalam menyediakan pengalaman makan yang menyeronokkan kepada pelanggan.",
+        "retailVideoDescription": "Sama ada senarai pelanggan, pesanan, rekod inventori, atau kehadiran pekerja, yang anda perlukan hanyalah satu sistem yang bijak.",
+        "wholesaleVideoDescription": "Diskaun pukal atas barangan, harga borong atas barang dagangan, sistem pintar kami khusus dalam mencari penyelesaian untuk perniagaan dan peruncit.",
+        "logisticVideoDescription": "Mereka bentuk sistem pengangkutan, logistik, dan rantaian bekalan yang cekap bukan lagi tugas yang sukar; semuanya berada dalam genggaman kami.",
+        "enterpriseVideoDescription": "Ciri-ciri sistem pengurusan perniagaan yang cekap termasuk meningkatkan komunikasi antara syarikat dan pekerja, dan menggunakan kaedah yang mempengaruhi sikap pekerja dan kemajuan kerja."
+      },
+      "homeReminderTitle": "Tidak kira dalam bidang atau industri mana anda berada",
+      "homeReminderDescription": "Mempunyai sistem pintar sendiri adalah berbaloi. Jangan ragu untuk menghubungi kami untuk penyelesaian yang cekap yang direka khas untuk anda.",
+      "whatsappDescription":"Show QR to start",
+      "whatsappDescription2":"communicate with us",
+      "gmailDescription":"Don't hesitate!",
+      "gmailDescription2":"Send us a message",
+      "whatsappDescriptionMobile":"Link to whatsapp start ",
+      "whatsappDescriptionMobile2":"communicate with us.",
+      "gmailDescriptionMobile":"Don't hesitate!",
+      "gmailDescriptionMobile2":"Send us a message"
+    },
+
+    "Advantage":{
+      "advantageVideoTitle":"Bebas",
+      "advantageVideoDescription":"Mempunyai sistem peribadi yang kuat untuk mencapai matlamat anda adalah seperti teknologi berjalan beriringan dengan anda.",
+      "advantageSelfTitle":"Kelebihan teknologi kami untuk mereka yang bekerja sendiri",
+      "advantageSelfDescription":"Bagi individu yang bekerja sendiri seperti anda, tanpa mengira industri yang anda ceburi, kami dengan teguh percaya bahawa hubungan anda dengan teknologi amat diperlukan. Kami pakar dalam menyesuaikan sistem berkualiti tinggi khusus untuk anda, memastikan perniagaan anda mencapai kejayaan yang baru dan membuat pengurusan perhubungan anda dengan pelanggan menjadi lebih mudah dan intim.",
+      "advantageSelfListTitle":"\"Kami Menyesuaikan Untuk Anda\"",
+      "advantageSelfListSubtitle":{
+         "websiteTitle":"Laman web",
+         "managementTitle":"Sistem Pengurusan",
+         "paymentTitle":"Sistem Pembayaran",
+         "supportTitle":"Sokongan & Perkhidmatan"
+      },
+      "advantageListDescription":{
+       "websiteDescription":"Dari pendaftaran domain hingga reka bentuk laman web, kami mempunyai kakitangan perkhidmatan yang akan berkomunikasi dengan anda secara terperinci sepanjang proses pengeluaran untuk memastikan produk akhir sepenuhnya memenuhi keperluan konseptual anda.",
+       "managementDescription":"Sama ada perniagaan anda yang bebas itu besar atau kecil, anda masih memerlukan sistem pengurusan yang menyeluruh. Itulah sebabnya kami mengambil pendekatan ini dengan teliti untuk memastikan pengurusan perniagaan anda bebas dari sebarang halangan.",
+       "paymentDescription":"Ini adalah perkhidmatan yang paling penting dalam perniagaan yang ",
+       "paymentDescription2":"tidak dapat dipertikaikan, dan kami unggul dalam mengurusinya dengan sempurna. Individu yang bekerja sendiri boleh memilih untuk menggunakan saluran pembayaran sedia ada atau memohon untuk mengintegrasikan penyelesaian pembayaran baru dengan kami.",
+       "supportDescription":"Ini juga salah satu aspek yang paling penting yang kami utamakan.",
+       "supportDescription2":" Kami menyediakan perkhidmatan 24/5 yang paling komprehensif untuk memastikan operasi sistem anda berjalan lancar, walaupun jika anda perlu menambah ciri-ciri baru atau perkhidmatan tambahan."
+      },
+      "advantageSelfReminderTitle":"Jangan ragu!",
+      "advantageSelfReminderDescription":"Meminta sebut harga sekarang untuk membangunkan sistem peribadi anda yang bebas.",
+      "advantageSelfReminderDescription2":"Anda juga boleh menjadualkan perbincangan dengan kakitangan perkhidmatan kami untuk membincangkan sebarang idea pembangunan. Kami tidak mengenakan sebarang yuran perbincangan untuk perkhidmatan ini.",
+      "whatsappDescription":"Show QR to start",
+      "whatsappDescription2":"communicate with us",
+      "gmailDescription":"Don't hesitate!",
+      "gmailDescription2":"Send us a message",
+      "whatsappDescriptionMobile":"Link to whatsapp start ",
+      "whatsappDescriptionMobile2":"communicate with us.",
+      "gmailDescriptionMobile":"Don't hesitate!",
+      "gmailDescriptionMobile2":"Send us a message",
+      "enterpriseVideoTitle":"Perniagaan",
+      "enterpriseVideoDescription":"Perniagaan yang kuat dan sistem pengurusan yang kukuh sememangnya tidak dapat dipisahkan, kerana mereka mempunyai keupayaan untuk menguruskan jumlah data yang besar dengan berkesan.",
+      "advantageEnterpriseTitle":"Kelebihan teknologi kami untuk Perniagaan",
+      "advantageEnterpriseDescription":"Pengurusan perniagaan yang cemerlang merangkumi sumber manusia, pentadbiran, kewangan, serta laporan kemajuan kerja pekerja, kehadiran, dan pelbagai sistem insentif pekerja. Itulah sebabnya pasukan teknologi kami telah membangunkan sistem pengurusan yang direka dengan teliti yang sesuai untuk semua jenis perniagaan.",
+      "advantageEnterpriseListTitle":"\"Kami Menyesuaikan Untuk Anda\"",
+      "advantageEnterpriseListSubtitle":{
+         "frontendTitle":"Frontend / Backend",
+         "attendanceTitle":"Sistem Kehadiran",
+         "projectTitle":"Tugasan Projek",
+         "rewardTitle":"Program Ganjaran",
+         "supportTitle":"Sokongan & Perkhidmatan"
+      },
+      "advantageEnterpriseListDescription":{
+       "frontendDescription":"“Frontend” dan “backend”  sistem pengurusan yang canggih mencerminkan imej profesional perniagaan. Untuk mencapai hasil yang lebih positif, kami mempunyai kakitangan teknikal yang berdedikasi yang terlibat dalam perbincangan mendalam dengan pengurusan perniagaan untuk menyesuaikan pembangunan dan memberikan penjelasan.",
+       "attendanceDescription":"Kami dengan teliti telah membangunkan sistem pengesanan kehadiran yang mudah, menyediakan penyelesaian yang lancar dan mudah untuk pengurusan masa. Selain itu, kami telah memasukkan mekanisme ganjaran ke dalam sistem kehadiran pekerja, menggalakkan pekerja untuk menunjukkan kemahiran pengurusan masa yang cemerlang.",
+       "projectDescription":"Visualisasi data yang tepat membolehkan pemantauan dalam masa nyata terhadap metrik tugasan projek, prestasi jualan, dan pencapaian matlamat, yang berperanan sebagai penggerak. Cerapan tentang kecekapan pasukan, cabaran, dan tanggungjawab serta sumbangan pekerja memberikan kuasa kepada penyesuaian fleksibel, mendorong pertumbuhan syarikat yang mampan.",
+       "rewardDescription":"Kami percaya bahawa pekerja boleh menikmati faedah syarikat yang unik degan merangsang dan membebaskan penglibatan, memperoleh mata ganjaran, dan membuka lencana. Selain itu, pasukan pembangun teknologi kami telah mengintegrasikan ciri-ciri untuk pertandingan peribadi dan aktiviti kejutan. Tingkatkan pengalaman kerja pekerja melalui kepelbagaian fungsi.",
+       "supportDescription":"Ini juga salah satu aspek yang paling penting yang kami utamakan. ",
+       "supportDescription2":"Selain menawarkan sokongan perkhidmatan dalam talian 24/5, kami juga menyediakan tutorial individu untuk produk kami. Ini memastikan operasi yang lancar bagi sistem anda sepanjang penggunaannya, walaupun anda perlu menambah ciri-ciri baru atau perkhidmatan tambahan."
+      },
+      "advantageEnterpriseReminderTitle":"Jangan ragu!",
+      "advantageEnterpriseReminderDescription":"Sila minta sebut harga sekarang untuk pembangunan sistem perusahaan anda.",
+      "advantageEnterpriseReminderDescription2":"Syarikat anda juga boleh menjadualkan perbincangan dengan kakitangan perkhidmatan kami untuk membincangkan sebarang idea pembangunan. Kami tidak mengenakan sebarang yuran perbincangan untuk perkhidmatan ini."
+    },
+
+
+    "Products":{
+      "productVideoTitle":"Bangunkan",
+      "productVideoDescription":"Pembangunan mesti melalui penyusunan rangka kerja, memahami butiran, komunikasi yang terperinci, perancangan yang teliti, ujian yang ketat sebelum ia boleh menjadi produk yang siap.",
+      "productTechnologyTitle":"Produk berkualiti tinggi yang dibangunkan melalui teknologi canggih",
+      "productTechnologyDescription":"Ya,",
+      "productTechnologyDescription2":"kami dengan teliti telah membangunkan perisian",
+      "productTechnologyDescription3":"dalam bidang ini, dan kerjasama kami dengan perniagaan dalam sektor ini adalah tidak dapat dipisahkan. Itulah sebabnya kami menterjemahkan idea-idea yang paling cemerlang dari jurutera teknikal kami ke dalam penciptaan yang paling inovatif dan mencari penyelesaian yang lebih berkesan untuk pelanggan kami.",
+      "mobileProductTechnologyDescription":"Ya,",
+      "mobileProductTechnologyDescription2":"kami dengan teliti telah ",
+      "mobileProductTechnologyDescription3":"membangunkan perisian dalam bidang ini, dan kerjasama kami dengan perniagaan dalam sektor ini adalah tidak dapat dipisahkan. Itulah sebabnya kami menterjemahkan idea-idea yang paling cemerlang dari jurutera teknikal kami ke dalam penciptaan yang paling inovatif dan mencari penyelesaian yang lebih berkesan untuk pelanggan kami.",
+      "education":{
+        "educationTitle":"PENDIDIKAN",
+        "educationCategories1":"Kindergarten",
+        "educationCategories2":" Primary",
+        "educationCategories3":"Secondary",
+        "educationCategories4":"University",
+        "educationCategories5":"Tuition Center",
+        "educationImage1":"Kindertown Parent",
+        "educationImage2":"Kindertown Teacher",
+        "educationImage3":"Kindertown Admin",
+        "educationDescription":"Perjalanan pembelajaran seorang kanak-kanak bermula di dalam bilik darjah, menggunakan alat yang fleksibel, mesra pengguna, memberi keutamaan kepada privasi, aksesibiliti, dan kelestarian. Itulah sebabnya kami telah membangunkan produk ini untuk pendidikan, membolehkan ibu bapa, guru, dan pemilik sekolah memahami pertumbuhan anak mereka di tadika dengan lebih baik. Selain itu, kami dalam proses membangunkan siri perisian pendidikan untuk sekolah rendah, sekolah menengah, universiti, dan pusat tuisyen pada masa depan."
+      },
+      
+      "attendance":{
+        "attendanceTitle":"KEHADIRAN",
+        "attendanceCategories1":"Business",
+        "attendanceCategories2":"Company",
+        "attendanceCategories3":"Enterprise",
+        "attendanceCategories4":"Industries",
+        "attendanceImage":"MOCAP",
+        "attendanceDescription":"Dalam landskap korporat semasa, perniagaan berhadapan dengan cabaran seperti kecekapan pekerja yang tidak konsisten, kehilangan bakat, dan pengurusan kos. Oleh itu, kami dengan teliti telah membangunkan mekanisme ganjaran dan program pengiktirafan untuk membantu syarikat mengatasi cabaran ini secara berkesan. Motion Capture “MOCAP” bukan sahaja secara signifikan meningkatkan produktiviti pekerja tetapi juga meningkatkan moral dan kualiti output. Selain itu, kami percaya bahawa mengiktiraf dan memberi ganjaran kepada pekerja membina budaya organisasi yang positif, di mana pekerja berasa disokong dan dihargai dalam peranan mereka, sekaligus membantu mengurangkan penggantian bakat."
+      },
+
+      "financial":{
+        "financialTitle":"KEWANGAN",
+        "financialCategories1":"MetaTrader 4",
+        "financialCategories2":"MetaTrader 5",
+        "financialCategories3":"cTrader",
+        "financialImage":"Smart Dash",
+        "financialDescription":"Pasukan teknikal IT kami pakar dalam membangunkan penyelesaian pintar bagi operasi belakang MetaQuote (MT4 / MT5) dan cTrader untuk pengendali label putih dan label utama. Kami cemerlang dalam menyesuaikan reka bentuk web, “frontend” pelanggan, antara muka ejen, “backend” pentadbir, dan sistem rebat komisen mengikut keperluan penyedia label putih dan pengendali label utama. Smart Dash kami direka untuk memaparkan data yang diingini oleh pelanggan dengan sempurna, dan kami memberi keutamaan kepada menyediakan keselamatan yang paling kukuh bagi dana pelanggan dan maklumat peribadi mereka."
+      },
+
+      "management":{
+        "managementTitle":"PENGURUSAN",
+        "managementCategories1":"CopyTrading",
+        "managementCategories2":"Percentage Allocation Management Module (PAMM)",
+        "mobileManagementCategories1":"CopyTrading",
+        "mobileManagementCategories2":"Percentage Allocation Management Module",
+        "mobileManagementCategories3":"(PAMM)",
+        "managementImage":"Financial Board",
+        "managementDescription":"Sebagai pedagang yang terampil dan terkenal, kami memahami bahawa menguruskan pelabur yang ramai dan dana yang besar bukan sahaja memerlukan memberi pulangan dan objektif pelaburan yang besar tetapi juga mengekalkan pengurusan risiko yang ketat dalam pelaburan. Oleh itu, pedagang dengan jelas memerlukan sistem pengurusan dana perdagangan kewangan yang pintar dan canggih. Pasukan pakar IT kami berkemampuan sepenuhnya untuk melaksanakan pembangunan sistem sedemikian. Kami bukan sahaja menambah rekabentuk yang dipersonalisasi pada \"dashboard\" tetapi juga memasukkan mod yang ringkas dan mudah dikendalikan, memastikan pelabur dan pedagang tidak perlu risau menghadapi kesukaran operasi kerana kurang pemahaman."
+      },
+
+      "labelSolutions":{
+        "labelSolutionsTitle":"PENYELESAIAN LABEL",
+        "mobileLabelSolutionsTitle1":"PENYELESAIAN",
+        "mobileLabelSolutionsTitle2":"LABEL",
+        "labelSolutionsCategories1":"Full Label Apply",
+        "labelSolutionsCategories2":"Integration",
+        "labelSolutionsCategories3":"Licensing",
+        "labelSolutionsCategories4":" CRM Portal",
+        "labelSolutionsCategories5":" Servicing",
+        "labelSolutionsImage1":"MetaTrader 4",
+        "labelSolutionsImage2":"MetaTrader 5",
+        "labelSolutionsImage3":"cTrader",
+        "labelSolutionsDescription":"Kami bukan sahaja mengintegrasi antara muka platform perdagangan dengan kepintaran \"backend\", tetapi kami juga menawarkan penyelesaian label putih dan label utama Metaquote (MT5)  and cTrader. Kelebihan perkhidmatan sehenti kami ialah memastikan anda terlepas dari kesulitan yang tidak perlu dan membolehkan anda untuk mempercepatkan operasi pelancaran, mengelakkan terlepas masa terbaik untuk operasi."
+      },
+
+      "metaEditor":{
+        "metaEditorTitle":"META EDITOR",
+        "metaEditorCategories1":"MQL4 EA",
+        "metaEditorCategories2":"MQL5 EA",
+        "metaEditorCategories3":"cTrader EA",
+        "metaEditorCategories4":"Automate Trading",
+        "metaEditorDescription":"Ini semestinya berita baik untuk pedagang memandangkan penggunaan AI yang meluas menjadi trend yang tidak dapat dielakkan. Banyak firma pelaburan and pedagang terkemuka telah mula menggunakan sistem perdagangan automatik AI dan kami pakar dalam membangunkan sistem perdagangan pintar sedemikian. Kami boleh mengubah sepenuhnya cara berfikir dan strategi pedagang terkemuka ke dalam sistem perdagangan AI dan menerapkannya untuk berdagang pada platform Metatrader 4, Metatrader 5 dan cTrader."
+      },
+      
+      "cryptoWallet":{
+        "cryptoWalletTitle":"CRYPTO WALLET",
+        "cryptoWalletCategories1":"Crypto Payment Solution",
+        "cryptoWalletCategories2":"Crypto Payment Gateway",
+        "cryptoWalletImage":"TTPAY",
+        "cryptoWalletDescription":"Banyak syarikat operasi multinasional menjalankan perniagaan melalui laman web malah firma pelaburan tidak terhad beroperasi semata-mata dalam negara sendiri. Oleh itu, adalah penting untuk mempunyai sistem pembayaran yang komprehensif dan sangat selamat. Sistem pembayaran TTPAY bukan sahaja menangani cabaran pemabayaran rentas sempadan, malah ia secara signifikan meningkatkan kelebihan keselamatan untuk peniaga. Selain itu, permohonan untuk akaun sistem TTPAY payment adalah percuma."
+      },
+
+      "productsReminderTitle":"Tidak kira dalam bidang atau industri mana anda berada",
+      "productsReminderDescription":"Memiliki sistem pintar sendiri adalah berbaloi. Jangan ragu untuk menghubungi kami untuk penyelesaian yang cekap yang disesuaikan khas untuk anda.",
+      "whatsappDescription":"Show QR to start",
+      "whatsappDescription2":"communicate with us",
+      "gmailDescription":"Don't hesitate!",
+      "gmailDescription2":"Send us a message",
+      "whatsappDescriptionMobile":"Link to whatsapp start ",
+      "whatsappDescriptionMobile2":"communicate with us.",
+      "gmailDescriptionMobile":"Don't hesitate!",
+      "gmailDescriptionMobile2":"Send us a message"
+
+    },
+
+
+    "Career":{
+      "careerVideoTitle":"Peluang Kerjaya",
+      "careerVideoDescription":"Kami tidak hanya mencipta produk. Kami mencipta penyelesaian untuk masalah bagi mereka yang menggunakannya. Itulah kelebihan kami!",
+      "careerOpportunitiesTitle":"Sertai Pasukan Kami untuk Peluang Kerjaya yang Menarik",
+      "careerOpportunitiesDescription":"Kukuhkan masa depan anda dengan Current Tech Industries. Sertai pasukan berwawasan kami, terima kepelbagaian, dan bekerja pada projek yang memberi impak. Terokai peluang kerjaya yang memacu pertumbuhan anda dan buat perubahan.",
+      "ItProgrammer":{
+        "ItProgrammerTitle":"IT Programmer",
+        "ItProgrammerDescription":"Kami mengalu-alukan pengaturcara IT untuk menyertai pasukan kami. Mereka perlu mahir dalam pengaturcaraan, pengujian, dan penyelenggaraan kod untuk aplikasi perisian, mampu menyelesaikan masalah pengaturcaraan kompleks, bekerjasama dengan pasukan, dan sentiasa mengikuti trend teknologi untuk pembangunan yang cekap dan penyelesaian yang selamat.",
+        "Skill":{
+          "skillTitle":"Kemahiran & Pengalaman",
+          "skill_1":"LARAVEL PHP",
+          "skill_2":"REACT JS",
+          "skill_3":"VUE JS",
+          "skill_4":"FLUTTER",
+          "skill_5":"CSS / HTML",
+          "skill_6":"JAVA SCRIPT",
+          "skill_7":"MQL4 & MQL5",
+          "experience":"SEKURANG-KURANGNYA 1 TAHUN PENGALAMAN."
+        }
+      },
+
+      "UiDesigner":{
+        "UiDesignerTitle":"UI/UX & Designer",
+        "UiDesignerDescription":"UI/UX & Graphic designer berfokus pada mencipta antara muka yang mesra pengguna, menjalankan penyelidikan, wireframing, prototaip, dan bekerjasama dengan pihak berkepentingan. Mereka bertujuan untuk meningkatkan kepuasan pengguna, penglibatan, dan aksesibiliti melalui reka bentuk yang menarik secara dan pengalaman yang lancar.",
+        "Skill":{
+          "skillTitle":"Kemahiran & Pengalaman",
+          "skill_1":"FIGMA",
+          "skill_2":"PHOTOSHOP",
+          "skill_3":"ILLUSTRATOR",
+          "skill_4":"SKETCH",
+          "skill_5":"ADOBE XD",
+          "experience":"SEKURANG-KURANGNYA 1 TAHUN PENGALAMAN."
+        }
+      },
+
+      "Internship":{
+        "InternshipTitle":"Internship",
+        "InternshipDescription":"Kami menawarkan peluang latihan industri kepada pelajar atau graduan baru untuk mengambil bahagian dalam pengaturcaraan, UI/UX, dan reka bentuk grafik di dalam syarikat kami, memberi mereka pengalaman praktikal dalam bidang-bidang tertentu. Intern menyumbang kepada projek dan aktiviti syarikat sambil memperoleh kemahiran berharga dan meneroka laluan kerjaya yang berpotensi.",
+        "Skill":{
+          "skillTitle":"Kemahiran & Pengalaman",
+          "skill_1":"LARAVEL PHP",
+          "skill_2":"REACT JS",
+          "skill_3":"VUE JS",
+          "skill_4":"FLUTTER",
+          "skill_5":"CSS / HTML",
+          "skill_6":"JAVA SCRIPT",
+          "skill_7":"MQL4 & MQL5",
+          "skill_8":"FIGMA",
+          "skill_9":"PHOTOSHOP",
+          "skill_10":"ILLUSTRATOR",
+          "skill_11":"SKETCH",
+          "skill_12":"ADOBE XD",
+          "skill_13":"DEGREE HOLDER"
+        }
+      },
+
+      "careerReminderTitle":"Jangan ragu!",
+      "careerReminderDescription":"Sertai kami dalam perjalanan yang menarik menuju kepada pelbagai kemungkinan dan pertumbuhan yang tidak terbatas.Terima pelbagai peluang kerjaya, bebaskan potensi anda, dan menjadi sebahagian daripada komuniti yang menyokong dan menghargai pembelajaran sepanjang hayat dan pencapaian peribadi. Mari kita bersama-sama membina masa depan yang lebih cerah.",
+      "whatsappDescription":"Show QR to start",
+      "whatsappDescription2":"communicate with us",
+      "gmailDescription":"Don't hesitate!",
+      "gmailDescription2":"Send us a message",
+      "whatsappDescriptionMobile":"Link to whatsapp start ",
+      "whatsappDescriptionMobile2":"communicate with us.",
+      "gmailDescriptionMobile":"Don't hesitate!",
+      "gmailDescriptionMobile2":"Send us a message"
+    },
+
+    "WhatsappForm":{
+      "whatsappFormTitle":"Sembang sekarang juga",
+      "whatsappFormDescription":"Imbas kod QR dengan kamera peranti anda untuk bersembang dengan wakil khidmat pelanggan kami untuk maklumat lanjut."
+    },
+
+    "MailForm":{
+      "mailFormTitle":"Hantarkan kami mesej",
+      "mailFormDescription":"Selamat datang ke laman hubungi kami Current Tech",
+      "name":"Nama Anda",
+      "email":"Emel",
+      "message":"Mesej",
+      "button":"Hantar",
+      "notificationSuccessfully":"信息已发送",
+      "notificationFailure":"信息发送失败",
+      "sendStatusSuccess":"成功!",
+      "sendStatusFailure":"错误!"
+    }
+   
+  }

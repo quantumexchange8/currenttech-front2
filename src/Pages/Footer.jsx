@@ -48,17 +48,17 @@ const Footer = () => {
                         Start to connect with us:
                     </div>
                     <div className='w-[96px] h-[40px] flex items-center gap-4 bg-white border border-white rounded-[10px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-[15px] py-2'>
-                            <div>
-                                <FooterWhatsApp/>
-                            </div>
-                            <div>
-                                <QR/>
-                            </div>
+                        <div>
+                            <FooterWhatsApp/>
                         </div>
-                        <div className='w-[96px] h-[40px] flex items-center gap-6 bg-white border border-white rounded-[10px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-[15px] py-2'>
-                            <FooterGmail/>
-                            <Calendar/>
+                        <div>
+                            <QR/>
                         </div>
+                    </div>
+                    <div className='w-[96px] h-[40px] flex items-center gap-6 bg-white border border-white rounded-[10px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-[15px] py-2'>
+                        <FooterGmail/>
+                        <Calendar/>
+                    </div>
                 </div>
             </div>
         </div>

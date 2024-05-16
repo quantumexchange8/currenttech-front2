@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Tab } from '@headlessui/react';
 import { Gmail, WhatsApp } from './Brand';
 import QRcode from '../Assets/Images/QRCode.png';
 import SubmitEmail from './SubmitEmail';
 import WhatsappMobile from '../Assets/Images/mobile_whatsapp.png'
 import { useMediaQuery } from 'react-responsive'
+import { LanguageContext } from "../LanguagesContext";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 export default function TabComponent({ selectedButton }) {
+  const {t} = useContext(LanguageContext);
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
@@ -18,26 +20,26 @@ export default function TabComponent({ selectedButton }) {
 
   useEffect(() => {
     if (selectedButton === 'whatsapp') {
-      setTitle('Instant chat now');
-      setContent(isMobile ? 'Press direct link to WhatsApp chat with our customer service representative for more details.' :'Scan the QR code with your device/s camera to chat with our customer service representative for more details.');
+      setTitle(t("WhatsappForm.whatsappFormTitle"));
+      setContent(isMobile ? 'Press direct link to WhatsApp chat with our customer service representative for more details.' :t("WhatsappForm.whatsappFormDescription"));
       setSelectedTab(0); // Switch to WhatsApp tab
     } else if (selectedButton === 'gmail') {
-      setTitle('Send us a message');
-      setContent(isMobile ? 'Welcome to Current Tech contact us page' : 'Welcome to Current Tech contact us page');
+      setTitle(t("MailForm.mailFormTitle"));
+      setContent(isMobile ? t("MailForm.mailFormDescription") : t("MailForm.mailFormDescription"));
       setSelectedTab(1); // Switch to Gmail tab
     }
-  }, [selectedButton, isMobile]);
+  }, [selectedButton, isMobile,t]);
 
-  // Add another useEffect to handle changes in selectedTab
+  // Another useEffect to handle changes in selectedTab
 useEffect(() => {
   if (selectedTab === 0) {
-    setTitle('Instant chat now');
-    setContent(isMobile ? 'Press direct link to WhatsApp chat with our customer service representative for more details.' :'Scan the QR code with your device/s camera to chat with our customer service representative for more details.');
+    setTitle(t("WhatsappForm.whatsappFormTitle"));
+    setContent(isMobile ? 'Press direct link to WhatsApp chat with our customer service representative for more details.' :t("WhatsappForm.whatsappFormDescription"));
   } else if (selectedTab === 1) {
-    setTitle('Send us a message');
-    setContent(isMobile ? 'Welcome to Current Tech contact us page' : 'Welcome to Current Tech contact us page');
+    setTitle(t("MailForm.mailFormTitle"));
+    setContent(isMobile ? t("MailForm.mailFormDescription") : t("MailForm.mailFormDescription"));
   }
-}, [selectedTab, isMobile]);
+}, [selectedTab, isMobile,t]);
 
   return (
     <div className="w-full max-w-md flex flex-col gap-[30px] md:gap-[50px]">

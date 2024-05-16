@@ -1,10 +1,11 @@
-import React, {useRef, useState} from "react";
+import React, {useRef, useState, useContext} from "react";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import { LanguageContext } from "../LanguagesContext";
 
 
 export default function FormSubmission() {
-
+    const { t} = useContext(LanguageContext);
     const form = useRef();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -20,15 +21,13 @@ export default function FormSubmission() {
         emailjs.sendForm('service_w2wr8zs', 'template_lqwi5ab', form.current, {publicKey:'zJVrLr0TC5IaZBX3a', userName: userName,userEmail: userEmail,userMessage: userMessage}
     )
         .then(() => {
-            console.log("SUCCESS!");
           setIsSubmitting(false); // Enable the button after submission
-          Swal.fire("Success!", "Form submitted successfully", "success");
+          Swal.fire(t("MailForm.sendStatusSuccess"), t("MailForm.notificationSuccessfully"), "success");
           form.current.reset(); // Reset the form
         },
         (error) => {
-          console.log("FAILED...", error.text);
           setIsSubmitting(false); // Enable the button after submission
-          Swal.fire("Error!", "Form submission failed", "error");
+          Swal.fire(t("MailForm.sendStatusFailure"), "MailForm.notificationFailure", "error");
 
         });
     };
@@ -38,7 +37,7 @@ export default function FormSubmission() {
             <div className="w-full flex flex-col items-center gap-6">
                 <div className="w-full flex flex-col items-center text-base font-medium">
                     <label>
-                       Your Name
+                        {t("MailForm.name")}
                     </label>
                     <input 
                     type="text" 
@@ -47,7 +46,7 @@ export default function FormSubmission() {
                 </div>
                 <div className="w-full flex flex-col items-center text-base font-medium">
                     <label>
-                       Email
+                        {t("MailForm.email")}
                     </label>
                     <input 
                     type="text" 
@@ -56,7 +55,7 @@ export default function FormSubmission() {
                 </div>
                 <div className="w-full flex flex-col items-center text-base font-medium">
                     <label>
-                       Message
+                        {t("MailForm.message")}
                     </label>
                     <textarea 
                     type="text" 
@@ -65,7 +64,7 @@ export default function FormSubmission() {
                 </div>
 
                 <button type="submit" className="bg-black w-[200px] h-[50px] rounded-[10px] mt-[26px] md:mt-[42px]">
-                    <span className="text-white text-xl font-bold">Send</span>
+                    <span className="text-white text-xl font-bold">{t("MailForm.button")}</span>
                 </button>
             </div>
         </form>

@@ -13,7 +13,6 @@ function App() {
   return (
     <div>
       <LanguageProvider>
-  
         <div className="overflow-x-hidden sm:overflow-auto">
           <Topbar />
           <ScrollToTop />
@@ -25,7 +24,6 @@ function App() {
           </Routes>
           <Footer/>
         </div>
-      
       </LanguageProvider>
     </div>
   );

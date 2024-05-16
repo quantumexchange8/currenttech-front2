@@ -15,8 +15,6 @@ const Topbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // Define isMenuOpen state
     const { t, language, updateLanguage } = useContext(LanguageContext);
 
-    console.log(language)
-
     const handleButtonClick = (button) => {
         setOpenButton(true);
         setSelectedButton(button);
@@ -58,7 +56,9 @@ const Topbar = () => {
                                 location.pathname === '/products' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
-                            {t("Topbar.productsPage")}
+                            <span className={language === 'en' ? 'font-medium' : 'font-semibold'}>
+                                {t("Topbar.productsPage")}
+                            </span>
                         </Link>
                         <Link
                             to="/careers"
@@ -66,7 +66,9 @@ const Topbar = () => {
                                 location.pathname === '/careers' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
-                            {t("Topbar.careerPage")}
+                            <span className={language === 'en' ? 'font-medium' : 'font-semibold'}>
+                                {t("Topbar.careerPage")}
+                            </span>
                         </Link>
                     </div>
 
@@ -89,63 +91,43 @@ const Topbar = () => {
                                 leaveTo="transform opacity-0 scale-95"
                             >
                                 <Menu.Items className="absolute left-0 mt-4 w-[120px] rounded-[15px] bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right">
-                                        <Link
-                                            to="/"
-                                            className={`${
-                                                location.pathname === '/' 
-                                            }`}
-                                        >
-                                            <Menu.Item>
-                                                {({ active }) => (
-                                                    <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
-                                                        onClick={() => handleLanguageChange('en')}
-                                                    >
-                                                        English
-                                                    </button>
-                                                )}
-                                            </Menu.Item>
-                                        </Link>
-                                        <Link
-                                            to="/advantage"
-                                            className={`${
-                                                location.pathname === '/advantage' 
-                                            }`}
-                                        >
-                                            <Menu.Item>
-                                                {({ active }) => (
-                                                    <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
-                                                    >
-                                                        Malay
-                                                    </button>
-                                                )}
-                                            </Menu.Item>
-                                        </Link>
-                                    
-                                        <Link
-                                            to="/products"
-                                            className={`${
-                                                location.pathname === '/products' 
-                                            }`}
-                                        >
-                                            <Menu.Item>
-                                                {({ active }) => (
-                                                    <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
-                                                        onClick={() => handleLanguageChange('zh')}
-                                                    >
-                                                        中文
-                                                    </button>
-                                                )}
-                                            </Menu.Item>
-                                        </Link>
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <button
+                                                className={`${
+                                                    active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                                onClick={() => handleLanguageChange('en')}
+                                            >
+                                                English {language === 'en'}
+                                            </button>
+                                        )}
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <button
+                                                className={`${
+                                                    active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                                onClick={() => handleLanguageChange('bm')}
+                                            >
+                                                Malay {language === 'bm'}
+                                            </button>
+                                        )}
+                                    </Menu.Item>
+                            
+                                    <Menu.Item>
+                                        {({ active }) => (
+                                            <button
+                                                className={`${
+                                                    active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                                onClick={() => handleLanguageChange('zh')}
+                                            >
+                                                中文 {language === 'zh'}
+                                            </button>
+                                        )}
+                                    </Menu.Item>
                                 </Menu.Items>
                             </Transition>
                         </Menu>
@@ -169,8 +151,12 @@ const Topbar = () => {
                                 leaveFrom="transform opacity-100 scale-100"
                                 leaveTo="transform opacity-0 scale-95"
                             >
-                                <Menu.Items className="absolute right-0 mt-4 w-[160px] origin-top-right rounded-[15px] bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right">
-                                    
+                                <Menu.Items
+                                className={`absolute right-0 mt-4 rounded-[15px] bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-center object-center 
+                                    ${language === 'en' ? 'w-[160px]' : 
+                                      language === 'zh' ? 'w-[112px]' : 
+                                      language === 'ms' ? 'w-[160px]' : ''}`}
+                                >
                                         <Link
                                             to="/"
                                             className={`${
@@ -180,12 +166,16 @@ const Topbar = () => {
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
-                                                    >
-                                                        Home
-                                                    </button>
+                                                    className={`${
+                                                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    } group flex flex-col w-full place-items-end rounded-md py-3 ${
+                                                      language === 'en' ? 'px-7 md:px-7' : 
+                                                      language === 'zh' ? 'px-9 md:px-9' : 
+                                                      language === 'bm' ? 'px-7 md:px-7' : ''
+                                                    }`}
+                                                  >
+                                                    {t("mobileTopbar.homePage")}
+                                                  </button>
                                                 )}
                                             </Menu.Item>
                                         </Link>
@@ -198,12 +188,16 @@ const Topbar = () => {
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
-                                                    >
-                                                        Advantage
-                                                    </button>
+                                                    className={`${
+                                                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    } group flex flex-col w-full place-items-end rounded-md py-3 ${
+                                                      language === 'en' ? 'px-7 md:px-7' : 
+                                                      language === 'zh' ? 'px-9 md:px-9' : 
+                                                      language === 'bm' ? 'px-7 md:px-7' : ''
+                                                    }`}
+                                                  >
+                                                    {t("mobileTopbar.advantagePage")}
+                                                  </button>
                                                 )}
                                             </Menu.Item>
                                         </Link>
@@ -217,12 +211,16 @@ const Topbar = () => {
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
-                                                    >
-                                                        Products
-                                                    </button>
+                                                    className={`${
+                                                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    } group flex flex-col w-full place-items-end rounded-md py-3 ${
+                                                      language === 'en' ? 'px-7 md:px-7' : 
+                                                      language === 'zh' ? 'px-9 md:px-9' : 
+                                                      language === 'bm' ? 'px-7 md:px-7' : ''
+                                                    }`}
+                                                  >
+                                                    {t("mobileTopbar.productsPage")}
+                                                  </button>
                                                 )}
                                             </Menu.Item>
                                         </Link>
@@ -235,12 +233,16 @@ const Topbar = () => {
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
-                                                    >
-                                                        Careers
-                                                    </button>
+                                                    className={`${
+                                                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    } group flex flex-col w-full place-items-end rounded-md py-3 ${
+                                                      language === 'en' ? 'px-7 md:px-7' : 
+                                                      language === 'zh' ? 'px-9 md:px-9' : 
+                                                      language === 'bm' ? 'px-7 md:px-7' : ''
+                                                    }`}
+                                                  >
+                                                    {t("mobileTopbar.careerPage")}
+                                                  </button>
                                                 )}
                                             </Menu.Item>
                                         </Link>
@@ -248,16 +250,19 @@ const Topbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <button
-                                                onClick={() => handleButtonClick('whatsapp')}
-                                                    className={`${
-                                                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full place-items-end rounded-md px-7 py-3`}
-                                                >
-                                                    Support
-                                                </button>
+                                                onClick={() => handleButtonClick('gmail')}
+                                                className={`${
+                                                  active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                } group flex flex-col w-full place-items-end rounded-md py-3 ${
+                                                  language === 'en' ? 'px-7 md:px-7' : 
+                                                  language === 'zh' ? 'px-9 md:px-9' : 
+                                                  language === 'bm' ? 'px-7 md:px-7' : ''
+                                                }`}
+                                              >
+                                                {t("mobileTopbar.supportPage")}
+                                              </button>
                                             )}
                                         </Menu.Item>
-                                    
                                 </Menu.Items>
                             </Transition>
                         </Menu>
@@ -306,8 +311,9 @@ const Topbar = () => {
                                                         className={`${
                                                             active ? 'bg-violet-500 text-white' : 'text-gray-900'
                                                         } group flex flex-row w-full text-base place-items-center rounded-[30px] px-7 py-5`}
+                                                        onClick={() => handleLanguageChange('bm')}
                                                     >
-                                                        Malay
+                                                        Malay {language === 'bm'}
                                                     </button>
                                                 )}
                                             </Menu.Item>
