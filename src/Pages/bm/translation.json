@@ -299,7 +299,10 @@
       "whatsappFormTitle":"Sembang sekarang juga",
       "whatsappFormDescription":"Tekan pautan terus Whatsapp untuk",
       "whatsappFormDescription2":"berbual dengan wakil khidmat pelanggan ",
-      "whatsappFormDescription3":"kami untuk maklumat lanjut."
+      "whatsappFormDescription3":"kami untuk maklumat lanjut.",
+      "mobileWhatsappFormDescription":"Tekan pautan terus Whatsapp untuk ",
+      "mobileWhatsappFormDescription2":"berbual dengan wakil khidmat pelanggan ",
+      "mobileWhatsappFormDescription3":"kami untuk maklumat lanjut."
 },
 
     "MailForm":{
@@ -313,7 +316,9 @@
       "notificationSuccessfully":"Mesej Hantar",
       "notificationFailure":"Penghantaran maklumat gagal",
       "sendStatusSuccess":"Berjaya !",
-      "sendStatusFailure":"Ralat !"
+      "sendStatusFailure":"Ralat !",
+      "mobileMailFormDescription":"Selamat datang ke halaman ",
+      "mobileMailFormDescription2":"hubungi kami Current Tech"
     }
    
   }

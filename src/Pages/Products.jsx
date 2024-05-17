@@ -60,7 +60,7 @@ const handleButtonClick = (button) => {
                         <div className='flex flex-col gap-[50px] md:gap-[200px] ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div className='flex flex-col gap-5 md:gap-10'>
                                 <div className='flex w-full md:w-[863px] text-base md:text-5xl font-bold text-left'>
-                                    <div className='flex flex-col'>
+                                    <div className='flex flex-col leading-[1.20]'>
                                         <span className={`${language === 'en' ? 'w-[353px] md:w-[900px]' : 
                                                             language === 'zh' ? 'w-[353px] md:w-[1000px]' : 
                                                             language === 'bm' ? 'w-[353px] md:w-[1000px]' : ''}`}>
@@ -71,7 +71,7 @@ const handleButtonClick = (button) => {
 
                                 <div className='hidden md:flex flex-col text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] leading-[1.20]'>
                                     <div className="flex items-baseline">
-                                        <span className={`${language === 'en' ? 'text-orange-400 text-[64px] font-bold w-[110px]' : 
+                                        <span className={`${language === 'en' ? 'text-orange-400 text-[64px] font-bold w-[115px]' : 
                                                             language === 'zh' ? 'text-orange-400 text-[64px] font-semibold w-[145px]' : 
                                                             language === 'bm' ? 'text-orange-400 text-[64px] font-bold w-[90px]' : ''}`}>
                                             {t("Products.productTechnologyDescription")}
@@ -121,7 +121,7 @@ const handleButtonClick = (button) => {
                     <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
                         <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                             <div className=' text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
-                                <div className='flex flex-col gap-[30px]'>
+                                <div className='flex flex-col gap-[20px]'>
                                     {t("Products.education.educationTitle")}
                                     <div className='hidden md:flex text-[#666] text-2xl text-center justify-center'>
                                         <span className={`inline-block ${language === 'en' ? 'font-medium' : 
@@ -148,7 +148,7 @@ const handleButtonClick = (button) => {
                                     )}
                                 </div>
                             </div>
-                            <div className='flex flex-row gap-[30px] justify-center'>
+                            <div className='flex flex-row gap-[10px] md:gap-[100px] justify-center'>
                                 <div className='flex flex-col items-center gap-5'>
                                     <div className='w-[80px] md:w-[150px] h-[80px] md:h-[150px]'>
                                         <img src={Parents} alt="KinderTown_Parent"/>
@@ -201,7 +201,7 @@ const handleButtonClick = (button) => {
                         <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
                             <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
-                                <div className='flex flex-col gap-[30px]'>
+                                <div className='flex flex-col gap-[20px]'>
                                     {t("Products.attendance.attendanceTitle")}
                                     <div className='hidden md:flex text-[#666] text-2xl text-center justify-center'>
                                         <span className={`inline-block ${language === 'en' ? 'font-medium' : 
@@ -263,7 +263,7 @@ const handleButtonClick = (button) => {
                         <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
                             <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
-                                <div className='flex flex-col gap-[30px]'>
+                                <div className='flex flex-col gap-[20px]'>
                                     {t("Products.financial.financialTitle")}
                                     <div className='hidden md:flex text-[#666] text-2xl text-center justify-center'>
                                         <span className={`inline-block ${language === 'en' ? 'font-medium' : 
@@ -322,7 +322,7 @@ const handleButtonClick = (button) => {
                         <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
                             <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
-                                <div className='flex flex-col gap-[30px]'>
+                                <div className='flex flex-col gap-[20px]'>
                                     {t("Products.management.managementTitle")}
                                     <div className='hidden md:flex text-[#666] text-2xl text-center justify-center'>
                                         <span className={`inline-block ${language === 'en' ? 'font-medium' : 
@@ -388,7 +388,7 @@ const handleButtonClick = (button) => {
                                     <span>{t("Products.labelSolutions.mobileLabelSolutionsTitle1")}</span>
                                     <span>{t("Products.labelSolutions.mobileLabelSolutionsTitle2")}</span>
                                     </div>
-                                    <div className='flex flex-col gap-[30px]'>
+                                    <div className='flex flex-col gap-[20px]'>
                                         <div className='hidden md:flex justify-center'>{t("Products.labelSolutions.labelSolutionsTitle")}</div>
                                         <div className='hidden md:flex text-[#666] text-2xl text-center justify-center'>
                                             <span className={`inline-block ${language === 'en' ? 'font-medium' : 
@@ -471,7 +471,7 @@ const handleButtonClick = (button) => {
                         <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
                             <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center space-y-4 md:space-y-0'>
-                                    <div className='flex flex-col gap-[30px]'>
+                                    <div className='flex flex-col gap-[20px]'>
                                         {t("Products.metaEditor.metaEditorTitle")}
                                         <div className='hidden md:flex text-[#666] text-2xl text-center justify-center'>
                                             <span className={`inline-block ${language === 'en' ? 'font-medium' : 
@@ -527,7 +527,7 @@ const handleButtonClick = (button) => {
 
                                 <div className='text-[#666] text-base md:text-4xl font-medium text-left ml-5 md:ml-0 mr-5 md:mr-0 flex flex-col gap-[100px] md:gap-[150px] leading-tight'>
                                 <div className='flex flex-col leading-[1.20]'>
-                                    <span className={`inline-block ${language === 'en' ? 'font-medium w-[340px] md:w-[935px]' : 
+                                    <span className={`inline-block ${language === 'en' ? 'font-medium w-[313px] md:w-[935px]' : 
                                                                      language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]' : 
                                                                      language === 'bm' ? 'font-medium w-[340px] md:w-[950px]' : ''}`}>
                                             {t("Products.metaEditor.metaEditorDescription")}
@@ -546,7 +546,7 @@ const handleButtonClick = (button) => {
                         <div className='max-w-[1000px] w-full mt-[80px] md:mt-[150px]'>
                             <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                                 <div className='text-[32px] md:text-8xl font-bold text-center'>
-                                <div className='flex flex-col gap-[30px]'>
+                                <div className='flex flex-col gap-[20px]'>
                                     {t("Products.cryptoWallet.cryptoWalletTitle")}
                                     <div className='hidden md:flex text-[#666] text-2xl text-center justify-center'>
                                         <span className={`inline-block ${language === 'en' ? 'font-medium' : 
@@ -618,12 +618,14 @@ const handleButtonClick = (button) => {
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base text-left'>
-                                        <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                            language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
-                                            <span className='block'>{t("Products.whatsappDescription")}</span>
-                                            <span className='block'>{t("Products.whatsappDescription2")}</span>
-                                        </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
+                                                    <span className='block'>{t("Products.whatsappDescription")}</span>
+                                                    <span className='block'>{t("Products.whatsappDescription2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div 
@@ -631,12 +633,14 @@ const handleButtonClick = (button) => {
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base text-left'>
-                                        <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                            language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                            <span className='block'>{t("Products.gmailDescription")}</span>
-                                            <span className='block'>{t("Products.gmailDescription2")}</span>
-                                        </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                    <span className='block'>{t("Products.gmailDescription")}</span>
+                                                    <span className='block'>{t("Products.gmailDescription2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -648,12 +652,14 @@ const handleButtonClick = (button) => {
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
-                                                <span className='block'>{t("Products.whatsappDescriptionMobile")}</span>
-                                                <span className='block'>{t("Products.whatsappDescriptionMobile2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
+                                                    <span className='block'>{t("Products.whatsappDescriptionMobile")}</span>
+                                                    <span className='block'>{t("Products.whatsappDescriptionMobile2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -662,12 +668,14 @@ const handleButtonClick = (button) => {
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                                <span className='block'>{t("Products.gmailDescriptionMobile")}</span>
-                                                <span className='block'>{t("Products.gmailDescriptionMobile2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                    <span className='block'>{t("Products.gmailDescriptionMobile")}</span>
+                                                    <span className='block'>{t("Products.gmailDescriptionMobile2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

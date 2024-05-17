@@ -21,7 +21,11 @@ export default function TabComponent({ selectedButton }) {
   useEffect(() => {
     if (selectedButton === 'whatsapp') {
       setTitle(t("WhatsappForm.whatsappFormTitle"));
-      setContent(isMobile ? 'Press direct link to WhatsApp chat with our customer service representative for more details.' :<>
+      setContent(isMobile ? <>
+        <span>{t("WhatsappForm.mobileWhatsappFormDescription")}</span><br />
+        <span>{t("WhatsappForm.mobileWhatsappFormDescription2")}</span><br />
+        <span>{t("WhatsappForm.mobileWhatsappFormDescription3")}</span>
+      </> :<>
       <span>{t("WhatsappForm.whatsappFormDescription")}</span><br />
       <span>{t("WhatsappForm.whatsappFormDescription2")}</span><br />
       <span>{t("WhatsappForm.whatsappFormDescription3")}</span>
@@ -29,7 +33,10 @@ export default function TabComponent({ selectedButton }) {
       setSelectedTab(0); // Switch to WhatsApp tab
     } else if (selectedButton === 'gmail') {
       setTitle(t("MailForm.mailFormTitle"));
-      setContent(isMobile ? t("MailForm.mailFormDescription") : <>
+      setContent(isMobile ? <>
+        <span>{t("MailForm.mobileMailFormDescription")}</span><br />
+        <span>{t("MailForm.mobileMailFormDescription2")}</span><br />
+      </> : <>
       <span>{t("MailForm.mailFormDescription")}</span><br />
       <span>{t("MailForm.mailFormDescription2")}</span><br />
     </>);
@@ -41,14 +48,21 @@ export default function TabComponent({ selectedButton }) {
 useEffect(() => {
   if (selectedTab === 0) {
     setTitle(t("WhatsappForm.whatsappFormTitle"));
-    setContent(isMobile ? 'Press direct link to WhatsApp chat with our customer service representative for more details.' :<>
+    setContent(isMobile ? <>
+      <span>{t("WhatsappForm.mobileWhatsappFormDescription")}</span><br />
+      <span>{t("WhatsappForm.mobileWhatsappFormDescription2")}</span><br />
+      <span>{t("WhatsappForm.mobileWhatsappFormDescription3")}</span>
+    </> :<>
     <span>{t("WhatsappForm.whatsappFormDescription")}</span><br />
     <span>{t("WhatsappForm.whatsappFormDescription2")}</span><br />
     <span>{t("WhatsappForm.whatsappFormDescription3")}</span>
   </>);
   } else if (selectedTab === 1) {
     setTitle(t("MailForm.mailFormTitle"));
-    setContent(isMobile ? t("MailForm.mailFormDescription") : <>
+    setContent(isMobile ? <>
+      <span>{t("MailForm.mobileMailFormDescription")}</span><br />
+      <span>{t("MailForm.mobileMailFormDescription2")}</span><br />
+    </> : <>
     <span>{t("MailForm.mailFormDescription")}</span><br />
     <span>{t("MailForm.mailFormDescription2")}</span><br />
   </>);

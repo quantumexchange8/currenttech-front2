@@ -71,7 +71,7 @@ export default function FormSubmission() {
     return (
         <form className="w-full" ref={form} onSubmit={sendEmail}>
             <div className="w-full flex flex-col items-center gap-6">
-                <div className="w-full flex flex-col items-center text-base font-medium">
+                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium">
                     <label>{t("MailForm.name")}</label>
                     <input 
                         type="text" 
@@ -81,7 +81,7 @@ export default function FormSubmission() {
                     />
                     {errors.userName && <span className="text-red-500">{errors.userName}</span>}
                 </div>
-                <div className="w-full flex flex-col items-center text-base font-medium">
+                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium">
                     <label>{t("MailForm.email")}</label>
                     <input 
                         type="text" 
@@ -91,7 +91,7 @@ export default function FormSubmission() {
                     />
                     {errors.userEmail && <span className="text-red-500">{errors.userEmail}</span>}
                 </div>
-                <div className="w-full flex flex-col items-center text-base font-medium">
+                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium">
                     <label>{t("MailForm.message")}</label>
                     <textarea 
                         type="text" 

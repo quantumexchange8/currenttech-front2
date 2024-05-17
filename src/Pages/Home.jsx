@@ -254,8 +254,8 @@ const Home = () => {
                     <div className='flex flex-col gap-5 md:gap-10 mt-[50px] mb-[50px] md:mb-[150px] space-x-5 md:space-x-0'>
                         <div className='flex flex-col text-base md:text-5xl text-left ml-5 md:ml-0'>
                             <div className='flex flex-col leading-[1.20] font-bold'>
-                                <span className="hidden md:w-[530px]">{t("Home.innovativeTitle")}</span>
-                                <span className="w-[250px] md:hidden">{t("Home.innovativeTitle")}</span>
+                                <span className="hidden md:flex w-[530px]">{t("Home.innovativeTitle")}</span>
+                                <span className="w-[289px] md:hidden">{t("Home.innovativeTitle")}</span>
                             </div>
                         </div>
                         <div className='flex text-base md:text-4xl font-medium text-[#666] text-left'>
@@ -288,8 +288,10 @@ const Home = () => {
                                         <span className={`${language === 'en' ? 'font-medium w-[350px] md:w-[350px]' : 
                                                             language === 'zh' ? 'font-semibold w-[350px] md:w-[360px]' : 
                                                             language === 'bm' ? 'font-medium w-[330px] md:w-[400px]' : ''}`}>
-                                            <span className='block'>{t("Home.videoCombinationDescription.educationVideoDescription")}</span> 
-                                            <span className='block'>{t("Home.videoCombinationDescription.educationVideoDescription2")}</span> 
+                                            <span className='hidden md:block'>{t("Home.videoCombinationDescription.educationVideoDescription")}</span> 
+                                            <span className='hidden md:block'>{t("Home.videoCombinationDescription.educationVideoDescription2")}</span>
+                                            <span className='md:hidden'>{t("Home.videoCombinationDescription.educationVideoDescription")}</span> 
+                                            <span className='md:hidden'>{t("Home.videoCombinationDescription.educationVideoDescription2")}</span>  
                                         </span>
                                     </div>
                                 </div>
@@ -445,7 +447,7 @@ const Home = () => {
                             className='hidden md:flex w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                             onClick={() => handleButtonClick('whatsapp')}>
                                 <WhatsApp/>
-                                <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                <div className='flex flex-col text-[#666] text-base text-left'>
                                     <div className="flex flex-col leading-[1.20]">
                                         <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
                                                             language === 'zh' ? 'font-semibold w-[130px]' : 
@@ -461,12 +463,14 @@ const Home = () => {
                             onClick={() => handleButtonClick('gmail')}>
                                 <Gmail/>
                                 <div className='flex flex-col text-[#666] text-base text-left'>
-                                    <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                        language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                        language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                        <span className='block'>{t("Home.gmailDescription")}</span>
-                                        <span className='block'>{t("Home.gmailDescription2")}</span>
-                                    </span>
+                                    <div className="flex flex-col leading-[1.20]">
+                                        <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                            language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                            <span className='block'>{t("Home.gmailDescription")}</span>
+                                            <span className='block'>{t("Home.gmailDescription2")}</span>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -479,12 +483,14 @@ const Home = () => {
                             onClick={() => handleButtonClick('whatsapp')}>
                                 <WhatsApp/>
                                 <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                    language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
-                                    <span className='block'>{t("Home.whatsappDescriptionMobile")}</span>
-                                    <span className='block'>{t("Home.whatsappDescriptionMobile2")}</span>
-                                </span>
+                                    <div className="flex flex-col leading-[1.20]">
+                                        <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                            language === 'bm' ? 'font-medium w-[170px]' : ''}`}>
+                                            <span className='block'>{t("Home.whatsappDescriptionMobile")}</span>
+                                            <span className='block'>{t("Home.whatsappDescriptionMobile2")}</span>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -493,12 +499,14 @@ const Home = () => {
                             onClick={() => handleButtonClick('gmail')}>
                                 <Gmail/>
                                 <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                    <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                        language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                        language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                        <span className='block'>{t("Home.gmailDescriptionMobile")}</span>
-                                        <span className='block'>{t("Home.gmailDescriptionMobile2")}</span>
-                                    </span>
+                                    <div className="flex flex-col leading-[1.20]">
+                                        <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                            language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                            <span className='block'>{t("Home.gmailDescriptionMobile")}</span>
+                                            <span className='block'>{t("Home.gmailDescriptionMobile2")}</span>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

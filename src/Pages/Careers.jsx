@@ -24,7 +24,7 @@ const Careers = () => {
 
                 <div className='absolute left-5 md:left-[100px] bottom-5 md:bottom-[100px] flex flex-col text-white text-left gap-5'>
                     <span className='text-xl md:text-5xl font-bold'>{t("Career.careerVideoTitle")}</span>
-                    <div className='flex flex-col text-base md:text-4xl font-medium'>
+                    <div className='flex flex-col text-base md:text-4xl'>
                         <div className='flex flex-col leading-[1.20]'>
                             <span className={`${language === 'en' ? 'font-medium w-[200px] md:w-[540px]': 
                                                 language === 'zh' ? 'font-semibold w-[240px] md:w-[540px]': 
@@ -238,12 +238,14 @@ const Careers = () => {
                                 onClick={() => handleButtonClick('whatsapp')}>
                                     <WhatsApp/>
                                     <div className='flex flex-col text-[#666] text-base text-left'>
-                                        <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                            language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
-                                            <span className='block'>{t("Career.whatsappDescription")}</span>
-                                            <span className='block'>{t("Career.whatsappDescription2")}</span>
-                                        </span>
+                                        <div className="flex flex-col leading-[1.20]">
+                                            <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
+                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
+                                                <span className='block'>{t("Career.whatsappDescription")}</span>
+                                                <span className='block'>{t("Career.whatsappDescription2")}</span>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div 
@@ -251,14 +253,15 @@ const Careers = () => {
                                 onClick={() => handleButtonClick('gmail')}>
                                     <GmailIcon/>
                                     <div className='flex flex-col text-[#666] text-base text-left'>
-                                        <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                            language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                            <span className='block'>{t("Career.gmailDescription")}</span>
-                                            <span className='block'>{t("Career.gmailDescription2")}</span>
-                                        </span>
+                                        <div className="flex flex-col leading-[1.20]">
+                                            <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                <span className='block'>{t("Career.gmailDescription")}</span>
+                                                <span className='block'>{t("Career.gmailDescription2")}</span>
+                                            </span>
+                                        </div>
                                     </div>
-                                    
                                 </div>
                             </div>
 
@@ -270,12 +273,14 @@ const Careers = () => {
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
-                                                <span className='block'>{t("Career.whatsappDescriptionMobile")}</span>
-                                                <span className='block'>{t("Career.whatsappDescriptionMobile2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
+                                                    <span className='block'>{t("Career.whatsappDescriptionMobile")}</span>
+                                                    <span className='block'>{t("Career.whatsappDescriptionMobile2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -284,12 +289,14 @@ const Careers = () => {
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left w-full'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                                <span className='block'>{t("Career.gmailDescriptionMobile")}</span>
-                                                <span className='block'>{t("Career.gmailDescriptionMobile2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                    <span className='block'>{t("Career.gmailDescriptionMobile")}</span>
+                                                    <span className='block'>{t("Career.gmailDescriptionMobile2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

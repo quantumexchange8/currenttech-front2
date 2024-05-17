@@ -150,7 +150,7 @@ const Advantage = () => {
                                         {t("Advantage.advantageSelfReminderTitle")}
                                     </div>
                                     <div>
-                                        <ul className="list-disc pl-8 text-left text-base md:text-2xl font-bold w-[340px] md:w-[1000px] flex flex-col gap-6 leading-[1.20]">
+                                        <ul className="list-disc pl-8 text-left text-base md:text-2xl font-semibold md:font-bold w-[330px] md:w-[1000px] flex flex-col gap-6 leading-[1.20]">
                                             <li>{t("Advantage.advantageSelfReminderDescription")}</li>
                                             <li>{t("Advantage.advantageSelfReminderDescription2")}</li>
                                         </ul>
@@ -163,12 +163,14 @@ const Advantage = () => {
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
-                                                <span className='block'>{t("Advantage.whatsappDescription")}</span>
-                                                <span className='block'>{t("Advantage.whatsappDescription2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
+                                                    <span className='block'>{t("Advantage.whatsappDescription")}</span>
+                                                    <span className='block'>{t("Advantage.whatsappDescription2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div 
@@ -176,12 +178,14 @@ const Advantage = () => {
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                        <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                            language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                            <span className='block'>{t("Advantage.gmailDescription")}</span>
-                                            <span className='block'>{t("Advantage.gmailDescription2")}</span>
-                                        </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                            <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                <span className='block'>{t("Advantage.gmailDescription")}</span>
+                                                <span className='block'>{t("Advantage.gmailDescription2")}</span>
+                                            </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -194,12 +198,14 @@ const Advantage = () => {
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
-                                                <span className='block'>{t("Advantage.whatsappDescriptionMobile")}</span>
-                                                <span className='block'>{t("Advantage.whatsappDescriptionMobile2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
+                                                    <span className='block'>{t("Advantage.whatsappDescriptionMobile")}</span>
+                                                    <span className='block'>{t("Advantage.whatsappDescriptionMobile2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -208,12 +214,14 @@ const Advantage = () => {
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                                <span className='block'>{t("Advantage.gmailDescriptionMobile")}</span>
-                                                <span className='block'>{t("Advantage.gmailDescriptionMobile2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                    <span className='block'>{t("Advantage.gmailDescriptionMobile")}</span>
+                                                    <span className='block'>{t("Advantage.gmailDescriptionMobile2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -382,15 +390,15 @@ const Advantage = () => {
                                 </div>
                                 <div>
                                     <ul className="list-disc pl-8 text-left text-base md:text-2xl flex flex-col gap-6 leading-[1.20]">
-                                        <li className={`${language === 'en' ? 'font-bold w-[330px] md:w-[950px]' : 
-                                                            language === 'zh' ? 'font-bold w-[330px] md:w-[950px]' : 
-                                                            language === 'bm' ? 'font-bold w-[330px] md:w-[950px]' : ''}`}>
+                                        <li className={`${language === 'en' ? 'font-semibold md:font-bold w-[330px] md:w-[950px]' : 
+                                                            language === 'zh' ? 'font-semibold md:font-bold w-[330px] md:w-[950px]' : 
+                                                            language === 'bm' ? 'font-semibold md:font-bold w-[330px] md:w-[950px]' : ''}`}>
                                             {t("Advantage.advantageEnterpriseReminderDescription")}
                                         </li>
 
-                                        <li className={`${language === 'en' ? 'font-bold w-[310px] md:w-[950px]' : 
-                                                          language === 'zh' ? 'font-bold w-[330px] md:w-[950px]' : 
-                                                          language === 'bm' ? 'font-bold w-[320px] md:w-[950px]' : ''}`}>
+                                        <li className={`${language === 'en' ? 'font-semibold md:font-bold w-[300px] md:w-[950px]' : 
+                                                          language === 'zh' ? 'font-semibold md:font-bold w-[330px] md:w-[950px]' : 
+                                                          language === 'bm' ? 'font-semibold md:font-bold w-[320px] md:w-[950px]' : ''}`}>
                                             {t("Advantage.advantageEnterpriseReminderDescription2")}
                                         </li>
                                     </ul>
@@ -402,13 +410,15 @@ const Advantage = () => {
                                     className=' w-[280px] h-[70px] flex items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
-                                        <div className='flex flex-col text-[#666] text-base text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
-                                                <span className='block'>{t("Advantage.whatsappDescription")}</span>
-                                                <span className='block'>{t("Advantage.whatsappDescription2")}</span>
-                                            </span>
+                                        <div className='flex flex-col text-[#666] text-base text-left leading-[1.20]'>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
+                                                    <span className='block'>{t("Advantage.whatsappDescription")}</span>
+                                                    <span className='block'>{t("Advantage.whatsappDescription2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div 
@@ -416,12 +426,14 @@ const Advantage = () => {
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                                <span className='block'>{t("Advantage.gmailDescription")}</span>
-                                                <span className='block'>{t("Advantage.gmailDescription2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                    <span className='block'>{t("Advantage.gmailDescription")}</span>
+                                                    <span className='block'>{t("Advantage.gmailDescription2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -435,12 +447,14 @@ const Advantage = () => {
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
-                                                <span className='block'>{t("Advantage.whatsappDescriptionMobile")}</span>
-                                                <span className='block'>{t("Advantage.whatsappDescriptionMobile2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
+                                                    <span className='block'>{t("Advantage.whatsappDescriptionMobile")}</span>
+                                                    <span className='block'>{t("Advantage.whatsappDescriptionMobile2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -449,12 +463,14 @@ const Advantage = () => {
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
-                                            <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                                <span className='block'>{t("Advantage.gmailDescriptionMobile")}</span>
-                                                <span className='block'>{t("Advantage.gmailDescriptionMobile2")}</span>
-                                            </span>
+                                            <div className="flex flex-col leading-[1.20]">
+                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                    <span className='block'>{t("Advantage.gmailDescriptionMobile")}</span>
+                                                    <span className='block'>{t("Advantage.gmailDescriptionMobile2")}</span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

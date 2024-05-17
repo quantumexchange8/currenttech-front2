@@ -297,7 +297,10 @@
           "whatsappFormTitle":"Instant chat now",
           "whatsappFormDescription":"Scan the QR code with your device's ",
           "whatsappFormDescription2":"camera to chat with our customer ",
-          "whatsappFormDescription3":"service representative for more details."
+          "whatsappFormDescription3":"service representative for more details.",
+          "mobileWhatsappFormDescription":"Press direct link to whatsapp ",
+          "mobileWhatsappFormDescription2":"chat with our customer service ",
+          "mobileWhatsappFormDescription3":"representative for more details."
         },
 
         "MailForm":{
@@ -311,6 +314,8 @@
           "notificationSuccessfully":"Message Sent",
           "notificationFailure":"Failure to send",
           "sendStatusSuccess":"Success!",
-          "sendStatusFailure":"Error!"
+          "sendStatusFailure":"Error!",
+          "mobileMailFormDescription":"Welcome to Current Tech ",
+          "mobileMailFormDescription2":"contact us page"
         }
   }

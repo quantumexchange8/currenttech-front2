@@ -298,7 +298,10 @@
       "whatsappFormTitle":"立刻与我们通信",
       "whatsappFormDescription":"使用您设备的摄像头扫描 QR 码, 与我们的",
       "whatsappFormDescription2":"客户服务代表进行即时聊天, 获取更多详情. ",
-      "whatsappFormDescription3":" "
+      "whatsappFormDescription3":" ",
+      "mobileWhatsappFormDescription":"请直接点击以下链接与我们的客服代表进行 ",
+      "mobileWhatsappFormDescription2":"WhatsApp聊天以获取更多详细信息 ",
+      "mobileWhatsappFormDescription3":" "
     },
 
     "MailForm":{
@@ -312,7 +315,9 @@
       "notificationSuccessfully":"信息已发送",
       "notificationFailure":"信息发送失败",
       "sendStatusSuccess":"成功!",
-      "sendStatusFailure":"错误!"
+      "sendStatusFailure":"错误!",
+      "mobileMailFormDescription":"欢迎来到当今科技联系客服页面. ",
+      "mobileMailFormDescription2":" "
     }
    
   }
