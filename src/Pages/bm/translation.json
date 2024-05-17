@@ -297,20 +297,23 @@
 
     "WhatsappForm":{
       "whatsappFormTitle":"Sembang sekarang juga",
-      "whatsappFormDescription":"Imbas kod QR dengan kamera peranti anda untuk bersembang dengan wakil khidmat pelanggan kami untuk maklumat lanjut."
-    },
+      "whatsappFormDescription":"Tekan pautan terus Whatsapp untuk",
+      "whatsappFormDescription2":"berbual dengan wakil khidmat pelanggan ",
+      "whatsappFormDescription3":"kami untuk maklumat lanjut."
+},
 
     "MailForm":{
       "mailFormTitle":"Hantarkan kami mesej",
-      "mailFormDescription":"Selamat datang ke laman hubungi kami Current Tech",
+      "mailFormDescription":"Selamat datang ke laman",
+      "mailFormDescription2":"hubungi kami Current Tech",
       "name":"Nama Anda",
       "email":"Emel",
       "message":"Mesej",
       "button":"Hantar",
-      "notificationSuccessfully":"信息已发送",
-      "notificationFailure":"信息发送失败",
-      "sendStatusSuccess":"成功!",
-      "sendStatusFailure":"错误!"
+      "notificationSuccessfully":"Mesej Hantar",
+      "notificationFailure":"Penghantaran maklumat gagal",
+      "sendStatusSuccess":"Berjaya !",
+      "sendStatusFailure":"Ralat !"
     }
    
   }

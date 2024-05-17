@@ -295,12 +295,15 @@
 
         "WhatsappForm":{
           "whatsappFormTitle":"Instant chat now",
-          "whatsappFormDescription":"Scan the QR code with your device's camera to chat with our customer service representative for more details."
+          "whatsappFormDescription":"Scan the QR code with your device's ",
+          "whatsappFormDescription2":"camera to chat with our customer ",
+          "whatsappFormDescription3":"service representative for more details."
         },
 
         "MailForm":{
           "mailFormTitle":"Send us a message",
-          "mailFormDescription":"Welcome to Current Tech contact us page",
+          "mailFormDescription":"Welcome to Current Tech ",
+          "mailFormDescription2":"contact us page",
           "name":"Your name",
           "email":"Email",
           "message":"Message",

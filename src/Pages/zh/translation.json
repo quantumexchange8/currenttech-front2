@@ -296,12 +296,15 @@
 
     "WhatsappForm":{
       "whatsappFormTitle":"立刻与我们通信",
-      "whatsappFormDescription":"使用您设备的摄像头扫描 QR 码, 与我们的客户服务代表进行即时聊天, 获取更多详情."
+      "whatsappFormDescription":"使用您设备的摄像头扫描 QR 码, 与我们的",
+      "whatsappFormDescription2":"客户服务代表进行即时聊天, 获取更多详情. ",
+      "whatsappFormDescription3":" "
     },
 
     "MailForm":{
       "mailFormTitle":"发送电子邮件与我们联系",
       "mailFormDescription":"欢迎来到当今科技联系客服页面.",
+      "mailFormDescription2":" ",
       "name":"您的姓名",
       "email":"您的电子邮件",
       "message":"输入你想告诉我们的信息",
