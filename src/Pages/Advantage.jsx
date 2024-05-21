@@ -194,13 +194,13 @@ const Advantage = () => {
                                 <div 
                                     className='flex flex-col items-left gap-5 md:hidden'>
                                     <div 
-                                    className='flex w-full md:w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                             <div className="flex flex-col leading-[1.20]">
                                                 <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[170px]' : 
                                                                     language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
                                                     <span className='block'>{t("Advantage.whatsappDescriptionMobile")}</span>
                                                     <span className='block'>{t("Advantage.whatsappDescriptionMobile2")}</span>
@@ -210,14 +210,14 @@ const Advantage = () => {
                                     </div>
 
                                     <div 
-                                    className='flex w-full md:w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[170px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[170px]' : ''}`}>
                                                     <span className='block'>{t("Advantage.gmailDescriptionMobile")}</span>
                                                     <span className='block'>{t("Advantage.gmailDescriptionMobile2")}</span>
                                                 </span>
@@ -238,7 +238,7 @@ const Advantage = () => {
                     <source src="/assets/videos/advantage2.mp4" type="video/mp4"/>
                 </video>
 
-                <div className='absolute left-5 md:left-[100px] bottom-1 md:bottom-[100px] flex flex-col text-white text-left gap-5 w-full'>
+                <div className='absolute left-5 md:left-[100px] bottom-1 md:bottom-[100px] flex flex-col text-white text-left gap-5'>
                     <span className='text-xl md:text-5xl font-bold md:gap-5'>{t("Advantage.enterpriseVideoTitle")} </span>
                     <div className='flex flex-col text-[16px] md:text-4xl font-medium leading-[1.20]'>
                         <span className={`${language === 'en' ? 'font-medium w-[320px] md:w-[580px]' : 
@@ -255,7 +255,7 @@ const Advantage = () => {
                     <div className='flex flex-col md:gap-[200px]'>
                         <div className='flex flex-col gap-5 md:gap-10 ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div className='md:w-[863px] text-base md:text-5xl font-bold text-left'>
-                                <span className='w-[350px] md:w-[140px]'>{t("Advantage.advantageEnterpriseTitle")}</span>
+                                <span className='w-[300px] md:w-[140px]'>{t("Advantage.advantageEnterpriseTitle")}</span>
                             </div>
                             <div className='text-[#666] text-base md:text-4xl font-medium text-left mb-[50px] md:mb-0'>
                                 <div className='flex flex-col leading-[1.20]'>
@@ -443,13 +443,13 @@ const Advantage = () => {
                             <div 
                                     className='flex flex-col items-left gap-5 md:hidden'>
                                     <div 
-                                    className='flex w-full md:w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                             <div className="flex flex-col leading-[1.20]">
                                                 <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[170px]' : 
                                                                     language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
                                                     <span className='block'>{t("Advantage.whatsappDescriptionMobile")}</span>
                                                     <span className='block'>{t("Advantage.whatsappDescriptionMobile2")}</span>
@@ -459,14 +459,14 @@ const Advantage = () => {
                                     </div>
 
                                     <div 
-                                    className='flex w-full md:w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[170px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[170px]' : ''}`}>
                                                     <span className='block'>{t("Advantage.gmailDescriptionMobile")}</span>
                                                     <span className='block'>{t("Advantage.gmailDescriptionMobile2")}</span>
                                                 </span>

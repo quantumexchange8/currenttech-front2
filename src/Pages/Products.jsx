@@ -103,7 +103,7 @@ const handleButtonClick = (button) => {
                                             {t("Products.mobileProductTechnologyDescription2")}
                                         </span>
                                     </div>
-                                    <span className={`inline-block ${language === 'en' ? 'font-medium w-[340px]' : 
+                                    <span className={`${language === 'en' ? 'font-medium w-[340px]' : 
                                                                      language === 'zh' ? 'font-semibold w-[353px]' : 
                                                                      language === 'bm' ? 'font-medium w-[320px]' : ''}`}>
                                             {t("Products.mobileProductTechnologyDescription3")}
@@ -648,13 +648,13 @@ const handleButtonClick = (button) => {
                                 <div 
                                     className='flex flex-col items-left gap-5 md:hidden'>
                                     <div 
-                                    className='flex w-full md:w-[280px] h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('whatsapp')}>
                                         <WhatsApp/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                             <div className="flex flex-col leading-[1.20]">
                                                 <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[170px]' : 
                                                                     language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
                                                     <span className='block'>{t("Products.whatsappDescriptionMobile")}</span>
                                                     <span className='block'>{t("Products.whatsappDescriptionMobile2")}</span>
@@ -664,14 +664,14 @@ const handleButtonClick = (button) => {
                                     </div>
 
                                     <div 
-                                    className='flex w-full md:w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[170px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[170px]' : ''}`}>
                                                     <span className='block'>{t("Products.gmailDescriptionMobile")}</span>
                                                     <span className='block'>{t("Products.gmailDescriptionMobile2")}</span>
                                                 </span>

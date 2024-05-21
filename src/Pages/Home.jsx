@@ -485,7 +485,7 @@ const Home = () => {
                                 <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                     <div className="flex flex-col leading-[1.20]">
                                         <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                            language === 'zh' ? 'font-semibold w-[170px]' : 
                                                             language === 'bm' ? 'font-medium w-[170px]' : ''}`}>
                                             <span className='block'>{t("Home.whatsappDescriptionMobile")}</span>
                                             <span className='block'>{t("Home.whatsappDescriptionMobile2")}</span>
@@ -500,9 +500,9 @@ const Home = () => {
                                 <Gmail/>
                                 <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                     <div className="flex flex-col leading-[1.20]">
-                                        <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                            language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                        <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                            language === 'zh' ? 'font-semibold w-[170px]' : 
+                                                            language === 'bm' ? 'font-medium w-[170px]' : ''}`}>
                                             <span className='block'>{t("Home.gmailDescriptionMobile")}</span>
                                             <span className='block'>{t("Home.gmailDescriptionMobile2")}</span>
                                         </span>

@@ -42,10 +42,11 @@ const Careers = () => {
                         <div className='flex flex-col gap-[50px] md:gap-[200px] ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div className='flex flex-col gap-5 md:gap-10'>
                                 <div className='flex flex-col w-[230px] md:w-[863px] text-base md:text-5xl font-bold text-left leading-[1.20]'>
-                                    <span className={`${language === 'en' ? 'font-bold w-[200px] md:w-[663px]': 
-                                                        language === 'zh' ? 'font-bold w-[350px] md:w-[863px]': 
-                                                        language === 'bm' ? 'font-bold w-[330px] md:w-[690px]': ''}`}>
-                                        {t("Career.careerOpportunitiesTitle")}
+                                    <span className={`${language === 'en' ? 'font-bold w-[353px] md:w-[863px]': 
+                                                        language === 'zh' ? 'font-bold w-[353px] md:w-[863px]': 
+                                                        language === 'bm' ? 'font-bold w-[353px] md:w-[863px]': ''}`}>
+                                        <span className='block'>{t("Career.careerOpportunitiesTitle")}</span>
+                                        <span className='block'>{t("Career.careerOpportunitiesTitle2")}</span>
                                     </span>
                                 </div>
                                 <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
@@ -275,7 +276,7 @@ const Careers = () => {
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                             <div className="flex flex-col leading-[1.20]">
                                                 <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[170px]' : 
                                                                     language === 'bm' ? 'font-medium w-[170px]' : ''}`}>    
                                                     <span className='block'>{t("Career.whatsappDescriptionMobile")}</span>
                                                     <span className='block'>{t("Career.whatsappDescriptionMobile2")}</span>
@@ -285,14 +286,14 @@ const Careers = () => {
                                     </div>
 
                                     <div 
-                                    className='flex w-full md:w-[280px] h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
+                                    className='flex w-full h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                                     onClick={() => handleButtonClick('gmail')}>
                                         <Gmail/>
                                         <div className='flex flex-col text-[#666] text-base font-medium text-left w-full'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[130px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
+                                                                    language === 'zh' ? 'font-semibold w-[170px]' : 
+                                                                    language === 'bm' ? 'font-medium w-[170px]' : ''}`}>
                                                     <span className='block'>{t("Career.gmailDescriptionMobile")}</span>
                                                     <span className='block'>{t("Career.gmailDescriptionMobile2")}</span>
                                                 </span>

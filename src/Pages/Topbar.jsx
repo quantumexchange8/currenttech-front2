@@ -168,10 +168,10 @@ const Topbar = () => {
                                                     <button
                                                     className={`${
                                                       active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full place-items-end rounded-md py-3 ${
-                                                      language === 'en' ? 'px-7 md:px-7' : 
-                                                      language === 'zh' ? 'px-9 md:px-9' : 
-                                                      language === 'bm' ? 'px-7 md:px-7' : ''
+                                                    } group flex flex-col w-full rounded-md py-3 ${
+                                                      language === 'en' ? 'px-7 place-items-end' : 
+                                                      language === 'zh' ? 'place-items-center ' : 
+                                                      language === 'bm' ? 'px-7 place-items-end' : ''
                                                     }`}
                                                   >
                                                     {t("mobileTopbar.homePage")}
@@ -190,10 +190,10 @@ const Topbar = () => {
                                                     <button
                                                     className={`${
                                                       active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full place-items-end rounded-md py-3 ${
-                                                      language === 'en' ? 'px-7 md:px-7' : 
-                                                      language === 'zh' ? 'px-9 md:px-9' : 
-                                                      language === 'bm' ? 'px-7 md:px-7' : ''
+                                                    } group flex flex-col w-full rounded-md py-3 ${
+                                                        language === 'en' ? 'px-7 place-items-end' : 
+                                                        language === 'zh' ? 'place-items-center ' : 
+                                                        language === 'bm' ? 'px-7 place-items-end' : ''
                                                     }`}
                                                   >
                                                     {t("mobileTopbar.advantagePage")}
@@ -213,10 +213,10 @@ const Topbar = () => {
                                                     <button
                                                     className={`${
                                                       active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full place-items-end rounded-md py-3 ${
-                                                      language === 'en' ? 'px-7 md:px-7' : 
-                                                      language === 'zh' ? 'px-9 md:px-9' : 
-                                                      language === 'bm' ? 'px-7 md:px-7' : ''
+                                                    } group flex flex-col w-full rounded-md py-3 ${
+                                                        language === 'en' ? 'px-7 place-items-end' : 
+                                                        language === 'zh' ? 'place-items-center ' : 
+                                                        language === 'bm' ? 'px-7 place-items-end' : ''
                                                     }`}
                                                   >
                                                     {t("mobileTopbar.productsPage")}
@@ -235,10 +235,10 @@ const Topbar = () => {
                                                     <button
                                                     className={`${
                                                       active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full place-items-end rounded-md py-3 ${
-                                                      language === 'en' ? 'px-7 md:px-7' : 
-                                                      language === 'zh' ? 'px-9 md:px-9' : 
-                                                      language === 'bm' ? 'px-7 md:px-7' : ''
+                                                    } group flex flex-col w-full rounded-md py-3 ${
+                                                        language === 'en' ? 'px-7 place-items-end' : 
+                                                        language === 'zh' ? 'place-items-center ' : 
+                                                        language === 'bm' ? 'px-7 place-items-end' : ''
                                                     }`}
                                                   >
                                                     {t("mobileTopbar.careerPage")}
