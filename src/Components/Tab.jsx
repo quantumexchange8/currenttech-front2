@@ -70,13 +70,13 @@ useEffect(() => {
 }, [selectedTab, isMobile,t]);
 
   return (
-    <div className="w-full max-w-md flex flex-col gap-[30px] md:gap-[50px]">
+    <div className="w-full max-w-md flex flex-col gap-[30px] md:gap-[35px]">
       <div className='flex flex-col items-center gap-2'>
         <div className="text-black text-center text-[24px] md:text-[32px] font-bold">
           {title}
         </div>
 
-        <div className="text-black text-center text-[14px] md:text-base font-medium mb-[20px] md:mb-0">
+        <div className="text-black text-center text-[14px] md:text-base font-medium">
           {content}
         </div>
       </div>

@@ -1,10 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
-import { Earphone, Lang } from '../Components/Outline';
+import { Earphone, Lang, Menus } from '../Components/Outline';
 import LogoSvg from '../Assets/Images/logo.svg';
 import { Link, useLocation } from "react-router-dom";
-import Menu_Option from "../Assets/Images/Menu.png"
 import Modal from '../Components/Modal';
 import { LanguageContext } from "../LanguagesContext";
 
@@ -139,7 +138,8 @@ const Topbar = () => {
                         <Menu as="div" className="relative text-left">
                             <div>
                                 <Menu.Button className="inline-flex w-full justify-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
-                                <img src={Menu_Option} alt="Menu" />
+                                {/* <img src={Menu_Option} alt="Menu" /> */}
+                                <Menus/>
                                 </Menu.Button>
                             </div>
                             <Transition

@@ -76,7 +76,7 @@ export default function FormSubmission() {
                     <input 
                         type="text" 
                         name="userName" 
-                        className="w-full h-[40px] md:h-[50px] bg-[#DDD] rounded-md px-3" 
+                        className="w-full h-[30px] md:h-[43px] bg-[#DDD] rounded-md px-3" 
                         required="" 
                     />
                     {errors.userName && <span className="text-red-500">{errors.userName}</span>}
@@ -86,7 +86,7 @@ export default function FormSubmission() {
                     <input 
                         type="text" 
                         name="userEmail" 
-                        className="w-full h-[40px] md:h-[50px] bg-[#DDD] rounded-md px-3" 
+                        className="w-full h-[30px] md:h-[43px] bg-[#DDD] rounded-md px-3" 
                         required="" 
                     />
                     {errors.userEmail && <span className="text-red-500">{errors.userEmail}</span>}
@@ -96,13 +96,13 @@ export default function FormSubmission() {
                     <textarea 
                         type="text" 
                         name="userMessage" 
-                        className="w-full h-[230px] md:h-[200px] bg-[#DDD] rounded-md px-3 pt-2" 
+                        className="w-full h-[200px] md:h-[210px] bg-[#DDD] rounded-md px-3 pt-2" 
                         required="" 
                     />
                     {errors.userMessage && <span className="text-red-500">{errors.userMessage}</span>}
                 </div>
 
-                <button type="submit" className="bg-black w-[200px] h-[50px] rounded-[10px] mt-[26px] md:mt-[42px]">
+                <button type="submit" className="bg-black w-[200px] h-[50px] rounded-[10px] mt-[6px] md:mt-[18px]">
                     <span className="text-white text-xl font-bold">{t("MailForm.button")}</span>
                 </button>
             </div>

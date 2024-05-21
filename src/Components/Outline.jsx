@@ -226,5 +226,13 @@ const Reward = () => {
     );
 }
 
+const Menus = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 26 26" fill="none">
+            <path d="M13 26C9.52763 26 6.26295 24.6478 3.8076 22.1924C1.35225 19.737 0 16.4724 0 13C0 9.52763 1.35225 6.26295 3.8076 3.8076C6.26295 1.35225 9.52763 0 13 0C16.4724 0 19.737 1.35225 22.1924 3.8076C24.6478 6.26295 26 9.52763 26 13C26 16.4724 24.6478 19.737 22.1924 22.1924C19.737 24.6478 16.4724 26 13 26ZM13 2.03125C6.95187 2.03125 2.03125 6.95187 2.03125 13C2.03125 19.0481 6.95187 23.9688 13 23.9688C19.0481 23.9688 23.9688 19.0481 23.9688 13C23.9688 6.95187 19.0481 2.03125 13 2.03125ZM18.5859 11.9834H7.41406V14.0146H18.5859V11.9834ZM18.5859 7.92188H7.41406V9.95312H18.5859V7.92188ZM18.5859 16.0469H7.41406V18.0781H18.5859V16.0469Z" fill="black"/>
+        </svg>
+    );
+}
 
-export { Earphone, Lang, Software, Website, MobileApp, ManagementSystem, PosSystem, SupportService, FrontBackend, AttendentSystem, ProjectTask, Reward};
+
+export { Earphone, Lang, Software, Website, MobileApp, ManagementSystem, PosSystem, SupportService, FrontBackend, AttendentSystem, ProjectTask, Reward, Menus};
