@@ -41,19 +41,19 @@ const Home = () => {
 
             <div className='w-full flex flex-col items-center justify-center'>
                 <div className='max-w-[1000px] w-full mt-[50px] md:mt-[200px] '>
-                    <div className='flex flex-col gap-[50px] md:gap-[200px]'>
-                        <div className='flex flex-col gap-5 md:gap-10 text-left ml-5 md:ml-0 mr-5 md:mr-0'>
+                    <div className='flex flex-col mx-5 md:mx-0 gap-[50px] md:gap-[200px]'>
+                        <div className='flex flex-col gap-5 md:gap-10 text-left md:ml-0 md:mr-0'>
                             <div className='text-base md:text-5xl font-bold justify-center'>
                             {t("Home.industriesTitle")}
                             </div>
 
                             <div className='flex flex-col gap-10 text-left text-base md:text-4xl text-[#666] font-medium'>
-                                <div className= "flex flex-col leading-[1.20]">
-                                    <span className={`${language === 'en' ? 'font-medium w-[340px] md:w-[910px]': 
+                                <div className= "md:w-[910px] leading-tight">
+                                    <div className={`${language === 'en' ? 'font-medium w-[340px] md:w-[910px]': 
                                                         language === 'zh' ? 'font-semibold w-[360px] md:w-[950px]': 
                                                         language === 'bm' ? 'font-medium w-[331px] md:w-[960px]': ''}`}>
                                         {t("Home.industriesDescription")}
-                                    </span>
+                                    </div>
                                 </div>
                                            
                                 <div className="flex flex-col leading-[1.20]">
