@@ -24,10 +24,8 @@ export default function Modal({ open, onClose, title, content, selectedButton })
                                 </button>
                             </div>
                         </div>
-
                         <TabComponent title={title} content={content} selectedButton={selectedButton}/>
-                    </div>
-                            
+                    </div>     
                 </div>  
             </div>
         </div>

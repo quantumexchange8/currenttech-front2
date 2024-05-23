@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import {useState} from 'react';
+import React, {useContext, useState } from 'react';
 import { Software, Website, MobileApp, ManagementSystem, PosSystem, SupportService} from '../Components/Outline.jsx';
 import { WhatsApp, Gmail } from '../Components/Brand.jsx';
 import Modal from '../Components/Modal';
@@ -15,8 +14,6 @@ const Home = () => {
         setSelectedButton(button);
     };
 
-    
-
     return (
         <div className='mt-[60px] md:mt-0'>
             <div className='relative'>
@@ -31,44 +28,43 @@ const Home = () => {
                         language === 'en' ? 'w-[260px] md:w-[1000px]' :
                         language === 'zh' ? 'w-[140px] md:w-[1000px]' :
                         language === 'bm' ? 'w-[200px] md:w-[1000px]' :
-                        ''}`}>
+                        ''}`}>  
                         <span className="block">{t("Home.homeVideoTitle")}</span>
                         <span className="block">{t("Home.homeVideoTitle2")}</span>
                     </span>
-
                 </div>
             </div>
 
             <div className='w-full flex flex-col items-center justify-center'>
                 <div className='max-w-[1000px] w-full mt-[50px] md:mt-[200px] '>
                     <div className='flex flex-col mx-5 md:mx-0 gap-[50px] md:gap-[200px]'>
-                        <div className='flex flex-col gap-5 md:gap-10 text-left md:ml-0 md:mr-0'>
+                        <div className='flex flex-col gap-5 md:gap-10 text-left'>
                             <div className='text-base md:text-5xl font-bold justify-center'>
-                            {t("Home.industriesTitle")}
+                                {t("Home.industriesTitle")}
                             </div>
 
-                            <div className='flex flex-col gap-10 text-left text-base md:text-4xl text-[#666] font-medium'>
-                                <div className= "md:w-[910px] leading-tight">
-                                    <div className={`${language === 'en' ? 'font-medium w-[340px] md:w-[910px]': 
-                                                        language === 'zh' ? 'font-semibold w-[360px] md:w-[950px]': 
-                                                        language === 'bm' ? 'font-medium w-[331px] md:w-[960px]': ''}`}>
+                            <div className='flex flex-col gap-10 text-left text-base md:text-4xl text-[#666] font-medium w-full md:w-[910px]'>
+                                <div className= "leading-tight">
+                                    <div className={`${language === 'en' ? 'font-medium md:w-[910px]': 
+                                                        language === 'zh' ? 'font-semibold md:w-[950px]': 
+                                                        language === 'bm' ? 'font-medium md:w-[960px]': ''}`}>
                                         {t("Home.industriesDescription")}
                                     </div>
                                 </div>
                                            
-                                <div className="flex flex-col leading-[1.20]">
-                                    <span className={`${language === 'en' ? 'font-medium w-[336px] md:w-[910px]' : 
-                                                        language === 'zh' ? 'font-semibold w-[360px] md:w-[950px]' : 
-                                                        language === 'bm' ? 'font-medium w-[335px] md:w-[940px]' : ''}`}>
+                                <div className="leading-tight">
+                                    <span className={`${language === 'en' ? 'font-medium md:w-[910px]' : 
+                                                        language === 'zh' ? 'font-semibold md:w-[950px]' : 
+                                                        language === 'bm' ? 'font-medium md:w-[940px]' : ''}`}>
                                         {t("Home.industriesDescription2")}
                                     </span>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='md:w-full h-[1px] bg-[#333] ml-5 md:ml-0 mr-5 md:mr-0'></div>
+                        <div className='w-full h-[1px] bg-[#333]'></div>
 
-                        <div className='flex flex-col gap-5 md:gap-[40px] ml-5 md:ml-0 mr-5 md:mr-0'>
+                        <div className='flex flex-col gap-5 md:gap-[40px] w-full'>
                             <div className='text-base md:text-5xl text-left justify-center'>
                                 <div className='flex flex-col leading-[1.20] font-bold'>
                                     {t("Home.technologyTitle")}
@@ -78,9 +74,9 @@ const Home = () => {
                             <div className='flex flex-col gap-10 text-left text-base md:text-4xl text-[#666] font-medium'>
                                 <div className='flex flex-col'>
                                     <div className="flex flex-col leading-[1.20]">
-                                        <span className={`${language === 'en' ? 'font-medium w-[353px] md:w-[910px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[360px] md:w-[980px]' : 
-                                                            language === 'bm' ? 'font-medium w-[340px] md:w-[960px]' : ''}`}>
+                                        <span className={`${language === 'en' ? 'font-medium md:w-[910px]' : 
+                                                            language === 'zh' ? 'font-semibold md:w-[980px]' : 
+                                                            language === 'bm' ? 'font-medium md:w-[960px]' : ''}`}>
                                             {t("Home.technologyDescription")}
                                         </span>
                                     </div>
@@ -88,11 +84,11 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className='md:w-full h-[1px] bg-[#333] ml-5 md:ml-0 mr-5 md:mr-0'></div>
+                        <div className='w-full h-[1px] bg-[#333]'></div>
                     </div>
 
                     <div className='flex flex-col gap-[50px] md:gap-[200px] mt-[50px]'>
-                        <div className='flex flex-col gap-[30px] md:gap-[150px] ml-5 md:ml-0 mr-5 md:mr-0'>
+                        <div className='flex flex-col gap-[30px] md:gap-[150px] mx-5 md:mx-0'>
                             <div className='text-base md:text-5xl text-left justify-center'>
                                 <div className='flex flex-col leading-[1.20] font-bold'>
                                     {t("Home.serviceTitle")}
@@ -100,8 +96,8 @@ const Home = () => {
                             </div>
 
                             <div className='flex gap-[20px] md:gap-[100px] flex-shrink-0 '>
-                                <div>
-                                <Software/>
+                                <div className='flex flex-shrink-0'>
+                                    <Software/>
                                 </div>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                     <div className='text-base md:text-4xl text-left'>
@@ -109,12 +105,12 @@ const Home = () => {
                                             {t("Home.serviceSubTitle.softwareTitle")}
                                         </div>
                                     </div>
-                                    <div className='text-base md:text-2xl font-medium text-[#666] text-left'>
+                                    <div className='text-base md:text-2xl font-medium text-[#666] text-left w-full'>
                                         <div className='flex flex-col'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <span className={`${language === 'en' ? 'font-medium w-[290px] md:w-[790px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[300px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[300px] md:w-[760px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium md:w-[790px]' : 
+                                                                    language === 'zh' ? 'font-semibold md:w-[800px]' : 
+                                                                    language === 'bm' ? 'font-medium md:w-[760px]' : ''}`}>
                                                     <span className='hidden md:block'>{t("Home.serviceSubTitle_Description.softwareDescription")}</span>
                                                     <span className='hidden md:block'>{t("Home.serviceSubTitle_Description.softwareDescription2")}</span>
                                                     <span className='md:hidden'>{t("Home.serviceSubTitle_Description.softwareDescription")}</span>
@@ -127,7 +123,7 @@ const Home = () => {
                             </div>
 
                             <div className='flex gap-[20px] md:gap-[100px]'>
-                                <div>
+                                <div className='flex flex-shrink-0'>
                                     <Website/>
                                 </div>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px]'>
@@ -139,9 +135,9 @@ const Home = () => {
                                     <div className='flex flex-col leading-[1.20] text-base md:text-2xl font-medium text-[#666] text-left'>
                                         <div className='flex flex-col'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <span className={`${language === 'en' ? 'font-medium w-[285px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[300px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[290px] md:w-[760px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium md:w-[800px]' : 
+                                                                    language === 'zh' ? 'font-semibold md:w-[800px]' : 
+                                                                    language === 'bm' ? 'font-medium md:w-[760px]' : ''}`}>
                                                     {t("Home.serviceSubTitle_Description.websiteDescription")}
                                                 </span>
                                             </div>
@@ -151,7 +147,7 @@ const Home = () => {
                             </div>
 
                             <div className='flex gap-[20px] md:gap-[100px]'>
-                                <div>
+                                <div className='flex flex-shrink-0'>
                                     <MobileApp/>
                                 </div>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px]'>
@@ -163,9 +159,9 @@ const Home = () => {
                                     <div className='flex text-base md:text-2xl font-medium text-[#666] text-left'>
                                         <div className='flex flex-col'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <span className={`${language === 'en' ? 'font-medium w-[273px] md:w-[750px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[300px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[290px] md:w-[770px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium md:w-[750px]' : 
+                                                                    language === 'zh' ? 'font-semibold md:w-[800px]' : 
+                                                                    language === 'bm' ? 'font-medium md:w-[770px]' : ''}`}>
                                                     {t("Home.serviceSubTitle_Description.mobileAppDescription")}
                                                 </span>
                                             </div>
@@ -175,7 +171,9 @@ const Home = () => {
                             </div>
 
                             <div className='flex gap-[20px] md:gap-[100px]'>
+                                <div className='flex flex-shrink-0'>
                                     <ManagementSystem/>
+                                </div>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                     <div className='text-base md:text-4xl text-left'>
                                         <div className='flex flex-col leading-[1.20] font-semibold'>
@@ -185,9 +183,9 @@ const Home = () => {
                                     <div className='text-base md:text-2xl font-medium text-[#666] text-left'>
                                         <div className='flex flex-col'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <span className={`${language === 'en' ? 'font-medium w-[285px] md:w-[750px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[286px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[290px] md:w-[750px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium md:w-[750px]' : 
+                                                                    language === 'zh' ? 'font-semibold md:w-[800px]' : 
+                                                                    language === 'bm' ? 'font-medium md:w-[750px]' : ''}`}>
                                                     <span className='hidden md:block'>{t("Home.serviceSubTitle_Description.managementSystemDescription")}</span>
                                                     <span className='hidden md:block'>{t("Home.serviceSubTitle_Description.managementSystemDescription2")}</span>
                                                     <span className='md:hidden'>{t("Home.serviceSubTitle_Description.managementSystemDescription")}</span>
@@ -200,7 +198,7 @@ const Home = () => {
                             </div>
 
                             <div className='flex gap-[20px] md:gap-[100px]'>
-                                <div>
+                                <div className='flex flex-shrink-0'>
                                     <PosSystem/>
                                 </div>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px]'>
@@ -212,9 +210,9 @@ const Home = () => {
                                     <div className='text-base md:text-2xl font-medium text-[#666] text-left'>
                                         <div className='flex flex-col'>
                                             <div className={`flex flex-col leading-[1.20] ${language === 'en' ? 'font-medium' : 'font-semibold'}`}>
-                                                <span className={`${language === 'en' ? 'font-medium w-[290px] md:w-[750px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[300px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[290px] md:w-[750px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium md:w-[750px]' : 
+                                                                    language === 'zh' ? 'font-semibold md:w-[800px]' : 
+                                                                    language === 'bm' ? 'font-medium md:w-[750px]' : ''}`}>
                                                     {t("Home.serviceSubTitle_Description.posSystemDescription")}
                                                 </span>
                                             </div>
@@ -224,7 +222,7 @@ const Home = () => {
                             </div>
 
                             <div className='flex gap-[20px] md:gap-[100px]'>
-                                <div>
+                                <div className='flex flex-shrink-0'>
                                     <SupportService/>
                                 </div>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px]'>
@@ -236,9 +234,9 @@ const Home = () => {
                                     <div className='text-base md:text-2xl font-medium text-[#666] text-left'>
                                         <div className='flex flex-col'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <span className={`${language === 'en' ? 'font-medium w-[290px] md:w-[780px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[300px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-medium w-[290px] md:w-[750px]' : ''}`}>
+                                                <span className={`${language === 'en' ? 'font-medium md:w-[780px]' : 
+                                                                    language === 'zh' ? 'font-semibold md:w-[800px]' : 
+                                                                    language === 'bm' ? 'font-medium md:w-[750px]' : ''}`}>
                                                     {t("Home.serviceSubTitle_Description.support&serviceDescription")}
                                                 </span>
                                             </div>
@@ -248,21 +246,21 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className='md:w-full h-[1px] bg-[#333] ml-5 md:ml-0 mr-5 md:mr-0'></div>
+                        <div className='md:w-full h-[1px] bg-[#333] mx-5 md:mx-0'></div>
                     </div>
 
-                    <div className='flex flex-col gap-5 md:gap-10 mt-[50px] mb-[50px] md:mb-[150px] space-x-5 md:space-x-0'>
-                        <div className='flex flex-col text-base md:text-5xl text-left ml-5 md:ml-0'>
+                    <div className='flex flex-col gap-5 md:gap-10 mt-[50px] mb-[50px] md:mb-[150px] mx-5 md:mx-0'>
+                        <div className='flex flex-col text-base md:text-5xl text-left'>
                             <div className='flex flex-col leading-[1.20] font-bold'>
                                 <span className="hidden md:flex w-[530px]">{t("Home.innovativeTitle")}</span>
-                                <span className="w-[289px] md:hidden">{t("Home.innovativeTitle")}</span>
+                                <span className="md:hidden">{t("Home.innovativeTitle")}</span>
                             </div>
                         </div>
                         <div className='flex text-base md:text-4xl font-medium text-[#666] text-left'>
                             <div className="flex flex-col leading-[1.20]">
-                                <span className={`${language === 'en' ? 'font-medium w-[300px] md:w-[950px]' : 
-                                                    language === 'zh' ? 'font-semibold w-[360px] md:w-[980px]' : 
-                                                    language === 'bm' ? 'font-medium w-[330px] md:w-[950px]' : ''}`}>
+                                <span className={`${language === 'en' ? 'font-medium md:w-[950px]' : 
+                                                    language === 'zh' ? 'font-semibold md:w-[980px]' : 
+                                                    language === 'bm' ? 'font-medium md:w-[950px]' : ''}`}>
                                     {t("Home.innovativeDescription")}
                                 </span>
                             </div>
@@ -423,19 +421,19 @@ const Home = () => {
                 </div>
 
                 <div className='flex flex-col max-w-[1000px] w-full'>
-                <div className='flex flex-col gap-[66px] my-[50px] md:my-[150px] ml-5 md:ml-0 mr-5 md:mr-0'>
+                <div className='flex flex-col gap-[66px] my-[50px] md:my-[150px] mx-5 md:mx-0'>
                     <div className='flex flex-col gap-6 md:gap-10'>
                         <div className='flex flex-col gap-3 md:gap-10'>
                             <div className='text-base md:text-5xl font-bold text-left'>
-                                <div className='flex flex-col leading-[1.20] font-bold w-[353px] md:w-[950px]'>
+                                <div className='flex flex-col leading-[1.20] font-bold md:w-[950px]'>
                                     {t("Home.homeReminderTitle")}
                                 </div>
                             </div>
                             <div className='flex flex-col text-[#666] text-base md:text-4xl font-medium text-left leading-[1.20]'>
                                 <div className="flex flex-col leading-[1.20]">
-                                    <span className={`${language === 'en' ? 'font-medium w-[350px] md:w-[950px]' : 
-                                                        language === 'zh' ? 'font-semibold w-[360px] md:w-[1000px]' : 
-                                                        language === 'bm' ? 'font-medium w-[330px] md:w-[950px]' : ''}`}>
+                                    <span className={`${language === 'en' ? 'font-medium md:w-[950px]' : 
+                                                        language === 'zh' ? 'font-semibold md:w-[1000px]' : 
+                                                        language === 'bm' ? 'font-medium md:w-[950px]' : ''}`}>
                                         {t("Home.homeReminderDescription")}
                                     </span>
                                 </div>
@@ -482,11 +480,11 @@ const Home = () => {
                             className='flex w-full h-[70px]  items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                             onClick={() => handleButtonClick('whatsapp')}>
                                 <WhatsApp/>
-                                <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                <div className='flex flex-col text-[#666] text-base font-medium text-left w-full'>
                                     <div className="flex flex-col leading-[1.20]">
-                                        <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[170px]' : 
-                                                            language === 'bm' ? 'font-medium w-[170px]' : ''}`}>
+                                        <span className={`${language === 'en' ? 'font-medium' : 
+                                                            language === 'zh' ? 'font-semibold' : 
+                                                            language === 'bm' ? 'font-medium' : ''}`}>
                                             <span className='block'>{t("Home.whatsappDescriptionMobile")}</span>
                                             <span className='block'>{t("Home.whatsappDescriptionMobile2")}</span>
                                         </span>
@@ -498,11 +496,11 @@ const Home = () => {
                             className='flex w-full h-[70px] items-center gap-6 bg-white border border-white rounded-[15px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-6 py-4 cursor-pointer'
                             onClick={() => handleButtonClick('gmail')}>
                                 <Gmail/>
-                                <div className='flex flex-col text-[#666] text-base font-medium text-left'>
+                                <div className='flex flex-col text-[#666] text-base font-medium text-left w-full'>
                                     <div className="flex flex-col leading-[1.20]">
-                                        <span className={`${language === 'en' ? 'font-medium w-[170px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[170px]' : 
-                                                            language === 'bm' ? 'font-medium w-[170px]' : ''}`}>
+                                        <span className={`${language === 'en' ? 'font-medium' : 
+                                                            language === 'zh' ? 'font-semibold' : 
+                                                            language === 'bm' ? 'font-medium' : ''}`}>
                                             <span className='block'>{t("Home.gmailDescriptionMobile")}</span>
                                             <span className='block'>{t("Home.gmailDescriptionMobile2")}</span>
                                         </span>

@@ -1,6 +1,5 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react'
-import { Fragment } from 'react'
 import { Earphone, Lang, Menus } from '../Components/Outline';
 import LogoSvg from '../Assets/Images/logo.svg';
 import { Link, useLocation } from "react-router-dom";
@@ -138,7 +137,6 @@ const Topbar = () => {
                         <Menu as="div" className="relative text-left">
                             <div>
                                 <Menu.Button className="inline-flex w-full justify-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
-                                {/* <img src={Menu_Option} alt="Menu" /> */}
                                 <Menus/>
                                 </Menu.Button>
                             </div>
@@ -290,54 +288,49 @@ const Topbar = () => {
                             >
                                 <Menu.Items className="absolute mt-5 w-[300px] h-[64px] rounded-[30px] bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
                                     <div className="flex flex-row">
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <button
+                                                    className={`${
+                                                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    } group flex flex-row w-full text-base place-items-center rounded-[30px] px-7 py-5`}
+                                                    onClick={() => handleLanguageChange('en')}
+                                                >
+                                                    English {language === 'en'}
+                                                </button>
+                                            )}
+                                        </Menu.Item>
                                         
-                                            <Menu.Item>
-                                                {({ active }) => (
-                                                    <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-row w-full text-base place-items-center rounded-[30px] px-7 py-5`}
-                                                        onClick={() => handleLanguageChange('en')}
-                                                    >
-                                                        English {language === 'en'}
-                                                    </button>
-                                                )}
-                                            </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <button
+                                                    className={`${
+                                                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    } group flex flex-row w-full text-base place-items-center rounded-[30px] px-7 py-5`}
+                                                    onClick={() => handleLanguageChange('bm')}
+                                                >
+                                                    Malay {language === 'bm'}
+                                                </button>
+                                            )}
+                                        </Menu.Item>
                                         
-                                        
-                                            <Menu.Item>
-                                                {({ active }) => (
-                                                    <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-row w-full text-base place-items-center rounded-[30px] px-7 py-5`}
-                                                        onClick={() => handleLanguageChange('bm')}
-                                                    >
-                                                        Malay {language === 'bm'}
-                                                    </button>
-                                                )}
-                                            </Menu.Item>
-                                        
-                                        
-                                            <Menu.Item>
-                                                {({ active }) => (
-                                                    <button
-                                                        className={`${
-                                                            active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                        } group flex flex-row w-full text-base place-items-center rounded-[30px] px-[30px] py-5`}
-                                                        onClick={() => handleLanguageChange('zh')}
-                                                    >
-                                                        中文 {language === 'zh'}
-                                                    </button>
-                                                )}
-                                            </Menu.Item>
-                                        
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <button
+                                                    className={`${
+                                                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    } group flex flex-row w-full text-base place-items-center rounded-[30px] px-[30px] py-5`}
+                                                    onClick={() => handleLanguageChange('zh')}
+                                                >
+                                                    中文 {language === 'zh'}
+                                                </button>
+                                            )}
+                                        </Menu.Item>
                                     </div>
                                 </Menu.Items>
                             </Transition>
                         </Menu> 
                     </div>
-
                 </div>
             </div>
             <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>

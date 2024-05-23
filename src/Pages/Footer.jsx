@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ct_logo from '../Assets/Images/currenttech_logo.svg';
 import { QR, Calendar, FooterWhatsApp, FooterGmail } from '../Components/Brand.jsx';
+import Modal from '../Components/Modal';
 
 const Footer = () => {
+    const [openButton, setOpenButton] = useState(false);
+    const [selectedButton, setSelectedButton] = useState(null);
+
+    const handleButtonClick = (button) => {
+        setOpenButton(true);
+        setSelectedButton(button);
+    };
 
     return (
         <div className="w-full h-[400px] md:h-[300px] bg-[#aaaaaa80] flex justify-center items-center">
@@ -47,7 +55,8 @@ const Footer = () => {
                     <div className='text-sm font-bold'>
                         Start to connect with us:
                     </div>
-                    <div className='w-[96px] h-[40px] flex items-center gap-4 bg-white border border-white rounded-[10px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-[15px] py-2'>
+                    <div className='w-[96px] h-[40px] flex items-center gap-4 bg-white border border-white rounded-[10px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-[15px] py-2 cursor-pointer'
+                        onClick={() => handleButtonClick('whatsapp')}>
                         <div>
                             <FooterWhatsApp/>
                         </div>
@@ -55,12 +64,14 @@ const Footer = () => {
                             <QR/>
                         </div>
                     </div>
-                    <div className='w-[96px] h-[40px] flex items-center gap-6 bg-white border border-white rounded-[10px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-[15px] py-2'>
+                    <div className='w-[96px] h-[40px] flex items-center gap-6 bg-white border border-white rounded-[10px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-[15px] py-2 cursor-pointer'
+                        onClick={() => handleButtonClick('gmail')}>
                         <FooterGmail/>
                         <Calendar/>
                     </div>
                 </div>
             </div>
+            <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     )
 }
