@@ -318,7 +318,11 @@
       "sendStatusSuccess":"成功!",
       "sendStatusFailure":"错误!",
       "mobileMailFormDescription":"欢迎来到当今科技联系客服页面. ",
-      "mobileMailFormDescription2":" "
+      "mobileMailFormDescription2":" ",
+      "requiredName":"请填写您的姓名",
+      "requiredEmail":"请填写您的邮箱",
+      "emailFormat":"请填写正确的邮箱格式",
+      "requiredMessage":"请填写您的信息"
     }
    
   }

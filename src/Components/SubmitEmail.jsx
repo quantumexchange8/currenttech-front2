@@ -31,18 +31,18 @@ export default function FormSubmission() {
         };
 
         if (!userName) {
-            newErrors.userName = t("Your name is required.");
+            newErrors.userName = t("MailForm.requiredName");
             valid = false;
         }
         if (!userEmail) {
-            newErrors.userEmail = t("Your email is required.");
+            newErrors.userEmail = t("MailForm.requiredEmail");
             valid = false;
         } else if (!validateEmail(userEmail)) {
-            newErrors.userEmail = t("The email must be a valid email address.");
+            newErrors.userEmail = t("MailForm.emailFormat");
             valid = false;
         }
         if (!userMessage) {
-            newErrors.userMessage = t("Your message is required.");
+            newErrors.userMessage = t("MailForm.requiredMessage");
             valid = false;
         }
 

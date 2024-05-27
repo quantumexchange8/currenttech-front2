@@ -319,7 +319,11 @@
       "sendStatusSuccess":"Berjaya !",
       "sendStatusFailure":"Ralat !",
       "mobileMailFormDescription":"Selamat datang ke halaman ",
-      "mobileMailFormDescription2":"hubungi kami Current Tech"
+      "mobileMailFormDescription2":"hubungi kami Current Tech",
+      "requiredName":"Silakan isi nama anda.",
+      "requiredEmail":"Silakan isi email anda.",
+      "emailFormat":"Silakan isi format email yang benar.",
+      "requiredMessage":"Silakan isi mesej anda."
     }
    
   }

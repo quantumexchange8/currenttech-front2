@@ -22,32 +22,32 @@ const Footer = () => {
                         </div>
                         <div className='flex flex-col text-base font-normal text-left'>
                             <div className='hidden md:flex flex-col leading-[1.20]'>
-                                <span>Current Tech Industries is a leading technology solutions development provider. Founded in 2006,</span>
-                                <span>with a primary focus on technology development and distribution, the company is dedicated to </span>
-                                <span>driving innovative solutions for digital transformation. By offering cutting-edge IT solutions, Current </span>
-                                <span>Tech Industries aims to meet the diverse needs of its partners and customers.</span>
+                                <div>Current Tech Industries is a leading technology solutions development provider. Founded in 2006,</div>
+                                <div>with a primary focus on technology development and distribution, the company is dedicated to </div>
+                                <div>driving innovative solutions for digital transformation. By offering cutting-edge IT solutions, Current </div>
+                                <div>Tech Industries aims to meet the diverse needs of its partners and customers.</div>
                             </div>
 
                             <div className='flex flex-col leading-[1.20] md:hidden'>
-                                <span>Current Tech Industries is a leading</span>
-                                <span>technology solutions development provider.</span>
-                                <span>Founded in 2006, with a primary focus on</span>
-                                <span>technology development and distribution,</span>
-                                <span>the company is dedicated to driving</span>
-                                <span>innovative solutions for digital transformation.</span>
-                                <span>By offering cutting-edge IT solutions, Current</span>
-                                <span>Tech Industries aims to meet the diverse</span>
-                                <span>needs of its partners and customers.</span>
+                                <div>Current Tech Industries is a leading</div>
+                                <div>technology solutions development provider.</div>
+                                <div>Founded in 2006, with a primary focus on</div>
+                                <div>technology development and distribution,</div>
+                                <div>the company is dedicated to driving</div>
+                                <div>innovative solutions for digital transformation.</div>
+                                <div>By offering cutting-edge IT solutions, Current</div>
+                                <div>Tech Industries aims to meet the diverse</div>
+                                <div>needs of its partners and customers.</div>
                             </div>
                         </div>
                     </div>
                     <div className='text-base font-bold text-left'>
                         <div className='hidden md:flex flex-col leading-[1.20]'>
-                            <span>Copyright © Current Tech Industries 2023. All rights reserved.</span>
+                            <div>Copyright © Current Tech Industries 2023. All rights reserved.</div>
                         </div>
                         <div className='flex flex-col leading-[1.20] md:hidden'>
-                            <span>Copyright © Current Tech Industries 2023.</span>
-                            <span>All rights reserved.</span>
+                            <div>Copyright © Current Tech Industries 2023.</div>
+                            <div>All rights reserved.</div>
                         </div>
                     </div>
                 </div>

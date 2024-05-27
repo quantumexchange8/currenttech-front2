@@ -43,9 +43,9 @@ const Topbar = () => {
                             }
                             `}
                         >
-                            <span className={language === 'en' ? 'font-medium' : 'font-semibold'}>
+                            <div className={language === 'en' ? 'font-medium' : 'font-semibold'}>
                                 {t("Topbar.advantagePage")}
-                            </span>
+                            </div>
                             
                         </Link>
                         <Link
@@ -54,9 +54,9 @@ const Topbar = () => {
                                 location.pathname === '/products' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
-                            <span className={language === 'en' ? 'font-medium' : 'font-semibold'}>
+                            <div className={language === 'en' ? 'font-medium' : 'font-semibold'}>
                                 {t("Topbar.productsPage")}
-                            </span>
+                            </div>
                         </Link>
                         <Link
                             to="/careers"
@@ -64,9 +64,9 @@ const Topbar = () => {
                                 location.pathname === '/careers' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
-                            <span className={language === 'en' ? 'font-medium' : 'font-semibold'}>
+                            <div className={language === 'en' ? 'font-medium' : 'font-semibold'}>
                                 {t("Topbar.careerPage")}
-                            </span>
+                            </div>
                         </Link>
                     </div>
 

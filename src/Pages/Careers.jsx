@@ -22,14 +22,14 @@ const Careers = () => {
                 </video>
 
                 <div className='absolute left-5 md:left-[100px] bottom-5 md:bottom-[100px] flex flex-col text-white text-left gap-5'>
-                    <span className='text-xl md:text-5xl font-bold'>{t("Career.careerVideoTitle")}</span>
+                    <div className='text-xl md:text-5xl font-bold'>{t("Career.careerVideoTitle")}</div>
                     <div className='flex flex-col text-base md:text-4xl'>
                         <div className='flex flex-col leading-[1.20]'>
-                            <span className={`${language === 'en' ? 'font-medium w-[200px] md:w-[540px]': 
+                            <div className={`${language === 'en' ? 'font-medium w-[200px] md:w-[540px]': 
                                                 language === 'zh' ? 'font-semibold w-[240px] md:w-[540px]': 
                                                 language === 'bm' ? 'font-medium w-[299px] md:w-[690px]': ''}`}>
                                 {t("Career.careerVideoDescription")}
-                            </span>
+                            </div>
                         </div>                
                     </div>
                 </div>
@@ -41,20 +41,20 @@ const Careers = () => {
                         <div className='flex flex-col gap-[50px] md:gap-[200px] ml-5 md:ml-0 mr-5 md:mr-0'>
                             <div className='flex flex-col gap-5 md:gap-10'>
                                 <div className='flex flex-col md:w-[863px] text-base md:text-5xl font-bold text-left leading-[1.20]'>
-                                    <span className={`${language === 'en' ? 'font-bold md:w-[863px]': 
+                                    <div className={`${language === 'en' ? 'font-bold md:w-[863px]': 
                                                         language === 'zh' ? 'font-bold md:w-[863px]': 
                                                         language === 'bm' ? 'font-bold md:w-[863px]': ''}`}>
-                                        <span className='block'>{t("Career.careerOpportunitiesTitle")}</span>
-                                        <span className='block'>{t("Career.careerOpportunitiesTitle2")}</span>
-                                    </span>
+                                        <div className='block'>{t("Career.careerOpportunitiesTitle")}</div>
+                                        <div className='block'>{t("Career.careerOpportunitiesTitle2")}</div>
+                                    </div>
                                 </div>
                                 <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
                                     <div className='flex flex-col leading-[1.20]'>
-                                        <span className={`${language === 'en' ? 'font-medium md:w-[890px]': 
+                                        <div className={`${language === 'en' ? 'font-medium md:w-[890px]': 
                                                             language === 'zh' ? 'font-semibold md:w-[1000px]': 
                                                             language === 'bm' ? 'font-medium md:w-[890px]': ''}`}>
                                             {t("Career.careerOpportunitiesDescription")}
-                                        </span>
+                                        </div>
                                     </div>
                                 </div>  
                             </div>
@@ -75,11 +75,11 @@ const Careers = () => {
                                 <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] leading-tight'>
                                     <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
                                         <div className='flex flex-col leading-[1.20]'>
-                                            <span className={`${language === 'en' ? 'font-medium md:w-[930px]': 
+                                            <div className={`${language === 'en' ? 'font-medium md:w-[930px]': 
                                                                 language === 'zh' ? 'font-semibold md:w-[1000px]': 
                                                                 language === 'bm' ? 'font-medium md:w-[980px]': ''}`}>
                                                 {t("Career.ItProgrammer.ItProgrammerDescription")}
-                                            </span>
+                                            </div>
                                         </div>
                                     </div>  
                                 </div>  
@@ -125,11 +125,11 @@ const Careers = () => {
                                 </div>
                                 <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
                                     <div className='flex flex-col leading-[1.20]'>
-                                        <span className={`${language === 'en' ? 'font-medium md:w-[930px]': 
+                                        <div className={`${language === 'en' ? 'font-medium md:w-[930px]': 
                                                             language === 'zh' ? 'font-semibold md:w-[1000px]': 
                                                             language === 'bm' ? 'font-medium md:w-[980px]': ''}`}>
                                             {t("Career.UiDesigner.UiDesignerDescription")}
-                                        </span>
+                                        </div>
                                     </div>
                                 </div>  
                             </div>
@@ -172,11 +172,11 @@ const Careers = () => {
                                 </div>
                                 <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px]'>
                                     <div className='flex flex-col leading-[1.20]'>
-                                        <span className={`${language === 'en' ? 'font-medium md:w-[930px]': 
+                                        <div className={`${language === 'en' ? 'font-medium md:w-[930px]': 
                                                             language === 'zh' ? 'font-semibold md:w-[1000px]': 
                                                             language === 'bm' ? 'font-medium md:w-[960px]': ''}`}>
                                             {t("Career.Internship.InternshipDescription")}
-                                        </span>
+                                        </div>
                                     </div>
                                 </div>  
                             </div>
@@ -222,11 +222,11 @@ const Careers = () => {
                                 {t("Career.careerReminderTitle")}
                             </div>
                             <div className='flex flex-col text-[#000] text-base md:text-2xl font-semibold md:font-bold text-left leading-[1.20]'>
-                                <span className={`${language === 'en' ? 'font-medium md:w-[930px]': 
+                                <div className={`${language === 'en' ? 'font-medium md:w-[930px]': 
                                                     language === 'zh' ? 'font-semibold md:w-[1000px]': 
                                                     language === 'bm' ? 'font-medium md:w-[930px]': ''}`}>
                                     {t("Career.careerReminderDescription")}
-                                </span>
+                                </div>
                             </div>                            
                             <div 
                                 className='flex items-center gap-10'>
@@ -236,12 +236,12 @@ const Careers = () => {
                                     <WhatsApp/>
                                     <div className='flex flex-col text-[#666] text-base text-left'>
                                         <div className="flex flex-col leading-[1.20]">
-                                            <span className={`${language === 'en' ? 'font-medium w-[160px]' : 
+                                            <div className={`${language === 'en' ? 'font-medium w-[160px]' : 
                                                                 language === 'zh' ? 'font-semibold w-[130px]' : 
                                                                 language === 'bm' ? 'font-medium w-[160px]' : ''}`}>
-                                                <span className='block'>{t("Career.whatsappDescription")}</span>
-                                                <span className='block'>{t("Career.whatsappDescription2")}</span>
-                                            </span>
+                                                <div className='block'>{t("Career.whatsappDescription")}</div>
+                                                <div className='block'>{t("Career.whatsappDescription2")}</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -251,12 +251,12 @@ const Careers = () => {
                                     <GmailIcon/>
                                     <div className='flex flex-col text-[#666] text-base text-left'>
                                         <div className="flex flex-col leading-[1.20]">
-                                            <span className={`${language === 'en' ? 'font-medium w-[140px]' : 
+                                            <div className={`${language === 'en' ? 'font-medium w-[140px]' : 
                                                                 language === 'zh' ? 'font-semibold w-[130px]' : 
                                                                 language === 'bm' ? 'font-medium w-[140px]' : ''}`}>
-                                                <span className='block'>{t("Career.gmailDescription")}</span>
-                                                <span className='block'>{t("Career.gmailDescription2")}</span>
-                                            </span>
+                                                <div className='block'>{t("Career.gmailDescription")}</div>
+                                                <div className='block'>{t("Career.gmailDescription2")}</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -270,12 +270,12 @@ const Careers = () => {
                                     <WhatsApp/>
                                     <div className='flex flex-col text-[#666] text-base font-medium text-left'>
                                         <div className="flex flex-col leading-[1.20]">
-                                            <span className={`${language === 'en' ? 'font-medium' : 
+                                            <div className={`${language === 'en' ? 'font-medium' : 
                                                                 language === 'zh' ? 'font-semibold' : 
                                                                 language === 'bm' ? 'font-medium' : ''}`}>    
-                                                <span className='block'>{t("Career.whatsappDescriptionMobile")}</span>
-                                                <span className='block'>{t("Career.whatsappDescriptionMobile2")}</span>
-                                            </span>
+                                                <div className='block'>{t("Career.whatsappDescriptionMobile")}</div>
+                                                <div className='block'>{t("Career.whatsappDescriptionMobile2")}</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -286,12 +286,12 @@ const Careers = () => {
                                     <Gmail/>
                                     <div className='flex flex-col text-[#666] text-base font-medium text-left w-full'>
                                         <div className="flex flex-col leading-[1.20]">
-                                            <span className={`${language === 'en' ? 'font-medium' : 
+                                            <div className={`${language === 'en' ? 'font-medium' : 
                                                                 language === 'zh' ? 'font-semibold' : 
                                                                 language === 'bm' ? 'font-medium' : ''}`}>
-                                                <span className='block'>{t("Career.gmailDescriptionMobile")}</span>
-                                                <span className='block'>{t("Career.gmailDescriptionMobile2")}</span>
-                                            </span>
+                                                <div className='block'>{t("Career.gmailDescriptionMobile")}</div>
+                                                <div className='block'>{t("Career.gmailDescriptionMobile2")}</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

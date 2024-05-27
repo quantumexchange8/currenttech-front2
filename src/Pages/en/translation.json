@@ -317,6 +317,10 @@
           "sendStatusSuccess":"Success!",
           "sendStatusFailure":"Error!",
           "mobileMailFormDescription":"Welcome to Current Tech ",
-          "mobileMailFormDescription2":"contact us page"
+          "mobileMailFormDescription2":"contact us page",
+          "requiredName":"Your name is required.",
+          "requiredEmail":"Your email is required.",
+          "emailFormat":"The email must be a valid email address.",
+          "requiredMessage":"Your message is required."
         }
   }
