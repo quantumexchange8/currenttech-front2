@@ -43,9 +43,9 @@ const Home = () => {
                                 {t("Home.industriesTitle")}
                             </div>
 
-                            <div className='flex flex-col gap-10 text-left text-base md:text-4xl text-[#666] font-medium w-full md:w-[910px]'>
+                            <div className='flex flex-col gap-10 text-left text-base md:text-4xl text-[#666] font-medium w-full'>
                                 <div className= "leading-tight">
-                                    <div className={`${language === 'en' ? 'font-medium md:w-[910px]': 
+                                    <div className={`${language === 'en' ? 'font-medium md:w-[960px]': 
                                                         language === 'zh' ? 'font-semibold md:w-[950px]': 
                                                         language === 'bm' ? 'font-medium md:w-[960px]': ''}`}>
                                         {t("Home.industriesDescription")}
@@ -53,11 +53,11 @@ const Home = () => {
                                 </div>
                                            
                                 <div className="leading-tight">
-                                    <span className={`${language === 'en' ? 'font-medium md:w-[910px]' : 
+                                    <div className={`${language === 'en' ? 'font-medium md:w-[960px]' : 
                                                         language === 'zh' ? 'font-semibold md:w-[950px]' : 
                                                         language === 'bm' ? 'font-medium md:w-[940px]' : ''}`}>
                                         {t("Home.industriesDescription2")}
-                                    </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
