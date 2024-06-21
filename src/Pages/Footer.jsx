@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ct_logo from '../Assets/Images/currenttech_logo.svg';
-import { QR, Calendar, FooterWhatsApp, FooterGmail } from '../Components/Brand.jsx';
+import { FooterWhatsApp, FooterGmail, FooterFacebook, FooterInstagram } from '../Components/Brand.jsx';
 import Modal from '../Components/Modal';
 
 const Footer = () => {
@@ -22,22 +22,21 @@ const Footer = () => {
                         </div>
                         <div className='flex flex-col text-base font-normal text-left'>
                             <div className='hidden md:flex flex-col leading-[1.20]'>
-                                <div>Current Tech Industries is a leading technology solutions development provider. Founded in 2006,</div>
-                                <div>with a primary focus on technology development and distribution, the company is dedicated to </div>
-                                <div>driving innovative solutions for digital transformation. By offering cutting-edge IT solutions, Current </div>
-                                <div>Tech Industries aims to meet the diverse needs of its partners and customers.</div>
+                                <div>Current Tech Industries is a leading technology solutions development provider. Founded in </div>
+                                <div>2006, with a primary focus on technology development and distribution, the company is  </div>
+                                <div>dedicated to driving innovative solutions for digital transformation. By offering cutting-edge IT </div>
+                                <div>solutions, Current Tech Industries aims to meet the diverse needs of its partners and customers.</div>
                             </div>
 
                             <div className='flex flex-col leading-[1.20] md:hidden'>
-                                <div>Current Tech Industries is a leading</div>
-                                <div>technology solutions development provider.</div>
-                                <div>Founded in 2006, with a primary focus on</div>
-                                <div>technology development and distribution,</div>
-                                <div>the company is dedicated to driving</div>
-                                <div>innovative solutions for digital transformation.</div>
-                                <div>By offering cutting-edge IT solutions, Current</div>
-                                <div>Tech Industries aims to meet the diverse</div>
-                                <div>needs of its partners and customers.</div>
+                                <div>Current Tech Industries is a leading technology</div>
+                                <div>solutions development provider. Founded in</div>
+                                <div>2006, with a primary focus on technology</div>
+                                <div>development and distribution, the company is </div>
+                                <div>dedicated to driving innovative solutions for</div>
+                                <div>digital transformation. By offering cutting-edge</div>
+                                <div>IT solutions, Current Tech Industries aims to meet</div>
+                                <div>the diverse needs of its partners and customers.</div>
                             </div>
                         </div>
                     </div>
@@ -55,19 +54,27 @@ const Footer = () => {
                     <div className='text-sm font-bold'>
                         Start to connect with us:
                     </div>
-                    <div className='w-[96px] h-[40px] flex items-center gap-4 bg-white border border-white rounded-[10px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-[15px] py-2 cursor-pointer'
-                        onClick={() => handleButtonClick('whatsapp')}>
-                        <div>
-                            <FooterWhatsApp/>
+                    <div className='flex flex-row gap-[20px]'>
+                        <div className='w-[50px] h-[50px] flex items-center justify-center bg-white border border-white rounded-[10px] cursor-pointer'
+                            onClick={() => handleButtonClick('whatsapp')}>
+                            <div>
+                                <FooterWhatsApp/>
+                            </div>
                         </div>
-                        <div>
-                            <QR/>
+                        <div className='w-[50px] h-[50px] flex items-center justify-center bg-white border border-white rounded-[10px] cursor-pointer'
+                            onClick={() => handleButtonClick('gmail')}>
+                            <div>
+                                <FooterGmail/>
+                            </div>
                         </div>
                     </div>
-                    <div className='w-[96px] h-[40px] flex items-center gap-6 bg-white border border-white rounded-[10px] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] px-[15px] py-2 cursor-pointer'
-                        onClick={() => handleButtonClick('gmail')}>
-                        <FooterGmail/>
-                        <Calendar/>
+                    <div className='flex flex-row gap-[20px]'>
+                        <div className='w-[50px] h-[50px]'>
+                            <FooterFacebook/>
+                        </div>
+                        <div className='w-[50px] h-[50px]'>
+                            <FooterInstagram/>
+                        </div>
                     </div>
                 </div>
             </div>

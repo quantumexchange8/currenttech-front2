@@ -70,8 +70,8 @@ export default function FormSubmission() {
 
     return (
         <form className="w-full" ref={form} onSubmit={sendEmail}>
-            <div className="w-full flex flex-col items-center gap-6">
-                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium">
+            <div className="w-full flex flex-col items-center gap-7">
+                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium gap-[10px]">
                     <label>{t("MailForm.name")}</label>
                     <input 
                         type="text" 
@@ -81,7 +81,7 @@ export default function FormSubmission() {
                     />
                     {errors.userName && <span className="text-red-500">{errors.userName}</span>}
                 </div>
-                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium">
+                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium gap-[10px]">
                     <label>{t("MailForm.email")}</label>
                     <input 
                         type="text" 
@@ -91,18 +91,18 @@ export default function FormSubmission() {
                     />
                     {errors.userEmail && <span className="text-red-500">{errors.userEmail}</span>}
                 </div>
-                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium">
-                    <label>{t("MailForm.message")}</label>
-                    <textarea 
+                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium gap-[10px]">
+                    <label>{t("MailForm.phone")}</label>
+                    <input 
                         type="text" 
                         name="userMessage" 
-                        className="w-full h-[200px] md:h-[210px] bg-[#DDD] rounded-md px-3 pt-2" 
+                        className="w-full h-[200px] md:h-[50px] bg-[#DDD] rounded-md px-3 pt-2" 
                         required="" 
                     />
                     {errors.userMessage && <span className="text-red-500">{errors.userMessage}</span>}
                 </div>
 
-                <button type="submit" className="bg-black w-[200px] h-[50px] rounded-[10px] mt-[6px] md:mt-[18px]">
+                <button type="submit" className="bg-black w-[200px] h-[50px] rounded-[10px] mt-[6px] md:mt-[22px]">
                     <span className="text-white text-xl font-bold">{t("MailForm.button")}</span>
                 </button>
             </div>
