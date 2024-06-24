@@ -13,7 +13,7 @@ export default function Modal({ open, onClose, title, content, selectedButton })
         >
             <div onClick={(e) => e.stopPropagation()} className={`px-7 md:px-11 py-[52px] md:w-[500px] w-[349px] h-auto bg-white rounded-[35px] md:rounded-[20px] shadow transition-all ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"}`}>
                 <div className="flex flex-col gap-10">
-                    <div className='flex flex-col gap-[26px] md:gap-[30px]'>
+                    <div className='flex flex-col gap-[30px]'>
                         <div className="relative">
                             <div className="flex justify-center items-center">
                                 <div className="rounded-[20px] flex justify-center">

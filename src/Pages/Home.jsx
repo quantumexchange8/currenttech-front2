@@ -20,9 +20,9 @@ const Home = () => {
         setSelectedButton(button);
     };
 
-    return (
-        <div className='mt-[60px] md:mt-0'>
-            <div className='relative'>
+    return(
+        <div className='flex flex-col w-full justify-center items-center text-center'>
+            <div className='relative mt-[60px] md:mt-0'>
                 <video autoPlay muted playsInline loop className='w-full'>
                     <source src="/assets/videos/earth.mp4" type="video/mp4"/>
                 </video>
@@ -30,65 +30,50 @@ const Home = () => {
                     className='absolute inset-0 flex flex-col justify-center items-center text-white text-xl md:text-6xl font-bold' 
                     style={{ textShadow: '2px 4px 4px rgba(255, 255, 255, 0.40)' }}
                 >
-                    <div className={`text-center leading-[1.20] ${
-                        language === 'en' ? 'w-[260px] md:w-[1000px]' :
-                        language === 'zh' ? 'w-[140px] md:w-[1000px]' :
-                        language === 'bm' ? 'w-[200px] md:w-[1000px]' :
-                        ''}`}>  
+                    <div className='text-center leading-[1.20] w-full'>  
                         <div className="block">{t("Home.homeVideoTitle")}</div>
                         <div className="block">{t("Home.homeVideoTitle2")}</div>
                     </div>
                 </div>
             </div>
+            <div className='w-full flex flex-col items-center justify-center mt-[50px] md:mt-[150px] mb-[50px] md:mb-[150px]'>
+                <div className='max-w-[1000px] flex flex-col mx-5 md:mx-0 gap-[50px] md:gap-[150px]'>
+                    <div className='flex flex-col gap-[10px] md:gap-[50px] text-left'>
+                        <div className='text-base md:text-5xl font-bold justify-center'>
+                            {t("Home.industriesTitle")}
+                        </div>
 
-            <div className='w-full flex flex-col items-center justify-center'>
-                <div className='max-w-[1000px] w-full mt-[50px] md:mt-[150px] '>
-                    <div className='flex flex-col mx-5 md:mx-0 gap-[50px] md:gap-[150px]'>
-                        <div className='flex flex-col gap-[10px] md:gap-[50px] text-left'>
-                            <div className='text-base md:text-5xl font-bold justify-center'>
-                                {t("Home.industriesTitle")}
+                        <div className='flex flex-col gap-10 text-left text-sm md:text-2xl text-[#666] w-full'>
+                            <div className= "leading-tight font-semibold">
+                                <div className='block'>{t("Home.industriesDescription")}</div>
+                                <div className='block'>{t("Home.industriesDescription2")}</div>
+                                <div className='block'>{t("Home.industriesDescription3")}</div>
                             </div>
+                        </div>
+                    </div>
+                    
+                    <div className='w-full h-[1px] bg-[#333]'></div>
 
-                            <div className='flex flex-col gap-10 text-left text-sm md:text-2xl text-[#666] w-full'>
-                                <div className= "leading-tight">
-                                    <div className={`${language === 'en' ? 'font-semibold w-[353px] md:w-[1000px]': 
-                                                        language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]': 
-                                                        language === 'bm' ? 'font-semibold w-[353px] md:w-[1000px]': ''}`}>
-                                        <div className='block'>{t("Home.industriesDescription")}</div>
-                                        <div className='block'>{t("Home.industriesDescription2")}</div>
-                                        <div className='block'>{t("Home.industriesDescription3")}</div>
-                                    </div>
-                                </div>
+                    <div className='flex flex-col gap-[10px] md:gap-[50px] w-full'>
+                        <div className='text-base md:text-5xl text-left justify-center'>
+                            <div className='flex flex-col leading-[1.20] font-bold'>
+                                {t("Home.technologyTitle")}
                             </div>
                         </div>
 
-                        <div className='w-full h-[1px] bg-[#333]'></div>
-
-                        <div className='flex flex-col gap-[10px] md:gap-[50px] w-full'>
-                            <div className='text-base md:text-5xl text-left justify-center'>
-                                <div className='flex flex-col leading-[1.20] font-bold'>
-                                    {t("Home.technologyTitle")}
-                                </div>
-                            </div>
-
-                            <div className='flex flex-col gap-10 text-left text-sm md:text-2xl text-[#666] font-medium'>
-                                <div className='flex flex-col'>
-                                    <div className="flex flex-col leading-[1.20]">
-                                        <div className={`${language === 'en' ? 'font-semibold w-[353px] md:w-[1000px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]' : 
-                                                            language === 'bm' ? 'font-semibold w-[353px] md:w-[1000px]' : ''}`}>
-                                            {t("Home.technologyDescription")}
-                                        </div>
-                                    </div>
+                        <div className='flex flex-col gap-10 text-left text-sm md:text-2xl text-[#666] font-medium'>
+                            <div className='flex flex-col'>
+                                <div className="flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[1000px]">
+                                    {t("Home.technologyDescription")}
                                 </div>
                             </div>
                         </div>
-
-                        <div className='w-full h-[1px] bg-[#333]'></div>
                     </div>
 
-                    <div className='flex flex-col gap-[50px] md:gap-[150px] mt-[50px] md:mt-[150px]'>
-                        <div className='flex flex-col gap-[30px] md:gap-[100px] mx-5 md:mx-0'>
+                    <div className='w-full h-[1px] bg-[#333]'></div>
+
+                    <div className='flex flex-col gap-[50px] md:gap-[150px]'>
+                        <div className='flex flex-col gap-[30px] md:gap-[100px]'>
                             <div className='text-base md:text-5xl text-left justify-center'>
                                 <div className='flex flex-col leading-[1.20] font-bold'>
                                     {t("Home.serviceTitle")}
@@ -131,12 +116,8 @@ const Home = () => {
                                     </div>
                                     <div className='flex flex-col text-sm md:text-2xl text-[#666] text-left'>
                                         <div className='flex flex-col'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'font-semibold w-[300px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[303px] md:w-[800px]' : ''}`}>
+                                            <div className="flex flex-col leading-[1.20] font-semibold w-[303px] md:w-[800px]">
                                                     {t("Home.serviceSubTitle_Description.websiteDescription")}
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -155,12 +136,8 @@ const Home = () => {
                                     </div>
                                     <div className='flex text-sm md:text-2xl text-[#666] text-left'>
                                         <div className='flex flex-col'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[303px] md:w-[800px]' : ''}`}>
-                                                    {t("Home.serviceSubTitle_Description.mobileAppDescription")}
-                                                </div>
+                                            <div className="flex flex-col leading-[1.20] font-semibold w-[303px] md:w-[800px]">
+                                                {t("Home.serviceSubTitle_Description.mobileAppDescription")}
                                             </div>
                                         </div>
                                     </div>
@@ -179,13 +156,9 @@ const Home = () => {
                                     </div>
                                     <div className='text-sm md:text-2xl text-[#666] text-left'>
                                         <div className='flex flex-col'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[303px] md:w-[800px]' : ''}`}>
-                                                    <div className='hidden md:block'>{t("Home.serviceSubTitle_Description.managementSystemDescription")}</div>
-                                                    <div className='md:hidden'>{t("Home.serviceSubTitle_Description.managementSystemDescription")}</div>
-                                                </div>
+                                            <div className="flex flex-col leading-[1.20] font-semibold w-[303px] md:w-[800px]">
+                                                <div className='hidden md:block'>{t("Home.serviceSubTitle_Description.managementSystemDescription")}</div>
+                                                <div className='md:hidden'>{t("Home.serviceSubTitle_Description.managementSystemDescription")}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -205,7 +178,7 @@ const Home = () => {
                                     <div className='text-sm md:text-2xl text-[#666] text-left'>
                                         <div className='flex flex-col'>
                                             <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'font-semibold w-[270px] md:w-[800px]' : 
+                                                <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[800px]' : 
                                                                     language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
                                                                     language === 'bm' ? 'font-semibold w-[303px] md:w-[770px]' : ''}`}>
                                                     {t("Home.serviceSubTitle_Description.posSystemDescription")}
@@ -228,23 +201,19 @@ const Home = () => {
                                     </div>
                                     <div className='text-sm md:text-2xl text-[#666] text-left'>
                                         <div className='flex flex-col'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'font-semibold w-[290px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[303px] md:w-[800px]' : ''}`}>
-                                                    {t("Home.serviceSubTitle_Description.support&serviceDescription")}
-                                                </div>
+                                            <div className="flex flex-col leading-[1.20] font-semibold w-[303px] md:w-[800px]">
+                                                {t("Home.serviceSubTitle_Description.support&serviceDescription")}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div className='md:w-full h-[1px] bg-[#333] mx-5 md:mx-0'></div>
                     </div>
+                    
+                    <div className='md:w-full h-[1px] bg-[#333]'></div>
 
-                    <div className='flex flex-col gap-[10px] md:gap-[50px] mt-[50px] md:mt-[150px] mb-[50px] md:mb-[150px] mx-5 md:mx-0'>
+                    <div className='flex flex-col gap-[10px] md:gap-[50px]'>
                         <div className='flex flex-col text-base md:text-5xl text-left'>
                             <div className='flex flex-col leading-[1.20] font-bold'>
                                 <div className="hidden md:flex w-[580px]">{t("Home.innovativeTitle")}</div>
@@ -252,114 +221,94 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='flex text-sm md:text-2xl font-semibold text-[#666] text-left'>
-                            <div className="flex flex-col leading-[1.20]">
-                                <div className={`${language === 'en' ? 'font-semibold w-[353px] md:w-[1000px]' : 
-                                                    language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]' : 
-                                                    language === 'bm' ? 'font-semibold w-[353px] md:w-[1000px]' : ''}`}>
-                                    {t("Home.innovativeDescription")}
-                                </div>
+                            <div className="flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[1000px]">
+                                {t("Home.innovativeDescription")}
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div className='flex flex-col gap-[60px] md:gap-[100px] max-w-[1000px]'>
-                    <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start mx-5 md:mx-0'>
-                        <img src={img_Education} alt="Education" />
-                        <div className='flex flex-col gap-[5px] md:gap-5'>
-                            <div className='text-black text-base md:text-5xl text-left'>
-                                <div className='flex flex-col font-semibold md:font-bold'>
-                                    {t("Home.videoCombinationTitle.educationVideoTitle")}
+                    <div className='flex flex-col gap-[60px] md:gap-[100px]'>
+                        <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start'>
+                            <img src={img_Education} alt="Education" />
+                            <div className='flex flex-col gap-[5px] md:gap-5'>
+                                <div className='text-black text-base md:text-5xl text-left'>
+                                    <div className='flex flex-col font-semibold md:font-bold'>
+                                        {t("Home.videoCombinationTitle.educationVideoTitle")}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='flex flex-col text-[#666] text-sm md:text-xl'>
-                                <div className='flex-flex-col'>
-                                    <div className="flex flex-col leading-[1.20] text-left">
-                                        <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[450px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'bm' ? 'font-semibold w-[353px] md:w-[450px]' : ''}`}>
-                                            <div className='hidden md:block'>{t("Home.videoCombinationDescription.educationVideoDescription")}</div> 
-                                            <div className='md:hidden'>{t("Home.videoCombinationDescription.educationVideoDescription")}</div> 
+                                <div className='flex flex-col text-[#666] text-sm md:text-xl'>
+                                    <div className='flex-flex-col'>
+                                        <div className="flex flex-col leading-[1.20] text-left">
+                                            <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[450px]' : 
+                                                                language === 'zh' ? 'font-semibold w-[353px] md:w-[450px]' : 
+                                                                language === 'bm' ? 'font-semibold w-[353px] md:w-[450px]' : ''}`}>
+                                                <div className='hidden md:block'>{t("Home.videoCombinationDescription.educationVideoDescription")}</div> 
+                                                <div className='md:hidden'>{t("Home.videoCombinationDescription.educationVideoDescription")}</div> 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start mx-5 md:mx-0'>
-                        <img src={img_FoodBeverage} alt="F&B" />
-                        <div className='flex flex-col gap-[5px] md:gap-5'>
-                            <div className='text-black text-base md:text-5xl text-left'>
-                                <div className='flex flex-col font-semibold md:font-bold'>
-                                    {t("Home.videoCombinationTitle.F&BVideoTitle")}
+                        <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start'>
+                            <img src={img_FoodBeverage} alt="F&B" />
+                            <div className='flex flex-col gap-[5px] md:gap-5'>
+                                <div className='text-black text-base md:text-5xl text-left'>
+                                    <div className='flex flex-col font-semibold md:font-bold'>
+                                        {t("Home.videoCombinationTitle.F&BVideoTitle")}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='flex flex-col text-[#666] text-sm md:text-xl'>
-                                <div className='flex-flex-col text-left'>
-                                    <div className="hidden md:flex flex-col leading-[1.20]">
-                                        <div className={`${language === 'en' ? 'font-semibold md:w-[450px]' : 
-                                                            language === 'zh' ? 'font-semibold md:w-[450px]' : 
-                                                            language === 'bm' ? 'font-semibold md:w-[450px]' : ''}`}>
+                                <div className='flex flex-col text-[#666] text-sm md:text-xl'>
+                                    <div className='flex-flex-col text-left'>
+                                        <div className="hidden md:flex flex-col font-semibold leading-[1.20]">
                                             {t("Home.videoCombinationDescription.F&BVideoDescription")}
                                         </div>
-                                    </div>
 
-                                    <div className="md:hidden flex flex-col leading-[1.20]">
-                                        <div className={`${language === 'en' ? 'font-semibold w-[333px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[353px]' : 
-                                                            language === 'bm' ? 'font-semibold w-[353px]' : ''}`}>
-                                            <div className='block'>{t("Home.videoCombinationDescription.F&BVideoMobileDescription")}</div>
-                                            <div className='block'>{t("Home.videoCombinationDescription.F&BVideoMobileDescription2")}</div>
+                                        <div className="md:hidden flex flex-col leading-[1.20]">
+                                            <div className={`${language === 'en' ? 'font-semibold w-[333px]' : 
+                                                                language === 'zh' ? 'font-semibold w-[353px]' : 
+                                                                language === 'bm' ? 'font-semibold w-[353px]' : ''}`}>
+                                                <div className='block'>{t("Home.videoCombinationDescription.F&BVideoMobileDescription")}</div>
+                                                <div className='block'>{t("Home.videoCombinationDescription.F&BVideoMobileDescription2")}</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start mx-5 md:mx-0'>
-                        <img src={img_Retail} alt="Retail" />
-                        <div className='flex flex-col gap-[5px] md:gap-5'>
-                            <div className='text-black text-base md:text-5xl text-left'>
-                                <div className='flex flex-col font-semibold md:font-bold'>
-                                    {t("Home.videoCombinationTitle.retailVideoTitle")}
+                        <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start'>
+                            <img src={img_Retail} alt="Retail" />
+                            <div className='flex flex-col gap-[5px] md:gap-5'>
+                                <div className='text-black text-base md:text-5xl text-left'>
+                                    <div className='flex flex-col font-semibold md:font-bold'>
+                                        {t("Home.videoCombinationTitle.retailVideoTitle")}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='flex flex-col text-[#666] text-sm md:text-xl'>
-                                <div className='flex-flex-col text-left'>
-                                    <div className="flex flex-col leading-[1.20]">
-                                        <div className={`${language === 'en' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'bm' ? 'font-semibold w-[353px] md:w-[450px]' : ''}`}>
+                                <div className='flex flex-col text-[#666] text-sm md:text-xl'>
+                                    <div className='flex-flex-col text-left'>
+                                        <div className="flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
                                             {t("Home.videoCombinationDescription.retailVideoDescription")}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start mx-5 md:mx-0'>
-                        <img src={img_Wholesale} alt="Wholesale" />
-                        <div className='flex flex-col gap-[5px] md:gap-5'>
-                            <div className='text-black text-base md:text-5xl text-left'>
-                                <div className='flex flex-col font-semibold md:font-bold'>
-                                    {t("Home.videoCombinationTitle.wholesaleVideoTitle")}
+                        <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start'>
+                            <img src={img_Wholesale} alt="Wholesale" />
+                            <div className='flex flex-col gap-[5px] md:gap-5'>
+                                <div className='text-black text-base md:text-5xl text-left'>
+                                    <div className='flex flex-col font-semibold md:font-bold'>
+                                        {t("Home.videoCombinationTitle.wholesaleVideoTitle")}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='flex flex-col text-[#666] text-sm md:text-xl'>
-                                <div className='flex-flex-col text-left'>
-                                    <div className="hidden md:flex flex-col leading-[1.20]">
-                                        <div className={`${language === 'en' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'bm' ? 'font-semibold w-[353px] md:w-[450px]' : ''}`}>
+                                <div className='flex flex-col text-[#666] text-sm md:text-xl'>
+                                    <div className='flex-flex-col text-left'>
+                                        <div className="hidden md:flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
                                             {t("Home.videoCombinationDescription.wholesaleVideoDescription")}
                                         </div>
-                                    </div>
 
-                                    <div className="md:hidden flex flex-col leading-[1.20]">
-                                        <div className={`${language === 'en' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'bm' ? 'font-semibold w-[353px] md:w-[450px]' : ''}`}>
+                                        <div className="md:hidden flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
                                             <div className='block'>{t("Home.videoCombinationDescription.wholesaleVideoMobileDescription")}</div>
                                             <div className='block'>{t("Home.videoCombinationDescription.wholesaleVideoMobileDescription2")}</div>
                                         </div>
@@ -367,22 +316,18 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start mx-5 md:mx-0'>
-                        <img src={img_Logistic} alt="Logistic" />
-                        <div className='flex flex-col gap-[5px] md:gap-5'>
-                            <div className='text-black text-base md:text-5xl text-left'>
-                                <div className='flex flex-col font-semibold md:font-bold'>
-                                    {t("Home.videoCombinationTitle.logisticVideoTitle")}
+                        <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start'>
+                            <img src={img_Logistic} alt="Logistic" />
+                            <div className='flex flex-col gap-[5px] md:gap-5'>
+                                <div className='text-black text-base md:text-5xl text-left'>
+                                    <div className='flex flex-col font-semibold md:font-bold'>
+                                        {t("Home.videoCombinationTitle.logisticVideoTitle")}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='flex flex-col text-[#666] text-sm md:text-xl'>
-                                <div className='flex flex-col text-left'>
-                                    <div className="flex flex-col leading-[1.20]">
-                                        <div className={`${language === 'en' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'bm' ? 'font-semibold w-[353px] md:w-[450px]' : ''}`}>
+                                <div className='flex flex-col text-[#666] text-sm md:text-xl'>
+                                    <div className='flex flex-col text-left'>
+                                        <div className="flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
                                             <div className='block'>{t("Home.videoCombinationDescription.logisticVideoDescription")}</div>
                                             <div className='block'>{t("Home.videoCombinationDescription.logisticVideoDescription2")}</div>
                                         </div>
@@ -390,21 +335,17 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start mx-5 md:mx-0'>
-                        <img src={img_Enterprise} alt="Enterprise" />
-                        <div className='flex flex-col gap-[5px] md:gap-5'>
-                            <div className='text-black text-base md:text-5xl text-left'>
-                                <div className='flex flex-col font-semibold md:font-bold'>
-                                    {t("Home.videoCombinationTitle.enterpriseVideoTitle")}
+                        <div className='flex flex-col md:flex-row gap-5 md:gap-[30px] md:items-start'>
+                            <img src={img_Enterprise} alt="Enterprise" />
+                            <div className='flex flex-col gap-[5px] md:gap-5'>
+                                <div className='text-black text-base md:text-5xl text-left'>
+                                    <div className='flex flex-col font-semibold md:font-bold'>
+                                        {t("Home.videoCombinationTitle.enterpriseVideoTitle")}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='flex flex-col text-[#666] text-sm md:text-xl'>
-                                <div className='flex-flex-col text-left'>
-                                    <div className="flex flex-col leading-[1.20]">
-                                        <div className={`${language === 'en' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'zh' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                            language === 'bm' ? 'font-semibold w-[353px] md:w-[450px]' : ''}`}>
+                                <div className='flex flex-col text-[#666] text-sm md:text-xl'>
+                                    <div className='flex-flex-col text-left'>
+                                        <div className="flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
                                             {t("Home.videoCombinationDescription.enterpriseVideoDescription")}
                                         </div>
                                     </div>
@@ -412,103 +353,104 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div className='flex flex-col max-w-[1000px] w-full'>
-                <div className='flex flex-col gap-[66px] my-[60px] md:my-[150px] mx-5 md:mx-0'>
-                    <div className='flex flex-col md:gap-10'>
-                        <div className='flex flex-col gap-5 md:gap-10'>
-                            <div className='text-base md:text-5xl text-left'>
-                                <div className='flex flex-col leading-[1.20] font-bold w-[353px] md:w-[1000px]'>
-                                    {t("Home.homeReminderTitle")}
-                                </div>
-                            </div>
-                            <div className='flex flex-col text-[#666] text-sm md:text-[32px] font-medium text-left leading-[1.20]'>
-                                <div className="flex flex-col leading-[1.20]">
-                                    <div className={`${language === 'en' ? 'font-semibold w-[323px] md:w-[1000px]' : 
-                                                        language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]' : 
-                                                        language === 'bm' ? 'font-semibold w-[353px] md:w-[1000px]' : ''}`}>
-                                        {t("Home.homeReminderDescription")}
+                    <div className='flex flex-col'>
+                        <div className='flex flex-col gap-[66px]'>
+                            <div className='flex flex-col md:gap-10'>
+                                <div className='flex flex-col gap-5 md:gap-10'>
+                                    <div className='text-base md:text-5xl text-left'>
+                                        <div className='flex flex-col leading-[1.20] font-bold w-[353px] md:w-[1000px]'>
+                                            {t("Home.homeReminderTitle")}
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div 
-                            className='flex flex-col gap-[30px] md:gap-[50px]'>
-                            <div className='flex flex-row'>
-                                <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                    <div 
-                                        className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px]'>
-                                        <WhatsApp/>
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-2xl text-left'>
+                                    <div className='flex flex-col text-[#666] text-sm md:text-[32px] font-medium text-left leading-[1.20]'>
                                         <div className="flex flex-col leading-[1.20]">
-                                            <div className={`${language === 'en' ? 'font-semibold w-[190px] md:w-[300px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[168px]' : 
-                                                                language === 'bm' ? 'font-semibold w-[330px]' : ''}`}>
-                                                <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                                <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
+                                            <div className={`${language === 'en' ? 'font-semibold w-[323px] md:w-[1000px]' : 
+                                                                language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]' : 
+                                                                language === 'bm' ? 'font-semibold w-[353px] md:w-[1000px]' : ''}`}>
+                                                {t("Home.homeReminderDescription")}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div className='flex flex-row'>
-                                <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                    <div 
-                                        className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px] cursor-pointer'>
-                                        <Gmail/> 
+                                <div 
+                                    className='flex flex-col gap-[30px] md:gap-[50px]'>
+                                    <div className='flex flex-row'>
+                                        <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
+                                            <div 
+                                                className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px]'>
+                                                <WhatsApp/>
+                                            </div>
+                                            <div className='flex flex-col text-[#666] text-2xl text-left'>
+                                                <div className="flex flex-col leading-[1.20]">
+                                                    <div className={`${language === 'en' ? 'font-semibold w-[190px] md:w-[300px]' : 
+                                                                        language === 'zh' ? 'font-semibold w-[168px]' : 
+                                                                        language === 'bm' ? 'font-semibold w-[330px]' : ''}`}>
+                                                        <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
+                                                        <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                        <div className="flex flex-col leading-[1.20]">
-                                            <div className={`${language === 'en' ? 'font-semibold w-[170px] md:w-[300px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[229px]' : 
-                                                                language === 'bm' ? 'font-semibold w-[350px]' : ''}`}>
-                                                <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                                <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
+
+                                    <div className='flex flex-row'>
+                                        <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
+                                            <div 
+                                                className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px] cursor-pointer'>
+                                                <Gmail/> 
+                                            </div>
+                                            <div className='flex flex-col text-[#666] text-2xl text-left'>
+                                                <div className="flex flex-col leading-[1.20]">
+                                                    <div className={`${language === 'en' ? 'font-semibold w-[170px] md:w-[300px]' : 
+                                                                        language === 'zh' ? 'font-semibold w-[229px]' : 
+                                                                        language === 'bm' ? 'font-semibold w-[350px]' : ''}`}>
+                                                        <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
+                                                        <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        {/* Mobile Version */}
-                        <div 
-                            className='flex flex-col items-left gap-5 md:hidden'>
-                            <div className='flex flex-row'>
-                                <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                    <div 
-                                        className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                        <MobileWhatsApp />
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-sm'>
-                                        <div className="flex flex-col leading-[1.20]">
-                                            <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                language === 'zh' ? 'font-semibold' : 
-                                                                language === 'bm' ? 'font-medium' : ''}`}>
-                                                <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                                <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
+                                {/* Mobile Version */}
+                                <div 
+                                    className='flex flex-col items-left gap-5 md:hidden'>
+                                    <div className='flex flex-row'>
+                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
+                                            <div 
+                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
+                                                <MobileWhatsApp />
+                                            </div>
+                                            <div className='flex flex-col text-[#666] text-sm'>
+                                                <div className="flex flex-col leading-[1.20] text-left">
+                                                    <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
+                                                                        language === 'zh' ? 'font-semibold' : 
+                                                                        language === 'bm' ? 'font-semibold' : ''}`}>
+                                                        <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
+                                                        <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
 
-                            <div className='flex flex-row'>
-                                <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                    <div 
-                                        className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                        <MobileGmail/>
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-sm'>
-                                        <div className="flex flex-col leading-[1.20]">
-                                            <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                language === 'zh' ? 'font-semibold' : 
-                                                                language === 'bm' ? 'font-medium' : ''}`}>
-                                                <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                                <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
+                                    <div className='flex flex-row'>
+                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
+                                            <div 
+                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
+                                                <MobileGmail/>
+                                            </div>
+                                            <div className='flex flex-col text-[#666] text-sm'>
+                                                <div className="flex flex-col leading-[1.20] text-left">
+                                                    <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
+                                                                        language === 'zh' ? 'font-semibold' : 
+                                                                        language === 'bm' ? 'font-semibold' : ''}`}>
+                                                        <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
+                                                        <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -517,13 +459,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                </div>
-                <div id="Button_Component" className="fixed inset-0 flex justify-center z-50 items-center transition-colors invisible">
-                </div>
             </div>
             <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
         </div>
     )
 }
-
 export default Home;

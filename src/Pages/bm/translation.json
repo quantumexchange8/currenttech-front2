@@ -135,6 +135,17 @@
       "advantageEnterpriseReminderDescription2":"Anda juga boleh menjadualkan perbincangan dengan kakitangan perkhidmatan kami untuk membincangkan sebarang idea pembangunan. Kami tidak mengenakan sebarang yuran perbincangan untuk perkhidmatan ini."
     },
 
+    "OwnSite":{
+          "ownsiteVideoTitle":"Ubah Suai",
+          "ownsiteCustomization_Title":"Penyesuaian adalah pintu gerbang langsung anda kepada kelebihan.",
+          "ownsiteCustomization_Description":"Muka web dan aplikasi yang direka khas menawarkan kelebihan bersaing dengan menyesuaikan terus kepada kehendak pengguna, meningkatkan penglibatan dan kepuasan. Melalui ciri-ciri peribadi dan antara muka yang intuitif, mereka menyusun semula interaksi pengguna, memacu retensi dan kesetiaan.",
+          "ownsiteIdea_Title1":"Apa yang kami cipta untuk anda adalah lebih daripada sekadar idea.",
+          "ownsiteIdea_Title2":"Pada masa yang sama, kami juga perlu memahami apa yang anda fikirkan.",
+          "ownsiteIdea_Title3":"Selain itu, adalah penting untuk mengetahui apa yang disukai oleh pelanggan anda.",
+          "ownsiteIdea_Title4":"Kami percaya anda juga memberi perhatian yang sama terhadap warna tema.",
+          "ownsite_Reminder1":"Kongsi pendapat anda dengan kami! ",
+          "ownsite_Reminder2":"Hubungi kami untuk mengubah idea anda menjadi kenyataan. "
+        },
 
     "Products":{
       "productVideoTitle":"Bangunkan",

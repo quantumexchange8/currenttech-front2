@@ -135,6 +135,17 @@
       "advantageEnterpriseReminderDescription2":"您也可以预约与我们的服务人员进行咨询, 讨论任何开发想法. 我们不收取任何咨询费用."
     },
 
+    "OwnSite":{
+          "ownsiteVideoTitle":"量身定制",
+          "ownsiteCustomization_Title":"量身定制就是您直接获取最大优势的途径",
+          "ownsiteCustomization_Description":"通过量身定制的网页和应用程序, 直接满足用户的偏好, 提升参与度和满意度, 从而获得竞争优势. 通过个性化功能和直观界面, 它们简化用户交互, 推动用户留存和忠诚度.",
+          "ownsiteIdea_Title1":"我们为您创造的不仅仅是想法",
+          "ownsiteIdea_Title2":"同时我们也需要了解您的想法",
+          "ownsiteIdea_Title3":"此外还需要了解您的客户喜欢什么也是至关重要的",
+          "ownsiteIdea_Title4":"我们相信您同样关心主题颜色",
+          "ownsite_Reminder1":"与我们分享您的想法! 联系我们, 将您的想法变成现实.",
+          "ownsite_Reminder2":" "
+        },
 
     "Products":{
       "productVideoTitle":"开发",

@@ -135,6 +135,18 @@
             "advantageEnterpriseReminderDescription2":"Your can also schedule consultations with our service staff to discuss any development ideas. We do not charge any consultation fees for this service."
         },
 
+        "OwnSite":{
+          "ownsiteVideoTitle":"Customize",
+          "ownsiteCustomization_Title":"Customization is your direct gateway to advantage.",
+          "ownsiteCustomization_Description":"Tailored web pages and apps offer a competitive edge by catering directly to user preferences, enhancing engagement and satisfaction. Through personalized features and intuitive interfaces, they streamline user interactions, driving retention and loyalty.",
+          "ownsiteIdea_Title1":"What we create for you is more than just ideas.",
+          "ownsiteIdea_Title2":"At the same time, we also need to understand what you're thinking.",
+          "ownsiteIdea_Title3":"Furthermore, it's essential to know what your customers like.",
+          "ownsiteIdea_Title4":"We believe you care just as much about the theme colors.",
+          "ownsite_Reminder1":"Share your thoughts with us!",
+          "ownsite_Reminder2":"Get in touch to turn your ideas into reality."
+        },
+
         "Products":{
           "productVideoTitle":"Developed",
           "productVideoDescription":"Development must go through drafting frameworks, understanding details, detailed communication, careful planning, rigorous testing before it can become a finished product.",
@@ -165,7 +177,7 @@
             "attendanceCategories3":"Enterprise",
             "attendanceCategories4":" Industries",
             "attendanceImage":"MOCAP",
-            "attendanceDescription":"In today's dynamic corporate landscape, businesses grapple with challenges ranging from inconsistent employee efficiency to talent attrition and cost management. Hence, we've meticulously crafted reward mechanisms and recognition programs to help companies effectively tackle these obstacles. Our Motion Capture \"MOCAP\" not only significantly enhances employee productivity but also boosts morale and elevates output quality. Furthermore, we firmly believe that acknowledging and rewarding employees nurtures a positive organizational culture, where employees feel valued and supported in their roles, thereby aiding in talent retention efforts."
+            "attendanceDescription":"In today's dynamic corporate landscape, businesses grapple with challenges ranging from inconsistent employee efficiency to talent attrition and cost management. Hence, we've meticulously crafted reward mechanisms and recognition programs to help companies effectively tackle these obstacles. Our Motion Capture \"MOCAP\" not only significantly enhances employee productivity but also boosts morale and elevates output quality. Furthermore, we firmly believe that acknowledging and rewarding employees nurtures a positive organizational culture, where employees feel valued and supported in their roles, thereby aiding in talent retention efforts."
           },
 
           "financial":{
@@ -185,7 +197,7 @@
             "mobileManagementCategories2":"Percentage Allocation Management Module",
             "mobileManagementCategories3":"(PAMM)",
             "managementImage":"Financial Board",
-            "managementDescription":"We fully understand that as a highly skilled and renowned trader, managing numerous investors and substantial funds requires not only delivering substantial and objective investment returns but also maintaining strict risk management in investments. Therefore, traders inevitably require a sophisticated and intelligent financial trading fund management system. Our proficient IT team is fully capable of undertaking the development of such a system. We have not only added personalised design to the dashboard but also incorporated simple and easy-to-operate modes, ensuring that investors and traders need not worry about encountering operational difficulties due to lack of understanding."
+            "managementDescription":"We fully understand that as a highly skilled and renowned trader, managing numerous investors and substantial funds requires not only delivering substantial and objective investment returns but also maintaining strict risk management in investments. Therefore, traders inevitably require a sophisticated and intelligent financial trading fund management system. Our proficient IT team is fully capable of undertaking the development of such a system. We have not only added personalised design to the dashboard but also incorporated simple and easy-to-operate modes, ensuring that investors and traders need not worry about encountering operational difficulties due to lack of understanding."
           },
 
           "labelSolutions":{
