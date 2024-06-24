@@ -5,6 +5,9 @@ import Modal from '../Components/Modal';
 import { LanguageContext } from "../LanguagesContext";
 import Idea1 from "../Assets/Images/Idea_1.svg"
 import Idea2 from "../Assets/Images/Idea_2.svg"
+import Cus1 from "../Assets/Images/cus1.png"
+import Cus1Mobile from "../Assets/Images/cus1Mobile.svg"
+import Cus2Mobile from "../Assets/Images/cus2Mobile.svg"
 import Explore1 from "../Assets/Images/Explore_1.png"
 import Explore2 from "../Assets/Images/Explore_2.png"
 import Explore3 from "../Assets/Images/Explore_3.png"
@@ -56,34 +59,99 @@ const Customize = () => {
                             </div>
                         </div>
                         <div className='w-full h-[1px] bg-[#666]'></div>
-                        <div className='flex flex-col gap-[30px] md:gap-[150px]'>
+                        <div className='flex flex-col gap-[30px] md:gap-[50px]'>
                             <div className='flex flex-col text-base md:text-5xl font-bold w-[300px] md:w-[661px]'>
                                 What we create for you is more than just ideas.
                             </div>
 
-                            <div className='flex flex-col'>
-                                <div className='flex flex-col md:flex-row md:items-center md:justify-center gap-[50px] md:gap-[100px]'>
+                            <div className='flex flex-col gap-[100px] md:gap-0'>
+                                <img src={Cus1} alt="" className='hidden md:block' />
+                                <img src={Cus1Mobile} alt="" className='block md:hidden' />
+                                {/* <div className='flex flex-col md:flex-row md:items-center md:justify-center gap-[50px] md:gap-[100px]'>
                                     <div className='flex flex-col items-start'>
                                         <img src={Idea1} alt="Idea 1" className='w-[250px] md:w-[450px] h-[376px] md:h-[677px]'/>
                                         <img src={MobileConnectorLine1} alt="Mobile Connector Line 1" className='absolute ml-[36px] mt-[190px] md:hidden' />
                                     </div>
-                                    {/* <div className='md:hidden flex flex-col'>
-                                        <img src={MobileConnectorLine1} alt="Mobile Connector Line 2" className='absolute' />
-                                    </div> */}
                                     <div className='flex flex-col items-end'>
-                                        {/* <img src={ConnectorLine1} alt="Connector Line"/> */}
                                         <img src={Idea2} alt="Idea 2" className='w-[250px] md:w-[450px] h-[376px] md:h-[677px]'/>
                                     </div>
                                 </div>
                                 <div className='hidden md:flex flex-col md:items-center right ml-[80px] mb-[15px]'>
                                     <img src={ConnectorLine2} alt="Connector Line 2" className='absolute' />
+                                </div> */}
+
+                                {/* web */}
+                                <div className='hidden md:block'>
+                                    <div className='relative hidden md:block'>
+                                        <div className='flex justify-end md:pr-14'>
+                                            <img src={ConnectorLine2} alt="" />
+                                        </div>
+                                        
+                                        <div className=' absolute left-0 top-40 md:w-[860px] md:text-5xl font-bold'>
+                                            At the same time, we also need to understand what you're thinking.
+                                        </div>
+                                    </div>
+
+                                    <div className='hidden md:flex items-center justify-between '>
+                                        <img src={Explore1} alt="Explore 1" className='w-[200px] md:w-[309px] h-[433px] md:h-[669px]'/>
+                                        <img src={Explore2} alt="Explore 2" className='w-[200px] md:w-[309px] h-[433px] md:h-[669px] place-self-start' />
+                                        <img src={Explore3} alt="Explore 3" className='w-[200px] md:w-[309px] h-[433px] md:h-[669px] place-self-center' />
+                                    </div>
+
+
+
+                                    <div className='relative hidden md:block'>
+                                        <div className='flex justify-end md:pr-5'>
+                                            <div>
+                                                <img src={ConnectorLine3} alt="" />
+                                            </div>
+                                            <div>
+                                                <img src={ConnectorLine4} alt="" />
+                                            </div>
+                                        </div>
+
+                                        <div className=' absolute left-0 top-40 md:w-[860px] md:text-5xl font-bold'>
+                                            Furthermore, it's essential to know what your customers like.
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <img src={Emoji} alt="Explore 3" className='w-[353px] md:w-[1000px] h-[108px] md:h-[307px]' />
+                                    </div>
+
+                                    <div className='relative'>
+                                        <div className='flex justify-end md:pr-5'>
+                                            <img src={ConnectorLine4} alt="" />
+                                        </div>
+
+                                        <div className=' absolute left-0 top-40 md:w-[860px] md:text-5xl font-bold'>
+                                            We believe you care just as much about the theme colors.
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <img src={Colour} alt="Colour" />
+                                    </div>
                                 </div>
+                                
+                                {/* mobile */}
+                                <div className='flex flex-col md:hidden gap-[30px]'>
+                                    <div className=' w-full md:w-[860px] md:text-5xl font-bold'>
+                                        At the same time, we also need to understand what you're thinking.
+                                    </div>
+
+                                    <div>
+                                        <img src={Cus2Mobile} alt="" />
+                                    </div>
+                                </div>
+
+                                {/* here */}
                             </div>
                         </div>
-                        <div className='flex flex-col gap-[100px] md:gap-[150px]'>
+                        {/* <div className='flex flex-col gap-[100px] md:gap-[150px]'>
                             <div className='flex flex-col gap-[30px] md:gap-[150px]'>
                                 <div className='flex flex-col text-base md:text-5xl font-bold w-[353px] md:w-[860px]'>
-                                    At the same time, we also need to understand what you're thinking.
+                                    
                                 </div>
                                 <div>
                                     <div className='flex flex-col md:flex-row gap-[50px] md:gap-[36px] items-end md:items-center'>
@@ -109,7 +177,7 @@ const Customize = () => {
                                     </div>
                                     <div>
                                         <div className='flex flex-col'>
-                                            <img src={Emoji} alt="Explore 3" className='w-[353px] md:w-[1000px] h-[108px] md:h-[307px]' />
+                                            
                                             <img src={MobileConnectorLine4} alt="Mobile Connector Line 4" className='md:hidden absolute mt-[110px] ml-[165px]' />
                                             <div className='flex flex-col items-end right mr-[75px] mb-[15px]'>
                                                 <img src={ConnectorLine5} alt="Connector Line 5" className='absolute hidden md:flex' />
@@ -122,10 +190,10 @@ const Customize = () => {
                                 </div>
 
                                 <div className='flex flex-col'>
-                                    <img src={Colour} alt="Colour" />
+                                    
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                             
                         <div className='w-full h-[1px] bg-[#666]'></div>
                         
