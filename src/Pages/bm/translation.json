@@ -49,26 +49,26 @@
       },
       "innovativeTitle": "Penyelesaian Inovatif untuk Perniagaan Anda",
       "innovativeDescription": "Sistem berteknologi mutakhir kami akan mengubah operasi perniagaan anda, meningkatkan kecekapan, kelestarian, dan pengalaman pelanggan, dengan itu memastikan daya saing anda dalam landskap pasaran hari ini.",
-      "videoCombinationTitle": {
-        "educationVideoTitle": "Pendidikan",
-        "F&BVideoTitle": "Makanan Minuman",
-        "retailVideoTitle": "Runcit",
-        "wholesaleVideoTitle": "Pukal",
-        "logisticVideoTitle": "Logistik",
-        "enterpriseVideoTitle": "Perniagaan"
+      "imgCombinationTitle": {
+        "educationImgTitle": "Pendidikan",
+        "F&BImgTitle": "Makanan Minuman",
+        "retailImgTitle": "Runcit",
+        "wholesaleImgTitle": "Pukal",
+        "logisticImgTitle": "Logistik",
+        "enterpriseImgTitle": "Perniagaan"
       },
-      "videoCombinationDescription": {
-        "educationVideoDescription": "Membuka potensi pembelajaran tanpa batas. Teknologi canggih kami memperkasakan sekolah untuk mencapai pencapaian luar biasa di dalam bilik darjah, meningkatkan pengalaman pendidikan, dan memberikan impak yang mendalam dalam komuniti mereka.",
-        "F&BVideoDescription": "Sementara menikmati hidangan yang lazat dan menggiurkan, aplikasi pesanan dan pelbagai kaedah pembayaran memainkan peranan penting dalam memberikan pengalaman makan yang lancar dan memuaskan bagi pelanggan, meningkatkan keselesaan dan kepuasan pada setiap langkah.",
-        "F&BVideoMobileDescription": "Sementara menikmati hidangan yang lazat dan menggiurkan, aplikasi pesanan dan pelbagai kaedah pembayaran memainkan peranan penting dalam memberikan pengalaman makan yang lancar dan ",
-        "F&BVideoMobileDescription2": "memuaskan bagi pelanggan, meningkatkan keselesaan dan kepuasan pada setiap langkah.",
-        "retailVideoDescription": "Sama ada mengurus senarai pelanggan, pesanan, rekod inventori, atau kehadiran pekerja, yang anda perlukan hanyalah satu sistem yang komprehensif dan pintar untuk menyusun operasi dan meningkatkan kecekapan.",
-        "wholesaleVideoDescription": "Dengan memberikan diskaun pukal untuk barangan dan harga borong untuk barang dagangan, sistem pintar kami mengkhususkan diri dalam penyelesaian sumberan yang disesuaikan untuk perniagaan dan peniaga, memastikan keberkesanan kos dan pengurusan inventori yang efisien.",
-        "wholesaleVideoMobileDescription":"Dengan memberikan diskaun pukal untuk barangan dan harga borong untuk barang dagangan, sistem pintar kami mengkhususkan diri dalam ",
-        "wholesaleVideoMobileDescription2":"penyelesaian sumberan yang disesuaikan untuk perniagaan dan peniaga, memastikan keberkesanan kos dan pengurusan inventori yang efisien.",
-        "logisticVideoDescription": "Membina sistem pengangkutan, logistik, ",
-        "logisticVideoDescription2":"dan rantaian bekalan yang efisien kini boleh dicapai dengan mudah - bukan lagi tugas yang menakutkan, tetapi merupakan matlamat yang dapat dicapai dengan kepakaran dan alat kami yang ada. ",
-        "enterpriseVideoDescription": "Satu sistem pengurusan perniagaan yang berkesan ditandai oleh keupayaannya untuk meningkatkan komunikasi antara syarikat dan pekerja, menggunakan kaedah yang memberi kesan positif kepada sikap pekerja dan mendorong kemajuan dalam kerja mereka."
+      "ImgCombinationDescription": {
+        "educationImgDescription": "Membuka potensi pembelajaran tanpa batas. Teknologi canggih kami memperkasakan sekolah untuk mencapai pencapaian luar biasa di dalam bilik darjah, meningkatkan pengalaman pendidikan, dan memberikan impak yang mendalam dalam komuniti mereka.",
+        "F&BImgDescription": "Sementara menikmati hidangan yang lazat dan menggiurkan, aplikasi pesanan dan pelbagai kaedah pembayaran memainkan peranan penting dalam memberikan pengalaman makan yang lancar dan memuaskan bagi pelanggan, meningkatkan keselesaan dan kepuasan pada setiap langkah.",
+        "F&BImgMobileDescription": "Sementara menikmati hidangan yang lazat dan menggiurkan, aplikasi pesanan dan pelbagai kaedah pembayaran memainkan peranan penting dalam memberikan pengalaman makan yang lancar dan ",
+        "F&BImgMobileDescription2": "memuaskan bagi pelanggan, meningkatkan keselesaan dan kepuasan pada setiap langkah.",
+        "retailImgDescription": "Sama ada mengurus senarai pelanggan, pesanan, rekod inventori, atau kehadiran pekerja, yang anda perlukan hanyalah satu sistem yang komprehensif dan pintar untuk menyusun operasi dan meningkatkan kecekapan.",
+        "wholesaleImgDescription": "Dengan memberikan diskaun pukal untuk barangan dan harga borong untuk barang dagangan, sistem pintar kami mengkhususkan diri dalam penyelesaian sumberan yang disesuaikan untuk perniagaan dan peniaga, memastikan keberkesanan kos dan pengurusan inventori yang efisien.",
+        "wholesaleImgMobileDescription":"Dengan memberikan diskaun pukal untuk barangan dan harga borong untuk barang dagangan, sistem pintar kami mengkhususkan diri dalam ",
+        "wholesaleImgMobileDescription2":"penyelesaian sumberan yang disesuaikan untuk perniagaan dan peniaga, memastikan keberkesanan kos dan pengurusan inventori yang efisien.",
+        "logisticImgDescription": "Membina sistem pengangkutan, logistik, ",
+        "logisticImgDescription2":"dan rantaian bekalan yang efisien kini boleh dicapai dengan mudah - bukan lagi tugas yang menakutkan, tetapi merupakan matlamat yang dapat dicapai dengan kepakaran dan alat kami yang ada. ",
+        "enterpriseImgDescription": "Satu sistem pengurusan perniagaan yang berkesan ditandai oleh keupayaannya untuk meningkatkan komunikasi antara syarikat dan pekerja, menggunakan kaedah yang memberi kesan positif kepada sikap pekerja dan mendorong kemajuan dalam kerja mereka."
       },
       "homeReminderTitle": "Tanpa mengira bidang atau industri yang anda ceburi.",
       "homeReminderDescription": "Memiliki sistem pintar sendiri adalah berbaloi. Jangan ragu untuk menghubungi kami untuk penyelesaian yang efisien dan direka khas hanya untuk anda.",
@@ -103,14 +103,6 @@
       "advantageSelfReminderTitle":"Jangan ragu!",
       "advantageSelfReminderDescription":"Meminta sebut harga sekarang untuk membangunkan sistem peribadi anda yang bebas.",
       "advantageSelfReminderDescription2":"Anda juga boleh menjadualkan perbincangan dengan kakitangan perkhidmatan kami untuk membincangkan sebarang idea pembangunan. Kami tidak mengenakan sebarang yuran perbincangan untuk perkhidmatan ini.",
-      "whatsappDescription":"Paparkan kod QR untuk",
-      "whatsappDescription2":"memulakan perbualan dengan kami.",
-      "gmailDescription":"Tinggalkan butiran hubungan!",
-      "gmailDescription2":"anda, kami akan menghubungi anda tidak lama lagi.",
-      "whatsappDescriptionMobile":"Paparkan kod QR untuk ",
-      "whatsappDescriptionMobile2":"memulakan perbualan dengan kami.",
-      "gmailDescriptionMobile":"Tinggalkan butiran hubungan",
-      "gmailDescriptionMobile2":"anda, kami akan menghubungi anda tidak lama lagi.",
       "enterpriseVideoTitle":"Perniagaan",
       "enterpriseVideoDescription":"Perniagaan yang kuat dan sistem pengurusan yang kukuh sememangnya tidak dapat dipisahkan, kerana mereka mempunyai keupayaan untuk menguruskan jumlah data yang besar dengan berkesan.",
       "advantageEnterpriseTitle":"Kelebihan teknologi kami untuk Perniagaan",
@@ -233,15 +225,7 @@
       },
 
       "productsReminderTitle":"Tanpa mengira bidang atau industri yang anda ceburi.",
-      "productsReminderDescription":"Memiliki sistem pintar sendiri adalah berbaloi. Jangan ragu untuk menghubungi kami untuk penyelesaian yang efisien dan direka khas hanya untuk anda.",
-      "whatsappDescription":"Paparkan kod QR untuk",
-      "whatsappDescription2":"memulakan perbualan dengan kami.",
-      "gmailDescription":"Tinggalkan butiran hubungan",
-      "gmailDescription2":"anda, kami akan menghubungi anda tidak lama lagi.",
-      "whatsappDescriptionMobile":"Paparkan kod QR untuk ",
-      "whatsappDescriptionMobile2":"memulakan perbualan dengan kami.",
-      "gmailDescriptionMobile":"Tinggalkan butiran hubungan ",
-      "gmailDescriptionMobile2":"anda, kami akan menghubungi anda tidak lama lagi."
+      "productsReminderDescription":"Memiliki sistem pintar sendiri adalah berbaloi. Jangan ragu untuk menghubungi kami untuk penyelesaian yang efisien dan direka khas hanya untuk anda."
 
     },
 
@@ -300,15 +284,7 @@
       },
 
       "careerReminderTitle":"Jangan ragu!",
-      "careerReminderDescription":"Sertai kami dalam perjalanan yang mengujakan menuju kepada pelbagai kemungkinan dan pertumbuhan yang tidak terbatas. Terimalah pelbagai peluang kerjaya, bebaskan potensi anda, dan menjadi sebahagian daripada komuniti sokongan yang menghargai pembelajaran sepanjang hayat dan pencapaian peribadi. Mari kita membina masa depan yang lebih cerah bersama-sama.",
-      "whatsappDescription":"Paparkan kod QR untuk",
-      "whatsappDescription2":"memulakan perbualan dengan kami.",
-      "gmailDescription":"Tinggalkan butiran hubungan ",
-      "gmailDescription2":"anda, kami akan menghubungi anda tidak lama lagi.",
-      "whatsappDescriptionMobile":"Paparkan kod QR untuk ",
-      "whatsappDescriptionMobile2":"memulakan perbualan dengan kami.",
-      "gmailDescriptionMobile":"Tinggalkan butiran hubungan",
-      "gmailDescriptionMobile2":"anda, kami akan menghubungi anda tidak lama lagi."
+      "careerReminderDescription":"Sertai kami dalam perjalanan yang mengujakan menuju kepada pelbagai kemungkinan dan pertumbuhan yang tidak terbatas. Terimalah pelbagai peluang kerjaya, bebaskan potensi anda, dan menjadi sebahagian daripada komuniti sokongan yang menghargai pembelajaran sepanjang hayat dan pencapaian peribadi. Mari kita membina masa depan yang lebih cerah bersama-sama."
     },
 
     "WhatsappForm":{
@@ -335,9 +311,13 @@
       "sendStatusSuccess":"Berjaya !",
       "sendStatusFailure":"Ralat !",
       "requiredName":"Silakan isi nama anda.",
-      "requiredEmail":"Silakan isi email anda.",
+      "requiredEmail":"Silakan isi emel anda.",
       "emailFormat":"Silakan isi format email yang benar.",
-      "requiredMessage":"Silakan isi mesej anda."
-    }
+      "requiredPhoneNumber":"Silakan isi Nombor Telefon anda."
+    },
+
+    "Footer":{
+          "socialMediaDescription":"Mula berhubung dengan kami:"
+        }
    
   }

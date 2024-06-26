@@ -76,7 +76,7 @@ const Topbar = () => {
                                                 <Link
                                                     to="/advantage"
                                                     className={`text-base font-medium ${
-                                                        location.pathname === '/advantage' ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
+                                                        location.pathname === '/advantage' ? 'bg-[#CCCCCC80] rounded-[35px] text-blue-500' : ''
                                                     }`}
                                                 >
                                                     <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${language === 'en' ? 'font-medium' : 'font-semibold'}`}>
@@ -91,7 +91,7 @@ const Topbar = () => {
                                                 <Link
                                                     to="/customize"
                                                     className={`text-base font-medium ${
-                                                        location.pathname === '/customize' ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
+                                                        location.pathname === '/customize' ? 'bg-[#CCCCCC80] rounded-[35px] text-blue-500' : ''
                                                     }`}
                                                 >
                                                     <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${language === 'en' ? 'font-medium' : 'font-semibold'}`}>
@@ -128,7 +128,7 @@ const Topbar = () => {
                                                     <Link
                                                         to="/products"
                                                         className={`text-base font-medium ${
-                                                            location.pathname === '/products' ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
+                                                            location.pathname === '/products' ? 'bg-[#CCCCCC80] rounded-[35px] text-blue-500' : ''
                                                         }`}
                                                     >
                                                         <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${language === 'en' ? 'font-medium' : 'font-semibold'}`}>
@@ -143,7 +143,7 @@ const Topbar = () => {
                                                     <Link
                                                         to="/ownSite"
                                                         className={`text-base font-medium ${
-                                                            location.pathname === '/ownSite' ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
+                                                            location.pathname === '/ownSite' ? 'bg-[#CCCCCC80] rounded-[35px] text-blue-500' : ''
                                                         }`}
                                                     >
                                                         <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${language === 'en' ? 'font-medium' : 'font-semibold'}`}>
@@ -192,7 +192,7 @@ const Topbar = () => {
                                         {({ active }) => (
                                             <button
                                                 className={`${
-                                                    active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    active ? 'bg-gray-400 text-white' : 'text-gray-900'
                                                 } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
                                                 onClick={() => handleLanguageChange('en')}
                                             >
@@ -204,7 +204,7 @@ const Topbar = () => {
                                         {({ active }) => (
                                             <button
                                                 className={`${
-                                                    active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    active ? 'bg-gray-400 text-white' : 'text-gray-900'
                                                 } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
                                                 onClick={() => handleLanguageChange('bm')}
                                             >
@@ -217,7 +217,7 @@ const Topbar = () => {
                                         {({ active }) => (
                                             <button
                                                 className={`${
-                                                    active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                    active ? 'bg-gray-400 text-white' : 'text-gray-900'
                                                 } group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
                                                 onClick={() => handleLanguageChange('zh')}
                                             >
@@ -258,15 +258,13 @@ const Topbar = () => {
                                         <Link
                                             to="/"
                                             className={`${
-                                                location.pathname === '/' 
+                                                location.pathname === '/' ? 'text-blue-500' : ''
                                             }`}
                                         >
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button
-                                                    className={`${
-                                                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full rounded-md py-3 ${
+                                                    className={`group flex flex-col w-full rounded-md py-3 ${
                                                       language === 'en' ? 'px-7 place-items-center' : 
                                                       language === 'zh' ? 'place-items-center ' : 
                                                       language === 'bm' ? 'px-7 place-items-center' : ''
@@ -294,13 +292,13 @@ const Topbar = () => {
                                                         <Link
                                                         to="/advantage"
                                                         className={`w-full text-center ${
-                                                            active ? 'bg-gray-100' : ''
+                                                            active
                                                         }`}
                                                         >
                                                         <button
-                                                            className={`${
-                                                            location.pathname === '/onestop'
-                                                            } flex flex-col w-full py-3 px-7 place-items-center text-base font-medium`}
+                                                            className={`flex flex-col w-full py-3 px-7 place-items-center text-base font-medium ${
+                                                                location.pathname === '/advantage' ? 'text-blue-600' : ''
+                                                            }`}
                                                         >
                                                             {t("mobileTopbar.oneStopPage")}
                                                         </button>
@@ -312,14 +310,12 @@ const Topbar = () => {
                                                     {({ active }) => (
                                                         <Link
                                                         to="/customize"
-                                                        className={`w-full text-center ${
-                                                            active ? 'bg-gray-100' : ''
-                                                        }`}
+                                                        className='w-full text-center'
                                                         >
                                                         <button
-                                                            className={`${
-                                                            location.pathname === '/customize'
-                                                            } flex flex-col w-full py-3 px-7 place-items-center text-base font-medium`}
+                                                            className={`flex flex-col w-full py-3 px-7 place-items-center text-base font-medium ${
+                                                                location.pathname === '/customize' ? 'text-blue-600' : ''
+                                                            }`}
                                                         >
                                                             {t("mobileTopbar.customizePage")}
                                                         </button>
@@ -346,14 +342,12 @@ const Topbar = () => {
                                                     {({ active }) => (
                                                         <Link
                                                         to="/products"
-                                                        className={`w-full text-center ${
-                                                            active ? 'bg-gray-100' : ''
-                                                        }`}
+                                                        className='w-full text-center'
                                                         >
                                                         <button
-                                                            className={`${
-                                                            location.pathname === '/products'
-                                                            } flex flex-col w-full py-3 px-7 place-items-center text-base font-medium`}
+                                                            className={`flex flex-col w-full py-3 px-7 place-items-center text-base font-medium ${
+                                                                location.pathname === '/products' ? 'text-blue-600' : ''
+                                                            }`}
                                                         >
                                                             {t("mobileTopbar.developedPage")}
                                                         </button>
@@ -365,14 +359,12 @@ const Topbar = () => {
                                                     {({ active }) => (
                                                         <Link
                                                         to="/ownSite"
-                                                        className={`w-full text-center ${
-                                                            active ? 'bg-gray-100' : ''
-                                                        }`}
+                                                        className='w-full text-center'
                                                         >
                                                         <button
-                                                            className={`${
-                                                            location.pathname === '/ownSite'
-                                                            } flex flex-col w-full py-3 px-7 place-items-center text-base font-medium`}
+                                                            className={`flex flex-col w-full py-3 px-7 place-items-center text-base font-medium ${
+                                                                location.pathname === '/ownSite' ? 'text-blue-600' : ''
+                                                            }`}
                                                         >
                                                             {t("mobileTopbar.ownSitePage")}
                                                         </button>
@@ -383,40 +375,16 @@ const Topbar = () => {
                                                 )}
                                         </Link>
                                     
-                                        {/* <Link
-                                            to="/products"
-                                            className={`${
-                                                location.pathname === '/products' 
-                                            }`}
-                                        >
-                                            <Menu.Item>
-                                                {({ active }) => (
-                                                    <button
-                                                    className={`${
-                                                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full rounded-md py-3 ${
-                                                        language === 'en' ? 'px-7 place-items-center' : 
-                                                        language === 'zh' ? 'place-items-center ' : 
-                                                        language === 'bm' ? 'px-7 place-items-center' : ''
-                                                    }`}
-                                                  >
-                                                    {t("mobileTopbar.productsPage")}
-                                                  </button>
-                                                )}
-                                            </Menu.Item>
-                                        </Link> */}
                                         <Link
                                             to="/careers"
                                             className={`${
-                                                location.pathname === '/careers' 
+                                                location.pathname === '/careers'  ? 'text-blue-600':''
                                             }`}
                                         >
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button
-                                                    className={`${
-                                                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full rounded-md py-3 ${
+                                                    className={`group flex flex-col w-full rounded-md py-3 ${
                                                         language === 'en' ? 'px-7 place-items-center' : 
                                                         language === 'zh' ? 'place-items-center ' : 
                                                         language === 'bm' ? 'px-7 place-items-center' : ''
@@ -432,9 +400,7 @@ const Topbar = () => {
                                             {({ active }) => (
                                                 <button
                                                 onClick={() => handleButtonClick('gmail')}
-                                                className={`${
-                                                  active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                                                } group flex flex-col w-full place-items-end rounded-md py-3 ${
+                                                className={`group flex flex-col w-full place-items-end rounded-md py-3 ${
                                                   language === 'en' ? 'px-7 md:px-7 place-items-center' : 
                                                   language === 'zh' ? 'px-9 md:px-9 place-items-center' : 
                                                   language === 'bm' ? 'px-7 md:px-7 place-items-center' : ''
@@ -475,7 +441,7 @@ const Topbar = () => {
                                             {({ active }) => (
                                                 <button
                                                     className={`${
-                                                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                        active ? ' bg-emerald-500 text-white' : 'text-gray-900'
                                                     } group flex flex-row w-full text-base place-items-center rounded-[30px] px-6 py-5`}
                                                     onClick={() => handleLanguageChange('en')}
                                                 >
@@ -488,7 +454,7 @@ const Topbar = () => {
                                             {({ active }) => (
                                                 <button
                                                     className={`${
-                                                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                        active ? 'bg-emerald-500 text-white' : 'text-gray-900'
                                                     } group flex flex-row w-full text-base place-items-center rounded-[30px] px-6 py-5`}
                                                     onClick={() => handleLanguageChange('bm')}
                                                 >
@@ -501,7 +467,7 @@ const Topbar = () => {
                                             {({ active }) => (
                                                 <button
                                                     className={`${
-                                                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                                        active ? 'bg-emerald-500 text-white' : 'text-gray-900'
                                                     } group flex flex-row w-full text-base place-items-center rounded-[30px] px-[30px] py-5`}
                                                     onClick={() => handleLanguageChange('zh')}
                                                 >

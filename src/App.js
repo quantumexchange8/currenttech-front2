@@ -7,6 +7,7 @@ import Advantage from "./Pages/Advantage";
 import Customize from "./Pages/Customize";
 import Products from "./Pages/Products";
 import OwnSite from "./Pages/OwnSite";
+import Demo from "./Pages/Demo";
 import Careers from "./Pages/Careers";
 import ScrollToTop from './Pages/ScrollToTop';
 import { LanguageProvider } from "./LanguagesContext.js";
@@ -24,6 +25,7 @@ function App() {
             <Route path="customize" element={<Customize />} />
             <Route path="products" element={<Products />} />
             <Route path="ownsite" element={<OwnSite />} />
+            <Route path="demo" element={<Demo />} />
             <Route path="careers" element={<Careers />} />
           </Routes>
           <Footer/>

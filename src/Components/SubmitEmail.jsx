@@ -10,7 +10,7 @@ export default function FormSubmission() {
     const [errors, setErrors] = useState({
         userName: '',
         userEmail: '',
-        userMessage: ''
+        userPhoneNumber: ''
     });
 
     const validateEmail = (email) => {
@@ -22,12 +22,12 @@ export default function FormSubmission() {
         const formData = new FormData(form.current);
         const userName = formData.get("userName");
         const userEmail = formData.get("userEmail");
-        const userMessage = formData.get("userMessage");
+        const userPhoneNumber = formData.get("userPhoneNumber");
         let valid = true;
         const newErrors = {
             userName: '',
             userEmail: '',
-            userMessage: ''
+            userPhoneNumber: ''
         };
 
         if (!userName) {
@@ -41,8 +41,8 @@ export default function FormSubmission() {
             newErrors.userEmail = t("MailForm.emailFormat");
             valid = false;
         }
-        if (!userMessage) {
-            newErrors.userMessage = t("MailForm.requiredMessage");
+        if (!userPhoneNumber) {
+            newErrors.userPhoneNumber = t("MailForm.requiredPhoneNumber");
             valid = false;
         }
 
@@ -70,39 +70,40 @@ export default function FormSubmission() {
 
     return (
         <form className="w-full" ref={form} onSubmit={sendEmail}>
-            <div className="w-full flex flex-col items-center gap-7">
-                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium gap-[10px]">
-                    <label>{t("MailForm.name")}</label>
-                    <input 
-                        type="text" 
-                        name="userName" 
-                        className="w-full h-[40px] md:h-[50px] bg-[#DDD] rounded-md px-3" 
-                        required="" 
-                    />
-                    {errors.userName && <span className="text-red-500">{errors.userName}</span>}
+            <div className="flex flex-col items-center gap-[50px]">
+                <div className="w-full flex flex-col items-center gap-7">
+                    <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium gap-[10px]">
+                        <label>{t("MailForm.name")}</label>
+                        <input 
+                            type="text" 
+                            name="userName" 
+                            className="w-full h-[40px] md:h-[50px] bg-[#DDD] rounded-[5px] px-3" 
+                            required="" 
+                        />
+                        {errors.userName && <span className="text-red-500">{errors.userName}</span>}
+                    </div>
+                    <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium gap-[10px]">
+                        <label>{t("MailForm.email")}</label>
+                        <input 
+                            type="text" 
+                            name="userEmail" 
+                            className="w-full h-[40px] md:h-[50px] bg-[#DDD] rounded-[5px] px-3" 
+                            required="" 
+                        />
+                        {errors.userEmail && <span className="text-red-500">{errors.userEmail}</span>}
+                    </div>
+                    <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium gap-[10px]">
+                        <label>{t("MailForm.phone")}</label>
+                        <input 
+                            type="text" 
+                            name="userPhoneNumber" 
+                            className="w-full h-[40px] md:h-[50px] bg-[#DDD] rounded-[5px] px-3 pt-2" 
+                            required="" 
+                        />
+                        {errors.userPhoneNumber && <span className="text-red-500">{errors.userPhoneNumber}</span>}
+                    </div>
                 </div>
-                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium gap-[10px]">
-                    <label>{t("MailForm.email")}</label>
-                    <input 
-                        type="text" 
-                        name="userEmail" 
-                        className="w-full h-[40px] md:h-[50px] bg-[#DDD] rounded-md px-3" 
-                        required="" 
-                    />
-                    {errors.userEmail && <span className="text-red-500">{errors.userEmail}</span>}
-                </div>
-                <div className="w-full flex flex-col items-center text-base font-semibold md:font-medium gap-[10px]">
-                    <label>{t("MailForm.phone")}</label>
-                    <input 
-                        type="text" 
-                        name="userMessage" 
-                        className="w-full h-[40px] md:h-[50px] bg-[#DDD] rounded-md px-3 pt-2" 
-                        required="" 
-                    />
-                    {errors.userMessage && <span className="text-red-500">{errors.userMessage}</span>}
-                </div>
-
-                <button type="submit" className="bg-black w-[200px] h-[50px] rounded-[10px] mt-[6px] md:mt-[22px]">
+                <button type="submit" className="bg-black w-[200px] h-[50px] rounded-[10px] mt-[6px] md:mt-0">
                     <span className="text-white text-xl font-bold">{t("MailForm.button")}</span>
                 </button>
             </div>

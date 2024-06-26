@@ -30,35 +30,35 @@ const Customize = () => {
     };
 
     return (
-        <div className='mt-[60px] md:mt-0'>
-            <div className='relative'>
+        <div className='flex flex-col w-full'>
+            <div className='relative mt-[60px] md:mt-0'>
                 <video autoPlay muted playsInline loop className='w-full'>
                     <source src="/assets/videos/customize.mp4" type="video/mp4"/>
                 </video>
-                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[256px] text-left text-white gap-5'>
+                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[280px] text-left text-white gap-5'>
                     <div className='text-2xl md:text-[80px] font-bold'>{t("OwnSite.ownsiteVideoTitle")}</div>
                 </div>
             </div>
 
             <div className='w-full flex flex-col items-center justify-center'>
-                <div className='max-w-[1000px] w-full mt-[50px] md:mt-[150px]'>
+                <div className='max-w-[1000px] mt-[50px] md:mt-[150px]'>
                     <div className='flex flex-col gap-[50px] md:gap-[150px] mb-[50px] md:mb-[150px] mx-5 md:mx-0'>
                         <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                             <div className='flex flex-col gap-[10px] md:gap-[50px]'>
-                                <div className={`flex flex-col text-base md:text-5xl font-bold leading-[1.20] 
+                                <div className={`flex flex-col text-base md:text-5xl text-left font-bold leading-[1.20] 
                                                     ${language === 'en' ? 'w-[330px] md:w-[661px]' : 
                                                       language === 'zh' ? 'w-[330px] md:w-[661px]' : 
                                                       language === 'bm' ? 'w-[330px] md:w-[860px]' : ''}`}>
                                     {t("OwnSite.ownsiteCustomization_Title")}
                                 </div>
-                                <div className='text-[#666] text-sm md:text-2xl font-semibold leading-[1.20] w-[353px] md:w-[1000px]'>
+                                <div className='text-[#666] text-sm md:text-2xl font-semibold leading-[1.20] w-[353px] md:w-[1000px] text-left'>
                                     {t("OwnSite.ownsiteCustomization_Description")}
                                 </div>
                             </div>
                         </div>
                         <div className='w-full h-[1px] bg-[#666]'></div>
                         <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                            <div className={`flex flex-col text-base md:text-5xl font-bold 
+                            <div className={`flex flex-col text-base md:text-5xl font-bold text-left 
                                                     ${language === 'en' ? 'w-[300px] md:w-[661px]' : 
                                                       language === 'zh' ? 'w-[300px] md:w-[661px]' : 
                                                       language === 'bm' ? 'w-[330px] md:w-[840px]' : ''}`}>
@@ -76,7 +76,7 @@ const Customize = () => {
                                             <img src={ConnectorLine1} alt="" />
                                         </div>
                                         
-                                        <div className={`absolute left-0 top-40 md:text-5xl font-bold
+                                        <div className={`absolute left-0 top-40 md:text-5xl font-bold text-left
                                                     ${language === 'en' ? 'w-[860px]' : 
                                                       language === 'zh' ? 'w-[624px]' : 
                                                       language === 'bm' ? 'w-[674px]' : ''}`}>
@@ -102,7 +102,7 @@ const Customize = () => {
                                             </div>
                                         </div>
 
-                                        <div className=' absolute left-0 top-40 md:w-[860px] md:text-5xl font-bold'>
+                                        <div className=' absolute left-0 top-40 md:w-[860px] md:text-5xl font-bold text-left'>
                                             {t("OwnSite.ownsiteIdea_Title3")}
                                         </div>
                                     </div>
@@ -116,7 +116,7 @@ const Customize = () => {
                                             <img src={ConnectorLine3} alt="" />
                                         </div>
 
-                                        <div className={`absolute left-0 top-40 md:text-5xl font-bold
+                                        <div className={`absolute left-0 top-40 md:text-5xl font-bold text-left
                                                     ${language === 'en' ? 'w-[860px]' : 
                                                       language === 'zh' ? 'w-[624px]' : 
                                                       language === 'bm' ? 'w-[730px]' : ''}`}>
@@ -131,7 +131,7 @@ const Customize = () => {
                                 
                                 {/* mobile */}
                                 <div className='flex flex-col md:hidden gap-[30px]'>
-                                    <div className='w-[353px] text-base font-bold'>
+                                    <div className='w-[353px] text-base font-bold text-left'>
                                         {t("OwnSite.ownsiteIdea_Title2")}
                                     </div>
 
@@ -148,7 +148,7 @@ const Customize = () => {
                                         <div className='flex justify-end pr-6'>
                                             <img src={ConnectorLine4} alt="" />
                                         </div>
-                                        <div className='absolute top-[85px] w-[280px] text-base font-bold'>
+                                        <div className='absolute top-[85px] w-[280px] text-base font-bold text-left'>
                                             {t("OwnSite.ownsiteIdea_Title3")}
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@ const Customize = () => {
                                         <div className='flex justify-center pl-[100px]'>
                                             <img src={ConnectorLine5} alt="" />
                                         </div>
-                                        <div className='absolute top-[65px] w-[290px] text-base font-bold'>
+                                        <div className='absolute top-[65px] w-[290px] text-base font-bold text-left'>
                                             {t("OwnSite.ownsiteIdea_Title4")}
                                         </div>
                                     </div>
@@ -173,7 +173,7 @@ const Customize = () => {
                         <div className='w-full h-[1px] bg-[#666]'></div>
                         
                         <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                        <div className=' text-base md:text-5xl font-bold w-[353px] md:w-[1000px]'>
+                        <div className='text-base md:text-5xl font-bold w-[353px] md:w-[1000px] text-left leading-[1.20]'>
                             <div className='block'>{t("OwnSite.ownsite_Reminder1")}</div>
                             <div className='block'>{t("OwnSite.ownsite_Reminder2")}</div>
                         </div>

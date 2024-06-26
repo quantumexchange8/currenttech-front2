@@ -233,7 +233,7 @@ const Home = () => {
                             <div className='flex flex-col gap-[5px] md:gap-5'>
                                 <div className='text-black text-base md:text-5xl text-left'>
                                     <div className='flex flex-col font-semibold md:font-bold'>
-                                        {t("Home.videoCombinationTitle.educationVideoTitle")}
+                                        {t("Home.ImgCombinationTitle.educationImgTitle")}
                                     </div>
                                 </div>
                                 <div className='flex flex-col text-[#666] text-sm md:text-xl'>
@@ -242,8 +242,8 @@ const Home = () => {
                                             <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[450px]' : 
                                                                 language === 'zh' ? 'font-semibold w-[353px] md:w-[450px]' : 
                                                                 language === 'bm' ? 'font-semibold w-[353px] md:w-[450px]' : ''}`}>
-                                                <div className='hidden md:block'>{t("Home.videoCombinationDescription.educationVideoDescription")}</div> 
-                                                <div className='md:hidden'>{t("Home.videoCombinationDescription.educationVideoDescription")}</div> 
+                                                <div className='hidden md:block'>{t("Home.ImgCombinationDescription.educationImgDescription")}</div> 
+                                                <div className='md:hidden'>{t("Home.ImgCombinationDescription.educationImgDescription")}</div> 
                                             </div>
                                         </div>
                                     </div>
@@ -255,21 +255,21 @@ const Home = () => {
                             <div className='flex flex-col gap-[5px] md:gap-5'>
                                 <div className='text-black text-base md:text-5xl text-left'>
                                     <div className='flex flex-col font-semibold md:font-bold'>
-                                        {t("Home.videoCombinationTitle.F&BVideoTitle")}
+                                        {t("Home.ImgCombinationTitle.F&BImgTitle")}
                                     </div>
                                 </div>
                                 <div className='flex flex-col text-[#666] text-sm md:text-xl'>
                                     <div className='flex-flex-col text-left'>
                                         <div className="hidden md:flex flex-col font-semibold leading-[1.20]">
-                                            {t("Home.videoCombinationDescription.F&BVideoDescription")}
+                                            {t("Home.ImgCombinationDescription.F&BImgDescription")}
                                         </div>
 
                                         <div className="md:hidden flex flex-col leading-[1.20]">
                                             <div className={`${language === 'en' ? 'font-semibold w-[333px]' : 
                                                                 language === 'zh' ? 'font-semibold w-[353px]' : 
                                                                 language === 'bm' ? 'font-semibold w-[353px]' : ''}`}>
-                                                <div className='block'>{t("Home.videoCombinationDescription.F&BVideoMobileDescription")}</div>
-                                                <div className='block'>{t("Home.videoCombinationDescription.F&BVideoMobileDescription2")}</div>
+                                                <div className='block'>{t("Home.ImgCombinationDescription.F&BImgMobileDescription")}</div>
+                                                <div className='block'>{t("Home.ImgCombinationDescription.F&BImgMobileDescription2")}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -282,13 +282,13 @@ const Home = () => {
                             <div className='flex flex-col gap-[5px] md:gap-5'>
                                 <div className='text-black text-base md:text-5xl text-left'>
                                     <div className='flex flex-col font-semibold md:font-bold'>
-                                        {t("Home.videoCombinationTitle.retailVideoTitle")}
+                                        {t("Home.ImgCombinationTitle.retailImgTitle")}
                                     </div>
                                 </div>
                                 <div className='flex flex-col text-[#666] text-sm md:text-xl'>
                                     <div className='flex-flex-col text-left'>
                                         <div className="flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
-                                            {t("Home.videoCombinationDescription.retailVideoDescription")}
+                                            {t("Home.ImgCombinationDescription.retailImgDescription")}
                                         </div>
                                     </div>
                                 </div>
@@ -299,18 +299,18 @@ const Home = () => {
                             <div className='flex flex-col gap-[5px] md:gap-5'>
                                 <div className='text-black text-base md:text-5xl text-left'>
                                     <div className='flex flex-col font-semibold md:font-bold'>
-                                        {t("Home.videoCombinationTitle.wholesaleVideoTitle")}
+                                        {t("Home.ImgCombinationTitle.wholesaleImgTitle")}
                                     </div>
                                 </div>
                                 <div className='flex flex-col text-[#666] text-sm md:text-xl'>
                                     <div className='flex-flex-col text-left'>
                                         <div className="hidden md:flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
-                                            {t("Home.videoCombinationDescription.wholesaleVideoDescription")}
+                                            {t("Home.ImgCombinationDescription.wholesaleImgDescription")}
                                         </div>
 
                                         <div className="md:hidden flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
-                                            <div className='block'>{t("Home.videoCombinationDescription.wholesaleVideoMobileDescription")}</div>
-                                            <div className='block'>{t("Home.videoCombinationDescription.wholesaleVideoMobileDescription2")}</div>
+                                            <div className='block'>{t("Home.ImgCombinationDescription.wholesaleImgMobileDescription")}</div>
+                                            <div className='block'>{t("Home.ImgCombinationDescription.wholesaleImgMobileDescription2")}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -322,14 +322,14 @@ const Home = () => {
                             <div className='flex flex-col gap-[5px] md:gap-5'>
                                 <div className='text-black text-base md:text-5xl text-left'>
                                     <div className='flex flex-col font-semibold md:font-bold'>
-                                        {t("Home.videoCombinationTitle.logisticVideoTitle")}
+                                        {t("Home.ImgCombinationTitle.logisticImgTitle")}
                                     </div>
                                 </div>
                                 <div className='flex flex-col text-[#666] text-sm md:text-xl'>
                                     <div className='flex flex-col text-left'>
                                         <div className="flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
-                                            <div className='block'>{t("Home.videoCombinationDescription.logisticVideoDescription")}</div>
-                                            <div className='block'>{t("Home.videoCombinationDescription.logisticVideoDescription2")}</div>
+                                            <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescription")}</div>
+                                            <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescription2")}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -340,13 +340,13 @@ const Home = () => {
                             <div className='flex flex-col gap-[5px] md:gap-5'>
                                 <div className='text-black text-base md:text-5xl text-left'>
                                     <div className='flex flex-col font-semibold md:font-bold'>
-                                        {t("Home.videoCombinationTitle.enterpriseVideoTitle")}
+                                        {t("Home.ImgCombinationTitle.enterpriseImgTitle")}
                                     </div>
                                 </div>
                                 <div className='flex flex-col text-[#666] text-sm md:text-xl'>
                                     <div className='flex-flex-col text-left'>
                                         <div className="flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[450px]">
-                                            {t("Home.videoCombinationDescription.enterpriseVideoDescription")}
+                                            {t("Home.ImgCombinationDescription.enterpriseImgDescription")}
                                         </div>
                                     </div>
                                 </div>

@@ -83,7 +83,7 @@ export default function TabComponent({ selectedButton }) {
       {selectedButton === 'gmail' && (
         <div>
           {isMobile ? (
-            <div className='flex flex-col items-center gap-[20px] mt-[20px] md:hidden'>
+            <div className='flex flex-col items-center gap-[50px] mt-[20px] md:hidden'>
               <div className="text-black text-center text-sm font-medium leading-[1.20]">
                 {content}
               </div>

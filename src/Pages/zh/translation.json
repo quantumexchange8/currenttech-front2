@@ -49,26 +49,26 @@
       },
       "innovativeTitle": "您业务的创新解决方案",
       "innovativeDescription": "我们的尖端系统将彻底改变您的业务运营, 提升效率, 可持续性和客户体验, 从而确保您在当今市场环境中的竞争力.",
-      "videoCombinationTitle": {
-        "educationVideoTitle": "教育",
-        "F&BVideoTitle": "餐饮业",
-        "retailVideoTitle": "零售业",
-        "wholesaleVideoTitle": "批发商",
-        "logisticVideoTitle": "物流业",
-        "enterpriseVideoTitle": "企业公司"
+      "ImgCombinationTitle": {
+        "educationImgTitle": "教育",
+        "F&BImgTitle": "餐饮业",
+        "retailImgTitle": "零售业",
+        "wholesaleImgTitle": "批发商",
+        "logisticImgTitle": "物流业",
+        "enterpriseImgTitle": "企业公司"
       },
-      "videoCombinationDescription": {
-        "educationVideoDescription": "释放无限的学习潜力. 我们的尖端技术使学校能够在课堂上取得非凡成就, 提升教育体验, 并在社区内产生深远影响.",
-        "F&BVideoDescription": "在品尝美味诱人的餐点时, 订购应用程序和各种支付方式在为顾客提供无缝愉悦的用餐体验中起着至关重要的作用, 从每一步骤提升便利性和满意度.",
-        "F&BVideoMobileDescription": "在品尝美味诱人的餐点时, 订购应用程序和各种支付方式在为顾客提供无缝愉悦的用餐体验中起着至关重要的作",
-        "F&BVideoMobileDescription2": "用, 从每一步骤提升便利性和满意度.",
-        "retailVideoDescription": "无论是管理客户清单, 订单, 库存记录, 还是员工考勤, 您所需要的只是一个全面而智能的系统, 以简化运营并提高效率.",
-        "wholesaleVideoDescription": "我们的智能系统提供商品批量折扣和商品的批发价格, 专注于为企业和零售商提供定制采购解决方案, 确保成本效益和高效的库存管理.",
-        "wholesaleVideoMobileDescription":"我们的智能系统提供商品批量折扣和商品的批发价格,专注于为企业和零售商提供定制采购解决方案, 确保",
-        "wholesaleVideoMobileDescription2":"成本效益和高效的库存管理.",
-        "logisticVideoDescription": "打造高效的运输, 物流和供应链系统现在已经变得触手可及 - 不再是一项艰巨的任务, 而是一个可以通过我们的专业知识和工具实现的目标.",
-        "logisticVideoDescription2":" ",
-        "enterpriseVideoDescription": "一套有效的企业管理系统以其改善公司与员工之间沟通的能力为标志, 利用能够积极影响员工态度并推动工作进展的方法."
+      "ImgCombinationDescription": {
+        "educationImgDescription": "释放无限的学习潜力. 我们的尖端技术使学校能够在课堂上取得非凡成就, 提升教育体验, 并在社区内产生深远影响.",
+        "F&BImgDescription": "在品尝美味诱人的餐点时, 订购应用程序和各种支付方式在为顾客提供无缝愉悦的用餐体验中起着至关重要的作用, 从每一步骤提升便利性和满意度.",
+        "F&BImgMobileDescription": "在品尝美味诱人的餐点时, 订购应用程序和各种支付方式在为顾客提供无缝愉悦的用餐体验中起着至关重要的作",
+        "F&BImgMobileDescription2": "用, 从每一步骤提升便利性和满意度.",
+        "retailImgDescription": "无论是管理客户清单, 订单, 库存记录, 还是员工考勤, 您所需要的只是一个全面而智能的系统, 以简化运营并提高效率.",
+        "wholesaleImgDescription": "我们的智能系统提供商品批量折扣和商品的批发价格, 专注于为企业和零售商提供定制采购解决方案, 确保成本效益和高效的库存管理.",
+        "wholesaleImgMobileDescription":"我们的智能系统提供商品批量折扣和商品的批发价格,专注于为企业和零售商提供定制采购解决方案, 确保",
+        "wholesaleImgMobileDescription2":"成本效益和高效的库存管理.",
+        "logisticImgDescription": "打造高效的运输, 物流和供应链系统现在已经变得触手可及 - 不再是一项艰巨的任务, 而是一个可以通过我们的专业知识和工具实现的目标.",
+        "logisticImgDescription2":" ",
+        "enterpriseImgDescription": "一套有效的企业管理系统以其改善公司与员工之间沟通的能力为标志, 利用能够积极影响员工态度并推动工作进展的方法."
       },
       "homeReminderTitle": "无论您身处哪个领域或行业.",
       "homeReminderDescription": "拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案.",
@@ -103,14 +103,6 @@
       "advantageSelfReminderTitle":"不要犹豫！",
       "advantageSelfReminderDescription":"现在就请求开发您个人独立系统的报价.",
       "advantageSelfReminderDescription2":"您也可以预约与我们的服务人员进行咨询, 讨论任何开发想法. 我们不收取任何咨询费用.",
-      "whatsappDescription":"展示二维码开始",
-      "whatsappDescription2":"与我们沟通",
-      "gmailDescription":"请留下您的联系方式,",
-      "gmailDescription2":"我们会尽快与您联系.",
-      "whatsappDescriptionMobile":"通过即时聊天",
-      "whatsappDescriptionMobile2":"开始与我们沟通.",
-      "gmailDescriptionMobile":"别犹豫！",
-      "gmailDescriptionMobile2":"给我们发消息.",
       "enterpriseVideoTitle":"企业商家",
       "enterpriseVideoDescription":"强大的企业和精良的管理系统绝对是密不可分的,因为它们具备有效管理大量数据的能力.",
       "advantageEnterpriseTitle":"我们技术对企业的优势",
@@ -233,15 +225,7 @@
       },
 
       "productsReminderTitle":"无论您身处哪个领域或行业",
-      "productsReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案.",
-      "whatsappDescription":"展示二维码开始",
-      "whatsappDescription2":"与我们沟通.",
-      "gmailDescription":"请留下您的联系方式,",
-      "gmailDescription2":"我们会尽快与您联系.",
-      "whatsappDescriptionMobile":"点击图标链接",
-      "whatsappDescriptionMobile2":"开始与我们沟通.",
-      "gmailDescriptionMobile":"请留下您的联系方式, ",
-      "gmailDescriptionMobile2":"我们会尽快与您联系."
+      "productsReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
     },
 
 
@@ -299,15 +283,7 @@
       },
 
       "careerReminderTitle":"不要犹豫！",
-      "careerReminderDescription":"加入我们, 踏上一段充满无限可能和成长的激动人心之旅. 拥抱多样化的职业机会, 释放您的潜力, 成为一个重视终身学习和个人成就的支持性社区的一部分. 让我们共同建设一个更加光明的未来.",
-      "whatsappDescription":"展示二维码开始",
-      "whatsappDescription2":"与我们沟通.",
-      "gmailDescription":"请留下您的联系方式, ",
-      "gmailDescription2":"我们会尽快与您联系.",
-      "whatsappDescriptionMobile":"点击图标链接",
-      "whatsappDescriptionMobile2":"开始与我们沟通.",
-      "gmailDescriptionMobile":"请留下您的联系方式, ",
-      "gmailDescriptionMobile2":"我们会尽快与您联系."
+      "careerReminderDescription":"加入我们, 踏上一段充满无限可能和成长的激动人心之旅. 拥抱多样化的职业机会, 释放您的潜力, 成为一个重视终身学习和个人成就的支持性社区的一部分. 让我们共同建设一个更加光明的未来."
     },
 
     "WhatsappForm":{
@@ -336,7 +312,11 @@
       "requiredName":"请填写您的姓名",
       "requiredEmail":"请填写您的邮箱",
       "emailFormat":"请填写正确的邮箱格式",
-      "requiredMessage":"请填写您的信息"
-    }
+      "requiredPhoneNumber":"请填写您的电话号码"
+    },
+
+    "Footer":{
+          "socialMediaDescription":"现在就开始与我们联系:"
+        }
    
   }

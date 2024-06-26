@@ -21,7 +21,7 @@ const Careers = () => {
                     <source src="\assets\videos\career.mp4" type="video/mp4"/>
                 </video>
 
-                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[256px] text-left text-white gap-5'>
+                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[280px] text-left text-white gap-5'>
                     <div className='text-2xl md:text-[80px] font-bold'>{t("Career.careerVideoTitle")}</div>
                 </div>
             </div>
@@ -236,8 +236,8 @@ const Careers = () => {
                                                     <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
                                                                         language === 'zh' ? 'font-semibold' : 
                                                                         language === 'bm' ? 'font-medium' : ''}`}>
-                                                        <div className='block'>{t("Career.whatsappDescriptionMobile")}</div>
-                                                        <div className='block'>{t("Career.whatsappDescriptionMobile2")}</div>
+                                                        <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
+                                                        <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -255,8 +255,8 @@ const Careers = () => {
                                                     <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
                                                                         language === 'zh' ? 'w-[230px] font-semibold' : 
                                                                         language === 'bm' ? 'w-[230px] font-medium' : ''}`}>
-                                                        <div className='block'>{t("Career.gmailDescriptionMobile")}</div>
-                                                        <div className='block'>{t("Career.gmailDescriptionMobile2")}</div>
+                                                        <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
+                                                        <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
                                                     </div>
                                                 </div>
                                             </div>

@@ -49,26 +49,26 @@
         },
         "innovativeTitle":"Innovative Solutions for Your Business",
         "innovativeDescription":"Our cutting-edge system will transform your business operations, boosting efficiency, sustainability, and customer experience, thus securing your competitiveness in today's market landscape.",
-        "videoCombinationTitle":{
-          "educationVideoTitle": "Education",
-          "F&BVideoTitle": "Food & Beverage",
-          "retailVideoTitle":"Retail",
-          "wholesaleVideoTitle":"Wholesale",
-          "logisticVideoTitle":"Logistic",
-          "enterpriseVideoTitle":"Enterprise"
+        "ImgCombinationTitle":{
+          "educationImgTitle": "Education",
+          "F&BImgTitle": "Food & Beverage",
+          "retailImgTitle":"Retail",
+          "wholesaleImgTitle":"Wholesale",
+          "logisticImgTitle":"Logistic",
+          "enterpriseImgTitle":"Enterprise"
         },
-        "videoCombinationDescription":{
-          "educationVideoDescription": "Unlocking limitless learning potential. Our cutting-edge technology empowers schools to achieve incredible feats in the classroom, enhance educational experiences, and make a profound impact within their communities.",
-          "F&BVideoDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience for customers, enhancing convenience and satisfaction at every step.",
-          "F&BVideoMobileDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience ",
-          "F&BVideoMobileDescription2": "for customers, enhancing convenience and satisfaction at every step.",
-          "retailVideoDescription":"Whether it's managing customer lists, orders, inventory records, or employee attendance, all you need is one comprehensive and intelligent system to streamline operations and enhance efficiency.",
-          "wholesaleVideoDescription":"Providing bulk discounts on goods and wholesale prices on merchandise, our intelligent system specializes in customized sourcing solutions for businesses and retailers, ensuring cost-effectiveness and efficient inventory management.",
-          "wholesaleVideoMobileDescription":"Providing bulk discounts on goods and wholesale prices on merchandise, our intelligent system specializes in customized sourcing solutions ",
-          "wholesaleVideoMobileDescription2":"for businesses and retailers, ensuring cost-effectiveness and efficient inventory management.",
-          "logisticVideoDescription":"Crafting an efficient transportation, logistics, and supply chain system is now well within reach - no longer a daunting task, but an achievable goal with our expertise and tools at hand.",
-          "logisticVideoDescription2":" ",
-          "enterpriseVideoDescription":"An effective enterprise management system is marked by its ability to improve communication between the company and employees, utilizing methods that positively influence employee attitudes and drive progress in their work."
+        "ImgCombinationDescription":{
+          "educationImgDescription": "Unlocking limitless learning potential. Our cutting-edge technology empowers schools to achieve incredible feats in the classroom, enhance educational experiences, and make a profound impact within their communities.",
+          "F&BImgDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience for customers, enhancing convenience and satisfaction at every step.",
+          "F&BImgMobileDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience ",
+          "F&BImgMobileDescription2": "for customers, enhancing convenience and satisfaction at every step.",
+          "retailImgDescription":"Whether it's managing customer lists, orders, inventory records, or employee attendance, all you need is one comprehensive and intelligent system to streamline operations and enhance efficiency.",
+          "wholesaleImgDescription":"Providing bulk discounts on goods and wholesale prices on merchandise, our intelligent system specializes in customized sourcing solutions for businesses and retailers, ensuring cost-effectiveness and efficient inventory management.",
+          "wholesaleImgMobileDescription":"Providing bulk discounts on goods and wholesale prices on merchandise, our intelligent system specializes in customized sourcing solutions ",
+          "wholesaleImgMobileDescription2":"for businesses and retailers, ensuring cost-effectiveness and efficient inventory management.",
+          "logisticImgDescription":"Crafting an efficient transportation, logistics, and supply chain system is now well within reach - no longer a daunting task, but an achievable goal with our expertise and tools at hand.",
+          "logisticImgDescription2":" ",
+          "enterpriseImgDescription":"An effective enterprise management system is marked by its ability to improve communication between the company and employees, utilizing methods that positively influence employee attitudes and drive progress in their work."
         },
         "homeReminderTitle":"No matter what field or industry you're in.",
         "homeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
@@ -103,14 +103,6 @@
          "advantageSelfReminderTitle":"Don't hesitate!",
          "advantageSelfReminderDescription":"Request a quote now for developing your personal independent system.",
          "advantageSelfReminderDescription2":"Your can also schedule consultations with our service staff to discuss any development ideas. We do not charge any consultation fees for this service.",
-         "whatsappDescription":"Show QR to start",
-         "whatsappDescription2":"communicate with us",
-         "gmailDescription":"Don't hesitate!",
-         "gmailDescription2":"Send us a message",
-         "whatsappDescriptionMobile":"Link to whatsapp start ",
-         "whatsappDescriptionMobile2":"communicate with us.",
-         "gmailDescriptionMobile":"Don't hesitate!",
-         "gmailDescriptionMobile2":"Send us a message",
          "enterpriseVideoTitle":"Enterprise",
          "enterpriseVideoDescription":"Powerful enterprises and robust management systems are absolutely inseparable, as they possess the capability to manage vast amounts of data effectively.",
          "advantageEnterpriseTitle":"The advantage of our technology for Enterprise",
@@ -233,15 +225,7 @@
           },
 
           "productsReminderTitle":"No matter what field or industry you're in.",
-          "productsReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
-          "whatsappDescription":"Show QR to start",
-          "whatsappDescription2":"communicate with us",
-          "gmailDescription":"Leave your contact, we",
-          "gmailDescription2":"will contact you soon.",
-          "whatsappDescriptionMobile":"Direct link to whatsapp ",
-          "whatsappDescriptionMobile2":"start communicate with us.",
-          "gmailDescriptionMobile":"Leave your contact, we",
-          "gmailDescriptionMobile2":"will contact you soon."
+          "productsReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
         },
 
 
@@ -299,15 +283,7 @@
           },
 
           "careerReminderTitle":"Don't hesitate!",
-          "careerReminderDescription":"Join us on an exciting journey towards endless possibilities and growth. Embrace diverse career opportunities, unleash your potential, and become part of a supportive community that values lifelong learning and personal fulfillment. Let's build a brighter future together.",
-          "whatsappDescription":"Show QR to start",
-          "whatsappDescription2":"communicate with us",
-          "gmailDescription":"Don't hesitate!",
-          "gmailDescription2":"Send us a message",
-          "whatsappDescriptionMobile":"Link to whatsapp start ",
-          "whatsappDescriptionMobile2":"communicate with us.",
-          "gmailDescriptionMobile":"Don't hesitate!",
-          "gmailDescriptionMobile2":"Send us a message"
+          "careerReminderDescription":"Join us on an exciting journey towards endless possibilities and growth. Embrace diverse career opportunities, unleash your potential, and become part of a supportive community that values lifelong learning and personal fulfillment. Let's build a brighter future together."
         },
 
         "WhatsappForm":{
@@ -335,6 +311,10 @@
           "requiredName":"Your name is required.",
           "requiredEmail":"Your email is required.",
           "emailFormat":"The email must be a valid email address.",
-          "requiredMessage":"Your message is required."
+          "requiredPhoneNumber":"Your phone number is required."
+        },
+
+        "Footer":{
+          "socialMediaDescription":"Start to connect with us:"
         }
   }

@@ -22,7 +22,7 @@ const Advantage = () => {
                     <source src="/assets/videos/advantage.mp4" type="video/mp4"/>
                 </video>
 
-                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[256px] text-left text-white gap-5'>
+                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[280px] text-left text-white gap-5'>
                     <div className='text-2xl md:text-[80px] font-bold'>{t("Advantage.advantageVideoTitle")}</div>
                 </div>
             </div>
@@ -200,10 +200,9 @@ const Advantage = () => {
                                     </div>
 
                                     <div className='flex flex-row'>
-                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
+                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
                                             <div 
-                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'
-                                                onClick={() => handleButtonClick('gmail')}>
+                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
                                                 <MobileGmail/>
                                             </div>
                                             <div className='flex flex-col text-[#666] text-sm'>
@@ -430,7 +429,7 @@ const Advantage = () => {
                             </div>
 
                             <div className='flex flex-row'>
-                                <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
+                                <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
                                     <div 
                                         className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'
                                         onClick={() => handleButtonClick('gmail')}>
