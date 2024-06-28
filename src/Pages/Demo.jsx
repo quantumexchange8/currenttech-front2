@@ -1,10 +1,14 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import React, { useContext, useState } from 'react';
 import Demo_Teamwork from '../Assets/Images/demo_Teamwork.png'
 import Modal from '../Components/Modal';
 import { LanguageContext } from "../LanguagesContext";
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
 import Ecommerce_1 from "../Assets/Images/Ecom_1.svg"
-import Hover from "../Components/Hover.jsx"
+import Ecommerce_2 from "../Assets/Images/Ecom_2.svg";
+import Cards from "../Components/Card"
+
 
 const Demo = () => {
     const { t, language } = useContext(LanguageContext);
@@ -16,37 +20,32 @@ const Demo = () => {
         setSelectedButton(button);
     };
 
-    const imageDetails = [
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse1", code: "EC369001", rate: 1264 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse2", code: "EC369002", rate: 1045 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse3", code: "EC369003", rate: 2014 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse4", code: "EC369004", rate: 1941 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse5", code: "EC369005", rate: 857 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse6", code: "EC369006", rate: 990 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse7", code: "EC369007", rate: 1004 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse8", code: "EC369008", rate: 2000 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse9", code: "EC369009", rate: 400 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse10", code: "EC369010", rate: 5003 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse11", code: "EC369011", rate: 1990 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse12", code: "EC369012", rate: 1152 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse13", code: "EC369013", rate: 2582 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse14", code: "EC369014", rate: 3331 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse15", code: "EC369015", rate: 5120 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse16", code: "EC369016", rate: 2156 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse17", code: "EC369017", rate: 4829 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse18", code: "EC369018", rate: 3160 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse19", code: "EC369019", rate: 2144 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse20", code: "EC369020", rate: 1529 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse21", code: "EC369021", rate: 3241 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse22", code: "EC369022", rate: 4473 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse23", code: "EC369023", rate: 3166 },
-        { src: Ecommerce_1, name: "e-Commerce ShoeHouse24", code: "EC369024", rate: 1526 },
-        // Add more objects for each image
+    //   E-commerce Dashboard
+    const Ecom_images = 
+    [Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2,
+     Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2,
+     Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2,
+     Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2,
+     Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2
     ];
 
-    const itemsPerPage = 8; // Number of items per page
+    const create_EcomCardData = (num) => ({
+        image: Ecom_images[(num - 1) % Ecom_images.length],
+        title: `e-Commerce ShoeHouse ${num}`,
+        code: `EC36900${num}`,
+        rate: [1531, 1264, 5131, 6150, 2212, 6150, 2115, 3169,
+               7293, 7650, 6294, 6192, 4412, 8511, 2915, 8491,
+               5918, 7412, 4747, 2194, 111, 4991, 3192, 1749,
+               9470, 1820, 3519, 5491, 6363, 6184, 6129, 1429,
+               7412, 6720, 7439, 7812, 9287, 1441, 1298, 1094][num - 1],
+        link: ""
+    });
+        
+    const Ecom_cardData = Array.from({ length: 40 }, (_, i) => create_EcomCardData(i + 1));
+
+    const itemsPerPage = 20; // Number of items per page
     const [currentPage, setCurrentPage] = useState(1); // Set initial page = 1
-    const totalPages = Math.ceil(imageDetails.length / itemsPerPage); //Calculates the total number of pages based on the number of images and items per page
+    const totalPages = Math.ceil(Ecom_cardData.length / itemsPerPage); //Calculates the total number of pages based on the number of images and items per page
 
     const handleClick = (pageNumber) => {
         setCurrentPage(pageNumber); // Set the current page to the clicked page number
@@ -64,7 +63,7 @@ const Demo = () => {
         }
     };
 
-    const currentImages = imageDetails.slice(   // To calculate and get the current image for the specific page
+    const currentCards = Ecom_cardData.slice(   // To calculate and get the current image for the specific page
         (currentPage - 1) * itemsPerPage,       // Start index
         currentPage * itemsPerPage              // End index
     );
@@ -103,7 +102,6 @@ const Demo = () => {
                         </div>
                         <div className='flex flex-col gap-[50px]'>
                             <div className='flex flex-col gap-[30px] md:gap-[20px]'>
-
                                 <div className='w-full h-[1px] bg-[#666]'></div>
 
                                 <div className='flex flex-col gap-[10px] md:gap-[20px]'>
@@ -129,19 +127,15 @@ const Demo = () => {
                             </div>
 
                             <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                                <div className='flex flex-row overflow-x-auto'>
-                                    <div className='flex flex-wrap gap-[20px] md:gap-[26px] overflow-auto justify-center'>
-                                        {currentImages.map((imgDetail, index) => (
-                                            <div className="relative group flex-shrink-0" key={index}>
-                                                <img
-                                                    src={imgDetail.src}
-                                                    alt={`E-commerce ${index + 1}`}
-                                                    className="w-[150px] md:w-full h-[180px] md:h-full object-cover"
-                                                />
-                                                <Hover name = {imgDetail.name} code = {imgDetail.code} rate = {imgDetail.rate}></Hover>
-                                            </div>
-                                        ))}
-                                    </div>
+                                <div className="flex flex-wrap gap-[26px] justify-center">
+                                    {currentCards.map((card, index) => (
+                                        <Cards 
+                                            key={index}
+                                            card={card}
+                                            index={index}
+                                            handleButtonClick={handleButtonClick}
+                                        />
+                                    ))}
                                 </div>
 
                                 <div className='flex justify-end gap-[15px] md:gap-[30px]'>

@@ -127,16 +127,16 @@
       "advantageEnterpriseReminderDescription2":"Anda juga boleh menjadualkan perbincangan dengan kakitangan perkhidmatan kami untuk membincangkan sebarang idea pembangunan. Kami tidak mengenakan sebarang yuran perbincangan untuk perkhidmatan ini."
     },
 
-    "OwnSite":{
-          "ownsiteVideoTitle":"Ubah Suai",
-          "ownsiteCustomization_Title":"Penyesuaian adalah pintu gerbang langsung anda kepada kelebihan.",
-          "ownsiteCustomization_Description":"Muka web dan aplikasi yang direka khas menawarkan kelebihan bersaing dengan menyesuaikan terus kepada kehendak pengguna, meningkatkan penglibatan dan kepuasan. Melalui ciri-ciri peribadi dan antara muka yang intuitif, mereka menyusun semula interaksi pengguna, memacu retensi dan kesetiaan.",
-          "ownsiteIdea_Title1":"Apa yang kami cipta untuk anda adalah lebih daripada sekadar idea.",
-          "ownsiteIdea_Title2":"Pada masa yang sama, kami juga perlu memahami apa yang anda fikirkan.",
-          "ownsiteIdea_Title3":"Selain itu, adalah penting untuk mengetahui apa yang disukai oleh pelanggan anda.",
-          "ownsiteIdea_Title4":"Kami percaya anda juga memberi perhatian yang sama terhadap warna tema.",
-          "ownsite_Reminder1":"Kongsi pendapat anda dengan kami! ",
-          "ownsite_Reminder2":"Hubungi kami untuk mengubah idea anda menjadi kenyataan. "
+    "Customize":{
+          "customizeVideoTitle":"Ubah Suai",
+          "customizeCustomization_Title":"Penyesuaian adalah pintu gerbang langsung anda kepada kelebihan.",
+          "customizeCustomization_Description":"Muka web dan aplikasi yang direka khas menawarkan kelebihan bersaing dengan menyesuaikan terus kepada kehendak pengguna, meningkatkan penglibatan dan kepuasan. Melalui ciri-ciri peribadi dan antara muka yang intuitif, mereka menyusun semula interaksi pengguna, memacu retensi dan kesetiaan.",
+          "customizeIdea_Title1":"Apa yang kami cipta untuk anda adalah lebih daripada sekadar idea.",
+          "customizeIdea_Title2":"Pada masa yang sama, kami juga perlu memahami apa yang anda fikirkan.",
+          "customizeIdea_Title3":"Selain itu, adalah penting untuk mengetahui apa yang disukai oleh pelanggan anda.",
+          "customizeIdea_Title4":"Kami percaya anda juga memberi perhatian yang sama terhadap warna tema.",
+          "customize_Reminder1":"Kongsi pendapat anda dengan kami! ",
+          "customize_Reminder2":"Hubungi kami untuk mengubah idea anda menjadi kenyataan. "
         },
 
     "Products":{
@@ -228,6 +228,43 @@
       "productsReminderDescription":"Memiliki sistem pintar sendiri adalah berbaloi. Jangan ragu untuk menghubungi kami untuk penyelesaian yang efisien dan direka khas hanya untuk anda."
 
     },
+
+    "OwnSite":{
+            "ownsiteVideoTitle":"Laman Web Sendiri",
+            "ownsiteDescription1":"Biarkan kami membantu anda membentuk laman web yang luar biasa untuk diri anda sendiri.",
+            "ownsiteSubDescription":"Sama ada anda seorang perniagaan atau individu, syarikat kami berdedikasi untuk memahami keperluan anda dengan mendalam dan dengan penuh semangat, membentuk sistem laman web serba lengkap yang luar biasa yang melebihi jangkaan anda, merangkumi segalanya dari bahagian hadapan hingga bahagian belakang.",
+            "ownsiteDescription2":"Sama ada anda ingin bergerak dari perniagaan tradisional kepada platform digital moden atau anda sudah menjadi perniagaan yang mapan, kami menawarkan templat konseptual yang terbaik untuk menyediakan anda untuk pertumbuhan transformasi dan peningkatan kualiti. Anda tidak perlu risau tentang dari mana mahu bermula, kerana pendekatan teliti kami bermula dengan pemahaman mendalam terhadap keperluan unik anda.",
+            "ownsiteTheme":{
+              "e-Commerce_Title":"e-Commerce",
+              "e-Commerce_Description":"E-Commerce menawarkan kemudahan yang tiada tandingannya, membolehkan transaksi yang lancar, pilihan produk yang luas, dan pembelian dengan perbandingan yang mudah, pada akhirnya memberikan kuasa kepada pengguna dengan aksesibiliti dan kecekapan dalam pengalaman pembelian mereka.",
+              "e-Commerce_Button":"Semak semua demo e-Commerce",
+              "Commercial_Title":"Komersial",
+              "Commercial_Description":"Halaman web komersial menawarkan pelbagai faedah, seperti peningkatan aksesibiliti pelanggan, ketersediaan 24/7, dan pameran produk yang dinamik. Ia menyediakan analitik yang berharga, meningkatkan penglihatan jenama, dan menyelaraskan pembelian, mendorong penjualan serta memupuk kesetiaan pelanggan.",
+              "Commercial_Button":"Semak semua demo Komersial",
+              "Admin_Title":"Papan Pemuka Pentadbir",
+              "Admin_Description":"Mencipta papan pemuka pentadbiran sendiri menyediakan kawalan terpusat, pemantauan data secara masa nyata, dan pelaporan yang disesuaikan. Ia meningkatkan pembuatan keputusan, menyelaraskan pengurusan aliran kerja, dan meningkatkan keselamatan dengan kawalan akses yang disesuaikan, memberikan kuasa kepada perniagaan untuk beroperasi dengan lebih efektif dan bertindak balas dengan cepat kepada perubahan.",
+              "Admin_Button":"Semak semua demo Papan Pemuka Pentadbir",
+              "Investment_Title":"Pelaburan",
+              "Investment_Description":"Mencipta laman web pelaburan sendiri memberikan kawalan yang ditingkatkan ke atas strategi, penjejakan portfolio secara masa nyata, dan pandangan peribadi. Ia mengintegrasikan analitik yang canggih, menyelaraskan pengalaman pengguna, dan menawarkan sumber pendidikan yang disesuaikan. Ini mendorong pertalian pelanggan yang lebih baik, kepercayaan, dan keputusan pelaburan yang berinformasi, mendorong pertumbuhan kewangan.",
+              "Investment_Button":"Semak semua demo Pelaburan",
+              "Digital_Title":"Digital Board",
+              "Digital_Description":"Mencipta laman web Fintech dengan ciri-ciri Crypto, Blockchain, NFT, atau Gaming Board membolehkan transaksi secara masa nyata, pengurusan aset yang selamat, dan aliran pendapatan baru. Ia menawarkan analitik yang canggih, pengalaman yang disesuaikan, dan meningkatkan keselamatan dan ketelusan, membina kepercayaan dalam kewangan digital.",
+              "Digital_Button":"Semak semua demo Pelaburan"
+            },
+            "ownsiteReminderTitle":"Tanpa mengira bidang atau industri yang anda ceburi.",
+            "ownsiteReminderDescription":"Memiliki sistem pintar sendiri adalah berbaloi. Jangan ragu untuk menghubungi kami untuk penyelesaian yang efisien dan direka khas hanya untuk anda."
+        },
+
+        "Demo":{
+            "DemoTitle":"Pusat Kuasa untuk Keperluan Web dan Aplikasi Anda",
+            "DemoDescription":"Selamat datang ke alam pembangunan web dan aplikasi yang inovatif dan transformatif. Rekaan yang menarik dan memukau semuanya berpusat pada pengalaman pengguna, meningkatkan kehadiran digital anda. Manfaatkan penyelesaian pakar kami untuk membuka potensi perniagaan dalam talian anda.",
+            "DemoTheme": {
+              "e-CommerceTitle":"e-Commerce Demo",
+              "e-CommerceDescription":"Buka potensi maksimum kehadiran dalam talian anda dengan produk templat web premium kami! Kekal di barisan hadapan dengan reka bentuk terkini, fungsi yang tiada tandingan, dan pilihan penyesuaian yang lancar. Tingkatkan laman web anda hari ini!"
+            },
+            "demoReminderTitle":"Tanpa mengira bidang atau industri yang anda ceburi.",
+            "demositeReminderDescription":"Memiliki sistem pintar sendiri adalah berbaloi. Jangan ragu untuk menghubungi kami untuk penyelesaian yang efisien dan direka khas hanya untuk anda."
+        },
 
 
     "Career":{

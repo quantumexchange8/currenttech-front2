@@ -41,7 +41,7 @@ const Products = () => {
                     <source src="\assets\videos\JobView.mp4" type="video/mp4"/>
                 </video>
 
-                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[280px] text-left text-white gap-5'>
+                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[410px] text-left text-white gap-5'>
                     <div className='text-2xl md:text-[80px] font-bold'>{t("Products.productVideoTitle")}</div>
                 </div>
             </div>

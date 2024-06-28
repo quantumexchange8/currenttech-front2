@@ -35,8 +35,8 @@ const Customize = () => {
                 <video autoPlay muted playsInline loop className='w-full'>
                     <source src="/assets/videos/customize.mp4" type="video/mp4"/>
                 </video>
-                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[280px] text-left text-white gap-5'>
-                    <div className='text-2xl md:text-[80px] font-bold'>{t("OwnSite.ownsiteVideoTitle")}</div>
+                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[410px] text-left text-white gap-5'>
+                    <div className='text-2xl md:text-[80px] font-bold'>{t("Customize.customizeVideoTitle")}</div>
                 </div>
             </div>
 
@@ -49,10 +49,10 @@ const Customize = () => {
                                                     ${language === 'en' ? 'w-[330px] md:w-[661px]' : 
                                                       language === 'zh' ? 'w-[330px] md:w-[661px]' : 
                                                       language === 'bm' ? 'w-[330px] md:w-[860px]' : ''}`}>
-                                    {t("OwnSite.ownsiteCustomization_Title")}
+                                    {t("Customize.customizeCustomization_Title")}
                                 </div>
                                 <div className='text-[#666] text-sm md:text-2xl font-semibold leading-[1.20] w-[353px] md:w-[1000px] text-left'>
-                                    {t("OwnSite.ownsiteCustomization_Description")}
+                                    {t("Customize.customizeCustomization_Description")}
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ const Customize = () => {
                                                     ${language === 'en' ? 'w-[300px] md:w-[661px]' : 
                                                       language === 'zh' ? 'w-[300px] md:w-[661px]' : 
                                                       language === 'bm' ? 'w-[330px] md:w-[840px]' : ''}`}>
-                                {t("OwnSite.ownsiteIdea_Title1")}
+                                {t("Customize.customizeIdea_Title1")}
                             </div>
 
                             <div className='flex flex-col gap-[50px] md:gap-0'>
@@ -80,7 +80,7 @@ const Customize = () => {
                                                     ${language === 'en' ? 'w-[860px]' : 
                                                       language === 'zh' ? 'w-[624px]' : 
                                                       language === 'bm' ? 'w-[674px]' : ''}`}>
-                                            {t("OwnSite.ownsiteIdea_Title2")}
+                                            {t("Customize.customizeIdea_Title2")}
                                         </div>
                                     </div>
 
@@ -103,7 +103,7 @@ const Customize = () => {
                                         </div>
 
                                         <div className=' absolute left-0 top-40 md:w-[860px] md:text-5xl font-bold text-left'>
-                                            {t("OwnSite.ownsiteIdea_Title3")}
+                                            {t("Customize.customizeIdea_Title3")}
                                         </div>
                                     </div>
 
@@ -120,7 +120,7 @@ const Customize = () => {
                                                     ${language === 'en' ? 'w-[860px]' : 
                                                       language === 'zh' ? 'w-[624px]' : 
                                                       language === 'bm' ? 'w-[730px]' : ''}`}>
-                                            {t("OwnSite.ownsiteIdea_Title4")}
+                                            {t("Customize.customizeIdea_Title4")}
                                         </div>
                                     </div>
 
@@ -132,7 +132,7 @@ const Customize = () => {
                                 {/* mobile */}
                                 <div className='flex flex-col md:hidden gap-[30px]'>
                                     <div className='w-[353px] text-base font-bold text-left'>
-                                        {t("OwnSite.ownsiteIdea_Title2")}
+                                        {t("Customize.customizeIdea_Title2")}
                                     </div>
 
                                     <div>
@@ -149,7 +149,7 @@ const Customize = () => {
                                             <img src={ConnectorLine4} alt="" />
                                         </div>
                                         <div className='absolute top-[85px] w-[280px] text-base font-bold text-left'>
-                                            {t("OwnSite.ownsiteIdea_Title3")}
+                                            {t("Customize.customizeIdea_Title3")}
                                         </div>
                                     </div>
                                     <div>
@@ -160,7 +160,7 @@ const Customize = () => {
                                             <img src={ConnectorLine5} alt="" />
                                         </div>
                                         <div className='absolute top-[65px] w-[290px] text-base font-bold text-left'>
-                                            {t("OwnSite.ownsiteIdea_Title4")}
+                                            {t("Customize.customizeIdea_Title4")}
                                         </div>
                                     </div>
                                     <div>
@@ -174,8 +174,8 @@ const Customize = () => {
                         
                         <div className='flex flex-col gap-[30px] md:gap-[50px]'>
                         <div className='text-base md:text-5xl font-bold w-[353px] md:w-[1000px] text-left leading-[1.20]'>
-                            <div className='block'>{t("OwnSite.ownsite_Reminder1")}</div>
-                            <div className='block'>{t("OwnSite.ownsite_Reminder2")}</div>
+                            <div className='block'>{t("Customize.customize_Reminder1")}</div>
+                            <div className='block'>{t("Customize.customize_Reminder2")}</div>
                         </div>
 
                             

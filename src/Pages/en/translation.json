@@ -127,16 +127,16 @@
             "advantageEnterpriseReminderDescription2":"Your can also schedule consultations with our service staff to discuss any development ideas. We do not charge any consultation fees for this service."
         },
 
-        "OwnSite":{
-          "ownsiteVideoTitle":"Customize",
-          "ownsiteCustomization_Title":"Customization is your direct gateway to advantage.",
-          "ownsiteCustomization_Description":"Tailored web pages and apps offer a competitive edge by catering directly to user preferences, enhancing engagement and satisfaction. Through personalized features and intuitive interfaces, they streamline user interactions, driving retention and loyalty.",
-          "ownsiteIdea_Title1":"What we create for you is more than just ideas.",
-          "ownsiteIdea_Title2":"At the same time, we also need to understand what you're thinking.",
-          "ownsiteIdea_Title3":"Furthermore, it's essential to know what your customers like.",
-          "ownsiteIdea_Title4":"We believe you care just as much about the theme colors.",
-          "ownsite_Reminder1":"Share your thoughts with us!",
-          "ownsite_Reminder2":"Get in touch to turn your ideas into reality."
+        "Customize":{
+          "customizeVideoTitle":"Customize",
+          "customizeCustomization_Title":"Customization is your direct gateway to advantage.",
+          "customizeCustomization_Description":"Tailored web pages and apps offer a competitive edge by catering directly to user preferences, enhancing engagement and satisfaction. Through personalized features and intuitive interfaces, they streamline user interactions, driving retention and loyalty.",
+          "customizeIdea_Title1":"What we create for you is more than just ideas.",
+          "customizeIdea_Title2":"At the same time, we also need to understand what you're thinking.",
+          "customizeIdea_Title3":"Furthermore, it's essential to know what your customers like.",
+          "customizeIdea_Title4":"We believe you care just as much about the theme colors.",
+          "customize_Reminder1":"Share your thoughts with us!",
+          "customize_Reminder2":"Get in touch to turn your ideas into reality."
         },
 
         "Products":{
@@ -226,6 +226,43 @@
 
           "productsReminderTitle":"No matter what field or industry you're in.",
           "productsReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
+        },
+
+        "OwnSite":{
+            "ownsiteVideoTitle":"Own Site",
+            "ownsiteDescription1":"Let us help you craft an exceptional website for yourself.",
+            "ownsiteSubDescription":"Whether you are a business or an individual, our company is dedicated to deeply understanding your needs and passionately crafting an exceptional one-stop website system that exceeds your expectations, covering everything from front-end to back-end.",
+            "ownsiteDescription2":"Whether you aim to transition from traditional business to modern digital platforms or you're already an established enterprise, we offer top-notch conceptual templates to prepare you for transformative growth and quality enhancement. You don’t need to worry about where to start, because our meticulous approach begins with a deep understanding of your unique needs.",
+            "ownsiteTheme":{
+              "e-Commerce_Title":"e-Commerce",
+              "e-Commerce_Description":"e-Commerce offers unparalleled convenience, enabling seamless transactions, expansive product selections, and effortless comparison shopping, ultimately empowering consumers with accessibility and efficiency in their purchasing experience.",
+              "e-Commerce_Button":"View all e-Commerce demo",
+              "Commercial_Title":"Commercial",
+              "Commercial_Description":"A commercial web page offers many benefits, such as increased customer accessibility, 24/7 availability, and dynamic product showcasing. It provides valuable analytics, enhances brand visibility, and streamlines purchasing, driving sales and fostering customer loyalty.",
+              "Commercial_Button":"View all Commercial demo",
+              "Admin_Title":"Admin Dashboard",
+              "Admin_Description":"Creating your own admin dashboard offers centralized control, real-time data monitoring, and customized reporting. It enhances decision-making, streamlines workflow management, and improves security with tailored access controls, empowering businesses to operate more effectively and respond quickly to changes.",
+              "Admin_Button":"View all Admin Dashboard demo",
+              "Investment_Title":"Investment",
+              "Investment_Description":"Creating your own investment website provides enhanced control over strategies, real-time portfolio tracking, and personalized insights. It integrates advanced analytics, streamlines user experiences, and offers tailored educational resources. This fosters better client engagement, trust, and informed investment decisions, driving financial growth.",
+              "Investment_Button":"View all Investment demo",
+              "Digital_Title":"Digital Board",
+              "Digital_Description":"Creating a Fintech website with Crypto, Blockchain, NFT or Gaming Board features enables real-time transactions, secure asset management, and new revenue streams. It offers advanced analytics, personalized experiences, and boosts security and transparency, fostering trust in digital finance.",
+              "Digital_Button":"View all Digital Board demo"
+            },
+            "ownsiteReminderTitle":"No matter what field or industry you're in.",
+            "ownsiteReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
+        },
+
+        "Demo":{
+            "DemoTitle":"The Powerhouse for Your Web and App Needs",
+            "DemoDescription":"Welcome to the realm of innovative and transformative web and app development. Exciting and captivating designs are all centered around user experience, enhancing your digital presence. Harness our expert solutions to unlock the potential of your online business.",
+            "DemoTheme": {
+              "e-CommerceTitle":"e-Commerce Demo",
+              "e-CommerceDescription":"Unlock the ultimate potential of your online presence with our premium web template products! Stay on the cutting edge with trending designs, unrivalled functionality, and seamless customisation options. Elevate your website today!"
+            },
+            "demoReminderTitle":"No matter what field or industry you're in.",
+            "demositeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
         },
 
 

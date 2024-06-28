@@ -127,16 +127,16 @@
       "advantageEnterpriseReminderDescription2":"您也可以预约与我们的服务人员进行咨询, 讨论任何开发想法. 我们不收取任何咨询费用."
     },
 
-    "OwnSite":{
-          "ownsiteVideoTitle":"量身定制",
-          "ownsiteCustomization_Title":"量身定制就是您直接获取最大优势的途径",
-          "ownsiteCustomization_Description":"通过量身定制的网页和应用程序, 直接满足用户的偏好, 提升参与度和满意度, 从而获得竞争优势. 通过个性化功能和直观界面, 它们简化用户交互, 推动用户留存和忠诚度.",
-          "ownsiteIdea_Title1":"我们为您创造的不仅仅是想法",
-          "ownsiteIdea_Title2":"同时我们也需要了解您的想法",
-          "ownsiteIdea_Title3":"此外还需要了解您的客户喜欢什么也是至关重要的",
-          "ownsiteIdea_Title4":"我们相信您同样关心主题颜色",
-          "ownsite_Reminder1":"与我们分享您的想法! 联系我们, 将您的想法变成现实.",
-          "ownsite_Reminder2":" "
+    "Customize":{
+          "customizeVideoTitle":"量身定制",
+          "customizeCustomization_Title":"量身定制就是您直接获取最大优势的途径",
+          "customizeCustomization_Description":"通过量身定制的网页和应用程序, 直接满足用户的偏好, 提升参与度和满意度, 从而获得竞争优势. 通过个性化功能和直观界面, 它们简化用户交互, 推动用户留存和忠诚度.",
+          "customizeIdea_Title1":"我们为您创造的不仅仅是想法",
+          "customizeIdea_Title2":"同时我们也需要了解您的想法",
+          "customizeIdea_Title3":"此外还需要了解您的客户喜欢什么也是至关重要的",
+          "customizeIdea_Title4":"我们相信您同样关心主题颜色",
+          "customize_Reminder1":"与我们分享您的想法! 联系我们, 将您的想法变成现实.",
+          "customize_Reminder2":" "
         },
 
     "Products":{
@@ -227,6 +227,43 @@
       "productsReminderTitle":"无论您身处哪个领域或行业",
       "productsReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
     },
+
+    "OwnSite":{
+            "ownsiteVideoTitle":"自己的专页",
+            "ownsiteDescription1":"让我们帮助您打造一个卓越的网站",
+            "ownsiteSubDescription":"无论您是企业还是个人, 我们公司致力于深入了解您的需求, 并充满激情地打造一个卓越的一站式网站系统, 超出您的期望, 涵盖从前端到后端的所有内容.",
+            "ownsiteDescription2":"无论您的目标是从传统业务过渡到现代数字平台, 还是您已经是一家成熟的企业, 我们提供一流的概念模板, 为您做好转型增长和质量提升的准备. 您不必担心从何处开始, 因为我们的细致方法始于对您独特需求的深入了解.",
+            "ownsiteTheme":{
+              "e-Commerce_Title":"电子商务",
+              "e-Commerce_Description":"电子商务提供无与伦比的便利性, 实现了交易的无缝进行, 产品选择的广泛和轻松的比较购物, 最终赋予消费者在购物体验中的便捷和效率.",
+              "e-Commerce_Button":"查看所有电子商务模版",
+              "Commercial_Title":"商业公司",
+              "Commercial_Description":"商业网页提供了许多好处, 如增加了客户的可访问性, 全天候可用性, 以及动态产品展示. 它提供了有价值的分析数据, 增强了品牌的可见性, 并简化了购买流程, 推动销售并培养客户忠诚度.",
+              "Commercial_Button":"查看所有商业公司模版",
+              "Admin_Title":"管理仪表盘",
+              "Admin_Description":"创建您自己的管理仪表板提供了集中控制, 实时数据监控和定制报告. 它增强了决策能力, 简化了工作流程管理, 并通过定制的访问控制改善了安全性, 使企业能够更有效地运作, 并快速应对变化",
+              "Admin_Button":"查看所有管理仪表盘模版",
+              "Investment_Title":"投资",
+              "Investment_Description":"创建您自己的投资网站提供了对策略的增强控制, 实时组合跟踪和个性化见解. 它集成了先进的分析功能, 简化了用户体验, 并提供了定制的教育资源. 这有助于更好地促进客户参与度, 建立信任, 并做出明智的投资决策, 推动财务增长.",
+              "Investment_Button":"查看所有投资模版",
+              "Digital_Title":"数字化板块",
+              "Digital_Description":"通过具有加密货币, 区块链, NFT或博彩游戏板块功能的金融科技与数值网站, 实现了实时交易, 安全资产管理和新的收入来源. 它提供了先进的分析, 个性化体验, 并增强了安全性和透明度, 促进了对数字金融的信任.",
+              "Digital_Button":"查看所有数字化模版"
+            },
+            "ownsiteReminderTitle":"无论您身处哪个领域或行业.",
+            "ownsiteReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
+        },
+
+        "Demo":{
+            "DemoTitle":"滿足您網站和應用需求的強大之選",
+            "DemoDescription":"歡迎來到創新與變革的網站和應用開發領域. 我們令人興奮且引人入勝的設計皆以用戶體驗為核心, 提升您的數字形象. 利用我們的專業解決方案, 釋放您在線業務的潛力.",
+            "DemoTheme": {
+              "e-CommerceTitle":"e-Commerce Demo",
+              "e-CommerceDescription":"解鎖您的在線形象的終極潛力, 使用我們的高端網站模板產品! 保持設計潮流前沿, 享受無與倫比的功能和無縫的自定義選項. 今天就提升您的網站吧!"
+            },
+            "demoReminderTitle":"无论您身处哪个领域或行业.",
+            "demositeReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
+        },
 
 
     "Career":{
