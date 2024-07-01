@@ -448,7 +448,7 @@ const Topbar = () => {
                                 leaveFrom="transform opacity-100 scale-100"
                                 leaveTo="transform opacity-0 scale-95"
                             >
-                                <Menu.Items className="absolute mt-5 w-[300px] h-[64px] rounded-[30px] bg-[#AAA] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
+                                <Menu.Items className="absolute mt-5 w-[300px] h-[64px] rounded-[30px] bg-[#FFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
                                     <div className="flex flex-row">
                                         <Menu.Item>
                                             {({ active }) => (
