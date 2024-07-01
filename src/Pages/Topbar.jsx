@@ -62,7 +62,7 @@ const Topbar = () => {
 
     return (
         <div className='flex flex-col'> 
-            <div className="md:h-[60px] h-[60px] w-full fixed z-50 bg-[#aaaaaae6] flex justify-center backdrop-blur-sm">
+            <div className="md:h-[60px] h-[60px] w-full fixed z-50 bg-[#FFF] flex justify-center backdrop-blur-sm">
                 <div className="w-[393px] md:w-full max-w-full flex justify-center items-center gap-[50px]">
                     {/* LogoSvg only shown on web version */}
                     <div className='hidden md:flex'>
