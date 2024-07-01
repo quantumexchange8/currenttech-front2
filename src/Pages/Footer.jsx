@@ -73,10 +73,14 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-row gap-[20px]'>
                         <div className='w-[50px] h-[50px]'>
-                            <FooterFacebook/>
+                            <a href="https://www.facebook.com/currenttechindustries/" target="_blank" rel="noopener noreferrer">
+                                <FooterFacebook />
+                            </a>
                         </div>
                         <div className='w-[50px] h-[50px]'>
-                            <FooterInstagram/>
+                            <a href="https://www.instagram.com/currenttechindustries/" target="_blank" rel="noopener noreferrer">
+                                <FooterInstagram/>
+                            </a>
                         </div>
                     </div>
                 </div>
