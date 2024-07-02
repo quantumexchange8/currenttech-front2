@@ -3,10 +3,11 @@ import ct_logo from '../Assets/Images/currenttech_logo.svg';
 import { FooterWhatsApp, FooterGmail, FooterFacebook, FooterInstagram } from '../Components/Brand.jsx';
 import Modal from '../Components/Modal';
 import Footer_MobileInstagram from '../Assets/Images/FooterMobileInstagram.svg'
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
-    const { t, language} = useContext(LanguageContext);
+    const { t, i18n } = useTranslation();
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
 
@@ -16,7 +17,7 @@ const Footer = () => {
     };
 
     return (
-        <div className="w-full py-[46px] md:py-[68px] h-[500px] md:h-[300px] bg-[#aaaaaa80] flex justify-center items-center">
+        <div className="w-full py-[46px] md:py-[68px]  bg-[#aaaaaa80] flex justify-center items-center">
             <div className='max-w-[1000px] w-full flex flex-col md:flex-row gap-[50px] md:gap-[100px] ml-5 md:ml-0'>
                 <div className='flex flex-col gap-[50px] md:gap-[26px]'>
                     <div className='flex flex-col gap-4'>
@@ -53,11 +54,11 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='hidden md:flex flex-col gap-4 items-end justify-center w-full text-right'>
+                <div className='hidden md:flex flex-col gap-4 items-end justify-center text-right'>
                     <div className='text-sm font-bold w-full'>
                         {t("Footer.socialMediaDescription")}
                     </div>
-                    <div className='flex flex-row gap-[20px]'>
+                    <div className='flex flex-row md:gap-[20px]'>
                         <div className='w-[50px] h-[50px] flex items-center justify-center bg-white border border-white rounded-[10px] cursor-pointer'
                             onClick={() => handleButtonClick('whatsapp')}>
                             <div>
@@ -90,7 +91,7 @@ const Footer = () => {
                     <div className='text-sm font-bold'>
                         {t("Footer.socialMediaDescription")}
                     </div>
-                    <div className='flex flex-row gap-[20px]'>
+                    <div className='flex flex-row gap-[10px]'>
                         <div className='w-[50px] h-[50px] flex items-center justify-center bg-white border border-white rounded-[10px] cursor-pointer'
                             onClick={() => handleButtonClick('whatsapp')}>
                             <div>

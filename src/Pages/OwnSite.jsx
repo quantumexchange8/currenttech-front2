@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
 import { Link, useLocation } from "react-router-dom";
 import Slider from "react-slick";
 import Modal from "../Components/Modal";
@@ -8,12 +8,14 @@ import { MoreButton } from "../Components/Outline.jsx";
 import Ecommerce_1 from "../Assets/Images/Ecom_1.svg";
 import Ecommerce_2 from "../Assets/Images/Ecom_2.svg";
 import Cards from "../Components/Card"
+import ownsiteVideo from '../Assets/videos/ownsite.mp4';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from 'react-i18next';
 
 const OwnSite = () => {
   const location = useLocation();
-  const { t, language } = useContext(LanguageContext);
+  const { t, i18n } = useTranslation();
   const [openButton, setOpenButton] = useState(false);
   const [selectedButton, setSelectedButton] = useState(null);
 
@@ -98,13 +100,13 @@ const OwnSite = () => {
 
 
   return (
-    <div className="flex flex-col w-full justify-center items-center text-center">
+    <div className="flex flex-col w-full justify-center text-center">
       <div className="relative mt-[60px] md:mt-0">
         <video autoPlay muted playsInline loop className="w-full">
-          <source src="/assets/videos/ownsite.mp4" type="video/mp4" />
+          <source src={ownsiteVideo} type="video/mp4" />
         </video>
-        <div className="flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[410px] text-left text-white gap-5">
-          <div className="text-2xl md:text-[80px] font-bold">{t("OwnSite.ownsiteVideoTitle")}</div>
+        <div className="flex flex-col absolute inset-0 justify-center items-center text-center text-white/80 gap-5">
+          <div className="text-[32px] md:text-[96px] font-bold">{t("OwnSite.ownsiteVideoTitle")}</div>
         </div>
       </div>
 
@@ -151,7 +153,7 @@ const OwnSite = () => {
                     </div>
 
                     {/* Mobile View */}
-                    <div className=" container w-[353px] md:hidden">
+                    <div className=" container w-full md:hidden">
                         <Slider {...settings}>
                             {Ecom_cardData.map((card, index) => (
                             <Cards 
@@ -206,7 +208,7 @@ const OwnSite = () => {
                     </div>
 
                     {/* Mobile View */}
-                    <div className=" container w-[353px] md:hidden">
+                    <div className=" container w-full md:hidden">
                         <Slider {...settings}>
                             {Com_cardData.map((card, index) => (
                             <Cards 
@@ -260,7 +262,7 @@ const OwnSite = () => {
                     </div>
 
                     {/* Mobile View */}
-                    <div className=" container w-[353px] md:hidden">
+                    <div className=" container w-full md:hidden">
                         <Slider {...settings}>
                             {admin_cardData.map((card, index) => (
                             <Cards 
@@ -314,7 +316,7 @@ const OwnSite = () => {
                     </div>
 
                     {/* Mobile View */}
-                    <div className=" container w-[353px] md:hidden">
+                    <div className=" container w-full md:hidden">
                         <Slider {...settings}>
                             {invest_cardData.map((card, index) => (
                             <Cards 
@@ -367,7 +369,7 @@ const OwnSite = () => {
                     </div>
 
                     {/* Mobile View */}
-                    <div className=" container w-[353px] md:hidden">
+                    <div className=" container w-full md:hidden">
                         <Slider {...settings}>
                             {digital_cardData.map((card, index) => (
                             <Cards 
@@ -402,93 +404,71 @@ const OwnSite = () => {
                         <div className='text-base md:text-5xl font-bold text-left'>
                             {t("Products.productsReminderTitle")}
                         </div>
-                        <div className='flex flex-col text-[#666] text-sm md:text-[32px] text-left leading-[1.20]'>
-                            <div className={`${language === 'en' ? 'font-semibold md:w-[1000px]' : 
-                                                language === 'zh' ? 'font-semibold md:w-[1000px]' : 
-                                                language === 'bm' ? 'font-semibold w-[353px] md:w-[950px]' : ''}`}>
-                                {t("Products.productsReminderDescription")}
-                            </div>
+                        <div className='flex flex-col text-[#666] text-sm md:text-[32px] text-left font-semibold md:w-[1000px] leading-[1.20]'>
+                            {t("Products.productsReminderDescription")}
                         </div> 
                     </div>
-                    <div>
-                        <div 
-                        className='hidden md:flex flex-col gap-[30px] md:gap-[50px]'>
-                            <div className='flex flex-row'>
-                                <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                    <div 
-                                        className='flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px]'>
-                                        <WhatsApp/>
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                        <div className="flex flex-col leading-[1.20]">
-                                            <div className={`${language === 'en' ? 'font-semibold w-[190px] md:w-[300px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[168px]' : 
-                                                                language === 'bm' ? 'font-semibold w-[330px]' : ''}`}>
-                                                <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                                <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div 
+                        className='flex flex-col gap-[30px] md:gap-[50px]'>
+                        <div className='flex flex-row'>
+                            <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
+                                <div 
+                                    className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px]'>
+                                    <WhatsApp/>
                                 </div>
-                            </div>
-
-                            <div className='flex flex-row'>
-                                <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                    <div 
-                                        className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px] cursor-pointer'>
-                                        <Gmail/> 
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                        <div className="flex flex-col leading-[1.20]">
-                                            <div className={`${language === 'en' ? 'font-semibold w-[170px] md:w-[300px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[229px]' : 
-                                                                language === 'bm' ? 'font-semibold w-[350px]' : ''}`}>
-                                                <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                                <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
-                                            </div>
-                                        </div>
+                                <div className='flex flex-col text-[#666] text-2xl text-left'>
+                                    <div className="flex flex-col leading-[1.20] font-semibold w-[190px] md:w-[260px]">
+                                        <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
+                                        <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Mobile Version */}
-                        <div 
-                            className='flex flex-col items-left gap-5 md:hidden'>
-                            <div className='flex flex-row'>
-                                <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                    <div 
-                                        className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                        <MobileWhatsApp />
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-sm'>
-                                        <div className="flex flex-col leading-[1.20] text-left">
-                                            <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                language === 'zh' ? 'font-semibold' : 
-                                                                language === 'bm' ? 'font-medium' : ''}`}>
-                                                <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                                <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
-                                            </div>
-                                        </div>
+                        <div className='flex flex-row'>
+                            <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
+                                <div 
+                                    className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px] cursor-pointer'>
+                                    <Gmail/> 
+                                </div>
+                                <div className='flex flex-col text-[#666] text-2xl text-left'>
+                                    <div className="flex flex-col font-semibold w-[280px] leading-[1.20]">
+                                        <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
+                                        <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <div className='flex flex-row'>
-                                <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                    <div 
-                                        className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                        <MobileGmail/>
+                    {/* Mobile Version */}
+                    <div 
+                        className='flex flex-col items-left gap-5 md:hidden'>
+                        <div className='flex flex-row'>
+                            <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
+                                <div 
+                                    className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
+                                    <MobileWhatsApp />
+                                </div>
+                                <div className='flex flex-col text-[#666] text-sm'>
+                                    <div className="flex flex-col text-left w-[190px] font-semibold leading-[1.20]">
+                                        <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
+                                        <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
                                     </div>
-                                    <div className='flex flex-col text-[#666] text-sm'>
-                                        <div className="flex flex-col leading-[1.20] text-left">
-                                            <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                language === 'zh' ? 'font-semibold' : 
-                                                                language === 'bm' ? 'font-medium' : ''}`}>
-                                                <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                                <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-row'>
+                            <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
+                                <div 
+                                    className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
+                                    <MobileGmail/>
+                                </div>
+                                <div className='flex flex-col text-[#666] text-sm'>
+                                    <div className="flex flex-col w-[170px] font-semibold text-left leading-[1.20]">
+                                        <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
+                                        <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
                                     </div>
                                 </div>
                             </div>

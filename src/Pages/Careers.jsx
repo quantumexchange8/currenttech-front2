@@ -2,10 +2,12 @@ import React, {useContext, useState } from 'react';
 import Gear from '../Assets/Images/Gear.png';
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
 import Modal from '../Components/Modal';
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
+import careerVideo from '../Assets/videos/career.mp4';
+import { useTranslation } from 'react-i18next';
 
 const Careers = () => {
-    const { t, language} = useContext(LanguageContext);
+    const { t, i18n } = useTranslation();
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
 
@@ -15,14 +17,14 @@ const Careers = () => {
     };
 
     return(
-        <div>
+        <div className='flex flex-col w-full justify-center text-center'>
             <div className='relative mt-[60px] md:mt-0'>
                 <video autoPlay muted playsInline loop className='w-full'>
-                    <source src="\assets\videos\career.mp4" type="video/mp4"/>
+                    <source src={careerVideo} type="video/mp4"/>
                 </video>
 
-                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[410px] text-left text-white gap-5'>
-                    <div className='text-2xl md:text-[80px] font-bold'>{t("Career.careerVideoTitle")}</div>
+                <div className='flex flex-col absolute inset-0 justify-center items-center text-center text-white/80 gap-5'>
+                    <div className='text-[32px] md:text-[96px] font-bold'>{t("Career.careerVideoTitle")}</div>
                 </div>
             </div>
 
@@ -78,10 +80,8 @@ const Careers = () => {
                                         <li>{t("Career.ItProgrammer.Skill.skill_5")}</li>
                                         <li>{t("Career.ItProgrammer.Skill.skill_6")}</li>
                                         <li>{t("Career.ItProgrammer.Skill.skill_7")}</li>
-                                        <li className={`mt-5 md:mt-12 ${language === 'en' ? 'font-bold w-[353px] md:w-[1000px]': 
-                                                                        language === 'zh' ? 'font-bold w-[353px] md:w-[1000px]': 
-                                                                        language === 'bm' ? 'font-bold w-[180px] md:w-[1000px]': ''}`}>
-                                                            {t("Career.ItProgrammer.Skill.experience")}</li>
+                                        <li className="mt-5 md:mt-12 font-bold w-[353px] md:w-[1000px]">
+                                            {t("Career.ItProgrammer.Skill.experience")}</li>
                                     </ul> 
                                 </div>
                             </div>
@@ -116,10 +116,8 @@ const Careers = () => {
                                         <li>{t("Career.UiDesigner.Skill.skill_1")}</li>
                                         <li>{t("Career.UiDesigner.Skill.skill_2")}</li>
                                         <li>{t("Career.UiDesigner.Skill.skill_3")}</li>
-                                        <li className={`mt-5 md:mt-12 ${language === 'en' ? 'font-bold w-[353px] md:w-[1000px]': 
-                                                                        language === 'zh' ? 'font-bold w-[353px] md:w-[1000px]': 
-                                                                        language === 'bm' ? 'font-bold w-[180px] md:w-[1000px]': ''}`}>
-                                                            {t("Career.ItProgrammer.Skill.experience")}
+                                        <li className="mt-5 md:mt-12 font-bold w-[353px] md:w-[1000px]">
+                                            {t("Career.ItProgrammer.Skill.experience")}
                                         </li>
                                     </ul> 
                                 </div>
@@ -175,14 +173,13 @@ const Careers = () => {
                                         {t("Career.careerReminderTitle")}
                                     </div>
                                     <div className='flex flex-col text-[#666] text-sm md:text-[32px] text-left leading-[1.20]'>
-                                        <div className={`${language === 'en' ? 'font-semibold w-[353px] md:w-[970px]': 
-                                                            language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]': 
-                                                            language === 'bm' ? 'font-semibold w-[353px] md:w-[1000px]': ''}`}>
+                                        <div className="font-semibold w-[353px] md:w-[1000px]">
                                             {t("Career.careerReminderDescription")}
                                         </div>
                                     </div>
                                 </div>
-                                <div className='hidden md:flex flex-col gap-[50px]'>
+                                <div 
+                                    className='flex flex-col gap-[30px] md:gap-[50px]'>
                                     <div className='flex flex-row'>
                                         <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
                                             <div 
@@ -190,13 +187,9 @@ const Careers = () => {
                                                 <WhatsApp/>
                                             </div>
                                             <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${language === 'en' ? 'font-semibold w-[190px] md:w-[300px]' : 
-                                                                        language === 'zh' ? 'font-semibold w-[168px]' : 
-                                                                        language === 'bm' ? 'font-semibold w-[330px]' : ''}`}>
-                                                        <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                                        <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col leading-[1.20] font-semibold w-[190px] md:w-[260px]">
+                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
+                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -209,18 +202,14 @@ const Careers = () => {
                                                 <Gmail/> 
                                             </div>
                                             <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${language === 'en' ? 'font-semibold w-[170px] md:w-[300px]' : 
-                                                                        language === 'zh' ? 'font-semibold w-[229px]' : 
-                                                                        language === 'bm' ? 'font-semibold w-[350px]' : ''}`}>
-                                                        <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                                        <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col font-semibold w-[280px] leading-[1.20]">
+                                                    <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
+                                                    <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>                            
+                                </div>
 
                                 {/* Mobile Version */}
                                 <div 
@@ -232,13 +221,9 @@ const Careers = () => {
                                                 <MobileWhatsApp />
                                             </div>
                                             <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                        language === 'zh' ? 'font-semibold' : 
-                                                                        language === 'bm' ? 'font-medium' : ''}`}>
-                                                        <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                                        <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col text-left w-[190px] font-semibold leading-[1.20]">
+                                                    <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
+                                                    <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -251,13 +236,9 @@ const Careers = () => {
                                                 <MobileGmail/>
                                             </div>
                                             <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                        language === 'zh' ? 'w-[230px] font-semibold' : 
-                                                                        language === 'bm' ? 'w-[230px] font-medium' : ''}`}>
-                                                        <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                                        <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col w-[170px] font-semibold text-left leading-[1.20]">
+                                                    <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
+                                                    <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
                                                 </div>
                                             </div>
                                         </div>

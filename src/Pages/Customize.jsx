@@ -1,7 +1,7 @@
-import React, {useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
 import Modal from '../Components/Modal';
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
 import Cus1 from "../Assets/Images/cus1.png"
 import Cus1Mobile from "../Assets/Images/cus1Mobile.svg"
 import Cus2Mobile from "../Assets/Images/cus2Mobile.svg"
@@ -18,9 +18,13 @@ import ConnectorLine2 from "../Assets/Images/ConnectorLine2.svg"
 import ConnectorLine3 from "../Assets/Images/ConnectorLine3.svg"
 import ConnectorLine4 from "../Assets/Images/ConnectorLine4.svg"
 import ConnectorLine5 from "../Assets/Images/ConnectorLine5.svg"
+// import ConnectorLine6 from "../Assets/Images/ConnectorLine6.svg"
+import ConnectorLine6 from "../Assets/Images/ConnectorLine6.png"
+import customizeVideo from '../Assets/videos/customize.mp4';
+import { useTranslation } from 'react-i18next';
 
 const Customize = () => {
-    const { t, language} = useContext(LanguageContext);
+    const { t, i18n } = useTranslation();
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
 
@@ -30,13 +34,13 @@ const Customize = () => {
     };
 
     return (
-        <div className='flex flex-col w-full'>
+        <div className='flex flex-col w-full justify-center text-center'>
             <div className='relative mt-[60px] md:mt-0'>
                 <video autoPlay muted playsInline loop className='w-full'>
-                    <source src="/assets/videos/customize.mp4" type="video/mp4"/>
+                    <source src={customizeVideo} type="video/mp4"/>
                 </video>
-                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[410px] text-left text-white gap-5'>
-                    <div className='text-2xl md:text-[80px] font-bold'>{t("Customize.customizeVideoTitle")}</div>
+                <div className='flex flex-col absolute inset-0 justify-center items-center text-center text-white/80 gap-5'>
+                    <div className='text-[32px] md:text-[96px] font-bold'>{t("Customize.customizeVideoTitle")}</div>
                 </div>
             </div>
 
@@ -45,10 +49,7 @@ const Customize = () => {
                     <div className='flex flex-col gap-[50px] md:gap-[150px] mb-[50px] md:mb-[150px] mx-5 md:mx-0'>
                         <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                             <div className='flex flex-col gap-[10px] md:gap-[50px]'>
-                                <div className={`flex flex-col text-base md:text-5xl text-left font-bold leading-[1.20] 
-                                                    ${language === 'en' ? 'w-[330px] md:w-[661px]' : 
-                                                      language === 'zh' ? 'w-[330px] md:w-[661px]' : 
-                                                      language === 'bm' ? 'w-[330px] md:w-[860px]' : ''}`}>
+                                <div className='flex flex-col text-base md:text-5xl text-left font-bold w-[330px] md:w-[661px] leading-[1.20]'> 
                                     {t("Customize.customizeCustomization_Title")}
                                 </div>
                                 <div className='text-[#666] text-sm md:text-2xl font-semibold leading-[1.20] w-[353px] md:w-[1000px] text-left'>
@@ -58,10 +59,7 @@ const Customize = () => {
                         </div>
                         <div className='w-full h-[1px] bg-[#666]'></div>
                         <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                            <div className={`flex flex-col text-base md:text-5xl font-bold text-left 
-                                                    ${language === 'en' ? 'w-[300px] md:w-[661px]' : 
-                                                      language === 'zh' ? 'w-[300px] md:w-[661px]' : 
-                                                      language === 'bm' ? 'w-[330px] md:w-[840px]' : ''}`}>
+                            <div className="flex flex-col text-base md:text-5xl font-bold w-[300px] md:w-[661px] text-left">
                                 {t("Customize.customizeIdea_Title1")}
                             </div>
 
@@ -76,10 +74,7 @@ const Customize = () => {
                                             <img src={ConnectorLine1} alt="" />
                                         </div>
                                         
-                                        <div className={`absolute left-0 top-40 md:text-5xl font-bold text-left
-                                                    ${language === 'en' ? 'w-[860px]' : 
-                                                      language === 'zh' ? 'w-[624px]' : 
-                                                      language === 'bm' ? 'w-[674px]' : ''}`}>
+                                        <div className="absolute left-0 top-40 md:text-5xl font-bold text-left w-[860px]">
                                             {t("Customize.customizeIdea_Title2")}
                                         </div>
                                     </div>
@@ -112,14 +107,11 @@ const Customize = () => {
                                     </div>
 
                                     <div className='relative'>
-                                        <div className='flex justify-end md:pr-5'>
-                                            <img src={ConnectorLine3} alt="" />
+                                        <div className='flex justify-end md:pr-[75px]'>
+                                            <img src={ConnectorLine6} alt="" />
                                         </div>
 
-                                        <div className={`absolute left-0 top-40 md:text-5xl font-bold text-left
-                                                    ${language === 'en' ? 'w-[860px]' : 
-                                                      language === 'zh' ? 'w-[624px]' : 
-                                                      language === 'bm' ? 'w-[730px]' : ''}`}>
+                                        <div className="absolute left-0 top-40 md:text-5xl font-bold text-left w-[860px]">
                                             {t("Customize.customizeIdea_Title4")}
                                         </div>
                                     </div>
@@ -164,7 +156,7 @@ const Customize = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <img src={MobileColour} alt="Mobile Emoji"/>
+                                        <img src={MobileColour} alt="Mobile Colour"/>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +172,8 @@ const Customize = () => {
 
                             
                         <div>
-                            <div className='hidden md:flex flex-col gap-[30px] md:gap-[50px]'>    
+                            <div 
+                                className='flex flex-col md:gap-[50px]'>
                                 <div className='flex flex-row'>
                                     <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
                                         <div 
@@ -188,13 +181,9 @@ const Customize = () => {
                                             <WhatsApp/>
                                         </div>
                                         <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'font-semibold w-[190px] md:w-[300px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[168px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[330px]' : ''}`}>
-                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
-                                                </div>
+                                            <div className="flex flex-col leading-[1.20] font-semibold w-[190px] md:w-[260px]">
+                                                <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
+                                                <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -207,13 +196,9 @@ const Customize = () => {
                                             <Gmail/> 
                                         </div>
                                         <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'font-semibold w-[170px] md:w-[300px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[229px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[350px]' : ''}`}>
-                                                    <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                                    <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
-                                                </div>
+                                            <div className="flex flex-col font-semibold w-[280px] leading-[1.20]">
+                                                <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
+                                                <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -221,7 +206,8 @@ const Customize = () => {
                             </div>
 
                             {/* Mobile Version */}
-                            <div className='flex flex-col items-left gap-5 md:hidden'>
+                            <div 
+                                className='flex flex-col items-left gap-5 md:hidden'>
                                 <div className='flex flex-row'>
                                     <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
                                         <div 
@@ -229,13 +215,9 @@ const Customize = () => {
                                             <MobileWhatsApp />
                                         </div>
                                         <div className='flex flex-col text-[#666] text-sm'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                    language === 'zh' ? 'font-semibold' : 
-                                                                    language === 'bm' ? 'font-medium' : ''}`}>
-                                                    <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                                    <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
-                                                </div>
+                                            <div className="flex flex-col text-left w-[190px] font-semibold leading-[1.20]">
+                                                <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
+                                                <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -248,13 +230,9 @@ const Customize = () => {
                                             <MobileGmail/>
                                         </div>
                                         <div className='flex flex-col text-[#666] text-sm'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                    language === 'zh' ? 'font-semibold' : 
-                                                                    language === 'bm' ? 'font-medium' : ''}`}>
-                                                    <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                                    <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
-                                                </div>
+                                            <div className="flex flex-col w-[170px] font-semibold text-left leading-[1.20]">
+                                                <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
+                                                <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
                                             </div>
                                         </div>
                                     </div>

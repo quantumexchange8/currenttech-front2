@@ -10,12 +10,11 @@ import OwnSite from "./Pages/OwnSite";
 import Demo from "./Pages/Demo";
 import Careers from "./Pages/Careers";
 import ScrollToTop from './Pages/ScrollToTop';
-import { LanguageProvider } from "./LanguagesContext.js";
+// import { LanguageProvider } from "./LanguagesContext.js";
 
 function App() {
   return (
     <div>
-      <LanguageProvider>
         <div className="overflow-x-hidden sm:overflow-auto">
           <Topbar />
           <ScrollToTop />
@@ -30,7 +29,6 @@ function App() {
           </Routes>
           <Footer/>
         </div>
-      </LanguageProvider>
     </div>
   );
 }

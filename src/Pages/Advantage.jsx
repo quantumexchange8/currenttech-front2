@@ -3,10 +3,13 @@ import { Website, ManagementSystem, PosSystem, SupportService, FrontBackend, Pro
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
 import AttendantSystem from '../Assets/Images/AttendentSystemLogo.png';
 import Modal from '../Components/Modal';
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
+import advantageVideo from '../Assets/videos/advantage.mp4';
+import advantageVideo2 from '../Assets/videos/advantage2.mp4';
+import { useTranslation } from 'react-i18next';
 
 const Advantage = () => {
-    const { t, language} = useContext(LanguageContext);
+    const { t, i18n } = useTranslation();
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
 
@@ -16,31 +19,27 @@ const Advantage = () => {
     };    
 
     return (
-        <div className='flex flex-col w-full justify-center items-center text-center'>
+        <div className='flex flex-col w-full justify-center text-center'>
             <div className='relative mt-[60px] md:mt-0'>
                 <video autoPlay muted playsInline loop className='w-full'>
-                    <source src="/assets/videos/advantage.mp4" type="video/mp4"/>
+                    <source src={advantageVideo} type="video/mp4"/>
                 </video>
 
-                <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[410px] text-left text-white gap-5'>
-                    <div className='text-2xl md:text-[80px] font-bold'>{t("Advantage.advantageVideoTitle")}</div>
+                <div className='flex flex-col absolute inset-0 justify-center items-center text-center text-white/80 gap-5'>
+                    <div className='text-[32px] md:text-[96px] font-bold'>
+                        {t("Advantage.advantageVideoTitle")}
+                    </div>
                 </div>
             </div>
 
             <div className='w-full flex flex-col justify-center items-center gap-[50px] md:gap-[150px]'>
                 <div className='max-w-[1000px] flex flex-col mx-5 md:mx-0 mt-[50px] md:mt-[150px] gap-[50px] md:gap-[150px]'>
                     <div className='flex flex-col gap-[10px] md:gap-[50px]'>
-                        <div className='flex w-[280px] md:w-[850px] text-base md:text-5xl font-bold text-left leading-[1.20]'>
-                            {t("Advantage.advantageSelfTitle")} 
+                        <div className='flex w-[280px] md:w-[850px] text-base md:text-5xl font-bold text-left'>
+                            <div className='leading-tight'>{t("Advantage.advantageSelfTitle")} </div>
                         </div>
-                        <div className='text-[#666] text-sm md:text-2xl font-semibold text-left'>
-                            <div className='flex flex-col leading-[1.20]'>
-                                <div className={`${language === 'en' ? 'font-semibold w-[343px] md:w-[1000px]' : 
-                                                    language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]' : 
-                                                    language === 'bm' ? 'font-semibold w-[343px] md:w-[1000px]' : ''}`}>
-                                    {t("Advantage.advantageSelfDescription")}
-                                </div>
-                            </div>
+                        <div className='text-[#666] text-sm md:text-2xl font-semibold text-left w-[353px] md:w-[1000px] leading-[1.20]'>
+                            {t("Advantage.advantageSelfDescription")}
                         </div>
                     </div>
 
@@ -61,12 +60,8 @@ const Advantage = () => {
                                             {t("Advantage.advantageSelfListSubtitle.websiteTitle")}
                                         </div>
                                         <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col leading-[1.20]'>
-                                                <div className={`${language === 'en' ? 'font-semibold w-[290px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[303px] md:w-[800px]' : ''}`}>
-                                                    {t("Advantage.advantageListDescription.websiteDescription")}
-                                                </div>
+                                            <div className='flex flex-col font-semibold w-[290px] md:w-[800px] leading-tight'>
+                                                {t("Advantage.advantageListDescription.websiteDescription")}
                                             </div>
                                         </div>
                                     </div>
@@ -82,12 +77,8 @@ const Advantage = () => {
                                     {t("Advantage.advantageSelfListSubtitle.managementTitle")}
                                     </div>
                                     <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                        <div className='flex flex-col leading-[1.20]'>
-                                            <div className={`${language === 'en' ? 'font-semibold w-[290px] md:w-[800px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                language === 'bm' ? 'font-semibold w-[303px] md:w-[800px]' : ''}`}>
-                                                {t("Advantage.advantageListDescription.managementDescription")}
-                                            </div>
+                                        <div className='flex flex-col font-semibold w-[290px] md:w-[800px] leading-tight'>
+                                            {t("Advantage.advantageListDescription.managementDescription")}
                                         </div>
                                     </div>
                                 </div>
@@ -102,12 +93,8 @@ const Advantage = () => {
                                         {t("Advantage.advantageSelfListSubtitle.paymentTitle")}
                                     </div>
                                     <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                        <div className='flex flex-col leading-[1.20]'>
-                                            <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                language === 'bm' ? 'font-medium w-[303px] md:w-[790px]' : ''}`}>
-                                                {t("Advantage.advantageListDescription.paymentDescription")}
-                                            </div>
+                                        <div className='flex flex-col font-semibold w-[303px] md:w-[800px] leading-[1.20]'>
+                                            {t("Advantage.advantageListDescription.paymentDescription")}
                                         </div>
                                     </div>
                                 </div>
@@ -121,12 +108,8 @@ const Advantage = () => {
                                         {t("Advantage.advantageSelfListSubtitle.supportTitle")}
                                     </div>
                                     <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                        <div className='flex flex-col leading-[1.20]'>
-                                            <div className={`${language === 'en' ? 'w-[303px] font-semibold md:w-[800px]' : 
-                                                                language === 'zh' ? 'w-[303px] font-semibold md:w-[800px]' : 
-                                                                language === 'bm' ? 'w-[303px] font-medium md:w-[780px]' : ''}`}>
-                                                {t("Advantage.advantageListDescription.supportDescription")}
-                                            </div>
+                                        <div className='flex flex-col w-[303px] font-semibold md:w-[800px] leading-[1.20]'>
+                                            {t("Advantage.advantageListDescription.supportDescription")}
                                         </div>
                                     </div>
                                 </div>
@@ -220,11 +203,11 @@ const Advantage = () => {
                 </div>
                 <div className='relative'>
                     <video autoPlay muted playsInline loop className='w-full'>
-                        <source src="/assets/videos/advantage2.mp4" type="video/mp4"/>
+                        <source src={advantageVideo2} type="video/mp4"/>
                     </video>
                                                             
-                    <div className='flex flex-col absolute bottom-[50px] md:bottom-[100px] left-[20px] md:left-[256px] text-left text-white gap-5'>
-                        <div className='text-2xl md:text-[80px] font-bold'>{t("Advantage.enterpriseVideoTitle")} </div>
+                    <div className='flex flex-col absolute inset-0 justify-center items-center text-center text-white/80 gap-5'>
+                        <div className='text-[32px] md:text-[96px] font-bold'>{t("Advantage.enterpriseVideoTitle")} </div>
                     </div>
                 </div>
                 <div className='max-w-[1000px] flex flex-col gap-[50px] md:gap-[150px] mb-[50px] md:mb-[150px] mx-5 md:mx-0 items-center justify-center'>
@@ -234,12 +217,8 @@ const Advantage = () => {
                                 <div>{t("Advantage.advantageEnterpriseTitle")}</div>
                             </div>
                             <div className='text-[#666] text-sm md:text-2xl text-left'>
-                                <div className='flex flex-col leading-[1.20]'>
-                                    <div className={`${language === 'en' ? 'font-semibold w-[335px] md:w-[1000px]' : 
-                                                        language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]' : 
-                                                        language === 'bm' ? 'font-medium w-[345px] md:w-[1000px]' : ''}`}>
-                                        {t("Advantage.advantageEnterpriseDescription")}
-                                    </div>
+                                <div className='flex flex-col font-semibold w-[353px] md:w-[1000px] leading-[1.20]'>
+                                    {t("Advantage.advantageEnterpriseDescription")}
                                 </div>
                             </div>
                         </div>
@@ -261,12 +240,8 @@ const Advantage = () => {
                                                 {t("Advantage.advantageEnterpriseListSubtitle.frontendTitle")}
                                             </div>
                                             <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                                <div className='flex flex-col leading-[1.20]'>
-                                                    <div className={`${language === 'en' ? 'font-semibold w-[265px] md:w-[800px]' : 
-                                                                        language === 'zh' ? 'font-semibold w-[300px] md:w-[800px]' : 
-                                                                        language === 'bm' ? 'font-semibold w-[300px] md:w-[790px]' : ''}`}>
-                                                        {t("Advantage.advantageEnterpriseListDescription.frontendDescription")}
-                                                    </div>
+                                                <div className='flex flex-col font-semibold w-[300px] md:w-[800px] leading-[1.20]'>
+                                                    {t("Advantage.advantageEnterpriseListDescription.frontendDescription")}
                                                 </div>
                                             </div>
                                         </div>
@@ -282,12 +257,8 @@ const Advantage = () => {
                                             {t("Advantage.advantageEnterpriseListSubtitle.attendanceTitle")}
                                         </div>
                                         <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col leading-[1.20]'>
-                                            <div className={`${language === 'en' ? 'font-semibold w-[295px] md:w-[800px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[310px] md:w-[800px]' : 
-                                                                language === 'bm' ? 'font-semibold w-[300px] md:w-[790px]' : ''}`}>
+                                            <div className='flex flex-col font-semibold w-[300px] md:w-[800px] leading-[1.20]'>
                                                 {t("Advantage.advantageEnterpriseListDescription.attendanceDescription")}
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -302,12 +273,8 @@ const Advantage = () => {
                                             {t("Advantage.advantageEnterpriseListSubtitle.projectTitle")}
                                         </div>
                                         <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col leading-[1.20]'>
-                                                <div className={`${language === 'en' ? 'font-semibold w-[290px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[308px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[300px] md:w-[790px]' : ''}`}>
-                                                    {t("Advantage.advantageEnterpriseListDescription.projectDescription")}
-                                                </div>
+                                            <div className='flex flex-col font-semibold w-[290px] md:w-[800px] leading-[1.20]'>
+                                                {t("Advantage.advantageEnterpriseListDescription.projectDescription")}
                                             </div>
                                         </div>
                                     </div>
@@ -322,12 +289,8 @@ const Advantage = () => {
                                             {t("Advantage.advantageEnterpriseListSubtitle.rewardTitle")}
                                         </div>
                                         <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col leading-[1.20]'>
-                                                <div className={`${language === 'en' ? 'font-semibold w-[290px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[305px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[300px] md:w-[790px]' : ''}`}>
-                                                    {t("Advantage.advantageEnterpriseListDescription.rewardDescription")}
-                                                </div>
+                                            <div className='flex flex-col font-semibold w-[300px] md:w-[800px] leading-[1.20]'>
+                                                {t("Advantage.advantageEnterpriseListDescription.rewardDescription")}
                                             </div>
                                         </div>
                                     </div>
@@ -342,12 +305,8 @@ const Advantage = () => {
                                             {t("Advantage.advantageEnterpriseListSubtitle.supportTitle")}
                                         </div>
                                         <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col leading-[1.20]'>
-                                                <div className={`${language === 'en' ? 'font-semibold w-[300px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[310px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[300px] md:w-[790px]' : ''}`}>
-                                                    {t("Advantage.advantageEnterpriseListDescription.supportDescription")}
-                                                </div>
+                                            <div className='flex flex-col font-semibold w-[300px] md:w-[800px] leading-[1.20]'>
+                                                {t("Advantage.advantageEnterpriseListDescription.supportDescription")}
                                             </div>
                                         </div>
                                     </div>
@@ -369,9 +328,7 @@ const Advantage = () => {
                                         {t("Advantage.advantageEnterpriseReminderDescription")}
                                     </li>
 
-                                    <li className={`${language === 'en' ? 'font-semibold md:font-bold w-[330px] md:w-[1000px]' : 
-                                                        language === 'zh' ? 'font-semibold md:font-bold w-[330px] md:w-[1000px]' : 
-                                                        language === 'bm' ? 'font-semibold md:font-bold w-[330px] md:w-[950px]' : ''}`}>
+                                    <li className='font-semibold md:font-bold w-[330px] md:w-[1000px]'>
                                         {t("Advantage.advantageEnterpriseReminderDescription2")}
                                     </li>
                                 </ul>

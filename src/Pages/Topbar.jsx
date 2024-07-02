@@ -4,14 +4,16 @@ import { Earphone, Lang, Menus } from '../Components/Outline';
 import LogoSvg from '../Assets/Images/logo.svg';
 import { Link, useLocation } from "react-router-dom";
 import Modal from '../Components/Modal';
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
+import { useTranslation } from 'react-i18next';
 
 const Topbar = () => {
     const location = useLocation();
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // Define isMenuOpen state
-    const { t, language, updateLanguage } = useContext(LanguageContext);
+    // const [isMenuOpen, setIsMenuOpen] = useState(false); // Define isMenuOpen state
+    // const { t, language, updateLanguage } = useContext(LanguageContext);
+    const { t, i18n } = useTranslation();
     const [isAdvantageExpanded, setIsAdvantageExpanded] = useState(false);
     const [isProductExpanded, setIsProductExpanded] = useState(false);
     const [langIsOpen, setLangIsOpen] = useState(false);
@@ -22,9 +24,10 @@ const Topbar = () => {
         setSelectedButton(button);
     };
 
-    const handleLanguageChange = (lang) => {
-        updateLanguage(lang);
-        setIsMenuOpen(false); // Close the menu after language change
+    const toggleLanguage = (langCode) => {
+        i18n.changeLanguage(langCode);
+        localStorage.setItem('i18nextLng', langCode);
+        setLangIsOpen(false)
     };
 
     const toggleAdvantage = (e) => {
@@ -67,7 +70,7 @@ const Topbar = () => {
                     {/* LogoSvg only shown on web version */}
                     <div className='hidden md:flex'>
                         <Link to="/" className='w-10 h-[26px]'>
-                            <img src={LogoSvg} alt="icon" className='md:w-full h-full'/>
+                            <img src={LogoSvg} alt="icon" className='md:w-full h-full transition duration-300 ease-in-out transform hover:scale-110'/>
                         </Link>
                     </div>
 
@@ -75,8 +78,8 @@ const Topbar = () => {
                     <div className="hidden md:flex justify-center gap-[30px]">
                         <Link className={`text-base font-medium ${location.pathname === '/customize' || location.pathname === '/advantage'  ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''}`}>
                             <Menu as="div" className="relative text-left">
-                                <Menu.Button className="text-base font-medium">
-                                    <div className={language === 'en' ? 'font-medium' : 'font-semibold'}>
+                                <Menu.Button className="text-base font-medium hover:rounded-[35px] hover:text-black hover:transform hover:scale-105 hover:duration-300">
+                                    <div className={i18n === 'en' ? 'font-medium' : 'font-semibold'}>
                                         {t("Topbar.advantagePage")}
                                     </div>
                                 </Menu.Button>
@@ -96,10 +99,12 @@ const Topbar = () => {
                                                     <Link
                                                         to="/advantage"
                                                         className={`text-base font-medium ${
-                                                            location.pathname === '/advantage' ? 'bg-[#CCCCCC80] rounded-[35px] text-blue-500' : ''
+                                                            location.pathname === '/advantage' ? 'bg-[#CCCCCC80] rounded-[35px] text-black' : ''
                                                         }`}
                                                     >
-                                                        <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${language === 'en' ? 'font-medium' : 'font-semibold'}`}>
+                                                        <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${i18n === 'en' ? 'font-medium' : 'font-semibold'} ${
+                                                            location.pathname !== '/advantage' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:transform hover:scale-105 hover:duration-300' : ''
+                                                        }`}>
                                                             {t("Topbar.oneStopPage")}
                                                         </div>
                                                     </Link>
@@ -111,10 +116,12 @@ const Topbar = () => {
                                                     <Link
                                                         to="/customize"
                                                         className={`text-base font-medium ${
-                                                            location.pathname === '/customize' ? 'bg-[#CCCCCC80] rounded-[35px] text-blue-500' : ''
+                                                            location.pathname === '/customize' ? 'bg-[#CCCCCC80] rounded-[35px] text-black' : ''
                                                         }`}
                                                     >
-                                                        <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${language === 'en' ? 'font-medium' : 'font-semibold'}`}>
+                                                        <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${i18n === 'en' ? 'font-medium' : 'font-semibold'} ${
+                                                            location.pathname !== '/customize' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:transform hover:scale-105 hover:duration-300' : ''
+                                                        }`}>
                                                             {t("Topbar.customizePage")}
                                                         </div>
                                                     </Link>
@@ -127,8 +134,8 @@ const Topbar = () => {
                         </Link>
                         <Link className={`text-base font-medium ${location.pathname === '/products' || location.pathname === '/ownSite'  ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''}`}>
                             <Menu as="div" className="relative text-left">
-                                <Menu.Button className="text-base font-medium">
-                                    <div className={language === 'en' ? 'font-medium' : 'font-semibold'}>
+                                <Menu.Button className="text-base font-medium hover:rounded-[35px] hover:text-black hover:transform hover:scale-105 hover:duration-300">
+                                    <div className={i18n === 'en' ? 'font-medium' : 'font-semibold'}>
                                         {t("Topbar.productsPage")}
                                     </div>
                                 </Menu.Button>
@@ -148,10 +155,12 @@ const Topbar = () => {
                                                     <Link
                                                         to="/products"
                                                         className={`text-base font-medium ${
-                                                            location.pathname === '/products' ? 'bg-[#CCCCCC80] rounded-[35px] text-blue-500' : ''
+                                                            location.pathname === '/products' ? 'bg-[#CCCCCC80] rounded-[35px] text-black' : ''
                                                         }`}
                                                     >
-                                                        <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${language === 'en' ? 'font-medium' : 'font-semibold'}`}>
+                                                        <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${i18n === 'en' ? 'font-medium' : 'font-semibold'} ${
+                                                            location.pathname !== '/products' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:transform hover:scale-105 hover:duration-300' : ''
+                                                        }`}>
                                                             {t("Topbar.developedPage")}
                                                         </div>
                                                     </Link>
@@ -163,10 +172,12 @@ const Topbar = () => {
                                                     <Link
                                                         to="/ownSite"
                                                         className={`text-base font-medium ${
-                                                            location.pathname === '/ownSite' ? 'bg-[#CCCCCC80] rounded-[35px] text-blue-500' : ''
+                                                            location.pathname === '/ownSite' ? 'bg-[#CCCCCC80] rounded-[35px] text-black' : ''
                                                         }`}
                                                     >
-                                                        <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${language === 'en' ? 'font-medium' : 'font-semibold'}`}>
+                                                        <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${i18n === 'en' ? 'font-medium' : 'font-semibold'} ${
+                                                            location.pathname !== '/ownSite' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:transform hover:scale-105 hover:duration-300' : ''
+                                                        }`}>
                                                             {t("Topbar.ownSitePage")}
                                                         </div>
                                                     </Link>
@@ -179,11 +190,11 @@ const Topbar = () => {
                         </Link>
                         <Link
                             to="/careers"
-                            className={`text-base font-medium ${
-                                location.pathname === '/careers' ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''
+                            className={`text-base font-medium hover:rounded-[35px] hover:text-black hover:transform hover:scale-105 hover:duration-300 ${
+                                location.pathname === '/careers' ? 'bg-[#CCCCCC80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
-                            <div className={language === 'en' ? 'font-medium' : 'font-semibold'}>
+                            <div className={i18n === 'en' ? 'font-medium' : 'font-semibold'}>
                                 {t("Topbar.careerPage")}
                             </div>
                         </Link>
@@ -205,52 +216,49 @@ const Topbar = () => {
                         </div>
 
                         <Transition appear show={langIsOpen} as={Fragment}>
-                            <Dialog as="div" className="relative z-10" onClose={closeLangModal}>
+                            <Dialog as="div" className="fixed inset-0 z-10 flex items-start justify-center pt-16" onClose={closeLangModal}>
                                 <Transition.Child
-                                    as={Fragment}
-                                    enter="ease-out duration-300"
-                                    enterFrom="opacity-0"
-                                    enterTo="opacity-100"
-                                    leave="ease-in duration-200"
-                                    leaveFrom="opacity-100"
-                                    leaveTo="opacity-0"
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0"
+                                enterTo="opacity-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100"
+                                leaveTo="opacity-0"
                                 >
-                                    <div className="fixed inset-0 bg-[#1a1b1dc2] opacity-100" />
+                                <div className="fixed inset-0 bg-[#1a1b1dc2] opacity-100" />
                                 </Transition.Child>
-                                
-                                <div className='fixed inset-0 pt-16'>
-                                    <Transition.Child
-                                        as={Fragment}
-                                        enter="ease-out duration-300"
-                                        enterFrom="opacity-0 scale-95"
-                                        enterTo="opacity-100 scale-100"
-                                        leave="ease-in duration-200"
-                                        leaveFrom="opacity-100 scale-100"
-                                        leaveTo="opacity-0 scale-95"
-                                    >
-                                        <Dialog.Panel className="absolute left-[130px] mt-2 w-[130px] rounded-[15px] bg-[#FFFFFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right">
-                                            <button
-                                                className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
-                                                onClick={() => {handleLanguageChange('en'); closeLangModal();}}
-                                            >
-                                                English {language === 'en'}
-                                            </button>
-                                            <button
-                                                className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
-                                                onClick={() => {handleLanguageChange('bm'); closeLangModal();}}
-                                            >
-                                                Malay {language === 'bm'}
-                                            </button>
 
-                                            <button
-                                                className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
-                                                onClick={() => {handleLanguageChange('zh'); closeLangModal();}}
-                                            >
-                                                中文 {language === 'zh'}
-                                            </button>
-                                        </Dialog.Panel>
-                                    </Transition.Child>
-                                </div>
+                                <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 scale-95"
+                                enterTo="opacity-100 scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 scale-100"
+                                leaveTo="opacity-0 scale-95"
+                                >
+                                <Dialog.Panel className="relative mt-2 w-[130px] rounded-[15px] bg-[#FFFFFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right">
+                                    <button
+                                    className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                    onClick={() => { toggleLanguage('en'); closeLangModal(); }}
+                                    >
+                                    English {i18n === 'en'}
+                                    </button>
+                                    {/* <button
+                                    className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                    onClick={() => { toggleLanguage('bm'); closeLangModal(); }}
+                                    >
+                                    Malay {i18n === 'bm'}
+                                    </button> */}
+                                    <button
+                                    className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                    onClick={() => { toggleLanguage('zh'); closeLangModal(); }}
+                                    >
+                                    中文 {i18n === 'zh'}
+                                    </button>
+                                </Dialog.Panel>
+                                </Transition.Child>
                             </Dialog>
                         </Transition>
                         
@@ -271,7 +279,7 @@ const Topbar = () => {
                     </div>
 
                     <Transition appear show={menuIsOpen} as={Fragment}>
-                        <Dialog as="div" className="relative z-10" onClose={closeMenuModal}>
+                        <Dialog as="div" className="fixed inset-0 z-10 flex items-start justify-center pt-16" onClose={closeMenuModal}>
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -284,7 +292,7 @@ const Topbar = () => {
                                 <div className="fixed inset-0 bg-[#1a1b1dc2] opacity-100 backdrop-blur-sm" />
                             </Transition.Child>
 
-                            <div className='fixed inset-0 pt-16'>
+                            <div className='fixed'>
                                 <Transition.Child
                                     as={Fragment}
                                     enter="ease-out duration-300"
@@ -294,10 +302,10 @@ const Topbar = () => {
                                     leaveFrom="opacity-100 scale-100"
                                     leaveTo="opacity-0 scale-95"
                                 >
-                                    <Dialog.Panel className={`absolute right-[105px] mt-2 rounded-[15px] bg-[#FFFFFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-center object-center
-                                        ${language === 'en' ? 'w-[180px]' : 
-                                        language === 'zh' ? 'w-[112px]' : 
-                                        language === 'ms' ? 'w-[160px]' : ''}`}>
+                                    <Dialog.Panel className={`mt-2 rounded-[15px] bg-[#FFFFFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-center
+                                        ${i18n === 'en' ? 'w-[180px]' :
+                                            i18n === 'zh' ? 'w-[112px]' :
+                                            i18n === 'ms' ? 'w-[160px]' : ''}`}>
 
                                         <Link
                                             to="/"
@@ -306,11 +314,7 @@ const Topbar = () => {
                                             }`}
                                         >
                                             <button
-                                                className={`group flex flex-col w-full rounded-md py-3 ${
-                                                    language === 'en' ? 'px-7 place-items-center' : 
-                                                    language === 'zh' ? 'place-items-center ' : 
-                                                    language === 'bm' ? 'px-7 place-items-center' : ''
-                                                }`}
+                                                className="group flex flex-col w-full rounded-md py-3 items-center"
                                                 onClick={closeMenuModal}>
                                                 {t("mobileTopbar.homePage")}
                                             </button>
@@ -329,8 +333,8 @@ const Topbar = () => {
                                                         className={`w-full text-center`}
                                                         >
                                                         <button
-                                                            className={`flex flex-col w-full py-3 px-7 place-items-center text-base font-medium ${
-                                                                location.pathname === '/advantage' ? 'text-blue-600' : ''
+                                                            className={`flex flex-col w-full py-3 px-7 items-center text-base font-medium ${
+                                                                location.pathname === '/advantage' ? 'text-blue-500' : ''
                                                             }`}
                                                             onClick={closeMenuModal}
                                                         >
@@ -343,8 +347,8 @@ const Topbar = () => {
                                                         className='w-full text-center'
                                                         >
                                                         <button
-                                                            className={`flex flex-col w-full py-3 px-7 place-items-center text-base font-medium ${
-                                                                location.pathname === '/customize' ? 'text-blue-600' : ''
+                                                            className={`flex flex-col w-full py-3 px-7 items-center text-base font-medium ${
+                                                                location.pathname === '/customize' ? 'text-blue-500' : ''
                                                             }`}
                                                             onClick={closeMenuModal}
                                                         >
@@ -357,7 +361,7 @@ const Topbar = () => {
                                         <Link>
                                             <button
                                                 onClick={toggleProducts}
-                                                className= 'flex flex-col w-full py-3 px-7 place-items-center'>
+                                                className= 'flex flex-col w-full py-3 px-7 items-center'>
                                                 {t("mobileTopbar.productsPage")}
                                             </button>
                                             {isProductExpanded && (
@@ -367,8 +371,8 @@ const Topbar = () => {
                                                     className='w-full text-center'
                                                     >
                                                     <button
-                                                        className={`flex flex-col w-full py-3 px-7 place-items-center text-base font-medium ${
-                                                            location.pathname === '/products' ? 'text-blue-600' : ''
+                                                        className={`flex flex-col w-full py-3 px-7 items-center text-base font-medium ${
+                                                            location.pathname === '/products' ? 'text-blue-500' : ''
                                                         }`}
                                                         onClick={closeMenuModal}
                                                     >
@@ -381,8 +385,8 @@ const Topbar = () => {
                                                     className='w-full text-center'
                                                 >
                                                     <button
-                                                        className={`flex flex-col w-full py-3 px-7 place-items-center text-base font-medium ${
-                                                            location.pathname === '/ownSite' ? 'text-blue-600' : ''
+                                                        className={`flex flex-col w-full py-3 px-7 items-center text-base font-medium ${
+                                                            location.pathname === '/ownSite' ? 'text-blue-500' : ''
                                                         }`}
                                                         onClick={closeMenuModal}
                                                     >
@@ -396,15 +400,11 @@ const Topbar = () => {
                                         <Link
                                             to="/careers"
                                             className={`${
-                                                location.pathname === '/careers'  ? 'text-blue-600':''
+                                                location.pathname === '/careers'  ? 'text-blue-500':''
                                             }`}
                                         >
                                             <button
-                                                className={`group flex flex-col w-full rounded-md py-3 ${
-                                                    language === 'en' ? 'px-7 place-items-center' : 
-                                                    language === 'zh' ? 'place-items-center ' : 
-                                                    language === 'bm' ? 'px-7 place-items-center' : ''
-                                                }`}
+                                                className="group flex flex-col w-full rounded-md py-3 items-center"
                                                 onClick={closeMenuModal}
                                             >
                                                 {t("mobileTopbar.careerPage")}
@@ -413,11 +413,7 @@ const Topbar = () => {
 
                                         <button
                                             onClick={() => {handleButtonClick('gmail'); closeMenuModal();} }
-                                            className={`group flex flex-col w-full place-items-end rounded-md py-3 ${
-                                                language === 'en' ? 'px-7 md:px-7 place-items-center' : 
-                                                language === 'zh' ? 'px-9 md:px-9 place-items-center' : 
-                                                language === 'bm' ? 'px-7 md:px-7 place-items-center' : ''
-                                            }`}
+                                            className="group flex flex-col w-full items-center rounded-md py-3"
                                             >
                                             {t("mobileTopbar.supportPage")}
                                         </button>
@@ -430,13 +426,17 @@ const Topbar = () => {
 
                     {/* Earphone and Lang icons on web version*/}
                     <div className='hidden md:flex justify-center gap-[30px] cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                        <Earphone/>
+                        <div className="transition duration-300 ease-in-out transform hover:scale-110">
+                            <Earphone />
+                        </div>
                     </div>
                     <div className='hidden md:flex justify-center gap-[30px] cursor-pointer'>
                         <Menu as="div" className="relative text-left">
                             <div className="flex items-center">
                                 <Menu.Button className="inline-flex justify-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 mt-1">
-                                    <Lang />
+                                    <div className="transition duration-300 ease-in-out transform hover:scale-110">
+                                        <Lang />
+                                    </div>
                                 </Menu.Button>
                             </div>
                             <Transition
@@ -448,43 +448,43 @@ const Topbar = () => {
                                 leaveFrom="transform opacity-100 scale-100"
                                 leaveTo="transform opacity-0 scale-95"
                             >
-                                <Menu.Items className="absolute mt-5 w-[300px] h-[64px] rounded-[30px] bg-[#FFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
-                                    <div className="flex flex-row">
+                                <Menu.Items className="absolute flex flex-col justify-center mt-5 w-[220px] h-[60px] rounded-[30px] bg-[#FFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
+                                    <div className="flex flex-row px-[20px] py-[10px] items-stretch gap-1">
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <button
                                                     className={`${
-                                                        active ? ' bg-emerald-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-row w-full text-base place-items-center rounded-[30px] px-6 py-5`}
-                                                    onClick={() => handleLanguageChange('en')}
+                                                        active ? ' bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
+                                                    } group flex flex-col w-full text-base font-medium items-center rounded-[20px] py-1 px-4`}
+                                                    onClick={() => toggleLanguage('en')}
                                                 >
-                                                    English {language === 'en'}
+                                                    English {i18n === 'en'}
                                                 </button>
                                             )}
                                         </Menu.Item>
                                         
-                                        <Menu.Item>
+                                        {/* <Menu.Item>
                                             {({ active }) => (
                                                 <button
                                                     className={`${
-                                                        active ? 'bg-emerald-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-row w-full text-base place-items-center rounded-[30px] px-6 py-5`}
-                                                    onClick={() => handleLanguageChange('bm')}
+                                                        active ? 'bg-[#CCCCCC80] rounded-[35px] text-white' : 'text-gray-900'
+                                                    } group flex flex-col w-full text-base items-center rounded-[30px]`}
+                                                    onClick={() => toggleLanguage('bm')}
                                                 >
                                                     Malay {language === 'bm'}
                                                 </button>
                                             )}
-                                        </Menu.Item>
+                                        </Menu.Item> */}
                                         
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <button
                                                     className={`${
-                                                        active ? 'bg-emerald-500 text-white' : 'text-gray-900'
-                                                    } group flex flex-row w-full text-base place-items-center rounded-[30px] px-[30px] py-5`}
-                                                    onClick={() => handleLanguageChange('zh')}
+                                                        active ? 'bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
+                                                    } group flex flex-col w-full text-base font-semibold items-center rounded-[20px] py-1 px-4`}
+                                                    onClick={() => toggleLanguage('zh')}
                                                 >
-                                                    中文 {language === 'zh'}
+                                                    中文 {i18n === 'zh'}
                                                 </button>
                                             )}
                                         </Menu.Item>

@@ -3,11 +3,12 @@ import { FormWhatsApp } from './Brand';
 import QRcode from '../Assets/Images/QRCode.png';
 import SubmitEmail from './SubmitEmail';
 import { useMediaQuery } from 'react-responsive'
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
+import { useTranslation } from 'react-i18next';
 
 
 export default function TabComponent({ selectedButton }) {
-  const {t} = useContext(LanguageContext);
+  const { t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');

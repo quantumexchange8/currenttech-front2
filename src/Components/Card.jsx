@@ -26,15 +26,6 @@ const Card = ({ card, index, handleButtonClick }) => {
               </div>
             </div>
           </div>
-          {/* <div className="flex justify-between mt-2">
-            <Link to={card.link} className="text-blue-500">Learn More</Link>
-            <button
-              onClick={() => handleButtonClick(index)}
-              className="text-blue-500"
-            >
-              Share
-            </button>
-          </div> */}
         </div>
       </div>
     </div>

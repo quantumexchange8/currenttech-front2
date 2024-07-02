@@ -1,10 +1,11 @@
 import React, { useRef, useState, useContext } from "react";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
+import { useTranslation } from 'react-i18next';
 
 export default function FormSubmission() {
-    const { t } = useContext(LanguageContext);
+    const { t } = useTranslation();
     const form = useRef();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [errors, setErrors] = useState({

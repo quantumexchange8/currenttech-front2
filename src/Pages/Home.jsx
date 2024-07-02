@@ -1,19 +1,22 @@
-import React, {useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Software, Website, MobileApp, ManagementSystem, PosSystem, SupportService} from '../Components/Outline.jsx';
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
 import Modal from '../Components/Modal';
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
 import img_Education from "../Assets/Images/Home_Education.png"
 import img_FoodBeverage from "../Assets/Images/Home_F&B.png"
 import img_Wholesale from "../Assets/Images/Home_Wholesale.png"
 import img_Retail from "../Assets/Images/Home_Retail.png"
 import img_Logistic from "../Assets/Images/Home_Logistic.png"
 import img_Enterprise from "../Assets/Images/Home_Enterprise.png"
+import homeVideo from '../Assets/videos/earth.mp4';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-    const { t, language} = useContext(LanguageContext);
+    // const { t, i18n} = useContext(LanguageContext);
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
+    const { t, i18n } = useTranslation();
 
     const handleButtonClick = (button) => {
         setOpenButton(true);
@@ -21,13 +24,13 @@ const Home = () => {
     };
 
     return(
-        <div className='flex flex-col w-full justify-center items-center text-center'>
+        <div className='flex flex-col w-full justify-center text-center'>
             <div className='relative mt-[60px] md:mt-0'>
                 <video autoPlay muted playsInline loop className='w-full'>
-                    <source src="/assets/videos/earth.mp4" type="video/mp4"/>
+                    <source src={homeVideo} type="video/mp4"/>
                 </video>
                 <div 
-                    className='absolute inset-0 flex flex-col justify-center items-center text-white text-xl md:text-6xl font-bold' 
+                    className='absolute inset-0 flex flex-col justify-center items-center text-white/80 text-xl md:text-[64px] font-bold' 
                     style={{ textShadow: '2px 4px 4px rgba(255, 255, 255, 0.40)' }}
                 >
                     <div className='text-center leading-[1.20] w-full'>  
@@ -92,12 +95,8 @@ const Home = () => {
                                     </div>
                                     <div className='text-sm md:text-2xl text-[#666] text-left w-full'>
                                         <div className='flex flex-col'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[303px] md:w-[770px]' : ''}`}>
+                                            <div className="flex flex-col leading-[1.20] font-semibold w-[303px] md:w-[800px]">
                                                     {t("Home.serviceSubTitle_Description.softwareDescription")}
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -117,7 +116,7 @@ const Home = () => {
                                     <div className='flex flex-col text-sm md:text-2xl text-[#666] text-left'>
                                         <div className='flex flex-col'>
                                             <div className="flex flex-col leading-[1.20] font-semibold w-[303px] md:w-[800px]">
-                                                    {t("Home.serviceSubTitle_Description.websiteDescription")}
+                                                {t("Home.serviceSubTitle_Description.websiteDescription")}
                                             </div>
                                         </div>
                                     </div>
@@ -157,8 +156,7 @@ const Home = () => {
                                     <div className='text-sm md:text-2xl text-[#666] text-left'>
                                         <div className='flex flex-col'>
                                             <div className="flex flex-col leading-[1.20] font-semibold w-[303px] md:w-[800px]">
-                                                <div className='hidden md:block'>{t("Home.serviceSubTitle_Description.managementSystemDescription")}</div>
-                                                <div className='md:hidden'>{t("Home.serviceSubTitle_Description.managementSystemDescription")}</div>
+                                                {t("Home.serviceSubTitle_Description.managementSystemDescription")}
                                             </div>
                                         </div>
                                     </div>
@@ -177,12 +175,8 @@ const Home = () => {
                                     </div>
                                     <div className='text-sm md:text-2xl text-[#666] text-left'>
                                         <div className='flex flex-col'>
-                                            <div className="flex flex-col leading-[1.20]">
-                                                <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'zh' ? 'font-semibold w-[303px] md:w-[800px]' : 
-                                                                    language === 'bm' ? 'font-semibold w-[303px] md:w-[770px]' : ''}`}>
-                                                    {t("Home.serviceSubTitle_Description.posSystemDescription")}
-                                                </div>
+                                            <div className="flex flex-col leading-[1.20] font-semibold w-[303px] md:w-[800px]">
+                                                {t("Home.serviceSubTitle_Description.posSystemDescription")}
                                             </div>
                                         </div>
                                     </div>
@@ -238,13 +232,8 @@ const Home = () => {
                                 </div>
                                 <div className='flex flex-col text-[#666] text-sm md:text-xl'>
                                     <div className='flex-flex-col'>
-                                        <div className="flex flex-col leading-[1.20] text-left">
-                                            <div className={`${language === 'en' ? 'font-semibold w-[303px] md:w-[450px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[353px] md:w-[450px]' : 
-                                                                language === 'bm' ? 'font-semibold w-[353px] md:w-[450px]' : ''}`}>
-                                                <div className='hidden md:block'>{t("Home.ImgCombinationDescription.educationImgDescription")}</div> 
-                                                <div className='md:hidden'>{t("Home.ImgCombinationDescription.educationImgDescription")}</div> 
-                                            </div>
+                                        <div className="flex flex-col leading-[1.20] text-left font-semibold w-[353px] md:w-[450px]">
+                                            {t("Home.ImgCombinationDescription.educationImgDescription")}
                                         </div>
                                     </div>
                                 </div>
@@ -264,13 +253,9 @@ const Home = () => {
                                             {t("Home.ImgCombinationDescription.F&BImgDescription")}
                                         </div>
 
-                                        <div className="md:hidden flex flex-col leading-[1.20]">
-                                            <div className={`${language === 'en' ? 'font-semibold w-[333px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[353px]' : 
-                                                                language === 'bm' ? 'font-semibold w-[353px]' : ''}`}>
-                                                <div className='block'>{t("Home.ImgCombinationDescription.F&BImgMobileDescription")}</div>
-                                                <div className='block'>{t("Home.ImgCombinationDescription.F&BImgMobileDescription2")}</div>
-                                            </div>
+                                        <div className="md:hidden flex flex-col font-semibold w-[353px] leading-[1.20]">
+                                            <div className='block'>{t("Home.ImgCombinationDescription.F&BImgMobileDescription")}</div>
+                                            <div className='block'>{t("Home.ImgCombinationDescription.F&BImgMobileDescription2")}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -363,13 +348,9 @@ const Home = () => {
                                             {t("Home.homeReminderTitle")}
                                         </div>
                                     </div>
-                                    <div className='flex flex-col text-[#666] text-sm md:text-[32px] font-medium text-left leading-[1.20]'>
-                                        <div className="flex flex-col leading-[1.20]">
-                                            <div className={`${language === 'en' ? 'font-semibold w-[323px] md:w-[1000px]' : 
-                                                                language === 'zh' ? 'font-semibold w-[353px] md:w-[1000px]' : 
-                                                                language === 'bm' ? 'font-semibold w-[353px] md:w-[1000px]' : ''}`}>
-                                                {t("Home.homeReminderDescription")}
-                                            </div>
+                                    <div className='flex flex-col text-[#666] text-sm md:text-[32px] text-left'>
+                                        <div className="flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[1000px]">
+                                            {t("Home.homeReminderDescription")}
                                         </div>
                                     </div>
                                 </div>
@@ -382,13 +363,9 @@ const Home = () => {
                                                 <WhatsApp/>
                                             </div>
                                             <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${language === 'en' ? 'font-semibold w-[190px] md:w-[300px]' : 
-                                                                        language === 'zh' ? 'font-semibold w-[168px]' : 
-                                                                        language === 'bm' ? 'font-semibold w-[330px]' : ''}`}>
-                                                        <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                                        <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col leading-[1.20] font-semibold w-[190px] md:w-[260px]">
+                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
+                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -401,13 +378,9 @@ const Home = () => {
                                                 <Gmail/> 
                                             </div>
                                             <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${language === 'en' ? 'font-semibold w-[170px] md:w-[300px]' : 
-                                                                        language === 'zh' ? 'font-semibold w-[229px]' : 
-                                                                        language === 'bm' ? 'font-semibold w-[350px]' : ''}`}>
-                                                        <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                                        <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col font-semibold w-[280px] leading-[1.20]">
+                                                    <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
+                                                    <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -424,13 +397,9 @@ const Home = () => {
                                                 <MobileWhatsApp />
                                             </div>
                                             <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20] text-left">
-                                                    <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                        language === 'zh' ? 'font-semibold' : 
-                                                                        language === 'bm' ? 'font-semibold' : ''}`}>
-                                                        <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                                        <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col text-left w-[190px] font-semibold leading-[1.20]">
+                                                    <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
+                                                    <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -443,13 +412,9 @@ const Home = () => {
                                                 <MobileGmail/>
                                             </div>
                                             <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20] text-left">
-                                                    <div className={`${language === 'en' ? 'w-[190px] font-semibold' : 
-                                                                        language === 'zh' ? 'font-semibold' : 
-                                                                        language === 'bm' ? 'font-semibold' : ''}`}>
-                                                        <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                                        <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col w-[170px] font-semibold text-left leading-[1.20]">
+                                                    <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
+                                                    <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
                                                 </div>
                                             </div>
                                         </div>

@@ -5,14 +5,15 @@ import QRcode from '../Assets/Images/QRCode.png';
 import SubmitEmail from './SubmitEmail';
 import WhatsappMobile from '../Assets/Images/mobile_whatsapp.png'
 import { useMediaQuery } from 'react-responsive'
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
+import { useTranslation } from 'react-i18next';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 export default function TabComponent({ selectedButton }) {
-  const {t} = useContext(LanguageContext);
+  const { t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');

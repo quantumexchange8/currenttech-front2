@@ -3,15 +3,16 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useContext, useState } from 'react';
 import Demo_Teamwork from '../Assets/Images/demo_Teamwork.png'
 import Modal from '../Components/Modal';
-import { LanguageContext } from "../LanguagesContext";
+// import { LanguageContext } from "../LanguagesContext";
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
 import Ecommerce_1 from "../Assets/Images/Ecom_1.svg"
 import Ecommerce_2 from "../Assets/Images/Ecom_2.svg";
 import Cards from "../Components/Card"
+import { useTranslation } from 'react-i18next';
 
 
 const Demo = () => {
-    const { t, language } = useContext(LanguageContext);
+    const { t, i18n } = useTranslation();
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
 
@@ -172,9 +173,9 @@ const Demo = () => {
                                     {t("Products.productsReminderTitle")}
                                 </div>
                                 <div className='flex flex-col text-[#666] text-sm md:text-[32px] text-left leading-[1.20]'>
-                                    <div className={`${language === 'en' ? 'font-semibold md:w-[1000px]' :
-                                        language === 'zh' ? 'font-semibold md:w-[1000px]' :
-                                            language === 'bm' ? 'font-semibold w-[353px] md:w-[950px]' : ''}`}>
+                                    <div className={`${i18n === 'en' ? 'font-semibold md:w-[1000px]' :
+                                        i18n === 'zh' ? 'font-semibold md:w-[1000px]' :
+                                            i18n === 'bm' ? 'font-semibold w-[353px] md:w-[950px]' : ''}`}>
                                         {t("Products.productsReminderDescription")}
                                     </div>
                                 </div>
@@ -190,9 +191,9 @@ const Demo = () => {
                                             </div>
                                             <div className='flex flex-col text-[#666] text-2xl text-left'>
                                                 <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${language === 'en' ? 'font-semibold w-[190px] md:w-[300px]' :
-                                                        language === 'zh' ? 'font-semibold w-[168px]' :
-                                                            language === 'bm' ? 'font-semibold w-[330px]' : ''}`}>
+                                                    <div className={`${i18n === 'en' ? 'font-semibold w-[190px] md:w-[300px]' :
+                                                        i18n === 'zh' ? 'font-semibold w-[168px]' :
+                                                            i18n === 'bm' ? 'font-semibold w-[330px]' : ''}`}>
                                                         <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
                                                         <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
                                                     </div>
@@ -209,9 +210,9 @@ const Demo = () => {
                                             </div>
                                             <div className='flex flex-col text-[#666] text-2xl text-left'>
                                                 <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${language === 'en' ? 'font-semibold w-[170px] md:w-[300px]' :
-                                                        language === 'zh' ? 'font-semibold w-[229px]' :
-                                                            language === 'bm' ? 'font-semibold w-[350px]' : ''}`}>
+                                                    <div className={`${i18n === 'en' ? 'font-semibold w-[170px] md:w-[300px]' :
+                                                        i18n === 'zh' ? 'font-semibold w-[229px]' :
+                                                            i18n === 'bm' ? 'font-semibold w-[350px]' : ''}`}>
                                                         <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
                                                         <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
                                                     </div>
@@ -232,9 +233,9 @@ const Demo = () => {
                                             </div>
                                             <div className='flex flex-col text-[#666] text-sm'>
                                                 <div className="flex flex-col leading-[1.20] text-left">
-                                                    <div className={`${language === 'en' ? 'w-[190px] font-semibold' :
-                                                        language === 'zh' ? 'font-semibold' :
-                                                            language === 'bm' ? 'font-medium' : ''}`}>
+                                                    <div className={`${i18n === 'en' ? 'w-[190px] font-semibold' :
+                                                        i18n === 'zh' ? 'font-semibold' :
+                                                            i18n === 'bm' ? 'font-medium' : ''}`}>
                                                         <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
                                                         <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
                                                     </div>
@@ -251,9 +252,9 @@ const Demo = () => {
                                             </div>
                                             <div className='flex flex-col text-[#666] text-sm'>
                                                 <div className="flex flex-col leading-[1.20] text-left">
-                                                    <div className={`${language === 'en' ? 'w-[190px] font-semibold' :
-                                                        language === 'zh' ? 'font-semibold' :
-                                                            language === 'bm' ? 'font-medium' : ''}`}>
+                                                    <div className={`${i18n === 'en' ? 'w-[190px] font-semibold' :
+                                                        i18n === 'zh' ? 'font-semibold' :
+                                                            i18n === 'bm' ? 'font-medium' : ''}`}>
                                                         <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
                                                         <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
                                                     </div>
