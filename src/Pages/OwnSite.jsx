@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-// import { LanguageContext } from "../LanguagesContext";
 import { Link, useLocation } from "react-router-dom";
 import Slider from "react-slick";
 import Modal from "../Components/Modal";
@@ -100,7 +99,7 @@ const OwnSite = () => {
 
 
   return (
-    <div className="flex flex-col w-full justify-center text-center">
+    <div className="flex flex-col w-full items-center justify-center text-center">
       <div className="relative mt-[60px] md:mt-0">
         <video autoPlay muted playsInline loop className="w-full">
           <source src={ownsiteVideo} type="video/mp4" />
@@ -111,7 +110,7 @@ const OwnSite = () => {
       </div>
 
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="max-w-[1000px] mt-[50px] md:mt-[150px] mb-[50px] md:mb-[150px] mx-5 md:mx-0">
+        <div className="w-full max-w-[1000px] mt-[50px] md:mt-[150px] mb-[50px] md:mb-[150px] px-5 md:px-0">
             <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                 <div className='flex flex-col gap-[10px] md:gap-[50px]'>
                     <div className='flex flex-col text-base md:text-5xl font-bold text-left'>
@@ -399,7 +398,7 @@ const OwnSite = () => {
                 
                 <div className='w-full h-[1px] bg-[#666]'></div>
 
-                <div className='flex flex-col gap-[30px] md:gap-[50px]'>
+                <div className='flex flex-col md:gap-[50px]'>
                     <div className='flex flex-col gap-5 md:gap-[30px]'>
                         <div className='text-base md:text-5xl font-bold text-left'>
                             {t("Products.productsReminderTitle")}
