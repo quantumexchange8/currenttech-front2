@@ -99,7 +99,7 @@ const OwnSite = () => {
 
 
   return (
-    <div className="flex flex-col w-full items-center justify-center text-center">
+    <div className="flex flex-col w-full justify-center text-center">
       <div className="relative mt-[60px] md:mt-0">
         <video autoPlay muted playsInline loop className="w-full">
           <source src={ownsiteVideo} type="video/mp4" />
