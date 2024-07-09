@@ -473,7 +473,7 @@ const Products = () => {
 
                     <div className='w-full h-[1px] bg-[#333] '></div>
 
-                    <div className='flex flex-col gap-[30px] md:gap-[50px]'>
+                    <div className='flex flex-col md:gap-[50px]'>
                         <div className='flex flex-col gap-5 md:gap-[30px]'>
                             <div className='text-base md:text-5xl font-bold text-left'>
                                 {t("Products.productsReminderTitle")}
