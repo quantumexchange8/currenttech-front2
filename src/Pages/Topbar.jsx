@@ -70,7 +70,7 @@ const Topbar = () => {
                     {/* LogoSvg only shown on web version */}
                     <div className='hidden md:flex'>
                         <Link to="/" className='w-10 h-[26px]'>
-                            <img src={LogoSvg} alt="icon" className='md:w-full h-full transition duration-300 ease-in-out transform hover:scale-110'/>
+                            <img src={LogoSvg} alt="icon" className='md:w-full h-full'/>
                         </Link>
                     </div>
 
@@ -78,7 +78,7 @@ const Topbar = () => {
                     <div className="hidden md:flex justify-center gap-[30px]">
                         <Link className={`text-base font-medium ${location.pathname === '/customize' || location.pathname === '/advantage'  ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''}`}>
                             <Menu as="div" className="relative text-left">
-                                <Menu.Button className="text-base font-medium hover:rounded-[35px] hover:text-black hover:transform hover:scale-105 hover:duration-300">
+                                <Menu.Button className="text-base font-medium hover:rounded-[35px]">
                                     <div className={i18n === 'en' ? 'font-medium' : 'font-semibold'}>
                                         {t("Topbar.advantagePage")}
                                     </div>
@@ -103,7 +103,7 @@ const Topbar = () => {
                                                         }`}
                                                     >
                                                         <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${i18n === 'en' ? 'font-medium' : 'font-semibold'} ${
-                                                            location.pathname !== '/advantage' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:transform hover:scale-105 hover:duration-300' : ''
+                                                            location.pathname !== '/advantage' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:duration-300' : ''
                                                         }`}>
                                                             {t("Topbar.oneStopPage")}
                                                         </div>
@@ -120,7 +120,7 @@ const Topbar = () => {
                                                         }`}
                                                     >
                                                         <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${i18n === 'en' ? 'font-medium' : 'font-semibold'} ${
-                                                            location.pathname !== '/customize' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:transform hover:scale-105 hover:duration-300' : ''
+                                                            location.pathname !== '/customize' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:duration-300' : ''
                                                         }`}>
                                                             {t("Topbar.customizePage")}
                                                         </div>
@@ -134,7 +134,7 @@ const Topbar = () => {
                         </Link>
                         <Link className={`text-base font-medium ${location.pathname === '/products' || location.pathname === '/ownSite'  ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''}`}>
                             <Menu as="div" className="relative text-left">
-                                <Menu.Button className="text-base font-medium hover:rounded-[35px] hover:text-black hover:transform hover:scale-105 hover:duration-300">
+                                <Menu.Button className="text-base font-medium hover:rounded-[35px]">
                                     <div className={i18n === 'en' ? 'font-medium' : 'font-semibold'}>
                                         {t("Topbar.productsPage")}
                                     </div>
@@ -159,7 +159,7 @@ const Topbar = () => {
                                                         }`}
                                                     >
                                                         <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${i18n === 'en' ? 'font-medium' : 'font-semibold'} ${
-                                                            location.pathname !== '/products' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:transform hover:scale-105 hover:duration-300' : ''
+                                                            location.pathname !== '/products' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:duration-300' : ''
                                                         }`}>
                                                             {t("Topbar.developedPage")}
                                                         </div>
@@ -176,7 +176,7 @@ const Topbar = () => {
                                                         }`}
                                                     >
                                                         <div className={`group flex flex-col w-full items-center text-center px-[13px] py-[4px] ${i18n === 'en' ? 'font-medium' : 'font-semibold'} ${
-                                                            location.pathname !== '/ownSite' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:transform hover:scale-105 hover:duration-300' : ''
+                                                            location.pathname !== '/ownSite' ? 'hover:bg-white hover:rounded-[35px] hover:text-black hover:shadow-lg hover:shadow-neutral-400 hover:duration-300' : ''
                                                         }`}>
                                                             {t("Topbar.ownSitePage")}
                                                         </div>
@@ -190,7 +190,7 @@ const Topbar = () => {
                         </Link>
                         <Link
                             to="/careers"
-                            className={`text-base font-medium hover:rounded-[35px] hover:text-black hover:transform hover:scale-105 hover:duration-300 ${
+                            className={`text-base font-medium hover:rounded-[35px]${
                                 location.pathname === '/careers' ? 'bg-[#CCCCCC80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >

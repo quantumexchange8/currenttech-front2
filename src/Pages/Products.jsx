@@ -59,9 +59,20 @@ const Products = () => {
 
                         <div className='hidden md:flex flex-col text-[#666] text-left md:w-[1000px] leading-[1.20]'>
                             <div className="flex items-baseline">
-                                <div className="text-orange-400 text-5xl font-bold w-[100px]">
+                            {
+                                i18n.language === 'en' ? (
+                                    <div className='text-orange-400 text-5xl font-bold w-[100px]'>
+                                        {t("Products.productTechnologyDescription")}
+                                    </div>
+                                ) : (
+                                    <div className='text-orange-400 text-5xl font-bold w-[120px]'>
+                                        {t("Products.productTechnologyDescription")}
+                                    </div>
+                                )
+                            }
+                                {/* <div className="text-orange-400 text-5xl font-bold w-[100px]">
                                     {t("Products.productTechnologyDescription")}
-                                </div>
+                                </div> */}
                                 <div className='text-2xl font-semibold'>
                                     {t("Products.productTechnologyDescription2")}
                                 </div>
@@ -74,9 +85,17 @@ const Products = () => {
                         {/* mobile version */}
                         <div className='flex flex-col text-[#666] text-left md:w-[1000px] md:hidden leading-[1.20]'>
                             <div className="flex items-baseline">
-                                <div className="text-orange-400 text-[28px] font-bold w-[60px]">
-                                    {t("Products.mobileProductTechnologyDescription")}
-                                </div>
+                            {
+                                i18n.language === 'en' ? (
+                                    <div className='text-orange-400 text-[28px] font-bold w-[60px]'>
+                                        {t("Products.mobileProductTechnologyDescription")}
+                                    </div>
+                                ) : (
+                                    <div className='text-orange-400 text-[28px] font-bold w-[65px]'>
+                                        {t("Products.mobileProductTechnologyDescription")}
+                                    </div>
+                                )
+                            }
                                 <div className='text-sm font-semibold'>
                                     {t("Products.mobileProductTechnologyDescription2")}
                                 </div>

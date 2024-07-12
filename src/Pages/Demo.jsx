@@ -75,25 +75,43 @@ const Demo = () => {
                 <div className='flex flex-col gap-[50px] md:gap-[150px]'>
                     <div className='flex flex-col gap-[75px] md:gap-[150px]'>
                         <div className="flex flex-col gap-[75px] md:gap-[100px]">
-                            <div className="flex flex-col gap-[20px] md:gap-[50px]">
-                                <div className='flex flex-col text-2xl md:text-6xl font-bold text-center'>
+                            <div className="flex flex-col gap-[20px] md:gap-[50px] items-center">
+                                <div className='flex flex-col text-center items-center'>
                                     <div
                                         style={{
                                             background: 'linear-gradient(92deg, #F00 0%, #FF7A00 13.5%, #DBFF00 27.5%, #00FF0A 39%, #00DED0 52%, #0019FF 64%, #C0F 75%, #FF429D 89%, #000 97%)',
                                             WebkitBackgroundClip: 'text',
                                             WebkitTextFillColor: 'transparent',
-                                            display: 'inline'
+                                            display: 'inline',
                                         }}
                                     >
-                                        The Powerhouse for Your Web and App Needs
+                                        {
+                                            i18n.language === 'en' ? (
+                                                <div className='text-2xl md:text-6xl font-bold w-[300px] md:w-[740px]'>
+                                                    {t("Demo.DemoTitle")}
+                                                </div>
+                                            ) : (
+                                                <div className='text-2xl md:text-6xl font-bold w-[200px] md:w-[480px]'>
+                                                    {t("Demo.DemoTitle")}
+                                                </div>
+                                            )
+                                        }
                                     </div>
                                 </div>
 
-                                <div className="flex flex-col text-[#666] text-sm md:text-xl font-semibold md:font-bold leading-[1.20] text-center">
-                                    Welcome to the realm of innovative and transformative web and app
-                                    development. Exciting and captivating designs are all centered around user
-                                    experience, enhancing your digital presence. Harness our expert solutions
-                                    to unlock the potential of your online business.
+                                <div className="hidden md:flex flex-col text-[#666] text-sm md:text-xl font-semibold md:font-bold leading-[1.20] text-center w-[353px] md:w-[740px]">
+                                    <div className="block">{t("Demo.DemoDescription")}</div>
+                                    <div className="block">{t("Demo.DemoDescription2")}</div>
+                                    <div className="block">{t("Demo.DemoDescription3")}</div>
+                                </div>
+                                
+                                {/* Mobile Version */}
+                                <div className="flex flex-col text-[#666] text-sm md:text-xl font-semibold md:font-bold leading-[1.20] text-center w-[353px] md:w-[740px] md:hidden">
+                                    <div className="block">{t("Demo.Mobile_DemoDescription")}</div>
+                                    <div className="block">{t("Demo.Mobile_DemoDescription2")}</div>
+                                    <div className="block">{t("Demo.Mobile_DemoDescription3")}</div>
+                                    <div className="block">{t("Demo.Mobile_DemoDescription4")}</div>
+                                    <div className="block">{t("Demo.Mobile_DemoDescription5")}</div>
                                 </div>
                             </div>
 
@@ -105,7 +123,7 @@ const Demo = () => {
                             <div className='flex flex-col gap-[30px] md:gap-[20px]'>
                                 <div className='w-full h-[1px] bg-[#666]'></div>
 
-                                <div className='flex flex-col gap-[10px] md:gap-[20px]'>
+                                <div className='flex flex-col gap-[10px] md:gap-[20px] items-center'>
                                     <div className='text-xl md:text-[32px] font-bold text-center'>
                                         <div style={{
                                             background: 'linear-gradient(90deg, #000AFF 0%, #00A3FF 37%, #008D0E 100%)',
@@ -114,15 +132,21 @@ const Demo = () => {
                                             display: 'inline'
                                         }}
                                         >
-                                            e-Commerce Demo
+                                            {t("Demo.DemoTheme.e-CommerceTitle")}
                                         </div>
                                     </div>
 
-                                    <div className='flex flex-col text-[#666] text-sm md:text-xl font-semibold md:font-bold text-center leading-[1.20]'>
-                                        Unlock the ultimate potential of your online presence with our
-                                        premium web template products! Stay on the cutting edge with trending
-                                        designs, unrivalled functionality, and seamless customisation options.
-                                        Elevate your website today!
+                                    <div className='hidden md:flex flex-col text-[#666] text-sm md:text-xl font-semibold md:font-bold text-center leading-[1.20] w-[740px]'>
+                                        <div className="block">{t("Demo.DemoTheme.e-CommerceDescription")}</div>
+                                        <div className="block">{t("Demo.DemoTheme.e-CommerceDescription2")}</div>
+                                        <div className="block">{t("Demo.DemoTheme.e-CommerceDescription3")}</div>
+                                    </div>
+
+                                    {/* Mobile Version */}
+                                    <div className='flex flex-col text-[#666] text-sm md:text-xl font-semibold md:font-bold text-center leading-[1.20] w-[353px] md:hidden'>
+                                        <div className="block">{t("Demo.DemoTheme.Mobile_e-CommerceDescription")}</div>
+                                        <div className="block">{t("Demo.DemoTheme.Mobile_e-CommerceDescription2")}</div>
+                                        <div className="block">{t("Demo.DemoTheme.Mobile_e-CommerceDescription3")}</div>
                                     </div>
                                 </div>
                             </div>
@@ -170,33 +194,27 @@ const Demo = () => {
                         <div className='flex flex-col gap-[30px] md:gap-[50px]'>
                             <div className='flex flex-col gap-5 md:gap-[30px]'>
                                 <div className='text-base md:text-5xl font-bold text-left'>
-                                    {t("Products.productsReminderTitle")}
+                                    {t("Demo.demoReminderTitle")}
                                 </div>
                                 <div className='flex flex-col text-[#666] text-sm md:text-[32px] text-left leading-[1.20]'>
-                                    <div className={`${i18n === 'en' ? 'font-semibold md:w-[1000px]' :
-                                        i18n === 'zh' ? 'font-semibold md:w-[1000px]' :
-                                            i18n === 'bm' ? 'font-semibold w-[353px] md:w-[950px]' : ''}`}>
-                                        {t("Products.productsReminderDescription")}
+                                    <div className='font-semibold md:w-[1000px]'>
+                                        {t("Demo.demositeReminderDescription")}
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <div
-                                    className='hidden md:flex flex-col gap-[30px] md:gap-[50px]'>
+                                <div 
+                                    className='hidden md:flex flex-col items-start md:gap-10'>
                                     <div className='flex flex-row'>
                                         <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                            <div
+                                            <div 
                                                 className='flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px]'>
-                                                <WhatsApp />
+                                                <WhatsApp/>
                                             </div>
                                             <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${i18n === 'en' ? 'font-semibold w-[190px] md:w-[300px]' :
-                                                        i18n === 'zh' ? 'font-semibold w-[168px]' :
-                                                            i18n === 'bm' ? 'font-semibold w-[330px]' : ''}`}>
-                                                        <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                                        <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col leading-[1.20] font-semibold w-[300px]">
+                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
+                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -204,18 +222,14 @@ const Demo = () => {
 
                                     <div className='flex flex-row'>
                                         <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                            <div
+                                            <div 
                                                 className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px] cursor-pointer'>
-                                                <Gmail />
+                                                <Gmail/> 
                                             </div>
                                             <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20]">
-                                                    <div className={`${i18n === 'en' ? 'font-semibold w-[170px] md:w-[300px]' :
-                                                        i18n === 'zh' ? 'font-semibold w-[229px]' :
-                                                            i18n === 'bm' ? 'font-semibold w-[350px]' : ''}`}>
-                                                        <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                                        <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col leading-[1.20] font-semibold w-[400px]">
+                                                    <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
+                                                    <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -223,22 +237,18 @@ const Demo = () => {
                                 </div>
 
                                 {/* Mobile Version */}
-                                <div
+                                <div 
                                     className='flex flex-col items-left gap-5 md:hidden'>
                                     <div className='flex flex-row'>
                                         <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                            <div
+                                            <div 
                                                 className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
                                                 <MobileWhatsApp />
                                             </div>
                                             <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20] text-left">
-                                                    <div className={`${i18n === 'en' ? 'w-[190px] font-semibold' :
-                                                        i18n === 'zh' ? 'font-semibold' :
-                                                            i18n === 'bm' ? 'font-medium' : ''}`}>
-                                                        <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                                        <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col leading-[1.20] text-left font-semibold w-[190px]">
+                                                    <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
+                                                    <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -246,18 +256,15 @@ const Demo = () => {
 
                                     <div className='flex flex-row'>
                                         <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                            <div
-                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                                <MobileGmail />
+                                            <div 
+                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'
+                                                onClick={() => handleButtonClick('gmail')}>
+                                                <MobileGmail/>
                                             </div>
                                             <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20] text-left">
-                                                    <div className={`${i18n === 'en' ? 'w-[190px] font-semibold' :
-                                                        i18n === 'zh' ? 'font-semibold' :
-                                                            i18n === 'bm' ? 'font-medium' : ''}`}>
-                                                        <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                                        <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
-                                                    </div>
+                                                <div className="flex flex-col leading-[1.20] text-left font-semibold w-[220px]">
+                                                    <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
+                                                    <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
                                                 </div>
                                             </div>
                                         </div>

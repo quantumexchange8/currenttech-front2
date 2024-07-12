@@ -178,7 +178,7 @@
         "financialCategories2":"MetaTrader 5",
         "financialCategories3":"cTrader",
         "financialImage":"Smart Dash",
-        "financialDescription":"我们的IT技术团队专注于为MetaQuote (MT4 / MT5) 和cTrader白标和主标运营商开发智能后台解决方案. 我们擅长根据白标提供商和主标运营商的要求定制网页设计, 客户前端, 代理商界面, 管理员后端和佣金返利系统. 我们的智能仪表板旨在完美展示客户想要看到的数据, 并优先为客户资金和个人信息提供最强大的安全保障."
+        "financialDescription":"我们的IT技术团队专注于为MetaQuote(MT4/MT5)和cTrader白标和主标运营商开发智能后台解决方案. 我们擅长根据白标提供商和主标运营商的要求定制网页设计, 客户前端, 代理商界面, 管理员后端和佣金返利系统. 我们的智能仪表板旨在完美展示客户想要看到的数据, 并优先为客户资金和个人信息提供最强大的安全保障."
       },
 
       "management":{
@@ -256,10 +256,22 @@
 
         "Demo":{
             "DemoTitle":"滿足您網站和應用需求的強大之選",
-            "DemoDescription":"歡迎來到創新與變革的網站和應用開發領域.我們令人興奮且引人入勝的設計皆以用戶體驗為核心,提升您的數字形象. 利用我們的專業解決方案, 釋放您在線業務的潛力.",
+            "DemoDescription":"歡迎來到創新與變革的網站和應用開發領域.",
+            "DemoDescription2":"我們令人興奮且引人入勝的設計皆以用戶體驗為核心,",
+            "DemoDescription3":"提升您的數字形象. 利用我們的專業解決方案, 釋放您在線業務的潛力.",
+            "Mobile_DemoDescription":"歡迎來到創新與變革的網站和應用開發領域. ",
+            "Mobile_DemoDescription2":"我們令人興奮且引人入勝的設計皆以用戶體驗為核心, ",
+            "Mobile_DemoDescription3":"提升您的數字形象. 利用我們的專業解決方案,",
+            "Mobile_DemoDescription4":"釋放您在線業務的潛力.",
+            "Mobile_DemoDescription5":"",
             "DemoTheme": {
               "e-CommerceTitle":"e-Commerce Demo",
-              "e-CommerceDescription":"解鎖您的在線形象的終極潛力, 使用我們的高端網站模板產品! 保持設計潮流前沿, 享受無與倫比的功能和無縫的自定義選項. 今天就提升您的網站吧!"
+              "e-CommerceDescription":"解鎖您的在線形象的終極潛力, 使用我們的高端網站模板產品!",
+              "e-CommerceDescription2":"保持設計潮流前沿, 享受無與倫比的功能和無縫的自定義選項.",
+              "e-CommerceDescription3":"今天就提升您的網站吧!",
+              "Mobile_e-CommerceDescription":"解鎖您的在線形象的終極潛力, 使用我們的高端網站模板 ",
+              "Mobile_e-CommerceDescription2":"產品! 保持設計潮流前沿, 享受無與倫比的功能和無縫的自 ",
+              "Mobile_e-CommerceDescription3":"定義選項. 今天就提升您的網站吧!"
             },
             "demoReminderTitle":"无论您身处哪个领域或行业.",
             "demositeReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."

@@ -256,10 +256,22 @@
 
         "Demo":{
             "DemoTitle":"The Powerhouse for Your Web and App Needs",
-            "DemoDescription":"Welcome to the realm of innovative and transformative web and app development. Exciting and captivating designs are all centered around user experience, enhancing your digital presence. Harness our expert solutions to unlock the potential of your online business.",
+            "DemoDescription":"Welcome to the realm of innovative and transformative web and app ",
+            "DemoDescription2":"development. Exciting and captivating designs are all centered around user ",
+            "DemoDescription3":"experience, enhancing your digital presence. Harness our expert solutions to unlock the potential of your online business.",
+            "Mobile_DemoDescription":"Welcome to the realm of innovative and ",
+            "Mobile_DemoDescription2":"transformative web and app development. ",
+            "Mobile_DemoDescription3":"Exciting and captivating designs are all ",
+            "Mobile_DemoDescription4":"centered around user experience, enhancing ",
+            "Mobile_DemoDescription5":"your digital presence. Harness our expert solutions to unlock the potential of your online business.",
             "DemoTheme": {
               "e-CommerceTitle":"e-Commerce Demo",
-              "e-CommerceDescription":"Unlock the ultimate potential of your online presence with our premium web template products! Stay on the cutting edge with trending designs, unrivalled functionality, and seamless customisation options. Elevate your website today!"
+              "e-CommerceDescription":"Unlock the ultimate potential of your online presence with our ",
+              "e-CommerceDescription2":"premium web template products! Stay on the cutting edge with trending ",
+              "e-CommerceDescription3":"designs, unrivalled functionality, and seamless customisation options. Elevate your website today!",
+              "Mobile_e-CommerceDescription":"Unlock the ultimate potential of your online ",
+              "Mobile_e-CommerceDescription2":"presence with our premium web template ",
+              "Mobile_e-CommerceDescription3":"products! Stay on the cutting edge with trending designs, unrivalled functionality, and seamless customisation options. Elevate your website today!"
             },
             "demoReminderTitle":"No matter what field or industry you're in.",
             "demositeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."

@@ -201,7 +201,7 @@ const Advantage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='relative'>
+                <div className='relative w-full'>
                     <video autoPlay muted playsInline loop className='w-full'>
                         <source src={advantageVideo2} type="video/mp4"/>
                     </video>
@@ -317,7 +317,7 @@ const Advantage = () => {
 
                     <div className='md:hidden flex w-full h-[1px] bg-[#333]'></div>
 
-                    <div className='flex flex-col gap-[30px]'>
+                    <div className='flex flex-col gap-[30px] md:gap-[50px]'>
                         <div className='flex flex-col gap-[10px] md:gap-[30px] md:w-full'>
                             <div className='text-base md:text-5xl font-bold text-left'>
                                 {t("Advantage.advantageEnterpriseReminderTitle")}

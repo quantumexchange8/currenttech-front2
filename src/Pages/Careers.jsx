@@ -33,7 +33,7 @@ const Careers = () => {
                     <div className='max-w-[1000px] flex flex-col w-full'>
                         <div className='flex flex-col gap-[50px] md:gap-[150px] mt-[50px] md:mt-[150px] mb-[50px] md:mb-[150px] mx-5 md:mx-0'>
                             <div className='flex flex-col gap-[10px] md:gap-[50px]'>
-                                <div className='flex flex-col md:w-[863px] text-base md:text-5xl font-bold text-left leading-[1.20]'>
+                                <div className='flex flex-col md:w-[900px] text-base md:text-5xl font-bold text-left leading-[1.20]'>
                                     <div className='block'>{t("Career.careerOpportunitiesTitle")}</div>
                                     <div className='block'>{t("Career.careerOpportunitiesTitle2")}</div>
                                 </div>
@@ -167,7 +167,7 @@ const Careers = () => {
 
                             <div className='w-full h-[1px] bg-[#333] self-center md:hidden'></div>
 
-                            <div className='flex flex-col gap-[30px] md:gap-[50px]'>
+                            <div className='flex flex-col md:gap-[50px]'>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                     <div className='text-xl md:text-5xl font-bold text-left'>
                                         {t("Career.careerReminderTitle")}
