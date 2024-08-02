@@ -225,4 +225,14 @@ const GmailIcon = () => {
     );
 }
 
-export { WhatsApp, MobileWhatsApp, FormWhatsApp, FooterWhatsApp, Gmail, MobileGmail, FooterGmail, FooterFacebook, FooterInstagram, Setting, GmailIcon};
+const SwipeArrow = () => {
+    return (
+    <div className="flex flex-col justify-center items-end transform -translate-y-1/2 md:hidden">
+      <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </div>
+  );
+}
+
+export { WhatsApp, MobileWhatsApp, FormWhatsApp, FooterWhatsApp, Gmail, MobileGmail, FooterGmail, FooterFacebook, FooterInstagram, Setting, GmailIcon, SwipeArrow};

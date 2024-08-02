@@ -1,13 +1,12 @@
-import React, {useContext, useState } from 'react';
+import React, { useState } from 'react';
 import Gear from '../Assets/Images/Gear.png';
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
 import Modal from '../Components/Modal';
-// import { LanguageContext } from "../LanguagesContext";
 import careerVideo from '../Assets/videos/career.mp4';
 import { useTranslation } from 'react-i18next';
 
 const Careers = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
 
@@ -80,6 +79,7 @@ const Careers = () => {
                                         <li>{t("Career.ItProgrammer.Skill.skill_5")}</li>
                                         <li>{t("Career.ItProgrammer.Skill.skill_6")}</li>
                                         <li>{t("Career.ItProgrammer.Skill.skill_7")}</li>
+                                        <li>{t("Career.ItProgrammer.Skill.skill_8")}</li>
                                         <li className="mt-5 md:mt-12 font-bold w-[353px] md:w-[1000px]">
                                             {t("Career.ItProgrammer.Skill.experience")}</li>
                                     </ul> 
@@ -157,10 +157,11 @@ const Careers = () => {
                                         <li>{t("Career.Internship.Skill.skill_5")}</li>
                                         <li>{t("Career.Internship.Skill.skill_6")}</li>
                                         <li>{t("Career.Internship.Skill.skill_7")}</li>
-                                        <li className='mt-5 md:mt-12'>{t("Career.Internship.Skill.skill_8")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_9")}</li>
+                                        <li>{t("Career.Internship.Skill.skill_8")}</li>
+                                        <li className='mt-5 md:mt-12'>{t("Career.Internship.Skill.skill_9")}</li>
                                         <li>{t("Career.Internship.Skill.skill_10")}</li>
-                                        <li className='mt-5 md:mt-12' >{t("Career.Internship.Skill.skill_13")}</li>
+                                        <li>{t("Career.Internship.Skill.skill_11")}</li>
+                                        <li className='mt-5 md:mt-12' >{t("Career.Internship.Skill.skill_12")}</li>
                                     </ul> 
                                 </div>
                             </div>

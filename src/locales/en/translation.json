@@ -6,6 +6,7 @@
         "productsPage":"Products",
         "developedPage":"Our Products",
         "ownSitePage":"Create yours",
+        "pricePage":"Price",
         "careerPage": "Career"
       },
 
@@ -18,13 +19,14 @@
         "developedPage":"Our Products",
         "ownSitePage":"Create yours",
         "careerPage": "Career",
+        "pricePage":"Price",
         "supportPage": "Support"
       },
 
     "Home":{
       "homeVideoTitle":"You cannot stop the ",
       "homeVideoTitle2":"Evolution of Technology",
-      "industriesTitle":"CURRENT TECH INDUSTRIES",
+      "industriesTitle":"ABOUT CURRENT TECH INDUSTRIES",
       "industriesDescription":"Current Tech Industries Sdn Bhd, established in 2006, is a high-tech software enterprise based in Kuala Lumpur, Malaysia, with plans to expand to Penang, Sabah, and Sarawak. We specialize in the research, development, production, and sales of technology products. Recognized as a \"New Technology Enterprise,\" we develop projects across various fields. Our talent-oriented management and integrity-based operations attract industry elites, allowing us to integrate advanced technologies and management practices from both domestic and international sources. We provide comprehensive solutions to enhance enterprise management and production capacities, helping businesses remain competitive and achieve stable growth.",
       "industriesDescription2":" ",
       "industriesDescription3":" ",
@@ -277,6 +279,23 @@
             "demositeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
         },
 
+        "Price":{
+          "priceTitle":"VALUE",
+          "price_SubTitle":"The most important thing is your values, not the price.",
+          "price_Description":"In the journey of business development, it's essential to consider more than just funding. However, funding is not the main focus. The key lies in the values you set for your business, how you showcase your business's appeal, and how you allow customers to assess your value. Whether you're a newcomer establishing a business or a well-known company in the market, here you can find the tools and answers you need.",
+          "website_Topic":"Website Design Pricing",
+          "picture_1":"Web Design",
+          "picture_2":"e-Commerce",
+          "picture_3":"CMS",
+          "picture_4":"Mobile App",
+          "basicTitle":"Basic",
+          "advanceTitle":"Advance",
+          "currentPrice":"Now only",
+          "e-Commerce_Topic":"Website Design Pricing",
+          "priceReminderTitle":"No matter what field or industry you're in.",
+          "priceReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
+        },
+
 
         "Career":{
           "careerVideoTitle":"OPPORTUNITIES",
@@ -296,6 +315,7 @@
               "skill_5":"CSS / HTML",
               "skill_6":"JAVA SCRIPT",
               "skill_7":"MQL4 & MQL5",
+              "skill_8":"cBot (cTrader)",
               "experience":"AT LEAST 1 YEAR(S) OF EXPERIENCE."
             }
           },
@@ -324,10 +344,11 @@
               "skill_5":"CSS / HTML",
               "skill_6":"JAVA SCRIPT",
               "skill_7":"MQL4 & MQL5",
-              "skill_8":"FIGMA",
-              "skill_9":"PHOTOSHOP",
-              "skill_10":"ILLUSTRATOR",
-              "skill_13":"DEGREE HOLDER"
+              "skill_8":"cBot (cTrader)",
+              "skill_9":"FIGMA",
+              "skill_10":"PHOTOSHOP",
+              "skill_11":"ILLUSTRATOR",
+              "skill_12":"DEGREE HOLDER."
             }
           },
 

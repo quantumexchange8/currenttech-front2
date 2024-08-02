@@ -152,7 +152,7 @@ const Demo = () => {
                             </div>
 
                             <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                                <div className="flex flex-wrap gap-[26px] justify-center">
+                                <div className="flex flex-wrap gap-[10px] justify-center">
                                     {currentCards.map((card, index) => (
                                         <Cards 
                                             key={index}

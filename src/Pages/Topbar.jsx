@@ -1,4 +1,4 @@
-import React, { useContext, useState, Fragment } from 'react';
+import React, { useState, Fragment } from 'react';
 import { Menu, Transition, Dialog } from '@headlessui/react'
 import { Earphone, Lang, Menus } from '../Components/Outline';
 import LogoSvg from '../Assets/Images/logo.svg';
@@ -11,8 +11,6 @@ const Topbar = () => {
     const location = useLocation();
     const [openButton, setOpenButton] = useState(false);
     const [selectedButton, setSelectedButton] = useState(null);
-    // const [isMenuOpen, setIsMenuOpen] = useState(false); // Define isMenuOpen state
-    // const { t, language, updateLanguage } = useContext(LanguageContext);
     const { t, i18n } = useTranslation();
     const [isAdvantageExpanded, setIsAdvantageExpanded] = useState(false);
     const [isProductExpanded, setIsProductExpanded] = useState(false);
@@ -24,7 +22,7 @@ const Topbar = () => {
         setSelectedButton(button);
     };
 
-    const toggleLanguage = (langCode) => {
+    const toggleLanguage = (langCode) => { // Define the language when the button clicked
         i18n.changeLanguage(langCode);
         localStorage.setItem('i18nextLng', langCode);
         setLangIsOpen(false)
@@ -66,7 +64,7 @@ const Topbar = () => {
     return (
         <div className='flex flex-col'> 
             <div className="md:h-[60px] h-[60px] w-full fixed z-50 bg-[#FFF] flex justify-center backdrop-blur-sm">
-                <div className="w-[393px] md:w-full max-w-full flex justify-center items-center gap-[50px]">
+                <div className="w-[393px] md:w-full max-w-full flex justify-center items-center gap-[20px] md:gap-[50px]">
                     {/* LogoSvg only shown on web version */}
                     <div className='hidden md:flex'>
                         <Link to="/" className='w-10 h-[26px]'>
@@ -189,8 +187,18 @@ const Topbar = () => {
                             </Menu> 
                         </Link>
                         <Link
+                            to="/price"
+                            className={`text-base font-medium ${
+                                location.pathname === '/price' ? 'bg-[#CCCCCC80] px-[15px] rounded-[35px]' : ''
+                            }`}
+                        >
+                            <div className={i18n === 'en' ? 'font-medium' : 'font-semibold'}>
+                                {t("Topbar.pricePage")}
+                            </div>
+                        </Link>
+                        <Link
                             to="/careers"
-                            className={`text-base font-medium hover:rounded-[35px]${
+                            className={`text-base font-medium ${
                                 location.pathname === '/careers' ? 'bg-[#CCCCCC80] px-[15px] rounded-[35px]' : ''
                             }`}
                         >
@@ -245,12 +253,6 @@ const Topbar = () => {
                                     >
                                     English {i18n === 'en'}
                                     </button>
-                                    {/* <button
-                                    className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
-                                    onClick={() => { toggleLanguage('bm'); closeLangModal(); }}
-                                    >
-                                    Malay {i18n === 'bm'}
-                                    </button> */}
                                     <button
                                     className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
                                     onClick={() => { toggleLanguage('zh'); closeLangModal(); }}
@@ -398,6 +400,20 @@ const Topbar = () => {
                                         </Link>
 
                                         <Link
+                                            to="/price"
+                                            className={`${
+                                                location.pathname === '/price'  ? 'text-blue-500':''
+                                            }`}
+                                        >
+                                            <button
+                                                className="group flex flex-col w-full rounded-md py-3 items-center"
+                                                onClick={closeMenuModal}
+                                            >
+                                                {t("mobileTopbar.pricePage")}
+                                            </button>
+                                        </Link>
+
+                                        <Link
                                             to="/careers"
                                             className={`${
                                                 location.pathname === '/careers'  ? 'text-blue-500':''
@@ -425,73 +441,71 @@ const Topbar = () => {
                     </>
 
                     {/* Earphone and Lang icons on web version*/}
-                    <div className='hidden md:flex justify-center gap-[30px] cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                        <div className="transition duration-300 ease-in-out transform hover:scale-110">
+                    <div className='hidden md:flex gap-[30px] items-center'>
+                        <div className='transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer' onClick={() => handleButtonClick('gmail')}>
                             <Earphone />
                         </div>
-                    </div>
-                    <div className='hidden md:flex justify-center gap-[30px] cursor-pointer'>
-                        <Menu as="div" className="relative text-left">
-                            <div className="flex items-center">
-                                <Menu.Button className="inline-flex justify-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 mt-1">
+                        <div className='hidden md:flex justify-center gap-[30px] cursor-pointer'>
+                            <Menu as="div" className="relative text-left">
+                                <Menu.Button className="inline-flex justify-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 mt-[5px]">
                                     <div className="transition duration-300 ease-in-out transform hover:scale-110">
                                         <Lang />
                                     </div>
                                 </Menu.Button>
-                            </div>
-                            <Transition
-                                as={Fragment}
-                                enter="transition ease-out duration-100"
-                                enterFrom="transform opacity-0 scale-95"
-                                enterTo="transform opacity-100 scale-100"
-                                leave="transition ease-in duration-75"
-                                leaveFrom="transform opacity-100 scale-100"
-                                leaveTo="transform opacity-0 scale-95"
-                            >
-                                <Menu.Items className="absolute flex flex-col justify-center mt-5 w-[220px] h-[60px] rounded-[30px] bg-[#FFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
-                                    <div className="flex flex-row px-[20px] py-[10px] items-stretch gap-1">
-                                        <Menu.Item>
-                                            {({ active }) => (
-                                                <button
-                                                    className={`${
-                                                        active ? ' bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
-                                                    } group flex flex-col w-full text-base font-medium items-center rounded-[20px] py-1 px-4`}
-                                                    onClick={() => toggleLanguage('en')}
-                                                >
-                                                    English {i18n === 'en'}
-                                                </button>
-                                            )}
-                                        </Menu.Item>
-                                        
-                                        {/* <Menu.Item>
-                                            {({ active }) => (
-                                                <button
-                                                    className={`${
-                                                        active ? 'bg-[#CCCCCC80] rounded-[35px] text-white' : 'text-gray-900'
-                                                    } group flex flex-col w-full text-base items-center rounded-[30px]`}
-                                                    onClick={() => toggleLanguage('bm')}
-                                                >
-                                                    Malay {language === 'bm'}
-                                                </button>
-                                            )}
-                                        </Menu.Item> */}
-                                        
-                                        <Menu.Item>
-                                            {({ active }) => (
-                                                <button
-                                                    className={`${
-                                                        active ? 'bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
-                                                    } group flex flex-col w-full text-base font-semibold items-center rounded-[20px] py-1 px-4`}
-                                                    onClick={() => toggleLanguage('zh')}
-                                                >
-                                                    中文 {i18n === 'zh'}
-                                                </button>
-                                            )}
-                                        </Menu.Item>
-                                    </div>
-                                </Menu.Items>
-                            </Transition>
-                        </Menu> 
+                                <Transition
+                                    as={Fragment}
+                                    enter="transition ease-out duration-100"
+                                    enterFrom="transform opacity-0 scale-95"
+                                    enterTo="transform opacity-100 scale-100"
+                                    leave="transition ease-in duration-75"
+                                    leaveFrom="transform opacity-100 scale-100"
+                                    leaveTo="transform opacity-0 scale-95"
+                                >
+                                    <Menu.Items className="absolute flex flex-col justify-center mt-5 w-[220px] h-[60px] rounded-[30px] bg-[#FFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
+                                        <div className="flex flex-row px-[20px] py-[10px] items-stretch gap-1">
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <button
+                                                        className={`${
+                                                            active ? ' bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
+                                                        } group flex flex-col w-full text-base font-medium items-center rounded-[20px] py-1 px-4`}
+                                                        onClick={() => toggleLanguage('en')}
+                                                    >
+                                                        English {i18n === 'en'}
+                                                    </button>
+                                                )}
+                                            </Menu.Item>
+                                            
+                                            {/* <Menu.Item>
+                                                {({ active }) => (
+                                                    <button
+                                                        className={`${
+                                                            active ? 'bg-[#CCCCCC80] rounded-[35px] text-white' : 'text-gray-900'
+                                                        } group flex flex-col w-full text-base items-center rounded-[30px]`}
+                                                        onClick={() => toggleLanguage('bm')}
+                                                    >
+                                                        Malay {language === 'bm'}
+                                                    </button>
+                                                )}
+                                            </Menu.Item> */}
+                                            
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <button
+                                                        className={`${
+                                                            active ? 'bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
+                                                        } group flex flex-col w-full text-base font-medium items-center rounded-[20px] py-1 px-4`}
+                                                        onClick={() => toggleLanguage('zh')}
+                                                    >
+                                                        中文 {i18n === 'zh'}
+                                                    </button>
+                                                )}
+                                            </Menu.Item>
+                                        </div>
+                                    </Menu.Items>
+                                </Transition>
+                            </Menu> 
+                        </div>
                     </div>
                 </div>
             </div>

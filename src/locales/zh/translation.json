@@ -6,6 +6,7 @@
       "productsPage":"产品",
       "developedPage":"我们的产品",
       "ownSitePage":"创建属于您的",
+      "pricePage":"价格",
       "careerPage": "就业"
     },
 
@@ -18,13 +19,14 @@
       "developedPage":"我们的产品",
       "ownSitePage":"创建属于您的",
       "careerPage": "就业",
+      "pricePage":"价格",
       "supportPage": "客服"
     },
 
     "Home": {
       "homeVideoTitle": "您无法停止",
       "homeVideoTitle2":"科技飞速的进步",
-      "industriesTitle": "CURRENT TECH INDUSTRIES",
+      "industriesTitle": "关于我们",
       "industriesDescription": "Current Tech Industries Sdn Bhd成立于2006年, 总部位于马来西亚吉隆坡, 并计划扩展至槟城, 沙巴和砂拉越. 我们是一家高科技软件企业, 专注于技术产品的研究, 开发, 生产和销售. ",
       "industriesDescription2": "作为被认可的“新技术企业”, 我们在多个领域开发项目. 我们以人才为导向的管理和以诚信为基础的运营吸引了行业精英, 使我们能够整合国内外先进的技术和管理实践. ",
       "industriesDescription3": "我们提供全面的解决方案, 提升企业管理和生产能力, 帮助企业保持竞争力并实现稳定增长.",
@@ -252,29 +254,46 @@
             },
             "ownsiteReminderTitle":"无论您身处哪个领域或行业.",
             "ownsiteReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
-        },
+    },
 
-        "Demo":{
-            "DemoTitle":"滿足您網站和應用需求的強大之選",
-            "DemoDescription":"歡迎來到創新與變革的網站和應用開發領域.",
-            "DemoDescription2":"我們令人興奮且引人入勝的設計皆以用戶體驗為核心,",
-            "DemoDescription3":"提升您的數字形象. 利用我們的專業解決方案, 釋放您在線業務的潛力.",
-            "Mobile_DemoDescription":"歡迎來到創新與變革的網站和應用開發領域. ",
-            "Mobile_DemoDescription2":"我們令人興奮且引人入勝的設計皆以用戶體驗為核心, ",
-            "Mobile_DemoDescription3":"提升您的數字形象. 利用我們的專業解決方案,",
-            "Mobile_DemoDescription4":"釋放您在線業務的潛力.",
-            "Mobile_DemoDescription5":"",
-            "DemoTheme": {
-              "e-CommerceTitle":"e-Commerce Demo",
-              "e-CommerceDescription":"解鎖您的在線形象的終極潛力, 使用我們的高端網站模板產品!",
-              "e-CommerceDescription2":"保持設計潮流前沿, 享受無與倫比的功能和無縫的自定義選項.",
-              "e-CommerceDescription3":"今天就提升您的網站吧!",
-              "Mobile_e-CommerceDescription":"解鎖您的在線形象的終極潛力, 使用我們的高端網站模板 ",
-              "Mobile_e-CommerceDescription2":"產品! 保持設計潮流前沿, 享受無與倫比的功能和無縫的自 ",
-              "Mobile_e-CommerceDescription3":"定義選項. 今天就提升您的網站吧!"
-            },
-            "demoReminderTitle":"无论您身处哪个领域或行业.",
-            "demositeReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
+    "Demo":{
+        "DemoTitle":"滿足您網站和應用需求的強大之選",
+        "DemoDescription":"歡迎來到創新與變革的網站和應用開發領域.",
+        "DemoDescription2":"我們令人興奮且引人入勝的設計皆以用戶體驗為核心,",
+        "DemoDescription3":"提升您的數字形象. 利用我們的專業解決方案, 釋放您在線業務的潛力.",
+        "Mobile_DemoDescription":"歡迎來到創新與變革的網站和應用開發領域. ",
+        "Mobile_DemoDescription2":"我們令人興奮且引人入勝的設計皆以用戶體驗為核心, ",
+        "Mobile_DemoDescription3":"提升您的數字形象. 利用我們的專業解決方案,",
+        "Mobile_DemoDescription4":"釋放您在線業務的潛力.",
+        "Mobile_DemoDescription5":"",
+        "DemoTheme": {
+          "e-CommerceTitle":"e-Commerce Demo",
+          "e-CommerceDescription":"解鎖您的在線形象的終極潛力, 使用我們的高端網站模板產品!",
+          "e-CommerceDescription2":"保持設計潮流前沿, 享受無與倫比的功能和無縫的自定義選項.",
+          "e-CommerceDescription3":"今天就提升您的網站吧!",
+          "Mobile_e-CommerceDescription":"解鎖您的在線形象的終極潛力, 使用我們的高端網站模板 ",
+          "Mobile_e-CommerceDescription2":"產品! 保持設計潮流前沿, 享受無與倫比的功能和無縫的自 ",
+          "Mobile_e-CommerceDescription3":"定義選項. 今天就提升您的網站吧!"
+        },
+        "demoReminderTitle":"无论您身处哪个领域或行业.",
+        "demositeReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
+    },
+
+    "Price":{
+          "priceTitle":"创造价值",
+          "price_SubTitle":"最重要的是您的價值觀, 而不是價格",
+          "price_Description":"一个完整生意发展的道路上需要考虑的不只是资金, 但它绝非是重点, 重点是您对您的生意定下了什么价值观. 您如何展现您生意的魅力, 如何让客户来评估您的价值, 在这里您可以是刚出来社会建立企业的新手或您已是市场上闻名的公司您完全可以找到您所需要的工具和答案.",
+          "website_Topic":"网页设计价格参考",
+          "picture_1":"网页设计",
+          "picture_2":"电子商务",
+          "picture_3":"客户管理",
+          "picture_4":"应用程序",
+          "basicTitle":"基础",
+          "advanceTitle":"企业",
+          "currentPrice":"现在只需",
+          "e-Commerce_Topic":"电子商务网页价格参考",
+          "priceReminderTitle":"无论您身处哪个领域或行业.",
+          "priceReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
         },
 
 
@@ -296,6 +315,7 @@
           "skill_5":"CSS / HTML",
           "skill_6":"JAVA SCRIPT",
           "skill_7":"MQL4 & MQL5",
+          "skill_8":"cBot (cTrader)",
           "experience":"至少1年或以上的相关工作经验."
         }
       },
@@ -324,10 +344,11 @@
           "skill_5":"CSS / HTML",
           "skill_6":"JAVA SCRIPT",
           "skill_7":"MQL4 & MQL5",
-          "skill_8":"FIGMA",
-          "skill_9":"PHOTOSHOP",
-          "skill_10":"ILLUSTRATOR",
-          "skill_13":"至少大专学位程度"
+          "skill_8":"cBot (cTrader)",
+          "skill_9":"FIGMA",
+          "skill_10":"PHOTOSHOP",
+          "skill_11":"ILLUSTRATOR",
+          "skill_12":"至少大专学位程度"
         }
       },
 

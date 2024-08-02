@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Slider from "react-slick";
 import Modal from "../Components/Modal";
@@ -14,88 +14,184 @@ import { useTranslation } from 'react-i18next';
 
 const OwnSite = () => {
   const location = useLocation();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [openButton, setOpenButton] = useState(false);
   const [selectedButton, setSelectedButton] = useState(null);
+
+  // Initialize click counts from localStorage if available. If not, it defaults to an array with 8 zeros
+  const [ecomClickCounts, setEcomClickCounts] = useState(() => {
+    const savedCounts = localStorage.getItem('ecomClickCounts');
+    return savedCounts ? JSON.parse(savedCounts) : Array(8).fill(0);
+  });
+
+  const [comClickCounts, setComClickCounts] = useState(() => {
+    const savedCounts = localStorage.getItem('comClickCounts');
+    return savedCounts ? JSON.parse(savedCounts) : Array(8).fill(0);
+  });
+
+  const [adminClickCounts, setAdminClickCounts] = useState(() => {
+    const savedCounts = localStorage.getItem('adminClickCounts');
+    return savedCounts ? JSON.parse(savedCounts) : Array(8).fill(0);
+  });
+
+  const [investClickCounts, setInvestClickCounts] = useState(() => {
+    const savedCounts = localStorage.getItem('investClickCounts');
+    return savedCounts ? JSON.parse(savedCounts) : Array(8).fill(0);
+  });
+
+  const [digitalClickCounts, setDigitalClickCounts] = useState(() => {
+    const savedCounts = localStorage.getItem('digitalClickCounts');
+    return savedCounts ? JSON.parse(savedCounts) : Array(8).fill(0);
+  })
+
+  useEffect(() => {
+    localStorage.setItem('ecomClickCounts', JSON.stringify(ecomClickCounts));
+    localStorage.setItem('comClickCounts', JSON.stringify(comClickCounts));
+    localStorage.setItem('adminClickCounts', JSON.stringify(adminClickCounts));
+    localStorage.setItem('investClickCounts', JSON.stringify(investClickCounts));
+    localStorage.setItem('digitalClickCounts', JSON.stringify(digitalClickCounts));
+  }, [ecomClickCounts, comClickCounts, adminClickCounts, investClickCounts, digitalClickCounts]);
 
   const handleButtonClick = (button) => {
     setOpenButton(true);
     setSelectedButton(button);
   };
 
+  // Helper function to handle image click
+  const handleImageClick = (index, setClickCounts, clickCounts) => {
+    const newClickCounts = [...clickCounts];
+    newClickCounts[index]++;
+    setClickCounts(newClickCounts);
+  };
+
 //   E-commerce Dashboard
-    const Ecom_images = [Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2];
+    const Ecom_images = [Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2];
+    const Ecom_links = ['https://ctweb-template1.currenttech.pro/','https://ctweb-template2.currenttech.pro/','https://chatgpt.com/'];
 
     const create_EcomCardData = (num) => ({
         image: Ecom_images[(num - 1) % Ecom_images.length],
         title: `e-Commerce ShoeHouse ${num}`,
         code: `EC36900${num}`,
-        rate: [1531, 1264, 5131, 6150, 2212, 6150, 2115, 3169][num - 1],
-        link: "/demo"
+        rate: ecomClickCounts[num - 1],
+        link: Ecom_links[(num - 1) % Ecom_links.length]
     });
         
-    const Ecom_cardData = Array.from({ length: 8 }, (_, i) => create_EcomCardData(i + 1));
+    const Ecom_cardData = Array.from({ length: Ecom_images.length }, (_, i) => create_EcomCardData(i + 1));
 
     // Commercial Dashboard
     const Com_images = [Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2];
-
+    const Com_links = [''];
     const create_ComCardData = (num) => ({
         image: Com_images[(num - 1) % Com_images.length],
         title: `e-Commerce ShoeHouse ${num}`,
         code: `EC36900${num}`,
-        rate: [1531, 1264, 5131, 6150, 2212, 6150, 2115, 3169][num - 1],
-        link: "/demo"
+        rate: comClickCounts[num - 1],
+        link: Com_links[(num - 1) % Com_links.length]
       });
         
-        const Com_cardData = Array.from({ length: 8 }, (_, i) => create_ComCardData(i + 1));
+        const Com_cardData = Array.from({ length: Com_images.length }, (_, i) => create_ComCardData(i + 1));
 
     // Admin Dashboard
     const Admin_images = [Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2];
-
+    const Admin_links = [''];
     const create_AdminCardData = (num) => ({
     image: Admin_images[(num - 1) % Admin_images.length],
     title: `e-Commerce ShoeHouse ${num}`,
     code: `EC36900${num}`,
-    rate: [1531, 1264, 5131, 6150, 2212, 6150, 2115, 3169][num - 1],
-    link: "/demo"
+    rate: adminClickCounts[num - 1],
+    link: Admin_links[(num - 1) % Admin_links.length]
     });
     
-    const admin_cardData = Array.from({ length: 8 }, (_, i) => create_AdminCardData(i + 1));
+    const admin_cardData = Array.from({ length: Admin_images.length }, (_, i) => create_AdminCardData(i + 1));
 
     // Investment Dashboard
     const Invest_images = [Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2];
-
+    const Invest_links = [''];
     const create_InvestCardData = (num) => ({
     image: Invest_images[(num - 1) % Invest_images.length],
     title: `e-Commerce ShoeHouse ${num}`,
     code: `EC36900${num}`,
-    rate: [1531, 1264, 5131, 6150, 2212, 6150, 2115, 3169][num - 1],
-    link: "/demo"
+    rate: investClickCounts[num - 1],
+    link: Invest_links[(num - 1) % Invest_links.length]
     });
     
-    const invest_cardData = Array.from({ length: 8 }, (_, i) => create_InvestCardData(i + 1));
+    const invest_cardData = Array.from({ length: Invest_images.length }, (_, i) => create_InvestCardData(i + 1));
 
     // Digital Dashboard
     const Digital_images = [Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2];
-
+    const Digital_links = [''];
     const create_DigitalCardData = (num) => ({
     image: Digital_images[(num - 1) % Digital_images.length],
     title: `e-Commerce ShoeHouse ${num}`,
     code: `EC36900${num}`,
-    rate: [1531, 1264, 5131, 6150, 2212, 6150, 2115, 3169][num - 1],
-    link: "/demo"
+    rate: digitalClickCounts[num - 1],
+    link: Digital_links[(num - 1) % Digital_links.length]
     });
     
-    const digital_cardData = Array.from({ length: 8 }, (_, i) => create_DigitalCardData(i + 1));
+    const digital_cardData = Array.from({ length: Digital_images.length }, (_, i) => create_DigitalCardData(i + 1));
 
     // Sliders Condition
     const settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
+        autoPlay:true,
+        nextArrow: <SampleNextArrow />,
+        // prevArrow: <SamplePrevArrow />,
     };
+
+    function SampleNextArrow(props) {
+        const { onClick } = props;
+        return (
+            <div
+        className= 'absolute top-1/2 transform -translate-y-1/2 right-0 mr-2 z-10 cursor-pointer'
+        onClick={onClick}
+      >
+        <svg
+          className="w-8 h-8 text-gray-700 animate-bounce-right"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </div>
+        );
+      }
+    
+    //   function SamplePrevArrow(props) {
+    //     const { className, style, onClick } = props;
+    //     return (
+    //       <div
+    //         className={`absolute top-1/2 transform -translate-y-1/2 ml-5 left-0 z-10 cursor-pointer`}
+    //         style={{ ...style, background: "gray", borderRadius:9 }}
+    //         onClick={onClick}
+    //       >
+    //         <svg
+    //           className="w-8 h-8 text-gray-700 animate-bounce-left"
+    //           fill="none"
+    //           stroke="currentColor"
+    //           viewBox="0 0 24 24"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             strokeLinecap="round"
+    //             strokeLinejoin="round"
+    //             strokeWidth={2}
+    //             d="M15 19l-7-7 7-7"
+    //           />
+    //         </svg>
+    //       </div>
+    //     );
+    //   }
 
 
   return (
@@ -147,12 +243,13 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setEcomClickCounts, ecomClickCounts)} // Pass the click handler
                             />
                         ))}
                     </div>
 
                     {/* Mobile View */}
-                    <div className=" container w-full md:hidden">
+                    <div className="container w-full md:hidden">
                         <Slider {...settings}>
                             {Ecom_cardData.map((card, index) => (
                             <Cards 
@@ -160,6 +257,7 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setEcomClickCounts, ecomClickCounts)} // Pass the click handler
                             />
                             ))}
                         </Slider>
@@ -202,6 +300,7 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setComClickCounts, comClickCounts)} // Pass the click handler
                             />
                         ))}
                     </div>
@@ -215,6 +314,7 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setComClickCounts, comClickCounts)} // Pass the click handler
                             />
                             ))}
                         </Slider>
@@ -256,6 +356,7 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setAdminClickCounts, adminClickCounts)} // Pass the click handler
                             />
                         ))}
                     </div>
@@ -269,6 +370,7 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setAdminClickCounts, adminClickCounts)} // Pass the click handler
                             />
                             ))}
                         </Slider>
@@ -310,6 +412,7 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setInvestClickCounts, investClickCounts)} // Pass the click handler
                             />
                         ))}
                     </div>
@@ -323,6 +426,7 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setInvestClickCounts, investClickCounts)} // Pass the click handler
                             />
                             ))}
                         </Slider>
@@ -363,6 +467,7 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setDigitalClickCounts, digitalClickCounts)} // Pass the click handler
                             />
                         ))}
                     </div>
@@ -376,6 +481,7 @@ const OwnSite = () => {
                                 card={card}
                                 index={index}
                                 handleButtonClick={handleButtonClick}
+                                handleImageClick={() => handleImageClick(index, setDigitalClickCounts, digitalClickCounts)} // Pass the click handler
                             />
                             ))}
                         </Slider>
