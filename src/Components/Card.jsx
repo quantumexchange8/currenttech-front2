@@ -11,7 +11,7 @@ const Card = ({ card, index, handleButtonClick, handleImageClick }) => {
   return (
     <div key={index} className="max-w-[170px] md:max-w-[230px]">
       <div className="group relative border rounded-lg overflow-hidden shadow-lg">
-      <div onClick={openLink}>
+        <div onClick={openLink}>
           <img src={card.image} alt={`${card.title} ${card.code} ${card.rate}`} className="w-full object-cover cursor-pointer"/>
         </div>
         <div className="absolute bottom-0 w-full bg-black bg-opacity-35 md:transform md:translate-y-full md:group-hover:translate-y-0 md:transition-transform md:duration-500 md:ease-in-out p-2">
