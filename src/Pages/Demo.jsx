@@ -5,8 +5,11 @@ import Demo_Teamwork from '../Assets/Images/demo_Teamwork.png'
 import Modal from '../Components/Modal';
 // import { LanguageContext } from "../LanguagesContext";
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
-import Ecommerce_1 from "../Assets/Images/Ecom_1.svg"
-import Ecommerce_2 from "../Assets/Images/Ecom_2.svg";
+import Ecommerce_1 from "../Assets/Images/E-commerce/aia.png";
+import Ecommerce_2 from "../Assets/Images/E-commerce/furniture.png";
+import Ecommerce_3 from "../Assets/Images/E-commerce/etrans.png";
+import Ecommerce_4 from "../Assets/Images/E-commerce/neoncart.png";
+import Ecommerce_5 from "../Assets/Images/E-commerce/onlinesale.png";
 import Cards from "../Components/Card"
 import { useTranslation } from 'react-i18next';
 
@@ -23,23 +26,24 @@ const Demo = () => {
 
     //   E-commerce Dashboard
     const Ecom_images = 
-    [Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2,
-     Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2,
-     Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2,
-     Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2,
-     Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2
+    [Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, 
+     Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, 
+     Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4,
+     Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, 
+     Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5
     ];
+    const Ecom_links = ['https://ctweb-template1.currenttech.pro/','https://ctweb-template2.currenttech.pro/','https://ctweb-template3.currenttech.pro/', 'https://ctweb-template4.currenttech.pro/', 'https://ctweb-template5.currenttech.pro/'];
 
     const create_EcomCardData = (num) => ({
         image: Ecom_images[(num - 1) % Ecom_images.length],
-        title: `e-Commerce ShoeHouse ${num}`,
+        title: `e-Commerce Demo ${num}`,
         code: `EC36900${num}`,
         rate: [1531, 1264, 5131, 6150, 2212, 6150, 2115, 3169,
                7293, 7650, 6294, 6192, 4412, 8511, 2915, 8491,
                5918, 7412, 4747, 2194, 111, 4991, 3192, 1749,
                9470, 1820, 3519, 5491, 6363, 6184, 6129, 1429,
                7412, 6720, 7439, 7812, 9287, 1441, 1298, 1094][num - 1],
-        link: ""
+        link: Ecom_links[(num - 1) % Ecom_links.length]
     });
         
     const Ecom_cardData = Array.from({ length: 40 }, (_, i) => create_EcomCardData(i + 1));

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Slider from "react-slick";
-import Modal from "../Components/Modal";1``
+import Modal from "../Components/Modal";
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from "../Components/Brand.jsx";
 import { MoreButton } from "../Components/Outline.jsx";
 import Ecommerce_1 from "../Assets/Images/E-commerce/aia.png";
@@ -70,7 +70,7 @@ const OwnSite = () => {
   };
 
 //   E-commerce Dashboard
-    const Ecom_images = [Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1];
+    const Ecom_images = [Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5];
     const Ecom_links = ['https://ctweb-template1.currenttech.pro/','https://ctweb-template2.currenttech.pro/','https://ctweb-template3.currenttech.pro/', 'https://ctweb-template4.currenttech.pro/', 'https://ctweb-template5.currenttech.pro/'];
 
     const create_EcomCardData = (num) => ({

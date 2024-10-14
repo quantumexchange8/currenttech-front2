@@ -74,7 +74,7 @@ const Topbar = () => {
 
                     {/* Navigation links */}
                     <div className="hidden md:flex justify-center gap-[30px]">
-                        <Link className={`text-base font-medium ${location.pathname === '/customize' || location.pathname === '/advantage'  ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''}`}>
+                        {/* <Link className={`text-base font-medium ${location.pathname === '/customize' || location.pathname === '/advantage'  ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''}`}> */}
                             <Menu as="div" className="relative text-left">
                                 <Menu.Button className="text-base font-medium hover:rounded-[35px]">
                                     <div className={i18n === 'en' ? 'font-medium' : 'font-semibold'}>
@@ -129,8 +129,8 @@ const Topbar = () => {
                                     </Menu.Items>
                                 </Transition>
                             </Menu> 
-                        </Link>
-                        <Link className={`text-base font-medium ${location.pathname === '/products' || location.pathname === '/ownSite'  ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''}`}>
+                        {/* </Link> */}
+                        {/* <Link className={`text-base font-medium ${location.pathname === '/products' || location.pathname === '/ownSite'  ? 'bg-[#ffffff80] px-[15px] rounded-[35px]' : ''}`}> */}
                             <Menu as="div" className="relative text-left">
                                 <Menu.Button className="text-base font-medium hover:rounded-[35px]">
                                     <div className={i18n === 'en' ? 'font-medium' : 'font-semibold'}>
@@ -185,7 +185,7 @@ const Topbar = () => {
                                     </Menu.Items>
                                 </Transition>
                             </Menu> 
-                        </Link>
+                        {/* </Link> */}
                         <Link
                             to="/price"
                             className={`text-base font-medium ${
@@ -248,13 +248,13 @@ const Topbar = () => {
                                 >
                                 <Dialog.Panel className="relative mt-2 w-[130px] rounded-[15px] bg-[#FFFFFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right">
                                     <button
-                                    className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                    className={`${i18n.language === 'en' ? 'text-blue-500' : ''} group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
                                     onClick={() => { toggleLanguage('en'); closeLangModal(); }}
-                                    >
+                                    >         
                                     English {i18n === 'en'}
                                     </button>
                                     <button
-                                    className={`group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
+                                    className={`${i18n.language === 'zh' ? 'text-blue-500' : ''} group flex flex-col w-full place-items-center rounded-md px-7 py-3`}
                                     onClick={() => { toggleLanguage('zh'); closeLangModal(); }}
                                     >
                                     中文 {i18n === 'zh'}
@@ -322,45 +322,42 @@ const Topbar = () => {
                                             </button>
                                         </Link>
                                         
-                                        <Link>
-                                            <button
-                                                onClick={toggleAdvantage}
-                                                className= 'flex flex-col w-full py-3 px-7 place-items-center'>
-                                                {t("mobileTopbar.advantagePage")}
-                                            </button>
-                                            {isAdvantageExpanded && (
-                                                <>
-                                                    <Link
-                                                        to="/advantage"
-                                                        className={`w-full text-center`}
-                                                        >
-                                                        <button
-                                                            className={`flex flex-col w-full py-3 px-7 items-center text-base font-medium ${
-                                                                location.pathname === '/advantage' ? 'text-blue-500' : ''
-                                                            }`}
-                                                            onClick={closeMenuModal}
-                                                        >
-                                                            {t("mobileTopbar.oneStopPage")}
-                                                        </button>
-                                                    </Link>
-                                                    
-                                                    <Link
-                                                        to="/customize"
-                                                        className='w-full text-center'
-                                                        >
-                                                        <button
-                                                            className={`flex flex-col w-full py-3 px-7 items-center text-base font-medium ${
-                                                                location.pathname === '/customize' ? 'text-blue-500' : ''
-                                                            }`}
-                                                            onClick={closeMenuModal}
-                                                        >
-                                                            {t("mobileTopbar.customizePage")}
-                                                        </button>
-                                                    </Link></>
-                                                )}
-                                        </Link>
+                                        <button
+                                            onClick={toggleAdvantage}
+                                            className= 'flex flex-col w-full py-3 px-7 place-items-center'>
+                                            {t("mobileTopbar.advantagePage")}
+                                        </button>
+                                        {isAdvantageExpanded && (
+                                            <>
+                                                <Link
+                                                    to="/advantage"
+                                                    className={`w-full text-center`}
+                                                    >
+                                                    <button
+                                                        className={`flex flex-col w-full py-3 px-7 items-center text-base font-medium ${
+                                                            location.pathname === '/advantage' ? 'text-blue-500' : ''
+                                                        }`}
+                                                        onClick={closeMenuModal}
+                                                    >
+                                                        {t("mobileTopbar.oneStopPage")}
+                                                    </button>
+                                                </Link>
+                                                
+                                                <Link
+                                                    to="/customize"
+                                                    className='w-full text-center'
+                                                    >
+                                                    <button
+                                                        className={`flex flex-col w-full py-3 px-7 items-center text-base font-medium ${
+                                                            location.pathname === '/customize' ? 'text-blue-500' : ''
+                                                        }`}
+                                                        onClick={closeMenuModal}
+                                                    >
+                                                        {t("mobileTopbar.customizePage")}
+                                                    </button>
+                                                </Link></>
+                                            )}
 
-                                        <Link>
                                             <button
                                                 onClick={toggleProducts}
                                                 className= 'flex flex-col w-full py-3 px-7 items-center'>
@@ -397,7 +394,6 @@ const Topbar = () => {
                                                 </Link>
                                             </>
                                             )}
-                                        </Link>
 
                                         <Link
                                             to="/price"
@@ -464,16 +460,14 @@ const Topbar = () => {
                                     <Menu.Items className="absolute flex flex-col justify-center mt-5 w-[220px] h-[60px] rounded-[30px] bg-[#FFF] shadow-lg ring-1 ring-black/5 focus:outline-none text-xl font-semibold text-right left-1/2 transform -translate-x-1/2">
                                         <div className="flex flex-row px-[20px] py-[10px] items-stretch gap-1">
                                             <Menu.Item>
-                                                {({ active }) => (
                                                     <button
                                                         className={`${
-                                                            active ? ' bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
+                                                            i18n.language === 'en' ? ' bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
                                                         } group flex flex-col w-full text-base font-medium items-center rounded-[20px] py-1 px-4`}
                                                         onClick={() => toggleLanguage('en')}
                                                     >
                                                         English {i18n === 'en'}
                                                     </button>
-                                                )}
                                             </Menu.Item>
                                             
                                             {/* <Menu.Item>
@@ -490,16 +484,14 @@ const Topbar = () => {
                                             </Menu.Item> */}
                                             
                                             <Menu.Item>
-                                                {({ active }) => (
                                                     <button
                                                         className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
+                                                            i18n.language === 'zh' ? 'bg-[#CCCCCC80] rounded-[35px] text-black font-bold shadow-lg shadow-slate-400 transform scale-105 transition duration-100' : 'text-gray-900'
                                                         } group flex flex-col w-full text-base font-medium items-center rounded-[20px] py-1 px-4`}
                                                         onClick={() => toggleLanguage('zh')}
                                                     >
                                                         中文 {i18n === 'zh'}
                                                     </button>
-                                                )}
                                             </Menu.Item>
                                         </div>
                                     </Menu.Items>

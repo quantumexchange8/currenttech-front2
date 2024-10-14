@@ -181,9 +181,10 @@ const Price = () => {
                                                     <li>Google submission</li>
                                                     <li>Google business</li>
                                                     <li>Google console</li>
+                                                    <li>Chat Integration <br /> (Messenger / Whatsapp)</li>
                                                     <li>Guarantee 80% test score</li>
                                                     <li>Guarantee 80% SEO Checkup score</li>
-                                                    <li>Chat Integration <br /> (Messenger / Whatsapp)</li>
+                                                    
                                                 </ul>
                                                 <div className='text-[#666] text-xs md:text-base font-medium text-right leading-[25px] md:leading-[30px]'>
                                                     <div>Custom</div>
@@ -202,8 +203,8 @@ const Price = () => {
                                                     <div>Yes</div>
                                                     <div>Yes</div>
                                                     <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
+                                                    <div> </div>
+                                                    <div> </div>
                                                 </div>
                                             </div>
                                         </div>

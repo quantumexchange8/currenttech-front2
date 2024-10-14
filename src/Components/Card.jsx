@@ -5,7 +5,6 @@ const Card = ({ card, index, handleButtonClick, handleImageClick }) => {
 
   const openLink = () => {
     window.open(card.link, '_blank');
-    handleImageClick(); // Call the click handler
   };
 
   return (
