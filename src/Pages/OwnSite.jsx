@@ -9,8 +9,14 @@ import Ecommerce_2 from "../Assets/Images/E-commerce/furniture.png";
 import Ecommerce_3 from "../Assets/Images/E-commerce/etrans.png";
 import Ecommerce_4 from "../Assets/Images/E-commerce/neoncart.png";
 import Ecommerce_5 from "../Assets/Images/E-commerce/onlinesale.png";
+import Ecommerce_6 from "../Assets/Images/E-commerce/topico.png";
+import Ecommerce_7 from "../Assets/Images/E-commerce/vue.png";
+import Ecommerce_8 from "../Assets/Images/E-commerce/medsy.png";
 import Commercial_1 from "../Assets/Images/Commercial/assurance.png";
 import Admin_1 from "../Assets/Images/Admin/adomx.png";
+import Admin_2 from "../Assets/Images/Admin/oculux.png";
+import Admin_3 from "../Assets/Images/Admin/symox.png";
+import Admin_4 from "../Assets/Images/Admin/vixon.png";
 import Cards from "../Components/Card"
 import ownsiteVideo from '../Assets/videos/ownsite.mp4';
 import "slick-carousel/slick/slick.css";
@@ -70,12 +76,30 @@ const OwnSite = () => {
   };
 
 //   E-commerce Dashboard
-    const Ecom_images = [Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5];
-    const Ecom_links = ['https://ctweb-template1.currenttech.pro/','https://ctweb-template2.currenttech.pro/','https://ctweb-template3.currenttech.pro/', 'https://ctweb-template4.currenttech.pro/', 'https://ctweb-template5.currenttech.pro/'];
+    const Ecom_images = [
+        Ecommerce_1, 
+        Ecommerce_2, 
+        Ecommerce_3, 
+        Ecommerce_4, 
+        Ecommerce_5, 
+        Ecommerce_6, 
+        Ecommerce_7, 
+        Ecommerce_8
+    ];
+    const Ecom_links = [
+        'https://ctweb-template1.currenttech.pro/',
+        'https://ctweb-template2.currenttech.pro/',
+        'https://ctweb-template3.currenttech.pro/', 
+        'https://ctweb-template4.currenttech.pro/', 
+        'https://ctweb-template5.currenttech.pro/', 
+        'https://ctweb-ecommerce-template.currenttech.pro/',
+        'https://ctweb-ecommerce-template2.currenttech.pro/',
+        'https://ctweb-ecommerce-template3.currenttech.pro/',
+    ];
 
     const create_EcomCardData = (num) => ({
         image: Ecom_images[(num - 1) % Ecom_images.length],
-        title: `e-Commerce ShoeHouse ${num}`,
+        title: `E-commerce Dashboard ${num}`,
         code: `EC36900${num}`,
         rate: ecomClickCounts[num - 1],
         link: Ecom_links[(num - 1) % Ecom_links.length]
@@ -84,11 +108,22 @@ const OwnSite = () => {
     const Ecom_cardData = Array.from({ length: Ecom_images.length }, (_, i) => create_EcomCardData(i + 1));
 
     // Commercial Dashboard
-    const Com_images = [Commercial_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2];
-    const Com_links = ['https://ctweb-commercial-template1.currenttech.pro/', 'https://ctweb-commercial-template2.currenttech.pro/'];
+    const Com_images = [
+        Commercial_1, 
+        Ecommerce_2, 
+        Ecommerce_1, 
+        Ecommerce_2, 
+        Ecommerce_1, 
+        Ecommerce_2, 
+        Ecommerce_1, 
+        Ecommerce_2
+    ];
+    const Com_links = [
+        'https://ctweb-commercial-template1.currenttech.pro/', 
+        'https://ctweb-commercial-template2.currenttech.pro/'];
     const create_ComCardData = (num) => ({
         image: Com_images[(num - 1) % Com_images.length],
-        title: `e-Commerce ShoeHouse ${num}`,
+        title: `Commercial Dashboard ${num}`,
         code: `EC36900${num}`,
         rate: comClickCounts[num - 1],
         link: Com_links[(num - 1) % Com_links.length]
@@ -97,11 +132,24 @@ const OwnSite = () => {
         const Com_cardData = Array.from({ length: Com_images.length }, (_, i) => create_ComCardData(i + 1));
 
     // Admin Dashboard
-    const Admin_images = [Admin_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2];
-    const Admin_links = ['https://ctweb-admin-template1.currenttech.pro/'];
+    const Admin_images = [
+        Admin_1, 
+        Admin_2, 
+        Admin_3, 
+        Admin_4,
+        Admin_1, 
+        Admin_2, 
+        Admin_3, 
+        Admin_4];
+    const Admin_links = [
+        'https://ctweb-admin-template1.currenttech.pro/',
+        'https://ctweb-admin-template2.currenttech.pro/',
+        'https://ctweb-admin-template3.currenttech.pro/',
+        'https://ctweb-admin-template4.currenttech.pro/',
+    ];
     const create_AdminCardData = (num) => ({
     image: Admin_images[(num - 1) % Admin_images.length],
-    title: `e-Commerce ShoeHouse ${num}`,
+    title: `Admin Dashboard ${num}`,
     code: `EC36900${num}`,
     rate: adminClickCounts[num - 1],
     link: Admin_links[(num - 1) % Admin_links.length]
@@ -110,11 +158,22 @@ const OwnSite = () => {
     const admin_cardData = Array.from({ length: Admin_images.length }, (_, i) => create_AdminCardData(i + 1));
 
     // Investment Dashboard
-    const Invest_images = [Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2, Ecommerce_1, Ecommerce_2];
-    const Invest_links = ['https://ctweb-investment-template1.currenttech.pro/'];
+    const Invest_images = [
+        Ecommerce_1, 
+        Ecommerce_2, 
+        Ecommerce_1, 
+        Ecommerce_2, 
+        Ecommerce_1, 
+        Ecommerce_2, 
+        Ecommerce_1, 
+        Ecommerce_2
+    ];
+    const Invest_links = [
+        'https://ctweb-investment-template1.currenttech.pro/'
+    ];
     const create_InvestCardData = (num) => ({
     image: Invest_images[(num - 1) % Invest_images.length],
-    title: `e-Commerce ShoeHouse ${num}`,
+    title: `Investment Dashboard ${num}`,
     code: `EC36900${num}`,
     rate: investClickCounts[num - 1],
     link: Invest_links[(num - 1) % Invest_links.length]
@@ -127,7 +186,7 @@ const OwnSite = () => {
     const Digital_links = ['https://ctweb-digital-template1.currenttech.pro/'];
     const create_DigitalCardData = (num) => ({
     image: Digital_images[(num - 1) % Digital_images.length],
-    title: `e-Commerce ShoeHouse ${num}`,
+    title: `Digital Dashboard ${num}`,
     code: `EC36900${num}`,
     rate: digitalClickCounts[num - 1],
     link: Digital_links[(num - 1) % Digital_links.length]

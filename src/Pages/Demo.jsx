@@ -10,6 +10,9 @@ import Ecommerce_2 from "../Assets/Images/E-commerce/furniture.png";
 import Ecommerce_3 from "../Assets/Images/E-commerce/etrans.png";
 import Ecommerce_4 from "../Assets/Images/E-commerce/neoncart.png";
 import Ecommerce_5 from "../Assets/Images/E-commerce/onlinesale.png";
+import Ecommerce_6 from "../Assets/Images/E-commerce/topico.png";
+import Ecommerce_7 from "../Assets/Images/E-commerce/vue.png";
+import Ecommerce_8 from "../Assets/Images/E-commerce/medsy.png";
 import Cards from "../Components/Card"
 import { useTranslation } from 'react-i18next';
 
@@ -26,13 +29,19 @@ const Demo = () => {
 
     //   E-commerce Dashboard
     const Ecom_images = 
-    [Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, 
-     Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, 
-     Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4,
-     Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, 
-     Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5
+    [
+        Ecommerce_1, Ecommerce_2, Ecommerce_3, Ecommerce_4, Ecommerce_5, Ecommerce_6, Ecommerce_7, Ecommerce_8,
     ];
-    const Ecom_links = ['https://ctweb-template1.currenttech.pro/','https://ctweb-template2.currenttech.pro/','https://ctweb-template3.currenttech.pro/', 'https://ctweb-template4.currenttech.pro/', 'https://ctweb-template5.currenttech.pro/'];
+    const Ecom_links = [
+        'https://ctweb-template1.currenttech.pro/',
+        'https://ctweb-template2.currenttech.pro/',
+        'https://ctweb-template3.currenttech.pro/', 
+        'https://ctweb-template4.currenttech.pro/', 
+        'https://ctweb-template5.currenttech.pro/',
+        'https://ctweb-ecommerce-template.currenttech.pro/',
+        'https://ctweb-ecommerce-template2.currenttech.pro/',
+        'https://ctweb-ecommerce-template3.currenttech.pro/'
+    ];
 
     const create_EcomCardData = (num) => ({
         image: Ecom_images[(num - 1) % Ecom_images.length],
@@ -46,7 +55,7 @@ const Demo = () => {
         link: Ecom_links[(num - 1) % Ecom_links.length]
     });
         
-    const Ecom_cardData = Array.from({ length: 40 }, (_, i) => create_EcomCardData(i + 1));
+    const Ecom_cardData = Array.from({ length: 8 }, (_, i) => create_EcomCardData(i + 1));
 
     const itemsPerPage = 20; // Number of items per page
     const [currentPage, setCurrentPage] = useState(1); // Set initial page = 1
