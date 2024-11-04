@@ -17,6 +17,9 @@ import Admin_1 from "../Assets/Images/Admin/adomx.png";
 import Admin_2 from "../Assets/Images/Admin/oculux.png";
 import Admin_3 from "../Assets/Images/Admin/symox.png";
 import Admin_4 from "../Assets/Images/Admin/vixon.png";
+import Admin_5 from "../Assets/Images/Admin/maxton.png";
+import Admin_6 from "../Assets/Images/Admin/luma.png";
+import Admin_7 from "../Assets/Images/Admin/lexa.png";
 import Cards from "../Components/Card"
 import ownsiteVideo from '../Assets/videos/ownsite.mp4';
 import "slick-carousel/slick/slick.css";
@@ -137,15 +140,18 @@ const OwnSite = () => {
         Admin_2, 
         Admin_3, 
         Admin_4,
-        Admin_1, 
-        Admin_2, 
-        Admin_3, 
-        Admin_4];
+        Admin_5, 
+        Admin_6, 
+        Admin_7, 
+        ];
     const Admin_links = [
         'https://ctweb-admin-template1.currenttech.pro/',
         'https://ctweb-admin-template2.currenttech.pro/',
         'https://ctweb-admin-template3.currenttech.pro/',
         'https://ctweb-admin-template4.currenttech.pro/',
+        'https://ctweb-admin-template5.currenttech.pro/',
+        'https://ctweb-admin-template6.currenttech.pro/',
+        'https://ctweb-admin-template7.currenttech.pro/',
     ];
     const create_AdminCardData = (num) => ({
     image: Admin_images[(num - 1) % Admin_images.length],
