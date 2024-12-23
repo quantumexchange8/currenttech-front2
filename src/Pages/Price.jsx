@@ -1,510 +1,222 @@
 import React, { useState } from 'react';
 import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
-import { WebDesign, ECommerce, CMS, MobileApps, WebDesignMobile, ECommerceMobile, CMSMobile, MobileAppsMobile } from '../Components/Outline.jsx';
+import { WebDesign, ECommerce, CMS, MobileApps, WebDesignMobile, ECommerceMobile, CMSMobile, MobileAppsMobile, Lorry } from '../Components/Outline.jsx';
 import Modal from '../Components/Modal';
 import priceVideo from '../Assets/videos/price.mp4';
 import { useTranslation } from 'react-i18next';
 
+import Image1 from '../Assets/Images/Price/1.png'
+import { PWebsite, PWebsiteG, PECommerce, PECommerceG, Basic, BasicG, Bulb } from '../Components/Outline.jsx';
+import ScrollToTopButton from '../Components/ScrollToTopButton.jsx';
+import { priceData } from '../Data/priceData.js';
+
 const Price = () => {
     const { t } = useTranslation();
-    const [openButton, setOpenButton] = useState(false);
-    const [selectedButton, setSelectedButton] = useState(null);
+    const [selectedWebsiteType, setSelectedWebsiteType] = useState('Website');
+    const [selectedSolutionType, setSelectedSolutionType] = useState('Basic');
 
-    const handleButtonClick = (button) => {
-        setOpenButton(true);
-        setSelectedButton(button);
-    };
+    const selectedData = priceData.find((plan) => plan.website === selectedWebsiteType && plan.solution === selectedSolutionType);
+
 
     return(
-        <div className='flex flex-col w-full justify-center text-center'>
-            <div className='relative mt-[60px] md:mt-0'>
-                <video autoPlay muted playsInline loop className='w-full'>
-                    <source src={priceVideo} type="video/mp4"/>
-                </video>
-
-                <div className='flex flex-col absolute inset-0 justify-center items-center text-center text-white/80 gap-5'>
-                    <div className='text-[32px] md:text-[96px] font-bold'>{t("Price.priceTitle")}</div>
+        <div className='flex flex-col w-full justify-center text-center gap-[200px] pt-[80px] pb-[250px]'>
+            {/* Top Image */}
+            <div className='relative'>
+                <img src={Image1}alt="" className='w-full'/>
+                <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 text-[64px] text-[#D1D5DB] font-light'>
+                    <div>
+                        START BUILD
+                    </div>
+                    <div>
+                        YOUR BUSINESS
+                    </div>
                 </div>
             </div>
 
-            <div className='w-full flex flex-col justify-center items-center'>
-                <div className='max-w-[1000px] flex flex-col w-full'>
-                    <div className='flex flex-col gap-[50px] md:gap-[150px] mt-[50px] md:mt-[150px] mb-[50px] md:mb-[150px] mx-5 md:mx-0'>
-                        <div className='flex flex-col gap-[50px] md:gap-[100px] items-center'>
-                            <div className='flex flex-col gap-[50px] md:gap-[150px]'>
-                                <div className='flex flex-col gap-[10px] md:gap-[50px]'>
-                                    <div className='text-base md:text-5xl font-bold text-left'>
-                                        {/* The most important thing is your values, not the price. */}
-                                        {t("Price.price_SubTitle")}
-                    
-                                    </div>
-                                    <div className='text-sm md:text-2xl font-semibold text-[#666] text-left'>
-                                        {/* In the journey of business development, it's essential to consider more than just 
-                                        funding. However, funding is not the main focus. The key lies in the values you set for 
-                                        your business, how you showcase your business's appeal, and how you allow 
-                                        customers to assess your value. Whether you're a newcomer establishing a business 
-                                        or a well-known company in the market, here you can find the tools and answers you 
-                                        need. */}
-                                        {t("Price.price_Description")}
-                                    </div>
-                                </div>
-
-                                <div className=' bg-black h-[1px] w-full'></div>
-
-                                <div className='flex flex-col gap-[50px] md:gap-[100px] items-center'>
-                                    <div className='text-xl md:text-5xl font-bold text-center'>
-                                        {/* Website Design Pricing */}
-                                        {t("Price.website_Topic")}
-                                    </div>
-
-                                    <div className='flex gap-[40px] md:gap-[100px] items-center'>
-                                        <div className='flex flex-col gap-[10px] md:gap-[20px]'>
-                                            <div className='hidden md:flex'><WebDesign/></div>
-                                            <div className='md:hidden'><WebDesignMobile/></div>
-                                            <div className='text-[#666] text-[10px] md:text-base font-bold md:font-medium text-center'>
-                                                {/* Web Design */}
-                                                {t("Price.picture_1")}
-                                            </div>
-                                        </div>
-                                        <div className='flex flex-col gap-[10px] md:gap-[20px] items-center'>
-                                            <div className='hidden md:flex'><ECommerce/></div>
-                                            <div className='md:hidden'><ECommerceMobile/></div>
-                                            <div className='text-[#666] text-[10px] md:text-base font-bold md:font-medium text-center'>
-                                                {/* e-Commerce */}
-                                                {t("Price.picture_2")}
-                                            </div>
-                                        </div>
-                                        <div className='flex flex-col gap-[10px] md:gap-[20px] items-center'>
-                                            <div className='hidden md:flex'><CMS/></div>
-                                            <div className='md:hidden'><CMSMobile/></div>
-                                            <div className='text-[#666] text-[10px] md:text-base font-bold md:font-medium text-center'>
-                                                {/* CMS */}
-                                                {t("Price.picture_3")}
-                                            </div>
-                                        </div>
-                                        <div className='flex flex-col gap-[10px] md:gap-[20px] items-center'>
-                                            <div className='hidden md:flex'><MobileApps/></div>
-                                            <div className='md:hidden'><MobileAppsMobile/></div>
-                                            <div className='text-[#666] text-[10px] md:text-base font-bold md:font-medium text-center'>
-                                                {/* Mobile App */}
-                                                {t("Price.picture_4")}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+            {/* Body */}
+            <div className='flex flex-col gap-[250px]'>
+                {/* Content */}
+                <div className='flex justify-center gap-[100px]'>
+                    {/* Left Details */}
+                    {selectedData && (
+                    <div className="flex flex-col gap-[100px]">
+                        <div className="flex flex-col gap-[50px] max-w-[1200px]">
+                            {/* Title */}
+                            <div className="flex flex-col gap-[10px] text-left">
+                            <div className="text-4xl text-[#153764] font-bold">{selectedData.title}</div>
+                            <div className="flex gap-1">
+                                <div className="text-xl text-[#557AAA] font-normal">Order now from </div>
+                                <div className="text-xl text-[#557AAA] font-medium">{selectedData.price}</div>
+                                <div className="text-xl text-[#557AAA] font-normal">* </div>
+                            </div>
                             </div>
 
-                            <div className='flex flex-col md:flex-row gap-[50px] md:gap-[40px] items-center'>
-                                <div className='border-[#666] border-[2px] rounded-[20px] w-[353px] md:w-[480px] px-5 py-[30px] md:py-[50px] flex-shrink-0'>
-                                    <div className='flex flex-col gap-[50px] md:gap-[100px]'>
-                                        <div className='flex flex-col gap-[50px]'>
-                                            <div className='flex flex-col text-[#000] text-xl md:text-[32px] font-bold text-center'>
-                                                {/* Basic */}
-                                                {t("Price.basicTitle")}
-                                            </div>
-                                            <div className='flex justify-between'>
-                                                <ul className='list-disc pl-5 text-xs md:text-base font-bold list-outside text-left leading-[25px] md:leading-[30px]'>
-                                                    <li>Design type</li>
-                                                    <li>Pages</li>
-                                                    <li>Revision</li>
-                                                    <li>CRM system</li>
-                                                    <li>Enquiry form</li>
-                                                    <li>Stock pictures</li>
-                                                    <li>Content writing</li>
-                                                    <li>Domain Fee</li>
-                                                    <li>Server hosting</li>
-                                                    <li>Mobile responsive</li>
-                                                    <li>Website maintenance</li>
-                                                    <li>Google analytic</li>
-                                                    <li>Google submission</li>
-                                                    <li>Google business</li>
-                                                    <li>Google console</li>
-                                                    <li>Chat Integration <br /> (Messenger / Whatsapp)</li>
-                                                </ul>
-                                                <div className='text-[#666] text-xs md:text-base font-medium text-right leading-[25px] md:leading-[30px]'>
-                                                    <div>Template base</div>
-                                                    <div>5 pages design</div>
-                                                    <div>X 2</div>
-                                                    <div>Yes</div>
-                                                    <div>Unlimited</div>
-                                                    <div>X 10</div>
-                                                    <div>Yes</div>
-                                                    <div>Free</div>
-                                                    <div>Free</div>
-                                                    <div>Yes</div>
-                                                    <div>1st Year free</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div>
-                                            <div className='text-[#666] text-right text-sm md:text-xl font-medium line-through'>
-                                                RM8,388.00
-                                            </div>
-                                            <div className='text-[#666] text-right text-xs md:text-base font-medium'>
-                                                {/* Now only */}
-                                                {t("Price.currentPrice")}
-                                            </div>
-                                            <div className='text-[#000] text-right text-4xl md:text-5xl font-bold'>
-                                                RM6,399.00
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div className='border-[#666] border-[2px] rounded-[20px] w-[353px] md:w-[480px] px-5 py-[30px] md:py-[50px] flex-shrink-0'>
-                                    <div className='flex flex-col gap-[50px] md:gap-[40px]'>
-                                        <div className='flex flex-col gap-[50px]'>
-                                            <div className='flex flex-col text-[#000] text-xl md:text-[32px] font-bold text-center'>
-                                                {/* Advance */}
-                                                {t("Price.advanceTitle")}
-                                            </div>
-                                            <div className='flex justify-between'>
-                                                <ul className='list-disc pl-5 text-xs md:text-base font-bold list-outside text-left leading-[25px] md:leading-[30px]'>
-                                                    <li>Design type</li>
-                                                    <li>Pages</li>
-                                                    <li>Revision</li>
-                                                    <li>CRM system</li>
-                                                    <li>Enquiry form</li>
-                                                    <li>Stock pictures</li>
-                                                    <li>Content writing</li>
-                                                    <li>Domain Fee</li>
-                                                    <li>Server hosting</li>
-                                                    <li>Mobile responsive</li>
-                                                    <li>Website maintenance</li>
-                                                    <li>Google analytic</li>
-                                                    <li>Google submission</li>
-                                                    <li>Google business</li>
-                                                    <li>Google console</li>
-                                                    <li>Chat Integration <br /> (Messenger / Whatsapp)</li>
-                                                    <li>Guarantee 80% test score</li>
-                                                    <li>Guarantee 80% SEO Checkup score</li>
-                                                    
-                                                </ul>
-                                                <div className='text-[#666] text-xs md:text-base font-medium text-right leading-[25px] md:leading-[30px]'>
-                                                    <div>Custom</div>
-                                                    <div>Unlimited</div>
-                                                    <div>Unlimited</div>
-                                                    <div>Yes</div>
-                                                    <div>Unlimited</div>
-                                                    <div>Unlimited</div>
-                                                    <div>Free</div>
-                                                    <div>Free</div>
-                                                    <div>Free</div>
-                                                    <div>Yes</div>
-                                                    <div>Free</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div> </div>
-                                                    <div> </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div>
-                                            <div className='text-[#666] text-right text-sm md:text-xl font-medium line-through'>
-                                                RM25,688.00
-                                            </div>
-                                            <div className='text-[#666] text-right text-xs md:text-base font-medium'>
-                                                {/* Now only */}
-                                                {t("Price.currentPrice")}
-                                            </div>
-                                            <div className='text-[#000] text-right text-4xl md:text-5xl font-bold'>
-                                                RM16,299.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            {/* Details */}
+                            <div className="flex justify-between w-[600px]">
+                            <ul className="list-disc list-outside pl-7 text-xl text-left text-[#4B5563] font-medium leading-[50px]">
+                                {selectedData.features.map((feature, index) => (
+                                <li key={index}>{feature}</li>
+                                ))}
+                            </ul>
+                            <div className="text-[#6B7280] text-xl md:text-base font-normal text-right md:leading-[50px]">
+                                {selectedData.ans.map((ans, index) => (
+                                <div key={index}>{ans}</div>
+                                ))}
+                            </div>
                             </div>
                         </div>
 
-                        <div className=' bg-black h-[1px] w-full'></div>
-                        
-                        <div className='flex flex-col gap-[50px] md:gap-[100px] items-center'>
-                            <div className='flex flex-col gap-[150px]'>
-                                <div className='flex flex-col gap-[50px] md:gap-[100px] items-center'>
-                                    <div className='text-xl md:text-5xl font-bold text-center'>
-                                        {/* e-Commerce Design Pricing */}
-                                        {t("Price.e-Commerce_Topic")}
-                                    </div>
-
-                                    <div className='flex gap-[40px] md:gap-[100px] items-center'>
-                                        <div className='flex flex-col gap-[10px] md:gap-[20px]'>
-                                            <div className='hidden md:flex'><WebDesign/></div>
-                                            <div className='md:hidden'><WebDesignMobile/></div>
-                                            <div className='text-[#666] text-[10px] md:text-base font-bold md:font-medium text-center'>
-                                                {/* Web Design */}
-                                                {t("Price.picture_1")}
-                                            </div>
-                                        </div>
-                                        <div className='flex flex-col gap-[10px] md:gap-[20px] items-center'>
-                                            <div className='hidden md:flex'><ECommerce/></div>
-                                            <div className='md:hidden'><ECommerceMobile/></div>
-                                            <div className='text-[#666] text-[10px] md:text-base font-bold md:font-medium text-center'>
-                                                {/* e-Commerce */}
-                                                {t("Price.picture_2")}
-                                            </div>
-                                        </div>
-                                        <div className='flex flex-col gap-[10px] md:gap-[20px] items-center'>
-                                            <div className='hidden md:flex'><CMS/></div>
-                                            <div className='md:hidden'><CMSMobile/></div>
-                                            <div className='text-[#666] text-[10px] md:text-base font-bold md:font-medium text-center'>
-                                                {/* CMS */}
-                                                {t("Price.picture_3")}
-                                            </div>
-                                        </div>
-                                        <div className='flex flex-col gap-[10px] md:gap-[20px] items-center'>
-                                            <div className='hidden md:flex'><MobileApps/></div>
-                                            <div className='md:hidden'><MobileAppsMobile/></div>
-                                            <div className='text-[#666] text-[10px] md:text-base font-bold md:font-medium text-center'>
-                                                {/* Mobile App */}
-                                                {t("Price.picture_4")}
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div className="flex justify-between">
+                            {/* Left */}
+                            <div className="flex flex-col gap-[30px] text-left">
+                            <div className="text-xl font-bold">
+                                <div className="text-[#557AAA]">
+                                The above are the requirements for
+                                </div>
+                                <div className="text-[#153764]">
+                                the new website you wish to build.
                                 </div>
                             </div>
+                            <div className="text-xl">
+                                <div className="text-[#4B5563] font-light">{selectedData.combination || ''}</div>
+                                <div className="text-[#153764] font-medium">{selectedData.price}</div>
+                            </div>
+                            {selectedData.discount && (
+                                <div className="text-xl">
+                                <div className="text-[#4B5563] font-light">Now discount</div>
+                                <div className="text-[#153764] font-medium">{selectedData.discount}</div>
+                                </div>
+                            )}
+                            {selectedData.subtotal && (
+                                <div className="text-xl">
+                                <div className="text-[#4B5563] font-light">Subtotal</div>
+                                <div className="text-[#153764] font-medium">{selectedData.subtotal}</div>
+                                </div>
+                            )}
+                            </div>
 
-                            <div className='flex flex-col md:flex-row gap-[50px] md:gap-[40px] items-center'>
-                                <div className='border-[#666] border-[2px] rounded-[20px] w-[353px] md:w-[480px] px-5 py-[30px] md:py-[50px] flex-shrink-0'>
-                                    <div className='flex flex-col gap-[50px] md:gap-[220px]'>
-                                        <div className='flex flex-col gap-[50px]'>
-                                            <div className='flex flex-col text-[#000] text-xl md:text-[32px] font-bold text-center'>
-                                                {/* Basic */}
-                                                {t("Price.basicTitle")}
-                                            </div>
-                                            <div className='flex justify-between'>
-                                                <ul className='list-disc pl-5 text-xs md:text-base font-bold list-outside text-left leading-[25px] md:leading-[30px]'>
-                                                    <li>Landing Page</li>
-                                                    <li>Shopping cart</li>
-                                                    <li>Revision</li>
-                                                    <li>CRM system</li>
-                                                    <li>Max products</li>
-                                                    <li>Stock pictures</li>
-                                                    <li>Order management portal</li>
-                                                    <li>Payment gateway integrate</li>
-                                                    <li>Enquiry form</li>
-                                                    <li>Content writing</li>
-                                                    <li>Domain Fee</li>
-                                                    <li>Server hosting</li>
-                                                    <li>Mobile responsive</li>
-                                                    <li>Website maintenance</li>
-                                                    <li>Google analytic</li>
-                                                    <li>Google submission</li>
-                                                    <li>Google business</li>
-                                                    <li>Google console</li>
-                                                    <li>Chat Integration <br /> (Messenger / Whatsapp)</li>
-                                                </ul>
-                                                <div className='text-[#666] text-xs md:text-base font-medium text-right leading-[25px] md:leading-[30px]'>
-                                                    <div>X 1</div>
-                                                    <div>Yes</div>
-                                                    <div>X 2</div>
-                                                    <div>Yes</div>
-                                                    <div>X 6</div>
-                                                    <div>X 6</div>
-                                                    <div>Yes</div>
-                                                    <div>Free</div>
-                                                    <div>Free</div>
-                                                    <div>Free</div>
-                                                    <div>Free</div>
-                                                    <div>Free</div>
-                                                    <div>Yes</div>
-                                                    <div>1st year free</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div>
-                                            <div className='text-[#666] text-right text-sm md:text-xl font-medium line-through'>
-                                                RM8,388.00
-                                            </div>
-                                            <div className='text-[#666] text-right text-xs md:text-base font-medium'>
-                                                {/* Now only */}
-                                                {t("Price.currentPrice")}
-                                            </div>
-                                            <div className='text-[#000] text-right text-4xl md:text-5xl font-bold'>
-                                                RM6,399.00
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
+                            {/* Right Bottom */}
+                            <div className="flex flex-col justify-end items-end gap-[10px]">
+                            <Lorry />
+                            {selectedData.ship && (
+                                <div className="text-right">
+                                <div className="text-xl text-[#6B7280] font-light">Ships:</div>
+                                <div className="text-xl text-[#153764] font-medium">{selectedData.ship} Weeks</div>
+                                <div className="text-xl text-[#153764] font-medium">Free Testing</div>
                                 </div>
-                                <div className='border-[#666] border-[2px] rounded-[20px] w-[353px] md:w-[480px] px-5 py-[30px] md:py-[50px] flex-shrink-0'>
-                                    <div className='flex flex-col gap-[50px] md:gap-[100px]'>
-                                        <div className='flex flex-col gap-[50px]'>
-                                            <div className='flex flex-col text-[#000] text-xl md:text-[32px] font-bold text-center'>
-                                                {/* Advance */}
-                                                {t("Price.advanceTitle")}
-                                            </div>
-                                            <div className='flex justify-between'>
-                                                <ul className='list-disc pl-5 text-xs md:text-base font-bold list-outside text-left leading-[25px] md:leading-[30px]'>
-                                                    <li>Landing Page</li>
-                                                    <li>Shopping cart</li>
-                                                    <li>Revision</li>
-                                                    <li>CRM system</li>
-                                                    <li>Guest Checkout</li>
-                                                    <li>Customer Portal</li>
-                                                    <li>Products & Variations</li>
-                                                    <li>Stock pictures</li>
-                                                    <li>Order management portal</li>
-                                                    <li>Payment gateway integrate</li>
-                                                    <li>Enquiry form</li>
-                                                    <li>Content writing</li>
-                                                    <li>Domain Fee </li>
-                                                    <li>Server hosting</li>
-                                                    <li>Mobile responsive</li>
-                                                    <li>Website maintenance</li>
-                                                    <li>Blog & article pages</li>
-                                                    <li>Server database backup</li>
-                                                    <li>Google analytic</li>
-                                                    <li>Google submission</li>
-                                                    <li>Google business</li>
-                                                    <li>Google console</li>
-                                                    <li>Chat Integration <br /> (Messenger / Whatsapp)</li>
-                                                </ul>
-                                                <div className='text-[#666] text-xs md:text-base font-medium text-right leading-[25px] md:leading-[30px]'>
-                                                    <div>Custom</div>
-                                                    <div>Yes</div>
-                                                    <div>Unlimited</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Unlimited</div>
-                                                    <div>Unlimited</div>
-                                                    <div>Yes</div>
-                                                    <div>Free</div>
-                                                    <div>Unlimited</div>
-                                                    <div>Free</div>
-                                                    <div>Free</div>
-                                                    <div>Free</div>
-                                                    <div>Yes</div>
-                                                    <div>Free</div>
-                                                    <div>Yes</div>
-                                                    <div>1st year free</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                    <div>Yes</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div>
-                                            <div className='text-[#666] text-right text-sm md:text-xl font-medium line-through'>
-                                                RM28,388.00
-                                            </div>
-                                            <div className='text-[#666] text-right text-xs md:text-base font-medium'>
-                                                {/* Now only */}
-                                                {t("Price.currentPrice")}
-                                            </div>
-                                            <div className='text-[#000] text-right text-4xl md:text-5xl font-bold'>
-                                                RM18,699.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            )}
                             </div>
                         </div>
-
-                        <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                            <div className='flex flex-col gap-5 md:gap-[30px]'>
-                                <div className='text-base md:text-5xl font-bold text-left'>
-                                    {t("Price.priceReminderTitle")}
+                    </div>
+                    )}
+                    {/* Right Sidebar */}
+                    <div className='flex flex-col gap-[100px] pt-[136px]'>
+                        {/* Website */}
+                        <div className='flex flex-col gap-5 w-[500px]'>
+                            <div className='flex gap-[6px] text-xl text-[#557AAA] font-bold'>
+                                What 
+                                <div className='text-xl text-[#153764] font-bold'>type of website</div>
+                                    do you want?
+                            </div>
+                            <button onClick={() => [setSelectedWebsiteType('Website'), window.scrollTo({top: 600,behavior: 'smooth'})]} className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedWebsiteType === 'Website' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                                <div>
+                                    Website
                                 </div>
-                                <div className='flex flex-col text-[#666] text-sm md:text-[32px] text-left leading-[1.20]'>
-                                    <div className='font-semibold md:w-[1000px]'>
-                                        {t("Price.priceReminderDescription")}
+                                {selectedWebsiteType === 'Website' ? <PWebsite /> : <PWebsiteG />}
+                            </button>
+                            <button onClick={() => [setSelectedWebsiteType('e-Commerce'), window.scrollTo({top: 600,behavior: 'smooth'})]}  className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedWebsiteType === 'e-Commerce' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                                <div>
+                                    e-Commerce
+                                </div>
+                                {selectedWebsiteType === 'e-Commerce' ? <PECommerce /> : <PECommerceG />}
+                            </button>
+                        </div>
+                        {/* Solution */}
+                        <div className='flex flex-col gap-5 w-[500px]'>
+                            <div className='flex gap-[6px] text-xl text-[#557AAA] font-bold'>
+                                Which is 
+                                <div className='text-xl text-[#153764] font-bold'>best</div>
+                                for you?
+                            </div>
+                            <button onClick={() => [setSelectedSolutionType('Basic'), window.scrollTo({top: 600,behavior: 'smooth'})]} className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedSolutionType === 'Basic' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                                <div>
+                                    Basic Solution for Startup.
+                                </div>
+                            </button>
+                            <button onClick={() => [setSelectedSolutionType('Advanced'), window.scrollTo({top: 600,behavior: 'smooth'})]}  className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                                <div>
+                                    Advanced Solution for Professional.
+                                </div>
+                            </button>
+                        </div>
+                        {/* Discount */}
+                        <div className='flex flex-col gap-5 w-[500px]'>
+                            <div className='flex gap-[6px] text-xl text-[#557AAA] font-bold'>
+                                Now you can 
+                                <div className='text-xl text-[#153764] font-bold'>save more costs.</div>
+                            </div>
+                            <div className={`text-xl flex justify-between items-center max-w-[500px] px-[30px] py-5 rounded-[10px] ${selectedSolutionType === 'Basic' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                                <div className='text-left'>
+                                    <div>
+                                        Discount for startup business
                                     </div>
+                                    <div>
+                                        RM1,800.00
+                                    </div>
+                                </div>
+                                {selectedSolutionType === 'Basic' ? <Basic /> : <BasicG />}
+                            </div>
+                            <div  className={`text-xl flex justify-between items-center max-w-[500px] px-[30px] py-5 rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                                <div className='text-left'>
+                                    <div>
+                                        For professional save up to
+                                    </div>
+                                    <div>
+                                        RM2,200.00
+                                    </div>
+                                </div>
+                                {selectedSolutionType === 'e-commerce' ? <Basic /> : <BasicG />}
+                            </div>
+                            <button className='text-xl flex justify-between items-center max-w-[500px] px-[30px] py-5 rounded-[10px] bg-[#D1D5DB]'>
+                                <div className='flex flex-col gap-[5px] text-left'>
+                                    <div className='text-xl text-[#153764] font-medium'>
+                                        Need custom made?
+                                    </div>
+                                    <div className='text-base text-[#6B7280] font-normal'>
+                                        Let us know what you think.
+                                    </div>
+                                </div>
+                                <Bulb />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Explore Template */}
+                <div className="flex flex-col justify-center items-center">
+                    <div className="max-w-[1200px] flex flex-col gap-[250px]">
+                        <div className="flex flex-col gap-[50px]">
+                            <div className="flex flex-col gap-[10px]">
+                                <div className="text-[32px] text-[#557AAA] font-medium">WE DO AMAZING STUFF</div>
+                                <div>
+                                    <div className="text-5xl text-[#153764] font-bold">WE DESIGN & DEVELOP</div>
+                                    <div className="text-5xl text-[#153764] font-bold">CREATIVE SOLUTIONS</div>
                                 </div>
                             </div>
-                            <div>
-                                <div 
-                                    className='hidden md:flex flex-col items-start md:gap-10'>
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                            <div 
-                                                className='flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px]'>
-                                                <WhatsApp/>
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20] font-semibold w-[300px]">
-                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                            <div 
-                                                className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px] cursor-pointer'>
-                                                <Gmail/> 
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20] font-semibold w-[400px]">
-                                                    <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                                    <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Mobile Version */}
-                                <div 
-                                    className='flex flex-col items-left gap-5 md:hidden'>
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                            <div 
-                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                                <MobileWhatsApp />
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20] text-left font-semibold w-[190px]">
-                                                    <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                                    <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                            <div 
-                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'
-                                                onClick={() => handleButtonClick('gmail')}>
-                                                <MobileGmail/>
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20] text-left font-semibold w-[220px]">
-                                                    <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                                    <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="flex justify-center items-center">
+                                <a href='#' className="w-auto text-2xl text-[#153764] font-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]">
+                                    EXPLORE TEMPLATE
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
+
+            {/* Scroll To Top Button */}
+            <div className='absolute bg-opacity-20'>
+                <ScrollToTopButton />
+            </div>
         </div>
     )
 }

@@ -35,6 +35,7 @@ const Customize = () => {
 
     return (
         <div className='flex flex-col w-full justify-center text-center'>
+            {/* Video */}
             <div className='relative mt-[60px] md:mt-0'>
                 <video autoPlay muted playsInline loop className='w-full'>
                     <source src={customizeVideo} type="video/mp4"/>

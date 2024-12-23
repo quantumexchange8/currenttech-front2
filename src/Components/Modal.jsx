@@ -1,6 +1,6 @@
 import React from 'react';
-import CT_Logo from '../Assets/Images/CurrentTech_Logo.png'
-import X from '../Assets/Images/X.png'
+import CT_Logo from '../Assets/Images/CurrentTech_Logo.png';
+import X from '../Assets/Images/X.png';
 import Form from './Form';
 
 export default function Modal({ open, onClose, title, content, selectedButton }) {

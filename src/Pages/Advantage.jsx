@@ -1,411 +1,429 @@
-import React, {useContext, useState } from 'react';
-import { Website, ManagementSystem, PosSystem, SupportService, FrontBackend, ProjectTask, Reward} from '../Components/Outline.jsx';
-import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
-import AttendantSystem from '../Assets/Images/AttendentSystemLogo.png';
+import React, { useState,useEffect } from 'react';
+import { Independent, Enterprise, IndependentG, EnterpriseG, FrontBackend, AttendentSystem, ProjectTask, Reward} from '../Components/Outline.jsx';
+import { Website, ManagementSystem, PosSystem, SupportService } from '../Components/Outline.jsx';
 import Modal from '../Components/Modal';
-// import { LanguageContext } from "../LanguagesContext";
-import advantageVideo from '../Assets/videos/advantage.mp4';
-import advantageVideo2 from '../Assets/videos/advantage2.mp4';
 import { useTranslation } from 'react-i18next';
+
+import image1 from '../Assets/Images/Advantage/1.png';
+import image2 from '../Assets/Images/Advantage/2.png';
+import image3 from '../Assets/Images/Advantage/3.png';
+import AOS from 'aos'; 
+import 'aos/dist/aos.css'; 
+import ScrollToTopButton from '../Components/ScrollToTopButton.jsx';
 
 const Advantage = () => {
     const { t, i18n } = useTranslation();
-    const [openButton, setOpenButton] = useState(false);
-    const [selectedButton, setSelectedButton] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedType, setSelectedType] = useState('Independent');
 
-    const handleButtonClick = (button) => {
-        setOpenButton(true);
-        setSelectedButton(button);
-    };    
+    const handleContactUsClick = () => {
+        setIsModalOpen(true);
+    };
 
-    return (
-        <div className='flex flex-col w-full justify-center text-center'>
-            <div className='relative mt-[60px] md:mt-0'>
-                <video autoPlay muted playsInline loop className='w-full'>
-                    <source src={advantageVideo} type="video/mp4"/>
-                </video>
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
-                <div className='flex flex-col absolute inset-0 justify-center items-center text-center text-white/80 gap-5'>
-                    <div className='text-[32px] md:text-[96px] font-bold'>
-                        {t("Advantage.advantageVideoTitle")}
-                    </div>
-                </div>
-            </div>
+    const handleSelectType = (type) => {
+        setSelectedType(type); 
+        window.scrollTo({
+            top: 1200,
+            behavior: 'smooth',
+          });
+    };
 
-            <div className='w-full flex flex-col justify-center items-center gap-[50px] md:gap-[150px]'>
-                <div className='max-w-[1000px] flex flex-col mx-5 md:mx-0 mt-[50px] md:mt-[150px] gap-[50px] md:gap-[150px]'>
-                    <div className='flex flex-col gap-[10px] md:gap-[50px]'>
-                        <div className='flex w-[280px] md:w-[850px] text-base md:text-5xl font-bold text-left'>
-                            <div className='leading-tight'>{t("Advantage.advantageSelfTitle")} </div>
-                        </div>
-                        <div className='text-[#666] text-sm md:text-2xl font-semibold text-left w-[353px] md:w-[1000px] leading-[1.20]'>
-                            {t("Advantage.advantageSelfDescription")}
-                        </div>
-                    </div>
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, 
+            once: false,  
+            offset: 200,
+        });
+    }, []);
 
-                    <div className='w-full h-[1px] bg-[#333]'></div>
-
-                    <div>
-                        <div className='flex flex-col gap-[50px] md:gap-[100px]'>
-                            <div className='flex flex-col gap-[30px] md:gap-[100px]'>
-                                <div className='text-base md:text-5xl font-bold text-left'>
-                                    {t("Advantage.advantageSelfListTitle")}
-                                </div>
-                                <div className='flex flex-row gap-[20px] md:gap-[100px]'>
-                                    <div className='flex flex-shrink-0'>
-                                        <Website/>
+    // Conditional content based on selectedType
+    const renderMainContent = () => {
+        if (selectedType === 'Independent') {
+            return (
+                <div className="flex flex-col gap-[50px]">
+                    {/* Main Content */}
+                    <div className='w-full flex flex-col justify-center items-center gap-[50px] md:gap-[150px]'>
+                        <div className='max-w-[800px] flex flex-col gap-[50px] md:gap-[150px]'>
+                            {/* Advantage */}
+                            <div className='flex flex-col gap-[50px]' data-aos="fade-up">
+                                <img src={image2} alt="Image 2" className='rounded-[10px] w-[800px] h-[500px]' data-aos="fade-up" data-aos-delay="200"/>
+                                <div className='flex flex-col gap-[30px] text-left'>
+                                    <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="200">
+                                        THE ADVANTAGE FOR SELF-EMPLOYED
                                     </div>
-                                    <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                        <div className='text-base md:text-[32px] font-semibold text-left'>
-                                            {t("Advantage.advantageSelfListSubtitle.websiteTitle")}
-                                        </div>
-                                        <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col font-semibold w-[290px] md:w-[800px] leading-tight'>
-                                                {t("Advantage.advantageListDescription.websiteDescription")}
-                                            </div>
+                                    <div className='text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
+                                        <div>
+                                            For self-employed professionals, technology is key. We specialise
+                                        </div> 
+                                        <div>
+                                            in custom systems that enhance your business and simplify
+                                        </div> 
+                                        <div>
+                                            customer management.
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div className='flex gap-[20px] md:gap-[100px]'>
-                                <div className='flex flex-shrink-0'>
-                                    <ManagementSystem/>
-                                </div>
-                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                    <div className='text-base md:text-[32px] font-semibold text-left'>
-                                    {t("Advantage.advantageSelfListSubtitle.managementTitle")}
-                                    </div>
-                                    <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                        <div className='flex flex-col font-semibold w-[290px] md:w-[800px] leading-tight'>
-                                            {t("Advantage.advantageListDescription.managementDescription")}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='flex gap-[20px] md:gap-[100px]'>
-                                <div className='flex flex-shrink-0'>
-                                    <PosSystem/>
-                                </div>
-                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                    <div className='text-base md:text-[32px] font-semibold text-left'>
-                                        {t("Advantage.advantageSelfListSubtitle.paymentTitle")}
-                                    </div>
-                                    <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                        <div className='flex flex-col font-semibold w-[303px] md:w-[800px] leading-[1.20]'>
-                                            {t("Advantage.advantageListDescription.paymentDescription")}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='flex gap-[20px] md:gap-[100px]'>
-                                <div className='flex flex-shrink-0'>
-                                    <SupportService/>
-                                </div>
-                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                    <div className='text-base md:text-[32px] font-semibold text-left'>
-                                        {t("Advantage.advantageSelfListSubtitle.supportTitle")}
-                                    </div>
-                                    <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                        <div className='flex flex-col w-[303px] font-semibold md:w-[800px] leading-[1.20]'>
-                                            {t("Advantage.advantageListDescription.supportDescription")}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div>
-                        <div className='flex flex-col gap-[50px] md:gap-[150px]'>
-                            <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                    <div className=' text-xl md:text-5xl font-bold text-left'>
-                                        {t("Advantage.advantageSelfReminderTitle")}
-                                    </div>
-                                    <div>
-                                        <ul className="list-disc pl-5 md:pl-8 text-[#666] text-left text-sm md:text-2xl font-semibold md:font-bold w-[353px] md:w-[1000px] flex flex-col gap-6 leading-[1.20]">
-                                            <li>{t("Advantage.advantageSelfReminderDescription")}</li>
-                                            <li>{t("Advantage.advantageSelfReminderDescription2")}</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div 
-                                    className='hidden md:flex flex-col items-start md:gap-10'>
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                            <div 
-                                                className='flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px]'>
-                                                <WhatsApp/>
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20] font-semibold w-[300px]">
-                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                            <div 
-                                                className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px] cursor-pointer'>
-                                                <Gmail/> 
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20] font-semibold w-[400px]">
-                                                    <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                                    <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Mobile Version */}
-                                <div 
-                                    className='flex flex-col items-left gap-5 md:hidden'>
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                            <div 
-                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                                <MobileWhatsApp />
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20] text-left font-semibold w-[190px]">
-                                                    <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                                    <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                            <div 
-                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                                <MobileGmail/>
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col leading-[1.20] text-left font-semibold w-[220px]">
-                                                    <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                                    <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='relative w-full'>
-                    <video autoPlay muted playsInline loop className='w-full'>
-                        <source src={advantageVideo2} type="video/mp4"/>
-                    </video>
-                                                            
-                    <div className='flex flex-col absolute inset-0 justify-center items-center text-center text-white/80 gap-5'>
-                        <div className='text-[32px] md:text-[96px] font-bold'>{t("Advantage.enterpriseVideoTitle")} </div>
-                    </div>
-                </div>
-                <div className='max-w-[1000px] flex flex-col gap-[50px] md:gap-[150px] mb-[50px] md:mb-[150px] mx-5 md:mx-0 items-center justify-center'>
-                    <div className='flex flex-col gap-[50px] md:gap-[150px]'>
-                        <div className='flex flex-col gap-[10px] md:gap-[50px]'>
-                            <div className='w-[280px] md:w-[863px] text-base md:text-5xl font-bold text-left leading-[1.20]'>
-                                <div>{t("Advantage.advantageEnterpriseTitle")}</div>
-                            </div>
-                            <div className='text-[#666] text-sm md:text-2xl text-left'>
-                                <div className='flex flex-col font-semibold w-[353px] md:w-[1000px] leading-[1.20]'>
-                                    {t("Advantage.advantageEnterpriseDescription")}
-                                </div>
-                            </div>
-                        </div>
                         
-                        <div className='w-full h-[1px] bg-[#333]'></div>
-
-                        <div className='flex flex-col'>
-                            <div className='flex flex-col gap-[50px] md:gap-[100px]'>
-                                <div className='flex flex-col gap-[30px] md:gap-[100px]'>
-                                    <div className='text-base md:text-5xl font-bold text-left'>
+                            {/* We Tailor for you */}
+                            <div>
+                                <div className='flex flex-col gap-[50px] md:gap-[50px]'>
+                                    {/* Title */}
+                                    <div className='text-base md:text-[32px] font-bold text-left text-[#153764]' data-aos="fade-up" data-aos-delay="200">
+                                        {t("Advantage.advantageSelfListTitle")}
+                                    </div>
+                                    {/* Items */}
+                                    <div className='flex flex-col gap-[100px]'> 
+                                        {/* Website */}
+                                        <div className='flex flex-col gap-[20px] md:gap-[30px]'>
+                                            <div className='flex gap-[30px]' data-aos="fade-up" data-aos-delay="400">
+                                                <div className='flex flex-shrink-0'>
+                                                    <Website/>
+                                                </div>
+                                                <div className='text-base md:text-2xl font-bold text-left text-[#557AAA]' data-aos="fade-up" data-aos-delay="600">
+                                                    {t("Advantage.advantageSelfListSubtitle.websiteTitle")}
+                                                </div>
+                                            </div>
+                                            <div className='text-sm md:text-2xl text-[#4B5563] text-left'>
+                                                <div className='flex flex-col font-normal w-[290px] md:w-[800px] leading-tight' data-aos="fade-up" data-aos-delay="800">
+                                                    <div>
+                                                        {t("Advantage.advantageListDescription.websiteDescription")}
+                                                    </div>
+                                                    <div>
+                                                        {t("Advantage.advantageListDescription.websiteDescription2")}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* Management System */}
+                                        <div className='flex flex-col gap-[20px] md:gap-[30px]'>
+                                            <div className='flex gap-[30px]'>
+                                                <div className='flex flex-shrink-0' data-aos="fade-up" data-aos-delay="400">
+                                                    <ManagementSystem/>
+                                                </div>
+                                                <div className='text-base md:text-2xl font-bold text-left text-[#557AAA]' data-aos="fade-up" data-aos-delay="600">
+                                                    {t("Advantage.advantageSelfListSubtitle.managementTitle")}
+                                                </div>
+                                            </div>
+                                            <div className='flex flex-col gap-[10px] md:gap-[30px]'>
+                                                
+                                                <div className='text-sm md:text-2xl text-[#4B5563] text-left'>
+                                                    <div className='flex flex-col font-normal w-[290px] md:w-[800px] leading-tight' data-aos="fade-up" data-aos-delay="800">
+                                                        <div>
+                                                            {t("Advantage.advantageListDescription.managementDescription")}
+                                                        </div>
+                                                        <div>
+                                                            {t("Advantage.advantageListDescription.managementDescription2")}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* Payment System */}
+                                        <div className='flex flex-col gap-[20px] md:gap-[30px]'>
+                                            <div className='flex gap-[30px]'>
+                                                <div className='flex flex-shrink-0' data-aos="fade-up" data-aos-delay="400">
+                                                    <PosSystem/>
+                                                </div>
+                                                <div className='text-base md:text-2xl font-semibold text-lef text-[#557AAA]' data-aos="fade-up" data-aos-delay="600">
+                                                    {t("Advantage.advantageSelfListSubtitle.paymentTitle")}
+                                                </div>
+                                            </div>
+                                            <div className='flex flex-col gap-[10px] md:gap-[30px]'>
+                                                
+                                                <div className='text-sm md:text-2xl text-[#4B5563] text-left'>
+                                                    <div className='flex flex-col font-normal w-[303px] md:w-[800px] leading-[1.20]' data-aos="fade-up" data-aos-delay="800">
+                                                        <div>
+                                                            {t("Advantage.advantageListDescription.paymentDescription")}
+                                                        </div>
+                                                        <div>
+                                                            {t("Advantage.advantageListDescription.paymentDescription2")}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* Support and Service */}
+                                        <div className='flex flex-col gap-[20px] md:gap-[30px]'>
+                                            <div className='flex gap-[30px]'>
+                                                <div className='flex flex-shrink-0' data-aos="fade-up" data-aos-delay="400">
+                                                    <SupportService/>
+                                                </div>
+                                                <div className='text-base md:text-2xl font-semibold text-left text-[#557AAA]' data-aos="fade-up" data-aos-delay="600">
+                                                    {t("Advantage.advantageSelfListSubtitle.supportTitle")}
+                                                </div>
+                                            </div>
+                                            <div className='flex flex-col gap-[10px] md:gap-[30px]'>
+                                                
+                                                <div className='text-sm md:text-2xl text-[#4B5563] text-left'>
+                                                    <div className='flex flex-col w-[303px] font-normal md:w-[800px] leading-[1.20]' data-aos="fade-up" data-aos-delay="800">
+                                                        <div>
+                                                            {t("Advantage.advantageListDescription.supportDescription")}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        } else if (selectedType === 'Enterprise') {
+            return (
+                <div className="flex flex-col gap-[50px]">
+                    {/* Main Content */}
+                    <div className='w-full flex flex-col justify-center items-center gap-[50px] md:gap-[150px]'>
+                        <div className='max-w-[800px] flex flex-col gap-[50px] md:gap-[150px]'>
+                            {/* Advantage */}
+                            <div className='flex flex-col gap-[50px]'>
+                                <img src={image3} alt="Image 2" className='rounded-[10px] w-[800px] h-[500px]' data-aos="fade-up" data-aos-delay="200"/>
+                                <div className='flex flex-col gap-[30px] text-left'>
+                                    <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="200">
+                                        THE ADVANTAGE FOR ENTERPRISE
+                                    </div>
+                                    <div className='text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
+                                        <div>
+                                            Effective enterprise management covers HR, finance, and tracking
+                                        </div> 
+                                        <div>
+                                            systems. Our tech team has crafted a flexible, precise solution for 
+                                        </div> 
+                                        <div>
+                                            any business.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            {/* We Customise for you */}
+                            <div>
+                                <div className='flex flex-col gap-[50px] md:gap-[50px]'>
+                                    {/* Title */}
+                                    <div className='text-base md:text-[32px] font-bold text-left text-[#153764]' data-aos="fade-up" data-aos-delay="400">
                                         {t("Advantage.advantageEnterpriseListTitle")}
                                     </div>
-                                    <div className='flex gap-5 md:gap-[100px]'>
-                                        <div className='flex flex-shrink-0'>
-                                            <FrontBackend/>
-                                        </div>
-                                        <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                            <div className='text-base md:text-[32px] font-semibold text-left'>
-                                                {t("Advantage.advantageEnterpriseListSubtitle.frontendTitle")}
+                                    {/* Items */}
+                                    <div className='flex flex-col gap-[100px]'> 
+                                        {/* FrontBackend */}
+                                        <div className='flex flex-col gap-5 md:gap-[30px]'>
+                                            <div className='flex gap-[30px]' data-aos="fade-up" data-aos-delay="600">
+                                                <div className='flex flex-shrink-0'>
+                                                    <FrontBackend/>
+                                                </div>
+                                                <div className='text-base md:text-2xl font-bold text-left text-[#557AAA]'>
+                                                    {t("Advantage.advantageEnterpriseListSubtitle.frontendTitle")}
+                                                </div>
                                             </div>
-                                            <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                                <div className='flex flex-col font-semibold w-[300px] md:w-[800px] leading-[1.20]'>
-                                                    {t("Advantage.advantageEnterpriseListDescription.frontendDescription")}
+                                            <div className='text-sm md:text-2xl text-[#4B5563] text-left' data-aos="fade-up" data-aos-delay="800">
+                                                <div className='flex flex-col font-normal w-[300px] md:w-[800px] leading-[1.20]'>
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.frontendDescription")}
+                                                    </div>
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.frontendDescription2")}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div className='flex gap-5 md:gap-[100px]'>
-                                    <div className='flex flex-shrink-0 w-[30px] h-[30px] md:w-[100px] md:h-[100px]'>
-                                        <img src={AttendantSystem} alt="Attendant System"/>
-                                    </div>
-                                    <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                        <div className='text-base md:text-[32px] font-semibold text-left'>
-                                            {t("Advantage.advantageEnterpriseListSubtitle.attendanceTitle")}
-                                        </div>
-                                        <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col font-semibold w-[300px] md:w-[800px] leading-[1.20]'>
-                                                {t("Advantage.advantageEnterpriseListDescription.attendanceDescription")}
+                                        {/* Attendent System */}
+                                        <div className='flex flex-col gap-5 md:gap-[30px]'>
+                                            <div className='flex gap-[30px]'>
+                                                <div className='flex flex-shrink-0 w-[30px]'>
+                                                    <AttendentSystem />
+                                                </div>
+                                                <div className='text-base md:text-2xl font-bold text-left text-[#557AAA]' data-aos="fade-up" data-aos-delay="600">
+                                                    {t("Advantage.advantageEnterpriseListSubtitle.attendanceTitle")}
+                                                </div>
+                                            </div>
+                                            <div className='text-sm md:text-2xl text-[#666] text-left'>
+                                                <div className='flex flex-col font-normal w-[300px] md:w-[800px] leading-[1.20]' data-aos="fade-up" data-aos-delay="800">
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.attendanceDescription")}
+                                                    </div>
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.attendanceDescription2")}
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div className='flex gap-5 md:gap-[100px]'>
-                                    <div className='flex flex-shrink-0'>
-                                        <ProjectTask/>
-                                    </div>
-                                    <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                        <div className='text-base md:text-[32px] font-semibold text-left'>
-                                            {t("Advantage.advantageEnterpriseListSubtitle.projectTitle")}
-                                        </div>
-                                        <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col font-semibold w-[290px] md:w-[800px] leading-[1.20]'>
-                                                {t("Advantage.advantageEnterpriseListDescription.projectDescription")}
+                                        {/* Project Task */}
+                                        <div className='flex flex-col gap-5 md:gap-[30px]'>
+                                            <div className='flex gap-[30px]' data-aos="fade-up" data-aos-delay="600">
+                                                <div className='flex flex-shrink-0'>
+                                                    <ProjectTask/>
+                                                </div>
+                                                <div className='text-base md:text-2xl font-bold text-left text-[#557AAA]'>
+                                                    {t("Advantage.advantageEnterpriseListSubtitle.projectTitle")}
+                                                </div>
+                                            </div>
+                                            <div className='text-sm md:text-2xl text-[#666] text-left'>
+                                                <div className='flex flex-col font-normal w-[290px] md:w-[800px] leading-[1.20]' data-aos="fade-up" data-aos-delay="800">
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.projectDescription")}
+                                                    </div>
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.projectDescription2")}
+                                                    </div>
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.projectDescription3")}
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div className='flex gap-5 md:gap-[100px]'>
-                                    <div className='flex flex-shrink-0'>
-                                        <Reward/>
-                                    </div>
-                                    <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                        <div className='text-base md:text-[32px] font-semibold text-left'>
-                                            {t("Advantage.advantageEnterpriseListSubtitle.rewardTitle")}
-                                        </div>
-                                        <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col font-semibold w-[300px] md:w-[800px] leading-[1.20]'>
-                                                {t("Advantage.advantageEnterpriseListDescription.rewardDescription")}
+                                        {/* Reward Program */}
+                                        <div className='flex flex-col gap-5 md:gap-[30px]'>
+                                            <div className='flex gap-[30px]' data-aos="fade-up" data-aos-delay="600">
+                                                <div className='flex flex-shrink-0'>
+                                                    <Reward/>
+                                                </div>
+                                                <div className='text-base md:text-2xl font-bold text-left text-[#557AAA]'>
+                                                    {t("Advantage.advantageEnterpriseListSubtitle.rewardTitle")}
+                                                </div>
+                                            </div>
+                                            <div className='text-sm md:text-2xl text-[#666] text-left'>
+                                                <div className='flex flex-col font-normal w-[300px] md:w-[800px] leading-[1.20]' data-aos="fade-up" data-aos-delay="800">
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.rewardDescription")}
+                                                    </div>
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.rewardDescription2")}
+                                                    </div>
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.rewardDescription3")}
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div className='flex gap-5 md:gap-[100px]'>
-                                    <div className='flex flex-shrink-0'>
-                                        <SupportService/>
-                                    </div>
-                                    <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                        <div className='text-base md:text-[32px] font-semibold text-left'>
-                                            {t("Advantage.advantageEnterpriseListSubtitle.supportTitle")}
-                                        </div>
-                                        <div className='text-sm md:text-2xl text-[#666] text-left'>
-                                            <div className='flex flex-col font-semibold w-[300px] md:w-[800px] leading-[1.20]'>
-                                                {t("Advantage.advantageEnterpriseListDescription.supportDescription")}
+                                        {/* Support Service */}
+                                        <div className='flex flex-col gap-5 md:gap-[30px]'>
+                                            <div className='flex gap-[30px]' data-aos="fade-up" data-aos-delay="600">
+                                                <div className='flex flex-shrink-0'>
+                                                    <SupportService/>
+                                                </div>
+                                                <div className='text-base md:text-2xl font-bold text-left text-[#557AAA]'>
+                                                    {t("Advantage.advantageEnterpriseListSubtitle.supportTitle")}
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div className='text-sm md:text-2xl text-[#666] text-left'>
+                                                <div className='flex flex-col font-normal w-[300px] md:w-[800px] leading-[1.20]' data-aos="fade-up" data-aos-delay="800">
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.supportDescription")}
+                                                    </div>
+                                                    <div>
+                                                        {t("Advantage.advantageEnterpriseListDescription.supportDescription2")}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
+                </div>
+            );
+        }
+    };
 
-                    <div className='md:hidden flex w-full h-[1px] bg-[#333]'></div>
+    return (
+        <div className="flex flex-col w-full justify-center text-center gap-[200px] pt-[80px] pb-[250px]">
+            {/* Top Image */}
+            <div className="relative">
+                <img src={image1} alt="Advantage Image 1" className="w-full h-[1000px] object-cover" />
+                <div className="absolute top-[40%] left-[20%] text-left flex flex-col gap-[10px]">
+                    <div className="text-2xl text-[#D1D5DB] font-normal">NO NEED TO STRESS ABOUT WHERE TO START</div>
+                    <div className="flex flex-col gap-3 text-5xl text-[#D1D5DB] font-bold">
+                        <div>CRAFTING ADVANTAGES</div>
+                        <div>IS OUR STRENGTH</div>
+                    </div>
+                </div>
+            </div>
 
-                    <div className='flex flex-col gap-[30px] md:gap-[50px]'>
-                        <div className='flex flex-col gap-[10px] md:gap-[30px] md:w-full'>
-                            <div className='text-base md:text-5xl font-bold text-left'>
-                                {t("Advantage.advantageEnterpriseReminderTitle")}
+            {/* Body */}
+            <div className="flex flex-col gap-[250px]">
+                <div className="flex justify-center">
+                    <section className="flex gap-[50px] max-w-[1200px]">
+                        {/* Left Sidebar */}
+                        <div>
+                            <div className="flex sticky top-[80px] ">
+                                <div className="flex flex-col gap-8 bottom-[-30px] relative">
+                                    <button className="flex items-center gap-[30px]" onClick={() => handleSelectType('Independent')}>
+                                        {selectedType === 'Independent' ? <Independent /> : <IndependentG />}
+                                        <div 
+                                            className={`text-2xl text-[#153764] ${
+                                                selectedType === 'Independent' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            INDEPENDENT
+                                        </div>
+                                    </button>
+                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
+                                    <button className="flex items-center gap-[30px]" onClick={() => handleSelectType('Enterprise')}>
+                                        {selectedType === 'Enterprise' ? <Enterprise /> : <EnterpriseG />}
+                                        <div 
+                                            className={`text-2xl text-[#153764] ${
+                                                selectedType === 'Enterprise' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            ENTERPRISE
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="w-[1px] h-[200px] bg-[#9CA3AF]" />
+                            </div>
+                        </div>
+
+                        {/* Main Content */}
+                        <div className="w-[800px] flex flex-col justify-center items-center gap-[50px] md:gap-[150px]">
+                            {renderMainContent()}
+                        </div>
+                    </section>
+                </div>
+
+                {/* Contact Us */}
+                <div className="flex flex-col justify-center items-center">
+                    <div className="max-w-[1200px] flex flex-col gap-[250px]">
+                        <div className="flex flex-col gap-[50px]">
+                            <div className="flex flex-col gap-[10px]" data-aos="fade-up" data-aos-delay="400">
+                                <div className="text-[32px] text-[#557AAA] font-medium">NO NEED TO HESITATE</div>
+                                <div className="text-5xl text-[#153764] font-bold">WE’LL GIVE YOU THE BEST ADVICE</div>
                             </div>
                             <div>
-                                <ul className="list-disc pl-5 md:pl-8 text-left text-sm md:text-2xl flex flex-col gap-6 leading-[1.20] text-[#666] font-semibold md:font-bold md:w-[1000px]">
-                                    <li>
-                                        {t("Advantage.advantageEnterpriseReminderDescription")}
-                                    </li>
-
-                                    <li className='font-semibold md:font-bold w-[330px] md:w-[1000px]'>
-                                        {t("Advantage.advantageEnterpriseReminderDescription2")}
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div 
-                            className='hidden md:flex flex-col items-start md:gap-10'>
-                            <div className='flex flex-row'>
-                                <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                    <div 
-                                        className='flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px]'>
-                                        <WhatsApp/>
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                        <div className="flex flex-col leading-[1.20] font-semibold w-[300px]">
-                                            <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                            <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
-                                        </div>
-                                    </div>
+                                <div className="flex justify-center items-center" data-aos="fade-up" data-aos-delay="600">
+                                    <button
+                                        className="w-[220px] text-2xl text-[#153764] font-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
+                                        onClick={handleContactUsClick}
+                                    >
+                                        CONTACT US
+                                    </button>
                                 </div>
-                            </div>
 
-                            <div className='flex flex-row'>
-                                <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                    <div 
-                                        className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px] cursor-pointer'>
-                                        <Gmail/> 
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                        <div className="flex flex-col leading-[1.20] font-semibold w-[400px]">
-                                            <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                            <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Mobile Version */}
-                        <div 
-                            className='flex flex-col items-left gap-5 md:hidden'>
-                            <div className='flex flex-row'>
-                                <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                    <div 
-                                        className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                        <MobileWhatsApp />
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-sm'>
-                                        <div className="flex flex-col leading-[1.20] text-left font-semibold w-[190px]">
-                                            <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                            <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='flex flex-row'>
-                                <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                    <div 
-                                        className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'
-                                        onClick={() => handleButtonClick('gmail')}>
-                                        <MobileGmail/>
-                                    </div>
-                                    <div className='flex flex-col text-[#666] text-sm'>
-                                        <div className="flex flex-col leading-[1.20] text-left font-semibold w-[220px]">
-                                            <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                            <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Modal
+                                    open={isModalOpen}
+                                    onClose={closeModal}
+                                    title="Contact Us"
+                                    content="Please enter your details to get in touch with us."
+                                    selectedButton="gmail"
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
+
+            {/* Scroll To Top Button */}
+            <div className='bg-opacity-20'>
+                <ScrollToTopButton />
+            </div>
         </div>
-    )
-}
-export default Advantage; 
+    );
+};
+
+export default Advantage;

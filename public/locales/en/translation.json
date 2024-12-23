@@ -10,8 +10,8 @@
       },
 
       "mobileTopbar": {
-        "homePage":"Home",
-        "advantagePage": "Advantage",
+        "homePage":"HOME",
+        "advantagePage": "ADVANTAGE",
         "oneStopPage":"One-Stop",
         "customizePage":"Customize",
         "productsPage": "Products",
@@ -21,7 +21,7 @@
         "supportPage": "Support"
       },
 
-    "Home":{
+    "HOME":{
       "homeVideoTitle":"You cannot stop the ",
       "homeVideoTitle2":"Evolution of Technology",
       "industriesTitle":"CURRENT TECH INDUSTRIES",

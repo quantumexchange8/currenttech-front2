@@ -5,6 +5,13 @@ import Modal from '../Components/Modal';
 import careerVideo from '../Assets/videos/career.mp4';
 import { useTranslation } from 'react-i18next';
 
+import Image1 from '../Assets/Images/Career/1.png';
+import Image2 from '../Assets/Images/Career/2.png';
+import Career1 from '../Assets/Images/Career/career1.png';
+import Career2 from '../Assets/Images/Career/career2.png';
+import Career3 from '../Assets/Images/Career/career3.png';
+import { Designer, Internship, Programmer, GraphicDesign, WebAndAppDesign, WebAndAppDevelopment, BrandingDesign } from '../Components/Outline.jsx';
+
 const Careers = () => {
     const { t } = useTranslation();
     const [openButton, setOpenButton] = useState(false);
@@ -16,233 +23,70 @@ const Careers = () => {
     };
 
     return(
-        <div className='flex flex-col w-full justify-center text-center'>
-            <div className='relative mt-[60px] md:mt-0'>
-                <video autoPlay muted playsInline loop className='w-full'>
-                    <source src={careerVideo} type="video/mp4"/>
-                </video>
-
-                <div className='flex flex-col absolute inset-0 justify-center items-center text-center text-white/80 gap-5'>
-                    <div className='text-[32px] md:text-[96px] font-bold'>{t("Career.careerVideoTitle")}</div>
+        <div className='flex flex-col w-full justify-center text-center gap-[200px] pt-[80px] pb-[250px]'>
+            {/* Top Image */}
+            <div className='relative'>
+                <img src={Image1} alt="" className='w-full'/>
+                <div className='absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[64px] text-[#D1D5DB] font-light'>
+                    <div>
+                        LET'S WORK TOGETHER
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <div className='w-full flex flex-col items-center justify-center'>
-                    <div className='max-w-[1000px] flex flex-col w-full'>
-                        <div className='flex flex-col gap-[50px] md:gap-[150px] mt-[50px] md:mt-[150px] mb-[50px] md:mb-[150px] mx-5 md:mx-0'>
-                            <div className='flex flex-col gap-[10px] md:gap-[50px]'>
-                                <div className='flex flex-col md:w-[900px] text-base md:text-5xl font-bold text-left leading-[1.20]'>
-                                    <div className='block'>{t("Career.careerOpportunitiesTitle")}</div>
-                                    <div className='block'>{t("Career.careerOpportunitiesTitle2")}</div>
-                                </div>
-                                <div className='text-[#666] text-sm md:text-2xl text-left'>
-                                    <div className='flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[1000px]'>
-                                        {t("Career.careerOpportunitiesDescription")}
-                                    </div>
-                                </div>  
+            {/* Title */}
+            <div className='flex flex-col justify-center items-center w-full'>
+                <div className='flex flex-col gap-[50px] md:gap-[150px] max-w-[1200px]'>
+                    <div className='flex flex-col gap-[30px]'>
+                        <div className='flex flex-col text-5xl text-[#557AAA] font-bold text-left leading-tight'>
+                            <div className='block'>{t("Career.careerOpportunitiesTitle")}</div>
+                            <div className='block'>{t("Career.careerOpportunitiesTitle2")}</div>
+                        </div>
+                        <div className='flex flex-col leading-[1.20] font-normal text-[#4B5563] text-2xl text-left'>
+                            <div>
+                                {t("Career.careerOpportunitiesDescription")}
                             </div>
-
-                            <div className='w-full h-[1px] bg-[#333]'></div>
-
-                            <div className='flex flex-col gap-[30px] md:gap-[150px]'>
-                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                    <div className='w-[353px] md:w-[863px] text-base md:text-[48px] font-bold text-left'>
-                                        {t("Career.ItProgrammer.ItProgrammerTitle")}
-                                    </div>
-                                    <div className='text-[#666] text-base md:text-4xl font-medium text-left md:w-[1000px] leading-tight'>
-                                        <div className='text-[#666] text-sm md:text-2xl text-left'>
-                                            <div className='flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[1000px]'>
-                                                {t("Career.ItProgrammer.ItProgrammerDescription")}
-                                            </div>
-                                        </div>  
-                                    </div>  
-                                </div>
-
-                                <div className='flex flex-col gap-5'>
-                                    <div className='flex justify-left'>
-                                        <div className='flex flex-row items-center gap-[20px]'>
-                                            <div className='w-[30px] md:w-[50px] h-[30px] md:h-[50px]'>
-                                                <img src={Gear} alt="Gear" />
-                                            </div>
-                                            <div className='w-[303px] md:w-[863px] text-base md:text-[32px] font-semibold md:font-bold text-left '>
-                                                {t("Career.ItProgrammer.Skill.skillTitle")}
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <ul className="list-disc list-outside text-[#666] text-sm md:text-[32px] text-left font-bold mx-[65px] md:mx-24 leading-[1.20]"> 
-                                        <li>{t("Career.ItProgrammer.Skill.skill_1")}</li>
-                                        <li>{t("Career.ItProgrammer.Skill.skill_2")}</li>
-                                        <li>{t("Career.ItProgrammer.Skill.skill_3")}</li>
-                                        <li>{t("Career.ItProgrammer.Skill.skill_4")}</li>
-                                        <li>{t("Career.ItProgrammer.Skill.skill_5")}</li>
-                                        <li>{t("Career.ItProgrammer.Skill.skill_6")}</li>
-                                        <li>{t("Career.ItProgrammer.Skill.skill_7")}</li>
-                                        <li>{t("Career.ItProgrammer.Skill.skill_8")}</li>
-                                        <li className="mt-5 md:mt-12 font-bold w-[353px] md:w-[1000px]">
-                                            {t("Career.ItProgrammer.Skill.experience")}</li>
-                                    </ul> 
-                                </div>
+                            <div>
+                                {t("Career.careerOpportunitiesDescription2")}
                             </div>
-
-                            <div className='w-full h-[1px] bg-[#333] self-center'></div>
-
-                            <div className='flex flex-col gap-[30px] md:gap-[100px]'>
-                                <div className='flex flex-col gap-5 md:gap-[30px]'>
-                                    <div className='md:w-[863px] text-base md:text-5xl font-bold text-left'>
-                                        {t("Career.UiDesigner.UiDesignerTitle")}
-                                    </div>
-                                    <div className='text-[#666] text-sm md:text-2xl font-semibold text-left'>
-                                        <div className='flex flex-col leading-[1.20] font-semibold w-[353px] md:w-[1000px]'>
-                                            {t("Career.UiDesigner.UiDesignerDescription")}
-                                        </div>
-                                    </div>  
-                                </div>
-
-                                <div className='flex flex-col gap-4'>
-                                    <div className='flex justify-left'>
-                                        <div className='flex flex-row items-center gap-[20px]'>
-                                            <div className='w-[30px] md:w-[50px] h-[30px] md:h-[50px]'>
-                                                <img src={Gear} alt="Gear" />
-                                            </div>
-                                            <div className='w-[303px] md:w-[863px] text-base md:text-[32px] font-semibold md:font-bold text-left'>
-                                                {t("Career.UiDesigner.Skill.skillTitle")}
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <ul className="list-disc list-outside text-[#666] text-sm md:text-[32px] text-left font-bold mx-[65px] md:mx-24 leading-[1.20]"> 
-                                        <li>{t("Career.UiDesigner.Skill.skill_1")}</li>
-                                        <li>{t("Career.UiDesigner.Skill.skill_2")}</li>
-                                        <li>{t("Career.UiDesigner.Skill.skill_3")}</li>
-                                        <li className="mt-5 md:mt-12 font-bold w-[353px] md:w-[1000px]">
-                                            {t("Career.ItProgrammer.Skill.experience")}
-                                        </li>
-                                    </ul> 
-                                </div>
+                            <div>
+                                {t("Career.careerOpportunitiesDescription3")}
                             </div>
+                        </div>  
+                    </div>
 
-                            <div className='w-full h-[1px] bg-[#333] self-center'></div>
+                    
+                </div>
+            </div>
 
-                            <div className='flex flex-col gap-[30px] md:gap-[100px] '>
-                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                    <div className='md:w-[863px] text-base md:text-5xl font-bold text-left'>
-                                        {t("Career.Internship.InternshipTitle")}
-                                    </div>
-                                    <div className='text-[#666] text-sm md:text-2xl text-left'>
-                                        <div className='flex flex-col leading-[1.20] font-semibold md:w-[1000px]'>
-                                            {t("Career.Internship.InternshipDescription")}
-                                        </div>
-                                    </div>  
-                                </div>
-
-                                <div className='flex flex-col gap-5'>
-                                    <div className='flex justify-left'>
-                                        <div className='flex flex-row items-center gap-[20px]'>
-                                            <div className='w-[30px] md:w-[50px] h-[30px] md:h-[50px]'>
-                                                <img src={Gear} alt="Gear" />
-                                            </div>
-                                            <div className='w-[303px] md:w-[863px] text-base md:text-4xl font-semibold md:font-bold text-left'>
-                                                {t("Career.Internship.Skill.skillTitle")}
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <ul className="list-disc list-outside text-[#666] text-sm md:text-[32px] text-left font-bold mx-[65px] md:mx-24 leading-[1.20]"> 
-                                        <li>{t("Career.Internship.Skill.skill_1")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_2")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_3")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_4")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_5")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_6")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_7")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_8")}</li>
-                                        <li className='mt-5 md:mt-12'>{t("Career.Internship.Skill.skill_9")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_10")}</li>
-                                        <li>{t("Career.Internship.Skill.skill_11")}</li>
-                                        <li className='mt-5 md:mt-12' >{t("Career.Internship.Skill.skill_12")}</li>
-                                    </ul> 
-                                </div>
+            {/* Career 1 */}
+            <div className='flex justify-center items-center'>
+                <div className='relative flex max-w-[1500px]'>
+                    <img src={Career1} alt="" className=' w-[1000px] h-[700px]'/>
+                    <div className='relative'>
+                        <div className='relative top-[100px] left-[-200px] flex flex-col gap-[30px] text-left bg-[#D5E7FF] rounded-[10px] p-[50px] w-[700px] h-[364px] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
+                            <div className='text-4xl text-[#557AAA] font-bold'>
+                                IT PROGRAMMER
                             </div>
-
-                            <div className='w-full h-[1px] bg-[#333] self-center md:hidden'></div>
-
-                            <div className='flex flex-col md:gap-[50px]'>
-                                <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                    <div className='text-xl md:text-5xl font-bold text-left'>
-                                        {t("Career.careerReminderTitle")}
+                            <div className='flex gap-[30px]'>
+                                <Programmer />
+                                <div className='flex flex-col gap-[30px]'>
+                                    <div className='text-xl text-[#153764] font-medium'>
+                                        Skill & at lease 1 Year(s) experience.
                                     </div>
-                                    <div className='flex flex-col text-[#666] text-sm md:text-[32px] text-left leading-[1.20]'>
-                                        <div className="font-semibold w-[353px] md:w-[1000px]">
-                                            {t("Career.careerReminderDescription")}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div 
-                                    className='flex flex-col gap-[30px] md:gap-[50px]'>
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                            <div 
-                                                className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px]'>
-                                                <WhatsApp/>
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col leading-[1.20] font-semibold w-[190px] md:w-[260px]">
-                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription")}</div>
-                                                    <div className='hidden md:flex'>{t("Home.whatsappDescription2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-9 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                            <div 
-                                                className='hidden md:flex w-[100px] h-[100px] items-center justify-center gap-6 bg-white border border-[#CCCCCC] rounded-[21.43px] cursor-pointer'>
-                                                <Gmail/> 
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-2xl text-left'>
-                                                <div className="flex flex-col font-semibold w-[280px] leading-[1.20]">
-                                                    <div className='hidden md:flex'>{t("Home.gmailDescription")}</div>
-                                                    <div className='hidden md:flex'>{t("Home.gmailDescription2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Mobile Version */}
-                                <div 
-                                    className='flex flex-col items-left gap-5 md:hidden'>
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('whatsapp')}>
-                                            <div 
-                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                                <MobileWhatsApp />
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col text-left w-[190px] font-semibold leading-[1.20]">
-                                                    <div className='block'>{t("Home.whatsappDescriptionMobile")}</div>
-                                                    <div className='block'>{t("Home.whatsappDescriptionMobile2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className='flex flex-row'>
-                                        <div className='flex gap-5 items-center cursor-pointer' onClick={() => handleButtonClick('gmail')}>
-                                            <div 
-                                                className='flex flex-row w-[50px] h-[50px] items-center justify-center bg-white border border-[#CCCCCC] rounded-[10.71px] cursor-pointer'>
-                                                <MobileGmail/>
-                                            </div>
-                                            <div className='flex flex-col text-[#666] text-sm'>
-                                                <div className="flex flex-col w-[170px] font-semibold text-left leading-[1.20]">
-                                                    <div className='block'>{t("Home.gmailDescriptionMobile")}</div>
-                                                    <div className='block'>{t("Home.gmailDescriptionMobile2")}</div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div className='flex justify-between gap-[97px] pl-7 text-xl text-[#4B5563] font-normal'>
+                                        <ul className=' list-disc list-outside'>
+                                            <li>LARAVEL PHP</li>
+                                            <li>REACT JS</li>
+                                            <li>VUE JS</li>
+                                            <li>FLUTTER</li>
+                                        </ul>
+                                        <ul className=' list-disc list-outside'>
+                                            <li>CSS / HTML</li>
+                                            <li>JAVA SCRIPT</li>
+                                            <li>MQL4 & MQL5</li>
+                                            <li>cBot - cTrader</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +94,176 @@ const Careers = () => {
                     </div>
                 </div>
             </div>
-            <Modal open={openButton} onClose={() => setOpenButton(false)} selectedButton={selectedButton}/>
+
+            {/* Career 2 */}
+            <div className='flex justify-center items-center'>
+                <div className='relative flex max-w-[1500px]'>
+                    <img src={Career2} alt="" className=' w-[1000px] h-[700px]'/>
+                    <div className='relative'>
+                        <div className='relative top-[100px] left-[-200px] flex flex-col gap-[30px] text-left bg-[#D5E7FF] rounded-[10px] p-[50px] w-[700px] h-[364px] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
+                            <div className='text-4xl text-[#557AAA] font-bold'>
+                                UI & UX DESIGNER
+                            </div>
+                            <div className='flex gap-[30px]'>
+                                <Designer />
+                                <div className='flex flex-col gap-[30px]'>
+                                    <div className='text-xl text-[#153764] font-medium'>
+                                        Skill & at lease 1 Year(s) experience.
+                                    </div>
+                                    <div className='flex justify-between gap-[97px] pl-7 text-xl text-[#4B5563] font-normal'>
+                                        <ul className=' list-disc list-outside'>
+                                            <li>FIGMA</li>
+                                            <li>PHOTOSHOP</li>
+                                            <li>PS ILLUSTRATOR</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Career 3 */}
+            <div className='flex justify-center items-center'>
+                <div className='relative flex max-w-[1500px]'>
+                    <img src={Career3} alt="" className=' w-[1000px] h-[700px]'/>
+                    <div className='relative'>
+                        <div className='relative top-[100px] left-[-200px] flex flex-col gap-[30px] text-left bg-[#D5E7FF] rounded-[10px] p-[50px] w-[700px] h-[364px] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
+                            <div className='text-4xl text-[#557AAA] font-bold'>
+                                INTERNSHIP
+                            </div>
+                            <div className='flex gap-[30px]'>
+                                <Internship />
+                                <div className='flex flex-col gap-[30px]'>
+                                    <div className='text-xl text-[#153764] font-medium'>
+                                        Skill & at lease Degree Holder.
+                                    </div>
+                                    <div className='flex justify-between gap-[55px] pl-7 text-xl text-[#4B5563] font-normal'>
+                                        <ul className=' list-disc list-outside'>
+                                            <li>FIGMA</li>
+                                            <li>PHOTOSHOP</li>
+                                            <li>PS ILLUSTRATOR</li>
+                                        </ul>
+                                        <ul className=' list-disc list-outside'>
+                                            <li>LARAVEL PHP</li>
+                                            <li>REACT JS</li>
+                                            <li>VUE JS</li>
+                                            <li>FLUTTER</li>
+                                        </ul>
+                                        <ul className=' list-disc list-outside'>
+                                            <li>CSS / HTML</li>
+                                            <li>JAVA SCRIPT</li>
+                                            <li>MQL4 & MQL5</li>
+                                            <li>cBot - cTrader</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Bottom Image & Discover */}
+            <div className='flex flex-col gap-[250px]'>
+                <div className="relative leading-tight">
+                    {/* Bottom Image */}
+                    <div>
+                        {/* Background Image */}
+                        <div>
+                            <img src={Image2} alt="Image 5" className="w-full h-[500px] object-cover" />
+                        </div>
+
+                        {/* Centered Content */}
+                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[50px]">
+                            {/* Main Title */}
+                            <div className="flex flex-col gap-[10px] text-center text-[#D1D5DB] leading-tight">
+                                <div className='text-[32px] font-normal'>
+                                    WE CREATE AMAZING THINGS
+                                </div>
+                                <div className=' text-5xl font-bold '>
+                                    WE EXPLORE AND INNOVATE
+                                </div>
+                            </div>
+
+                            {/* Icons Section */}
+                            <div className="flex justify-center items-center gap-[150px] text-sm font-normal text-[#D1D5DB]">
+                                {/* Icon 1 */}
+                                <div className='flex flex-col items-center gap-[10px]'>
+                                    <GraphicDesign />
+                                    <div>
+                                        <div>
+                                            AWESOME 
+                                        </div>
+                                        <div>
+                                            DESIGN
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* Icon 2 */}
+                                <div className='flex flex-col items-center gap-[10px]'>
+                                    <WebAndAppDesign />
+                                    <div>
+                                        <div>
+                                            POWERFUL
+                                        </div>
+                                        <div>
+                                            FRAMEWORK
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* Icon 3 */}
+                                <div className='flex flex-col items-center gap-[10px]'>
+                                    <WebAndAppDevelopment />
+                                    <div>
+                                        <div>
+                                            MOBILE
+                                        </div>
+                                        <div>
+                                            FRIENDLY
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* Icon 4 */}
+                                <div className='flex flex-col items-center gap-[10px]'>
+                                    <BrandingDesign />
+                                    <div>
+                                        <div>
+                                            PREMIUM
+                                        </div>
+                                        <div>
+                                            RESOURCES
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* Discover Our Style Page */}
+                <div className="flex flex-col justify-center items-center">
+                    <div className="max-w-[1200px] flex flex-col gap-[250px]">
+                        <div className="flex flex-col gap-[50px]">
+                            <div className="flex flex-col gap-[10px]" >
+                                <div className="text-5xl text-[#153764] font-bold">BUILD FANTASTIC</div>
+                                <div className="text-5xl text-[#557AAA] font-bold">BUILD AWESOME</div>
+                            </div>
+                            <div>
+                                <div className="flex justify-center items-center">
+                                    <a
+                                        href='#'
+                                        className="text-2xl text-[#153764] font-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
+                                    >
+                                        DISCOVER OUR STYLE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     )
 }
