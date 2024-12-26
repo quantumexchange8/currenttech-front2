@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ECommerceExplore, Commercial, CMSDashboard, Investment, DigitalBoard, ECommerceExploreG, CommercialG, CMSDashboardG, InvestmentG, DigitalBoardG, Fire, Prev, Next } from '../Components/Outline';
 import Image1 from '../Assets/Images/CreatingExplore/1.png';
 import Explore1 from '../Assets/Images/CreatingExplore/explore1.png';
@@ -13,6 +13,7 @@ import Explore9 from '../Assets/Images/CreatingExplore/explore9.png';
 import Explorecs from '../Assets/Images/CreatingExplore/explorecs.png';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
 import { useLocation } from 'react-router-dom';
+import AOS from 'aos';
 
 const templates = [
   { id: 1, name: 'EC10001', image: Explore1, title: 'e-Commerce Template', type: 'E-COMMERCE' },
@@ -117,6 +118,14 @@ const CreatingExplore = () => {
         });
     }
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, 
+            once: false,  
+            offset: 200,
+        });
+    }, []);
+
     return (
         <div className='flex justify-center items-center pt-[80px] pb-[200px]'>
             <div className='w-full flex flex-col gap-[200px]'>
@@ -132,7 +141,7 @@ const CreatingExplore = () => {
                     <div className="flex gap-[60px]">
                         {/* Left Sidebar */}
                         <div>   
-                            <div className="flex sticky top-[80px]">
+                            <div className="flex sticky top-[80px]" data-aos="fade-up">
                                 <div className="flex flex-col gap-8 bottom-[-30px] relative">
                                     <button className="flex items-center gap-[30px]" onClick={() => handleSelectedType('E-COMMERCE')}>
                                         {selectedType === 'E-COMMERCE' ? <ECommerceExplore /> : <ECommerceExploreG />}
@@ -194,7 +203,7 @@ const CreatingExplore = () => {
                         </div>
                         <div className='flex flex-col gap-[100px]'>
                             {/* Content */}
-                            <div className='grid grid-cols-3 gap-x-[50px] gap-y-[100px] max-w-[1140px]'>
+                            <div className='grid grid-cols-3 gap-x-[50px] gap-y-[100px] max-w-[1140px]' data-aos="fade-up" data-aos-delay="200">
                                 {paginatedTemplates.map(template => (
                                 <div key={template.id} className='flex flex-col gap-5 w-[330px]'>
                                     <img src={template.image} alt={template.title} />

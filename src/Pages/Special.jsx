@@ -86,7 +86,7 @@ const Special = () => {
                                 {/* web */}
                                 <div className='hidden md:block'>
                                     {/* Text 2 */}
-                                    <div className='relative top-[-300px] left-[330px] hidden md:block'  data-aos="fade-up" data-aos-delay="600">
+                                    <div className='relative top-[-300px] left-[330px] hidden md:block'  data-aos="fade-up" data-aos-delay="400">
                                         <div className="absolute left-0 top-40 md:text-4xl text-[#557AAA] font-normal text-right w-[860px]">
                                             <div>
                                                 {t("Customize.customizeIdea_Title2")}
@@ -103,7 +103,7 @@ const Special = () => {
                                     </div>
 
                                     {/* Text 3 */}
-                                    <div className='relative hidden md:block' data-aos="fade-up" data-aos-delay="600">
+                                    <div className='relative hidden md:block' data-aos="fade-up" data-aos-delay="400">
                                         <div className=' absolute left-0 top-[-140px] md:w-[860px] md:text-4xl text-[#557AAA] font-normal text-left'>
                                             <div>
                                                 {t("Customize.customizeIdea_Title3")}
@@ -115,11 +115,11 @@ const Special = () => {
                                     </div>
 
                                     {/* Emoji */}
-                                    <div data-aos="fade-up" data-aos-delay="800">
+                                    <div data-aos="fade-up" data-aos-delay="600">
                                         <img src={Emoji} alt="Explore 3" />
                                     </div>
 
-                                    <div className='relative' data-aos="fade-up" data-aos-delay="600">                    
+                                    <div className='relative' data-aos="fade-up" data-aos-delay="400">                    
                                         <div className="absolute left-[330px] top-[-680px] md:text-4xl font-normla text-right text-[#557AAA] w-[860px]">
                                             <div>
                                                 {t("Customize.customizeIdea_Title4")}
@@ -178,12 +178,12 @@ const Special = () => {
                     <div className="flex flex-col justify-center items-center">
                         <div className="max-w-[1200px] flex flex-col gap-[250px]">
                             <div className="flex flex-col gap-[50px]">
-                                <div className="flex flex-col gap-[10px]" data-aos="fade-up" data-aos-delay="800">
+                                <div className="flex flex-col gap-[10px]" data-aos="fade-up" data-aos-delay="400">
                                     <div className="text-[32px] text-[#557AAA] font-medium">PREPARING YOUR WEBPAGE</div>
                                     <div className="text-5xl text-[#153764] font-bold">BUILD AWESOME WEBSITE FOR YOU</div>
                                 </div>
                                 <div>
-                                    <div className="flex justify-center items-center"   data-aos="fade-up" data-aos-delay="1000">
+                                    <div className="flex justify-center items-center"   data-aos="fade-up" data-aos-delay="600">
                                         <a
                                             href='creating'
                                             className="text-2xl text-[#153764] font-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"

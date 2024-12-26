@@ -351,7 +351,7 @@ const Advantage = () => {
                 <div className="flex justify-center">
                     <section className="flex gap-[50px] max-w-[1200px]">
                         {/* Left Sidebar */}
-                        <div>
+                        <div  data-aos="fade-up" data-aos-delay="200">
                             <div className="flex sticky top-[80px] ">
                                 <div className="flex flex-col gap-8 bottom-[-30px] relative">
                                     <button className="flex items-center gap-[30px]" onClick={() => handleSelectType('Independent')}>

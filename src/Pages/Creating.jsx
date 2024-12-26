@@ -49,7 +49,7 @@ const Creating = () => {
                 {/* Title */}
                 <div className='flex justify-center'>
                     <div className='flex flex-col gap-[30px] text-center max-w-[1200px] w-auto'> 
-                        <div className="bg-text-gradient bg-clip-text text-transparent text-5xl font-normal flex flex-col gap-4">
+                        <div className="bg-text-gradient bg-clip-text text-transparent text-5xl font-normal flex flex-col gap-4" data-aos="fade-up">
                             <div>
                                 POWERHOUSE FOR YOUR
                             </div>
@@ -65,19 +65,19 @@ const Creating = () => {
                     <div className='max-w-[1500px] w-auto flex flex-col gap-[300px]'>
                         {/* 1 */}
                         <div className='flex gap-[100px]'>
-                            <div>
+                            <div data-aos="fade-up" data-aos-delay="400">
                                 <img src={Creating1} alt=""/>
                             </div>
                             <div className='flex flex-col gap-[50px] w-[500px]'>
                                 <div className='flex flex-col gap-[30px]'>
-                                    <div className='text-2xl text-[#557AAA] font-bold'>
+                                    <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
                                         E-COMMERCE
                                     </div>
-                                    <div className='text-xl text-[#4B5563] font-normal'>
+                                    <div className='text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="600">
                                         e-Commerce offers unmatched convenience with seamless transactions, vast product selections, and easy comparison shopping, empowering consumers with accessibility and efficiency.
                                     </div>
                                 </div>
-                                <div className='flex justify-start'>
+                                <div className='flex justify-start' data-aos="fade-up" data-aos-delay="700">
                                     <button onClick={() => handleExplore("E-COMMERCE")} className='text-2xl text-[#153764] font-normal text-center px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
                                         EXPLORE E-COMMERCE
                                     </button>
@@ -86,19 +86,19 @@ const Creating = () => {
                         </div>
                         {/* 2 */}
                         <div className='flex gap-[100px]'>
-                            <div>
+                            <div data-aos="fade-up" data-aos-delay="200">
                                 <img src={Creating2} alt=""/>
                             </div>
                             <div className='flex flex-col gap-[50px] w-[500px]'>
                                 <div className='flex flex-col gap-[30px]'>
-                                    <div className='text-2xl text-[#557AAA] font-bold'>
+                                    <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="300">
                                         COMMERCIAL
                                     </div>
-                                    <div className='text-xl text-[#4B5563] font-normal'>
+                                    <div className='text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
                                         A commercial web page boosts customer accessibility, 24/7 availability, and dynamic product displays. It enhances brand visibility, streamlines purchases, and drives sales, fostering loyalty.                                    
                                     </div>
                                 </div>
-                                <div className='flex justify-start'>
+                                <div className='flex justify-start' data-aos="fade-up" data-aos-delay="500">
                                     <button onClick={() => handleExplore("COMMERCIAL")} className='text-2xl text-[#153764] font-normal text-center px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
                                         EXPLORE COMMERCIAL
                                     </button>
@@ -107,19 +107,19 @@ const Creating = () => {
                         </div>
                         {/* 3 */}
                         <div className='flex gap-[100px]'>
-                            <div>
+                            <div data-aos="fade-up" data-aos-delay="300">
                                 <img src={Creating3} alt=""/>
                             </div>
                             <div className='flex flex-col gap-[50px] w-[500px]'>
                                 <div className='flex flex-col gap-[30px]'>
-                                    <div className='text-2xl text-[#557AAA] font-bold'>
+                                    <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="400">
                                         CMS DASHBOARD
                                     </div>
-                                    <div className='text-xl text-[#4B5563] font-normal'>
+                                    <div className='text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="500">
                                         An admin dashboard offers centralised control, real-time data, and custom reports, streamlining workflows and enhancing security for swift business decisions.
                                     </div>
                                 </div>
-                                <div className='flex justify-start'>
+                                <div className='flex justify-start' data-aos="fade-up" data-aos-delay="600">
                                     <button onClick={() => handleExplore("CMSDASHBOARD")} className='text-2xl text-[#153764] font-normal text-center px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
                                         EXPLORE CMS DASHBOARD
                                     </button>
@@ -128,19 +128,19 @@ const Creating = () => {
                         </div>
                         {/* 4 */}
                         <div className='flex gap-[100px]'>
-                            <div>
+                            <div data-aos="fade-up" data-aos-delay="400">
                                 <img src={Creating4} alt=""/>
                             </div>
                             <div className='flex flex-col gap-[50px] w-[500px]'>
                                 <div className='flex flex-col gap-[30px]'>
-                                    <div className='text-2xl text-[#557AAA] font-bold'>
+                                    <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
                                         INVESTMENT
                                     </div>
-                                    <div className='text-xl text-[#4B5563] font-normal'>
+                                    <div className='text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="600">
                                         An investment website provides strategy control, real-time tracking, and personalised insights, boosting user experience, trust, and financial growth.
                                     </div>
                                 </div>
-                                <div className='flex justify-start'>
+                                <div className='flex justify-start' data-aos="fade-up" data-aos-delay="700">
                                     <button onClick={() => handleExplore("INVESTMENT")} className='text-2xl text-[#153764] font-normal text-center px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
                                         EXPLORE INVESTMENT
                                     </button>
@@ -149,19 +149,19 @@ const Creating = () => {
                         </div>
                         {/* 5 */}
                         <div className='flex gap-[100px]'>
-                            <div>
+                            <div data-aos="fade-up" data-aos-delay="500">
                                 <img src={Creating5} alt=""/>
                             </div>
                             <div className='flex flex-col gap-[50px] w-[500px]'>
                                 <div className='flex flex-col gap-[30px]'>
-                                    <div className='text-2xl text-[#557AAA] font-bold'>
+                                    <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="600">
                                         DIGITAL BOARD
                                     </div>
-                                    <div className='text-xl text-[#4B5563] font-normal'>
+                                    <div className='text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="700">
                                         A Fintech website with Crypto, Blockchain, NFT, or Gaming features enables real-time transactions, secure asset management, and new revenue streams, enhancing analytics, security, and trust in digital finance.
                                     </div>
                                 </div>
-                                <div className='flex justify-start'>
+                                <div className='flex justify-start' data-aos="fade-up" data-aos-delay="800">
                                     <button onClick={() => handleExplore("DIGITALBOARD")} className='text-2xl text-[#153764] font-normal text-center px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
                                         EXPLORE DIGITAL BOARD
                                     </button>
@@ -187,9 +187,9 @@ const Creating = () => {
                                 <div>
                                     <div className="flex justify-center items-center" data-aos="fade-up" data-aos-delay="600">
                                         <a
-                                            className="w-[220px] text-2xl text-[#153764] font-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
+                                            className="w-auto text-2xl text-[#153764] font-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
                                         >
-                                            CONTACT US
+                                            DISCOVER UNIQUE
                                         </a>
                                     </div>
     

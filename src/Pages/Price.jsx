@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
-import { WhatsApp, MobileWhatsApp, Gmail, MobileGmail } from '../Components/Brand.jsx';
-import { WebDesign, ECommerce, CMS, MobileApps, WebDesignMobile, ECommerceMobile, CMSMobile, MobileAppsMobile, Lorry } from '../Components/Outline.jsx';
-import Modal from '../Components/Modal';
-import priceVideo from '../Assets/videos/price.mp4';
+import React, { useState, useEffect } from 'react';
+import { Lorry } from '../Components/Outline.jsx';
 import { useTranslation } from 'react-i18next';
-
 import Image1 from '../Assets/Images/Price/1.png'
 import { PWebsite, PWebsiteG, PECommerce, PECommerceG, Basic, BasicG, Bulb } from '../Components/Outline.jsx';
 import ScrollToTopButton from '../Components/ScrollToTopButton.jsx';
 import { priceData } from '../Data/priceData.js';
+import AOS from 'aos';
 
 const Price = () => {
     const { t } = useTranslation();
@@ -17,6 +14,13 @@ const Price = () => {
 
     const selectedData = priceData.find((plan) => plan.website === selectedWebsiteType && plan.solution === selectedSolutionType);
 
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, 
+          once: false,  
+          offset: 200,
+        });
+    }, []);
 
     return(
         <div className='flex flex-col w-full justify-center text-center gap-[200px] pt-[80px] pb-[250px]'>
@@ -42,69 +46,69 @@ const Price = () => {
                     <div className="flex flex-col gap-[100px]">
                         <div className="flex flex-col gap-[50px] max-w-[1200px]">
                             {/* Title */}
-                            <div className="flex flex-col gap-[10px] text-left">
-                            <div className="text-4xl text-[#153764] font-bold">{selectedData.title}</div>
-                            <div className="flex gap-1">
-                                <div className="text-xl text-[#557AAA] font-normal">Order now from </div>
-                                <div className="text-xl text-[#557AAA] font-medium">{selectedData.price}</div>
-                                <div className="text-xl text-[#557AAA] font-normal">* </div>
-                            </div>
+                            <div className="flex flex-col gap-[10px] text-left" data-aos="fade-up">
+                                <div className="text-4xl text-[#153764] font-bold">{selectedData.title}</div>
+                                <div className="flex gap-1">
+                                    <div className="text-xl text-[#557AAA] font-normal">Order now from </div>
+                                    <div className="text-xl text-[#557AAA] font-medium">{selectedData.price}</div>
+                                    <div className="text-xl text-[#557AAA] font-normal">* </div>
+                                </div>
                             </div>
 
                             {/* Details */}
-                            <div className="flex justify-between w-[600px]">
-                            <ul className="list-disc list-outside pl-7 text-xl text-left text-[#4B5563] font-medium leading-[50px]">
-                                {selectedData.features.map((feature, index) => (
-                                <li key={index}>{feature}</li>
-                                ))}
-                            </ul>
-                            <div className="text-[#6B7280] text-xl md:text-base font-normal text-right md:leading-[50px]">
-                                {selectedData.ans.map((ans, index) => (
-                                <div key={index}>{ans}</div>
-                                ))}
-                            </div>
+                            <div className="flex justify-between w-[600px]" data-aos="fade-up" deta-aos-delay="200">
+                                <ul className="list-disc list-outside pl-7 text-xl text-left text-[#4B5563] font-medium leading-[50px]">
+                                    {selectedData.features.map((feature, index) => (
+                                    <li key={index}>{feature}</li>
+                                    ))}
+                                </ul>
+                                <div className="text-[#6B7280] text-xl md:text-base font-normal text-right md:leading-[50px]">
+                                    {selectedData.ans.map((ans, index) => (
+                                    <div key={index}>{ans}</div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
                         <div className="flex justify-between">
                             {/* Left */}
-                            <div className="flex flex-col gap-[30px] text-left">
-                            <div className="text-xl font-bold">
-                                <div className="text-[#557AAA]">
-                                The above are the requirements for
+                            <div className="flex flex-col gap-[30px] text-left" data-aos="fade-up" deta-aos-delay="200">
+                                <div className="text-xl font-bold">
+                                    <div className="text-[#557AAA]">
+                                    The above are the requirements for
+                                    </div>
+                                    <div className="text-[#153764]">
+                                    the new website you wish to build.
+                                    </div>
                                 </div>
-                                <div className="text-[#153764]">
-                                the new website you wish to build.
-                                </div>
-                            </div>
-                            <div className="text-xl">
-                                <div className="text-[#4B5563] font-light">{selectedData.combination || ''}</div>
-                                <div className="text-[#153764] font-medium">{selectedData.price}</div>
-                            </div>
-                            {selectedData.discount && (
                                 <div className="text-xl">
-                                <div className="text-[#4B5563] font-light">Now discount</div>
-                                <div className="text-[#153764] font-medium">{selectedData.discount}</div>
+                                    <div className="text-[#4B5563] font-light">{selectedData.combination || ''}</div>
+                                    <div className="text-[#153764] font-medium">{selectedData.price}</div>
                                 </div>
-                            )}
-                            {selectedData.subtotal && (
-                                <div className="text-xl">
-                                <div className="text-[#4B5563] font-light">Subtotal</div>
-                                <div className="text-[#153764] font-medium">{selectedData.subtotal}</div>
-                                </div>
-                            )}
+                                {selectedData.discount && (
+                                    <div className="text-xl">
+                                    <div className="text-[#4B5563] font-light">Now discount</div>
+                                    <div className="text-[#153764] font-medium">{selectedData.discount}</div>
+                                    </div>
+                                )}
+                                {selectedData.subtotal && (
+                                    <div className="text-xl">
+                                    <div className="text-[#4B5563] font-light">Subtotal</div>
+                                    <div className="text-[#153764] font-medium">{selectedData.subtotal}</div>
+                                    </div>
+                                )}
                             </div>
 
                             {/* Right Bottom */}
-                            <div className="flex flex-col justify-end items-end gap-[10px]">
-                            <Lorry />
-                            {selectedData.ship && (
-                                <div className="text-right">
-                                <div className="text-xl text-[#6B7280] font-light">Ships:</div>
-                                <div className="text-xl text-[#153764] font-medium">{selectedData.ship} Weeks</div>
-                                <div className="text-xl text-[#153764] font-medium">Free Testing</div>
-                                </div>
-                            )}
+                            <div className="flex flex-col justify-end items-end gap-[10px]" data-aos="fade-up" deta-aos-delay="400">
+                                <Lorry />
+                                {selectedData.ship && (
+                                    <div className="text-right">
+                                    <div className="text-xl text-[#6B7280] font-light">Ships:</div>
+                                    <div className="text-xl text-[#153764] font-medium">{selectedData.ship} Weeks</div>
+                                    <div className="text-xl text-[#153764] font-medium">Free Testing</div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -112,7 +116,7 @@ const Price = () => {
                     {/* Right Sidebar */}
                     <div className='flex flex-col gap-[100px] pt-[136px]'>
                         {/* Website */}
-                        <div className='flex flex-col gap-5 w-[500px]'>
+                        <div className='flex flex-col gap-5 w-[500px]' data-aos="fade-up" deta-aos-delay="200">
                             <div className='flex gap-[6px] text-xl text-[#557AAA] font-bold'>
                                 What 
                                 <div className='text-xl text-[#153764] font-bold'>type of website</div>
@@ -132,7 +136,7 @@ const Price = () => {
                             </button>
                         </div>
                         {/* Solution */}
-                        <div className='flex flex-col gap-5 w-[500px]'>
+                        <div className='flex flex-col gap-5 w-[500px]' data-aos="fade-up" deta-aos-delay="200">
                             <div className='flex gap-[6px] text-xl text-[#557AAA] font-bold'>
                                 Which is 
                                 <div className='text-xl text-[#153764] font-bold'>best</div>
@@ -150,7 +154,7 @@ const Price = () => {
                             </button>
                         </div>
                         {/* Discount */}
-                        <div className='flex flex-col gap-5 w-[500px]'>
+                        <div className='flex flex-col gap-5 w-[500px]' data-aos="fade-up" deta-aos-delay="200">
                             <div className='flex gap-[6px] text-xl text-[#557AAA] font-bold'>
                                 Now you can 
                                 <div className='text-xl text-[#153764] font-bold'>save more costs.</div>
@@ -196,14 +200,14 @@ const Price = () => {
                 <div className="flex flex-col justify-center items-center">
                     <div className="max-w-[1200px] flex flex-col gap-[250px]">
                         <div className="flex flex-col gap-[50px]">
-                            <div className="flex flex-col gap-[10px]">
+                            <div className="flex flex-col gap-[10px]" data-aos="fade-up" deta-aos-delay="200">
                                 <div className="text-[32px] text-[#557AAA] font-medium">WE DO AMAZING STUFF</div>
                                 <div>
                                     <div className="text-5xl text-[#153764] font-bold">WE DESIGN & DEVELOP</div>
                                     <div className="text-5xl text-[#153764] font-bold">CREATIVE SOLUTIONS</div>
                                 </div>
                             </div>
-                            <div className="flex justify-center items-center">
+                            <div className="flex justify-center items-center" data-aos="fade-up" deta-aos-delay="400">
                                 <a href='#' className="w-auto text-2xl text-[#153764] font-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]">
                                     EXPLORE TEMPLATE
                                 </a>

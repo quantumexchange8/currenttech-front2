@@ -42,7 +42,7 @@ const Products = () => {
             </div>
 
             {/* Product List Bar */}
-            <div className='flex justify-center items-center w-full bg-[#E5E7EB] h-[100px]'  data-aos="fade-up">
+            <div className='flex justify-center items-center w-full bg-[#E5E7EB] h-[100px]' data-aos="fade-up" data-aos-delay="400">
                 <div className='w-[1200px] flex justify-between'>
                     {productData.map((product) => (
                     <button
@@ -57,7 +57,7 @@ const Products = () => {
             </div>
 
             {/* Product Image */}
-            <div className='flex justify-center items-center' data-aos="fade-up" data-aos-delay="200">
+            <div className='flex justify-center items-center' data-aos="fade-up" data-aos-delay="400">
                 <div className='max-w-[1200px]'>
                     <img src={require(`../Assets/Images/Product/${currentProduct.image}`)} alt={currentProduct.title} />
                 </div>
@@ -69,11 +69,11 @@ const Products = () => {
                 <div className='flex flex-col gap-[100px] max-w-[1200px]'>
                     {/* Product Title */}
                     <div className='flex flex-col gap-[50px]'>
-                        <div className=' flex flex-col gap-[10px]' data-aos="fade-up" data-aos-delay="400">
+                        <div className=' flex flex-col gap-[10px]' data-aos="fade-up" data-aos-delay="200">
                             <div className='text-4xl text-[rgb(21,55,100)] font-bold'>{currentProduct.title}</div>
                             <div className='text-xl text-[#557AAA] font-normal'>{currentProduct.category}</div>
                         </div>
-                        <div  data-aos="fade-up" data-aos-delay="600">
+                        <div  data-aos="fade-up" data-aos-delay="400">
                             <div className='text-2xl text-[#4B5563] font-normal'>{currentProduct.description}</div>
                             <div className='text-2xl text-[#4B5563] font-normal'>{currentProduct.description2}</div>
                             <div className='text-2xl text-[#4B5563] font-normal'>{currentProduct.description3}</div>
@@ -86,10 +86,10 @@ const Products = () => {
                         {currentProduct.specifications && Object.keys(currentProduct.specifications).map((section) => (
                         <div className='flex flex-col gap-[10px]' key={section}>
                             {/* Use the custom section title from sectionTitles */}
-                            <div className='text-2xl text-[#557AAA] font-normal' data-aos="fade-up" data-aos-delay="600">
+                            <div className='text-2xl text-[#557AAA] font-normal' data-aos="fade-up" data-aos-delay="200">
                                 {currentProduct.sectionTitles[section] || section.toUpperCase()}
                             </div>
-                            <div className='flex flex-wrap gap-5' data-aos="fade-up" data-aos-delay="800">
+                            <div className='flex flex-wrap gap-5' data-aos="fade-up" data-aos-delay="400">
                             {Array.isArray(currentProduct.specifications[section]) ? (
                                 currentProduct.specifications[section].map((item, index) => (
                                 <div
@@ -102,7 +102,7 @@ const Products = () => {
                                 </div>
                                 ))
                             ) : (
-                                <div className='py-[10px] px-5 rounded-[5px] bg-gradient-to-b from-[#EAF3FF] to-[#BBD7FE] shadow-custom text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
+                                <div className='py-[10px] px-5 rounded-[5px] bg-gradient-to-b from-[#EAF3FF] to-[#BBD7FE] shadow-custom text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
                                     {currentProduct.specifications[section]}
                                 </div>
                             )}
@@ -113,8 +113,8 @@ const Products = () => {
 
                     {/* Summary */}
                     <div className='flex flex-col gap-[10px]'>
-                        <div className='text-2xl text-[#557AAA] font-normal' data-aos="fade-up" data-aos-delay="600">SUMMARY:</div>
-                        <div data-aos="fade-up" data-aos-delay="800">
+                        <div className='text-2xl text-[#557AAA] font-normal' data-aos="fade-up" data-aos-delay="200">SUMMARY:</div>
+                        <div data-aos="fade-up" data-aos-delay="400">
                             <div className='text-2xl text-[#4B5563] font-normal'>{currentProduct.summary}</div>
                             <div className='text-2xl text-[#4B5563] font-normal'>{currentProduct.summary2}</div>
                         </div>

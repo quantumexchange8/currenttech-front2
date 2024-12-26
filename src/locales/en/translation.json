@@ -19,7 +19,8 @@
         "pricePage": "PRICE",
         "aboutPage": "ABOUT",
         "teamPage": "TEAM",
-        "careerPage": "CAREER"
+        "careerPage": "CAREER",
+        "supportPage": "SUPPORT"
       },
 
     "Home":{
@@ -60,17 +61,28 @@
         },
         "ImgCombinationDescription":{
           "educationImgDescription": "Unlocking endless learning potential. Our technology empowers schools to achieve greatness in the classroom.",
-          "F&BImgDescription": "Ordering apps and diverse payment methods ensure a seamless, delightful dining experience.",
+          "educationImgDescriptionM": "Unlocking endless learning potential. Our",
+          "educationImgDescriptionM2": "technology empowers schools to achieve",
+          "educationImgDescriptionM3": "greatness in the classroom.",
+          "F&BImgDescription": "Ordering apps and diverse payment",
+          "F&BImgDescription2": "methods ensure a seamless, delightful",
+          "F&BImgDescription3": "dining experience.",
+          "F&BImgDescriptionMobile": "Ordering apps and diverse payment",
+          "F&BImgDescriptionMobile2": "methods ensure a seamless, delightful",
+          "F&BImgDescriptionMobile3": "dining experience.",
           "F&BImgMobileDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience ",
           "F&BImgMobileDescription2": "for customers, enhancing convenience and satisfaction at every step.",
           "retailImgDescription":"Whether it's managing customer lists, orders, inventory records, or employee attendance, all you need is one comprehensive and intelligent system to streamline operations and enhance efficiency.",
           "wholesaleImgDescription":"Our intelligent system offers",
-          "wholesaleImgDescription2":"customised sourcing solutions, ensuring cost-efficiency and smooth inventory management.",
+          "wholesaleImgDescription2":"customised sourcing solutions, ensuring ",
+          "wholesaleImgDescription3":"cost-efficiency and smooth inventory management.",
           "wholesaleImgMobileDescription":"Providing bulk discounts on goods and wholesale prices on merchandise, our intelligent system specializes in customized sourcing solutions ",
           "wholesaleImgMobileDescription2":"for businesses and retailers, ensuring cost-effectiveness and efficient inventory management.",
-          "logisticImgDescription":"Building an efficient transportation and supply chain system is now achievable through our expertise and tools.",
-          "logisticImgDescription2":" ",
-          "enterpriseImgDescription":"An effective enterprise system enhances communication and drives employee progress."
+          "logisticImgDescription":"Building an efficient transportation and ",
+          "logisticImgDescription2":"supply chain system is now achievable ",
+          "logisticImgDescription3":"through our expertise and tools.",
+          "enterpriseImgDescription":"An effective enterprise system enhances communication and drives employee ",
+          "enterpriseImgDescription2":"progress."
         },
         "homeReminderTitle":"No matter what field or industry you're in.",
         "homeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",

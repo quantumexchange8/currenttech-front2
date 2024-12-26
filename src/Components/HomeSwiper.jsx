@@ -11,6 +11,10 @@ const imagesWithText = [
     title: "EXPERIENCE THE REVOLUTION",
     description1: "Innovation and technological advancements are the",
     description2: "keys to unlocking a sustainable and prosperous future.",
+    descriptionMobile: "Innovation and technological advancements are the keys to",
+    descriptionMobile2: "unlocking a sustainable and",
+    descriptionMobile3: "prosperous future.",
+    descriptionMobile4: "",
   },
   {
     id: 2,
@@ -18,14 +22,21 @@ const imagesWithText = [
     title: "ENGINEERING THE FUTURE",
     description1: "Advanced technologies and scientific",
     description2: "breakthroughs are paving the way for a smarter.",
+    descriptionMobile: "Advanced technologies and",
+    descriptionMobile2: "scientific breakthroughs are",
+    descriptionMobile3: "paving the way for a smarter.",
+    descriptionMobile4: "",
   },
   {
     id: 3,
     src: image3,
     title: "ELEVATE YOUR LIFESTYLE",
-    description1:
-      "Explore the latest trends in entertainment and living. Enhance your everyday",
+    description1:"Explore the latest trends in entertainment and living. Enhance your everyday",
     description2: "experiences with innovations designed for your comfort, joy, and excitement.",
+    descriptionMobile: "Explore the latest trends in entertainment and living. Enhance",
+    descriptionMobile2: "your everyday experiences with innovations designed for your ",
+    descriptionMobile3: "comfort, joy, and excitement.",
+    descriptionMobile4: "",
   },
   {
     id: 4,
@@ -33,6 +44,10 @@ const imagesWithText = [
     title: "BOOSTING WORK QUALITY",
     description1: "Use advanced technology to enhance productivity",
     description2: "and streamline processes for improved work quality.",
+    descriptionMobile: "Use advanced technology to ",
+    descriptionMobile2: "enhance productivity and ",
+    descriptionMobile3: "streamline processes for improved work quality.",
+    descriptionMobile4: "work quality.",
   },
 ];
 
@@ -48,7 +63,7 @@ const HomeSwiper = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[1080px] pt-[80px] overflow-hidden">
+    <div className="relative w-full h-[932px] md:h-[1080px] pt-[80px] overflow-hidden">
       <div className="relative w-full h-full">
         {imagesWithText.map((item, index) => (
           <div
@@ -66,24 +81,33 @@ const HomeSwiper = () => {
             />
             {/* Centered Text */}
             <div className="absolute top-1/2 left-0 w-full text-center text-white p-4 transform -translate-y-1/2">
-              <div className="text-5xl font-bold mb-2">{item.title}</div>
-              <div className="text-2xl font-normal text-[#D1D5DB]">
+              <div className="text-2xl md:text-5xl font-bold mb-2">{item.title}</div>
+              <div className="hidden md:block text-2xl font-normal text-[#D1D5DB]">
                 {item.description1}
               </div>
-              <div className="text-2xl font-normal text-[#D1D5DB]">
+              <div className="hidden md:block text-2xl font-normal text-[#D1D5DB]">
                 {item.description2}
+              </div>
+              <div className="md:hidden text-xl font-normal text-[#D1D5DB]">
+                {item.descriptionMobile}
+              </div>
+              <div className="md:hidden text-xl font-normal text-[#D1D5DB]">
+                {item.descriptionMobile2}
+              </div>
+              <div className="md:hidden text-xl font-normal text-[#D1D5DB]">
+                {item.descriptionMobile3}
               </div>
             </div>
           </div>
         ))}
       </div>
       {/* Pagination */}
-      <div className="absolute z-50 bottom-0 left-1/2 transform -translate-x-1/2 flex gap-[10px] p-[50px]">
+      <div className="absolute z-50 bottom-0 left-1/2 transform -translate-x-1/2 flex gap-[5px] md:gap-[10px] p-[50px]">
         {imagesWithText.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-[60px] h-[1px] rounded-full ${
+            className={`w-[40px] md:w-[60px] h-[1px] rounded-full ${
               currentSlide === index ? "bg-[#6B7280]" : "bg-[#D1D5DB]"
             }`}
           ></button>

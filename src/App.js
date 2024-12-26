@@ -12,9 +12,7 @@ import Special from './Pages/Special';
 import Products from "./Pages/Products";
 import Price from "./Pages/Price";
 import Careers from "./Pages/Careers";
-import Customize from "./Pages/Customize"
-import Demo from "./Pages/Demo"
-import Ownsite from './Pages/OwnSite'
+import Support from "./Pages/Support";
 
 
 
@@ -38,11 +36,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="team" element={<Team />} />
             <Route path="creating_explore" element={<CreatingExplore />} />
-
-
-            <Route path="customize" element={<Customize />} />
-            <Route path="demo" element={<Demo />} />
-            <Route path="ownsite" element={<Ownsite />} />
+            <Route path="support" element={<Support />} />
           </Routes>
           <Footer/>
         </div>
