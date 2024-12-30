@@ -11,18 +11,19 @@ import image5 from "../Assets/Images/Home/5.png";
 import image6 from "../Assets/Images/Home/6.png";
 import imageM1 from "../Assets/Images/Home/M1.png";
 import imageM2 from "../Assets/Images/Home/M2.png";
-import video1 from "../Assets/videos/Home/1.mp4";
-import video2 from "../Assets/videos/Home/2.mp4";
-import video3 from "../Assets/videos/Home/3.mp4";
-import video4 from "../Assets/videos/Home/4.mp4";
-import video5 from "../Assets/videos/Home/5.mp4";
-import video6 from "../Assets/videos/Home/6.mp4";
 import { useTranslation } from 'react-i18next';
 import HomeSwiper from '../Components/HomeSwiper.jsx';
 import HomeCircle from '../Components/HomeCircle.jsx';
 import AOS from 'aos'; 
 import 'aos/dist/aos.css'; 
 import ScrollToTopButton from '../Components/ScrollToTopButton.jsx';
+import { Player } from '@lottiefiles/react-lottie-player';
+import Website from "../Assets/Lottie/web-development.json";
+import Support from "../Assets/Lottie/advertising-strategy.json";
+import Hr from "../Assets/Lottie/business-recruiting.json";
+import CMS from "../Assets/Lottie/digital-marketing.json";
+import Pos from "../Assets/Lottie/online-shopping.json";
+import Mobile from "../Assets/Lottie/social-network.json";
 
 const Home = () => {
 
@@ -287,7 +288,13 @@ const Home = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[200px] gap-y-[100px] md:gap-y-[150px]">
                             {/* Service 1 */}
                             <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="400">
-                                <video src={video1} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' />
+                                <Player
+                                    autoplay
+                                    loop
+                                    src={CMS} // Pass the Lottie JSON file
+                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                />
+                                {/* <video src={video1} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
                                     CMS SYSTEM
                                 </div>
@@ -302,7 +309,13 @@ const Home = () => {
                             </div>
                             {/* Service 2 */}
                             <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="800">
-                                <video src={video2} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' />
+                                <Player
+                                    autoplay
+                                    loop
+                                    src={Website} // Pass the Lottie JSON file
+                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                />
+                                {/* <video src={video2} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
                                     WEBSITE
                                 </div>
@@ -317,7 +330,13 @@ const Home = () => {
                             </div>
                             {/* Service 3 */}
                             <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="400">
-                                <video src={video3} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' />
+                                <Player
+                                    autoplay
+                                    loop
+                                    src={Mobile} // Pass the Lottie JSON file
+                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                />
+                                {/* <video src={video3} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
                                 MOBILE APPLICATIONS
                                 </div>
@@ -332,7 +351,13 @@ const Home = () => {
                             </div>
                             {/* Service 4 */}
                             <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="800">
-                                <video src={video4} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' />
+                                <Player
+                                    autoplay
+                                    loop
+                                    src={Hr} // Pass the Lottie JSON file
+                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                />
+                                {/* <video src={video4} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
                                     HR MANAGEMENT SYSTEM
                                 </div>
@@ -347,7 +372,13 @@ const Home = () => {
                             </div>
                             {/* Service 5 */}
                             <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="400">
-                                <video src={video5} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' />
+                                <Player
+                                    autoplay
+                                    loop
+                                    src={Pos} // Pass the Lottie JSON file
+                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                />
+                                {/* <video src={video5} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
                                     POS SYSTEM
                                 </div>
@@ -362,7 +393,13 @@ const Home = () => {
                             </div>
                             {/* Service 6 */}
                             <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="800">
-                                <video src={video6} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' />
+                                <Player
+                                    autoplay
+                                    loop
+                                    src={Support} // Pass the Lottie JSON file
+                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                />
+                                {/* <video src={video6} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
                                     SUPPORT & SERVICES
                                 </div>
