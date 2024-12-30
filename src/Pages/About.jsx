@@ -35,9 +35,9 @@ const About = () => {
                             </div>
                         </div>
                         <div>
-                            <button className='text-2xl text-[#153764] font-normal w-auto py-[10px] px-[30px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)]'>
+                            <a href='/team' className='text-2xl text-[#153764] font-normal w-auto py-[10px] px-[30px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)]'>
                                 KNOW THE TEAM
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

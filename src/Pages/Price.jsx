@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Lorry } from '../Components/Outline.jsx';
 import { useTranslation } from 'react-i18next';
-import Image1 from '../Assets/Images/Price/1.png'
+import Image1 from '../Assets/Images/Price/1.png';
+import ImageM1 from '../Assets/Images/Price/M1.png';
 import { PWebsite, PWebsiteG, PECommerce, PECommerceG, Basic, BasicG, Bulb } from '../Components/Outline.jsx';
 import ScrollToTopButton from '../Components/ScrollToTopButton.jsx';
 import { priceData } from '../Data/priceData.js';
@@ -26,8 +27,13 @@ const Price = () => {
         <div className='flex flex-col w-full justify-center text-center gap-[200px] pt-[80px] pb-[250px]'>
             {/* Top Image */}
             <div className='relative'>
-                <img src={Image1}alt="" className='w-full'/>
-                <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 text-[64px] text-[#D1D5DB] font-light'>
+                <div className='hidden md:block'>
+                    <img src={Image1}alt="" className='w-full'/>
+                </div>
+                <div className='md:hidden'>
+                    <img src={ImageM1}alt="" className='w-full'/>
+                </div>
+                <div className='absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 text-[32px] md:text-[64px] text-[#D1D5DB] font-light'>
                     <div>
                         START BUILD
                     </div>

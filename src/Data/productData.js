@@ -6,10 +6,10 @@ export const productData = [
         name: 'EDUCATION',
         title: 'KINDERTOWN',
         category: 'Education | Kindergarten | Primary | Secondary | University | Tuition Centre',
-        description:
-            "Kindertown empowers parents, teachers, and school owners to track children's growth with privacy-focused, user-friendly tools. We're expanding to develop software for primary to tertiary education.",
+        description: "Kindertown empowers parents, teachers, and school owners to track children's growth with privacy-focused, user-friendly tools. We're expanding to develop software for primary to tertiary education.",
         description2: "",
         description3: "",
+        descriptionMobile: "Kindertown empowers parents, teachers, and school owners to track children's growth with privacy-focused, user-friendly tools. We're expanding to develop software for primary to tertiary education.",
         specifications: {
             versions: ['KT Parent', 'KT Teacher', 'KT Admin'],
             devices: ['Mobile phone', 'iPad / Tablet', 'PC', 'Mac'],
@@ -32,6 +32,10 @@ export const productData = [
             'Kindertown supports parents, teachers, and students with tools for growth and development. With attendance tracking, personalised tasks, and skill assessments, it ensures every child gets the attention they need, while fostering a safe, structured learning environment. Teachers can tailor education, creating a nurturing space for student success.',
         summary2:
             '',
+        summaryMobile:
+            'Kindertown supports parents, teachers,',
+        summaryMobile2:
+            ' and students with tools for growth and development. With attendance tracking, personalised tasks, and skill assessments, it ensures every child gets the attention they need, while fostering a safe, structured learning environment. Teachers can tailor education, creating a nurturing space for student success.',
     },
     {
         image: 'product2.png',
@@ -42,6 +46,7 @@ export const productData = [
             "E-inbill goes beyond POS and e-invoices. Customisable for F&B, beauty, and retail, it’s the key to unlocking your business advantages.",
         description2: "",
         description3: "",
+        descriptionMobile: "E-inbill goes beyond POS and e-invoices. Customisable for F&B, beauty, and retail, it’s the key to unlocking your business advantages.",
         specifications: {
             versions: ['E-Admin', 'E-Merchant', 'E-Mobile'],
             plan: ['Basic', 'Standard', 'Advanced'],
@@ -59,20 +64,23 @@ export const productData = [
             features: 'FEATURES & SPEC:',
         },
         summary:
-            'E-inbill supports businesses of all sizes, from street vendors to large chains. Hardware, software, payments, and support come together in one seamless solution, ensuring the best experience for ',
+            'E-inbill supports businesses of all sizes, from street vendors to large chains. Hardware, software, payments, and support come together in one seamless solution, ensuring the best experience for you and your customers.',
         summary2:
-            'you and your customers.',
+            '',
+        summaryMobile:
+            'E-inbill supports businesses of all sizes, from street vendors to large chains. Hardware, software, payments, and support come together in one seamless solution, ensuring the best experience for you and your customers.',
+        summaryMobile2:
+            '',
     },
     {
         image: 'product3.png',
         name: 'ATTENDANCE',
         title: 'MOTION CAPTURE',
         category: 'Attendance | Business | Company | Enterprise | Industries',
-        description:
-            "In today’s fast-paced world, businesses face challenges like efficiency, retention, and cost control.",
-        description2:
-        "Our Motion Capture (MOCAP) system tackles these by boosting productivity, morale, and work",
+        description: "In today’s fast-paced world, businesses face challenges like efficiency, retention, and cost control.",
+        description2: "Our Motion Capture (MOCAP) system tackles these by boosting productivity, morale, and work",
         description3: " quality, fostering a positive culture that enhances retention.",
+        descriptionMobile: "In today’s fast-paced world, businesses face challenges like efficiency, retention, and cost control. Our Motion Capture (MOCAP) system tackles these by boosting productivity, morale, and work quality, fostering a positive culture that enhances retention.",
         specifications: {
             versions: ['Mocap employee', 'Mocap employer'],
             devices: ['Mobile phone', 'PC', 'Mac'],
@@ -94,17 +102,20 @@ export const productData = [
         summary:
             'Motion Capture (MOCAP) is an employee management system that boosts productivity and satisfaction. With smart dashboards for managing attendance, tasks, and rewards, it offers flexible hours, performance charts, and birthday perks. For employers, MOCAP provides detailed data, project progress, and task tracking, optimising workforce management and reducing turnover, creating a motivating and efficient work environment.',
         summary2:
-            'you and your customers.',
+            '',
+        summaryMobile:
+            'Motion Capture (MOCAP) is an employee management system that boosts productivity and satisfaction. With smart dashboards for managing attendance, tasks, and rewards, it offers flexible hours, performance charts, and birthday perks. For employers, MOCAP provides detailed data, project progress, and task tracking, optimising workforce management and reducing turnover, creating a motivating and efficient work environment.',
     },
     {
         image: 'product4.png',
         name: 'FINANCE',
         title: 'SMART CMS DASHBOARD',
         category: 'Multi-level | Forex | Cryptocurrency | Binary ',
-        description:
-            "Our IT team excels in crafting intelligent back-office solutions for MetaQuote (MT4/MT5) and cTrader operators. We specialise in custom web design, client frontends, admin backends, and commission systems, delivering precise data through Smart Dash with top-tier security.",
+        description: "Our IT team excels in crafting intelligent back-office solutions for MetaQuote (MT4/MT5) and cTrader operators. We specialise in custom web design, client frontends, admin backends, and commission systems, delivering precise data through Smart Dash with top-tier security.",
         description2: "",
         description3: "",
+        descriptionMobile: "Our IT team excels in crafting intelligent back-office solutions for MetaQuote (MT4/MT5) and cTrader operators. We specialise in custom ",
+        descriptionMobile2: "web design, client frontends, admin backends, and commission systems, delivering precise data through Smart Dash with top-tier security.",
         specifications: {
             versions: ['Smart member', 'Smart master'],
             devices: ['Mobile phone', 'PC', 'Mac'],
@@ -127,16 +138,20 @@ export const productData = [
             'Smart CMS Dashboard empowers brokers and investors with powerful tools. Brokers gain control through the master dashboard, managing wallets, fees, and real-time reports. Investors enjoy a sleek dashboard with digital wallets, rewards, and affiliate structures. With built-in security and integration of copy trading and PAMM, it ensures a secure, engaging trading experience.',
         summary2:
             '',
+        summaryMobile:
+            'Smart CMS Dashboard empowers brokers and investors with powerful tools. Brokers gain control through the master dashboard, managing wallets, fees, and real-time reports. Investors enjoy a sleek dashboard with digital wallets, rewards, and affiliate structures. With built-in security and integration of copy trading and PAMM, it ensures a secure, engaging trading experience.',
+        summaryMobile2:
+            '',
     },
     {
         image: 'product5.png',
         name: 'STOCKIES',
         title: 'BEVERAGE STORAGE SYSTEM',
         category: 'Food & Beverage | Pub & Bistro | Karaoke',
-        description:
-            "We offer a premium beverage storage system with seamless order tracking and storage records. Key features include membership management, employee check-ins, and commission tracking.",
+        description: "We offer a premium beverage storage system with seamless order tracking and storage records. Key features include membership management, employee check-ins, and commission tracking.",
         description2:"",
         description3: "",
+        descriptionMobile: "We offer a premium beverage storage system with seamless order tracking and storage records. Key features include membership management, employee check-ins, and commission tracking.",
         specifications: {
             versions: ['Admin', 'Staff', 'Customer'],
             plan: ['With E-invoice', 'Without E-invoice'],
@@ -157,16 +172,20 @@ export const productData = [
             "Stockies Beverage Storage System offers a comprehensive solution for Malaysia's entertainment venues. With inventory control, low-stock alerts, order tracking, and features like membership areas, employee check-ins, and commission management, it streamlines operations and enhances efficiency, elevating both service and customer experience.",
         summary2:
             '',
+        summaryMobile:
+            "Stockies Beverage Storage System offers a comprehensive solution for Malaysia's entertainment venues. With inventory control, low-stock alerts, order tracking, and features like membership areas, employee check-ins, and commission management, it streamlines operations and enhances efficiency, elevating both service and customer experience.",
+        summaryMobile2:
+            '',
     },
     {
         image: 'product6.png',
         name: 'BROKERAGE',
         title: 'BROKERAGE',
         category: 'Full label solution | Integration | Licensing | CMS | Servicing',
-        description:
-            "We seamlessly integrate the trading platform with our intelligent backend, offering full MetaTrader and cTrader label solutions. Our one-stop service eliminates hassles, speeding up operations and ensuring you don't miss the ideal timing.",
+        description: "We seamlessly integrate the trading platform with our intelligent backend, offering full MetaTrader and cTrader label solutions. Our one-stop service eliminates hassles, speeding up operations and ensuring you don't miss the ideal timing.",
         description2: "",
         description3: "",
+        descriptionMobile: "We seamlessly integrate the trading platform with our intelligent backend, offering full MetaTrader and cTrader label solutions. Our one-stop service eliminates hassles, speeding up operations and ensuring you don't miss the ideal timing.",
         specifications: {
             versions: ['MQ clients terminal', 'MQ Administrator', 'cTrader', 'cBroker'],
             devices: ['Mobile phone', 'iPad / Tablet', 'PC', 'Mac'],
@@ -192,16 +211,20 @@ export const productData = [
             'MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.',
         summary2:
             '',
+        summaryMobile:
+            'MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.',
+        summaryMobile2:
+            '',
     },
     {
         image: 'product7.png',
         name: 'EA BUILDER',
         title: 'AUTO TRADING BOTS',
         category: 'MQL4 | MQL5 | cALGO C#',
-        description:
-            "The rise of AI in trading is an inevitable trend. We specialise in developing intelligent trading systems that transform top traders' strategies into AI-driven solutions, seamlessly integrating with MetaTrader 4, MetaTrader 5, and cTrader platforms.",
+        description: "The rise of AI in trading is an inevitable trend. We specialise in developing intelligent trading systems that transform top traders' strategies into AI-driven solutions, seamlessly integrating with MetaTrader 4, MetaTrader 5, and cTrader platforms.",
         description2: "",
         description3: "",
+        descriptionMobile: "The rise of AI in trading is an inevitable trend. We specialise in developing intelligent trading systems that transform top traders' strategies into AI-driven solutions, seamlessly integrating with MetaTrader 4, MetaTrader 5, and cTrader platforms.",
         specifications: {
             versions: ['MQL4', 'MQL5', 'cALGO'],
             devices: ['PC', 'Mac'],
@@ -223,6 +246,10 @@ export const productData = [
             'The intelligent EA auto-trading system automates complex strategies like trend following, scalping, and arbitrage, adapting to market fluctuations for precise decisions. It boosts efficiency, reduces human intervention, ensures strong risk management, and offers personalised settings for improved trading performance.',
         summary2:
             '',
+        summaryMobile:
+            'The intelligent EA auto-trading system automates complex strategies like trend following, scalping, and arbitrage, adapting to market fluctuations for precise decisions. It boosts efficiency, reduces human intervention, ensures strong risk management, and offers personalised settings for improved trading performance.',
+        summaryMobile2:
+            '',
     },
     {
         image: 'product8.png',
@@ -233,6 +260,7 @@ export const productData = [
             "TTBVNK simplifies cross-border payments, enhancing security for merchants. With easy, free account setup, it offers a reliable and efficient payment solution for businesses.",
         description2: "",
         description3: "",
+        descriptionMobile: "TTBVNK simplifies cross-border payments, enhancing security for merchants. With easy, free account setup, it offers a reliable and efficient payment solution for businesses.",
         specifications: {
             versions: ['Master portal', 'Merchant portal'],
             devices: ['PC', 'Mobile phone', 'iPad / Tablet'],
@@ -253,6 +281,10 @@ export const productData = [
         summary:
             'Scale globally with TTBVNK. Accept instant crypto payments in Bitcoin, Ethereum, and more, with no technical integration. Our intuitive wallet makes joining the digital economy effortless.',
         summary2:
+            '',
+        summaryMobile:
+            'Scale globally with TTBVNK. Accept instant crypto payments in Bitcoin, Ethereum, and more, with no technical integration. Our intuitive wallet makes joining the digital economy effortless.',
+        summaryMobile2:
             '',
     },
 ];

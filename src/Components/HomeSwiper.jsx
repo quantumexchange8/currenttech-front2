@@ -57,7 +57,7 @@ const HomeSwiper = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % imagesWithText.length);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -68,10 +68,10 @@ const HomeSwiper = () => {
         {imagesWithText.map((item, index) => (
           <div
             key={item.id}
-            className={`absolute inset-0 transition-transform duration-1000 ease-out ${
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in ${
               currentSlide === index
-                ? "scale-100 opacity-100 z-10"
-                : "scale-50 opacity-0 z-0"
+                ? "opacity-100 z-10"
+                : "opacity-0 z-0"
             }`}
           >
             <img
@@ -104,13 +104,18 @@ const HomeSwiper = () => {
       {/* Pagination */}
       <div className="absolute z-50 bottom-0 left-1/2 transform -translate-x-1/2 flex gap-[5px] md:gap-[10px] p-[50px]">
         {imagesWithText.map((_, index) => (
-          <button
+          <div
             key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-[40px] md:w-[60px] h-[1px] rounded-full ${
-              currentSlide === index ? "bg-[#6B7280]" : "bg-[#D1D5DB]"
-            }`}
-          ></button>
+            className="relative w-[40px] md:w-[60px] h-[3px] bg-[#D1D5DB] rounded-full overflow-hidden"
+          >
+            <div
+              className={`absolute top-0 left-0 h-full bg-[#6B7280] ${
+                currentSlide === index
+                  ? "transition-all duration-[4000ms] w-full"
+                  : "w-0 transition-none"
+              }`}
+            ></div>
+          </div>
         ))}
       </div>
     </div>

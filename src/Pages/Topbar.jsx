@@ -64,7 +64,7 @@ const Topbar = () => {
     return (
         <div className='flex flex-col'> 
             <div className="md:h-[80px] h-[50px] w-full fixed z-50 bg-[#FFF] flex justify-center backdrop-blur-sm">
-                <div className="w-full md:w-[1500px] max-w-[1500px] flex justify-between items-center md:gap-[50px]">
+                <div className="w-full md:w-[1500px] max-w-[1500px] px-8 flex justify-between items-center md:gap-[50px]">
                     {/* LogoSvg only shown on web version */}
                     <div className='hidden md:flex'>
                         <Link to="/">
@@ -73,16 +73,16 @@ const Topbar = () => {
                     </div>
 
                     {/* LogoSvg between Earphone and Lang on mobile version */}
-                    <div className='md:hidden flex w-full justify-between items-center py-[10px] px-[25px]'>
+                    <div className='md:hidden flex w-full justify-between items-center px-[25px] '>
                         {/* Logo */}
                         <Link to="/">
                             <img src={LogoSvg} alt="icon" className='w-[113px] h-[30px]' />
                         </Link>
 
                         {/* Menu */}
-                        <div className="md:hidden justify-center gap-[30px] cursor-pointer">
+                        <div className="md:hidden justify-center items-center gap-[30px] cursor-pointer">
                             <Menu as="div" className="relative text-left">
-                                <Menu.Button className="inline-flex justify-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 mt-[5px]">
+                                <Menu.Button className="flex justify-center items-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
                                     <div className="transition duration-300 ease-in-out transform hover:scale-110">
                                         <MenusM />
                                     </div>
@@ -97,7 +97,7 @@ const Topbar = () => {
                                     leaveFrom="transform opacity-100 scale-100"
                                     leaveTo="transform opacity-0 scale-95"
                                 >
-                                    <Menu.Items className="absolute flex flex-col justify-center gap-[30px] mt-[50px] p-[50px] rounded-[5px] bg-gradient-to-b from-[#EAF3FF] to-[#BBD7FE] shadow-lg ring-1 ring-black/5 focus:outline-none text-2xl font-normal text-center right-0 w-auto">
+                                    <Menu.Items className="absolute flex flex-col justify-center items-center gap-[30px] mt-[30px] md:mt-[50px] pt-[30px] pb-10 md:p-[50px] rounded-[5px] bg-gradient-to-b from-[#EAF3FF] to-[#BBD7FE] text-2xl font-normal text-center right-0 w-[340px] z-50">
                                         {/* Home Page */}
                                         <Menu.Item>
                                             {({ active }) => (
@@ -308,7 +308,7 @@ const Topbar = () => {
                                             )}
                                         </Menu.Item>
 
-                                        <div className="flex justify-center gap-4 mt-5">
+                                        <div className="flex justify-center gap-[30px] md:gap-4 mt-5">
                                             {/* English Icon */}
                                             <button className="transform hover:scale-110 transition duration-300 ease-in-out" onClick={() => toggleLanguage('en')}>
                                                 <English />
@@ -427,7 +427,7 @@ const Topbar = () => {
                                                     <button
                                                         className={`${
                                                             active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center font-semibold`}
+                                                        } group flex flex-col w-full items-center`}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.homePage")}

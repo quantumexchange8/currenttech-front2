@@ -549,10 +549,10 @@ const Home = () => {
                         <img src={imageM2} alt="Image 6" className='w-full object-cover h-[200px]' data-aos="fade-up" data-aos-delay="200"/>
                     </div>
                     <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[10px] px-[45px] md:px-0 py-[62px] md:py-0'>
-                        <div className='text-xl md:text-[32px] text-[#D1D5DB] font-normal' data-aos="fade-up" data-aos-delay="200"> 
+                        <div className='text-xl md:text-[32px] text-[#D1D5DB] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200"> 
                             WHY CHOOSE US
                         </div>
-                        <div className='text-2xl md:text-5xl text-[#D1D5DB] font-bold' data-aos="fade-up" data-aos-delay="400">
+                        <div className='text-2xl md:text-5xl text-[#D1D5DB] font-bold leading-normal' data-aos="fade-up" data-aos-delay="400">
                             WE UNIQUE & DIFFERENT
                         </div>
                     </div>
@@ -720,10 +720,10 @@ const Home = () => {
             {/* Contact Us */}
             <div className='flex flex-col gap-[50px]'>
                 <div className='flex flex-col gap-[10px]'>
-                    <div className='text-xl md:text-[32px] text-[#557AAA] font-normal md:font-medium' data-aos="fade-up" data-aos-delay="600">
+                    <div className='text-xl md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal' data-aos="fade-up" data-aos-delay="600">
                         NOTHING IS IMPOSSIBLE
                     </div>
-                    <div className='hidden md:block text-5xl text-[#153764] font-bold' data-aos="fade-up" data-aos-delay="800">
+                    <div className='hidden md:block text-5xl text-[#153764] font-bold leading-normal' data-aos="fade-up" data-aos-delay="800">
                         DON’T LET HESITATION HOLD YOU BACK
                     </div>
                     <div className='md:hidden text-2xl text-[#153764] font-bold' data-aos="fade-up" data-aos-delay="800">
