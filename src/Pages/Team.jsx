@@ -21,7 +21,7 @@ const Team = () => {
             <div className='flex flex-col gap-[200px] w-full'>
                 {/* Top Image */}
                 <div className='relative'>
-                    <img src={Image1} alt="" className='w-full'/>
+                    <img src={Image1} alt="" className='w-full object-cover'/>
                     <div className='absolute top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[64px] text-[#D1D5DB] font-light'>
                         <div>
                             OUR TEAM
@@ -31,10 +31,10 @@ const Team = () => {
                 {/* OVER 15 SKILLED PROFESSIONALS */}
                 <div className='flex flex-col justify-center items-center'>
                     <div className='flex flex-col gap-[30px] max-w-[1200px] w-[1200px]'>
-                        <div className='text-5xl text-[#557AAA] font-bold' data-aos="fade-up">
+                        <div className='text-5xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
                             OVER 15 SKILLED PROFESSIONALS
                         </div>
-                        <div className='text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
+                        <div className='text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                             <div>
                                 A strong team of 15+ professionals across IT, Mobile App, UI/UX, and Core Management, driving
                             </div> 
@@ -59,8 +59,8 @@ const Team = () => {
                                         IT ENGINEERING
                                     </div>
                                 </div>
-                                <div className='flex gap-[78px] text-xl text-[#4B5563] font-normal leading-[40px]' data-aos="fade-up" data-aos-delay="600">
-                                    <ul className='list-disc list-outside pl-7'>
+                                <div className='flex justify-between text-xl text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             System Architecture Design
                                         </li>
@@ -74,7 +74,7 @@ const Team = () => {
                                             Database Management
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-outside pl-7'>
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             System Integration
                                         </li>
@@ -85,7 +85,7 @@ const Team = () => {
                                             Process Automation Optimisation
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-outside pl-7'>
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             Data Analysis and Processing
                                         </li>
@@ -103,7 +103,7 @@ const Team = () => {
                         <div className='flex justify-center'>
                             {/* Left */}
                             <div className='w-full' data-aos="fade-up" data-aos-delay="800">
-                                <img src={Image2} alt="" className='w-full max-h-[600px]'/>
+                                <img src={Image2} alt="" className='w-full max-h-[600px] object-cover'/>
                             </div>
                             {/* Right */}
                             <div className='flex flex-col gap-[30px] justify-center px-[132px]'>
@@ -134,8 +134,8 @@ const Team = () => {
                                         MOBILE APP ENGINEERING
                                     </div>
                                 </div>
-                                <div className='flex gap-[78px] text-xl text-[#4B5563] font-normal leading-[40px]' data-aos="fade-up" data-aos-delay="600">
-                                    <ul className='list-disc list-outside pl-7'>
+                                <div className='flex justify-between text-xl text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             App Store Deployment
                                         </li>
@@ -149,7 +149,7 @@ const Team = () => {
                                             Feature Development
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-outside pl-7'>
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             API Development and Integration
                                         </li>
@@ -160,7 +160,7 @@ const Team = () => {
                                             Version Control Management
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-outside pl-7'>
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             In-App Purchase Implementation
                                         </li>
@@ -178,7 +178,7 @@ const Team = () => {
                         <div className='flex justify-center'>
                             {/* Left */}
                             <div className='w-full' data-aos="fade-up" data-aos-delay="400">
-                                <img src={Image3} alt="" className='w-full max-h-[600px]'/>
+                                <img src={Image3} alt="" className='w-full max-h-[600px] object-cover'/>
                             </div>
                             {/* Right */}
                             <div className='flex flex-col gap-[30px] justify-center px-[132px]'>
@@ -215,8 +215,8 @@ const Team = () => {
                                         UI AND UX DESIGN
                                     </div>
                                 </div>
-                                <div className='flex gap-[78px] text-xl text-[#4B5563] font-normal leading-[40px]' data-aos="fade-up" data-aos-delay="600">
-                                    <ul className='list-disc list-outside pl-7'>
+                                <div className='flex gap-[78px] text-xl text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             User Research
                                         </li>
@@ -230,7 +230,7 @@ const Team = () => {
                                             Visual Design
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-outside pl-7'>
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             Interaction Design
                                         </li>
@@ -241,7 +241,7 @@ const Team = () => {
                                             Responsive Designnt
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-outside pl-7'>
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             Design System Creation
                                         </li>
@@ -259,7 +259,7 @@ const Team = () => {
                         <div className='flex justify-center'>
                             {/* Left */}
                             <div className='w-full' data-aos="fade-up" data-aos-delay="400">
-                                <img src={Image4} alt="" className='w-full max-h-[600px]'/>
+                                <img src={Image4} alt="" className='w-full max-h-[600px] object-cover'/>
                             </div>
                             {/* Right */}
                             <div className='flex flex-col gap-[30px] justify-center px-[132px]'>
@@ -293,8 +293,8 @@ const Team = () => {
                                         CORE MANAGEMENT
                                     </div>
                                 </div>
-                                <div className='flex gap-[78px] text-xl text-[#4B5563] font-normal leading-[40px]' data-aos="fade-up" data-aos-delay="600">
-                                    <ul className='list-disc list-outside pl-7'>
+                                <div className='flex gap-[78px] text-xl text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             Strategic Planning
                                         </li>
@@ -308,7 +308,7 @@ const Team = () => {
                                             Financial Management
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-outside pl-7'>
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             Employee Benefits
                                         </li>
@@ -319,7 +319,7 @@ const Team = () => {
                                             Team Building
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-outside pl-7'>
+                                    <ul className='list-disc list-inside'>
                                         <li>
                                             Decision-Making Processes
                                         </li>
@@ -337,7 +337,7 @@ const Team = () => {
                         <div className='flex justify-center'>
                             {/* Left */}
                             <div className='w-full' data-aos="fade-up" data-aos-delay="400">
-                                <img src={Image5} alt="" className='w-full max-h-[600px]'/>
+                                <img src={Image5} alt="" className='w-full max-h-[600px] object-cover'/>
                             </div>
                             {/* Right */}
                             <div className='flex flex-col gap-[30px] justify-center px-[132px]'>
@@ -346,16 +346,13 @@ const Team = () => {
                                 </div>
                                 <div className='text-2xl text-[#4B5563] font-normal w-[600px]' data-aos="fade-up" data-aos-delay="600">
                                     <div>
-                                        The Core Management team drives growth through 
+                                        The Core Management team drives growth
                                     </div> 
                                     <div>
-                                        strategic planning, data-driven decisions, and optimised  
+                                        through strategic planning, data-driven   
                                     </div>
                                     <div>
-                                        processes, ensuring sustained competitiveness and value  
-                                    </div>
-                                    <div>
-                                        creation.
+                                        decisions, and optimised processes, ensuring sustained competitiveness and value creation.
                                     </div>
                                 </div>
                             </div>
@@ -366,15 +363,17 @@ const Team = () => {
                         <div className="max-w-[1200px] flex flex-col gap-[250px]">
                             <div className="flex flex-col gap-[50px]">
                                 <div className="flex flex-col justify-center items-center gap-[10px]" data-aos="fade-up" data-aos-delay="400">
-                                    <div className="text-[32px] text-[#557AAA] font-medium">LET'S WORK TOGETHER</div>
-                                    <div className="text-5xl text-[#153764] font-bold">JOIN OUR</div>
-                                    <div className="text-5xl text-[#153764] font-bold">FANTASTIC TEAM TODAY!</div>
+                                    <div className="text-[32px] text-[#557AAA] font-medium leading-normal">LET'S WORK TOGETHER</div>
+                                    <div className='flex flex-col items-center'>
+                                        <div className="text-5xl text-[#153764] font-bold leading-normal">JOIN OUR</div>
+                                        <div className="text-5xl text-[#153764] font-bold leading-normal">FANTASTIC TEAM TODAY!</div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div className="flex justify-center items-center" data-aos="fade-up" data-aos-delay="600">
                                         <a
                                             href='/careers'
-                                            className="text-2xl text-[#153764] font-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
+                                            className="text-2xl text-[#153764] font-normal leading-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
                                         >
                                             CAREER PAGE
                                         </a>

@@ -54,7 +54,7 @@ const Footer = () => {
                                         <a href="/special">
                                             SPECIAL
                                         </a>
-                                        <a href="/product">
+                                        <a href="/products">
                                             PRODUCT
                                         </a>
                                         <a href="/creating">

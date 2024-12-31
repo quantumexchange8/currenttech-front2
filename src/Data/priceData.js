@@ -22,7 +22,7 @@ export const priceData = [
             "Google submission",
             "Google business",
             "Google console",
-            <span>Chat Integration <br /> (Messenger / Whatsapp)</span>
+            <span>Chat Integration <br /> (Messenger / Whatsapp) </span>,
         ],
         ans: [
             "Template base",
@@ -68,7 +68,7 @@ export const priceData = [
             "Google submission",
             "Google business",
             "Google console",
-            <span>Chat Integration <br /> (Messenger / Whatsapp)</span>,
+            <span>Chat Integration <br /> (Messenger / Whatsapp) </span>,
             "Guarantee 80% text score",
             "Guarantee 80% SEO Checkup score"
         ],
@@ -119,7 +119,7 @@ export const priceData = [
             "Google submission",
             "Google business",
             "Google console",
-            <span>Chat Integration <br /> (Messenger / Whatsapp)</span>,
+            <span>Chat Integration <br /> (Messenger / Whatsapp) </span>,
         ],
         ans: [
             "X 1",
@@ -175,7 +175,7 @@ export const priceData = [
             "Google submission",
             "Google business",
             "Google console",
-            <span>Chat Integration <br /> (Messenger / Whatsapp)</span>,
+            <span>Chat Integration <br /> (Messenger / Whatsapp) </span>,
         ],
         ans: [
             "Custom",

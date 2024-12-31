@@ -64,7 +64,7 @@ const Topbar = () => {
     return (
         <div className='flex flex-col'> 
             <div className="md:h-[80px] h-[50px] w-full fixed z-50 bg-[#FFF] flex justify-center backdrop-blur-sm">
-                <div className="w-full md:w-[1500px] max-w-[1500px] px-8 flex justify-between items-center md:gap-[50px]">
+                <div className="w-full md:w-[1500px] max-w-[1500px] md:px-8 flex justify-between items-center md:gap-[50px]">
                     {/* LogoSvg only shown on web version */}
                     <div className='hidden md:flex'>
                         <Link to="/">
@@ -425,9 +425,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={'w-full items-center'}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.homePage")}
@@ -446,9 +444,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center p-1`}
+                                                        className={'w-full items-center'}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.advantagePage")}
@@ -467,9 +463,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={'w-full items-center'}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.specialPage")}
@@ -488,9 +482,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={'w-full items-center'}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.productsPage")}
@@ -509,9 +501,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={'w-full items-center'}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.creatingPage")}
@@ -530,9 +520,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={'w-full items-center'}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.pricePage")}
@@ -551,9 +539,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={'w-full items-center'}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.careerPage")}
@@ -572,9 +558,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={'w-full items-center'}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.aboutPage")}
@@ -593,9 +577,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={'w-full items-center'}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.teamPage")}
@@ -603,8 +585,6 @@ const Topbar = () => {
                                                 </Link>
                                             )}
                                         </Menu.Item>
-
-                                        {/* Add more menu items here */}
                                     </Menu.Items>
                                 </Transition>
                             </Menu>

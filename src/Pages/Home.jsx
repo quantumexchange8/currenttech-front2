@@ -48,7 +48,7 @@ const Home = () => {
       }, []);
 
     return(
-        <div className='flex flex-col w-full justify-center text-center gap-[250px] pb-[250px]'>
+        <div className='flex flex-col w-full justify-center gap-[250px] pb-[250px]'>
             <div className='flex flex-col w-full justify-center text-center gap-[150px] md:gap-[200px]'>
                 {/* Images */}
                 <HomeSwiper />
@@ -61,25 +61,25 @@ const Home = () => {
                     <div className='md:hidden' data-aos="fade-up">
                         <VerticalLineM />
                     </div>
-                    <div className="w-auto max-w-[1200px] flex flex-col items-center">
-                        <div className="flex flex-col gap-[30px] md:gap-[50px] leading-normal">
+                    <div className="w-wull max-w-[1200px] flex flex-col items-center">
+                        <div className="flex flex-col gap-[30px] md:gap-[50px]">
                             <div className="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
-                                <div className="text-base md:text-[32px] font-normal md:font-medium text-[#557AAA]">
+                                <div className="text-base md:text-[32px] font-normal md:font-medium text-[#557AAA] leading-normal">
                                     TECHNOLOGY DEFINES TOMORROW
                                 </div>
-                                <div className="text-xl md:text-5xl font-bold text-[#153764]">
+                                <div className="text-xl md:text-5xl font-bold text-[#153764] leading-normal">
                                     MAKING YOUR IDEAS POSSIBLE
                                 </div>
                             </div>
                             {/* Website Description */}
                             <div className="hidden md:block text-2xl font-normal text-[#4B5563]" data-aos="fade-up" data-aos-delay="400">
-                                <div className="fadeInText">
+                                <div>
                                     Innovation and technology drive a prosperous future. With
                                 </div>
-                                <div className="fadeInText">
+                                <div>
                                     intelligence, automation, and digitisation, industries transform.
                                 </div>
-                                <div className="fadeInText">
+                                <div>
                                     Whether we embrace it or not, technology will reshape the future.
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ const Home = () => {
                     <div className='hidden md:block' data-aos="fade-up" data-aos-delay="200">
                         <VerticalLine />
                     </div>
-                    <div className='md:hidden' data-aos="fade-up" data-aos-delay="00">
+                    <div className='md:hidden' data-aos="fade-up" data-aos-delay="200">
                         <VerticalLineM />
                     </div>
                 </div>
@@ -287,12 +287,12 @@ const Home = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[200px] gap-y-[100px] md:gap-y-[150px]">
                             {/* Service 1 */}
-                            <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="400">
+                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="400">
                                 <Player
                                     autoplay
                                     loop
                                     src={CMS} // Pass the Lottie JSON file
-                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video1} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
@@ -308,12 +308,12 @@ const Home = () => {
                                 </div>
                             </div>
                             {/* Service 2 */}
-                            <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="800">
+                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="800">
                                 <Player
                                     autoplay
                                     loop
                                     src={Website} // Pass the Lottie JSON file
-                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video2} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
@@ -329,16 +329,16 @@ const Home = () => {
                                 </div>
                             </div>
                             {/* Service 3 */}
-                            <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="400">
+                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="400">
                                 <Player
                                     autoplay
                                     loop
                                     src={Mobile} // Pass the Lottie JSON file
-                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video3} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
-                                MOBILE APPLICATIONS
+                                    MOBILE APPLICATIONS
                                 </div>
                                 <div className='text-base md:text-2xl font-normal text-[#4B5563]'>
                                     <div>
@@ -350,12 +350,12 @@ const Home = () => {
                                 </div>
                             </div>
                             {/* Service 4 */}
-                            <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="800">
+                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="800">
                                 <Player
                                     autoplay
                                     loop
                                     src={Hr} // Pass the Lottie JSON file
-                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video4} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
@@ -371,12 +371,12 @@ const Home = () => {
                                 </div>
                             </div>
                             {/* Service 5 */}
-                            <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="400">
+                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="400">
                                 <Player
                                     autoplay
                                     loop
                                     src={Pos} // Pass the Lottie JSON file
-                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video5} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
@@ -392,12 +392,12 @@ const Home = () => {
                                 </div>
                             </div>
                             {/* Service 6 */}
-                            <div className='flex flex-col justify-center items-center' data-aos="fade-up" data-aos-delay="800">
+                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="800">
                                 <Player
                                     autoplay
                                     loop
                                     src={Support} // Pass the Lottie JSON file
-                                    style={{ height: '300px', width: '300px' }} // Set dimensions
+                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video6} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
@@ -427,10 +427,10 @@ const Home = () => {
                 <div className='flex flex-col gap-[150px] md:gap-[200px]' data-aos="fade-up">
                     {/* Title */}
                     <div className='bg-[#D5E7FF] h-auto flex flex-col justify-center gap-[10px] py-[62px] md:py-[170px] px-[60px] md:px-[485px]'>
-                        <div className='text-xl md:text-4xl font-normal text-[#557AAA]' data-aos="fade-up" data-aos-delay="200">
+                        <div className='flex justify-center text-xl md:text-4xl font-normal text-[#557AAA] leading-normal' data-aos="fade-up" data-aos-delay="200">
                             OUR UNIQUE PRODUCTS
                         </div>
-                        <div className='text-2xl md:text-[64px] font-bold tetxt-[#153764] leading-tight' data-aos="fade-up" data-aos-delay="400">
+                        <div className='flex justify-center text-2xl md:text-[64px] font-bold text-[#153764] leading-normal' data-aos="fade-up" data-aos-delay="400">
                             SECTORS OF COVERAGE
                         </div>
                     </div>
@@ -440,7 +440,7 @@ const Home = () => {
                         <div className='flex flex-col justify-center gap-[150px] max-w-[1200px]'>
                             {/* Education */}
                             <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_Education} alt="Education" className='w-[380px] md:w-[650px] h-[238px] md:h-[406px]'data-aos="fade-up"/>
+                                <img src={img_Education} alt="Education" className='object-cover h-[238px] md:h-[406px]'data-aos="fade-up"/>
                                 <div className='flex flex-col gap-[5px] md:gap-5'>
                                     <div className='text-black text-xl md:text-[32px]' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA]'>
@@ -449,7 +449,7 @@ const Home = () => {
                                     </div>
                                     <div className='flex flex-col text-[#4B5563] text-base md:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex-flex-col'>
-                                            <div className="flex flex-col leading-normal font-normal w-auto">
+                                            <div className="flex flex-col leading-normal font-normal w-full">
                                                 <div className='hidden md:block'>
                                                     {t("Home.ImgCombinationDescription.educationImgDescription")}
                                                 </div>
@@ -471,7 +471,7 @@ const Home = () => {
                             </div>
                             {/* Food & Beverage */}
                             <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_FoodBeverage} alt="F&B" className='w-[380px] md:w-[650px] h-[238px] md:h-[406px]' data-aos="fade-up"/>
+                                <img src={img_FoodBeverage} alt="F&B" className='object-cover h-[238px] md:h-[406px]' data-aos="fade-up"/>
                                 <div className='flex flex-col gap-[5px] md:gap-5 text-left'>
                                     <div className='text-black text-xl md:text-[32px]' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA] text-left'>
@@ -510,7 +510,7 @@ const Home = () => {
                             </div>
                             {/* Wholesale */}
                             <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_Wholesale} alt="Wholesale" className='w-[380px] md:w-[650px] h-[238px] md:h-[406px]' data-aos="fade-up"/>
+                                <img src={img_Wholesale} alt="Wholesale" className='object-cover h-[238px] md:h-[406px]' data-aos="fade-up"/>
                                 <div className='flex flex-col gap-[5px] md:gap-5'>
                                     <div className='text-black text-xl md:text-[32px] text-left' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA]'>
@@ -519,7 +519,7 @@ const Home = () => {
                                     </div>
                                     <div className='flex flex-col text-[#4B5563] text-base md:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex-flex-col text-left'>
-                                            <div className="flex flex-col leading-normal font-normal w-[353px] md:w-[500px]">
+                                            <div className="flex flex-col leading-normal font-normal ">
                                                 <div>
                                                     {t("Home.ImgCombinationDescription.wholesaleImgDescription")}
                                                 </div>
@@ -536,7 +536,7 @@ const Home = () => {
                             </div>
                             {/* Logistic */}
                             <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_Logistic} alt="Logistic" className='w-[380px] md:w-[650px] h-[238px] md:h-[406px]' data-aos="fade-up"/>
+                                <img src={img_Logistic} alt="Logistic" className='object-cover h-[238px] md:h-[406px]' data-aos="fade-up"/>
                                 <div className='flex flex-col gap-[5px] md:gap-5'>
                                     <div className='text-black text-xl md:text-[32px] text-left' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA]'>
@@ -545,7 +545,7 @@ const Home = () => {
                                     </div>
                                     <div className='flex flex-col text-[#4B5563] text-base md:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex flex-col text-left'>
-                                            <div className="flex flex-col leading-normal font-normal w-[353px] md:w-[500px]">
+                                            <div className="flex flex-col leading-normal font-normal ">
                                                 <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescription")}</div>
                                                 <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescription2")}</div>
                                                 <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescription3")}</div>
@@ -556,7 +556,7 @@ const Home = () => {
                             </div>
                             {/* Enterprise */}
                             <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_Enterprise} alt="Enterprise" className='w-[380px] md:w-[650px] h-[238px] md:h-[406px]' data-aos="fade-up"/>
+                                <img src={img_Enterprise} alt="Enterprise" className='object-cover h-[238px] md:h-[406px]' data-aos="fade-up"/>
                                 <div className='flex flex-col gap-[5px] md:gap-5'>
                                     <div className='text-black text-xl md:text-[32px] text-left' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA]'>
@@ -612,7 +612,7 @@ const Home = () => {
                             {/* 1 */}
                             <div className='flex gap-5'>
                                 <Pos1M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-[250px]'>
+                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-full'>
                                     <div className='text-base text-[#153764] font-bold'>
                                         POS SYSTEM
                                     </div>
@@ -629,7 +629,7 @@ const Home = () => {
                             {/* 2 */}
                             <div className='flex gap-5'>
                                 <Pos2M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-4 text-left w-[250px]'>
+                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-4 text-left w-full'>
                                     <div className='text-base text-[#153764] font-bold'>
                                         HR & CMS SYSTEM
                                     </div>
@@ -649,7 +649,7 @@ const Home = () => {
                             {/* 3 */}
                             <div className='flex gap-5'>
                                 <Pos3M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-[250px]'>
+                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-full'>
                                     <div className='text-base text-[#153764] font-bold'>
                                         STOCKS CONTROL
                                     </div>
@@ -669,7 +669,7 @@ const Home = () => {
                             {/* 4 */}
                             <div className='flex gap-5'>
                                 <Pos4M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-[250px]'>
+                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-full'>
                                     <div className='text-base text-[#153764] font-bold'>
                                         FOOD ORDERING
                                     </div>
@@ -686,7 +686,7 @@ const Home = () => {
                             {/* 5 */}
                             <div className='flex gap-5'>
                                 <Pos5M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-[250px]'>
+                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-full'>
                                     <div className='text-base text-[#153764] font-bold'>
                                         e-INVOICE
                                     </div>
@@ -727,17 +727,17 @@ const Home = () => {
                 <div className='flex flex-col justify-center items-center px-[25px] md:p-0' data-aos="fade-up">
                     <div className='max-w-[1200px] flex flex-col gap-[250px]'>
                         <div className='flex flex-col gap-[10px] md:gap-[30px] items-start text-start'>
-                            <div className='text-xl md:text-5xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="200"> 
+                            <div className='text-xl md:text-5xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="200"> 
                                 OUR MISSION
                             </div>
                             <div className='hidden md:block text-base md:text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
-                                <div>
+                                <div className="leading-normal">
                                     Build a tech-driven ROI model, redefining growth strategies with a professional
                                 </div>
-                                <div>
+                                <div className="leading-normal">
                                      approach. Activate innovation through unique resource integration and diverse 
                                 </div>
-                                <div>
+                                <div className="leading-normal">
                                     collaborations for exceptional results.
                                 </div>
                             </div>
@@ -755,40 +755,42 @@ const Home = () => {
             </div>
 
             {/* Contact Us */}
-            <div className='flex flex-col gap-[50px]'>
-                <div className='flex flex-col gap-[10px]'>
-                    <div className='text-xl md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal' data-aos="fade-up" data-aos-delay="600">
-                        NOTHING IS IMPOSSIBLE
-                    </div>
-                    <div className='hidden md:block text-5xl text-[#153764] font-bold leading-normal' data-aos="fade-up" data-aos-delay="800">
-                        DON’T LET HESITATION HOLD YOU BACK
-                    </div>
-                    <div className='md:hidden text-2xl text-[#153764] font-bold' data-aos="fade-up" data-aos-delay="800">
-                        <div>
-                            DON’T LET HESITATION 
+            <div className="flex justify-center">
+                <div className='flex flex-col gap-[50px] max-w-[1200px]'>
+                    <div className='flex flex-col items-center gap-[10px]'>
+                        <div className='text-xl md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal' data-aos="fade-up" data-aos-delay="600">
+                            NOTHING IS IMPOSSIBLE
                         </div>
-                        <div>
-                            HOLD YOU BACK
+                        <div className='hidden md:block text-5xl text-[#153764] font-bold leading-normal' data-aos="fade-up" data-aos-delay="800">
+                            DON’T LET HESITATION HOLD YOU BACK
+                        </div>
+                        <div className='md:hidden text-2xl text-[#153764] font-bold' data-aos="fade-up" data-aos-delay="800">
+                            <div className="leading-normal">
+                                DON’T LET HESITATION 
+                            </div>
+                            <div className="leading-normal">
+                                HOLD YOU BACK
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div className='flex justify-center items-center' data-aos="fade-up" data-aos-delay="1000">
-                        <button 
-                            className='w-auto text-base md:text-2xl text-[#153764] font-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'
-                            onClick={handleContactUsClick}  
-                        >
-                            CONTACT US
-                        </button>
-                    </div>
+                    <div>
+                        <div className='flex justify-center items-center' data-aos="fade-up" data-aos-delay="1000">
+                            <button 
+                                className='w-auto text-base md:text-2xl text-[#153764] font-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)] leading-normal'
+                                onClick={handleContactUsClick}  
+                            >
+                                CONTACT US
+                            </button>
+                        </div>
 
-                    <Modal 
-                        open={isModalOpen} 
-                        onClose={closeModal} 
-                        title="Contact Us"
-                        content="Please enter your details to get in touch with us." 
-                        selectedButton="gmail" 
-                    />
+                        <Modal 
+                            open={isModalOpen} 
+                            onClose={closeModal} 
+                            title="Contact Us"
+                            content="Please enter your details to get in touch with us." 
+                            selectedButton="gmail" 
+                        />
+                    </div>
                 </div>
             </div>
 

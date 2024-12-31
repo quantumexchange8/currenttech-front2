@@ -80,22 +80,24 @@ const HomeSwiper = () => {
               className="w-full h-full object-cover"
             />
             {/* Centered Text */}
-            <div className="absolute top-1/2 left-0 w-full text-center text-white p-4 transform -translate-y-1/2">
-              <div className="text-2xl md:text-5xl font-bold mb-2">{item.title}</div>
-              <div className="hidden md:block text-2xl font-normal text-[#D1D5DB]">
-                {item.description1}
-              </div>
-              <div className="hidden md:block text-2xl font-normal text-[#D1D5DB]">
-                {item.description2}
-              </div>
-              <div className="md:hidden text-xl font-normal text-[#D1D5DB]">
-                {item.descriptionMobile}
-              </div>
-              <div className="md:hidden text-xl font-normal text-[#D1D5DB]">
-                {item.descriptionMobile2}
-              </div>
-              <div className="md:hidden text-xl font-normal text-[#D1D5DB]">
-                {item.descriptionMobile3}
+            <div className="absolute top-1/2 left-0 flex flex-col gap-[10px] w-full text-center text-white transform -translate-y-1/2">
+              <div className="text-2xl md:text-5xl font-bold leading-normal">{item.title}</div>
+              <div className="w-full">
+                <div className="hidden md:block text-2xl font-normal text-[#D1D5DB] w-full">
+                  {item.description1}
+                </div>
+                <div className="hidden md:block text-2xl font-normal text-[#D1D5DB] leading-normal w-full">
+                  {item.description2}
+                </div>
+                <div className="md:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-full">
+                  {item.descriptionMobile}
+                </div>
+                <div className="md:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-full">
+                  {item.descriptionMobile2}
+                </div>
+                <div className="md:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-full">
+                  {item.descriptionMobile3}
+                </div>
               </div>
             </div>
           </div>

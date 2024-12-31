@@ -19,13 +19,13 @@ const About = () => {
             <div className="flex flex-col gap-[200px] justify-center items-center">
                 {/* Top Image */}
                 <div className='relative w-full'>
-                    <img src={Image1} alt="About Image 1" className='w-full' />
+                    <img src={Image1} alt="About Image 1" className='w-full object-cover' />
                     <div className='absolute flex flex-col gap-[50px] top-[35%] left-[16%] w-auto'>
                         <div className='flex flex-col gap-[10px] w-auto '>
-                            <div className='text-2xl text-[#D1D5DB] font-normal'>
+                            <div className='text-2xl text-[#D1D5DB] font-normal leading-normal'>
                                 WE HAVE THE SOLUTION
                             </div>
-                            <div className='flex flex-col gap-4 text-5xl text-[#D1D5DB] font-bold'>
+                            <div className='flex flex-col text-5xl text-[#D1D5DB] font-bold leading-normal'>
                                 <div>
                                     WE DESIGN & DEVELOP
                                 </div>
@@ -34,8 +34,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <a href='/team' className='text-2xl text-[#153764] font-normal w-auto py-[10px] px-[30px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)]'>
+                        <div className='bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] w-[251px] rounded-[5px] py-[10px] px-[30px]'>
+                            <a href='/team' className='text-2xl text-[#153764] font-normal'>
                                 KNOW THE TEAM
                             </a>
                         </div>
@@ -46,10 +46,10 @@ const About = () => {
                 <div className='flex justify-center items-center'>
                     <div className='flex flex-col gap-[150px] max-w-[1200px]'>
                         <div className='flex flex-col gap-[30px]'>
-                            <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up">
+                            <div className='text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
                                 ABOUT CURRENT TECH INDUSTRIES
                             </div>
-                            <div className='text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
+                            <div className='text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                                 <div>
                                     Established in 2006, Current Tech Industries Sdn Bhd is a high-tech software enterprise based in
                                 </div>
@@ -69,10 +69,10 @@ const About = () => {
                         </div>
                         <div className='flex justify-between max-w-[1200px] w-[1200px]'>
                             <div className='flex flex-col gap-[30px]'>
-                                <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up">
+                                <div className='text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
                                     WE DESIGN SOLUTIONS
                                 </div>
-                                <div className='text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
+                                <div className='text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                                     <div>
                                         We engineer innovative solutions using AI, 
                                     </div>
@@ -100,10 +100,10 @@ const About = () => {
                                 </div>
                             </div>
                             <div className='flex flex-col gap-[30px]'>
-                                <div className='text-2xl text-[#557AAA] font-bold' data-aos="fade-up">
+                                <div className='text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
                                     STRATEGY PLANNING
                                 </div>
-                                <div className='text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
+                                <div className='text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                                     <div>
                                         Leverage advanced analytics and AI to
                                     </div>
@@ -142,7 +142,7 @@ const About = () => {
                         {/* Centered Content */}
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[50px]">
                             {/* Main Title */}
-                            <div className='text-center text-[#D1D5DB] leading-tight text-5xl font-bold ' data-aos="fade-up" data-aos-delay="500">
+                            <div className='text-center text-[#D1D5DB] leading-normal text-5xl font-bold lean' data-aos="fade-up" data-aos-delay="500">
                                 WE ALREADY HAVE THE EXPERIENCE
                             </div>
 
@@ -203,7 +203,7 @@ const About = () => {
 
                 {/* We Highly Value */}
                 <div className='flex flex-col gap-[50px] text-center w-[1200px] max-w-[1200px]'>
-                    <div className='text-[32px] text-[#557AAA] font-normal'  data-aos="fade-up" data-aos-delay="600">
+                    <div className='text-[32px] text-[#557AAA] font-normal leading-normal'  data-aos="fade-up" data-aos-delay="600">
                         WE HIGHLY VALUE
                     </div>
                     <div className='flex justify-between' data-aos="fade-up" data-aos-delay="800">
@@ -213,10 +213,10 @@ const About = () => {
                                 01
                             </div>
                             <div>
-                                <div className='text-2xl text-[#557AAA] font-normal'>
+                                <div className='text-2xl text-[#557AAA] font-normal leading-normal'>
                                     INNOVATIVE
                                 </div>
-                                <div className='text-xl text-[#4B5563] font-normal'>
+                                <div className='text-xl text-[#4B5563] font-normal leading-normal'>
                                     <div>
                                         We drive innovation delivering
                                     </div>
@@ -235,10 +235,10 @@ const About = () => {
                                 02
                             </div>
                             <div>
-                                <div className='text-2xl text-[#557AAA] font-normal'>
+                                <div className='text-2xl text-[#557AAA] font-normal leading-normal'>
                                     INNOVATIVE
                                 </div>
-                                <div className='text-xl text-[#4B5563] font-normal'>
+                                <div className='text-xl text-[#4B5563] font-normal leading-normal'>
                                     <div>
                                         Our technology is designed to
                                     </div>
@@ -257,10 +257,10 @@ const About = () => {
                                 03
                             </div>
                             <div>
-                                <div className='text-2xl text-[#557AAA] font-normal'>
+                                <div className='text-2xl text-[#557AAA] font-normal leading-normal'>
                                     INNOVATIVE
                                 </div>
-                                <div className='text-xl text-[#4B5563] font-normal'>
+                                <div className='text-xl text-[#4B5563] font-normal leading-normal'>
                                     <div>
                                         Embracing modern trends,
                                     </div>
@@ -325,10 +325,10 @@ const About = () => {
                     </div>
                     {/* Our Expertise */}
                     <div className='flex flex-col gap-[10px] text-center' data-aos="fade-up" data-aos-delay="1100">
-                        <div className='text-[32px] text-[#153764] font-medium'>
+                        <div className='text-[32px] text-[#153764] font-medium leading-normal'>
                             OUR EXPERTISE IN PRODUCT DEVELOPMENT
                         </div>
-                        <div className='text-xl text-[#557AAA] font-light'>
+                        <div className='text-xl text-[#557AAA] font-light leading-normal'>
                             POWERFUL | UNIQUE | MODERN | INNOVATIVE | RESPONSIVE | DIFFERENT | CREATIVE | BEAUTIFUL
                         </div>
                     </div>
@@ -340,8 +340,8 @@ const About = () => {
                 <div className="max-w-[1200px] flex flex-col gap-[250px]">
                     <div className="flex flex-col gap-[50px]">
                         <div className="flex flex-col gap-[10px] text-center" data-aos="fade-up" data-aos-delay="800">
-                            <div className="text-5xl text-[#557AAA] font-bold leading-normal">LET'S EXPLORE OUR PRODUCTS</div>
-                            <div className='flex flex-col gap-1'>
+                            <div className="text-[32px] text-[#557AAA] font-normal leading-normal">LET'S EXPLORE OUR PRODUCTS</div>
+                            <div className='flex flex-col'>
                                 <div className="text-5xl text-[#153764] font-bold leading-normal">BUILD AN</div>
                                 <div className="text-5xl text-[#153764] font-bold leading-normal">AMAZING SITE TODAY!</div>
                             </div>

@@ -49,7 +49,7 @@ const Creating = () => {
                 <div className='relative'>
                     <div><img src={image1} alt="" className='hidden md:block w-full' /></div>
                     <div><img src={imageM1} alt="" className='md:hidden w-full' /></div>
-                    <div className='absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-16 text-center text-[32px] md:text-[64px] text-[#D1D5DB] font-light md:font-normal'>
+                    <div className='absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-16 text-center text-[32px] md:text-[64px] text-[#D1D5DB] font-light'>
                         PICK WHAT YOU PREFER
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const Creating = () => {
                 <div className='flex justify-center'>
                     <div className='flex flex-col gap-[30px] text-center max-w-[1200px] w-auto'> 
                         {/* Web */}
-                        <div className="hidden md:flex flex-col gap-4 bg-text-gradient bg-clip-text text-transparent text-5xl font-normal " data-aos="fade-up">
+                        <div className="hidden md:flex flex-col bg-text-gradient bg-clip-text text-transparent text-5xl font-normal leading-normal" data-aos="fade-up">
                             <div>
                                 POWERHOUSE FOR YOUR
                             </div>
@@ -91,7 +91,7 @@ const Creating = () => {
                             </div>
                             <div className='flex flex-col gap-[50px] w-full md:w-[500px]'>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                    <div className='text-xl md:text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
+                                    <div className='text-xl md:text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="500">
                                         E-COMMERCE
                                     </div>
                                     <div className='text-base md:text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="600">
@@ -116,7 +116,7 @@ const Creating = () => {
                                     <div className='text-xl md:text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="300">
                                         COMMERCIAL
                                     </div>
-                                    <div className='text-base md:text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
+                                    <div className='text-base md:text-xl text-[#4B5563] font-normal w-[500px]' data-aos="fade-up" data-aos-delay="400">
                                         A commercial web page boosts customer accessibility, 24/7 availability, and dynamic product displays. It enhances brand visibility, streamlines purchases, and drives sales, fostering loyalty.                                    
                                     </div>
                                 </div>
@@ -199,8 +199,8 @@ const Creating = () => {
                         <div className="max-w-[1200px] flex flex-col gap-[250px]">
                             <div className="flex flex-col gap-[50px]">
                                 <div className="flex flex-col gap-[10px]" data-aos="fade-up" data-aos-delay="400">
-                                    <div className="text-base md:text-[32px] text-[#557AAA] text-center font-medium">WE DO MORE THAN JUST THIS</div>
-                                    <div className="hidden md:block text-5xl text-[#153764] font-bold">
+                                    <div className="text-base md:text-[32px] text-[#557AAA] text-center font-medium leading-normal">WE DO MORE THAN JUST THIS</div>
+                                    <div className="hidden md:block text-5xl text-[#153764] font-bold leading-normal">
                                         <div>
                                             NO MATTER WHAT FIELD 
                                         </div>
@@ -220,7 +220,8 @@ const Creating = () => {
                                 <div>
                                     <div className="flex justify-center items-center" data-aos="fade-up" data-aos-delay="600">
                                         <a
-                                            className="w-auto text-base md:text-2xl text-[#153764] font-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
+                                            href='/products'
+                                            className="w-auto text-base md:text-2xl text-[#153764] font-normal leading-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
                                         >
                                             DISCOVER UNIQUE
                                         </a>

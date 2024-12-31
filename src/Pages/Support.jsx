@@ -23,9 +23,9 @@ const Support = () => {
     return(
         <div className="pt-[80px]">
             <div className='relative'>
-                <img src={Image1} alt="" className='w-full'/>
+                <img src={Image1} alt="" className='w-full object-cover'/>
             </div>
-            <div className='absolute top-[30%] left-[10%] flex flex-col gap-[50px]'>
+            <div className='absolute top-[40%] left-[10%] flex flex-col gap-[50px]'>
                 <div className='flex flex-col gap-[10px]'>
                     <div className='text-2xl text-[#D1D5DB] font-normal' data-aos="fade-up">
                         INQUIRY BRINGS DELIGHTFUL SURPRISES
@@ -94,8 +94,8 @@ const Support = () => {
                             />
                         </div>
                         {/* Submit */}
-                        <div className="flex items-center justify-end" data-aos="fade-up" data-aos-delay="600">
-                            <button onClick={handleFormSubmit} className="shadow-custom px-5 py-[5px] rounded-[5px] bg-[linear-gradient(180deg,#EAF3FF_0%,#BBD7FE_72%)]">
+                        <div className="flex items-center justify-end">
+                            <button onClick={handleFormSubmit} className="text-xl text-[#4B5563] font-normal shadow-custom px-5 py-[5px] rounded-[5px] bg-[linear-gradient(180deg,#EAF3FF_0%,#BBD7FE_72%)]">
                                 SEND
                             </button>
                         </div>

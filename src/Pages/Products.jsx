@@ -16,16 +16,20 @@ const Products = () => {
     useEffect(() => {
         AOS.init({
         duration: 1000, 
-        once: true,  
+        once: false,  
         offset: 200,
         });
     }, []);
+
+    useEffect(() => {
+        AOS.refresh();
+    }, [selectedProduct]);
 
     return (
         <div className='flex flex-col w-full justify-center gap-[150px] md:gap-[200px] pt-[50px[ md:pt-[80px] pb-[200px] md:pb-[250px]'>
             {/* Top Image */}
             <div className='w-full relative'>
-                <img src={image1} alt='Special Image 1' className='hidden md:block w-full' />
+                <img src={image1} alt='Special Image 1' className='hidden md:block w-full object-cover' />
                 <img src={imageM1} alt='Special Image 1' className='md:hidden w-full' />
                 <div className='hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 text-[#D1D5DB] text-[64px] text-center font-light w-full'>
                     <div>WE BUILD</div>
@@ -39,22 +43,22 @@ const Products = () => {
 
             {/* Title */}
             <div className='flex flex-col items-center gap-[30px]'>
-                <div className='text-2xl md:text-[64px] text-[#153764] font-normal' data-aos="fade-up">
+                <div className='text-2xl md:text-[64px] text-[#153764] font-normal leading-normal'>
                     OUR IMAGINATIVE STUDIO
                 </div>
-                <div className='text-[32px] md:text-[64px] text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="200">
+                <div className='text-[32px] md:text-[64px] text-[#557AAA] font-bold leading-normal'>
                     WEB DESIGN
                 </div>
             </div>
 
             {/* Product List Bar */}
             {/* Web */}
-            <div className='sticky top-[80px] z-10 hidden md:flex justify-center items-center w-full bg-[#E5E7EB] h-[100px]' data-aos="fade-up" data-aos-delay="400">
+            <div className='sticky top-[80px] z-10 hidden md:flex justify-center items-center w-full bg-[#E5E7EB] h-auto py-[35px]' >
                 <div className='w-[1200px] flex justify-between'>
                     {productData.map((product) => (
                     <button
                         key={product.name}
-                        className={`text-xl font-semibold ${selectedProduct === product.name ? 'text-[#153764]' : 'text-[#557AAA]'}`}
+                        className={`text-xl font-semibold leading-normal ${selectedProduct === product.name ? 'text-[#153764]' : 'text-[#557AAA]'}`}
                         onClick={() => [setSelectedProduct(product.name), window.scrollTo({ top: 1200, behavior: 'smooth'})]}
                     >
                         {product.name}
@@ -63,7 +67,7 @@ const Products = () => {
                 </div>
             </div>
             {/* Mobile */}
-            <div className='md:hidden sticky top-[50px] z-10 flex justify-center items-center p-[25px] w-full bg-[#E5E7EB]' data-aos="fade-up" data-aos-delay="400">
+            <div className='md:hidden sticky top-[50px] z-10 flex justify-center items-center p-[25px] w-full bg-[#E5E7EB]'>
                 <div className='flex flex-wrap justify-between gap-y-5'>
                     {productData.map((product) => (
                     <button
@@ -77,9 +81,10 @@ const Products = () => {
                 </div>
             </div>
 
+            {/* Content */}
             <div className='flex flex-col gap-[100px]'>
                 {/* Product Image */}
-                <div className='flex justify-center items-center px-[25px]' data-aos="fade-up" data-aos-delay="400">
+                <div className='flex justify-center items-center px-[25px]' data-aos="fade-up">
                     <div className='max-w-[1200px]'>
                         <img src={require(`../Assets/Images/Product/${currentProduct.image}`)} alt={currentProduct.title} />
                     </div>
@@ -97,9 +102,9 @@ const Products = () => {
                             </div>
                             {/* Web */}
                             <div className='hidden md:block' data-aos="fade-up" data-aos-delay="400">
-                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-tight'>{currentProduct.description}</div>
-                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-tight'>{currentProduct.description2}</div>
-                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-tight'>{currentProduct.description3}</div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-normal'>{currentProduct.description}</div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-normal'>{currentProduct.description2}</div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-normal'>{currentProduct.description3}</div>
                             </div>
                             {/* Mobile */}
                             <div className='md:hidden' data-aos="fade-up" data-aos-delay="400">
@@ -111,11 +116,11 @@ const Products = () => {
                         {/* Dynamic Specification Sections */}
                         <div className='flex flex-col gap-[50px] md:gap-20'>
                             {currentProduct.specifications && Object.keys(currentProduct.specifications).map((section) => (
-                            <div className='flex flex-col gap-[10px]' key={section}>
-                                <div className='text-base md:text-2xl text-[#557AAA] font-normal' data-aos="fade-up" data-aos-delay="200">
+                            <div className='flex flex-col gap-[10px]'  data-aos="fade-up" data-aos-delay="200" key={section}>
+                                <div className='text-base md:text-2xl text-[#557AAA] font-normal'>
                                     {currentProduct.sectionTitles[section] || section.toUpperCase()}
                                 </div>
-                                <div className='flex flex-wrap gap-[10px] md:gap-5' data-aos="fade-up" data-aos-delay="400">
+                                <div className='flex flex-wrap gap-[10px] md:gap-5'>
                                 {Array.isArray(currentProduct.specifications[section]) ? (
                                     currentProduct.specifications[section].map((item, index) => (
                                     <div
@@ -138,15 +143,15 @@ const Products = () => {
                         </div>
 
                         {/* Summary */}
-                        <div className='flex flex-col gap-[10px]'>
-                            <div className='text-base md:text-2xl text-[#557AAA] font-normal' data-aos="fade-up" data-aos-delay="200">SUMMARY:</div>
+                        <div className='flex flex-col gap-[10px]' data-aos="fade-up" data-aos-delay="200">
+                            <div className='text-base md:text-2xl text-[#557AAA] font-normal'>SUMMARY:</div>
                             {/* Web */}
-                            <div className='hidden md:block' data-aos="fade-up" data-aos-delay="400">
-                                <div className='text-2xl text-[#4B5563] font-normal'>{currentProduct.summary}</div>
-                                <div className='text-2xl text-[#4B5563] font-normal'>{currentProduct.summary2}</div>
+                            <div className='hidden md:block'>
+                                <div className='text-2xl text-[#4B5563] font-normal leading-normal'>{currentProduct.summary}</div>
+                                <div className='text-2xl text-[#4B5563] font-normal leading-normal'>{currentProduct.summary2}</div>
                             </div>
                             {/* Mobile */}
-                            <div className='md:hidden' data-aos="fade-up" data-aos-delay="400">
+                            <div className='md:hidden'>
                                 <div className='text-base text-[#4B5563] font-normal'>{currentProduct.summaryMobile}</div>
                                 <div className='text-base text-[#4B5563] font-normal'>{currentProduct.summaryMobile2}</div>
                             </div>

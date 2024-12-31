@@ -38,6 +38,14 @@ const templates = [
   { id: 19, name: 'COMMING SOON', image: Explorecs, title: 'CMS DASHBOARD Template', type: 'CMSDASHBOARD', firevalue: '' },
   { id: 20, name: 'COMMING SOON', image: Explorecs, title: 'INVESTMENT Template', type: 'INVESTMENT', firevalue: '' },
   { id: 21, name: 'COMMING SOON', image: Explorecs, title: 'DIGITAL BOARD Template', type: 'DIGITALBOARD', firevalue: '' },
+  { id: 22, name: 'COMMING SOON', image: Explorecs, title: 'e-Commerce Template', type: 'E-COMMERCE', firevalue: '' },
+  { id: 23, name: 'COMMING SOON', image: Explorecs, title: 'e-Commerce Template', type: 'E-COMMERCE', firevalue: '' },
+  { id: 24, name: 'COMMING SOON', image: Explorecs, title: 'e-Commerce Template', type: 'E-COMMERCE', firevalue: '' },
+  { id: 25, name: 'COMMING SOON', image: Explorecs, title: 'e-Commerce Template', type: 'E-COMMERCE', firevalue: '' },
+  { id: 26, name: 'COMMING SOON', image: Explorecs, title: 'e-Commerce Template', type: 'E-COMMERCE', firevalue: '' },
+  { id: 27, name: 'COMMING SOON', image: Explorecs, title: 'e-Commerce Template', type: 'E-COMMERCE', firevalue: '' },
+  { id: 28, name: 'COMMING SOON', image: Explorecs, title: 'e-Commerce Template', type: 'E-COMMERCE', firevalue: '' },
+  { id: 29, name: 'COMMING SOON', image: Explorecs, title: 'e-Commerce Template', type: 'E-COMMERCE', firevalue: '' },
 
 ];
 
@@ -46,7 +54,7 @@ const ITEMS_PER_PAGE = 12;
 const CreatingExplore = () => {
     const location = useLocation();
     const exploreType = location.state?.exploreType;
-    const [selectedType, setSelectedType] = useState(exploreType);
+    const [selectedType, setSelectedType] = useState(exploreType || 'E-COMMERCE');
     const [currentPage, setCurrentPage] = useState(1);
 
     const filteredTemplates = templates.filter(template => template.type === selectedType);
@@ -103,10 +111,11 @@ const CreatingExplore = () => {
     };
     
     const handlePageChange = (page) => {
+        if (page < 1 || page > totalPages) return;
         setCurrentPage(page);
         window.scrollTo({
             top: 700,
-            behavior: 'instant',
+            behavior: 'smooth',
         });
     };
 
@@ -114,7 +123,7 @@ const CreatingExplore = () => {
         setCurrentPage(page);
         window.scrollTo({
             top: 1300,
-            behavior: 'instant',
+            behavior: 'smooth',
         });
     };
 
@@ -133,6 +142,10 @@ const CreatingExplore = () => {
             once: false,  
             offset: 200,
         });
+
+        setTimeout(() => {
+            AOS.refresh();
+        }, 500);
     }, []);
 
     return (
@@ -284,8 +297,9 @@ const CreatingExplore = () => {
                                 <div className="relative left-[175px] w-[1px] h-[400px] md:h-[500px] bg-[#9CA3AF]" />
                             </div>
                         </div>
+                        
+                        {/* Content */}
                         <div className='flex flex-col gap-[50px] md:gap-[100px]'>
-                            {/* Content */}
                             <div className='grid grid-cols-2 md:grid-cols-3 gap-x-[20px] md:gap-x-[50px] gap-y-[50px] md:gap-y-[100px] max-w-[1140px]' data-aos="fade-up" data-aos-delay="200">
                                 {paginatedTemplates.map(template => (
                                 <div key={template.id} className='flex justify-center'>
@@ -321,7 +335,9 @@ const CreatingExplore = () => {
                             <div className="hidden md:flex justify-between gap-4 max-w-[1200px]">
                                 <button
                                     onClick={() => handlePageChange(currentPage - 1)}
-                                    disabled={currentPage === 1}
+                                    className={`${
+                                        currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
+                                    }`}
                                 >
                                     <div className='hidden md:block'><Prev /></div>
                                     <div className='md:hidden'><PrevM /></div>
@@ -342,7 +358,9 @@ const CreatingExplore = () => {
                                 </div>
                                 <button
                                     onClick={() => handlePageChange(currentPage + 1)}
-                                    disabled={currentPage === totalPages}
+                                    className={`${
+                                        currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''
+                                    }`}
                                 >
                                     <div className='hidden md:block'><Next /></div>
                                     <div className='md:hidden'><NextM /></div>
