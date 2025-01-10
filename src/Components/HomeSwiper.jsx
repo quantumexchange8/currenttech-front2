@@ -3,55 +3,17 @@ import image1 from "../Assets/Images/Home/1.png";
 import image2 from "../Assets/Images/Home/2.png";
 import image3 from "../Assets/Images/Home/3.png";
 import image4 from "../Assets/Images/Home/4.png";
+import { useTranslation } from "react-i18next";
 
 const imagesWithText = [
-  {
-    id: 1,
-    src: image1,
-    title: "EXPERIENCE THE REVOLUTION",
-    description1: "Innovation and technological advancements are the",
-    description2: "keys to unlocking a sustainable and prosperous future.",
-    descriptionMobile: "Innovation and technological advancements are the keys to",
-    descriptionMobile2: "unlocking a sustainable and",
-    descriptionMobile3: "prosperous future.",
-    descriptionMobile4: "",
-  },
-  {
-    id: 2,
-    src: image2,
-    title: "ENGINEERING THE FUTURE",
-    description1: "Advanced technologies and scientific",
-    description2: "breakthroughs are paving the way for a smarter.",
-    descriptionMobile: "Advanced technologies and",
-    descriptionMobile2: "scientific breakthroughs are",
-    descriptionMobile3: "paving the way for a smarter.",
-    descriptionMobile4: "",
-  },
-  {
-    id: 3,
-    src: image3,
-    title: "ELEVATE YOUR LIFESTYLE",
-    description1:"Explore the latest trends in entertainment and living. Enhance your everyday",
-    description2: "experiences with innovations designed for your comfort, joy, and excitement.",
-    descriptionMobile: "Explore the latest trends in entertainment and living. Enhance",
-    descriptionMobile2: "your everyday experiences with innovations designed for your ",
-    descriptionMobile3: "comfort, joy, and excitement.",
-    descriptionMobile4: "",
-  },
-  {
-    id: 4,
-    src: image4,
-    title: "BOOSTING WORK QUALITY",
-    description1: "Use advanced technology to enhance productivity",
-    description2: "and streamline processes for improved work quality.",
-    descriptionMobile: "Use advanced technology to ",
-    descriptionMobile2: "enhance productivity and ",
-    descriptionMobile3: "streamline processes for improved work quality.",
-    descriptionMobile4: "work quality.",
-  },
+  { id: 1, src: image1, key: "homeSwiper.slide1" },
+  { id: 2, src: image2, key: "homeSwiper.slide2" },
+  { id: 3, src: image3, key: "homeSwiper.slide3" },
+  { id: 4, src: image4, key: "homeSwiper.slide4" },
 ];
 
 const HomeSwiper = () => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -63,48 +25,53 @@ const HomeSwiper = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[932px] md:h-[1080px] pt-[80px] overflow-hidden">
+    <div className="relative w-full h-[932px] xl:h-[1080px] pt-[50px] md:pt-[80px] overflow-hidden">
       <div className="relative w-full h-full">
-        {imagesWithText.map((item, index) => (
-          <div
-            key={item.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in ${
-              currentSlide === index
-                ? "opacity-100 z-10"
-                : "opacity-0 z-0"
-            }`}
-          >
-            <img
-              src={item.src}
-              alt={item.title}
-              className="w-full h-full object-cover"
-            />
-            {/* Centered Text */}
-            <div className="absolute top-1/2 left-0 flex flex-col gap-[10px] w-full text-center text-white transform -translate-y-1/2">
-              <div className="text-2xl md:text-5xl font-bold leading-normal">{item.title}</div>
-              <div className="w-full">
-                <div className="hidden md:block text-2xl font-normal text-[#D1D5DB] w-full">
-                  {item.description1}
+        {imagesWithText.map((item, index) => {
+          const translation = t(item.key, { returnObjects: true });
+
+          return (
+            <div
+              key={item.id}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in ${
+                currentSlide === index
+                  ? "opacity-100 z-10"
+                  : "opacity-0 z-0"
+              }`}
+            >
+              <img
+                src={item.src}
+                alt={translation.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute top-1/2 left-0 flex flex-col gap-[10px] w-full text-center text-white transform -translate-y-1/2 px-[20px]">
+                <div className="text-2xl md:text-4xl xl:text-5xl font-bold leading-normal">
+                  {translation.title}
                 </div>
-                <div className="hidden md:block text-2xl font-normal text-[#D1D5DB] leading-normal w-full">
-                  {item.description2}
-                </div>
-                <div className="md:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-full">
-                  {item.descriptionMobile}
-                </div>
-                <div className="md:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-full">
-                  {item.descriptionMobile2}
-                </div>
-                <div className="md:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-full">
-                  {item.descriptionMobile3}
+                <div className="w-full px-[10px]">
+                  <div className="hidden lg:block text-2xl font-normal text-[#D1D5DB] w-full">
+                    {translation.description1}
+                  </div>
+                  <div className="hidden lg:block text-2xl font-normal text-[#D1D5DB] leading-normal w-full">
+                    {translation.description2}
+                  </div>
+                  <div className="hidden lg:hidden md:block text-xl font-normal text-[#D1D5DB] leading-normal w-full">
+                    {translation.descriptionMd}
+                  </div>
+                  <div className="md:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-full">
+                    <div>{translation.descriptionMobile}</div>
+                    <div>{translation.descriptionMobile2}</div>
+                    <div>{translation.descriptionMobile3}</div>
+                    <div>{translation.descriptionMobile4}</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       {/* Pagination */}
-      <div className="absolute z-50 bottom-0 left-1/2 transform -translate-x-1/2 flex gap-[5px] md:gap-[10px] p-[50px]">
+      <div className="absolute z-40 bottom-0 left-1/2 transform -translate-x-1/2 flex gap-[5px] md:gap-[10px] p-[50px]">
         {imagesWithText.map((_, index) => (
           <div
             key={index}

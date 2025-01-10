@@ -4,356 +4,468 @@ import Image2 from '../Assets/Images/Team/2.png';
 import Image3 from '../Assets/Images/Team/3.png';
 import Image4 from '../Assets/Images/Team/4.png';
 import Image5 from '../Assets/Images/Team/5.png';
+import ImageM1 from '../Assets/Images/Team/M1.png';
+import TeamM1 from '../Assets/Images/Team/TeamM1.png';
+import TeamM2 from '../Assets/Images/Team/TeamM2.png';
+import TeamM3 from '../Assets/Images/Team/TeamM3.png';
+import TeamM4 from '../Assets/Images/Team/TeamM4.png';
 import AOS from 'aos';
+import { useTranslation } from 'react-i18next';
 
 const Team = () => {
+
+    const {t, i18n} = useTranslation();
 
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            once: false,
+            once: true,
             offset: 200,
         });
     }, []);
 
     return (
-        <div className='flex flex-col pt-[80px] pb-[250px]'>
-            <div className='flex flex-col gap-[200px] w-full'>
+        <div className='flex flex-col pt-[50px] md:pt-[80px] pb-[250px]'>
+            <div className='flex flex-col gap-[150px] md:gap-[200px] w-full'>
                 {/* Top Image */}
-                <div className='relative'>
-                    <img src={Image1} alt="" className='w-full object-cover'/>
+                {/* Web */}
+                <div className='hidden xl:block relative'>
+                    <img src={Image1} alt="" className='hidden md:block w-full object-cover'/>
                     <div className='absolute top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[64px] text-[#D1D5DB] font-light'>
-                        <div>
-                            OUR TEAM
+                        <div className='w-full'>
+                            {t("Team.ourTeam")}
                         </div>
                     </div>
                 </div>
-                {/* OVER 15 SKILLED PROFESSIONALS */}
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='flex flex-col gap-[30px] max-w-[1200px] w-[1200px]'>
-                        <div className='text-5xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
-                            OVER 15 SKILLED PROFESSIONALS
+                {/* Mobile */}
+                <div className='xl:hidden relative'>
+                    <img src={ImageM1} alt="" className='w-full object-cover'/>
+                    <div className='absolute top-[78%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl md:text-6xl lg:text-8xl text-[#D1D5DB] font-light'>
+                        <div className='w-[240px] md:w-full'>
+                            {t("Team.ourTeam")}
                         </div>
-                        <div className='text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
+                    </div>
+                </div>
+                
+                {/* OVER 15 SKILLED PROFESSIONALS */}
+                <div className='flex flex-col justify-center items-center px-[25px] xl:px-0'>
+                    <div className='flex flex-col gap-[30px] max-w-[1200px] xl:w-[1200px]'>
+                        <div className='text-xl md:text-4xl xl:text-5xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
+                            {t("Team.skilledProfessionals")}
+                        </div>
+                        {/* Web */}
+                        <div className='hidden xl:block text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                             <div>
-                                A strong team of 15+ professionals across IT, Mobile App, UI/UX, and Core Management, driving
+                                {t("Team.strongTeam")}
                             </div> 
                             <div>
-                                innovation and delivering tailored solutions that fuel growth and meet evolving client needs.
+                                {t("Team.innovation")}
                             </div>
+                        </div>
+                        {/* Mobile */}
+                        <div className='xl:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
+                            {t("Team.strongTeamMobile")}
                         </div>
                     </div>
                 </div>
+
                 {/* Team & Career Page */}
                 <div className='flex flex-col gap-[250px] w-full'>
                     {/* Team */}
                     <div className='flex flex-col w-full'>
                         {/* IT */}
-                        <div className='flex flex-col gap-[50px] justify-center items-center bg-[#D5E7FF] w-full py-[101px]'>
-                            <div className='flex flex-col gap-[50px] max-w-[1200px] w-[1200px]'>
+                        <div className='flex flex-col gap-[50px] justify-start md:justify-center items-start md:items-center bg-[#D5E7FF] w-full py-[50px] md:py-[101px] px-[25px] xl:px-0'>
+                            <div className='flex flex-col gap-[30px] xl:gap-[50px] max-w-[1200px] xl:w-[1200px]'>
                                 <div className='flex flex-col gap-[10px]' data-aos="fade-up" data-aos-delay="400">
-                                    <div className='text-xl text-[#557AAA] font-light'>
-                                        Team's Expertise
+                                    <div className='text-base md:text-xl lg:text-2xl text-[#557AAA] font-light leading-normal'>
+                                        {t("Team.teamExpertise")}
                                     </div>
-                                    <div className='text-[32px] text-[#153764] font-bold'>
-                                        IT ENGINEERING
+                                    <div className='text-xl md:text-[32px] lg:text-4xl text-[#153764] font-bold leading-normal'>
+                                        {t("Team.itEngineering")}
                                     </div>
                                 </div>
-                                <div className='flex justify-between text-xl text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
-                                    <ul className='list-disc list-inside'>
+                                <div className='flex flex-col xl:flex-row justify-between text-base md:text-xl lg:text-2xl xl:text-xl text-[#4B5563] font-normal pl-3' data-aos="fade-up" data-aos-delay="600">
+                                    <ul className='list-disc list-inside leading-[40px] '>
                                         <li>
-                                            System Architecture Design
+                                            {t("Team.systemArchitecture")}
                                         </li>
                                         <li>
-                                            Development and Maintenance
+                                            {t("Team.development")}
                                         </li>
                                         <li>
-                                            Network Security Management
+                                            {t("Team.networkSecurity")}
                                         </li>
                                         <li>
-                                            Database Management
-                                        </li>
-                                    </ul>
-                                    <ul className='list-disc list-inside'>
-                                        <li>
-                                            System Integration
-                                        </li>
-                                        <li>
-                                            Technology Strategy Planning
-                                        </li>
-                                        <li>
-                                            Process Automation Optimisation
+                                            {t("Team.databaseManagement")}
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-inside'>
+                                    <ul className='list-disc list-inside leading-[40px] '>
                                         <li>
-                                            Data Analysis and Processing
+                                            {t("Team.systemIntegration")}
                                         </li>
                                         <li>
-                                            Cloud Infrastructure Management
+                                            {t("Team.technologyStrategy")}
                                         </li>
                                         <li>
-                                            Support and Troubleshooting
+                                            {t("Team.processAutomation")}
+                                        </li>
+                                    </ul>
+                                    <ul className='list-disc list-inside leading-[40px] '>
+                                        <li>
+                                            {t("Team.DataAnalysis")}
+                                        </li>
+                                        <li>
+                                            {t("Team.cloudInfrastructure")}
+                                        </li>
+                                        <li>
+                                            {t("Team.support")}
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+
                         {/* WE'RE COOL CREW */}
-                        <div className='flex justify-center'>
+                        {/* Web */}
+                        <div className='hidden xl:flex justify-center'>
                             {/* Left */}
                             <div className='w-full' data-aos="fade-up" data-aos-delay="800">
-                                <img src={Image2} alt="" className='w-full max-h-[600px] object-cover'/>
+                                <img src={Image2} alt="" className=' w-full max-h-[600px] object-cover'/>
                             </div>
                             {/* Right */}
                             <div className='flex flex-col gap-[30px] justify-center px-[132px]'>
-                                <div className='text-[32px] text-[#557AAA] font-bold w-[600px]' data-aos="fade-up" data-aos-delay="500">
-                                    WE'RE COOL CREW
+                                <div className='text-[32px] text-[#557AAA] font-bold md:w-[600px] leading-normal' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.coolCrew")}
                                 </div>
-                                <div className='text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="600">
+                                <div className='text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="600">
                                     <div>
-                                        A dynamic IT team driving innovation and
+                                        {t("Team.dynamicItTeam")}
                                     </div> 
                                     <div>
-                                        excellence, delivering cutting-edge solutions
+                                        {t("Team.excellence")}
                                     </div>
                                     <div>
-                                        that shape the future through technology.
+                                        {t("Team.shapeTheFuture")}
+                                    </div>
+                                    <div>
+                                        {t("Team.teknologi")}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {/* MOBILE */}
-                        <div className='flex flex-col gap-[50px] justify-center items-center bg-[#D5E7FF] w-full py-[101px]'>
-                            <div className='flex flex-col gap-[50px] max-w-[1200px] w-[1200px]'>
+                        {/* Mobile */}
+                        <div className='xl:hidden flex justify-center relative'>
+                            {/* Left: Image */}
+                            <div className='relative w-full' data-aos="fade-up" data-aos-delay="800">
+                                <img src={TeamM1} alt="" className='w-full max-h-[600px] object-cover'/>
+                            </div>
+
+                            {/* Right: Text */}
+                            <div className='absolute inset-0 flex flex-col gap-[10px] md:gap-5 justify-center z-10 px-[25px]'>
+                                <div className='text-xl md:text-4xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.coolCrew")}
+                                </div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="600">
+                                    {t("Team.dynamicItTeamMobile")}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* MOBILE APP ENGINNERING*/}
+                        <div className='flex flex-col gap-[50px] justify-start md:justify-center items-start md:items-center bg-[#D5E7FF] w-full py-[50px] md:py-[101px] px-[25px] xl:px-0'>
+                            <div className='flex flex-col gap-[30px] xl:gap-[50px] max-w-[1200px] xl:w-[1200px]'>
                                 <div className='flex flex-col gap-[10px]' data-aos="fade-up" data-aos-delay="400">
-                                    <div className='text-xl text-[#557AAA] font-light'>
-                                        Team's Expertise
+                                    <div className='text-base md:text-xl lg:text-2xl text-[#557AAA] font-light leading-normal'>
+                                        {t("Team.teamExpertise")}
                                     </div>
-                                    <div className='text-[32px] text-[#153764] font-bold'>
-                                        MOBILE APP ENGINEERING
+                                    <div className='text-xl md:text-[32px] lg:text-4xl text-[#153764] font-bold leading-normal'>
+                                        {t("Team.mobileApp")}
                                     </div>
                                 </div>
-                                <div className='flex justify-between text-xl text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
-                                    <ul className='list-disc list-inside'>
+                                <div className='flex flex-col xl:flex-row justify-between text-base md:text-xl xl:text-xl lg:text-2xl text-[#4B5563] font-normal pl-3' data-aos="fade-up" data-aos-delay="600">
+                                    <ul className='list-disc list-inside leading-[40px]'>
                                         <li>
-                                            App Store Deployment
+                                            {t("Team.appStore")}
                                         </li>
                                         <li>
-                                            UI and UX Design
+                                            {t("Team.uiUx")}
                                         </li>
                                         <li>
-                                            Cross-Platform Development
+                                            {t("Team.CrossPlatform")}
                                         </li>
                                         <li>
-                                            Feature Development
-                                        </li>
-                                    </ul>
-                                    <ul className='list-disc list-inside'>
-                                        <li>
-                                            API Development and Integration
-                                        </li>
-                                        <li>
-                                            Technology Strategy Planning
-                                        </li>
-                                        <li>
-                                            Version Control Management
+                                            {t("Team.futureDevelopment")}
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-inside'>
+                                    <ul className='list-disc list-inside leading-[40px]'>
                                         <li>
-                                            In-App Purchase Implementation
+                                            {t("Team.apiDevelopment")}
                                         </li>
                                         <li>
-                                            Push Notifications Management
+                                            {t("Team.technologyStrategy")}
                                         </li>
                                         <li>
-                                            User Feedback and Testing
+                                            {t("Team.versionCnotrol")}
+                                        </li>
+                                    </ul>
+                                    <ul className='list-disc list-inside leading-[40px]'>
+                                        <li>
+                                            {t("Team.inApp")}
+                                        </li>
+                                        <li>
+                                            {t("Team.pushNotifications")}
+                                        </li>
+                                        <li>
+                                            {t("Team.userFeedback")}
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+
                         {/* EMPOWERING MOBILITY */}
-                        <div className='flex justify-center'>
+                        {/* Web */}
+                        <div className='hidden xl:flex justify-center'>
                             {/* Left */}
                             <div className='w-full' data-aos="fade-up" data-aos-delay="400">
                                 <img src={Image3} alt="" className='w-full max-h-[600px] object-cover'/>
                             </div>
                             {/* Right */}
                             <div className='flex flex-col gap-[30px] justify-center px-[132px]'>
-                                <div className='text-[32px] text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
-                                    EMPOWERING MOBILITY
+                                <div className='text-[32px] text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.empowering")}
                                 </div>
-                                <div className='text-2xl text-[#4B5563] font-normal w-[600px]' data-aos="fade-up" data-aos-delay="600">
+                                <div className='text-2xl text-[#4B5563] font-normal md:w-[600px] leading-normal' data-aos="fade-up" data-aos-delay="600">
                                     <div>
-                                        The Mobile App team creates high-performance,
+                                        {t("Team.mobileAppTeam")}
                                     </div> 
                                     <div>
-                                        user-friendly applications, ensuring seamless 
+                                         {t("Team.userFriendly")}
                                     </div>
                                     <div>
-                                        experiences and superior performance across 
+                                         {t("Team.experiences")}
                                     </div>
                                     <div>
-                                        devices, while adapting swiftly to market
+                                        {t("Team.devices")}
                                     </div>
                                     <div>
-                                        demands.
+                                        {t("Team.demands")}
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {/* Mobile */}
+                        <div className='xl:hidden flex justify-center relative'>
+                            {/* Image */}
+                            <div className='relative w-full' data-aos="fade-up" data-aos-delay="800">
+                                <img src={TeamM2} alt="" className='w-full max-h-[600px] object-cover'/>
+                            </div>
+                            {/* Text */}
+                            <div className='absolute inset-0 flex flex-col gap-[10px] md:gap-5 justify-center z-10 px-[25px]'>
+                                <div className='text-xl md:text-4xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.empowering")}
+                                </div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal xl:w-[600px]' data-aos="fade-up" data-aos-delay="600">
+                                    <div>
+                                        {t("Team.mobileAppTeamMobile")}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         {/* UI AND UX DESIGN */}
-                        <div className='flex flex-col gap-[50px] justify-center items-center bg-[#D5E7FF] w-full py-[101px]'>
-                            <div className='flex flex-col justify-start gap-[50px] max-w-[1200px] w-[1200px]'>
+                        <div className='flex flex-col gap-[50px] justify-center md:items-center bg-[#D5E7FF] w-full py-[50px] md:py-[100px] px-[25px] xl:px-0'>
+                            <div className='flex flex-col justify-start gap-[30px] xl:gap-[50px] max-w-[1200px] xl:w-[1200px]'>
                                 <div className='flex flex-col gap-[10px]' data-aos="fade-up" data-aos-delay="400">
-                                    <div className='text-xl text-[#557AAA] font-light'>
-                                        Team's Expertise
+                                    <div className='text-base md:text-xl lg:text-2xl text-[#557AAA] font-light leading-normal'>
+                                        {t("Team.teamExpertise")}
                                     </div>
-                                    <div className='text-[32px] text-[#153764] font-bold'>
-                                        UI AND UX DESIGN
+                                    <div className='text-xl md:text-[32px] lg:text-4xl text-[#153764] font-bold leading-normal'>
+                                        {t("Team.uiUxDesign")}
                                     </div>
                                 </div>
-                                <div className='flex gap-[78px] text-xl text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
-                                    <ul className='list-disc list-inside'>
+                                <div className='flex flex-col xl:flex-row xl:gap-[78px] text-base md:text-xl lg:text-2xl xl:text-xl text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
+                                    <ul className='list-disc list-inside leading-[40px]'>
                                         <li>
-                                            User Research
+                                            {t("Team.userResearch")}
                                         </li>
                                         <li>
-                                            Information Architecture
+                                            {t("Team.informationArchitecture")}
                                         </li>
                                         <li>
-                                            Wireframing and Prototyping
+                                            {t("Team.wireframing")}
                                         </li>
                                         <li>
-                                            Visual Design
-                                        </li>
-                                    </ul>
-                                    <ul className='list-disc list-inside'>
-                                        <li>
-                                            Interaction Design
-                                        </li>
-                                        <li>
-                                            Usability Testing
-                                        </li>
-                                        <li>
-                                            Responsive Designnt
+                                            {t("Team.visualDesign")}
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-inside'>
+                                    <ul className='list-disc list-inside leading-[40px]'>
                                         <li>
-                                            Design System Creation
+                                            {t("Team.interactionDesign")}
                                         </li>
                                         <li>
-                                            User Journey Mapping
+                                            {t("Team.usabilityTesting")}
                                         </li>
                                         <li>
-                                            Design Feedback Integration
+                                            {t("Team.responsive")}
+                                        </li>
+                                    </ul>
+                                    <ul className='list-disc list-inside leading-[40px]'>
+                                        <li>
+                                            {t("Team.designSystem")}
+                                        </li>
+                                        <li>
+                                            {t("Team.useJourney")}
+                                        </li>
+                                        <li>
+                                            {t("Team.designFeedback")}
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+
                         {/* ENTER VIRTUAL REALITY */}
-                        <div className='flex justify-center'>
+                        {/* Web */}
+                        <div className='hidden xl:flex justify-center'>
                             {/* Left */}
                             <div className='w-full' data-aos="fade-up" data-aos-delay="400">
                                 <img src={Image4} alt="" className='w-full max-h-[600px] object-cover'/>
                             </div>
                             {/* Right */}
                             <div className='flex flex-col gap-[30px] justify-center px-[132px]'>
-                                <div className='text-[32px] text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
-                                    ENTER VIRTUAL REALITY
+                                <div className='text-[32px] text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.enterVirtual")}
                                 </div>
-                                <div className='text-2xl text-[#4B5563] font-normal w-[600px]' data-aos="fade-up" data-aos-delay="600">
+                                <div className='text-2xl text-[#4B5563] font-normal md:w-[600px] leading-normal' data-aos="fade-up" data-aos-delay="600">
                                     <div>
-                                        Our UI/UX team creates exceptional, user-
+                                        {t("Team.ourUiUx")}
                                     </div> 
                                     <div>
-                                        centered designs that blend aesthetics and  
+                                         {t("Team.centeredDesigns")}
                                     </div>
                                     <div>
-                                        functionality, enhancing usability through  
+                                        {t("Team.functionality")}
                                     </div>
                                     <div>
-                                        minimalist design and in-depth user research.
+                                        {t("Team.minimalist")}
+                                    </div>
+                                    <div>
+                                        {t("Team.bentuk")}
+                                    </div>
+                                    <div>
+                                        {t("Team.yang")}
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {/* Mobile */}
+                        <div className='xl:hidden flex justify-center relative'>
+                            {/* Image */}
+                            <div className='relative w-full' data-aos="fade-up" data-aos-delay="400">
+                                <img src={TeamM3} alt="" className='w-full max-h-[600px] object-cover'/>
+                            </div>
+                            {/* Text */}
+                            <div className='absolute inset-0 flex flex-col gap-[10px] md:gap-5 justify-center px-[25px]'>
+                                <div className='text-xl md:text-4xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.enterVirtual")}
+                                </div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal xl:w-[600px]' data-aos="fade-up" data-aos-delay="600">
+                                    {t("Team.ourUiUxMobile")}
+                                </div>
+                            </div>
+                        </div>
+
                         {/* CORE MANAGEMENT */}
-                        <div className='flex flex-col gap-[50px] justify-center items-center bg-[#D5E7FF] w-full py-[101px]'>
-                            <div className='flex flex-col gap-[50px] max-w-[1200px] w-[1200px]'>
+                        <div className='flex flex-col gap-[50px] justify-center md:items-center bg-[#D5E7FF] w-full py-[50px] md:py-[100px] px-[25px] xl:px-0'>
+                            <div className='flex flex-col gap-[30px] xl:gap-[50px] max-w-[1200px] xl:w-[1200px]'>
                                 <div className='flex flex-col gap-[10px]' data-aos="fade-up" data-aos-delay="400">
-                                    <div className='text-xl text-[#557AAA] font-light'>
-                                        Team's Expertise
+                                    <div className='text-base md:text-xl lg:text-2xl text-[#557AAA] font-light leading-normal'>
+                                        {t("Team.teamExpertise")}
                                     </div>
-                                    <div className='text-[32px] text-[#153764] font-bold'>
-                                        CORE MANAGEMENT
+                                    <div className='text-xl md:text-[32px] lg:text-4xl text-[#153764] font-bold leading-normal'>
+                                        {t("Team.coreManagement")}
                                     </div>
                                 </div>
-                                <div className='flex gap-[78px] text-xl text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
-                                    <ul className='list-disc list-inside'>
+                                <div className='flex flex-col xl:flex-row xl:gap-[78px] text-base md:text-xl lg:text-2xl xl:text-xl  text-[#4B5563] font-normal leading-[40px] pl-3' data-aos="fade-up" data-aos-delay="600">
+                                    <ul className='list-disc list-inside leading-[40px]'>
                                         <li>
-                                            Strategic Planning
+                                            {t("Team.strategicPlanning")}
                                         </li>
                                         <li>
-                                            Performance Management
+                                            {t("Team.performanceManagement")}
                                         </li>
                                         <li>
-                                            Resource Allocation
+                                            {t("Team.resourceAllocation")}
                                         </li>
                                         <li>
-                                            Financial Management
-                                        </li>
-                                    </ul>
-                                    <ul className='list-disc list-inside'>
-                                        <li>
-                                            Employee Benefits
-                                        </li>
-                                        <li>
-                                            Communication Strategy
-                                        </li>
-                                        <li>
-                                            Team Building
+                                            {t("Team.financialManagement")}
                                         </li>
                                     </ul>
-                                    <ul className='list-disc list-inside'>
+                                    <ul className='list-disc list-inside leading-[40px]'>
                                         <li>
-                                            Decision-Making Processes
+                                            {t("Team.employeeBenefits")}
                                         </li>
                                         <li>
-                                            Customer Relationship
+                                            {t("Team.communicationStrategy")}
                                         </li>
                                         <li>
-                                            Corporate Culture Development
+                                            {t("Team.teamBuilding")}
+                                        </li>
+                                    </ul>
+                                    <ul className='list-disc list-inside leading-[40px]'>
+                                        <li>
+                                            {t("Team.decisionMaking")}
+                                        </li>
+                                        <li>
+                                            {t("Team.customerRrelationship")}
+                                        </li>
+                                        <li>
+                                            {t("Team.corporateCulture")}
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+
                         {/* DRIVING EXCELLENCE */}
-                        <div className='flex justify-center'>
+                        {/* Web */}
+                        <div className='hidden xl:flex justify-center'>
                             {/* Left */}
                             <div className='w-full' data-aos="fade-up" data-aos-delay="400">
                                 <img src={Image5} alt="" className='w-full max-h-[600px] object-cover'/>
                             </div>
                             {/* Right */}
                             <div className='flex flex-col gap-[30px] justify-center px-[132px]'>
-                                <div className='text-[32px] text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
-                                    DRIVING EXCELLENCE
+                                <div className='text-[32px] text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.drivingExcellence")}
                                 </div>
-                                <div className='text-2xl text-[#4B5563] font-normal w-[600px]' data-aos="fade-up" data-aos-delay="600">
+                                <div className='text-2xl text-[#4B5563] font-normal md:w-[600px] leading-normal' data-aos="fade-up" data-aos-delay="600">
                                     <div>
-                                        The Core Management team drives growth
+                                        {t("Team.coreManagementTeam")}
                                     </div> 
                                     <div>
-                                        through strategic planning, data-driven   
+                                        {t("Team.strategicPlanningDataDriven")} 
                                     </div>
                                     <div>
-                                        decisions, and optimised processes, ensuring sustained competitiveness and value creation.
+                                        {t("Team.decisions")}
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Mobile */}
+                        <div className='xl:hidden flex justify-center relative'>
+                            {/* Left */}
+                            <div className='relative w-full' data-aos="fade-up" data-aos-delay="400">
+                                <img src={TeamM4} alt="" className='w-full max-h-[600px] object-cover'/>
+                            </div>
+                            {/* Right */}
+                            <div className='absolute inset-0 flex flex-col gap-[10px] md:gap-5 justify-center px-[25px]'>
+                                <div className='text-xl md:text-4xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.drivingExcellence")}
+                                </div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal xl:w-[600px]' data-aos="fade-up" data-aos-delay="600">
+                                    {t("Team.coreManagementTeamMobile")}
                                 </div>
                             </div>
                         </div>
@@ -363,19 +475,19 @@ const Team = () => {
                         <div className="max-w-[1200px] flex flex-col gap-[250px]">
                             <div className="flex flex-col gap-[50px]">
                                 <div className="flex flex-col justify-center items-center gap-[10px]" data-aos="fade-up" data-aos-delay="400">
-                                    <div className="text-[32px] text-[#557AAA] font-medium leading-normal">LET'S WORK TOGETHER</div>
-                                    <div className='flex flex-col items-center'>
-                                        <div className="text-5xl text-[#153764] font-bold leading-normal">JOIN OUR</div>
-                                        <div className="text-5xl text-[#153764] font-bold leading-normal">FANTASTIC TEAM TODAY!</div>
+                                    <div className="text-base md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal">{t("Team.workTogether")}</div>
+                                    <div className='flex flex-col items-center md:gap-3'>
+                                        <div className="text-2xl md:text-5xl text-[#153764] font-bold leading-normal">{t("Team.joinOur")}</div>
+                                        <div className="text-2xl md:text-5xl text-[#153764] font-bold leading-normal">{t("Team.fantastic")}</div>
                                     </div>
                                 </div>
                                 <div>
                                     <div className="flex justify-center items-center" data-aos="fade-up" data-aos-delay="600">
                                         <a
                                             href='/careers'
-                                            className="text-2xl text-[#153764] font-normal leading-normal px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
+                                            className="text-base md:text-2xl text-[#153764] font-normal leading-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
                                         >
-                                            CAREER PAGE
+                                            {t("Team.careerPage")}
                                         </a>
                                     </div>
                                 </div>

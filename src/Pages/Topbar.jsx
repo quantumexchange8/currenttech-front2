@@ -25,7 +25,8 @@ const Topbar = () => {
     const toggleLanguage = (langCode) => { // Define the language when the button clicked
         i18n.changeLanguage(langCode);
         localStorage.setItem('i18nextLng', langCode);
-        setLangIsOpen(false)
+        setLangIsOpen(false);
+        closeMenuModal();
     };
 
     const toggleAdvantage = (e) => {
@@ -108,9 +109,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center p-1`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.homePage")}
@@ -129,9 +128,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center p-1`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.advantagePage")}
@@ -150,9 +147,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.specialPage")}
@@ -171,9 +166,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.productsPage")}
@@ -192,9 +185,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.creatingPage")}
@@ -213,9 +204,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.pricePage")}
@@ -234,9 +223,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.careerPage")}
@@ -255,9 +242,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.aboutPage")}
@@ -276,9 +261,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.teamPage")}
@@ -297,9 +280,7 @@ const Topbar = () => {
                                                     }`}
                                                 >
                                                     <button
-                                                        className={`${
-                                                            active ? 'bg-[#CCCCCC80] rounded-[35px]' : ''
-                                                        } group flex flex-col w-full items-center`}
+                                                        className={"group flex flex-col w-full items-center"}
                                                         onClick={closeMenuModal}
                                                     >
                                                         {t("mobileTopbar.supportPage")}
@@ -315,7 +296,7 @@ const Topbar = () => {
                                             </button>
 
                                             {/* Malay Icon */}
-                                            <button className="transform hover:scale-110 transition duration-300 ease-in-out" onClick={() => toggleLanguage('my')}>
+                                            <button className="transform hover:scale-110 transition duration-300 ease-in-out" onClick={() => toggleLanguage('bm')}>
                                                 <Malay />
                                             </button>
 
@@ -414,7 +395,7 @@ const Topbar = () => {
                                     leaveFrom="transform opacity-100 scale-100"
                                     leaveTo="transform opacity-0 scale-95"
                                 >
-                                    <Menu.Items className="absolute flex flex-col justify-center gap-[30px] mt-[50px] p-[50px] rounded-[5px] bg-gradient-to-b from-[#EAF3FF] to-[#BBD7FE] shadow-lg ring-1 ring-black/5 focus:outline-none text-2xl font-normal text-center right-0">
+                                    <Menu.Items className="absolute flex flex-col justify-center gap-[30px] mt-[50px] p-[50px] rounded-[5px] bg-gradient-to-b from-[#EAF3FF] to-[#BBD7FE] shadow-lg ring-1 ring-black/5 focus:outline-none text-2xl font-normal text-center right-0 w-[243px]">
                                         {/* Home Page */}
                                         <Menu.Item>
                                             {({ active }) => (

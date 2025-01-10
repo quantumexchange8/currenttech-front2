@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Pos1, Pos2, Pos3, Pos4, Pos5, Pos6, Pos1S, Pos2S, Pos3S, Pos4S, Pos5S, Pos6S } from '../Components/Outline.jsx';
 import AOS from 'aos'; 
 import 'aos/dist/aos.css'; 
+import { useTranslation } from "react-i18next";
 
 const HomeCircle = () => {
   const [centerTitle, setCenterTitle] = useState("POS SYSTEM");
@@ -11,13 +12,17 @@ const HomeCircle = () => {
   const [centerDescription4, setCenterDescription4] = useState();
   const [selectedIcon, setSelectedIcon] = useState(1);
 
+  const {t, i18n} = useTranslation();
+  
+
   useEffect(() => {
           AOS.init({
             duration: 1000, 
-            once: false,  
+            once: true,  
             offset: 200,
           });
         }, []);
+        
 
   // Icons with corresponding content and rotation
   const iconData = [
@@ -27,11 +32,13 @@ const HomeCircle = () => {
       selectedComponent: <Pos1S />,
       rotation: "0", 
       translateY: "-400px", 
-      title: "POS SYSTEM",
-      description: <div className="flex gap-1 justify-center">With over <div className="text-xl text-[#374151] font-medium">400+</div></div>,
-      description2: "premium retail clients",
-      description3: "using our POS system.",
-      description4: "",
+      translateYMd: "-250px",
+      title: <div>{t("homeCircle.posSystem.title")}</div>,
+      description: <div>{t("homeCircle.posSystem.descriptionBold")} <span className="font-medium">400+</span> {t("homeCircle.posSystem.descriptionBold2")}</div>,
+      description2: <div>{t("homeCircle.posSystem.description2")}</div>,
+      description3: <div>{t("homeCircle.posSystem.description3")}</div>,
+      description4: <div>{t("homeCircle.posSystem.description4")}</div>,
+      
     },
     { 
       id: 2, 
@@ -39,11 +46,13 @@ const HomeCircle = () => {
       selectedComponent: <Pos2S />,
       rotation: "60", 
       translateY: "-400px", 
-      title: "HR & CMS SYSTEM",
-      description: "Our management",
-      description2: <div className="flex gap-1 justify-center">system supports over <div className="text-xl text-[#374151] font-medium flex justify-center">30+</div></div>,
-      description3: "traditional industry firms",
-      description4: "and brokerages.",
+      translateYMd: "-250px",
+      title: <div>{t("homeCircle.hrCmsSystem.title")}</div>,
+      description: <div>{t("homeCircle.hrCmsSystem.description")}</div>,
+      description2: <div>{t("homeCircle.hrCmsSystem.descriptionBold")} <span className="font-medium">30+</span> {t("homeCircle.hrCmsSystem.descriptionBold2")}</div>,
+      description3: <div>{t("homeCircle.hrCmsSystem.description3")}</div>,
+      description4: <div>{t("homeCircle.hrCmsSystem.description4")}</div>,
+      
     },
     { 
       id: 3, 
@@ -51,11 +60,13 @@ const HomeCircle = () => {
       selectedComponent: <Pos3S />, 
       rotation: "120", 
       translateY: "-400px", 
-      title: "STOCK CONTROL",
-      description: "Wine & alcohol storage ",
-      description2: <div className="flex gap-1 justify-center">system <div className="text-xl text-[#374151] font-medium flex justify-center">amazes</div> bars and</div>,
-      description3: "venues, easing record-",
-      description4: "keeping hassles.", 
+      translateYMd: "-250px",
+      title: <div>{t("homeCircle.stockControl.title")}</div>,
+      description: <div>{t("homeCircle.stockControl.description")}</div>,
+      description2: <div>{t("homeCircle.stockControl.descriptionBold")} <span className="font-medium"> {t("homeCircle.stockControl.bold")} </span> {t("homeCircle.stockControl.descriptionBold2")}</div>,
+      description3: <div>{t("homeCircle.stockControl.description3")}</div>,
+      description4: <div>{t("homeCircle.stockControl.description4")}</div>,
+      
     },
     { 
       id: 4, 
@@ -63,11 +74,13 @@ const HomeCircle = () => {
       selectedComponent: <Pos4S />,
       rotation: "0", 
       translateY: "400px", 
-      title: "FOOD ORDERING",
-      description: "Our food ordering system ",
-      description2: <div className="flex gap-1 justify-center"> <div className="text-xl text-[#374151] font-medium flex justify-center">impresses</div> restaurants and </div>,
-      description3: "cafes, simplifying order ",
-      description4: "management effortlessly.", 
+      translateYMd: "250px",
+      title: <div>{t("homeCircle.foodOrdering.title")}</div>,
+      description: <div>{t("homeCircle.foodOrdering.description")}</div>,
+      description2: <div><span className="font-medium"> {t("homeCircle.foodOrdering.bold")} </span> {t("homeCircle.foodOrdering.descriptionBold")}</div>,
+      description3: <div>{t("homeCircle.foodOrdering.description2")}</div>,
+      description4: <div>{t("homeCircle.foodOrdering.description3")}</div>,
+      
     },
     { 
       id: 5, 
@@ -75,11 +88,13 @@ const HomeCircle = () => {
       selectedComponent: <Pos5S />,
       rotation: "240", 
       translateY: "-400px", 
-      title: "e-INVOICE",
-      description: <div className="flex gap-1 justify-center">Our <div className="text-xl text-[#374151] font-medium flex justify-center">LHDN-certified</div></div>,
-      description2: <div className="flex gap-1 justify-center"> <div className="text-xl text-[#374151] font-medium flex justify-center">e-Invoice system</div> streamlines</div>,
-      description3: "invoicing and ensures ",
-      description4: "effortless compliance.", 
+      translateYMd: "-250px",
+      title: <div>{t("homeCircle.eInvoice.title")}</div>,
+      description: <div>{t("homeCircle.eInvoice.description")}</div>,
+      description2: <div>{t("homeCircle.eInvoice.descriptionBold")}<span className="font-medium"> {t("homeCircle.eInvoice.bold")} </span> </div>,
+      description3: <div className="w-[310px]"><span className="font-medium"> {t("homeCircle.eInvoice.bold2")} </span>{t("homeCircle.eInvoice.descriptionBold2")}</div>,
+      description4: <div>{t("homeCircle.eInvoice.description2")}</div>,
+      
     },
     { 
       id: 6, 
@@ -87,11 +102,13 @@ const HomeCircle = () => {
       selectedComponent: <Pos6S />,
       rotation: "300", 
       translateY: "-400px", 
-      title: "FOREX LABEL SOLUTION",
-      description: <div className="flex gap-1 justify-center">Over <div className="text-xl text-[#374151] font-medium flex justify-center">10+ brokerages</div> have</div>,
-      description2: "gained licensing and are ",
-      description3: "operational through our ",
-      description4: "Label solution.", 
+      translateYMd: "-250px",
+      title: <div>{t("homeCircle.forexLabelSolution.title")}</div>,
+      description: <div>{t("homeCircle.forexLabelSolution.descriptionBold")}<span className="font-medium"> {t("homeCircle.forexLabelSolution.bold2")} </span>{t("homeCircle.forexLabelSolution.descriptionBold2")} </div>,
+      description2: <div>{t("homeCircle.forexLabelSolution.description")}</div>,
+      description3: <div>{t("homeCircle.forexLabelSolution.description2")}</div>,
+      description4: <div>{t("homeCircle.forexLabelSolution.description3")}</div>,
+      
     },
   ];
 
@@ -106,15 +123,15 @@ const HomeCircle = () => {
   }, [selectedIcon]);
 
   return (
-    <div className="relative w-full h-[925px] flex justify-center items-center" data-aos="fade-up">
+    <div className="relative w-full md:h-[600px] lg:h-[925px] flex justify-center items-center" data-aos="fade-up">
       {/* Outer Circle */}
-      <div className="relative w-[800px] h-[800px] border rounded-full" ></div>
+      <div className="relative md:w-[500px] lg:w-[800px] md:h-[500px] lg:h-[800px] border rounded-full" ></div>
 
       {/* Center Circle */}
-      <div className="absolute w-[500px] h-[500px] bg-gray-200 rounded-full flex items-center justify-center text-center" data-aos="fade-up" data-aos-delay="400">
+      <div className="absolute md:w-[300px] lg:w-[500px] md:h-[300px] lg:h-[500px] bg-gray-200 rounded-full flex items-center justify-center text-center" data-aos="fade-up" data-aos-delay="400">
         <div className="flex flex-col gap-[10px]">
-          <div className="font-bold text-2xl text-[#153764]">{centerTitle}</div>
-          <div className="text-xl font-normal text-gray-600 px-12">
+          <div className="font-bold text-lg lg:text-2xl text-[#153764]">{centerTitle}</div>
+          <div className="md:text-sm lg:text-xl font-normal text-gray-600 md:w-[350px]">
             <div>{centerDescription}</div>
             <div>{centerDescription2}</div>
             <div>{centerDescription3}</div>
@@ -127,10 +144,23 @@ const HomeCircle = () => {
       {iconData.map((item) => (
         <div
           key={item.id}
-          className={`absolute w-[120px] h-[120px] rounded-full flex justify-center items-center cursor-pointer 
+          className={`hidden lg:flex justify-center items-center absolute md:w-[80px] lg:w-[120px] md:h-[80px] lg:h-[120px] rounded-full cursor-pointer 
                       ${selectedIcon === item.id ? "bg-blue-100" : "bg-gray-100"}`}
           style={{
             transform: `rotate(${item.rotation}deg) translateY(${item.translateY}) rotate(-${item.rotation}deg)`,
+          }}
+          onClick={() => setSelectedIcon(item.id)}
+        >
+          {selectedIcon === item.id ? item.selectedComponent : item.defaultComponent}
+        </div>
+      ))}
+      {iconData.map((item) => (
+        <div
+          key={item.id}
+          className={`hidden lg:hidden md:flex justify-center items-center absolute w-[80px] h-[80px] rounded-full cursor-pointer 
+                      ${selectedIcon === item.id ? "bg-blue-100" : "bg-gray-100"}`}
+          style={{
+            transform: `rotate(${item.rotation}deg) translateY(${item.translateYMd}) rotate(-${item.rotation}deg)`,
           }}
           onClick={() => setSelectedIcon(item.id)}
         >

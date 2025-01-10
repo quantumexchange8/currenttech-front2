@@ -1,100 +1,306 @@
 {
-    "Topbar":{
-        "advantagePage":"Advantage",
-        "oneStopPage":"One-Stop",
-        "customizePage":"Customize",
-        "productsPage":"Products",
-        "developedPage":"Our Products",
-        "ownSitePage":"Create yours",
-        "pricePage":"Price",
-        "careerPage": "Career"
-      },
+      "Topbar":{
+          "advantagePage":"Advantage",
+          "oneStopPage":"One-Stop",
+          "customizePage":"Customize",
+          "productsPage":"Products",
+          "developedPage":"Our Products",
+          "ownSitePage":"Create yours",
+          "pricePage":"Price",
+          "careerPage": "Career"
+        },
 
       "mobileTopbar": {
-        "homePage":"HOME",
-        "advantagePage": "ADVANTAGE",
-        "specialPage":"SPECIAL",
-        "productsPage": "PRODUCT",
-        "creatingPage": "CREATING",
-        "pricePage": "PRICE",
-        "aboutPage": "ABOUT",
-        "teamPage": "TEAM",
-        "careerPage": "CAREER",
-        "supportPage": "SUPPORT"
-      },
+          "homePage":"HOME",
+          "advantagePage": "ADVANTAGE",
+          "specialPage":"SPECIAL",
+          "productsPage": "PRODUCT",
+          "creatingPage": "CREATING",
+          "pricePage": "PRICE",
+          "aboutPage": "ABOUT",
+          "teamPage": "TEAM",
+          "careerPage": "CAREER",
+          "supportPage": "SUPPORT"
+        },
 
-    "Home":{
-      "homeVideoTitle":"You cannot stop the ",
-      "homeVideoTitle2":"Evolution of Technology",
-      "industriesTitle":"ABOUT CURRENT TECH INDUSTRIES",
-      "industriesDescription":"Current Tech Industries Sdn Bhd, established in 2006, is a high-tech software enterprise based in Kuala Lumpur, Malaysia, with plans to expand to Penang, Sabah, and Sarawak. We specialize in the research, development, production, and sales of technology products. Recognized as a \"New Technology Enterprise,\" we develop projects across various fields. Our talent-oriented management and integrity-based operations attract industry elites, allowing us to integrate advanced technologies and management practices from both domestic and international sources. We provide comprehensive solutions to enhance enterprise management and production capacities, helping businesses remain competitive and achieve stable growth.",
-      "industriesDescription2":" ",
-      "industriesDescription3":" ",
-      "technologyTitle":"TECHNOLOGY",
-      "technologyDescription":"Innovation and technological advancements are key to unlocking a sustainable and prosperous future. Technology has ushered in an era of intelligence, automation, and digitization, driving the transformation and upgrading of industries.",
-      "serviceTitle":"Our Service",
-      "serviceSubTitle":{
-        "softwareTitle":"Software",
-        "websiteTitle":"Website",
-        "mobileAppTitle":"Mobile App",
-        "managementSystemTitle":"Management System",
-        "posSystemTitle":"POS System",
-        "support&serviceTitle":"Support & Service"
-      },
-      "serviceSubTitle_Description":{
-        "softwareDescription":"Empower your business with bespoke software solutions. Our expert developers turn your vision into reality, delivering innovative and dependable software tailored to your unique requirements.",
-        "websiteDescription":"We develop websites of all sizes using a step-by-step approach. From pre-production planning and crafting the GUI design to backend development, we execute each phase with precision.",
-        "mobileAppDescription":"We transform our clients’ core ideas into innovative applications for mobile, cloud, and web platforms. We ensure these apps are compatible with major platforms and accessible on a wide range of devices.",
-        "managementSystemDescription":"The Employee Intelligence Management System (EIMS) is a groundbreaking HR tool that enhances workflow efficiency. It fosters organizational growth and unlocks employee potential through intuitive dashboards, automation, and predictive analytics.",
-        "posSystemDescription":"Maximize your business efficiency with our robust POS and e-Invoice system. Seamlessly handle sales, inventory, and customer data, ensuring a frictionless checkout experience. Integrated into your workflow, it boosts productivity and customer satisfaction.",
-        "support&serviceDescription":"Enhance system performance with our expert support. Our team guarantees timely updates and troubleshooting to ensure smooth operations, maintaining your systems at optimal efficiency."
+      "homeSwiper": {
+          "slide1": {
+            "title": "EXPERIENCE THE REVOLUTION",
+            "description1": "Innovation and technological advancements are the",
+            "description2": "keys to unlocking a sustainable and prosperous future.",
+            "descriptionMobile": "Innovation and technological advancements are the keys to",
+            "descriptionMobile2": "unlocking a sustainable and",
+            "descriptionMobile3": "prosperous future.",
+            "descriptionMobile4": "",
+            "descriptionMd": "Innovation and technological advancements are the keys to unlocking a sustainable and prosperous future."
+          },
+          "slide2": {
+            "title": "ENGINEERING THE FUTURE",
+            "description1": "Advanced technologies and scientific",
+            "description2": "breakthroughs are paving the way for a smarter.",
+            "descriptionMobile": "Advanced technologies and",
+            "descriptionMobile2": "scientific breakthroughs are",
+            "descriptionMobile3": "paving the way for a smarter.",
+            "descriptionMobile4": "",
+            "descriptionMd": "Advanced technologies and scientific breakthroughs are paving the way for a smarter."
+          },
+          "slide3": {
+            "title": "ELEVATE YOUR LIFESTYLE",
+            "description1":"Explore the latest trends in entertainment and living. Enhance your everyday",
+            "description2": "experiences with innovations designed for your comfort, joy, and excitement.",
+            "descriptionMobile": "Explore the latest trends in entertainment and living. Enhance",
+            "descriptionMobile2": "your everyday experiences with innovations designed for your ",
+            "descriptionMobile3": "comfort, joy, and excitement.",
+            "descriptionMobile4": "",
+            "descriptionMd": "Explore the latest trends in entertainment and living. Enhance your everyday experiences with innovations designed for your comfort, joy, and excitement."
+          },
+          "slide4": {
+            "title": "BOOSTING WORK QUALITY",
+            "description1": "Use advanced technology to enhance productivity",
+            "description2": "and streamline processes for improved work quality.",
+            "descriptionMobile": "Use advanced technology to ",
+            "descriptionMobile2": "enhance productivity and ",
+            "descriptionMobile3": "streamline processes for improved work quality.",
+            "descriptionMobile4": "work quality.",
+            "descriptionMd": "Use advanced technology to enhance productivity and streamline processes for improved work quality."
+          }
         },
-        "innovativeTitle":"Innovative Solutions for Your Business",
-        "innovativeDescription":"Our cutting-edge system will transform your business operations, boosting efficiency, sustainability, and customer experience, thus securing your competitiveness in today's market landscape.",
-        "ImgCombinationTitle":{
-          "educationImgTitle": "EDUCATION",
-          "F&BImgTitle": "FOOD & BEVERAGE",
-          "retailImgTitle":"Retail",
-          "wholesaleImgTitle":"WHOLESALE",
-          "logisticImgTitle":"LOGISTIC",
-          "enterpriseImgTitle":"ENTERPRISE"
+
+      "homeCircle": {
+          "posSystem": {
+            "title": "POS SYSTEM",
+            "descriptionBold": "With over ",
+            "descriptionBold2": "",
+            "description2": "premium retail clients",
+            "description3": "using our POS system.",
+            "description4": "",
+            "descriptionBoldMobile2": "premium retail",
+            "descriptionMobile3": "clients using our POS system."
+          },
+          "hrCmsSystem": {
+            "title": "HR & CMS SYSTEM",
+            "description": "Our management",
+            "descriptionBold": "system supports over ",
+            "descriptionBold2": "",
+            "description3": "traditional industry firms",
+            "description4": "and brokerages.",
+            "descriptionBoldMobile": "over",
+            "descriptionBoldMobile2": "traditional industry firms",
+            "descriptionMobile": "Our management system supports ",
+            "descriptionMobile2": "and brokerages."
+          },
+          "stockControl": {
+            "title": "STOCK CONTROL",
+            "description": "Wine & alcohol storage ",
+            "descriptionBold": "system ",
+            "bold": "amazes",
+            "descriptionBold2": "bars and",
+            "descriptionBoldMobile2": "",
+            "description3": "venues, easing record-",
+            "description4": "keeping hassles.",
+            "descriptionMobile": "Wine & alcohol storage system",
+            "descriptionBoldMobile": "bars and venues, easing",
+            "descriptionMobile2": "record-keeping hassles."
+          },
+          "foodOrdering": {
+            "title": "FOOD ORDERING",
+            "description": "Our food ordering system ",
+            "bold": "impresses",
+            "descriptionBold": "restaurants and  ",
+            "description2": "cafes, simplifying order",
+            "description3": "management effortlessly.",
+            "descriptionMobile": "Food ordering system",
+            "descriptionMobile2": "restaurants and cafes, simplifying order management effortlessly.",
+            "descriptionMobile3": "",
+            "descriptionMobile4": ""
+
+          },
+          "eInvoice": {
+            "title": "e-INVOICE",
+            "bold": "LHDN-certified",
+            "bold2": "e-Invoice system",
+            "descriptionBold": "Our ",
+            "descriptionBold2": "streamlines invoicing and ensures",
+            "description": "",
+            "description2": " effortless compliance.",
+            "boldMobile": "certified",
+            "boldMobile2": "by LHDN.",
+            "descriptionMobile": " Our e-Invoice system,",
+            "descriptionMobile2": " streamlining invoicing",
+            "descriptionMobile3": " processes and ensuring compliance effortlessly."
+          },
+          "forexLabelSolution": {
+            "title": "FOREX LABEL SOLUTION",
+            "bold": "",
+            "bold2": "10+ brokerages,",
+            "descriptionBold": "Over ",
+            "descriptionBold2": "have",
+            "description": "gained licensing and are",
+            "description2": "operational through our",
+            "description3": "Label solution.",
+            "descriptionMobile": " Over",
+            "descriptionMobile2": " have gained ",
+            "descriptionMobile3": " licensing and are operational through our Label solution."
+          }
         },
-        "ImgCombinationDescription":{
-          "educationImgDescription": "Unlocking endless learning potential. Our technology empowers schools to achieve greatness in the classroom.",
-          "educationImgDescriptionM": "Unlocking endless learning potential. Our",
-          "educationImgDescriptionM2": "technology empowers schools to achieve",
-          "educationImgDescriptionM3": "greatness in the classroom.",
-          "F&BImgDescription": "Ordering apps and diverse payment",
-          "F&BImgDescription2": "methods ensure a seamless, delightful",
-          "F&BImgDescription3": "dining experience.",
-          "F&BImgDescriptionMobile": "Ordering apps and diverse payment",
-          "F&BImgDescriptionMobile2": "methods ensure a seamless, delightful",
-          "F&BImgDescriptionMobile3": "dining experience.",
-          "F&BImgMobileDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience ",
-          "F&BImgMobileDescription2": "for customers, enhancing convenience and satisfaction at every step.",
-          "retailImgDescription":"Whether it's managing customer lists, orders, inventory records, or employee attendance, all you need is one comprehensive and intelligent system to streamline operations and enhance efficiency.",
-          "wholesaleImgDescription":"Our intelligent system offers",
-          "wholesaleImgDescription2":"customised sourcing solutions, ensuring ",
-          "wholesaleImgDescription3":"cost-efficiency and smooth inventory management.",
-          "wholesaleImgMobileDescription":"Providing bulk discounts on goods and wholesale prices on merchandise, our intelligent system specializes in customized sourcing solutions ",
-          "wholesaleImgMobileDescription2":"for businesses and retailers, ensuring cost-effectiveness and efficient inventory management.",
-          "logisticImgDescription":"Building an efficient transportation and ",
-          "logisticImgDescription2":"supply chain system is now achievable ",
-          "logisticImgDescription3":"through our expertise and tools.",
-          "enterpriseImgDescription":"An effective enterprise system enhances communication and drives employee ",
-          "enterpriseImgDescription2":"progress."
+
+      "Home":{
+        "homeVideoTitle":"You cannot stop the ",
+        "homeVideoTitle2":"Evolution of Technology",
+        "industriesTitle":"ABOUT CURRENT TECH INDUSTRIES",
+        "industriesDescription":"Current Tech Industries Sdn Bhd, established in 2006, is a high-tech software enterprise based in Kuala Lumpur, Malaysia, with plans to expand to Penang, Sabah, and Sarawak. We specialize in the research, development, production, and sales of technology products. Recognized as a \"New Technology Enterprise,\" we develop projects across various fields. Our talent-oriented management and integrity-based operations attract industry elites, allowing us to integrate advanced technologies and management practices from both domestic and international sources. We provide comprehensive solutions to enhance enterprise management and production capacities, helping businesses remain competitive and achieve stable growth.",
+        "industriesDescription2":" ",
+        "industriesDescription3":" ",
+        "technologyTitle":"TECHNOLOGY",
+        "technologyDescription":"Innovation and technological advancements are key to unlocking a sustainable and prosperous future. Technology has ushered in an era of intelligence, automation, and digitization, driving the transformation and upgrading of industries.",
+        "serviceTitle":"Our Service",
+        "serviceSubTitle":{
+          "softwareTitle":"Software",
+          "websiteTitle":"Website",
+          "mobileAppTitle":"Mobile App",
+          "managementSystemTitle":"Management System",
+          "posSystemTitle":"POS System",
+          "support&serviceTitle":"Support & Service"
         },
-        "homeReminderTitle":"No matter what field or industry you're in.",
-        "homeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
-        "whatsappDescription":"Show QR to start",
-        "whatsappDescription2":"communicate with us",
-        "gmailDescription":"Leave your contact, we",
-        "gmailDescription2":"will contact you soon.",
-        "whatsappDescriptionMobile":"Direct link to whatsapp ",
-        "whatsappDescriptionMobile2":"start communicate with us.",
-        "gmailDescriptionMobile":"Leave your contact, we",
-        "gmailDescriptionMobile2":"will contact you soon."
-      },
+        "serviceSubTitle_Description":{
+          "softwareDescription":"Empower your business with bespoke software solutions. Our expert developers turn your vision into reality, delivering innovative and dependable software tailored to your unique requirements.",
+          "websiteDescription":"We develop websites of all sizes using a step-by-step approach. From pre-production planning and crafting the GUI design to backend development, we execute each phase with precision.",
+          "mobileAppDescription":"We transform our clients’ core ideas into innovative applications for mobile, cloud, and web platforms. We ensure these apps are compatible with major platforms and accessible on a wide range of devices.",
+          "managementSystemDescription":"The Employee Intelligence Management System (EIMS) is a groundbreaking HR tool that enhances workflow efficiency. It fosters organizational growth and unlocks employee potential through intuitive dashboards, automation, and predictive analytics.",
+          "posSystemDescription":"Maximize your business efficiency with our robust POS and e-Invoice system. Seamlessly handle sales, inventory, and customer data, ensuring a frictionless checkout experience. Integrated into your workflow, it boosts productivity and customer satisfaction.",
+          "support&serviceDescription":"Enhance system performance with our expert support. Our team guarantees timely updates and troubleshooting to ensure smooth operations, maintaining your systems at optimal efficiency."
+          },
+          "innovativeTitle":"Innovative Solutions for Your Business",
+          "innovativeDescription":"Our cutting-edge system will transform your business operations, boosting efficiency, sustainability, and customer experience, thus securing your competitiveness in today's market landscape.",
+          "ImgCombinationTitle":{
+            "educationImgTitle": "EDUCATION",
+            "F&BImgTitle": "FOOD & BEVERAGE",
+            "retailImgTitle":"Retail",
+            "wholesaleImgTitle":"WHOLESALE",
+            "logisticImgTitle":"LOGISTIC",
+            "enterpriseImgTitle":"ENTERPRISE"
+          },
+          "ImgCombinationDescription":{
+            "educationImgDescription": "Unlocking endless learning potential. Our technology empowers schools to achieve greatness in the classroom.",
+            "educationImgDescription2": "",
+            "educationImgDescriptionM": "Unlocking endless learning potential. Our",
+            "educationImgDescriptionM2": "technology empowers schools to achieve",
+            "educationImgDescriptionM3": "greatness in the classroom.",
+            "F&BImgDescription": "Ordering apps and diverse payment",
+            "F&BImgDescription2": "methods ensure a seamless, delightful",
+            "F&BImgDescription3": "dining experience.",
+            "F&BImgDescriptionMobile": "Ordering apps and diverse payment",
+            "F&BImgDescriptionMobile2": "methods ensure a seamless, delightful",
+            "F&BImgDescriptionMobile3": "dining experience.",
+            "F&BImgDescriptionMd": "Ordering apps and diverse payment methods ensure a seamless, delightful dining experience.",
+            "F&BImgMobileDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience ",
+            "F&BImgMobileDescription2": "for customers, enhancing convenience and satisfaction at every step.",
+            "retailImgDescription":"Whether it's managing customer lists, orders, inventory records, or employee attendance, all you need is one comprehensive and intelligent system to streamline operations and enhance efficiency.",
+            "wholesaleImgDescription":"Our intelligent system offers",
+            "wholesaleImgDescription2":"customised sourcing solutions, ensuring",
+            "wholesaleImgDescription3":" cost-efficiency and smooth inventory management.",
+            "wholesaleImgMobileDescription":"Our intelligent system offers",
+            "wholesaleImgMobileDescription2":"customised sourcing solutions, ensuring cost-efficiency and smooth inventory management.",
+            "wholesaleImgMobileDescription3": "",
+            "wholesaleImgMdDescription": "Our intelligent system offers customised sourcing solutions, ensuring cost-efficiency and smooth inventory management.",
+            "logisticImgDescriptionM":"Building an efficient transportation and supply chain system is now achievable through our expertise and tools.",
+            "logisticImgDescriptionM2":"",
+            "logisticImgDescriptionM3":"",
+            "logisticImgDescriptionMd":"Building an efficient transportation and supply chain system is now achievable through our expertise and tools.",
+            "logisticImgDescription":"Building an efficient transportation and",
+            "logisticImgDescription2":"supply chain system is now achievable",
+            "logisticImgDescription3":"through our expertise and tools.",
+            "enterpriseImgDescription":"An effective enterprise system enhances communication and drives employee progress.",
+            "enterpriseImgDescription2":"",
+            "enterpriseImgDescription3":"",
+            "enterpriseImgDescriptionMobile":"An effective enterprise system enhances communication and drives employee progress.",
+            "enterpriseImgDescriptionMobile2":"",
+            "enterpriseImgDescriptionMobile3":""
+          },
+          "homeReminderTitle":"No matter what field or industry you're in.",
+          "homeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
+          "whatsappDescription":"Show QR to start",
+          "whatsappDescription2":"communicate with us",
+          "gmailDescription":"Leave your contact, we",
+          "gmailDescription2":"will contact you soon.",
+          "whatsappDescriptionMobile":"Direct link to whatsapp ",
+          "whatsappDescriptionMobile2":"start communicate with us.",
+          "gmailDescriptionMobile":"Leave your contact, we",
+          "gmailDescriptionMobile2":"will contact you soon.",
+          "technologyDefinesTomorrow": "TECHNOLOGY DEFINES TOMORROW",
+          "makingYourIdeasPossible": "MAKING YOUR IDEAS POSSIBLE",
+          "innovationAndTechnology": "Innovation and technology drive a prosperous future. With",
+          "intelligrnceAndAutomation": "intelligence, automation, and digitisation, industries transform.",
+          "whetherWeEmbrace": "Whether we embrace it or not, technology will reshape the future.",
+          "innowvationAndTechnology": "Innovation and technology drive a",
+          "prosperousFuture": "prosperous future. With intelligence, ",
+          "automation": "automation, and digitisation, industries ",
+          "transform": "transform. Whether we embrace it or not, ",
+          "technology": "technology will reshape the future.",
+
+          "whatWeDo": "WHAT WE DO",
+          "awesome": "AWESOME",
+          "design": "DESIGN",
+          "powerful": "POWERFUL",
+          "framework": "FRAMEWORK",
+          "mobile": "MOBILE",
+          "friendly": "FRIENDLY",
+          "premium": "PREMIUM",
+          "resource": "RESOURCES",
+          "support": "SUPPORT",
+          "update": "& UPDATE",
+
+          "coreService": "OUR CORE SERVICE",
+          "cmsSystem": "CMS SYSTEM",
+          "empower": "Empower your business",
+          "bespoke": "with bespoke software solutions.",
+          "website": "WEBSITE",
+          "buildWebsite": "We build websites end-to-end",
+          "precision": "with precision from plan to backend.",
+          "mobileApp": "MOBILE APPLICATIONS",
+          "transformCoreIdeas": "We transform core ideas into",
+          "innovative": "innovative applications for mobile.",
+          "hrManagement": "HR MANAGEMENT SYSTEM",
+          "unlocks": "Unlocks employee potential",
+          "intuitive": "through intuitive dashboards.",
+          "posSystem": "POS SYSTEM",
+          "maximise": "Maximise your business, boosts",
+          "productivity": "productivity and customer satisfaction.",
+          "supportAndServices": "SUPPORT & SERVICES",
+          "ensuring": "Ensuring your systems operate",
+          "performance": "at peak performance and efficiency.",
+
+          "transformCoreIdeasMobile": "We transform core ideas into",
+          "transformCoreIdeasMobile2": "innovative applications for mobile.",
+          "unlocksMobile": "Unlocks employee potential",
+          "unlocksMobile2": "through intuitive dashboards.",
+          "maximiseMobile": "Maximise your business, boosts",
+          "maximiseMobile2": "productivity and customer satisfaction.",
+          "ensuringMobile": "Ensuring your systems operate",
+          "ensuringMobile2": "at peak performance and efficiency.",
+
+          "uniqueProducts": "OUR UNIQUE PRODUCTS",
+          "coverage": "SECTORS OF COVERAGE",
+
+          "whyChooseUs": "WHY CHOOSE US",
+          "different": "WE UNIQUE & DIFFERENT",
+          "mission": "OUR MISSION",
+          "roiModal": "Build a tech-driven ROI model, redefining growth strategies with a professional",
+          "approach": "approach. Activate innovation through unique resource integration and diverse ",
+          "collaborations": "collaborations for exceptional results.",
+          "buildATech": "Build a tech-driven ROI model, redefining growth strategies with a professional",
+          "approachMobile": "approach. Activate innovation through unique resource integration and diverse collaborations for exceptional results.",
+
+          "impossible": "NOTHING IS IMPOSSIBLE",
+          "hesitation": "DON’T LET HESITATION HOLD YOU BACK",
+          "hesitation2": "",
+          "hesitationMobile": "DON’T LET HESITATION",
+          "hesitationMobile2": " HOLD YOU BACK",
+          "contactUs": "CONTACT US"
+          
+          
+
+        },
 
       "Advantage":{
          "advantageVideoTitle":"INDEPENDENT",
@@ -111,21 +317,21 @@
          "advantageListDescription":{
           "websiteDescription":"From domain registration to web design, our team ensures the",
           "websiteDescription2":"final product matches your vision.",
-          "websiteDescriptionMobile":"From domain registration to web design, our",
-          "websiteDescriptionMobile2":"team ensures the final product matches your vision.",
+          "websiteDescriptionMobile":"From domain registration to web design, our team ensures the final product matches your vision.",
+          "websiteDescriptionMobile2":"",
           "managementDescription":"No matter your business size, a solid management system is",
           "managementDescription2":"essential. We’re here to keep your operations seamless.",
           "managementDescriptionMobile":"No matter your business size, a solid management system is essential. We’re",
           "managementDescriptionMobile2":" here to keep your operations seamless.",
           "paymentDescription":"This is the service businesses value most, delivered flawlessly.",
-          "paymentDescription2":"Self-employed clients can choose existing payment channels or ",
-          "paymentDescription3":"integrate new solutions with us.",
-          "paymentDescriptionMobile":"This is the service businesses value most, delivered flawlessly. Self-employed clients can",
-          "paymentDescriptionMobile2":"use existing payment channels or integrate",
-          "paymentDescriptionMobile3":"new solutions with us.",
+          "paymentDescription2":"Self-employed clients can choose existing payment channels or integrate new solutions with us.",
+          "paymentDescription3":"",
+          "paymentDescriptionMobile":"This is the service businesses value most, delivered flawlessly. Self-employed clients can use existing payment channels or integrate new solutions with us.",
+          "paymentDescriptionMobile2":"",
+          "paymentDescriptionMobile3":"",
           "supportDescription":"We prioritise this with 24/5 support to keep your system running smoothly and adapt to new features or services."
          },
-         "advantageSelfReminderTitle":"Don't hesitate!",
+         "advantageSelfReminderTitle":"NO NEED TO HESITATE",
          "advantageSelfReminderDescription":"Request a quote now for developing your personal independent system.",
          "advantageSelfReminderDescription2":"Your can also schedule consultations with our service staff to discuss any development ideas. We do not charge any consultation fees for this service.",
          "enterpriseVideoTitle":"ENTERPRISE",
@@ -143,34 +349,77 @@
           "advantageEnterpriseListDescription":{
             "frontendDescription":"A system’s front-end and back-end reflect professionalism.",
             "frontendDescription2":"Our tech team works closely with management for custom development and clear explanations.",
-            "frontendDescriptionMobile":"A system’s front-end and back-end reflect professionalism. Our tech team works closely",
-            "frontendDescriptionMobile2":" with management for custom development",
-            "frontendDescriptionMobile3":" and clear explanations.",
+            "frontendDescriptionMobile":"A system’s front-end and back-end reflect professionalism. Our tech team works closely with management for custom development and clear explanations.",
+            "frontendDescriptionMobile2":"",
+            "frontendDescriptionMobile3":" ",
             "attendanceDescription":"Our seamless attendance system simplifies time management,",
             "attendanceDescription2":"while a reward mechanism encourages employees to excel.",
-            "attendanceDescriptionMobile":"Our seamless attendance system simplifies",
-            "attendanceDescriptionMobile2":" time management, while a reward mechanism encourages employees to excel.",
+            "attendanceDescriptionMobile":"Our seamless attendance system simplifies time management, while a reward mechanism encourages employees to excel.",
+            "attendanceDescriptionMobile2":"",
             "projectDescription":"Data visualisation enables real-time tracking of metrics, sales, and ",
             "projectDescription2":"goals, driving progress. Insights into team performance support ",
             "projectDescription3":"agile adjustments for growth.",
-            "projectDescriptionMobile":"Data visualisation enables real-time tracking",
-            "projectDescriptionMobile2":" of metrics, sales, and goals, driving progress. Insights into team performance support agile adjustments for growth.",
+            "projectDescriptionMobile":"Data visualisation enables real-time tracking of metrics, sales, and goals, driving progress. Insights into team performance support agile adjustments for growth.",
+            "projectDescriptionMobile2":"",
+            "projectDescriptionMd":"Data visualisation enables real-time tracking of metrics, sales, and goals, driving progress. Insights into team performance support agile adjustments for growth.",
             "rewardDescription":"We believe employees benefit from engagement, points, and ",
             "rewardDescription2":"badges. Our tech team integrates personalised contests and ",
             "rewardDescription3":"surprise activities to enrich the experience.",
-            "rewardDescriptionMobile":"We believe employees benefit from engagement, points, and badges. Our tech",
-            "rewardDescriptionMobile2":" team integrates personalised contests and surprise activities to enrich the experience.",  
+            "rewardDescriptionMobile":"We believe employees benefit from engagement, points, and badges. Our tech team integrates personalised contests and surprise activities to enrich the experience.",
+            "rewardDescriptionMobile2":"",  
             "supportDescription":"We prioritise this with 24/5 support and one-on-one tutorials, ",
             "supportDescription2":"ensuring smooth system operation and easy integration of new",
             "supportDescription3":"features.",
             "supportDescriptionMobile":"We prioritise this with 24/5 support and one-on-one tutorials, ensuring smooth system operation and easy integration of new features."
           },
-            "advantageEnterpriseReminderTitle":"Don't hesitate!",
-            "advantageEnterpriseReminderDescription":"Request a quote now for developing your personal independent system. ",
-            "advantageEnterpriseReminderDescription2":"Your can also schedule consultations with our service staff to discuss any development ideas. We do not charge any consultation fees for this service."
+          "advantageEnterpriseReminderTitle":"Don't hesitate!",
+          "advantageEnterpriseReminderDescription":"Request a quote now for developing your personal independent system. ",
+          "advantageEnterpriseReminderDescription2":"Your can also schedule consultations with our service staff to discuss any development ideas. We do not charge any consultation fees for this service.",
+          
+          "selfEmployed": {
+            "advantage": "THE ADVANTAGE FOR SELF-EMPLOYED",
+            "professionals": "For self-employed professionals, technology is key. We specialise",
+            "customSystems": "in custom systems that enhance your business and simplify",
+            "customerManagement": "customer management.",
+
+            "advantageMobile": "THE ADVANTAGE FOR ",
+            "advantageMobile2": "SELF-EMPLOYED",
+            "professionalsMd": "For self-employed professionals, technology is key. We specialise in custom systems that enhance your business and simplify customer management.",
+            "professionalsMobile": "For self-employed professionals, technology",
+            "professionalsMobile2": "is key. We specialise in custom systems that enhance your business and simplify customer management."
+
+          },
+
+          "enterprise": {
+            "advantage": "THE ADVANTAGE FOR ENTERPRISE",
+            "effective": "Effective enterprise management covers HR, finance, and tracking",
+            "flexible": "systems. Our tech team has crafted a flexible, precise solution for ",
+            "anyBusiness": "any business.",
+
+            "effectiveMobile": "Effective enterprise management covers HR, finance, and tracking systems. Our tech team has crafted a flexible, precise solution for any business."
+            
+          },
+
+          "noNeedToStress": "NO NEED TO STRESS ABOUT WHERE TO START",
+          "creatingAdvantage": "CRAFTING ADVANTAGES",
+          "strength": "IS OUR STRENGTH",
+          "independent": "INDEPENDENT",
+          "enterpriseA": "ENTERPRISE",
+
+          "weWillGive": "WE'LL GIVE YOU THE BEST ADVICE",
+          "weWillGive2": "",
+          
+          "weWillGiveMobile": "WE'LL GIVE YOU THE",
+          "weWillGiveMobile2": "BEST ADVICE",
+
+          "noNeedToStressMobile": "NO NEED TO STRESS ABOUT",
+          "noNeedToStressMobile2": "WHERE TO START"
+          
+
+
         },
 
-        "Customize":{
+      "Special":{
           "customizeVideoTitle":"CUSTOMIZE",
           "customizeCustomization_Title":"Customization is your direct gateway to advantage.",
           "customizeCustomization_Description":"Tailored web pages and apps offer a competitive edge by catering directly to user preferences, enhancing engagement and satisfaction. Through personalized features and intuitive interfaces, they streamline user interactions, driving retention and loyalty.",
@@ -183,10 +432,33 @@
           "customizeIdea_Title4":"We believe you care just as",
           "customizeIdea_Title4s":"much about the theme colours.",
           "customize_Reminder1":"Share your thoughts with us!",
-          "customize_Reminder2":"Get in touch to turn your ideas into reality."
+          "customize_Reminder2":"Get in touch to turn your ideas into reality.",
+
+          "careDeeply":"WE CARE DEEPLY THE",
+          "visual":"VISUAL AESTHETICS",
+
+          "customisation":"CUSTOMISATION IS YOUR",
+          "directPath":"DIRECT PATH TO ADVANTAGE",
+          "tailoredWebPages":"Tailored web pages and apps enhance engagement by catering to user ",
+          "preferences":"preferences, boosting satisfaction, retention, and loyalty.",
+
+          "preparing":"PREPARING YOUR WEBPAGE",
+          "buildAwesome":"BUILD AWESOME WEBSITE FOR YOU",
+          "buildAwesome2":"",
+          "creatingPage":"CREATING PAGE",
+
+          "buildAwesomeMobile":"BUILD AWESOME WEBSITE",
+          "buildAwesomeMobile2":"FOR YOU",
+
+          
+          "customisationMobile":"CUSTOMISATION",
+          "directMobile":"IS YOUR DIRECT",
+          "PathMobile":"PATH TO ADVANTAGE",
+          "tailoredWebPagesMobile":"Tailored web pages and apps enhance engagement by catering to user preferences, boosting satisfaction, retention, and loyalty."
+
         },
 
-        "Products":{
+      "Products":{
           "productVideoTitle":"DEVELOPED",
           "productVideoDescription":"Development must go through drafting frameworks, understanding details, detailed communication, careful planning, rigorous testing before it can become a finished product.",
           "productTechnologyTitle":"High-quality products developed through cutting-edge technology",
@@ -272,10 +544,75 @@
           },
 
           "productsReminderTitle":"No matter what field or industry you're in.",
-          "productsReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
+          "productsReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
+          "weBuild": "WE BUILD",
+          "awesome": "AWESOME PRODUCT",
+          "imaginative": "OUR IMAGINATIVE STUDIO",
+          "webDesign": "WEB DESIGN",
+
+          "weBuildMobile": "WE BUILD AWESOME",
+          "product": "PRODUCT"
         },
 
-        "OwnSite":{
+      "Creating":{
+          "pickWhat":"PICK WHAT YOU PREFER",
+          "powerhouse":"POWERHOUSE FOR YOUR",
+          "webAndApp":"WEB AND APP NEEDS",
+
+          "powerhouseMobile":"POWERHOUSE",
+          "forYouMobile":"FOR YOUR",
+          "webAndAppMobile":"WEB AND APP NEEDS",
+
+          "e-commerce":"E-COMMERCE",
+          "unmatchedConvenience":"e-Commerce offers unmatched convenience with seamless transactions, vast product selections, and easy comparison shopping, empowering consumers with accessibility and efficiency.",
+          "exploreE-commerce":"EXPLORE E-COMMERCE",
+
+          "commercial":"COMMERCIAL",
+          "commercialWebPage":"A commercial web page boosts customer accessibility, 24/7 availability, and dynamic product displays. It enhances brand visibility, streamlines purchases, and drives sales, fostering loyalty.",
+          "exploreCommercial":"EXPLORE COMMERCIAL",
+
+          "cmsDashboard":"CMS DASHBOARD",
+          "adminDashboard":"An admin dashboard offers centralised control, real-time data, and custom reports, streamlining workflows and enhancing security for swift business decisions.",
+          "exploreCMS":"EXPLORE CMS DASHBOARD",
+
+          "adminDashboardMobile":"An admin dashboard offers centralised",
+          "adminDashboardMobile2":"control, real-time data, and custom reports, streamlining workflows and enhancing security for swift business decisions.",
+
+
+          "investment":"INVESTMENT",
+          "investmentWebsite":"An investment website provides strategy control, real-time tracking, and personalised insights, boosting user experience, trust, and financial growth.",
+          "exploreInvestment":"EXPLORE INVESTMENT",
+
+          "digitalBoard":"DIGITAL BOARD",
+          "fintechWebsite":"A Fintech website with Crypto, Blockchain, NFT, or Gaming features enables real-time transactions, secure asset management, and new revenue streams, enhancing analytics, security, and trust in digital finance.",
+          "exploreDigitalBoard":"EXPLORE DIGITAL BOARD",
+
+          "fintechWebsiteMobile":"A Fintech website with Crypto, Blockchain,",
+          "fintechWebsiteMobile2":"NFT, or Gaming features enables real-time transactions, secure asset management, and new revenue streams, enhancing analytics, security, and trust in digital finance.",
+
+
+          "weDoMore": "WE DO MORE THAN JUST THIS",
+          "noMatter":"NO MATTER WHAT FIELD ",
+          "industry":"OR INDUSTRY YOU'RE IN",
+          "discoverUnique":"DISCOVER UNIQUE",
+
+          "noMatterMobile":"NO MATTER WHAT FIELD OR ",
+          "industryMobile":"INDUSTRY YOU'RE IN"
+
+        },
+
+      "CreatingExplore":{
+            "whatsOnYourMind": "WHAT'S ON YOUR MIND",
+            "whatsOnYourMind2": "",
+            "eCommerce": "E-COMMERCE",
+            "commercial": "COMMERCIAL",
+            "cmsDashboard": "CMS DASHBOARD",
+            "investment": "INVESTMENT",
+            "digitalBoard": "DIGITAL BOARD"
+
+        },
+
+      "OwnSite":{
             "ownsiteVideoTitle":"OWN SITE",
             "ownsiteDescription1":"Let us help you craft an exceptional website for yourself.",
             "ownsiteSubDescription":"Whether you are a business or an individual, our company is dedicated to deeply understanding your needs and passionately crafting an exceptional one-stop website system that exceeds your expectations, covering everything from front-end to back-end.",
@@ -301,7 +638,7 @@
             "ownsiteReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
         },
 
-        "Demo":{
+      "Demo":{
             "DemoTitle":"The Powerhouse for Your Web and App Needs",
             "DemoDescription":"Welcome to the realm of innovative and transformative web and app ",
             "DemoDescription2":"development. Exciting and captivating designs are all centered around user ",
@@ -324,7 +661,7 @@
             "demositeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
         },
 
-        "Price":{
+      "Price":{
           "priceTitle":"VALUE",
           "price_SubTitle":"The most important thing is your values, not the price.",
           "price_Description":"In the journey of business development, it's essential to consider more than just funding. However, funding is not the main focus. The key lies in the values you set for your business, how you showcase your business's appeal, and how you allow customers to assess your value. Whether you're a newcomer establishing a business or a well-known company in the market, here you can find the tools and answers you need.",
@@ -338,11 +675,56 @@
           "currentPrice":"Now only",
           "e-Commerce_Topic":"e-Commerce Design Pricing",
           "priceReminderTitle":"No matter what field or industry you're in.",
-          "priceReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you."
+          "priceReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
+
+          "startBuild": "START BUILD",
+          "yourBusiness": "YOUR BUSINESS",
+
+          "chooseYour":"Choose your",
+          "preferredSolution":"preferred solution",
+          "forBuilding":"for building a website",
+
+          "orderNow":"Order now from",
+          "requirement":"The above are the requirements for",
+          "newWebsite":"the new website you wish to build.",
+          "newWebsiteC":"",
+
+          "nowDiscount":"Now discount",
+          "subtotal":"Subtotal",
+          "ship":"Ships:",
+          "weeks":"Weeks",
+          "freeTesting":"Free Testing",
+          "what":"What",
+          "typeOf":"type of website",
+          "doYouWant":"do you want?",
+          "doYouWantM":"",
+          "website":"Website",
+          "eCommerce":"e-Commerce",
+
+          "whichIs":"Which is",
+          "best":"best",
+          "foryou":"for you?",
+          "basic":"Basic Solution for Startup.",
+          "advanced":"Advanced Solution for Professional.",
+          
+          "nowYouCan":"Now you can ",
+          "saveMore":"save more costs.",
+          "costC": "",
+          "discount":"Discount for startup business RM1,800.00",
+          "rm1800":"",
+          "professional":"For professional save up to RM2,200.00",
+          "rm2200":"",
+          "customMade":"Need custom made?",
+          "letUsKnow":"Let us know what you think.",
+
+          "amazingStuff":"WE DO AMAZING STUFF",
+          "designAndDevelop":"WE DESIGN & DEVELOP",
+          "creativeSolution":"CREATIVE SOLUTIONS",
+          "exploreTemplate":"EXPLORE TEMPLATE"
+
         },
 
-
-        "Career":{
+      "Career":{
           "careerVideoTitle":"OPPORTUNITIES",
           "careerVideoDescription":"We're not just creating products. We're crafting solutions to problems for the people who use them. That's our forte!",
           "careerOpportunitiesTitle":"JOIN OUR TEAM FOR EXCITING CAREER",
@@ -350,9 +732,15 @@
           "careerOpportunitiesDescription":"Empower your future with Current Tech Industries. Join our diverse team, work on impactful projects, ",
           "careerOpportunitiesDescription2":"and enjoy competitive salaries, benefits, and growth opportunities in a supportive environment. ",
           "careerOpportunitiesDescription3":"Advance your career with us.",
+
+          "careerOpportunitiesTitleMobile":"Join Our Team for Exciting Career Opportunities",
+          "careerOpportunitiesTitleMobile2":"",
+          "careerOpportunitiesDescriptionMobile":"Empower your future with Current Tech Industries. Join our diverse team, work on impactful projects, and enjoy competitive salaries, benefits, and growth opportunities in a supportive environment. Advance your career with us.",
+
           "ItProgrammer":{
-            "ItProgrammerTitle":"IT Programmer",
-            "ItProgrammerDescription":"We welcome IT programmers to join our team. They should be proficient in programming, testing, and maintaining code for software applications, capable of solving complex programming problems, collaborating with teams, and staying updated with technology trends for efficient development and secure solutions.",
+            "ItProgrammerTitle":"IT PROGRAMMER",
+            "ItProgrammerDescription":"Skill & at lease 1 Year(s) experience.",
+            "ItProgrammerDescription2":"",
             "Skill":{
               "skillTitle":"Skill & Experience",
               "skill_1":"LARAVEL PHP",
@@ -362,48 +750,299 @@
               "skill_5":"CSS / HTML",
               "skill_6":"JAVA SCRIPT",
               "skill_7":"MQL4 & MQL5",
-              "skill_8":"cBot (cTrader)",
+              "skill_8":"cBot - cTrader",
               "experience":"AT LEAST 1 YEAR(S) OF EXPERIENCE."
             }
           },
 
           "UiDesigner":{
-            "UiDesignerTitle":"UI/UX & Designer",
-            "UiDesignerDescription":"UI/UX & Graphic designer focuses on creating user-friendly interfaces, conducting research, wireframing, prototyping, and collaborating with stakeholders. They aim to enhance user satisfaction, engagement, and accessibility through visually appealing designs and seamless experiences.",
+            "UiDesignerTitle":"UI & UX DESIGNER",
+            "UiDesignerDescription":"Skill & at lease 1 Year(s) experience.",
+            "UiDesignerDescription2":"",    
             "Skill":{
               "skillTitle":"Skill & Experience",
               "skill_1":"FIGMA",
               "skill_2":"PHOTOSHOP",
-              "skill_3":"ILLUSTRATOR",
+              "skill_3":"PS ILLUSTRATOR",
               "experience":"AT LEAST 1 YEAR(S) OF EXPERIENCE."
             }
           },
 
           "Internship":{
-            "InternshipTitle":"Internship",
-            "InternshipDescription":"We offer internship opportunities to students or recent graduates to participate in programming, UI/UX, and graphic design within our company, providing them with practical experience in specific fields. Interns contribute to the company's projects and activities while gaining valuable skills and exploring potential career paths.",
+            "InternshipTitle":"INTERNSHIP",
+            "InternshipDescription":"Skill & at lease Degree Holder.",
+            "InternshipDescription2":"",
             "Skill":{
               "skillTitle":"Skill & Experience",
-              "skill_1":"LARAVEL PHP",
-              "skill_2":"REACT JS",
-              "skill_3":"VUE JS",
-              "skill_4":"FLUTTER",
-              "skill_5":"CSS / HTML",
-              "skill_6":"JAVA SCRIPT",
-              "skill_7":"MQL4 & MQL5",
-              "skill_8":"cBot (cTrader)",
-              "skill_9":"FIGMA",
-              "skill_10":"PHOTOSHOP",
-              "skill_11":"ILLUSTRATOR",
+              "skill_1":"FIGMA",
+              "skill_2":"PHOTOSHOP",
+              "skill_3":"ILLUSTRATOR",
+              "skill_4":"LARAVEL PHP",
+              "skill_5":"REACT JS",
+              "skill_6":"VUE JS",
+              "skill_7":"FLUTTER",
+              "skill_8":"CSS / HTML",
+              "skill_9":"JAVA SCRIPT",
+              "skill_10":"MQL4 & MQL5",
+              "skill_11":"cBot - cTrader",
               "skill_12":"DEGREE HOLDER."
             }
           },
 
           "careerReminderTitle":"Don't hesitate!",
-          "careerReminderDescription":"Join us on an exciting journey towards endless possibilities and growth. Embrace diverse career opportunities, unleash your potential, and become part of a supportive community that values lifelong learning and personal fulfillment. Let's build a brighter future together."
+          "careerReminderDescription":"Join us on an exciting journey towards endless possibilities and growth. Embrace diverse career opportunities, unleash your potential, and become part of a supportive community that values lifelong learning and personal fulfillment. Let's build a brighter future together.",
+
+          "workTogether":"LET'S WORK TOGETHER",
+          "workTogether2":"",
+          "amazingThings":"WE CREATE AMAZING THINGS",
+          "exploreInnovate":"WE EXPLORE AND INNOVATE",
+          "graphic":"GRAPHIC",
+          "design":"DESIGN",
+          "webApp":"WEB & APP",
+          "designW":"DESIGN",
+          "development":"DEVELOPMENT",
+          "branding":"BRANDING",
+          "designB":"DESIGN",
+
+          "letsMobile":"LET'S",
+          "workTogetherMobile":"WORK TOGETHER",
+
+          "buildFantastic":"BUILD FANTASTIC",
+          "buildAwesomeC":"",
+          "buildAwesome":"BUILD AWESOME",
+          "discoverOurStyle":"DISCOVER OUR STYLE"
+
         },
 
-        "WhatsappForm":{
+      "About": {
+            "solution": "WE HAVE THE SOLUTION",
+            "designDevelop": "WE DESIGN & DEVELOP",
+            "amazingStuff": "AMAZING STUFF",
+            "knowTheTeam": "KNOW THE TEAM",
+
+            "aboutCurrentTech": "ABOUT CURRENT TECH INDUSTRIES",
+            "establishedIn": "Established in 2006, Current Tech Industries Sdn Bhd is a high-tech software enterprise based in",
+            "kualaLumpur": "Kuala Lumpur, Malaysia, with plans for expansion. Specialising in R&D, production, and sales of",
+            "technologyProduct": "technology products, we offer comprehensive solutions to enhance enterprise management and",
+            "productionCapacities": "production capacities, fostering competitive growth. Recognised as a \"New Technology Enterprise,\"",
+            "attractTopTalent": "we attract top talent and integrate advanced technologies for sustainable success.",
+            
+            "establishedInMobile": "Established in 2006, Current Tech Industries Sdn Bhd is a high-tech software enterprise based in Kuala Lumpur, Malaysia, with plans for expansion. Specialising in R&D, production, and sales of technology products, we offer comprehensive solutions to enhance enterprise management and production capacities, fostering competitive growth. Recognised as a \"New Technology Enterprise,\" we attract top talent and integrate advanced technologies for sustainable success.",
+
+
+            "designSolution": "WE DESIGN SOLUTIONS",
+            "engineerInnovative": "We engineer innovative solutions using AI, ",
+            "automation": "automation, and data insights to drive",
+            "efficiency": "efficiency and growth. Our systems",
+            "seamlessly": "seamlessly blend digital and physical",
+            "infrastructures": "infrastructures for high performance. By ",
+            "collaborating": "collaborating with clients, we future-proof",
+            "businesses": "businesses and transform industries with ",
+            "precision": "precision and agility.",
+            "mengubah": "",
+            "dan": "",
+            "cD1": "",
+            "cD2": "",
+            "cD3": "",
+            "cD4": "",
+
+            "engineerInnovativeMobile": "We engineer innovative solutions using AI, automation, and data insights to drive efficiency and growth. Our systems seamlessly blend digital and physical infrastructures for high performance. By collaborating with clients, we future-proof businesses and transform industries with precision and agility.",
+            "engineerInnovativeMobile2": "",
+
+            "strategyPlanning": "STRATEGY PLANNING",
+            "leverage": "Leverage advanced analytics and AI to",
+            "alignWith": "align with market trends, streamline",
+            "decisionMaking": "decision-making, and optimise resources.",
+            "empowerTeams": "Empower teams to deploy scalable solutions",
+            "suitainable": "for sustainable growth, ensuring long-term",
+            "strategicSuccess": "strategic success and competitive",
+            "advantage": "advantage.",
+            "jangka": "",
+            "cP1": "",
+            "cP2": "",
+            "cP3": "",
+
+            "leverageMobile": "Leverage advanced analytics and AI to align with market trends, streamline decision-making, and optimise resources. Empower teams to deploy scalable solutions for sustainable growth, ensuring long-term strategic success and competitive advantage.",
+            "leverageMobile2": "",
+
+
+            "experience": "WE ALREADY HAVE THE EXPERIENCE",
+            "6390": "6390",
+            "workHours": "WORK HOURS",
+            "286": "286",
+            "finishWorks": "FINISHED WORKS",
+            "1396": "1396",
+            "clientsFollowed": "CLIENTS FOLLOWED",
+            "328250": "328250",
+            "dataStored": "DATA STORED",
+
+            "highlyValue": "WE HIGHLY VALUE",
+            "01": "01",
+            "innovative": "INNOVATIVE",
+            "innoavtionDelivering": "We drive innovation delivering",
+            "cuttingEdge": "cutting-edge solutions that ",
+            "shapeTheFuture": "shape the future",
+            "02": "02",
+            "intuitive": "INTUITIVE",
+            "technology": "Our technology is designed to",
+            "seamless": "be seamless and easy to use",
+            "userExperience": "enhancing user experience",
+            "03": "03",
+            "modern": "MODERN",
+            "embracing": "Embracing modern trends,",
+            "craftSleek": "we craft sleek, future-ready",
+            "todayNeeds": "solutions for today's needs.",
+
+            "driveInnoavtionMobile": "We drive innovation",
+            "cuttingEdgeMobile": "delivering cutting-edge ",
+            "shapeTheFutureMobile": "solutions that shape the future",
+            "technologyMobile": "Our technology is designed ",
+            "seamlessMobile": "to be seamless and easy to",
+            "userExperienceMobile": " use enhancing user experience",
+
+            "whyCurrentTech": "WHY CURRENT TECH?",
+            "because": "BECAUSE WE BUILD",
+            "strongProduct": "STRONG PRODUCTS",
+            "design": "DESIGN",
+            "development": "DEVELOPMENT",
+            "launch": "LAUNCH",
+            "growth": "GROWTH",
+
+            "ourExpertise": "OUR EXPERTISE IN PRODUCT DEVELOPMENT",
+            "powerful": "POWERFUL | UNIQUE | MODERN | INNOVATIVE | RESPONSIVE | DIFFERENT | CREATIVE | BEAUTIFUL",
+            
+            "ourExpertiseMobile": "OUR EXPERTISE IN",
+            "ourExpertiseMobile2": "PRODUCT DEVELOPMENT",
+            "powerfulMobile": "POWERFUL | UNIQUE | MODERN | INNOVATIVE  ",
+            "powerfulMobile2": "RESPONSIVE | DIFFERENT | CREATIVE | BEAUTIFUL",
+
+            "exploreProducts": "LET'S EXPLORE OUR PRODUCTS",
+            "buildAn": "BUILD AN",
+            "amazingSite": "AMAZING SITE TODAY!",
+            "productPage": "PRODUCT PAGE"
+
+        },
+
+      "Team": {
+            "ourTeam": "OUR TEAM",
+            "skilledProfessionals": "OVER 15 SKILLED PROFESSIONALS",
+            "strongTeam": "A strong team of 15+ professionals across IT, Mobile App, UI/UX, and Core Management, driving",
+            "innovation": "innovation and delivering tailored solutions that fuel growth and meet evolving client needs.",
+            
+            "strongTeamMobile": "A strong team of 15+ professionals across IT, Mobile App, UI/UX, and Core Management, driving innovation and delivering tailored solutions that fuel growth and meet evolving client needs.",
+
+            "teamExpertise": "Team's Expertise",
+            "itEngineering": "IT ENGINEERING",
+            "systemArchitecture": "System Architecture Design",
+            "development": "Development and Maintenance",
+            "networkSecurity": "Network Security Management",
+            "databaseManagement": "Database Management",
+            "systemIntegration": "System Integration",
+            "technologyStrategy": "Technology Strategy Planning",
+            "processAutomation": "Process Automation Optimisation",
+            "DataAnalysis": "Data Analysis and Processing",
+            "cloudInfrastructure": "Cloud Infrastructure Management",
+            "support": "Support and Troubleshooting",
+
+            "coolCrew": "WE'RE COOL CREW",
+            "dynamicItTeam": "A dynamic IT team driving innovation and",
+            "excellence": "excellence, delivering cutting-edge solutions",
+            "shapeTheFuture": "that shape the future through technology.",
+            "teknologi": "",
+
+            "dynamicItTeamMobile": "A dynamic IT team driving innovation and excellence, delivering cutting-edge solutions that shape the future through technology.",
+
+            "mobileApp": "MOBILE APP ENGINEERING",
+            "appStore": "App Store Deployment",
+            "uiUx": "UI and UX Design",
+            "CrossPlatform": "Cross-Platform Development",
+            "futureDevelopment": "Feature Development",
+            "apiDevelopment": "API Development and Integration",
+            "versionCnotrol": "Version Control Management",
+            "inApp": "In-App Purchase Implementation",
+            "pushNotifications": "Push Notifications Management",
+            "userFeedback": "User Feedback and Testing",
+
+            "empowering": "EMPOWERING MOBILITY",
+            "mobileAppTeam": "The Mobile App team creates high-performance,",
+            "userFriendly": "user-friendly applications, ensuring seamless",
+            "experiences": "experiences and superior performance across",
+            "devices": "devices, while adapting swiftly to market",
+            "demands": "demands.",
+
+            "mobileAppTeamMobile": "The Mobile App team creates high-performance, user-friendly applications, ensuring seamless experiences and superior performance across devices, while adapting swiftly to market demands.",
+
+
+            "uiUxDesign": "UI AND UX DESIGN",
+            "userResearch": "User Research",
+            "informationArchitecture": "Information Architecture",
+            "wireframing": "Wireframing and Prototyping",
+            "visualDesign": "Visual Design",
+            "interactionDesign": "Interaction Design",
+            "usabilityTesting": "Usability Testing",
+            "responsive": "Responsive Design",
+            "designSystem": "Design System Creation",
+            "useJourney": "User Journey Mapping",
+            "designFeedback": "Design Feedback Integration",
+
+            "enterVirtual": "ENTER VIRTUAL REALITY",
+            "ourUiUx": "Our UI/UX team creates exceptional, user-",
+            "centeredDesigns": "centered designs that blend aesthetics and ",
+            "functionality": "functionality, enhancing usability through  ",
+            "minimalist": "minimalist design and in-depth user research.",
+            "bentuk": "",
+            "yang": "",
+
+            "ourUiUxMobile": "Our UI/UX team creates exceptional, user-centered designs that blend aesthetics and functionality, enhancing usability through minimalist design and in-depth user research.",
+            
+            "coreManagement": "CORE MANAGEMENT",
+            "strategicPlanning": "Strategic Planning",
+            "performanceManagement": "Performance Management",
+            "resourceAllocation": "Resource Allocation",
+            "financialManagement": "Financial Management",
+            "employeeBenefits": "Employee Benefits",
+            "communicationStrategy": "Communication Strategy",
+            "teamBuilding": "Team Building",
+            "decisionMaking": "Decision-Making Processes",
+            "customerRrelationship": "Customer Relationship",
+            "corporateCulture": "Corporate Culture Development",
+
+            "drivingExcellence": "DRIVING EXCELLENCE",
+            "coreManagementTeam": "The Core Management team drives growth",
+            "strategicPlanningDataDriven": "through strategic planning, data-driven",
+            "decisions": "decisions, and optimised processes, ensuring sustained competitiveness and value creation.",
+            
+            "coreManagementTeamMobile": "The Core Management team drives growth through strategic planning, data-driven decisions, and optimised processes, ensuring sustained competitiveness and value creation.",
+
+            "workTogether": "LET'S WORK TOGETHER",
+            "joinOur": "JOIN OUR",
+            "fantastic": "FANTASTIC TEAM TODAY!",
+            "careerPage": "CAREER PAGE"
+
+        },
+
+      "Support": {
+            "inquiry": "INQUIRY BRINGS DELIGHTFUL SURPRISES",
+            "hesitation": "Don’t let hesitation keep you ",
+            "hesitation2C": "from reaching out to us",
+            "messageSuccessfully": "Message has been successfully",
+            "sendToUs": "sent to us.",
+            "yourMessage": "Your message is of utmost importance to us.",
+            "ourCustomerService": "Our customer service team will respond to you as soon as possible.",
+            "thankYou": "Thank you for your patience.",
+            "send": "SEND",
+
+            "name": "NAME *",
+            "email": "EMAIL *",
+            "message": "MESSAGE *",
+
+            "messageSuccessfullyMobile": "Message has been successfully sent to us.",
+            "ourCustomerServiceMobile": "Our customer service team will respond to",
+            "ourCustomerServiceMobile2": "you as soon as possible."
+
+        },
+
+      "WhatsappForm":{
           "whatsappFormTitle":"Instant chat now",
           "whatsappFormDescription":"Scan the QR code with your device's camera to chat ",
           "whatsappFormDescription2":"with our customer service representative for ",
@@ -412,7 +1051,7 @@
           "mobileWhatsappFormDescription2":"start communicate with us. "
         },
 
-        "MailForm":{
+      "MailForm":{
           "mailFormTitle":"Leave your contact",
           "mailFormDescription":"We will contact you as soon as possible ",
           "mobileMailFormDescription":"We will contact you ",
@@ -431,7 +1070,211 @@
           "requiredPhoneNumber":"Your phone number is required."
         },
 
-        "Footer":{
-          "socialMediaDescription":"Start to connect with us:"
-        }
+      "Footer":{
+          "socialMediaDescription":"Start to connect with us:",
+          "quickLinks": "QUICK LINKS",
+          "legal": "LEGAL",
+          "office": "OFFICE",
+          "sunwayOffice": "Sunway Velocity Office, (VO6) Signature 2 55100, Kuala Lumpur MALAYSIA.",
+          "email": "EMAIL:",
+          "marketing": "marketing@currencttech.pro  ",
+          "copyRight": "Copyright  ",
+          "currentTech": "Current Tech Industries",
+          "allRightReserved": "All rights reserved.",
+          "currentTechIndustries": "Current Tech Industries 2024.",
+          "allRightReserve": "All rights reserved.",
+
+          "currentTechMobile": "Current Tech Industries Sdn Bhd",
+          "sunwayOfficeMobile": "Sunway Velocity Office, (VO6) Signature 2.",
+          "sunwayOfficeMobile2": "55100, Kuala Lumpur MALAYSIA."
+
+        },
+        
+        "PrivacyPolicyModal":{  
+            "name": "PRIVACY POLICY",
+            "currentTech": "CURRENT TECH INDUSTRIES SDN BHD",
+            "privacyPolicy": "Privacy Policy (Compliant with Malaysian PDPA)",
+            "effectiveDate": "Effective Date: November 01, 2021",
+            
+            "thankYou": "Thank you for visiting our website.",
+            "weValueYour": "We value your privacy and are committed to protecting your personal information.",
+            "thePrivacyPolicy": "This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our services.",
+            
+            "collectionOfInfo": "1. Collection of Information",
+            "personalData": "Personal Data:",
+            "weMayCollect": "We may collect personal data such as your name, email address, and contact information,",
+            "typicallyWhen": "typically when you register for an account, subscribe to our services, or fill out forms.",
+            "NonPersonalData": "Non-Personal Data:",
+            "collectNonPersonally": "We may collect non-personally identifiable information, including browser type, device information,",
+            "ipAddress": "IP address, date and time of access, to improve our website and services.",
+
+            "financialData": "Financial Data:",
+            "ifOurService": "If our services involve financial transactions, we collect relevant payment information,",
+            "whichIs": "which is processed securely through encryption.",
+            "useOfData": "2. Use of Data",
+            "weUseYou": "We use your information to provide and maintain our services, including account management and transaction",
+            "support": "support, to improve our products, and to send you notifications about products and services you may be ",
+            "interestedIn": "interested in. We ensure to obtain your consent before using your data, as required under the PDPA.",
+            "weProvide": "We provide an option to unsubscribe from marketing communications and explain how users can exercise their ",
+            "pdpaRight": "PDPA rights, including access, correction, and deletion of their personal data.",
+            "sharingAndDisclosure": "3. Sharing and Disclosure of Data",
+            "weDoNotSell": "We do not sell, rent, or otherwise disclose your personal data to third parties, except under the following ",
+            "conditions": "conditions:",
+            "serviceProviders": "Service Providers:",
+            "weMayShare": "We may share information with third-party vendors who assist us in providing services",
+            "paymentProcessors": "(e.g., payment processors, technical support providers).",
+            "theseVendors": "These vendors are obligated to protect your privacy and only have access to data necessary for their functions.",
+            "legalCompliance": "Legal Compliance:",
+            "weMayDisclose": "We may disclose information as required by Malaysian law or regulations, including sharing with regulatory",
+            "authorities": "authorities.",
+            "dataSecurity": "4. Data Security",
+            "weTakeReasonable": "We take reasonable technical and organisational measures to prevent unauthorised access, disclosure,",
+            "alteration": "alteration, or destruction of your personal data. Although we strive to use industry-standard measures, no system ",
+            "canGuarantee": "can guarantee absolute security. Users are advised to consider potential security risks when transmitting data.",
+            "dataRetention": "5. Data Retention",
+            "weRetain": "We retain personal data only as long as necessary for the purposes outlined in this policy or as required by law. ",
+            "onceTheData": "Once the data is no longer needed, we will either delete it or anonymise it.",
+            "yourPrivacyRights": "6. Your Privacy Rights",
+            "incompliance": "In compliance with the PDPA, you have the right to view, correct, and delete your personal data. Please contact us",
+            "usingTheInfo": "using the information provided below to exercise these rights.",
+            "policyUpdates": "7. Policy Updates",
+            "weMayUpdate": "We may update this Privacy Policy periodically. Any changes will be posted on this page, and we will notify you if ",
+            "necessary": "necessary. We recommend reviewing this policy regularly to stay informed.",
+            "contactUs": "8. Contact Us",
+            "companyName": "Company Name:",
+            "companyInfo": "Company Infomation:",
+            "marketing": "marketing@currencttech.pro"
+        },
+
+        "Disclaimer":{
+            "name": "DISCLAIMER"
+        },
+
+        "termsAndConditionModal":{
+            "name": "TERMS & CONDITION"
+        },
+
+        "summary": "SUMMARY",
+        "EDUCATION": "EDUCATION",
+        "kindertown": "KINDERTOWN",
+        "eduCategory": "Education | Kindergarten | Primary | Secondary | University | Tuition Centre",
+        "eduDescription": "Kindertown empowers parents, teachers, and school owners to track children's growth with privacy-focused, user-friendly tools. We're expanding to develop software for primary to tertiary education.",
+        "edudescriptionMobile": "Kindertown empowers parents, teachers, and school owners to track children's growth with privacy-focused, user-friendly tools. We're expanding to develop software for primary to tertiary education.",
+        "versions": "VERSIONS:",
+        "device": "DEVICE:",
+        "operatingSystem": "OPERATING SYSTEM:",
+        "biometric": "BIOMETRIC & SECURITY:",
+        "featureParent": "FEATURES: (PARENT)",
+        "featureTeacher": "FEATURES: (TEACHER)",
+        "featureAdmin": "FEATURES: (ADMIN)",
+        "eduSummary": "Kindertown supports parents, teachers, and students with tools for growth and development. With attendance tracking, personalised tasks, and skill assessments, it ensures every child gets the attention they need, while fostering a safe, structured learning environment. Teachers can tailor education, creating a nurturing space for student success.",
+        "eduSummary2": "",
+        "eduSummaryMobile": "Kindertown supports parents, teachers,",
+        "eduSummaryMobile2": "and students with tools for growth and development. With attendance tracking, personalised tasks, and skill assessments, it ensures every child gets the attention they need, while fostering a safe, structured learning environment. Teachers can tailor education, creating a nurturing space for student success.",
+
+        "E-INVOICE": "E-INVOICE",
+        "eInbill": "E-INBILL",
+        "eInvoiceCategory": "E invoice | POS system | Ordering software",
+        "eInvoiceDescription": "E-inbill goes beyond POS and e-invoices. Customisable for F&B, beauty, and retail, it's the key to unlocking your business advantages.",
+        "eInvoicedescriptionMobile": "E-inbill goes beyond POS and e-invoices. Customisable for F&B, beauty, and retail, it’s the key to unlocking your business advantages.",
+        "plan": "PLAN:",
+        "features": "FEATURES & SPEC:",
+        "eInvoiceSummary": "E-inbill supports businesses of all sizes, from street vendors to large chains. Hardware, software, payments, and support come together in one seamless solution, ensuring the best experience for you and your customers.",
+        "eInvoiceSummary2": "",
+        "eInvoiceSummaryMobile": "E-inbill supports businesses of all sizes, from street vendors to large chains. Hardware, software, payments, and support come together in one seamless solution, ensuring the best experience for you and your customers.",
+        "eInvoiceSummaryMobile2": "",
+
+        "ATTENDANCE": "ATTENDANCE",
+        "motionCapture": "MOTION CAPTURE",
+        "attendenceCategory": "Attendance | Business | Company | Enterprise | Industries",
+        "attendenceDescription": "In today’s fast-paced world, businesses face challenges like efficiency, retention, and cost control. Our Motion Capture (MOCAP) system tackles these by boosting productivity, morale, and work quality, fostering a positive culture that enhances retention.",
+        "attendenceDescription2": "",
+        "attendenceDescription3": "",
+        "attendenceDescriptionMobile": "In today’s fast-paced world, businesses face challenges like efficiency, retention, and cost control. Our Motion Capture (MOCAP) system tackles these by boosting productivity, morale, and work quality, fostering a positive culture that enhances retention.",
+        "featuresEmployee": "FEATURES: (MOCAP EMPLOYEE)",
+        "featuresEmployer": "FEATURES: (MOCAP EMPLOYER)",
+        "attendenceSummary": "Motion Capture (MOCAP) is an employee management system that boosts productivity and satisfaction. With smart dashboards for managing attendance, tasks, and rewards, it offers flexible hours, performance charts, and birthday perks. For employers, MOCAP provides detailed data, project progress, and task tracking, optimising workforce management and reducing turnover, creating a motivating and efficient work environment.",
+        "attendenceSummary2": "",
+        "attendenceSummaryMobile": "Motion Capture (MOCAP) is an employee management system that boosts productivity and satisfaction. With smart dashboards for managing attendance, tasks, and rewards, it offers flexible hours, performance charts, and birthday perks. For employers, MOCAP provides detailed data, project progress, and task tracking, optimising workforce management and reducing turnover, creating a motivating and efficient work environment.",
+        
+        "FINANCE": "FINANCE",
+        "smartCMS": "SMART CMS DASHBOARD",
+        "financeCategory": "Multi-level | Forex | Cryptocurrency | Binary ",
+        "financeDescription": "Our IT team excels in crafting intelligent back-office solutions for MetaQuote (MT4/MT5) and cTrader operators. We specialise in custom web design, client frontends, admin backends, and commission systems, delivering precise data through Smart Dash with top-tier security.",
+        "financeDescription2": "",
+        "financeDescription3": "",
+        "financeDescriptionMobile": "Our IT team excels in crafting intelligent back-office solutions for MetaQuote (MT4/MT5) and cTrader operators. We specialise in custom ",
+        "financeDescriptionMobile2": "web design, client frontends, admin backends, and commission systems, delivering precise data through Smart Dash with top-tier security.",
+        "featuresMember": "FEATURES: (MEMBER DASHBOARD)",
+        "featuresMaster": "FEATURES: (MASTER DASHBOARD)",
+        "financeSummary": "Smart CMS Dashboard empowers brokers and investors with powerful tools. Brokers gain control through the master dashboard, managing wallets, fees, and real-time reports. Investors enjoy a sleek dashboard with digital wallets, rewards, and affiliate structures. With built-in security and integration of copy trading and PAMM, it ensures a secure, engaging trading experience.",
+        "financeSummary2": "",
+        "financeSummaryMobile": "Smart CMS Dashboard empowers brokers and investors with powerful tools. Brokers gain control through the master dashboard, managing wallets, fees, and real-time reports. Investors enjoy a sleek dashboard with digital wallets, rewards, and affiliate structures. With built-in security and integration of copy trading and PAMM, it ensures a secure, engaging trading experience.",
+        "financeSummaryMobile2": "",
+
+        "STOCKIES": "STOCKIES",
+        "beverage": "BEVERAGE STORAGE SYSTEM",
+        "stockiesCategory": "Food & Beverage | Pub & Bistro | Karaoke",
+        "stockiesDescription": "We offer a premium beverage storage system with seamless order tracking and storage records. Key features include membership management, employee check-ins, and commission tracking.",
+        "stockiesDescription2": "",
+        "stockiesDescription3": "",
+        "stockiesDescriptionMobile": "We offer a premium beverage storage system with seamless order tracking and storage records. Key features include membership management, employee check-ins, and commission tracking.",
+        "stockiesSummary": "Stockies Beverage Storage System offers a comprehensive solution for Malaysia's entertainment venues. With inventory control, low-stock alerts, order tracking, and features like membership areas, employee check-ins, and commission management, it streamlines operations and enhances efficiency, elevating both service and customer experience.",
+        "stockiesSummary2": "",
+        "stockiesSummaryMobile": "Stockies Beverage Storage System offers a comprehensive solution for Malaysia's entertainment venues. With inventory control, low-stock alerts, order tracking, and features like membership areas, employee check-ins, and commission management, it streamlines operations and enhances efficiency, elevating both service and customer experience.",
+        "stockiesSummaryMobile2": "",
+
+        "BROKERAGE": "BROKERAGE",
+        "brokerage": "BROKERAGE",
+        "brokerageCategory": "Full label solution | Integration | Licensing | CMS | Servicing",
+        "brokerageDescription": "We seamlessly integrate the trading platform with our intelligent backend, offering full MetaTrader and cTrader label solutions. Our one-stop service eliminates hassles, speeding up operations and ensuring you don't miss the ideal timing.",
+        "brokerageDescription2": "",
+        "brokerageDescription3": "",
+        "brokerageDescriptionMobile": "We seamlessly integrate the trading platform with our intelligent backend, offering full MetaTrader and cTrader label solutions. Our one-stop service eliminates hassles, speeding up operations and ensuring you don't miss the ideal timing.",
+        "featuresClient": "FEATURES: (MQ CLIENT TERMINAL)",
+        "featuresAdmin": "FEATURES: (MASTER DASHBOARD)",
+        "featuresCtrader": "FEATURES: (CTRADER )",
+        "featuresCbroker": "FEATURES: (CBROKER)",
+        "brokerageSummary": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "brokerageSummary2": "",
+        "brokerageSummaryMobile": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "brokerageSummaryMobile2": "",
+
+        "EA BUILDER": "EA BUILDER",
+        "autoTradingBots": "AUTO TRADING BOTS",
+        "EABuilderCategory": "MQL4 | MQL5 | cALGO C#",
+        "EABuilderDescription": "The rise of AI in trading is an inevitable trend. We specialise in developing intelligent trading systems that transform top traders' strategies into AI-driven solutions, seamlessly integrating with MetaTrader 4, MetaTrader 5, and cTrader platforms.",
+        "EABuilderDescription2": "",
+        "EABuilderDescription3": "",
+        "EABuilderDescriptionMobile": "The rise of AI in trading is an inevitable trend. We specialise in developing intelligent trading systems that transform top traders' strategies into AI-driven solutions, seamlessly integrating with MetaTrader 4, MetaTrader 5, and cTrader platforms.",
+        "featuresEaStrategy": "FEATURES: (EA STRATEGY)",
+        "EABuilderSummary": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "EABuilderSummary2": "",
+        "EABuilderSummaryMobile": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "EABuilderSummaryMobile2": "",
+
+        "COIN.WALLET": "COIN.WALLET",
+        "cryto": "CRYPTO GATEWAY WALLET",
+        "crytoCategory": "USDT TRC-20 | USDT ERC-20 | TRX | ETH | BTC",
+        "crytoDescription": "TTBVNK simplifies cross-border payments, enhancing security for merchants. With easy, free account setup, it offers a reliable and efficient payment solution for businesses.",
+        "crytoDescription2": "",
+        "crytoDescription3": "",
+        "crytoDescriptionMobile": "TTBVNK simplifies cross-border payments, enhancing security for merchants. With easy, free account setup, it offers a reliable and efficient payment solution for businesses.",
+        "crytoFeatures": "FEATURES:",
+        "crytoSummary": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "crytoSummary2": "",
+        "crytoSummaryMobile": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "crytoSummaryMobile2": "",
+
+
+        "basicWebsite": "BASIC WEBSITE",
+        "basicWebsiteCombination": "Basic solution website",
+        "AdvancedWebsite": "ADVANCED WEBSITE",
+        "AdvancedCombination": "Advanced solution website",
+        "basicECommerce": "BASIC E-COMMERCE",
+        "basicECommerceCombination": "Basic e-Commerce",
+        "AdvancedECommerce": "ADVANCED E-COMMERCE",
+        "AdvancedECommerceCombination": "Advanced solution website"
+
+
   }

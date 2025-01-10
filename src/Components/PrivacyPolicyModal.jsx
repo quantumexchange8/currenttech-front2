@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Close } from "./Outline";
+import { Close, CloseM } from "./Outline";
+import { useTranslation } from "react-i18next";
 
 const PrivacyPolicyModal = () => {
 const [isModalOpen, setIsModalOpen] = useState(false);
@@ -7,27 +8,30 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 const openModal = () => setIsModalOpen(true);
 const closeModal = () => setIsModalOpen(false);
 
+const { t, i18n } = useTranslation();
+
   return (
     <div>
       {/* Footer Button */}
-      <div className="text-[#557AAA] text-base md:text-xl font-medium md:font-normal">
+      <div className="text-[#557AAA] text-base xl:text-xl font-medium md:font-normal">
         
         <button
           onClick={openModal}
         >
-          PRIVACY POLICY
+          {t("PrivacyPolicyModal.name")}
         </button>
       </div>
 
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className=" w-[1570px] h-screen overflow-y-auto bg-white py-[96px] px-[56px]">
-            <div className="w-[1428px] flex flex-col gap-10">
+          <div className=" w-[380px] md:w-[1570px] h-screen overflow-y-auto bg-white pt-[23px] pb-[87px] md:py-[96px] px-[15px] md:px-[56px]">
+            <div className="w-[350px] md:w-[1428px] flex flex-col gap-6 md:gap-10">
               {/* Header */}
-              <div className="flex justify-between items-center">
-                <div className="text-[40px] text-[#153764] font-bold">
-                  CURRENT TECH INDUSTRIES SDN BHD
+              {/* Web */}
+              <div className="hidden xl:flex justify-between items-center">
+                <div className="text-xl md:text-[40px] text-[#153764] font-bold">
+                  {t("PrivacyPolicyModal.currentTech")}
                 </div>
                 <button
                   onClick={closeModal}
@@ -36,74 +40,109 @@ const closeModal = () => setIsModalOpen(false);
                   <Close />
                 </button>
               </div>
+              {/* Mobile */}
+              <div className="md:hidden flex flex-col gap-[17px]">
+                <div className="flex justify-end items-end">
+                  <button
+                    onClick={closeModal}
+                    className="text-black"
+                  >
+                    <CloseM />
+                  </button>
+                </div>
+                <div className="text-xl md:text-[40px] text-[#153764] font-bold">
+                  <div>
+                    CURRENT TECH INDUSTRIES
+                  </div> 
+                  <div>
+                    SDN BHD
+                  </div>
+                </div>
+              </div>
 
               {/* Modal Content */}
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-6 md:gap-8">
                 {/* Privacy Policy */}
-                <div className="text-2xl text-[#557AAA] font-bold">
+                <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
                   <div>
-                    Privacy Policy (Compliant with Malaysian PDPA)
+                    {t("PrivacyPolicyModal.privacyPolicy")}
                   </div>
                   <div>
-                    Effective Date: November 01, 2021
+                    {t("PrivacyPolicyModal.effectiveDate")}
                   </div>
                 </div>
                 {/* Thank you */}
-                <div className="text-2xl text-[#4B5563] font-normal">
+                <div className="text-sm md:text-2xl text-[#4B5563] font-normal">
                   <div>
-                    Thank you for visiting our website.
+                    {t("PrivacyPolicyModal.thankYou")}
                   </div>
                   <div>
-                    We value your privacy and are committed to protecting your personal information.
+                    {t("PrivacyPolicyModal.weValueYour")}
                   </div>
                   <div>
-                    This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our services.
+                    {t("PrivacyPolicyModal.thePrivacyPolicy")}
                   </div>
                 </div>
                 {/* Points */}
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-6 md:gap-8">
                   {/* 1 */}
                   <div>
-                    <div className="text-2xl text-[#557AAA] font-bold">
-                      1. Collection of Information
+                    <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
+                      {t("PrivacyPolicyModal.collectionOfInfo")}
                     </div>
-                    <div className="flex flex-col gap-8">
-                      <ul className="list-disc list-outside pl-8">
-                        <li className="text-2xl text-[#557AAA] font-medium">
-                          Persona Data:
+                    <div className="flex flex-col gap-6 md:gap-8">
+                      <ul className="list-disc list-outside pl-5 md:pl-8">
+                        <li className="text-sm md:text-2xl text-[#557AAA] font-medium">
+                          {t("PrivacyPolicyModal.personalData")}
                         </li>
-                        <div className="text-2xl text-[#4B5563] font-normal">
+                        <div className="text-sm md:text-2xl text-[#4B5563] font-normal ">
                           <div>
-                            We may collect personal data such as your name, email address, and contact information,
+                            {t("PrivacyPolicyModal.weMayCollect")}
                           </div>
                           <div>
-                            typically when you register for an account, subscribe to our services, or fill out forms.
+                            {t("PrivacyPolicyModal.typicallyWhen")}
                           </div>
                         </div>
                       </ul>
-                      <ul className="list-disc list-outside pl-8">
-                        <li className="text-2xl text-[#557AAA] font-medium">
-                          Non-Personal Data:
+                      
+                      <ul className="list-disc list-outside pl-5 md:pl-8">
+                        <li className="text-sm md:text-2xl text-[#557AAA] font-medium">
+                          {t("PrivacyPolicyModal.NonPersonalData")}
                         </li>
-                        <div className="text-2xl text-[#4B5563] font-normal">
+                        {/* Web */}
+                        <div className="hidden md:block text-2xl text-[#4B5563] font-normal">
                           <div>
-                            We may collect non-personally identifiable information, including browser type, device information,
+                            {t("PrivacyPolicyModal.collectNonPersonally")}
                           </div>
                           <div>
-                            IP address, date and time of access, to improve our website and services.
+                            {t("PrivacyPolicyModal.ipAddress")}
+                          </div>
+                        </div>
+                        {/* Mobile */}
+                        <div className="md:hidden text-sm text-[#4B5563] font-normal">
+                          <div>
+                            We may collect non-personally identifiable information, including browser type, device information, IP address, date and time of access, to improve our website and services.
                           </div>
                         </div>
                       </ul>
-                      <ul className="list-disc list-outside pl-8">
-                        <li className="text-2xl text-[#557AAA] font-medium">
-                          Financial Data:
+
+                      <ul className="list-disc list-outside pl-5 md:pl-8">
+                        <li className="text-sm md:text-2xl text-[#557AAA] font-medium">
+                          {t("PrivacyPolicyModal.financialData")}
                         </li>
-                        <div className="text-2xl text-[#4B5563] font-normal">
+                        {/* Web */}
+                        <div className="hidden md:block text-2xl text-[#4B5563] font-normal">
                           <div>
-                            If our services involve financial transactions, we collect relevant payment information,
+                            {t("PrivacyPolicyModal.ifOurService")}
                           </div>
                           <div>
-                            which is processed securely through encryption.
+                            {t("PrivacyPolicyModal.whichIs")}
+                          </div>
+                        </div>
+                        {/* Mobile */}
+                        <div className="md:hidden text-sm text-[#4B5563] font-normal">
+                          <div>
+                            If our services involve financial transactions, we collect relevant payment information, which is processed securely through encryption.
                           </div>
                         </div>
                       </ul>
@@ -111,78 +150,111 @@ const closeModal = () => setIsModalOpen(false);
                   </div>
                   {/* 2 */}
                   <div>
-                    <div className="text-2xl text-[#557AAA] font-bold">
-                      2. Use of Data
+                    <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
+                      {t("PrivacyPolicyModal.useOfData")}
                     </div>
-                    <ul className="flex flex-col gap-8 list-disc list-outside pl-8 text-2xl text-[#4B5563] font-normal">
+                    {/* Web */}
+                    <ul className="hidden md:flex flex-col gap-8 list-disc list-outside pl-8 text-2xl text-[#4B5563] font-normal">
                       <li>
                         <div>
-                          We use your information to provide and maintain our services, including account management and transaction 
+                           {t("PrivacyPolicyModal.weUseYou")}
                         </div>
                         <div>
-                          support, to improve our products, and to send you notifications about products and services you may be 
+                          {t("PrivacyPolicyModal.support")}
                         </div>
                         <div>
-                          interested in. We ensure to obtain your consent before using your data, as required under the PDPA.
+                          {t("PrivacyPolicyModal.interestedIn")}
                         </div>
                       </li>
                       <li>
                         <div>
-                          We provide an option to unsubscribe from marketing communications and explain how users can exercise their 
+                          {t("PrivacyPolicyModal.weProvide")}
                         </div>
                         <div>
-                          PDPA rights, including access, correction, and deletion of their personal data.
+                          {t("PrivacyPolicyModal.pdpaRight")}
+                        </div>
+                      </li>
+                    </ul>
+                    {/* Mobile */}
+                    <ul className="md:hidden flex flex-col gap-6 md:gap-8 list-disc list-outside pl-5 text-sm text-[#4B5563] font-normal">
+                      <li>
+                        <div>
+                          We use your information to provide and maintain our services, including account management and transaction support, to improve our products, and to send you notifications about products and services you may be interested in. We ensure to obtain your consent before using your data, as required under the PDPA.
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          We provide an option to unsubscribe from marketing communications and explain how users can exercise their PDPA rights, including access, correction, and deletion of their personal data.
                         </div>
                       </li>
                     </ul>
                   </div>
                   {/* 3 */}
                   <div>
-                    <div className="text-2xl text-[#557AAA] font-bold">
-                      3. Sharing and Disclosure of Data
+                    <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
+                      {t("PrivacyPolicyModal.sharingAndDisclosure")}
                     </div>
                     
-                    <div className="flex flex-col gap-8">
-                      <div className="pl-8 text-2xl text-[#4B5563] font-normal">
+                    <div className="flex flex-col gap-6 md:gap-8">
+                      {/* Web */}
+                      <div className="hidden md:block pl-8 text-2xl text-[#4B5563] font-normal">
                         <div>
-                          We do not sell, rent, or otherwise disclose your personal data to third parties, except under the following 
+                          {t("PrivacyPolicyModal.weDoNotSell")}
                         </div>
                         <div>
-                          conditions:
+                          {t("PrivacyPolicyModal.conditions")}
+                        </div>
+                      </div>
+                      {/* Mobile */}
+                      <div className="md:hidden pl-5 text-sm text-[#4B5563] font-normal w-[345px]" >
+                        <div>
+                          We do not sell, rent, or otherwise disclose your personal data to third parties, except under the following conditions:
                         </div>
                       </div>
 
-                      <ul className="list-disc list-outside pl-8">
+                      <ul className="list-disc list-outside pl-5 md:pl-8">
                         <li>
-                          <div className="text-2xl text-[#557AAA] font-medium">
-                            Service Providers:
+                          <div className="text-sm md:text-2xl text-[#557AAA] font-medium">
+                            {t("PrivacyPolicyModal.serviceProviders")}
                           </div>
-                          <div className="text-2xl text-[#4B5563] font-normal">
+                          {/* Web */}
+                          <div className="hidden md:block text-2xl text-[#4B5563] font-normal">
                             <div>
-                              We may share information with third-party vendors who assist us in providing services
+                              {t("PrivacyPolicyModal.weMayShare")}
                             </div>
                             <div>
-                              (e.g., payment processors, technical support providers).
+                              {t("PrivacyPolicyModal.paymentProcessors")}
                             </div>
                             <div>
-                              These vendors are obligated to protect your privacy and only have access to data necessary for their functions.
+                              {t("PrivacyPolicyModal.theseVendors")}
+                            </div>
+                          </div>
+                          {/* Mobile */}
+                          <div className="md:hidden text-sm text-[#4B5563] font-normal">
+                            <div>
+                              We may share information with third-party vendors who assist us in providing services (e.g., payment processors, technical support providers). These vendors are obligated to protect your privacy and only have access to data necessary for their functions.
                             </div>
                           </div>
                         </li>
                       </ul>
 
-                      <ul className="list-disc list-outside pl-8">
+                      <ul className="list-disc list-outside pl-5 md:pl-8">
                         <li>
-                          <div className="text-2xl text-[#557AAA] font-medium">
-                            Legal Compliance:
+                          <div className="text-sm md:text-2xl text-[#557AAA] font-medium">
+                            {t("PrivacyPolicyModal.legalCompliance")}
                           </div>
-                          <div className="text-2xl text-[#4B5563] font-normal">
+                          {/* Web */}
+                          <div className="hidden md:block text-2xl text-[#4B5563] font-normal">
                             <div>
-                              We may disclose information as required by Malaysian law or regulations, including sharing with regulatory
+                              {t("PrivacyPolicyModal.weMayDisclose")}
                             </div>
                             <div>
-                              authorities.
+                              {t("PrivacyPolicyModal.authorities")}
                             </div>
+                          </div>
+                          {/* Mobile */}
+                          <div className="md:hidden text-sm text-[#4B5563] font-normal">
+                            We may disclose information as required by Malaysian law or regulations, including sharing with regulatory authorities.
                           </div>
                         </li>
                       </ul>
@@ -190,86 +262,106 @@ const closeModal = () => setIsModalOpen(false);
                   </div>
                   {/* 4 */}
                   <div>
-                    <div className="text-2xl text-[#557AAA] font-bold">
-                      4. Data Security
+                    <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
+                      {t("PrivacyPolicyModal.dataSecurity")}
                     </div>
-                    <div className="text-2xl text-[#4B5563] font-normal pl-7">
+                    {/* Web */}
+                    <div className="hidden md:block text-2xl text-[#4B5563] font-normal pl-8">
                       <div>
-                        We take reasonable technical and organisational measures to prevent unauthorised access, disclosure, 
+                        {t("PrivacyPolicyModal.weTakeReasonable")}
                       </div>
                       <div>
-                        alteration, or destruction of your personal data. Although we strive to use industry-standard measures, no system 
+                        {t("PrivacyPolicyModal.alteration")}
                       </div>
                       <div>
-                        can guarantee absolute security. Users are advised to consider potential security risks when transmitting data.
+                        {t("PrivacyPolicyModal.canGuarantee")}
                       </div>
+                    </div>
+                    {/* Mobile */}
+                    <div className="md:hidden text-sm text-[#4B5563] font-normal pl-5">
+                      We take reasonable technical and organisational measures to prevent unauthorised access, disclosure, alteration, or destruction of your personal data. Although we strive to use industry-standard measures, no system can guarantee absolute security. Users are advised to consider potential security risks when transmitting data.
                     </div>
                   </div>
                   {/* 5 */}
                   <div>
-                    <div className="text-2xl text-[#557AAA] font-bold">
-                      5. Data Retention
+                    <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
+                      {t("PrivacyPolicyModal.dataRetention")}
                     </div>
-                    <div className="text-2xl text-[#4B5563] font-normal pl-7">
+                    {/* Web */}
+                    <div className="hidden md:block text-2xl text-[#4B5563] font-normal pl-8">
                       <div>
-                        We retain personal data only as long as necessary for the purposes outlined in this policy or as required by law. 
+                        {t("PrivacyPolicyModal.weRetain")}
                       </div>
                       <div>
-                        Once the data is no longer needed, we will either delete it or anonymise it.
+                        {t("PrivacyPolicyModal.onceTheData")}
                       </div>
+                    </div>
+                    {/* Mobile */}
+                    <div className="md:hidden text-sm text-[#4B5563] font-normal pl-5">
+                      We retain personal data only as long as necessary for the purposes outlined in this policy or as required by law. Once the data is no longer needed, we will either delete it or anonymise it.
                     </div>
                   </div>
                   {/* 6 */}
                   <div>
-                    <div className="text-2xl text-[#557AAA] font-bold">
-                      6. Your Privacy Rights
+                    <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
+                      {t("PrivacyPolicyModal.yourPrivacyRights")}
                     </div>
-                    <div className="text-2xl text-[#4B5563] font-normal pl-7">
+                    {/* Web */}
+                    <div className="hidden md:block text-2xl text-[#4B5563] font-normal pl-8">
                       <div>
-                        In compliance with the PDPA, you have the right to view, correct, and delete your personal data. Please contact us
+                        {t("PrivacyPolicyModal.incompliance")}
                       </div>
                       <div>
-                        using the information provided below to exercise these rights.
+                        {t("PrivacyPolicyModal.usingTheInfo")}
                       </div>
+                    </div>
+                    {/* Mobile */}
+                    <div className="md:hidden text-sm text-[#4B5563] font-normal pl-5">
+                      In compliance with the PDPA, you have the right to view, correct, and delete your personal data. Please contact us using the information provided below to exercise these rights.
                     </div>
                   </div>
                   {/* 7 */}
                   <div>
-                    <div className="text-2xl text-[#557AAA] font-bold">
-                      7. Policy Updates
+                    <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
+                      {t("PrivacyPolicyModal.policyUpdates")}
                     </div>
-                    <div className="text-2xl text-[#4B5563] font-normal pl-7">
+                    {/* Web */}
+                    <div className="hidden md:block text-2xl text-[#4B5563] font-normal pl-8">
                       <div>
-                        We may update this Privacy Policy periodically. Any changes will be posted on this page, and we will notify you if 
+                        {t("PrivacyPolicyModal.weMayUpdate")}
                       </div>
                       <div>
-                        necessary. We recommend reviewing this policy regularly to stay informed.
+                        {t("PrivacyPolicyModal.necessary")}
                       </div>
+                    </div>
+                    {/* Mobile */}
+                    <div className="md:hidden text-sm text-[#4B5563] font-normal pl-5">
+                      We may update this Privacy Policy periodically. Any changes will be posted on this page, and we will notify you if necessary. We recommend reviewing this policy regularly to stay informed.
                     </div>
                   </div>
                   {/* 8 */}
                   <div>
-                    <div className="text-2xl text-[#557AAA] font-bold">
-                      8. Contact Us
+                    <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
+                      {t("PrivacyPolicyModal.contactUs")}
                     </div>
-                    <ul className="list-disc list-outside text-2xl text-[#4B5563] font-normal pl-8">
+                    <ul className="flex flex-col gap-4 md:gap-1 list-disc list-outside text-sm md:text-2xl text-[#4B5563] font-normal pl-5 md:pl-8">
                       <li>
-                        <div className="flex gap-1"> 
+                        <div className="flex flex-col md:flex-row md:gap-1"> 
                           <div>
-                            Company Name:
+                            {t("PrivacyPolicyModal.companyName")}
                           </div> 
-                            <a href="#" className="text-[#557AAA]">
-                            CURRENT TECH INDUSTRIES SDN BHD
+                            <a href="#" className="text-[#153764] md:text-[#557AAA]">
+                            {t("PrivacyPolicyModal.currentTech")}
                           </a>
                         </div>
                       </li>
                       <li>
-                        <div className="flex gap-1"> 
+                        <div className="flex flex-col md:flex-row md:gap-1"> 
                           <div>
-                            Company Infomation:
+                            {t("PrivacyPolicyModal.companyInfo")}
                           </div> 
-                          <a href="mailto:marketing@currencttech.pro" className="text-[#557AAA]">
-                            marketing@currencttech.pro
+                          <a href="mailto:marketing@currencttech.pro" className="text-[#153764] md:text-[#557AAA]">
+                            {t("PrivacyPolicyModal.marketing")}
                           </a>
                         </div>
                       </li>

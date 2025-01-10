@@ -1,108 +1,140 @@
 import { useState,useEffect } from 'react';
 import Image1 from '../Assets/Images/Support/1.png';
-import {Tick} from '../Components/Outline';
+import ImageM1 from '../Assets/Images/Support/M1.png';
+import {Tick, TickM} from '../Components/Outline';
 import AOS from 'aos';
+import { useTranslation } from 'react-i18next';
 
 
 const Support = () => {
 
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const {t, i18n} = useTranslation();
 
-    const handleFormSubmit = () => {
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
         setIsSubmitted(true);
-    }
+
+        setTimeout(() => {
+        setIsSubmitted(false);
+        }, 7000);
+    };
 
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            once: false,
+            once: true,
             offset: 200,
         })
     })
 
     return(
-        <div className="pt-[80px]">
-            <div className='relative'>
-                <img src={Image1} alt="" className='w-full object-cover'/>
+        <div className="pt-[50px] md:pt-[80px] relative">
+            {/* Background Image */}
+            <div className="relative">
+                <img src={Image1} alt="" className="hidden xl:block w-full object-cover" />
+                <img src={ImageM1} alt="" className="xl:hidden w-full object-cover" />
             </div>
-            <div className='absolute top-[40%] left-[10%] flex flex-col gap-[50px]'>
-                <div className='flex flex-col gap-[10px]'>
-                    <div className='text-2xl text-[#D1D5DB] font-normal' data-aos="fade-up">
-                        INQUIRY BRINGS DELIGHTFUL SURPRISES
+
+            {/* Centered Content */}
+            <div className="absolute inset-0 md:top-[-160px] flex flex-col justify-center xl:items-start gap-[50px] px-[25px] md:px-0 xl:pl-[163px]">
+                {/* Heading */}
+                <div className="flex flex-col gap-[10px]">
+                    <div className="text-sm md:text-2xl text-[#D1D5DB] font-normal leading-normal" data-aos="fade-up">
+                        {t("Support.inquiry")}
                     </div>
-                    <div className='text-5xl text-[#D1D5DB] font-light leading-normal' data-aos="fade-up" data-aos-delay="200">
-                        <div>
-                            Don’t let hesitation keep you
-                        </div>
-                        <div>
-                            from reaching out to us
-                        </div>
+                    <div className="text-2xl md:text-5xl text-[#D1D5DB] font-light leading-normal " data-aos="fade-up" data-aos-delay="200">
+                        <div className='leading-normal'>{t("Support.hesitation")} <div>{t("Support.hesitation2C")} </div></div>
                     </div>
                 </div>
+
+                {/* Conditional Rendering: Form or Success Message */}
                 {isSubmitted ? (
-                    <div className='flex flex-col gap-[100px]'>
-                        <div className='flex items-center gap-[70px] rounded-[10px] bg-white opacity-80 py-[40px] px-[50px]'>
+                    <div className="flex flex-col gap-[100px] text-center">
+                        {/* Success Message */}
+                        <div className="flex items-center gap-[30px] md:gap-[70px] rounded-[10px] bg-white opacity-80 py-[36px] md:py-[40px] px-[38px] md:px-[50px] md:w-[600px]">
                             <div data-aos="fade-up">
-                                <Tick />
+                                <div className='hidden md:block'>
+                                    <Tick />
+                                </div>
+                                <div className='md:hidden'>
+                                    <TickM />
+                                </div>
                             </div>
-                            <div className='text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
-                                <div>
-                                    Message has been successfully
-                                </div>
-                                <div>
-                                    sent to us.
-                                </div>
+                            {/* Web */}
+                            <div className="hidden md:block text-xl text-left text-[#4B5563] font-normal" data-aos="fade-up" data-aos-delay="200">
+                                <div>{t("Support.messageSuccessfully")}</div>
+                                <div>{t("Support.sendToUs")}</div>
+                            </div>
+                            {/* Mobile */}
+                            <div className="md:hidden text-base text-left md:text-xl text-[#4B5563] font-normal" data-aos="fade-up" data-aos-delay="200">
+                                <div>{t("Support.messageSuccessfullyMobile")}</div>
                             </div>
                         </div>
-                        <div className='flex flex-col gap-[30px] text-xl text-[#D1D5DB] font-normal'>
+
+                        {/* Bottom Message */}
+                        {/* Web */}
+                        <div className="hidden md:flex flex-col gap-8 text-xl text-left text-[#D1D5DB] font-normal">
                             <div data-aos="fade-up" data-aos-delay="400">
-                                <div>
-                                    Your message is of utmost importance to us.
-                                </div>
-                                <div>
-                                    Our customer service team will respond to you as soon as possible.
-                                </div>
+                                <div>{t("Support.yourMessage")}</div>
+                                <div>{t("Support.ourCustomerService")}</div>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="600">
-                                Thank you for your patience.
+                                {t("Support.thankYou")}
                             </div>
                         </div>
-                    </div> 
-                    ) : (
-                    <form className='flex flex-col gap-[50px] md:gap-[100px] bg-[#E5E7EB] p-[50px] rounded-[10px]' data-aos="fade-up" data-aos-delay="400">
-                        {/* Content */}
-                        <div className='flex flex-col items-center gap-[30px] md:gap-[50px]'>
-                            {/* Name Field */}
-                            <input 
-                                type="text" 
-                                placeholder="Name *" 
-                                className="w-full p-3 bg-[#E5E7EB] border border-[#9CA3AF]"
+                        {/* Mobile */}
+                        <div className="md:hidden flex flex-col gap-8 text-base text-left text-[#D1D5DB] font-normal">
+                            <div data-aos="fade-up" data-aos-delay="400">
+                                <div>{t("Support.yourMessage")}</div>
+                                <div> {t("Support.ourCustomerServiceMobile")}</div>
+                                <div>{t("Support.ourCustomerServiceMobile2")}</div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="600">
+                                {t("Support.thankYou")}
+                            </div>
+                        </div>
+                    </div>
+                ) : (
+                    // Form
+                    <form
+                        className="flex flex-col gap-[30px] md:gap-[50px] bg-[#E5E7EB] bg-opacity-80 md:bg-opacity-100 px-10 pt-[50px] pb-[30px] md:p-[50px] rounded-[10px] w-full max-w-[600px]"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
+                        {/* Input Fields */}
+                        <div className="flex flex-col gap-[30px] md:gap-[50px]">
+                            <input
+                                type="text"
+                                placeholder={t("Support.name")}
+                                className="w-full py-2 px-5 md:p-3 bg-[#E5E7EB] bg-opacity-0 border border-[#9CA3AF] rounded focus:outline-none"
                             />
-
-                            {/* Email Field */}
-                            <input 
-                                type="email" 
-                                placeholder="Email *" 
-                                className="w-full p-3 bg-[#E5E7EB] border border-[#9CA3AF]"
+                            <input
+                                type="email"
+                                placeholder={t("Support.email")}
+                                className="w-full py-2 px-5 md:p-3 bg-[#E5E7EB] bg-opacity-0 border border-[#9CA3AF] rounded focus:outline-none"
                             />
-
-                            {/* Message Field */}
-                            <textarea 
-                                placeholder="Message *" 
+                            <textarea
+                                placeholder={t("Support.message")}
                                 rows="4"
-                                className="w-full p-3 bg-[#E5E7EB] border border-[#9CA3AF]"
+                                className="w-full py-2 px-5 md:p-3 bg-[#E5E7EB] bg-opacity-0 border border-[#9CA3AF] rounded focus:outline-none"
                             />
                         </div>
-                        {/* Submit */}
-                        <div className="flex items-center justify-end">
-                            <button onClick={handleFormSubmit} className="text-xl text-[#4B5563] font-normal shadow-custom px-5 py-[5px] rounded-[5px] bg-[linear-gradient(180deg,#EAF3FF_0%,#BBD7FE_72%)]">
-                                SEND
+
+                        {/* Submit Button */}
+                        <div className="flex justify-end">
+                            <button
+                                onClick={handleFormSubmit}
+                                className="text-base md:text-xl text-[#4B5563] font-normal shadow-custom px-5 py-[5px] rounded-[5px] bg-[linear-gradient(180deg,#EAF3FF_0%,#BBD7FE_72%)]"
+                            >
+                                {t("Support.send")}
                             </button>
                         </div>
                     </form>
                 )}
             </div>
         </div>
+
     )
 }
 

@@ -22,7 +22,7 @@ const Special = () => {
     useEffect(() => {
             AOS.init({
               duration: 1000, 
-              once: false,  
+              once: true,  
               offset: 200,
             });
           }, []);
@@ -30,15 +30,27 @@ const Special = () => {
     return (
         <div className='flex flex-col gap-[150px] md:gap-[200px] w-full justify-center text-center pt-[50p] md:pt-[80px] pb-[250px]'>
             {/* Top Image */}
-            <div className='w-full relative'>
-                <img src={image1} alt="Special Image 1" className='hidden md:block w-full'/>
-                <img src={imageM1} alt="Special Image Mobile 1" className='md:hidden w-full'/>
-                <div className='absolute top-[60%] left-0 p-4 transform -translate-y-1/2 text-[#D1D5DB] text-[32px] md:text-[64px] text-center font-light w-full leading-normal'>
+            {/* Web */}
+            <div className='hidden xl:block w-full relative'>
+                <img src={image1} alt="Special Image 1" className='w-full'/>
+                <div className='flex flex-col md:gap-2 lg:gap-10 absolute inset-0 top-[60%] left-0 p-4 transform -translate-y-1/2 text-[#D1D5DB] text-[32px] md:text-4xl lg:text-[64px] text-center font-light w-full leading-normal'>
                     <div>
-                        WE CARE DEEPLY THE
+                        {t("Special.careDeeply")}
                     </div>
                     <div>
-                        VISUAL AESTHETICS
+                        {t("Special.visual")}
+                    </div>
+                </div>
+            </div>
+            {/* Mobile */}
+            <div className='xl:hidden w-full relative'>
+                <img src={imageM1} alt="Special Image Mobile 1" className='w-full'/>
+                <div className='absolute top-3/4 left-0 p-4 transform -translate-y-1/2 text-[#D1D5DB] text-[32px] md:text-[64px] text-center font-light w-full leading-normal'>
+                    <div>
+                        {t("Special.careDeeply")}
+                    </div>
+                    <div>
+                        {t("Special.visual")}
                     </div>
                 </div>
             </div>
@@ -46,74 +58,75 @@ const Special = () => {
             {/* Customisation */}
             <div className='flex justify-center px-[25px]'>
                 {/* Web */}
-                <div className='hidden md:flex flex-col gap-[30px] text-center max-w-[1200px] w-auto'> 
-                    <div className="flex flex-col  bg-text-gradient bg-clip-text text-transparent text-5xl font-normal leading-normal" data-aos="fade-up">
-                        <div>
-                            CUSTOMISATION IS YOUR
+                <div className='hidden md:flex flex-col gap-[30px] justify-center items-center text-center max-w-[1200px] w-full'> 
+                    <div className="flex flex-col bg-text-gradient bg-clip-text text-transparent md:text-3xl lg:text-5xl font-normal leading-normal" data-aos="fade-up">
+                        <div className='leading-normal'>
+                            {t("Special.customisation")}
                         </div>
-                        <div>
-                            DIRECT PATH TO ADVANTAGE
+                        <div className='leading-normal'>
+                            {t("Special.directPath")}
                         </div>
                     </div>
-                    <div className='text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
+                    <div className='md:text-lg lg:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                         <div>
-                            Tailored web pages and apps enhance engagement by catering to user 
+                            {t("Special.tailoredWebPages")}
                         </div>
                         <div>
-                            preferences, boosting satisfaction, retention, and loyalty.
+                            {t("Special.preferences")}
                         </div>
                     </div>
                 </div>
                 {/* Mobile */}
-                <div className='md:hidden flex flex-col gap-[30px] text-center max-w-[1200px] w-auto'> 
+                <div className='md:hidden flex flex-col gap-[30px] text-center max-w-[1200px] w-full'> 
                     <div className="flex flex-col bg-text-gradient bg-clip-text text-transparent text-[32px] font-normal " data-aos="fade-up">
                         <div>
-                            CUSTOMISATION
+                            {t("Special.customisationMobile")}
                         </div>
                         <div>
-                            IS YOUR DIRECT
+                            {t("Special.directMobile")}
                         </div>
                         <div>
-                            PATH TO ADVANTAGE
+                            {t("Special.PathMobile")}
                         </div>
                     </div>
                     <div className='text-base text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
                         <div>
-                            Tailored web pages and apps enhance engagement by catering to user preferences, boosting satisfaction, retention, and loyalty.
+                            {t("Special.tailoredWebPagesMobile")}
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Body */}
-            <div className='w-full flex flex-col items-center justify-center'>
+            <div className='w-full flex flex-col items-center justify-center md:px-5 '>
                 <div className='max-w-[1200px] flex flex-col gap-[250px]'>
+                    {/* Content */}
                     <div className='flex flex-col gap-[50px] md:gap-[150px] mb-[50px] md:mb-0 mx-5 md:mx-0'>   
                         <div className='flex flex-col gap-[30px] md:gap-[50px]'>
                             {/* Text 1 */}
-                            <div className="flex flex-col text-xl md:text-4xl text-[#557AAA] font-normal w-[300px] md:w-[661px] text-left" data-aos="fade-up" data-aos-delay="400">
+                            <div className="flex flex-col text-xl md:text-2xl lg:text-4xl text-[#557AAA] font-normal w-full lg:w-[661px] text-left" data-aos="fade-up" data-aos-delay="400">
                                 <div className='leading-normal'>
-                                    {t("Customize.customizeIdea_Title1")}
+                                    {t("Special.customizeIdea_Title1")}
                                 </div>
                                 <div className='leading-normal'>
-                                    {t("Customize.customizeIdea_Titles")}
+                                    {t("Special.customizeIdea_Titles")}
                                 </div>
                             </div>
 
-                            <div className='flex flex-col gap-[100px] md:gap-0'>
+                            <div className='flex flex-col gap-[100px] lg:gap-0'>
                                 <img src={Cus1} alt="" className='hidden md:block' data-aos="fade-up" data-aos-delay="600"/>
                                 <img src={Cus1Mobile} alt="" className='block md:hidden' data-aos="fade-up" data-aos-delay="600"/>
 
                                 {/* web */}
                                 <div className='hidden md:block'>
                                     {/* Text 2 */}
-                                    <div className='relative top-[-300px] left-[330px] hidden md:block'  data-aos="fade-up" data-aos-delay="400">
-                                        <div className="absolute left-0 top-36 md:text-4xl text-[#557AAA] font-normal text-right w-[860px]">
+                                    <div className='relative md:top-[-250px] lg:top-[-300px]'  data-aos="fade-up" data-aos-delay="400">
+                                        <div className="absolute left-0 top-36 md:text-2xl lg:text-4xl text-[#557AAA] font-normal text-right w-full">
                                             <div className='leading-normal'>
-                                                {t("Customize.customizeIdea_Title2")}
+                                                {t("Special.customizeIdea_Title2")}
                                             </div>
                                             <div className='leading-normal'>
-                                                {t("Customize.customizeIdea_Title2s")}
+                                                {t("Special.customizeIdea_Title2s")}
                                             </div>
                                         </div>
                                     </div>
@@ -125,12 +138,12 @@ const Special = () => {
 
                                     {/* Text 3 */}
                                     <div className='relative hidden md:block' data-aos="fade-up" data-aos-delay="400">
-                                        <div className=' absolute left-0 top-[-150px] md:w-[860px] md:text-4xl text-[#557AAA] font-normal text-left'>
+                                        <div className=' absolute left-0 md:top-[-100px] lg:top-[-150px] lg:w-[860px] md:text-2xl lg:text-4xl text-[#557AAA] font-normal text-left'>
                                             <div className='leading-normal'>
-                                                {t("Customize.customizeIdea_Title3")}
+                                                {t("Special.customizeIdea_Title3")}
                                             </div>
                                             <div className='leading-normal'>
-                                                {t("Customize.customizeIdea_Title3s")}
+                                                {t("Special.customizeIdea_Title3s")}
                                             </div>
                                         </div>
                                     </div>
@@ -140,13 +153,14 @@ const Special = () => {
                                         <img src={Emoji} alt="Explore 3" />
                                     </div>
 
+                                    {/* Text4 */}
                                     <div className='relative' data-aos="fade-up" data-aos-delay="400">                    
-                                        <div className="absolute left-[330px] top-[-710px] md:text-4xl font-normla text-right text-[#557AAA] w-[860px]">
+                                        <div className="absolute md:top-[-460px] lg:top-[-600px] xl:top-[-710px] md:text-2xl lg:text-4xl font-normla text-right text-[#557AAA] w-full">
                                             <div className='leading-normal'>
-                                                {t("Customize.customizeIdea_Title4")}
+                                                {t("Special.customizeIdea_Title4")}
                                             </div>
                                             <div className='leading-normal'>
-                                                {t("Customize.customizeIdea_Title4s")}
+                                                {t("Special.customizeIdea_Title4s")}
                                             </div>
                                         </div>
                                     </div>
@@ -157,9 +171,8 @@ const Special = () => {
                                 {/* mobile */}
                                 <div className='flex flex-col md:hidden gap-[30px]'>
                                     <div className='text-[#557AAA] text-xl font-normal text-right'data-aos="fade-up">
-                                        <div>{t("Customize.customizeIdea_Title2")}</div>
-                                        <div>{t("Customize.customizeIdea_Title2s")}</div>
-
+                                        <div>{t("Special.customizeIdea_Title2")}</div>
+                                        <div>{t("Special.customizeIdea_Title2s")}</div>
                                     </div>
 
                                     <div>
@@ -167,21 +180,21 @@ const Special = () => {
                                             <div>
                                                 <img src={Cus2Mobile} alt="" />
                                             </div>
-                                            <div className='absolute bottom-[70px] w-[280px] text-[#557AAA] text-xl font-normal text-left' data-aos="fade-up" data-aos-delay="200">
-                                                <div>{t("Customize.customizeIdea_Title3")}</div>
-                                                <div>{t("Customize.customizeIdea_Title3s")}</div>
+                                            <div className='absolute bottom-[70px] w-full text-[#557AAA] text-xl font-normal text-left' data-aos="fade-up" data-aos-delay="200">
+                                                <div>{t("Special.customizeIdea_Title3")}</div>
+                                                <div>{t("Special.customizeIdea_Title3s")}</div>
                                             </div>
                                         </div>
                                         <div className='relative' data-aos="fade-up" data-aos-delay="400">
                                             <div className='flex justify-end'>
                                                 <img src={Cus3Mobile} alt="" />
                                             </div>
-                                            <div className='absolute text-[#557AAA] text-xl font-normal text-right bottom-[210px] right-0' data-aos="fade-up" data-aos-delay="400">
+                                            <div className='absolute text-[#557AAA] text-xl font-normal text-right bottom-[230px] right-0' data-aos="fade-up" data-aos-delay="400">
                                                 <div>
-                                                    {t("Customize.customizeIdea_Title4")}
+                                                    {t("Special.customizeIdea_Title4")}
                                                 </div>
                                                 <div>
-                                                    {t("Customize.customizeIdea_Title4s")}
+                                                    {t("Special.customizeIdea_Title4s")}
                                                 </div>
                                             </div>
                                         </div>
@@ -194,21 +207,26 @@ const Special = () => {
                     <div className="flex flex-col justify-center items-center">
                         <div className="max-w-[1200px] flex flex-col gap-[250px]">
                             <div className="flex flex-col gap-[50px]">
-                                <div className="flex flex-col gap-[10px]" data-aos="fade-up" data-aos-delay="200">
-                                    <div className="text-base md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal">PREPARING YOUR WEBPAGE</div>
-                                    <div className="hidden md:block text-5xl text-[#153764] font-bold">BUILD AWESOME WEBSITE FOR YOU</div>
+                                <div className="flex flex-col md:gap-[10px] lg:gap-5" data-aos="fade-up" data-aos-delay="200">
+                                    <div className="text-base md:text-2xl lg:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal">{t("Special.preparing")}</div>
+                                    {/* Web */}
+                                    <div className="hidden md:block md:text-3xl lg:text-5xl text-[#153764] font-bold">
+                                        <div className='leading-normal'>{t("Special.buildAwesome")}</div>
+                                        <div className='leading-normal'>{t("Special.buildAwesome2")}</div>
+                                    </div>
+                                    {/* Mobile */}
                                     <div className="md:hidden text-2xl text-[#153764] font-bold leading-normal">
-                                        <div>BUILD AWESOME WEBSITE</div>
-                                        <div> FOR YOU</div>
+                                        <div>{t("Special.buildAwesomeMobile")}</div>
+                                        <div>{t("Special.buildAwesomeMobile2")}</div>
                                     </div>
                                 </div>
                                 <div>
                                     <div className="flex justify-center items-center"   data-aos="fade-up" data-aos-delay="400">
                                         <a
                                             href='creating'
-                                            className="text-base md:text-2xl text-[#153764] font-normal leading-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
+                                            className="text-base md:text-xl lg:text-2xl text-[#153764] font-normal leading-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]"
                                         >
-                                            CREATING PAGE
+                                            {t("Special.creatingPage")}
                                         </a>
                                     </div>
                                 </div>

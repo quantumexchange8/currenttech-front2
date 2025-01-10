@@ -16,7 +16,7 @@ import Support from "./Pages/Support";
 
 
 
-import ScrollToTop from './Pages/ScrollToTop';
+import ScrollToTop from './Components/ScrollToTop';
 // import { LanguageProvider } from "./LanguagesContext.js";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
     <div>
         <div className="">
           <Topbar />
-          <ScrollToTop />
+          {/* <ScrollToTop /> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="advantage" element={<Advantage />} />

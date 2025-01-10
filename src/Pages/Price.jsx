@@ -18,7 +18,7 @@ const Price = () => {
     useEffect(() => {
         AOS.init({
           duration: 1000, 
-          once: false,  
+          once: true,  
           offset: 200,
         });
     }, []);
@@ -27,30 +27,30 @@ const Price = () => {
         <div className='flex flex-col w-full justify-center text-center gap-[150px] md:gap-[200px] pt-[50px] md:pt-[80px] pb-[250px]'>
             {/* Top Image */}
             {/* Web */}
-            <div className='hidden md:block relative'>
+            <div className='hidden xl:block relative'>
                 <div>
                     <img src={Image1}alt="" className='w-full'/>
                 </div>
                 <div className='absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 text-[32px] md:text-[64px] text-[#D1D5DB] font-light'>
                     <div>
-                        START BUILD
+                        {t("Price.startBuild")}
                     </div>
                     <div>
-                        YOUR BUSINESS
+                        {t("Price.yourBusiness")}
                     </div>
                 </div>
             </div>
             {/* Mobile */}
-            <div className='md:hidden relative'>
+            <div className='xl:hidden relative'>
                 <div>
                     <img src={ImageM1}alt="" className='w-full'/>
                 </div>
                 <div className='absolute w-full top-[65%] left-1/2 transform -translate-x-1/2 text-[32px] md:text-[64px] text-[#D1D5DB] font-light'>
                     <div>
-                        START BUILD
+                        {t("Price.startBuild")}
                     </div>
                     <div>
-                        YOUR BUSINESS
+                        {t("Price.yourBusiness")}
                     </div>
                 </div>
             </div>
@@ -58,13 +58,13 @@ const Price = () => {
             {/* Title (Mobile) */}
             <div className='md:hidden px-[25px]'>
                 <div className='text-2xl text-[#557AAA] font-semibold'>
-                    Choose your
+                    {t("Price.chooseYour")}
                 </div>
                 <div className='text-2xl text-[#153764] font-semibold'>
-                    preferred solution
+                    {t("Price.preferredSolution")}
                 </div>
                 <div className='text-2xl text-[#557AAA] font-semibold'>
-                    for building a website
+                    {t("Price.forBuilding")}
                 </div>
             </div>
 
@@ -72,16 +72,16 @@ const Price = () => {
             <div className='flex flex-col gap-[250px] px-[25px] md:p-0'>
                 {/* Content */}
                 {/* Web */}
-                <div className='hidden md:flex justify-center gap-[100px]'>
+                <div className='hidden xl:flex justify-center gap-[100px]'>
                     {/* Left Details */}
                     {selectedData && (
                     <div className="flex flex-col gap-[100px]">
                         <div className="flex flex-col gap-[50px] max-w-[1200px]">
                             {/* Title */}
                             <div className="flex flex-col gap-[10px] text-left" data-aos="fade-up">
-                                <div className="text-4xl text-[#153764] font-bold">{selectedData.title}</div>
+                                <div className="text-4xl text-[#153764] font-bold">{t(selectedData.title)}</div>
                                 <div className="flex gap-1">
-                                    <div className="text-xl text-[#557AAA] font-normal">Order now from </div>
+                                    <div className="text-xl text-[#557AAA] font-normal"> {t("Price.orderNow")} </div>
                                     <div className="text-xl text-[#557AAA] font-medium">{selectedData.price}</div>
                                     <div className="text-xl text-[#557AAA] font-normal">* </div>
                                 </div>
@@ -89,7 +89,7 @@ const Price = () => {
 
                             {/* Details */}
                             <div className="flex justify-between w-[600px]" data-aos="fade-up" deta-aos-delay="200">
-                                <ul className="list-disc list-outside pl-7 text-xl text-left text-[#4B5563] font-medium leading-[50px]">
+                                <ul className="list-disc list-inside text-xl text-left text-[#4B5563] font-medium leading-[50px]">
                                     {selectedData.features.map((feature, index) => (
                                     <li key={index}>{feature}</li>
                                     ))}
@@ -106,26 +106,26 @@ const Price = () => {
                             {/* Left */}
                             <div className="flex flex-col gap-[30px] text-left" data-aos="fade-up" deta-aos-delay="200">
                                 <div className="text-xl font-bold">
-                                    <div className="text-[#557AAA]">
-                                    The above are the requirements for
+                                    <div className="text-[#557AAA] flex gap-[1px]">
+                                        {t("Price.requirement")}<div className="text-[#153764]">{t("Price.newWebsiteC")}</div>
                                     </div>
                                     <div className="text-[#153764]">
-                                    the new website you wish to build.
+                                        {t("Price.newWebsite")}
                                     </div>
                                 </div>
                                 <div className="text-xl">
-                                    <div className="text-[#4B5563] font-light">{selectedData.combination || ''}</div>
+                                    <div className="text-[#4B5563] font-light">{t(selectedData.combination)}</div>
                                     <div className="text-[#153764] font-medium">{selectedData.price}</div>
                                 </div>
                                 {selectedData.discount && (
                                     <div className="text-xl">
-                                    <div className="text-[#4B5563] font-light">Now discount</div>
+                                    <div className="text-[#4B5563] font-light">{t("Price.nowDiscount")}</div>
                                     <div className="text-[#153764] font-medium">{selectedData.discount}</div>
                                     </div>
                                 )}
                                 {selectedData.subtotal && (
                                     <div className="text-xl">
-                                    <div className="text-[#4B5563] font-light">Subtotal</div>
+                                    <div className="text-[#4B5563] font-light">{t("Price.subtotal")}</div>
                                     <div className="text-[#153764] font-medium">{selectedData.subtotal}</div>
                                     </div>
                                 )}
@@ -136,9 +136,9 @@ const Price = () => {
                                 <Lorry />
                                 {selectedData.ship && (
                                     <div className="text-right">
-                                    <div className="text-xl text-[#6B7280] font-light">Ships:</div>
-                                    <div className="text-xl text-[#153764] font-medium">{selectedData.ship} Weeks</div>
-                                    <div className="text-xl text-[#153764] font-medium">Free Testing</div>
+                                    <div className="text-xl text-[#6B7280] font-light">{t("Price.ship")}</div>
+                                    <div className="text-xl text-[#153764] font-medium">{selectedData.ship} {t("Price.weeks")}</div>
+                                    <div className="text-xl text-[#153764] font-medium">{t("Price.freeTesting")}</div>
                                     </div>
                                 )}
                             </div>
@@ -149,20 +149,25 @@ const Price = () => {
                     <div className='flex flex-col gap-[100px] pt-[136px]'>
                         {/* Website */}
                         <div className='flex flex-col gap-5 w-[500px]' data-aos="fade-up" deta-aos-delay="200">
-                            <div className='flex gap-[6px] text-xl text-[#557AAA] font-bold'>
-                                What 
-                                <div className='text-xl text-[#153764] font-bold'>type of website</div>
-                                    do you want?
+                            <div className=' text-xl text-[#557AAA] font-bold'>
+                                <div className='flex gap-[6px]'>
+                                    {t("Price.what")}
+                                    <div className='text-xl text-[#153764] font-bold'>{t("Price.typeOf")}</div>
+                                    {t("Price.doYouWant")}                                            
+                                </div>
+                                <div className='text-left'>
+                                    {t("Price.doYouWantM")}                                            
+                                </div>
                             </div>
                             <button onClick={() => setSelectedWebsiteType('Website')} className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedWebsiteType === 'Website' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
-                                    Website
+                                    {t("Price.website")}
                                 </div>
                                 {selectedWebsiteType === 'Website' ? <PWebsite /> : <PWebsiteG />}
                             </button>
                             <button onClick={() => setSelectedWebsiteType('e-Commerce')}  className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedWebsiteType === 'e-Commerce' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
-                                    e-Commerce
+                                    {t("Price.eCommerce")}
                                 </div>
                                 {selectedWebsiteType === 'e-Commerce' ? <PECommerce /> : <PECommerceG />}
                             </button>
@@ -170,45 +175,46 @@ const Price = () => {
                         {/* Solution */}
                         <div className='flex flex-col gap-5 w-[500px]' data-aos="fade-up" deta-aos-delay="200">
                             <div className='flex gap-[6px] text-xl text-[#557AAA] font-bold'>
-                                Which is 
-                                <div className='text-xl text-[#153764] font-bold'>best</div>
-                                for you?
+                                {t("Price.whichIs")}
+                                <div className='text-xl text-[#153764] font-bold'>{t("Price.best")}</div>
+                                {t("Price.foryou")}
                             </div>
                             <button onClick={() => setSelectedSolutionType('Basic')} className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedSolutionType === 'Basic' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
-                                    Basic Solution for Startup.
+                                    {t("Price.basic")}
                                 </div>
                             </button>
                             <button onClick={() => setSelectedSolutionType('Advanced')}  className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
-                                    Advanced Solution for Professional.
+                                    {t("Price.advanced")}
                                 </div>
                             </button>
                         </div>
                         {/* Discount */}
                         <div className='flex flex-col gap-5 w-[500px]' data-aos="fade-up" deta-aos-delay="200">
                             <div className='flex gap-[6px] text-xl text-[#557AAA] font-bold'>
-                                Now you can 
-                                <div className='text-xl text-[#153764] font-bold'>save more costs.</div>
+                                {t("Price.nowYouCan")}
+                                <div className='text-xl text-[#153764] font-bold'>{t("Price.saveMore")}</div>
+                                {t("Price.costC")}
                             </div>
                             <div className={`text-xl flex justify-between items-center max-w-[500px] px-[30px] py-5 rounded-[10px] ${selectedSolutionType === 'Basic' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div className='text-left'>
                                     <div>
-                                        Discount for startup business
+                                        {t("Price.discount")}
                                     </div>
                                     <div>
-                                        RM1,800.00
+                                        {t("Price.rm1800")}
                                     </div>
                                 </div>
                                 {selectedSolutionType === 'Basic' ? <Basic /> : <BasicG />}
                             </div>
                             <div  className={`text-xl flex justify-between items-center max-w-[500px] px-[30px] py-5 rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
-                                <div className='text-left'>
+                                <div className='text-left w-[380px]'>
                                     <div>
-                                        For professional save up to
+                                        {t("Price.professional")}
                                     </div>
                                     <div>
-                                        RM2,200.00
+                                        {t("Price.rm2200")}
                                     </div>
                                 </div>
                                 {selectedSolutionType === 'Advanced' ? <Basic /> : <BasicG />}
@@ -216,10 +222,10 @@ const Price = () => {
                             <button className='text-xl flex justify-between items-center max-w-[500px] px-[30px] py-5 rounded-[10px] bg-[#D1D5DB]'>
                                 <div className='flex flex-col gap-[5px] text-left'>
                                     <div className='text-xl text-[#153764] font-medium'>
-                                        Need custom made?
+                                        {t("Price.customMade")}
                                     </div>
                                     <div className='text-base text-[#6B7280] font-normal'>
-                                        Let us know what you think.
+                                        {t("Price.letUsKnow")}
                                     </div>
                                 </div>
                                 <Bulb />
@@ -228,25 +234,25 @@ const Price = () => {
                     </div>
                 </div>
                 {/* Mobile */}
-                <div className='md:hidden flex flex-col justify-center gap-[100px]'>
+                <div className='xl:hidden flex flex-col justify-center gap-[100px]'>
                     {/* Top */}
-                    <div className='flex flex-col gap-[100px]'>
+                    <div className='flex flex-col gap-[100px] md:px-5'>
                         {/* Website */}
                         <div className='flex flex-col gap-5 w-full' data-aos="fade-up" deta-aos-delay="200">
                             <div className='flex gap-[6px] text-base text-[#557AAA] font-bold'>
-                                What 
-                                <div className='text-base text-[#153764] font-bold'>type of website</div>
-                                do you want?
+                                {t("Price.what")} 
+                                <div className='text-base text-[#153764] font-bold'>{t("Price.typeOf")}</div>
+                                {t("Price.doYouWant")}
                             </div>
                             <button onClick={() => [setSelectedWebsiteType('Website'), window.scrollTo({top: 950,behavior: 'smooth'})]} className={`text-base flex justify-between w-full px-[30px] py-[23px] md:py-[25px] rounded-[10px] ${selectedWebsiteType === 'Website' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
-                                    Website
+                                    {t("Price.website")}
                                 </div>
                                 {selectedWebsiteType === 'Website' ? <PWebsiteM /> : <PWebsiteGM />}
                             </button>
                             <button onClick={() => [setSelectedWebsiteType('e-Commerce'), window.scrollTo({top: 950,behavior: 'smooth'})]}  className={`text-base flex justify-between w-full px-[30px] py-[23px] md:py-[25px] rounded-[10px] ${selectedWebsiteType === 'e-Commerce' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
-                                    e-Commerce
+                                    {t("Price.eCommerce")}
                                 </div>
                                 {selectedWebsiteType === 'e-Commerce' ? <PECommerceM /> : <PECommerceGM />}
                             </button>
@@ -254,56 +260,51 @@ const Price = () => {
                         {/* Solution */}
                         <div className='flex flex-col gap-5 w-full' data-aos="fade-up" deta-aos-delay="200">
                             <div className='flex gap-[6px] text-base text-[#557AAA] font-bold'>
-                                Which is 
-                                <div className='text-base text-[#153764] font-bold'>best</div>
-                                for you?
+                                {t("Price.whichIs")} 
+                                <div className='text-base text-[#153764] font-bold'>{t("Price.best")}</div>
+                                {t("Price.foryou")}
                             </div>
                             <button onClick={() => [setSelectedSolutionType('Basic'), window.scrollTo({top: 1250,behavior: 'smooth'})]} className={`text-base flex justify-between px-[30px] py-[23px] md:py-[25px] rounded-[10px] ${selectedSolutionType === 'Basic' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
-                                    Basic Solution for Startup.
+                                    {t("Price.basic")}
                                 </div>
                             </button>
                             <button onClick={() => [setSelectedSolutionType('Advanced'), window.scrollTo({top: 1250,behavior: 'smooth'})]}  className={`text-base flex justify-between px-[26px] py-[23px] md:py-[25px] rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
-                                    Advanced Solution for Professional.
+                                    {t("Price.advanced")}
                                 </div>
                             </button>
                         </div>
                         {/* Discount */}
                         <div className='flex flex-col gap-5 w-full' data-aos="fade-up" deta-aos-delay="200">
                             <div className='flex gap-[6px] text-base text-[#557AAA] font-bold'>
-                                Now you can 
-                                <div className='text-base text-[#153764] font-bold'>save more costs.</div>
+                                {t("Price.nowYouCan")}
+                                <div className='text-base text-[#153764] font-bold'>{t("Price.saveMore")}</div>
+                                {t("Price.costC")}
                             </div>
-                            <div className={`text-base flex justify-between items-center max-w-[500px] px-[30px] py-5 rounded-[10px] ${selectedSolutionType === 'Basic' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                            <div className={`text-base flex justify-between items-center w-full xl:max-w-[500px] px-[30px] py-5 rounded-[10px] ${selectedSolutionType === 'Basic' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div className='text-left'>
                                     <div>
-                                        Discount for startup business
-                                    </div>
-                                    <div>
-                                        RM1,800.00
+                                        {t("Price.discount")}
                                     </div>
                                 </div>
                                 {selectedSolutionType === 'Basic' ? <BasicM /> : <BasicGM />}
                             </div>
-                            <div  className={`text-base flex justify-between items-center max-w-[500px] px-[30px] py-5 rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                            <div  className={`text-base flex justify-between items-center w-full xl:max-w-[500px] px-[30px] py-5 rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div className='text-left'>
                                     <div>
-                                        For professional save up to
-                                    </div>
-                                    <div>
-                                        RM2,200.00
+                                        {t("Price.professional")}
                                     </div>
                                 </div>
                                 {selectedSolutionType === 'e-commerce' ? <BasicM /> : <BasicGM />}
                             </div>
-                            <button className='text-base flex justify-between items-center max-w-[500px] px-[30px] py-5 rounded-[10px] bg-[#D1D5DB]'>
+                            <button className='text-base flex justify-between items-center w-full xl:max-w-[500px] px-[30px] py-5 rounded-[10px] bg-[#D1D5DB]'>
                                 <div className='flex flex-col gap-[5px] text-left'>
                                     <div className='text-xl text-[#153764] font-medium'>
-                                        Need custom made?
+                                        {t("Price.customMade")}
                                     </div>
                                     <div className='text-base text-[#6B7280] font-normal'>
-                                        Let us know what you think.
+                                        {t("Price.letUsKnow")}
                                     </div>
                                 </div>
                                 <BulbM />
@@ -312,13 +313,13 @@ const Price = () => {
                     </div>
                     {/* Bottom Details */}
                     {selectedData && (
-                    <div className="flex flex-col gap-[100px]">
+                    <div className="flex flex-col gap-[100px] md:px-5">
                         <div className="flex flex-col gap-[50px]">
                             {/* Title */}
                             <div className="flex flex-col gap-[5px] md:gap-[10px] text-left" data-aos="fade-up">
-                                <div className="text-2xl text-[#153764] font-bold">{selectedData.title}</div>
+                                <div className="text-2xl text-[#153764] font-bold">{t(selectedData.title)}</div>
                                 <div className="flex gap-1">
-                                    <div className="text-base text-[#557AAA] font-normal">Order now from </div>
+                                    <div className="text-base text-[#557AAA] font-normal">{t("Price.orderNow")}</div>
                                     <div className="text-base text-[#557AAA] font-medium">{selectedData.price}</div>
                                     <div className="text-base text-[#557AAA] font-normal">* </div>
                                 </div>
@@ -333,7 +334,7 @@ const Price = () => {
                                 </ul>
                                 <div className="text-[#6B7280] text-base md:text-base font-normal text-right leading-[40px]">
                                     {selectedData.ans.map((ans, index) => (
-                                    <div key={index}>{ans}</div>
+                                    <div className='leading-[40px]' key={index}>{ans}</div>
                                     ))}
                                 </div>
                             </div>
@@ -343,11 +344,11 @@ const Price = () => {
                         <div className="flex flex-col gap-[30px] text-left" data-aos="fade-up" deta-aos-delay="200">
                             {/* Text */}
                             <div className="text-base font-semibold">
-                                <div className="text-[#557AAA]">
-                                    The above are the requirements for
+                                <div className="text-[#557AAA] flex gap-[1px]">
+                                    {t("Price.requirement")}<div className="text-[#153764]">{t("Price.newWebsiteC")}</div>
                                 </div>
                                 <div className="text-[#153764]">
-                                    the new website you wish to build.
+                                    {t("Price.newWebsite")}
                                 </div>
                             </div>
                             {/* Prices */}
@@ -355,18 +356,18 @@ const Price = () => {
                                 {/* Left */}
                                 <div className='flex flex-col gap-[20px]'>
                                     <div className="text-base">
-                                        <div className="text-[#4B5563] font-light">{selectedData.combination || ''}</div>
+                                        <div className="text-[#4B5563] font-light">{t(selectedData.combination)}</div>
                                         <div className="text-[#153764] font-medium">{selectedData.price}</div>
                                     </div>
                                     {selectedData.discount && (
                                         <div className="text-base">
-                                        <div className="text-[#4B5563] font-light">Now discount</div>
+                                        <div className="text-[#4B5563] font-light">{t("Price.nowDiscount")}</div>
                                         <div className="text-[#153764] font-medium">{selectedData.discount}</div>
                                         </div>
                                     )}
                                     {selectedData.subtotal && (
                                         <div className="text-base">
-                                        <div className="text-[#4B5563] font-light">Subtotal</div>
+                                        <div className="text-[#4B5563] font-light">{t("Price.subtotal")}</div>
                                         <div className="text-[#153764] font-medium">{selectedData.subtotal}</div>
                                         </div>
                                     )}
@@ -376,9 +377,9 @@ const Price = () => {
                                     <LorryM />
                                     {selectedData.ship && (
                                         <div className="text-right">
-                                        <div className="text-base text-[#6B7280] font-light">Ships:</div>
-                                        <div className="text-base text-[#153764] font-medium">{selectedData.ship} Weeks</div>
-                                        <div className="text-base text-[#153764] font-medium">Free Testing</div>
+                                        <div className="text-base text-[#6B7280] font-light">{t("Price.ship")}</div>
+                                        <div className="text-base text-[#153764] font-medium">{selectedData.ship} {t("Price.weeks")}</div>
+                                        <div className="text-base text-[#153764] font-medium">{t("Price.freeTesting")}</div>
                                         </div>
                                     )}
                                 </div>
@@ -392,16 +393,16 @@ const Price = () => {
                 <div className="flex flex-col justify-center items-center">
                     <div className="max-w-[1200px] flex flex-col gap-[250px]">
                         <div className="flex flex-col gap-[50px]">
-                            <div className="flex flex-col gap-[20px]" data-aos="fade-up" deta-aos-delay="200">
-                                <div className="text-base md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal">WE DO AMAZING STUFF</div>
-                                <div className='flex flex-col gap-5'>
-                                    <div className="text-2xl md:text-5xl text-[#153764] font-bold leading-normal">WE DESIGN & DEVELOP</div>
-                                    <div className="text-2xl md:text-5xl text-[#153764] font-bold leading-normal">CREATIVE SOLUTIONS</div>
+                            <div className="flex flex-col gap-[10px] md:gap-[20px]" data-aos="fade-up" deta-aos-delay="200">
+                                <div className="text-base md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal">{t("Price.amazingStuff")}</div>
+                                <div className='flex flex-col md:gap-5'>
+                                    <div className="text-2xl md:text-5xl text-[#153764] font-bold leading-normal">{t("Price.designAndDevelop")}</div>
+                                    <div className="text-2xl md:text-5xl text-[#153764] font-bold leading-normal">{t("Price.creativeSolution")}</div>
                                 </div>
                             </div>
                             <div className="flex justify-center items-center" data-aos="fade-up" deta-aos-delay="400">
                                 <a href='/creating_explore' className="w-auto text-base md:text-2xl text-[#153764] font-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]">
-                                    EXPLORE TEMPLATE
+                                    {t("Price.exploreTemplate")}
                                 </a>
                             </div>
                         </div>

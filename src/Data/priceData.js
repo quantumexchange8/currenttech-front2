@@ -4,7 +4,7 @@ export const priceData = [
     {   
         website: "Website",
         solution: "Basic",
-        title: "BASIC WEBSITE",
+        title: "basicWebsite",
         price: "RM8,199.00",
         features:[
             "Design type",
@@ -22,7 +22,7 @@ export const priceData = [
             "Google submission",
             "Google business",
             "Google console",
-            <span>Chat Integration <br /> (Messenger / Whatsapp) </span>,
+            <span>Chat Integration <br /> <div className="pl-6 md:pl-7">(Messenger / Whatsapp)</div> </span>,
         ],
         ans: [
             "Template base",
@@ -42,7 +42,7 @@ export const priceData = [
             "Yes",
             "Yes",
         ],
-        combination: "Basic solution website",
+        combination: "basicWebsiteCombination",
         discount: "-RM1,800.00",
         subtotal: "RM6,399.00",
         ship: "3 - 5",
@@ -50,7 +50,7 @@ export const priceData = [
     {
         website: "Website",
         solution: "Advanced",
-        title: "ADVANCED WEBSITE",
+        title: "AdvancedWebsite",
         price: "RM18,499.00",
         features:[
             "Design type",
@@ -68,7 +68,7 @@ export const priceData = [
             "Google submission",
             "Google business",
             "Google console",
-            <span>Chat Integration <br /> (Messenger / Whatsapp) </span>,
+            <span>Chat Integration <br /> <div className="pl-6 md:pl-7">(Messenger / Whatsapp)</div> </span>,
             "Guarantee 80% text score",
             "Guarantee 80% SEO Checkup score"
         ],
@@ -90,7 +90,7 @@ export const priceData = [
             "Yes",
             "Yes",
         ],
-        combination: "Advanced solution website",
+        combination: "AdvancedCombination",
         discount: "-RM2,200.00",
         subtotal: "RM16,299.00",
         ship: "4 - 6",
@@ -98,7 +98,7 @@ export const priceData = [
     {
         website: "e-Commerce",
         solution: "Basic",
-        title: "BASIC E-COMMERCE",
+        title: "basicECommerce",
         price: "RM8,199.00",
         features:[
             "Landing Page",
@@ -119,7 +119,7 @@ export const priceData = [
             "Google submission",
             "Google business",
             "Google console",
-            <span>Chat Integration <br /> (Messenger / Whatsapp) </span>,
+            <span>Chat Integration <br /> <div className="pl-6 md:pl-7">(Messenger / Whatsapp)</div> </span>,
         ],
         ans: [
             "X 1",
@@ -142,7 +142,7 @@ export const priceData = [
             "Yes",
             "Yes",
         ],
-        combination: "Basic e-Commerce",
+        combination: "basicECommerceCombination",
         discount: "-RM1,800.00",
         subtotal: "RM6,399.00",
         ship: "4 - 5",
@@ -150,7 +150,7 @@ export const priceData = [
     {
         website: "e-Commerce",
         solution: "Advanced",
-        title: "ADVANCED E-COMMERCE",
+        title: "AdvancedECommerce",
         price: "RM20,899.00",
         features:[
             "Landing Page",
@@ -175,7 +175,7 @@ export const priceData = [
             "Google submission",
             "Google business",
             "Google console",
-            <span>Chat Integration <br /> (Messenger / Whatsapp) </span>,
+            <span>Chat Integration <br /> <div className="pl-6 md:pl-7">(Messenger / Whatsapp)</div> </span>,
         ],
         ans: [
             "Custom",
@@ -202,7 +202,7 @@ export const priceData = [
             "Yes",
             "Yes",
         ],
-        combination: "Advanced e-Commerce",
+        combination: "AdvancedECommerceCombination",
         discount: "-RM2,200.00",
         subtotal: "RM18,699.00",
         ship: "5 - 7",

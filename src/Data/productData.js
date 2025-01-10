@@ -4,12 +4,12 @@ export const productData = [
     {
         image: 'product1.png',
         name: 'EDUCATION',
-        title: 'KINDERTOWN',
-        category: 'Education | Kindergarten | Primary | Secondary | University | Tuition Centre',
-        description: "Kindertown empowers parents, teachers, and school owners to track children's growth with privacy-focused, user-friendly tools. We're expanding to develop software for primary to tertiary education.",
+        title: 'kindertown',
+        category: 'eduCategory',
+        description: "eduDescription",
         description2: "",
         description3: "",
-        descriptionMobile: "Kindertown empowers parents, teachers, and school owners to track children's growth with privacy-focused, user-friendly tools. We're expanding to develop software for primary to tertiary education.",
+        descriptionMobile: "edudescriptionMobile",
         specifications: {
             versions: ['KT Parent', 'KT Teacher', 'KT Admin'],
             devices: ['Mobile phone', 'iPad / Tablet', 'PC', 'Mac'],
@@ -20,33 +20,33 @@ export const productData = [
             admin: ['Admin smart dash', 'Teacher & Student data', 'School fees report', 'Academic calendar', 'Configuration setting', 'Enrol new student', 'Reservations & Registrations', 'Student profile', 'Billing & Invoice', 'Teacher profile & Payslip', 'Teacher task board', 'Attendance reports', 'Transaction history', 'Admin user setting'],
         },
         sectionTitles: {
-            versions: 'VERSIONS:',
-            devices: 'DEVICE:',
-            operating: 'OPERATING SYSTEM:',
-            security: 'BIOMETRIC & SECURITY:',
-            parent: 'FEATURES: (PARENT)',
-            teacher: 'FEATURES: (TEACHER)',
-            admin: 'FEATURES: (ADMIN)',
+            versions: 'versions',
+            devices: 'device',
+            operating: 'operatingSystem',
+            security: 'biometric',
+            parent: 'featureParent',
+            teacher: 'featureTeacher',
+            admin: 'featureAdmin',
         },
         summary:
-            'Kindertown supports parents, teachers, and students with tools for growth and development. With attendance tracking, personalised tasks, and skill assessments, it ensures every child gets the attention they need, while fostering a safe, structured learning environment. Teachers can tailor education, creating a nurturing space for student success.',
+            'eduSummary',
         summary2:
-            '',
+            'eduSummary2',
         summaryMobile:
-            'Kindertown supports parents, teachers,',
+            'eduSummaryMobile',
         summaryMobile2:
-            ' and students with tools for growth and development. With attendance tracking, personalised tasks, and skill assessments, it ensures every child gets the attention they need, while fostering a safe, structured learning environment. Teachers can tailor education, creating a nurturing space for student success.',
+            ' eduSummaryMobile2',
     },
     {
         image: 'product2.png',
         name: 'E-INVOICE',
-        title: 'E-INBILL',
-        category: 'E invoice | POS system | Ordering software',
+        title: 'eInbill',
+        category: 'eInvoiceCategory',
         description:
-            "E-inbill goes beyond POS and e-invoices. Customisable for F&B, beauty, and retail, it’s the key to unlocking your business advantages.",
+            "eInvoiceDescription",
         description2: "",
         description3: "",
-        descriptionMobile: "E-inbill goes beyond POS and e-invoices. Customisable for F&B, beauty, and retail, it’s the key to unlocking your business advantages.",
+        descriptionMobile: "eInvoiceDescription",
         specifications: {
             versions: ['E-Admin', 'E-Merchant', 'E-Mobile'],
             plan: ['Basic', 'Standard', 'Advanced'],
@@ -56,30 +56,30 @@ export const productData = [
             features: ['Software license', 'Mobile printer', 'Paper roll', 'Mobile POS device', 'Smart POS device', 'USB + Bluetooth', 'NFC compatible', 'QR scan', 'Wifi supported', '2G / 3G / 4G / LTE', 'Li-ion battery', 'Camera rear 5MP', 'Customisable menu', 'Unlimited invoices', 'Cloud storage', 'Automatic cutter', 'Training & Support'],
         },
         sectionTitles: {
-            versions: 'VERSIONS:',
-            plan: 'PLAN:',
-            devices: 'DEVICE:',
-            operating: 'OPERATING SYSTEM:',
-            security: 'BIOMETRIC & SECURITY:',
-            features: 'FEATURES & SPEC:',
+            versions: 'versions',
+            plan: 'plan',
+            devices: 'device',
+            operating: 'operatingSystem',
+            security: 'biometric',
+            features: 'features',
         },
         summary:
-            'E-inbill supports businesses of all sizes, from street vendors to large chains. Hardware, software, payments, and support come together in one seamless solution, ensuring the best experience for you and your customers.',
+            'eInvoiceSummary',
         summary2:
-            '',
+            'eInvoiceSummary2',
         summaryMobile:
-            'E-inbill supports businesses of all sizes, from street vendors to large chains. Hardware, software, payments, and support come together in one seamless solution, ensuring the best experience for you and your customers.',
+            'eInvoiceSummaryMobile',
         summaryMobile2:
-            '',
+            'eInvoiceSummaryMobile2',
     },
     {
         image: 'product3.png',
         name: 'ATTENDANCE',
-        title: 'MOTION CAPTURE',
-        category: 'Attendance | Business | Company | Enterprise | Industries',
-        description: "In today’s fast-paced world, businesses face challenges like efficiency, retention, and cost control.",
-        description2: "Our Motion Capture (MOCAP) system tackles these by boosting productivity, morale, and work",
-        description3: " quality, fostering a positive culture that enhances retention.",
+        title: 'motionCapture',
+        category: 'attendenceCategory',
+        description: "attendenceDescription",
+        description2: "",
+        description3: " ",
         descriptionMobile: "In today’s fast-paced world, businesses face challenges like efficiency, retention, and cost control. Our Motion Capture (MOCAP) system tackles these by boosting productivity, morale, and work quality, fostering a positive culture that enhances retention.",
         specifications: {
             versions: ['Mocap employee', 'Mocap employer'],
@@ -91,31 +91,31 @@ export const productData = [
 
         },
         sectionTitles: {
-            versions: 'VERSIONS:',
-            devices: 'DEVICE:',
-            operating: 'OPERATING SYSTEM:',
-            security: 'BIOMETRIC & SECURITY:',
-            featuresEmployee: 'FEATURES: (MOCAP EMPLOYEE)',
-            featuresEmployer: 'FEATURES: (MOCAP EMPLOYER)',
+            versions: 'versions',
+            devices: 'device',
+            operating: 'operatingSystem',
+            security: 'biometric',
+            featuresEmployee: 'featuresEmployee',
+            featuresEmployer: 'featuresEmployer',
 
         },
         summary:
-            'Motion Capture (MOCAP) is an employee management system that boosts productivity and satisfaction. With smart dashboards for managing attendance, tasks, and rewards, it offers flexible hours, performance charts, and birthday perks. For employers, MOCAP provides detailed data, project progress, and task tracking, optimising workforce management and reducing turnover, creating a motivating and efficient work environment.',
+            'attendenceSummary',
         summary2:
-            '',
+            'attendenceSummary2',
         summaryMobile:
-            'Motion Capture (MOCAP) is an employee management system that boosts productivity and satisfaction. With smart dashboards for managing attendance, tasks, and rewards, it offers flexible hours, performance charts, and birthday perks. For employers, MOCAP provides detailed data, project progress, and task tracking, optimising workforce management and reducing turnover, creating a motivating and efficient work environment.',
+            'attendenceSummaryMobile',
     },
     {
         image: 'product4.png',
         name: 'FINANCE',
-        title: 'SMART CMS DASHBOARD',
-        category: 'Multi-level | Forex | Cryptocurrency | Binary ',
-        description: "Our IT team excels in crafting intelligent back-office solutions for MetaQuote (MT4/MT5) and cTrader operators. We specialise in custom web design, client frontends, admin backends, and commission systems, delivering precise data through Smart Dash with top-tier security.",
-        description2: "",
-        description3: "",
-        descriptionMobile: "Our IT team excels in crafting intelligent back-office solutions for MetaQuote (MT4/MT5) and cTrader operators. We specialise in custom ",
-        descriptionMobile2: "web design, client frontends, admin backends, and commission systems, delivering precise data through Smart Dash with top-tier security.",
+        title: 'smartCMS',
+        category: 'financeCategory',
+        description: "financeDescription",
+        description2: "financeDescription2",
+        description3: "financeDescription3",
+        descriptionMobile: "financeDescriptionMobile",
+        descriptionMobile2: "financeDescriptionMobile2",
         specifications: {
             versions: ['Smart member', 'Smart master'],
             devices: ['Mobile phone', 'PC', 'Mac'],
@@ -126,32 +126,32 @@ export const productData = [
 
         },
         sectionTitles: {
-            versions: 'VERSIONS:',
-            devices: 'DEVICE:',
-            operating: 'OPERATING SYSTEM:',
-            security: 'BIOMETRIC & SECURITY:',
-            featuresMember: 'FEATURES: (MEMBER DASHBOARD)',
-            featuresMaster: 'FEATURES: (MASTER DASHBOARD)',
+            versions: 'versions',
+            devices: 'device',
+            operating: 'operatingSystem',
+            security: 'biometric',
+            featuresMember: 'featuresMember',
+            featuresMaster: 'featuresMaster',
 
         },
         summary:
-            'Smart CMS Dashboard empowers brokers and investors with powerful tools. Brokers gain control through the master dashboard, managing wallets, fees, and real-time reports. Investors enjoy a sleek dashboard with digital wallets, rewards, and affiliate structures. With built-in security and integration of copy trading and PAMM, it ensures a secure, engaging trading experience.',
+            'financeSummary',
         summary2:
             '',
         summaryMobile:
-            'Smart CMS Dashboard empowers brokers and investors with powerful tools. Brokers gain control through the master dashboard, managing wallets, fees, and real-time reports. Investors enjoy a sleek dashboard with digital wallets, rewards, and affiliate structures. With built-in security and integration of copy trading and PAMM, it ensures a secure, engaging trading experience.',
+            'financeSummaryMobile',
         summaryMobile2:
             '',
     },
     {
         image: 'product5.png',
         name: 'STOCKIES',
-        title: 'BEVERAGE STORAGE SYSTEM',
-        category: 'Food & Beverage | Pub & Bistro | Karaoke',
-        description: "We offer a premium beverage storage system with seamless order tracking and storage records. Key features include membership management, employee check-ins, and commission tracking.",
+        title: 'beverage',
+        category: 'stockiesCategory',
+        description: "stockiesDescription",
         description2:"",
         description3: "",
-        descriptionMobile: "We offer a premium beverage storage system with seamless order tracking and storage records. Key features include membership management, employee check-ins, and commission tracking.",
+        descriptionMobile: "stockiesDescriptionMobile",
         specifications: {
             versions: ['Admin', 'Staff', 'Customer'],
             plan: ['With E-invoice', 'Without E-invoice'],
@@ -161,31 +161,31 @@ export const productData = [
             features: ['Stock control', 'Stock reminder', 'Order record', 'Menu creation', 'Member area', 'Point system', 'Keep record', 'Table & room', 'Attendance', 'Commission', 'Reservation', 'Sales Data', 'Sales report', 'Loyalty Programme', 'E-invoice', 'Promotion'],
         },
         sectionTitles: {
-            versions: 'VERSIONS:',
-            plan: 'PLAN',
-            devices: 'DEVICE:',
-            operating: 'OPERATING SYSTEM:',
-            security: 'BIOMETRIC & SECURITY:',
-            features: 'FEATURES & SPEC',
+            versions: 'versions',
+            plan: 'plan',
+            devices: 'device',
+            operating: 'operatingSystem',
+            security: 'biometric',
+            features: 'features',
         },
         summary:
-            "Stockies Beverage Storage System offers a comprehensive solution for Malaysia's entertainment venues. With inventory control, low-stock alerts, order tracking, and features like membership areas, employee check-ins, and commission management, it streamlines operations and enhances efficiency, elevating both service and customer experience.",
+            "stockiesSummary",
         summary2:
-            '',
+            'stockiesSummary2',
         summaryMobile:
-            "Stockies Beverage Storage System offers a comprehensive solution for Malaysia's entertainment venues. With inventory control, low-stock alerts, order tracking, and features like membership areas, employee check-ins, and commission management, it streamlines operations and enhances efficiency, elevating both service and customer experience.",
+            "stockiesSummaryMobile",
         summaryMobile2:
             '',
     },
     {
         image: 'product6.png',
         name: 'BROKERAGE',
-        title: 'BROKERAGE',
-        category: 'Full label solution | Integration | Licensing | CMS | Servicing',
-        description: "We seamlessly integrate the trading platform with our intelligent backend, offering full MetaTrader and cTrader label solutions. Our one-stop service eliminates hassles, speeding up operations and ensuring you don't miss the ideal timing.",
+        title: 'brokerage',
+        category: 'brokerageCategory',
+        description: "brokerageDescription",
         description2: "",
         description3: "",
-        descriptionMobile: "We seamlessly integrate the trading platform with our intelligent backend, offering full MetaTrader and cTrader label solutions. Our one-stop service eliminates hassles, speeding up operations and ensuring you don't miss the ideal timing.",
+        descriptionMobile: "brokerageDescriptionMobile",
         specifications: {
             versions: ['MQ clients terminal', 'MQ Administrator', 'cTrader', 'cBroker'],
             devices: ['Mobile phone', 'iPad / Tablet', 'PC', 'Mac'],
@@ -198,33 +198,33 @@ export const productData = [
 
         },
         sectionTitles: {
-            versions: 'VERSIONS:',
-            devices: 'DEVICE:',
-            operating: 'OPERATING SYSTEM:',
-            security: 'BIOMETRIC & SECURITY:',
-            featuresClient: 'FEATURES: (MQ CLIENT TERMINAL)',
-            featuresAdmin: 'FEATURES: (MASTER DASHBOARD)',
-            featuresCtrader: 'FEATURES: (CTRADER )',
-            featuresCbroker: 'FEATURES: (CBROKER)',
+            versions: 'versions',
+            devices: 'device',
+            operating: 'operatingSystem',
+            security: 'biometric',
+            featuresClient: 'featuresClient',
+            featuresAdmin: 'featuresAdmin',
+            featuresCtrader: 'featuresCtrader',
+            featuresCbroker: 'featuresCbroker',
         },
         summary:
-            'MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.',
+            'brokerageSummary',
         summary2:
-            '',
+            'brokerageSummary2',
         summaryMobile:
-            'MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.',
+            'brokerageSummaryMobile',
         summaryMobile2:
-            '',
+            'brokerageSummaryMobile2',
     },
     {
         image: 'product7.png',
         name: 'EA BUILDER',
-        title: 'AUTO TRADING BOTS',
-        category: 'MQL4 | MQL5 | cALGO C#',
-        description: "The rise of AI in trading is an inevitable trend. We specialise in developing intelligent trading systems that transform top traders' strategies into AI-driven solutions, seamlessly integrating with MetaTrader 4, MetaTrader 5, and cTrader platforms.",
-        description2: "",
-        description3: "",
-        descriptionMobile: "The rise of AI in trading is an inevitable trend. We specialise in developing intelligent trading systems that transform top traders' strategies into AI-driven solutions, seamlessly integrating with MetaTrader 4, MetaTrader 5, and cTrader platforms.",
+        title: 'autoTradingBots',
+        category: 'EABuilderCategory',
+        description: "EABuilderDescription",
+        description2: "EABuilderDescription2",
+        description3: "EABuilderDescription3",
+        descriptionMobile: "EABuilderDescriptionMobile",
         specifications: {
             versions: ['MQL4', 'MQL5', 'cALGO'],
             devices: ['PC', 'Mac'],
@@ -235,32 +235,32 @@ export const productData = [
             
         },
         sectionTitles: {
-            versions: 'VERSIONS:',
-            devices: 'DEVICE:',
-            operating: 'OPERATING SYSTEM:',
-            security: 'BIOMETRIC & SECURITY:',
-            featuresEaStrategy: 'FEATURES: (EA STRATEGY)',
+            versions: 'versions',
+            devices: 'device',
+            operating: 'operatingSystem',
+            security: 'biometric',
+            featuresEaStrategy: 'featuresEaStrategy',
             
         },
         summary:
-            'The intelligent EA auto-trading system automates complex strategies like trend following, scalping, and arbitrage, adapting to market fluctuations for precise decisions. It boosts efficiency, reduces human intervention, ensures strong risk management, and offers personalised settings for improved trading performance.',
+            'EABuilderSummary',
         summary2:
-            '',
+            'EABuilderSummary2',
         summaryMobile:
-            'The intelligent EA auto-trading system automates complex strategies like trend following, scalping, and arbitrage, adapting to market fluctuations for precise decisions. It boosts efficiency, reduces human intervention, ensures strong risk management, and offers personalised settings for improved trading performance.',
+            'EABuilderSummaryMobile',
         summaryMobile2:
-            '',
+            'EABuilderSummaryMobile2',
     },
     {
         image: 'product8.png',
         name: 'COIN.WALLET',
-        title: 'CRYPTO GATEWAY WALLET',
-        category: 'USDT TRC-20 | USDT ERC-20 | TRX | ETH | BTC',
+        title: 'cryto',
+        category: 'crytoCategory',
         description:
-            "TTBVNK simplifies cross-border payments, enhancing security for merchants. With easy, free account setup, it offers a reliable and efficient payment solution for businesses.",
-        description2: "",
-        description3: "",
-        descriptionMobile: "TTBVNK simplifies cross-border payments, enhancing security for merchants. With easy, free account setup, it offers a reliable and efficient payment solution for businesses.",
+            "crytoDescription",
+        description2: "crytoDescription2",
+        description3: "crytoDescription3",
+        descriptionMobile: "crytoDescriptionMobile",
         specifications: {
             versions: ['Master portal', 'Merchant portal'],
             devices: ['PC', 'Mobile phone', 'iPad / Tablet'],
@@ -271,20 +271,20 @@ export const productData = [
             
         },
         sectionTitles: {
-            versions: 'VERSIONS:',
-            devices: 'DEVICE:',
-            operating: 'OPERATING SYSTEM:',
-            security: 'BIOMETRIC & SECURITY:',
-            features: 'FEATURES:',
+            versions: 'versions',
+            devices: 'device',
+            operating: 'operatingSystem',
+            security: 'biometric',
+            features: 'crytoFeatures',
             
         },
         summary:
-            'Scale globally with TTBVNK. Accept instant crypto payments in Bitcoin, Ethereum, and more, with no technical integration. Our intuitive wallet makes joining the digital economy effortless.',
+            'crytoSummary',
         summary2:
-            '',
+            'crytoSummary2',
         summaryMobile:
-            'Scale globally with TTBVNK. Accept instant crypto payments in Bitcoin, Ethereum, and more, with no technical integration. Our intuitive wallet makes joining the digital economy effortless.',
+            'crytoSummaryMobile',
         summaryMobile2:
-            '',
+            'crytoSummaryMobile2',
     },
 ];

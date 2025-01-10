@@ -30,12 +30,13 @@ const Advantage = () => {
             top: 1200,
             behavior: 'smooth',
           });
+        AOS.refresh();
     };
 
     useEffect(() => {
         AOS.init({
             duration: 1000, 
-            once: false,  
+            once: true,  
             offset: 200,
         });
     }, []);
@@ -47,53 +48,55 @@ const Advantage = () => {
                 <div className="flex flex-col gap-[50px]">
                     {/* Main Content */}
                     <div className='w-full flex flex-col justify-center items-center gap-[50px] md:gap-[150px]'>
-                        <div className='max-w-[800px] flex flex-col gap-[100px] md:gap-[150px]'>
+                        <div className='max-w-full flex flex-col items-center gap-[100px] md:gap-[150px]'>
                             {/* Advantage */}
-                            <div className='flex flex-col gap-[50px] px-[25px] md:p-0' data-aos="fade-up">
-                                <img src={image2} alt="Image 2" className='rounded-[10px] w-[380px] md:w-[800px] h-[230px] md:h-[500px]' data-aos="fade-up" data-aos-delay="200"/>
+                            <div className='flex flex-col gap-[50px] px-[25px] md:px-5 lg:px-[102px] xl:p-0' data-aos="fade-up">
+                                <img src={image2} alt="Image 2" className='object-cover rounded-[10px] w-[380px] md:w-full h-[230px] md:h-[500px]' data-aos="fade-up" data-aos-delay="200"/>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px] text-left'>
+                                    {/* Web */}
                                     <div className='hidden md:block text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="200">
-                                        THE ADVANTAGE FOR SELF-EMPLOYED
+                                        {t("Advantage.selfEmployed.advantage")}
                                     </div>
+                                    {/* Mobile */}
                                     <div className='md:hidden text-xl text-[#557AAA] text-left font-bold' data-aos="fade-up" data-aos-delay="200">
                                         <div>
-                                            THE ADVANTAGE FOR                                            
+                                            {t("Advantage.selfEmployed.advantageMobile")}                                         
                                         </div>
                                         <div>
-                                             SELF-EMPLOYED
+                                             {t("Advantage.selfEmployed.advantageMobile2")}
                                         </div>
                                     </div>
-                                    <div className='hidden md:block text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
+                                    {/* Md */}
+                                    <div className='hidden lg:hidden md:block text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
                                         <div className='leading-normal'>
-                                            For self-employed professionals, technology is key. We specialise
-                                        </div> 
-                                        <div className='leading-normal'>
-                                            in custom systems that enhance your business and simplify
-                                        </div> 
-                                        <div className='leading-normal'>
-                                            customer management.
+                                            {t("Advantage.selfEmployed.professionalsMd")}
                                         </div>
                                     </div>
+                                    {/* Web */}
+                                    <div className='hidden lg:block text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
+                                        <div className='leading-normal'>
+                                            {t("Advantage.selfEmployed.professionals")}
+                                        </div> 
+                                        <div className='leading-normal'>
+                                            {t("Advantage.selfEmployed.customSystems")}
+                                        </div> 
+                                        <div className='leading-normal'>
+                                            {t("Advantage.selfEmployed.customerManagement")}
+                                        </div>
+                                    </div>
+                                    {/* Mobile */}
                                     <div className='md:hidden text-base text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="200">
-                                        <div>
-                                            For self-employed professionals, technology
+                                        <div className='w-auto'>
+                                            <div>{t("Advantage.selfEmployed.professionalsMobile")}</div>
+                                            <div>{t("Advantage.selfEmployed.professionalsMobile2")}</div>
                                         </div> 
-                                        <div>
-                                            is key. We specialise in custom systems that
-                                        </div> 
-                                        <div>
-                                            enhance your business and simplify customer
-                                        </div>
-                                        <div>
-                                             management.
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         
                             {/* We Tailor for you */}
                             <div>
-                                <div className='flex flex-col gap-[50px] px-[23px] md:p-0'>
+                                <div className='flex flex-col gap-[50px] px-[23px] md:px-5 lg:px-[102px] xl:p-0'>
                                     {/* Title */}
                                     <div className='text-xl md:text-[32px] font-bold text-left text-[#153764] leading-normal' data-aos="fade-up" data-aos-delay="200">
                                         {t("Advantage.advantageSelfListTitle")}
@@ -113,7 +116,7 @@ const Advantage = () => {
                                             </div>
                                             {/* Web */}
                                             <div className='hidden md:block text-sm md:text-2xl text-[#4B5563] text-left'>
-                                                <div className='flex flex-col font-normal w-[290px] md:w-[800px] leading-normal' data-aos="fade-up" data-aos-delay="800">
+                                                <div className='flex flex-col font-normal w-[290px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                     <div>
                                                         {t("Advantage.advantageListDescription.websiteDescription")}
                                                     </div>
@@ -148,7 +151,7 @@ const Advantage = () => {
                                             <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                                 
                                                 <div className='hidden md:block text-sm md:text-2xl text-[#4B5563] text-left'>
-                                                    <div className='flex flex-col font-normal w-[290px] md:w-[800px] leading-normal' data-aos="fade-up" data-aos-delay="800">
+                                                    <div className='flex flex-col font-normal w-[290px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                         <div>
                                                             {t("Advantage.advantageListDescription.managementDescription")}
                                                         </div>
@@ -182,7 +185,7 @@ const Advantage = () => {
                                             </div>
                                             <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                                 <div className='hidden md:block text-sm md:text-2xl text-[#4B5563] text-left'>
-                                                    <div className='flex flex-col font-normal w-[303px] md:w-[800px] leading-normal' data-aos="fade-up" data-aos-delay="800">
+                                                    <div className='flex flex-col font-normal w-[303px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                         <div>
                                                             {t("Advantage.advantageListDescription.paymentDescription")}
                                                         </div>
@@ -242,31 +245,37 @@ const Advantage = () => {
                 <div className="flex flex-col gap-[50px]">
                     {/* Main Content */}
                     <div className='w-full flex flex-col justify-center items-center gap-[50px] md:gap-[150px]'>
-                        <div className='max-w-[800px] flex flex-col gap-[100px] md:gap-[150px]'>
+                        <div className='max-w-full flex flex-col gap-[100px] md:gap-[150px]'>
                             {/* Advantage */}
-                            <div className='flex flex-col  gap-[50px] px-[25px] md:p-0'>
-                                <img src={image3} alt="Image 2" className='rounded-[10px] w-[380px] md:w-[800px] h-[238px] md:h-[500px]' data-aos="fade-up" data-aos-delay="200"/>
+                            <div className='flex flex-col  gap-[50px] px-[25px] md:px-5 lg:px-[102px] xl:p-0'>
+                                <img src={image3} alt="Image 2" className='object-cover rounded-[10px] w-[380px] md:w-full h-[238px] md:h-[500px]' data-aos="fade-up" data-aos-delay="200"/>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px] text-left'>
                                     <div className='text-xl md:text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="200">
-                                        THE ADVANTAGE FOR ENTERPRISE
+                                        {t("Advantage.enterprise.advantage")}
                                     </div>
-                                    <div className='hidden md:block text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="400">
+                                    {/* Web */}
+                                    <div className='hidden lg:block text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="400">
                                         <div>
-                                            Effective enterprise management covers HR, finance, and tracking
+                                            {t("Advantage.enterprise.effective")}
                                         </div> 
                                         <div>
-                                            systems. Our tech team has crafted a flexible, precise solution for 
+                                            {t("Advantage.enterprise.flexible")}
                                         </div> 
                                         <div>
-                                            any business.
+                                            {t("Advantage.enterprise.anyBusiness")}
                                         </div>
                                     </div>
+                                    {/* Mb */}
+                                    <div className='hidden lg:hidden md:block text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="400">
+                                        {t("Advantage.enterprise.effectiveMobile")}
+                                    </div>
+                                    {/* Mobile */}
                                     <div className='md:hidden text-base text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="400">
                                         <div>
-                                            Effective enterprise management covers HR, finance, and tracking systems. Our tech team
+                                            {t("Advantage.enterprise.effectiveMobile")}
                                         </div> 
                                         <div>
-                                             has crafted a flexible, precise solution for any business.
+                                             
                                         </div>
                                     </div>
                                 </div>
@@ -274,9 +283,9 @@ const Advantage = () => {
                         
                             {/* We Customise for you */}
                             <div> 
-                                <div className='flex flex-col gap-[50px] md:gap-[50px] px-[25px] md:p-0'>
+                                <div className='flex flex-col gap-[50px] md:gap-[50px] px-[25px] md:px-5 lg:px-[102px] xl:p-0'>
                                     {/* Title */}
-                                    <div className='text-base md:text-[32px] font-bold text-left text-[#153764] leading-normal' data-aos="fade-up" data-aos-delay="400">
+                                    <div className='text-xl md:text-[32px] font-bold text-left text-[#153764] leading-normal' data-aos="fade-up" data-aos-delay="400">
                                         {t("Advantage.advantageEnterpriseListTitle")}
                                     </div>
                                     {/* Items */}
@@ -292,8 +301,9 @@ const Advantage = () => {
                                                     {t("Advantage.advantageEnterpriseListSubtitle.frontendTitle")}
                                                 </div>
                                             </div>
+                                            {/* Web */}
                                             <div className='hidden md:block text-sm md:text-2xl text-[#4B5563] text-left' data-aos="fade-up" data-aos-delay="800">
-                                                <div className='flex flex-col font-normal w-[300px] md:w-[800px] leading-normal'>
+                                                <div className='flex flex-col font-normal w-[300px] md:w-full leading-normal'>
                                                     <div>
                                                         {t("Advantage.advantageEnterpriseListDescription.frontendDescription")}
                                                     </div>
@@ -302,6 +312,7 @@ const Advantage = () => {
                                                     </div>
                                                 </div>
                                             </div>
+                                            {/* Mobile */}
                                             <div className='md:hidden text-base text-[#4B5563] text-left' data-aos="fade-up" data-aos-delay="800">
                                                 <div className='flex flex-col font-normal leading-normal'>
                                                     <div>
@@ -328,7 +339,7 @@ const Advantage = () => {
                                                 </div>
                                             </div>
                                             <div className='hidden md:block text-sm md:text-2xl text-[#666] text-left'>
-                                                <div className='flex flex-col font-normal w-[300px] md:w-[800px] leading-normal' data-aos="fade-up" data-aos-delay="800">
+                                                <div className='flex flex-col font-normal w-[300px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                     <div>
                                                         {t("Advantage.advantageEnterpriseListDescription.attendanceDescription")}
                                                     </div>
@@ -359,8 +370,9 @@ const Advantage = () => {
                                                     {t("Advantage.advantageEnterpriseListSubtitle.projectTitle")}
                                                 </div>
                                             </div>
-                                            <div className='hidden md:block text-sm md:text-2xl text-[#666] text-left'>
-                                                <div className='flex flex-col font-normal w-[290px] md:w-[800px] leading-normal' data-aos="fade-up" data-aos-delay="800">
+                                            {/* Web */}
+                                            <div className='hidden lg:block text-sm md:text-2xl text-[#666] text-left'>
+                                                <div className='flex flex-col font-normal w-[290px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                     <div>
                                                         {t("Advantage.advantageEnterpriseListDescription.projectDescription")}
                                                     </div>
@@ -372,6 +384,13 @@ const Advantage = () => {
                                                     </div>
                                                 </div>
                                             </div>
+                                            {/* Mb */}
+                                            <div className='hidden lg:hidden md:block text-sm md:text-2xl text-[#666] text-left'>
+                                                <div className='flex flex-col font-normal w-[290px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
+                                                    {t("Advantage.advantageEnterpriseListDescription.projectDescriptionMd")}
+                                                </div>
+                                            </div>
+                                            {/* Mobile */}
                                             <div className='md:hidden text-base text-[#666] text-left'>
                                                 <div className='flex flex-col font-normal leading-tight' data-aos="fade-up" data-aos-delay="800">
                                                     <div>
@@ -395,7 +414,7 @@ const Advantage = () => {
                                                 </div>
                                             </div>
                                             <div className='hidden md:block text-sm md:text-2xl text-[#666] text-left'>
-                                                <div className='flex flex-col font-normal w-[300px] md:w-[800px] leading-normal' data-aos="fade-up" data-aos-delay="800">
+                                                <div className='flex flex-col font-normal w-[300px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                     <div>
                                                         {t("Advantage.advantageEnterpriseListDescription.rewardDescription")}
                                                     </div>
@@ -430,7 +449,7 @@ const Advantage = () => {
                                                 </div>
                                             </div>
                                             <div className='hidden md:block text-sm md:text-2xl text-[#666] text-left'>
-                                                <div className='flex flex-col font-normal w-[300px] md:w-[800px] leading-normal' data-aos="fade-up" data-aos-delay="800">
+                                                <div className='flex flex-col font-normal w-[300px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                     <div>
                                                         {t("Advantage.advantageEnterpriseListDescription.supportDescription")}
                                                     </div>
@@ -464,21 +483,23 @@ const Advantage = () => {
         <div className="flex flex-col w-full justify-center text-center gap-[200px] pt-[50px] md:pt-[80px] pb-[250px]">
             {/* Top Image */}
             <div className="relative">
-                <img src={image1} alt="Advantage Image 1" className="hidden md:block w-full h-[1000px] object-cover" />
+                <img src={image1} alt="Advantage Image 1" className="hidden md:block w-full object-cover" />
                 <img src={imageM1} alt="Advantage Image 1" className="md:hidden w-full h-[800px] md:h-[1000px]" />
-                <div className="absolute top-[43%] md:top-[40%] left-[5%] md:left-[20%] text-left flex flex-col gap-[10px]">
-                    <div className="hidden md:block text-2xl text-[#D1D5DB] font-normal leading-normal">NO NEED TO STRESS ABOUT WHERE TO START</div>
+                <div className="absolute top-[43%] xl:top-[40%] left-[5%] xl:left-[20%] text-left flex flex-col gap-[10px]">
+                    {/* Web */}
+                    <div className="hidden md:block text-2xl text-[#D1D5DB] font-normal leading-normal">{t("Advantage.noNeedToStress")}</div>
+                    {/* Mobile */}
                     <div className="md:hidden text-base text-[#D1D5DB] font-medium">
                         <div>
-                            NO NEED TO STRESS ABOUT
+                            {t("Advantage.noNeedToStressMobile")}
                         </div>
                         <div>
-                             WHERE TO START
+                             {t("Advantage.noNeedToStressMobile2")}
                         </div>
                     </div>
                     <div className="flex flex-col gap-0 md:gap-3 text-2xl md:text-5xl text-[#D1D5DB] font-bold leading-normal">
-                        <div>CRAFTING ADVANTAGES</div>
-                        <div>IS OUR STRENGTH</div>
+                        <div>{t("Advantage.creatingAdvantage")}</div>
+                        <div>{t("Advantage.strength")}</div>
                     </div>
                 </div>
             </div>
@@ -486,67 +507,78 @@ const Advantage = () => {
             {/* Body */}
             <div className="flex flex-col gap-[250px]">
                 <div className="flex justify-center">
-                    <section className="flex flex-col md:flex-row items-center md:items-stretch gap-[100PX] md:gap-[50px] max-w-[1200px]">
-                        {/* Left Sidebar */}
-                        <div  data-aos="fade-up" data-aos-delay="200">
-                            <div className="flex sticky top-[80px] h-[160px] md:h-auto">
+                    <section className="flex flex-col xl:flex-row items-center md:items-stretch gap-[100PX] md:gap-[50px] max-w-[1200px]">
+                        <div data-aos="fade-up" data-aos-delay="200">
+                            <div className="flex flex-col items-center sticky top-[80px] h-[160px] md:h-[200px] xl:h-auto">
                                 <div className="flex flex-col gap-[25px] md:gap-8 bottom-[-25px] md:bottom-[-30px] relative">
-                                    <button className="flex items-center gap-[30px]" onClick={() => handleSelectType('Independent')}>
-                                        <div className='hidden md:block'>
-                                            {selectedType === 'Independent' ? <Independent /> : <IndependentG />}
-                                        </div>
-                                        <div className='md:hidden'>
-                                            {selectedType === 'Independent' ? <IndependentM /> : <IndependentGM />}
-                                        </div>
-                                        <div 
-                                            className={`text-xl md:text-2xl text-[#153764] ${
-                                                selectedType === 'Independent' ? 'text-[#153764] font-semibold md:font-bold' : 'text-[#9CA3AF] font-normal'
-                                                }`}
-                                        >
-                                            INDEPENDENT
-                                        </div>
-                                    </button>
-                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
-                                    <button className="flex items-center gap-[30px]" onClick={() => handleSelectType('Enterprise')}>
-                                        <div className='hidden md:block'>
-                                            {selectedType === 'Enterprise' ? <Enterprise /> : <EnterpriseG />}
-                                        </div>
-                                        <div className='md:hidden'>
-                                            {selectedType === 'Enterprise' ? <EnterpriseM /> : <EnterpriseGM />}
-                                        </div>
-                                        <div 
-                                            className={`text-xl md:text-2xl text-[#153764] ${
-                                                selectedType === 'Enterprise' ? 'text-[#153764] font-semibold md:font-bold' : 'text-[#9CA3AF] font-normal'
-                                                }`}
-                                        >
-                                            ENTERPRISE
-                                        </div>
-                                    </button>
+                                <button className="flex items-center gap-[30px]" onClick={() => handleSelectType('Independent')}>
+                                    <div className="hidden md:block">
+                                    {selectedType === 'Independent' ? <Independent /> : <IndependentG />}
+                                    </div>
+                                    <div className="md:hidden">
+                                    {selectedType === 'Independent' ? <IndependentM /> : <IndependentGM />}
+                                    </div>
+                                    <div
+                                    className={`text-xl md:text-2xl ${
+                                        selectedType === 'Independent'
+                                        ? 'text-[#153764] font-semibold md:font-bold'
+                                        : 'text-[#9CA3AF] font-normal'
+                                    }`}
+                                    >
+                                    {t('Advantage.independent')}
+                                    </div>
+                                </button>
+                                {/* Horizontal line */}
+                                <div className="relative w-[350px] bg-[#9CA3AF] h-[1px]">
+                                    <div className="absolute right-0 top-[-80px] md:top-[-100px] w-[1px] h-[160px] md:h-[200px] bg-[#9CA3AF]" />
                                 </div>
-                                <div className="absolute left-[350px] w-[1px] h-[160PX] md:h-[200px] bg-[#9CA3AF]" />
+                                <button className="flex items-center gap-[30px]" onClick={() => handleSelectType('Enterprise')}>
+                                    <div className="hidden md:block">
+                                    {selectedType === 'Enterprise' ? <Enterprise /> : <EnterpriseG />}
+                                    </div>
+                                    <div className="md:hidden">
+                                    {selectedType === 'Enterprise' ? <EnterpriseM /> : <EnterpriseGM />}
+                                    </div>
+                                    <div
+                                    className={`text-xl md:text-2xl ${
+                                        selectedType === 'Enterprise'
+                                        ? 'text-[#153764] font-semibold md:font-bold'
+                                        : 'text-[#9CA3AF] font-normal'
+                                    }`}
+                                    >
+                                    {t('Advantage.enterpriseA')}
+                                    </div>
+                                </button>
+                                </div>
                             </div>
                         </div>
 
+
                         {/* Main Content */}
-                        <div className="md:w-[800px] flex flex-col justify-center items-center gap-[50px] md:gap-[150px]">
+                        <div className="md:w-full flex flex-col justify-center items-center gap-[50px] md:gap-[150px]">
                             {renderMainContent()}
                         </div>
                     </section>
                 </div>
 
                 {/* Contact Us */}
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center md:px-5 lg:p-0">
                     <div className="max-w-[1200px] flex flex-col gap-[250px]">
                         <div className="flex flex-col gap-[50px]">
                             <div className="flex flex-col gap-[10px]" data-aos="fade-up" data-aos-delay="400">
-                                <div className="text-base md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal">NO NEED TO HESITATE</div>
-                                <div className="hidden md:block text-5xl text-[#153764] font-bold leading-normal">WE’LL GIVE YOU THE BEST ADVICE</div>
+                                <div className="text-base md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal">{t("Advantage.advantageSelfReminderTitle")}</div>
+                                {/* Web */}
+                                <div className="hidden md:block text-5xl text-[#153764] font-bold leading-normal">
+                                    <div>{t("Advantage.weWillGive")}</div>
+                                    <div>{t("Advantage.weWillGive2")}</div>
+                                </div>
+                                {/* Mobile */}
                                 <div className="md:hidden text-2xl text-[#153764] font-bold">
                                     <div className='leading-normal'>
-                                        WE’LL GIVE YOU THE
+                                        {t("Advantage.weWillGiveMobile")}
                                     </div>
                                     <div className='leading-normal'>
-                                        BEST ADVICE
+                                        {t("Advantage.weWillGiveMobile2")}
                                     </div>
                                 </div>
                             </div>
@@ -556,7 +588,7 @@ const Advantage = () => {
                                         className="w-auto text-base md:text-2xl text-[#153764] font-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)] leading-normal"
                                         onClick={handleContactUsClick}
                                     >
-                                        CONTACT US
+                                        {t("Home.contactUs")}
                                     </button>
                                 </div>
 

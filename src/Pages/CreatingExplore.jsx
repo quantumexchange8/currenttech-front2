@@ -14,6 +14,7 @@ import Explore9 from '../Assets/Images/CreatingExplore/explore9.png';
 import Explorecs from '../Assets/Images/CreatingExplore/explorecs.png';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 
 const templates = [
@@ -56,6 +57,7 @@ const CreatingExplore = () => {
     const exploreType = location.state?.exploreType;
     const [selectedType, setSelectedType] = useState(exploreType || 'E-COMMERCE');
     const [currentPage, setCurrentPage] = useState(1);
+    const {t, i18n} = useTranslation();
 
     const filteredTemplates = templates.filter(template => template.type === selectedType);
 
@@ -120,9 +122,10 @@ const CreatingExplore = () => {
     };
 
     const handlePageChangeMobile = (page) => {
+        if (page < 1 || page > totalPages) return;
         setCurrentPage(page);
         window.scrollTo({
-            top: 1300,
+            top: 1200,
             behavior: 'smooth',
         });
     };
@@ -130,16 +133,13 @@ const CreatingExplore = () => {
     const handleSelectedType = (type) => {
         setSelectedType(type);
         setCurrentPage(1);
-        window.scrollTo({
-            top: 700,
-            behavior: 'smooth',
-        });
+        
     }
 
     useEffect(() => {
         AOS.init({
             duration: 1000, 
-            once: false,  
+            once: true,  
             offset: 200,
         });
 
@@ -153,21 +153,22 @@ const CreatingExplore = () => {
             <div className='w-full flex flex-col gap-[150px] md:gap-[200px]'>
                 {/* Top Image */}
                 <div className='relative'>
-                    <img src={Image1} alt="Creating Explore Image 1" className='hidden md:block w-full' />
-                    <img src={ImageM1} alt="Creating Explore Image Mobile 1" className='md:hidden w-full' /> 
-                    <div className='absolute text-center top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-16 text-[32px] md:text-[64px] text-[#D1D5DB] font-light'>
-                        WHAT’S ON YOUR MIND
+                    <img src={Image1} alt="Creating Explore Image 1" className='hidden xl:block w-full' />
+                    <img src={ImageM1} alt="Creating Explore Image Mobile 1" className='xl:hidden w-full' /> 
+                    <div className='absolute text-center bottom-[10%] left-1/2 transform -translate-x-1/2 -translate-y-16 text-[32px] md:text-[64px] text-[#D1D5DB] font-light'>
+                        <div>{t("CreatingExplore.whatsOnYourMind")}</div>
+                        <div>{t("CreatingExplore.whatsOnYourMind2")}</div>
                     </div>
                 </div>
                 {/* Body */}
                 <div className="flex justify-center px-[25px]">
-                    <div className="flex flex-col md:flex-row gap-[100px] md:gap-[60px]">
+                    <div className="flex flex-col xl:flex-row gap-[100px] md:gap-[60px]">
                         {/* Left Sidebar */}
                         {/* Web */}
-                        <div className='hidden md:block'>   
+                        <div className='hidden xl:block'>   
                             <div className="flex justify-center sticky top-[80px]" data-aos="fade-up">
                                 <div className="flex flex-col gap-8 bottom-[-30px] relative">
-                                    <button className="flex items-center gap-[30px]" onClick={() => handleSelectedType('E-COMMERCE')}>
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('E-COMMERCE'), window.scrollTo({top: 700, behavior: 'smooth'})]}>
                                         <div className='hidden md:block'>{selectedType === 'E-COMMERCE' ? <ECommerceExplore /> : <ECommerceExploreG />}</div>
                                         <div className='md:hidden'>{selectedType === 'E-COMMERCE' ? <ECommerceExploreM /> : <ECommerceExploreMG />}</div>
                                         <div 
@@ -175,11 +176,11 @@ const CreatingExplore = () => {
                                                 selectedType === 'E-COMMERCE' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            E-COMMERCE
+                                            {t("CreatingExplore.eCommerce")}
                                         </div>
                                     </button>
                                     <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
-                                    <button className="flex items-center gap-[30px]" onClick={() => handleSelectedType('COMMERCIAL')}>
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('COMMERCIAL'), window.scrollTo({top: 700, behavior: 'smooth'})]}>
                                         <div className='hidden md:block'>{selectedType === 'COMMERCIAL' ? <Commercial /> : <CommercialG />}</div>
                                         <div className='md:hidden'>{selectedType === 'COMMERCIAL' ? <CommercialM /> : <CommercialMG />}</div>
                                         <div 
@@ -187,11 +188,11 @@ const CreatingExplore = () => {
                                                 selectedType === 'COMMERCIAL' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            COMMERCIAL
+                                            {t("CreatingExplore.commercial")}
                                         </div>
                                     </button>
                                     <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
-                                    <button className="flex items-center gap-[30px]" onClick={() => handleSelectedType('CMSDASHBOARD')}>
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('CMSDASHBOARD'), window.scrollTo({top: 700, behavior: 'smooth'})]}>
                                         <div className='hidden md:block'>{selectedType === 'CMSDASHBOARD' ? <CMSDashboard /> : <CMSDashboardG />}</div>
                                         <div className='md:hidden'>{selectedType === 'CMSDASHBOARD' ? <CMSDashboardM /> : <CMSDashboardMG />}</div>
                                         <div 
@@ -199,11 +200,11 @@ const CreatingExplore = () => {
                                                 selectedType === 'CMSDASHBOARD' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            CMS DASHBOARD
+                                            {t("CreatingExplore.cmsDashboard")}
                                         </div>
                                     </button>
                                     <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
-                                    <button className="flex items-center gap-[30px]" onClick={() => handleSelectedType('INVESTMENT')}>
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('INVESTMENT'), window.scrollTo({top: 700, behavior: 'smooth'})]}>
                                         <div className='hidden md:block'>{selectedType === 'INVESTMENT' ? <Investment /> : <InvestmentG />}</div>
                                         <div className='md:hidden'>{selectedType === 'INVESTMENT' ? <InvestmentM /> : <InvestmentMG />}</div>
                                         <div 
@@ -211,11 +212,11 @@ const CreatingExplore = () => {
                                                 selectedType === 'INVESTMENT' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            INVESTMENT
+                                            {t("CreatingExplore.investment")}
                                         </div>
                                     </button>
                                     <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
-                                    <button className="flex items-center gap-[30px]" onClick={() => handleSelectedType('DIGITALBOARD')}>
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('DIGITALBOARD'), window.scrollTo({top: 700, behavior: 'smooth'})]}>
                                         <div className='hidden md:block'>{selectedType === 'DIGITALBOARD' ? <DigitalBoard /> : <DigitalBoardG />}</div>
                                         <div className='md:hidden'>{selectedType === 'DIGITALBOARD' ? <DigitalBoardM /> : <DigitalBoardMG />}</div>
                                         <div 
@@ -223,7 +224,141 @@ const CreatingExplore = () => {
                                                 selectedType === 'DIGITALBOARD' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            DIGITAL BOARD
+                                            {t("CreatingExplore.digitalBoard")}
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="w-[1px] h-[500px] bg-[#9CA3AF]" />
+                            </div>
+                        </div>
+                        {/* Lg */}
+                        <div className='hidden xl:hidden lg:block'>   
+                            <div className="flex justify-center sticky top-[80px]" data-aos="fade-up">
+                                <div className="flex flex-col gap-8 bottom-[-30px] relative">
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('E-COMMERCE'), window.scrollTo({top: 1450, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'E-COMMERCE' ? <ECommerceExplore /> : <ECommerceExploreG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'E-COMMERCE' ? <ECommerceExploreM /> : <ECommerceExploreMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'E-COMMERCE' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.eCommerce")}
+                                        </div>
+                                    </button>
+                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('COMMERCIAL'), window.scrollTo({top: 1450, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'COMMERCIAL' ? <Commercial /> : <CommercialG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'COMMERCIAL' ? <CommercialM /> : <CommercialMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'COMMERCIAL' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.commercial")}
+                                        </div>
+                                    </button>
+                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('CMSDASHBOARD'), window.scrollTo({top: 1450, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'CMSDASHBOARD' ? <CMSDashboard /> : <CMSDashboardG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'CMSDASHBOARD' ? <CMSDashboardM /> : <CMSDashboardMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'CMSDASHBOARD' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.cmsDashboard")}
+                                        </div>
+                                    </button>
+                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('INVESTMENT'), window.scrollTo({top: 1450, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'INVESTMENT' ? <Investment /> : <InvestmentG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'INVESTMENT' ? <InvestmentM /> : <InvestmentMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'INVESTMENT' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.investment")}
+                                        </div>
+                                    </button>
+                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('DIGITALBOARD'), window.scrollTo({top: 1450, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'DIGITALBOARD' ? <DigitalBoard /> : <DigitalBoardG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'DIGITALBOARD' ? <DigitalBoardM /> : <DigitalBoardMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'DIGITALBOARD' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.digitalBoard")}
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="w-[1px] h-[500px] bg-[#9CA3AF]" />
+                            </div>
+                        </div>
+                        {/* Md */}
+                        <div className='hidden lg:hidden md:block'>   
+                            <div className="flex justify-center sticky top-[80px]" data-aos="fade-up">
+                                <div className="flex flex-col gap-8 bottom-[-30px] relative">
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('E-COMMERCE'), window.scrollTo({top: 1200, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'E-COMMERCE' ? <ECommerceExplore /> : <ECommerceExploreG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'E-COMMERCE' ? <ECommerceExploreM /> : <ECommerceExploreMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'E-COMMERCE' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.eCommerce")}
+                                        </div>
+                                    </button>
+                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('COMMERCIAL'), window.scrollTo({top: 1200, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'COMMERCIAL' ? <Commercial /> : <CommercialG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'COMMERCIAL' ? <CommercialM /> : <CommercialMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'COMMERCIAL' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.commercial")}
+                                        </div>
+                                    </button>
+                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('CMSDASHBOARD'), window.scrollTo({top: 1200, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'CMSDASHBOARD' ? <CMSDashboard /> : <CMSDashboardG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'CMSDASHBOARD' ? <CMSDashboardM /> : <CMSDashboardMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'CMSDASHBOARD' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.cmsDashboard")}
+                                        </div>
+                                    </button>
+                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('INVESTMENT'), window.scrollTo({top: 1200, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'INVESTMENT' ? <Investment /> : <InvestmentG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'INVESTMENT' ? <InvestmentM /> : <InvestmentMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'INVESTMENT' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.investment")}
+                                        </div>
+                                    </button>
+                                    <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
+                                    <button className="flex items-center gap-[30px]" onClick={() => [handleSelectedType('DIGITALBOARD'), window.scrollTo({top: 1200, behavior: 'smooth'})]}>
+                                        <div className='hidden md:block'>{selectedType === 'DIGITALBOARD' ? <DigitalBoard /> : <DigitalBoardG />}</div>
+                                        <div className='md:hidden'>{selectedType === 'DIGITALBOARD' ? <DigitalBoardM /> : <DigitalBoardMG />}</div>
+                                        <div 
+                                            className={`text-xl md:text-2xl text-[#153764] ${
+                                                selectedType === 'DIGITALBOARD' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
+                                                }`}
+                                        >
+                                            {t("CreatingExplore.digitalBoard")}
                                         </div>
                                     </button>
                                 </div>
@@ -242,7 +377,7 @@ const CreatingExplore = () => {
                                                 selectedType === 'E-COMMERCE' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            E-COMMERCE
+                                            {t("CreatingExplore.eCommerce")}
                                         </div>
                                     </button>
                                     <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
@@ -254,7 +389,7 @@ const CreatingExplore = () => {
                                                 selectedType === 'COMMERCIAL' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            COMMERCIAL
+                                            {t("CreatingExplore.commercial")}
                                         </div>
                                     </button>
                                     <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
@@ -266,7 +401,7 @@ const CreatingExplore = () => {
                                                 selectedType === 'CMSDASHBOARD' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            CMS DASHBOARD
+                                            {t("CreatingExplore.cmsDashboard")}
                                         </div>
                                     </button>
                                     <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
@@ -278,7 +413,7 @@ const CreatingExplore = () => {
                                                 selectedType === 'INVESTMENT' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            INVESTMENT
+                                            {t("CreatingExplore.investment")}
                                         </div>
                                     </button>
                                     <div className="h-[1px] w-[350px] bg-[#9CA3AF]" />
@@ -290,7 +425,7 @@ const CreatingExplore = () => {
                                                 selectedType === 'DIGITALBOARD' ? 'text-[#153764] font-bold' : 'text-[#9CA3AF] font-normal'
                                                 }`}
                                         >
-                                            DIGITAL BOARD
+                                            {t("CreatingExplore.digitalBoard")}
                                         </div>
                                     </button>
                                 </div>
@@ -370,7 +505,9 @@ const CreatingExplore = () => {
                             <div className="md:hidden flex justify-between gap-4 max-w-[1200px]">
                                 <button
                                     onClick={() => handlePageChangeMobile(currentPage - 1)}
-                                    disabled={currentPage === 1}
+                                    className={`${
+                                        currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
+                                    }`}
                                 >
                                     <div ><PrevM /></div>
                                 </button>
@@ -390,7 +527,9 @@ const CreatingExplore = () => {
                                 </div>
                                 <button
                                     onClick={() => handlePageChangeMobile(currentPage + 1)}
-                                    disabled={currentPage === totalPages}
+                                    className={`${
+                                        currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''
+                                    }`}
                                 >
                                     <div><NextM /></div>
                                 </button>

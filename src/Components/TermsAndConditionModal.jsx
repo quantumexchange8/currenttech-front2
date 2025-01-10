@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Close } from "./Outline";
+import { Close, CloseM } from "./Outline";
+import { useTranslation } from "react-i18next";
 
 const TermsAndConditionModal = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -7,24 +8,27 @@ const TermsAndConditionModal = () => {
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
 
+    const { t, i18n } = useTranslation();
+
     return (
         <div>
             {/* Footer Button */}
-            <div className="text-[#557AAA] text-base md:text-xl font-medium md:font-normal">
+            <div className="text-[#557AAA] text-base xl:text-xl font-medium md:font-normal">
                 <button
                     onClick={openModal}
                 >
-                    TERMS & CONDITION
+                    {t("termsAndConditionModal.name")}
                 </button>
             </div>
 
             {/* Modal */}
             {isModalOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="w-[1570px] h-screen overflow-y-auto bg-white py-[96px] px-[56px]">
-                        <div className="w-[1428px] flex flex-col gap-10">
+                    <div className="w-[383px] md:w-[1570px] h-screen overflow-y-auto bg-white pt-[23px] pb-[114px] md:py-[96px] px-[15px] md:px-[56px]">
+                        <div className="w-[353px] md:w-[1428px] flex flex-col gap-8 md:gap-10">
                             {/* Header */}
-                            <div className="flex justify-between items-center">
+                            {/* Web */}
+                            <div className="hidden md:flex justify-between items-center">
                                 <div className="text-[40px] text-[#153764] font-bold leading-normal">
                                     CURRENT TECH INDUSTRIES SDN BHD
                                 </div>
@@ -35,17 +39,39 @@ const TermsAndConditionModal = () => {
                                     <Close />
                                 </button>
                             </div>
+                            {/* Mobile */}
+                            <div className="md:hidden flex flex-col gap-[17px]">
+                                <div className="flex justify-end">
+                                    <button
+                                        onClick={closeModal}
+                                        className="text-black"
+                                    >
+                                        <CloseM />
+                                    </button>
+                                </div>
+                                <div className="text-xl text-[#153764] font-bold leading-normal">
+                                    <div>
+                                        CURRENT TECH INDUSTRIES
+                                    </div> 
+                                    <div>
+                                        SDN BHD
+                                    </div>
+                                </div>
+                                
+                            </div>
 
                             {/* Modal Content */}
-                            <div className="flex flex-col gap-8">
+                            <div className="flex flex-col gap-6 md:gap-8">
                                 {/* Privacy Policy */}
-                                <div className="text-2xl text-[#557AAA] font-bold leading-nor">
+                                <div className="text-sm md:text-2xl text-[#557AAA] font-bold leading-nor">
                                     <div>
                                     Terms & Conditions (Effective Date: November 01, 2021)
                                     </div>
                                 </div>
+
                                 {/* Welcome */}
-                                <div className="text-2xl text-[#4B5563] font-normal">
+                                {/* Web */}
+                                <div className="hidden md:block text-2xl text-[#4B5563] font-normal">
                                     <div>
                                         Welcome to our company's website and services.
                                     </div>
@@ -59,15 +85,21 @@ const TermsAndConditionModal = () => {
                                         that you have read, understood, and agree to be bound by these Terms. Please read carefully.
                                     </div>
                                 </div>
+                                {/* Mobile */}
+                                <div className="md:hidden text-sm text-[#4B5563] font-normal">
+                                    Welcome to our company’s website and services. The following Terms & Conditions (hereinafter referred to as "these Terms") govern your access to and use of our website, software, applications, and related services. By accessing or using our website or services, you acknowledge that you have read, understood, and agree to be bound by these Terms. Please read carefully.
+                                </div>
+                                
                                 {/* Points */}
                                 <div>
-                                    <ul className="list-decimal list-outside pl-7 text-2xl font-bold flex flex-col gap-8">
+                                    <ul className="list-decimal list-outside pl-4 md:pl-7 text-sm md:text-2xl font-bold flex flex-col gap-8">
                                         {/* 1 */}
                                         <li>
                                             <div>
                                                 Use of Services
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                         Our company provides IT services, including software development, technical consulting, and data processing. 
@@ -88,13 +120,23 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    Our company provides IT services, including software development, technical consulting, and data processing. Users must comply with all applicable laws and regulations while using our services and must not use our services for illegal purposes or beyond reasonable limits.
+                                                </li>
+                                                <li>
+                                                    Users shall bear any consequences and liabilities resulting from improper or unauthorised use of our services, including but not limited to legal liabilities, damage compensation, or other losses.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 2 */}
                                         <li>
                                             <div>
                                                 User Responsibilities
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                         You agree to provide accurate, truthful, complete, and up-to-date personal information and update this 
@@ -115,13 +157,23 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    You agree to provide accurate, truthful, complete, and up-to-date personal information and update this information in the event of any changes. Our company is not liable for any issues arising from the provision of false or inaccurate information.
+                                                </li>
+                                                <li>
+                                                    You must not attempt to reverse engineer, decode, tamper with, copy, or otherwise infringe on the integrity and intellectual property of our company’s services and technology.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 3 */}
                                         <li>
                                             <div>
                                                 Intellectual Property
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                         All content on our website and within our services, including but not limited to text, images, software, code, 
@@ -145,13 +197,23 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    All content on our website and within our services, including but not limited to text, images, software, code, designs, and logos, is the property of our company or our licensors and is protected under Malaysian intellectual property laws. Without prior written consent from our company, no part of our website or services may be used, copied, modified, distributed, or published.
+                                                </li>
+                                                <li>
+                                                    Users are prohibited from engaging in any activity that infringes on the company’s intellectual property rights. Our company reserves the right to take legal action to protect its intellectual property.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 4 */}
                                         <li>
                                             <div>
                                                 Changes and Termination of Services
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                         Our company reserves the right to modify, suspend, or terminate all or part of the services at any time without 
@@ -173,13 +235,28 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    <div>
+                                                        Our company reserves the right to modify, suspend, or terminate all or part of the
+                                                    </div> 
+                                                    <div>
+                                                        services at any time without prior notice. Our company is not responsible for any loss or inconvenience resulting from changes, suspension, or termination of the services.
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    If a user violates these Terms or engages in any inappropriate behavior, our company reserves the right to immediately terminate the user’s account and access to the services without notice.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 5 */}
                                         <li>
                                             <div>
                                                 Payments and Fees
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                         Users who utilise our paid services must make timely payments as required. All fees are quoted in Malaysian
@@ -197,13 +274,23 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    Users who utilise our paid services must make timely payments as required. All fees are quoted in Malaysian Ringgit (MYR), and payment terms are specified in the relevant service agreement.
+                                                </li>
+                                                <li>
+                                                    In cases of overdue payments, our company reserves the right to suspend or terminate relevant services until all outstanding fees are paid in full. Users bear any losses or liabilities resulting from overdue payments.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 6 */}
                                         <li>
                                             <div>
                                                 Technical Risks and Data Security
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                         Users acknowledge and agree that using our company’s services involves certain technical risks related to data 
@@ -224,13 +311,23 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    Users acknowledge and agree that using our company’s services involves certain technical risks related to data transmission, storage, and security. While our company takes reasonable measures to safeguard user data, we cannot provide absolute protection against all network or data security issues.
+                                                </li>
+                                                <li>
+                                                    Users are responsible for implementing necessary security measures (such as regular data backups) to mitigate potential risks when using our services.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 7 */}
                                         <li>
                                             <div>
                                                 Limitation of Liability
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                     To the fullest extent permitted by law, our company shall not be liable for any indirect, incidental, special, or 
@@ -251,13 +348,23 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    To the fullest extent permitted by law, our company shall not be liable for any indirect, incidental, special, or consequential damages arising from the use or inability to use our website or services, even if our company has been advised of the possibility of such damages.
+                                                </li>
+                                                <li>
+                                                    Our company assumes no responsibility for service interruptions, data loss, or information leakage caused by system failures, network delays, maintenance, or updates.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 8 */}
                                         <li>
                                             <div>
                                                 Privacy and Data Protection
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                     Our company strictly adheres to the Personal Data Protection Act (PDPA) of Malaysia and is committed to
@@ -278,13 +385,23 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    Our company strictly adheres to the Personal Data Protection Act (PDPA) of Malaysia and is committed to protecting users’ personal privacy. For details on data collection, usage, sharing, and protection, please refer to our Privacy Policy.
+                                                </li>
+                                                <li>
+                                                    By using our services, users consent to our collection, use, and sharing of personal data in accordance with our Privacy Policy.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 9 */}
                                         <li>
                                             <div>
                                                 Third-Party Links
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                     Our website and services may contain links to third-party websites or services. These links are provided solely for 
@@ -305,13 +422,28 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    <div>
+                                                        Our website and services may contain links to third-party websites or services. These links
+                                                    </div> 
+                                                    <div>
+                                                        are provided solely for user convenience, and our company is not responsible for the content, privacy policies, or practices of any third-party sites.
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Accessing third-party content is at the user’s own risk, and any interactions or transactions with third parties are solely between the user and the third party.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 10 */}
                                         <li>
                                             <div>
                                                 Governing Law and Dispute Resolution
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                     These Terms are governed by and construed in accordance with the laws of Malaysia. Any disputes arising from 
@@ -332,13 +464,28 @@ const TermsAndConditionModal = () => {
                                                     </div>
                                                 </li>
                                             </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    <div>
+                                                        These Terms are governed by and construed
+                                                    </div> 
+                                                    <div>
+                                                        in accordance with the laws of Malaysia. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of Malaysian courts.
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    In the event of any dispute between the user and our company, both parties shall endeavor to resolve the issue amicably. If an amicable resolution cannot be reached, either party may bring a claim before the Malaysian courts.
+                                                </li>
+                                            </ul>
                                         </li>
                                         {/* 11 */}
                                         <li>
                                             <div>
                                                 Amendments to the Terms
                                             </div>
-                                            <ul className="list-disc list-outside flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                                            {/* Web */}
+                                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                                 <li>
                                                     <div>
                                                     Our company reserves the right to modify or update these Terms at any time without prior notice. Any
@@ -352,6 +499,12 @@ const TermsAndConditionModal = () => {
                                                     <div>
                                                         Terms periodically to stay informed about any updates.
                                                     </div>
+                                                </li>
+                                            </ul>
+                                            {/* Mobile */}
+                                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                                                <li>
+                                                    Our company reserves the right to modify or update these Terms at any time without prior notice. Any modifications will become effective immediately upon posting on our website. Continued use of our services following any changes constitutes acceptance of the updated Terms. Users are encouraged to review these Terms periodically to stay informed about any updates.
                                                 </li>
                                             </ul>
                                         </li>

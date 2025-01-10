@@ -11,123 +11,445 @@
     },
 
     "mobileTopbar": {
-      "homePage":"主页",
+      "homePage":"首页",
       "advantagePage": "优势",
-      "oneStopPage":"全站式服务",
-      "customizePage":"制定义模式",
+      "specialPage":"与众不同",
       "productsPage": "产品",
-      "developedPage":"我们的产品",
-      "ownSitePage":"创建属于您的",
-      "careerPage": "就业",
-      "pricePage":"价格",
-      "supportPage": "客服"
+      "creatingPage": "创建",
+      "pricePage": "价格",
+      "aboutPage": "关于",
+      "teamPage": "团队",
+      "careerPage": "就业机会",
+      "supportPage": "支持"
     },
 
-    "Home": {
-      "homeVideoTitle": "您无法停止",
-      "homeVideoTitle2":"科技飞速的进步",
-      "industriesTitle": "关于我们",
-      "industriesDescription": "Current Tech Industries Sdn Bhd成立于2006年, 总部位于马来西亚吉隆坡, 并计划扩展至槟城, 沙巴和砂拉越. 我们是一家高科技软件企业, 专注于技术产品的研究, 开发, 生产和销售. ",
-      "industriesDescription2": "作为被认可的“新技术企业”, 我们在多个领域开发项目. 我们以人才为导向的管理和以诚信为基础的运营吸引了行业精英, 使我们能够整合国内外先进的技术和管理实践. ",
-      "industriesDescription3": "我们提供全面的解决方案, 提升企业管理和生产能力, 帮助企业保持竞争力并实现稳定增长.",
-      "technologyTitle": "科技",
-      "technologyDescription": "创新和技术进步是实现可持续和繁荣未来的关键. 技术引领了一个智能化, 自动化和数字化的时代, 推动了各行业的转型和升级.",
-      "serviceTitle": "我们提供的服务",
-      "serviceSubTitle": {
-        "softwareTitle": "软件开发",
-        "websiteTitle": "网页",
-        "mobileAppTitle": "移动应用程序",
-        "managementSystemTitle": "管理系统",
-        "posSystemTitle": "POS 系统",
-        "support&serviceTitle": "服务与支持"
+    "homeSwiper": {
+        "slide1": {
+          "title": "体验科技的进化",
+          "description1": "创新与科技进步是开启可持续繁荣未来的关键",
+          "description2": "",
+          "descriptionMobile": "创新与科技进步是开启可",
+          "descriptionMobile2": "持续繁荣未来的关键.",
+          "descriptionMobile3": "",
+          "descriptionMobile4": "",
+          "descriptionMd": "创新与科技进步是开启可持续繁荣未来的关键."
+        },
+        "slide2": {
+          "title": "构筑未来的蓝图",
+          "description1": "先进科技与科学突破正在铺就通往更智能未来的道路",
+          "description2": "",
+          "descriptionMobile": "先进科技与科学突破正在铺",
+          "descriptionMobile2": "就通往更智能未来的道路.",
+          "descriptionMobile3": "",
+          "descriptionMobile4": "",
+          "descriptionMd": "Advanced technologies and scientific breakthroughs are paving the way for a smarter."
+        },
+        "slide3": {
+          "title": "提升你的生活方式",
+          "description1":"探索最新的娱乐与生活趋势, 用为你的舒适, 快乐与兴奋而设计的创新, 提升你的日常体验.",
+          "description2": "",
+          "descriptionMobile": "探索最新的娱乐与生活趋势,",
+          "descriptionMobile2": "用为你的舒适, 快乐与兴奋而",
+          "descriptionMobile3": "设计的创新, 提升你的日常体验.",
+          "descriptionMobile4": "",
+          "descriptionMd": "Explore the latest trends in entertainment and living. Enhance your everyday experiences with innovations designed for your comfort, joy, and excitement."
+        },
+        "slide4": {
+          "title": "优化工作品质",
+          "description1": "运用先进科技提升生产力, 优化流程, 以改善工作品质.",
+          "description2": "、",
+          "descriptionMobile": "运用先进科技提升生产力,",
+          "descriptionMobile2": "优化流程,以改善工作品质.",
+          "descriptionMobile3": "",
+          "descriptionMobile4": "",
+          "descriptionMd": "Use advanced technology to enhance productivity and streamline processes for improved work quality."
+        }
       },
-      "serviceSubTitle_Description": {
-        "softwareDescription": "利用定制软件解决方案赋能您的业务. 我们的专家开发人员将您的愿景变为现实, 提供创新且可靠的定制软件, 满足您的独特需求.",
-        "websiteDescription": "我们采用逐步方法开发各种规模的网站. 从前期规划和GUI设计到后端开发,每个阶段都精确执行.",
-        "mobileAppDescription": "我们将客户的核心理念转化为适用于移动, 云端和网页平台的创新应用程序. 我们确保这些应用程序兼容主流平台, 并可在各种设备上访问.",
-        "managementSystemDescription": "员工智能管理系统 (EIMS) 是一款突破性的HR工具, 旨在提高工作流程效率. 通过直观的仪表板, 自动化和预测分析, 它促进组织成长并激发员工潜力.",
-        "posSystemDescription": "利用我们强大的POS和电子发票系统最大化您的业务效率. 无缝处理销售, 库存和客户数据, 确保流畅的结账体验. 系统与您的工作流程完美集成, 提升生产力和客户满意度.",
-        "support&serviceDescription": "通过我们的专家支持提升系统性能. 我们的团队保证及时更新和故障排除, 确保系统平稳运行, 保持最佳效率."
+
+    "homeCircle": {
+        "posSystem": {
+          "title": "POS 销售点系统",
+          "descriptionBold": "超过",
+          "descriptionBold2": "家优质零售",
+          "description2": "客户正在使用我们的 POS",
+          "description3": "销售点系统.",
+          "description4": "",
+          "descriptionBoldMobile2": "家优质零售客户正在",
+          "descriptionMobile3": "使用我们的 POS 销售点系统."
+        },
+        "hrCmsSystem": {
+          "title": "人力资源与客户管理系统",
+          "descriptionBold": "",
+          "descriptionBold2": "家传统行业公司和券商.",
+          "description": "我们的管理系统支持超过",
+          "description2": "",
+          "description3": "",
+          "description4": "",
+          "descriptionBoldMobile": "",
+          "descriptionBoldMobile2": "家传统行业公司和券商.",
+          "descriptionMobile": "我们的管理系统支持超过",
+          "descriptionMobile2": ""
+        },
+        "stockControl": {
+          "title": "库存管理",
+          "description": "酒类存储系统令酒吧和",
+          "descriptionBold": "",
+          "bold": "",
+          "descriptionBold2": "",
+          "description3": "娱乐场所惊叹, 简化了",
+          "description4": "记录和保存的麻烦.",
+          "descriptionMobile": "酒类存储系统令酒吧和娱乐场所惊叹,",
+          "descriptionBoldMobile2": "",
+          "descriptionBoldMobile": "简化了记录和保存的麻烦.",
+          "descriptionMobile2": ""
+        },
+        "foodOrdering": {
+          "title": "食品订购软件",
+          "description": "我们的食品订购系统给餐厅",
+          "bold": "",
+          "descriptionBold": "",
+          "description2": "和咖啡馆留下深刻印象,",
+          "description3": "轻松简化了订单管理.",
+          "descriptionMobile": "我们的食品订购系统给餐厅和咖啡馆",
+          "descriptionMobile2": "留下深刻印象, 轻松简化了订单管理.",
+          "descriptionMobile3": "",
+          "descriptionMobile4": ""
+
+        },
+        "eInvoice": {
+          "title": "电子发票",
+          "bold": "",
+          "bold2": "LHDN认证,",
+          "descriptionBold": "",
+          "descriptionBold2": "轻松简化开票",
+          "description": "我们的电子发票系统经过",
+          "description2": "流程并确保合规性.",
+          "boldMobile": "LHDN 认证,",
+          "boldMobile2": "",
+          "descriptionMobile": "我们的电子发票系统经过",
+          "descriptionMobile2": "轻松简化开票流程并确保合规性.",
+          "descriptionMobile3": ""
+        },
+        "forexLabelSolution": {
+          "title": "外汇标签解决方案",
+          "bold": "",
+          "bold2": "10+",
+          "descriptionBold": "超过 ",
+          "descriptionBold2": "家经纪公司已",
+          "description": "获得许可, 并通过我们的",
+          "description2": "标签解决方案开始运营.",
+          "description3": "",
+          "descriptionMobile": " 超过",
+          "descriptionMobile2": " 家经纪公司已获得许可,",
+          "descriptionMobile3": "并通过我们的标签解决方案开始运营."
+        }
       },
-      "innovativeTitle": "您业务的创新解决方案",
-      "innovativeDescription": "我们的尖端系统将彻底改变您的业务运营, 提升效率, 可持续性和客户体验, 从而确保您在当今市场环境中的竞争力.",
-      "ImgCombinationTitle": {
-        "educationImgTitle": "教育",
-        "F&BImgTitle": "餐饮业",
-        "retailImgTitle": "零售业",
-        "wholesaleImgTitle": "批发商",
-        "logisticImgTitle": "物流业",
-        "enterpriseImgTitle": "企业公司"
+
+    "Home":{
+      "homeVideoTitle":"You cannot stop the ",
+      "homeVideoTitle2":"Evolution of Technology",
+      "industriesTitle":"ABOUT CURRENT TECH INDUSTRIES",
+      "industriesDescription":"Current Tech Industries Sdn Bhd, established in 2006, is a high-tech software enterprise based in Kuala Lumpur, Malaysia, with plans to expand to Penang, Sabah, and Sarawak. We specialize in the research, development, production, and sales of technology products. Recognized as a \"New Technology Enterprise,\" we develop projects across various fields. Our talent-oriented management and integrity-based operations attract industry elites, allowing us to integrate advanced technologies and management practices from both domestic and international sources. We provide comprehensive solutions to enhance enterprise management and production capacities, helping businesses remain competitive and achieve stable growth.",
+      "industriesDescription2":" ",
+      "industriesDescription3":" ",
+      "technologyTitle":"TECHNOLOGY",
+      "technologyDescription":"Innovation and technological advancements are key to unlocking a sustainable and prosperous future. Technology has ushered in an era of intelligence, automation, and digitization, driving the transformation and upgrading of industries.",
+      "serviceTitle":"Our Service",
+      "serviceSubTitle":{
+        "softwareTitle":"Software",
+        "websiteTitle":"Website",
+        "mobileAppTitle":"Mobile App",
+        "managementSystemTitle":"Management System",
+        "posSystemTitle":"POS System",
+        "support&serviceTitle":"Support & Service"
       },
-      "ImgCombinationDescription": {
-        "educationImgDescription": "释放无限的学习潜力. 我们的尖端技术使学校能够在课堂上取得非凡成就, 提升教育体验, 并在社区内产生深远影响.",
-        "F&BImgDescription": "在品尝美味诱人的餐点时, 订购应用程序和各种支付方式在为顾客提供无缝愉悦的用餐体验中起着至关重要的作用, 从每一步骤提升便利性和满意度.",
-        "F&BImgMobileDescription": "在品尝美味诱人的餐点时, 订购应用程序和各种支付方式在为顾客提供无缝愉悦的用餐体验中起着至关重要的作",
-        "F&BImgMobileDescription2": "用, 从每一步骤提升便利性和满意度.",
-        "retailImgDescription": "无论是管理客户清单, 订单, 库存记录, 还是员工考勤, 您所需要的只是一个全面而智能的系统, 以简化运营并提高效率.",
-        "wholesaleImgDescription": "我们的智能系统提供商品批量折扣和商品的批发价格, 专注于为企业和零售商提供定制采购解决方案, 确保成本效益和高效的库存管理.",
-        "wholesaleImgMobileDescription":"我们的智能系统提供商品批量折扣和商品的批发价格,专注于为企业和零售商提供定制采购解决方案, 确保",
-        "wholesaleImgMobileDescription2":"成本效益和高效的库存管理.",
-        "logisticImgDescription": "打造高效的运输, 物流和供应链系统现在已经变得触手可及 - 不再是一项艰巨的任务, 而是一个可以通过我们的专业知识和工具实现的目标.",
-        "logisticImgDescription2":" ",
-        "enterpriseImgDescription": "一套有效的企业管理系统以其改善公司与员工之间沟通的能力为标志, 利用能够积极影响员工态度并推动工作进展的方法."
+      "serviceSubTitle_Description":{
+        "softwareDescription":"Empower your business with bespoke software solutions. Our expert developers turn your vision into reality, delivering innovative and dependable software tailored to your unique requirements.",
+        "websiteDescription":"We develop websites of all sizes using a step-by-step approach. From pre-production planning and crafting the GUI design to backend development, we execute each phase with precision.",
+        "mobileAppDescription":"We transform our clients’ core ideas into innovative applications for mobile, cloud, and web platforms. We ensure these apps are compatible with major platforms and accessible on a wide range of devices.",
+        "managementSystemDescription":"The Employee Intelligence Management System (EIMS) is a groundbreaking HR tool that enhances workflow efficiency. It fosters organizational growth and unlocks employee potential through intuitive dashboards, automation, and predictive analytics.",
+        "posSystemDescription":"Maximize your business efficiency with our robust POS and e-Invoice system. Seamlessly handle sales, inventory, and customer data, ensuring a frictionless checkout experience. Integrated into your workflow, it boosts productivity and customer satisfaction.",
+        "support&serviceDescription":"Enhance system performance with our expert support. Our team guarantees timely updates and troubleshooting to ensure smooth operations, maintaining your systems at optimal efficiency."
+        },
+        "innovativeTitle":"Innovative Solutions for Your Business",
+        "innovativeDescription":"Our cutting-edge system will transform your business operations, boosting efficiency, sustainability, and customer experience, thus securing your competitiveness in today's market landscape.",
+        "ImgCombinationTitle":{
+          "educationImgTitle": "教育机构",
+          "F&BImgTitle": "食品和饮料",
+          "retailImgTitle":"Retail",
+          "wholesaleImgTitle":"批发商",
+          "logisticImgTitle":"物流运输",
+          "enterpriseImgTitle":"公司企业"
+        },
+        "ImgCombinationDescription":{
+          "educationImgDescription": "解锁无限学习潜力. 我们的尖端技术",
+          "educationImgDescription2": "使学校能够在课堂上取得惊人的成就.",
+          "educationImgDescriptionM": "解锁无限学习潜力. 我们的尖端技术",
+          "educationImgDescriptionM2": "使学校能够在课堂上取得惊人的成就.",
+          "educationImgDescriptionM3": "",
+          "F&BImgDescription": "点餐应用程序和各种支付方式在为顾客提供无",
+          "F&BImgDescription2": "缝愉悦的用餐体验中发挥着至关重要的作用.",
+          "F&BImgDescription3": "",
+          "F&BImgDescriptionMobile": "点餐应用程序和各种支付方式在为顾客提供",
+          "F&BImgDescriptionMobile2": "无缝愉悦的用餐体验中发挥着至关重要的作用.",
+          "F&BImgDescriptionMobile3": "",
+          "F&BImgMobileDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience ",
+          "F&BImgMobileDescription2": "for customers, enhancing convenience and satisfaction at every step.",
+          "wholesaleImgDescription":"我们的智能系统专注于为企业和零售商提供定",
+          "wholesaleImgDescription2":"制化的采购解决方案, 确保成本效益和高效的库",
+          "wholesaleImgDescription3":"存管理.",
+          "wholesaleImgMobileDescription":"我们的智能系统专注于为企业和零售商提供定制化",
+          "wholesaleImgMobileDescription2":"的采购解决方案, 确保成本效益和高效的库存管理.",
+          "wholesaleImgMobileDescription3": "",
+          "logisticImgDescriptionM":"建立高效的运输, 物流和供应链系统不再是一个艰巨的",
+          "logisticImgDescriptionM2":"任务; 这是一个可以通过我们的专业知识和工具完全实",
+          "logisticImgDescriptionM3":"现的目标.",
+          "logisticImgDescription":"建立高效的运输, 物流和供应链系统不再是一个",
+          "logisticImgDescription2":"艰巨的任务; 这是一个可以通过我们的专业知识",
+          "logisticImgDescription3":"和工具完全实现的目标.",
+          "enterpriseImgDescription":"一个有效的企业管理系统的特点在于能够增强",
+          "enterpriseImgDescription2":"公司与员工之间的沟通，同时积极促进他们工",
+          "enterpriseImgDescription3":"作的进展。",
+          "enterpriseImgDescriptionMobile":"一个有效的企业管理系统的特点在于能够增强公司",
+          "enterpriseImgDescriptionMobile2":"与员工之间的沟通, 同时积极促进他们工作的进展.",
+          "enterpriseImgDescriptionMobile3":""
+        },
+        "homeReminderTitle":"No matter what field or industry you're in.",
+        "homeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
+        "whatsappDescription":"Show QR to start",
+        "whatsappDescription2":"communicate with us",
+        "gmailDescription":"Leave your contact, we",
+        "gmailDescription2":"will contact you soon.",
+        "whatsappDescriptionMobile":"Direct link to whatsapp ",
+        "whatsappDescriptionMobile2":"start communicate with us.",
+        "gmailDescriptionMobile":"Leave your contact, we",
+        "gmailDescriptionMobile2":"will contact you soon.",
+        
+        "technologyDefinesTomorrow": "科技铸造你我的明天",
+        "makingYourIdeasPossible": "让你的创意变为现实",
+        "innovationAndTechnology": "创新与科技进步对可持续和繁荣的未来至关重要. 科技带来了智能化, 自动化",
+        "intelligrnceAndAutomation": "和数字化的新时代, 正在改变各个行业.无论我们是否接受, 科技必将不可避免",
+        "whetherWeEmbrace": "地改变每个人的未来.",
+        "innowvationAndTechnology": "创新与科技进步对可持续和繁荣的未来至关重要.",
+        "prosperousFuture": "科技带来了智能化, 自动化和数字化的新时代,",
+        "automation": "正在改变各个行业.无论我们是否接受, 科技必将",
+        "transform": "不可避免地改变每个人的未来.",
+        "technology": "",
+
+        "whatWeDo": "我们执行的任务",
+        "awesome": "卓越的设计",
+        "design": "",
+        "powerful": "强大的框架",
+        "framework": "",
+        "mobile": "友好移动端",
+        "friendly": "",
+        "premium": "优质的资源",
+        "resource": "",
+        "support": "支持与更新",
+        "update": "",
+
+        "coreService": "我们的核心服务",
+        "cmsSystem": "客户管理管理系统",
+        "empower": "用定制软件解决方案赋能您的业务,",
+        "bespoke": "以及妥善管理您的优质客户群.",
+        "website": "网站",
+        "buildWebsite": "我们打造各类网站, 采用分阶段的方法,",
+        "precision": "从规划和界面设计到后端开发, 精确执行.",
+        "mobileApp": "移动应用程序",
+        "transformCoreIdeas": "我们将核心创意转化为创新的移动应用.",
+        "innovative": "",
+        "hrManagement": "人力资源管理系统",
+        "unlocks": "通过直观的仪表盘释放员工潜力.",
+        "intuitive": "",
+        "posSystem": "POS 销售点系统",
+        "maximise": "最大化您的业务, 提升生产力与客户满意度.",
+        "productivity": "",
+        "supportAndServices": "支持与服务",
+        "ensuring": "确保您的系统始终保持最佳效率.",
+        "performance": "",
+
+        "unlocksMobile": "通过直观的仪表盘",
+        "unlocksMobile2": "释放员工潜力.",
+        "transformCoreIdeasMobile": "我们将核心创意转化为",
+        "transformCoreIdeasMobile2": "创新的移动应用.",
+        "maximiseMobile": "最大化您的业务,",
+        "maximiseMobile2": "提升生产力与客户满意度.",
+        "ensuringMobile": "确保您的系统始终保持",
+        "ensuringMobile2": "最佳效率.",
+
+
+
+        "uniqueProducts": "产品的独特",
+        "coverage": "我们产品所覆盖的领域",
+
+        "whyChooseUs": "为何选择我们",
+        "different": "我们的独特和与众不同",
+        "mission": "我们的使命",
+        "roiModal": "我们以客观地构建一个不依赖网络的技术驱动投资回报模型. 以专业的视角重新定义综合增长策",
+        "approach": "略, 避免传统的协同效应. 通过独特的资源整合流程激发潜力和创新能量. 利用多样化的合作关系",
+        "collaborations": "打造高效的体验矩阵, 实现卓越的成果.",
+        "buildATech": "我们以客观地构建一个不依赖网络的技术驱动投资回报模型. 以专业的视角重新定义综合增长策略, 避免传统的协同效应. 通过独特的资源整合流程激发潜力和创新能量. 利用多样化的合作关系打造高效的体验矩阵, 实现卓越的成果.",
+        "approachMobile": "",
+
+        "impossible": "没有什么是不可能的",
+        "hesitation": "别让犹豫阻碍你前进",
+        "hesitation2": "",
+        "hesitationMobile": "别让犹豫阻碍你前进",
+        "hesitationMobile2": "",
+        "contactUs": "联系我们"
+    
       },
-      "homeReminderTitle": "无论您身处哪个领域或行业.",
-      "homeReminderDescription": "拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案.",
-      "whatsappDescription":"展示二维码开始",
-      "whatsappDescription2":"与我们沟通",
-      "gmailDescription":"请留下您的联系方式,",
-      "gmailDescription2":"我们会尽快与您联系.",
-      "whatsappDescriptionMobile":"通过即时聊天",
-      "whatsappDescriptionMobile2":"开始与我们沟通.",
-      "gmailDescriptionMobile":"别犹豫！",
-      "gmailDescriptionMobile2":"给我们发消息."
-    },
 
     "Advantage":{
-      "advantageVideoTitle":"个体运营",
-      "advantageVideoDescription":"拥有一个强大的个人系统来实现您的目标,就像科技与您携手并行.",
-      "advantageSelfTitle":"我们的技术对个体经营者的优势",
-      "advantageSelfDescription":"对于如果您是个独立经营者, 无论您身处何种行业, 我们坚信技术对您而言是不可或缺的.我们专注于为您量身定制高质量的系统, 确保您的业务达到新的高度, 并使您与客户的关系管理更加轻松和紧密.",
-      "advantageSelfListTitle":"\"为您量身定制\"",
-      "advantageSelfListSubtitle":{
-         "websiteTitle":"网页制定",
-         "managementTitle":"管理系统",
-         "paymentTitle":"支付系统",
-         "supportTitle":"技术支持与服务"
+        "advantageVideoTitle":"INDEPENDENT",
+        "advantageVideoDescription":"Having a powerful personal system to accomplish your goals is like technology walking hand in hand with you.",
+        "advantageSelfTitle":"The advantage of our technology for Self-Employed",
+        "advantageSelfDescription":"For self-employed individuals like you, regardless of the industry you're in, we firmly believe that your relationship with technology is indispensable. We specialise in tailoring high-quality systems specifically for you, ensuring that your business reaches new heights and making managing your relationships with customers easier and more intimate.",
+        "advantageSelfListTitle":"我们为您量身定制",
+        "advantageSelfListSubtitle":{
+          "websiteTitle":"网站", 
+          "managementTitle":"管理系统",
+          "paymentTitle":"支付系统",
+          "supportTitle":"支持与服务"
+        },
+        "advantageListDescription":{
+        "websiteDescription":"从域名注册到网页设计, 我们的团队与您紧密合作, 以确保最终产品与您的愿",
+        "websiteDescription2":"景完美契合.",
+        "websiteDescriptionMobile":"从域名注册到网页设计, 我们的团队与您紧密合作, 以",
+        "websiteDescriptionMobile2":"确保最终产品与您的愿景完美契合.",
+        "managementDescription":"无论您的企业规模如何, 健全的管理系统都是必不可少的. 我们在这里确保您",
+        "managementDescription2":"的运营顺畅无阻.",
+        "managementDescriptionMobile":"无论您的企业规模如何, 健全的管理系统都是必不可少的. 我们在这里确保您的运营顺畅无阻.",
+        "managementDescriptionMobile2":"",
+        "paymentDescription":"这是企业最看重的服务, 我们提供得非常出色. 自雇客户可以选择现有的支付",
+        "paymentDescription2":"渠道,或与我们合作集成新的解决方案.",
+        "paymentDescription3":"",
+        "paymentDescriptionMobile":"这是企业最看重的服务, 我们提供得非常出色. 自雇客",
+        "paymentDescriptionMobile2":"户可以选择现有的支付渠道, 或与我们合作集成新的解决方案.",
+        "paymentDescriptionMobile3":"",
+        "supportDescription":"我们高度重视这一点, 提供全面的24/5支持, 以确保您的系统顺利运行, 并满足您可能需要的任何新功能或服务."
+        },
+        "advantageSelfReminderTitle":"无需犹豫",
+        "advantageSelfReminderDescription":"Request a quote now for developing your personal independent system.",
+        "advantageSelfReminderDescription2":"Your can also schedule consultations with our service staff to discuss any development ideas. We do not charge any consultation fees for this service.",
+        "enterpriseVideoTitle":"ENTERPRISE",
+        "enterpriseVideoDescription":"Powerful enterprises and robust management systems are absolutely inseparable, as they possess the capability to manage vast amounts of data effectively.",
+        "advantageEnterpriseTitle":"The advantage of our technology for Enterprise",
+        "advantageEnterpriseDescription":"Excellent enterprise management encompasses human resources, administration, finance, as well as employee work progress reports, attendance, and various employee incentive systems. That's why our technology team has developed a meticulous and carefully designed management system tailored for all types of businesses.",
+        "advantageEnterpriseListTitle":"我们为您公司定制",
+        "advantageEnterpriseListSubtitle":{
+          "frontendTitle":"前台与后端",
+          "attendanceTitle":"考勤系统",
+          "projectTitle":"项目任务",
+          "rewardTitle":"奖励计划",
+          "supportTitle":"支持与服务"
+        },
+        "advantageEnterpriseListDescription":{
+          "frontendDescription":"一个复杂的管理系统的前端和后端反映了企业的专业性. 为了提高成果, 我们",
+          "frontendDescription2":"的专门技术团队与管理层紧密合作, 以实现定制开发和详细说明.",
+          "frontendDescriptionMobile":"一个复杂的管理系统的前端和后端反映了企业的专业性. 为了提高成果, 我们的专门技术团队与管理层紧密合作, 以实现定制开发和详细说明.",
+          "frontendDescriptionMobile2":"",
+          "frontendDescriptionMobile3":" ",
+          "attendanceDescription":"我们打造了一个无缝的考勤追踪系统, 简化了时间管理. 此外, 奖励机制鼓励",
+          "attendanceDescription2":"员工在时间管理技能上表现出色.",
+          "attendanceDescriptionMobile":"我们打造了一个无缝的考勤追踪系统, 简化了时间管理. 此外, 奖励机制鼓励员工在时间管理技能上表现出色.",
+          "attendanceDescriptionMobile2":"",
+          "projectDescription":"精确的数据可视化使得实时监控项目指标, 销售业绩和目标达成成为可能, 从",
+          "projectDescription2":"而推动进展. 对团队效率, 挑战和员工贡献的洞察能够实现灵活调整, 促进可",
+          "projectDescription3":"持续增长.",
+          "projectDescriptionMobile":"精确的数据可视化使得实时监控项目指标, 销售业绩和目标达成成为可能, 从而推动进展. 对团队效率, 挑战和员工贡献的洞察能够实现灵活调整, 促进可持续增长.",
+          "projectDescriptionMobile2":"",
+          "rewardDescription":"我们相信, 通过促进参与, 获得积分和解锁徽章, 员工可以享受独特的福利. 我",
+          "rewardDescription2":"们的技术团队还整合了个性化的竞赛和惊喜活动, 以丰富工作体验!",
+          "rewardDescription3":"",
+          "rewardDescriptionMobile":"我们相信, 通过促进参与, 获得积分和解锁徽章, 员工可以享受独特的福利. 我们的技术团队还整合了个性化的竞赛和惊喜活动, 以丰富工作体验!",
+          "rewardDescriptionMobile2":"",  
+          "supportDescription":"这是我们优先考虑的一个关键方面. 除了提供24/5的在线支持, 我们还为我们",
+          "supportDescription2":"的产品提供一对一的教程, 确保在使用过程中系统的顺利运行, 即使在添加新",
+          "supportDescription3":"功能或服务时也是如此.",
+          "supportDescriptionMobile":"这是我们优先考虑的一个关键方面. 除了提供24/5的在线支持, 我们还为我们的产品提供一对一的教程, 确保在使用过程中系统的顺利运行, 即使在添加新功能或服务时也是如此.",
+          "supportDescriptionMobile2":""
+        },
+        "advantageEnterpriseReminderTitle":"Don't hesitate!",
+        "advantageEnterpriseReminderDescription":"Request a quote now for developing your personal independent system. ",
+        "advantageEnterpriseReminderDescription2":"Your can also schedule consultations with our service staff to discuss any development ideas. We do not charge any consultation fees for this service.",
+        
+        "selfEmployed": {
+          "advantage": "独立营业的优势",
+          "professionals": "对于自雇专业人士来说, 技术至关重要. 我们专注于定制系统, 提升您的业务",
+          "customSystems": "并简化客户关系, 使管理变得更加轻松和个性化.",
+          "customerManagement": "",
+
+          
+          "advantageMobile": "独立营业的优势",
+          "advantageMobile2": "",
+          "professionalsMd": "对于自雇专业人士来说, 技术至关重要. 我们专注于定制系统, 提升您的业务并简化客户关系, 使管理变得更加轻松和个性化.",
+          "professionalsMobile": "对于自雇专业人士来说, 技术至关重要. 我们专注于定制系统, 提升您的业务并简化客户关系, 使管理变得更加轻松和个性化.",
+          "professionalsMobile2": ""
+        },
+
+        "enterprise": {
+          "advantage": "企业公司的优势",
+          "effective": "有效的企业管理涵盖人力资源, 行政, 财务, 以及进度跟踪, 考勤和员工激励系",
+          "flexible": "统.这就是为什么我们的技术团队为任何企业精心打造了一个灵活的管理系",
+          "anyBusiness": "统.",
+
+          "effectiveMobile": "有效的企业管理涵盖人力资源, 行政, 财务, 以及进度跟踪, 考勤和员工激励系统.这就是为什么我们的技术团队为任何企业精心打造了一个灵活的管理系统."
+
+        },
+
+        "noNeedToStress": "无需担心要如何开始",
+        "creatingAdvantage": "创造优势是我们的强项",
+        "strength": "",
+        "independent": "独立营业",
+        "enterpriseA": "企业公司",
+
+        "weWillGive": "我们会给你最好的建议",
+        "weWillGive2": "",
+        "weWillGiveMobile": "我们会给你最好的建议",
+        "weWillGiveMobile2": "",
+
+        "noNeedToStressMobile": "无需担心要如何开始",
+        "noNeedToStressMobile2": ""
       },
-      "advantageListDescription":{
-       "websiteDescription":"从域名注册到网站设计, 我们的服务人员将在整个制作过程中与您进行详细沟通, 确保最终产品完全符合您的概念要求.",
-       "managementDescription":"无论您的个体经营业务规模大小, 您都需要一个全面的管理系统. 因此, 我们严谨对待这一任务, 确保您的业务管理无任何障碍.",
-       "paymentDescription":"这无疑是企业最关注的关键服务, 我们在处理这方面表现出色. 个体经营者可以选择使用现有的支付渠道, 也可以申请与我们集成新的支付解决方案.",
-       "supportDescription":"这也是我们优先考虑的最重要方面之一. 我们提供最全面的24/5服务, 确保您的系统运行顺畅, 即使您需要添加新功能或额外服务."
+
+    "Special":{
+        "customizeVideoTitle":"CUSTOMIZE",
+        "customizeCustomization_Title":"Customization is your direct gateway to advantage.",
+        "customizeCustomization_Description":"Tailored web pages and apps offer a competitive edge by catering directly to user preferences, enhancing engagement and satisfaction. Through personalized features and intuitive interfaces, they streamline user interactions, driving retention and loyalty.",
+        "customizeIdea_Title1":"我们为您创造的,",
+        "customizeIdea_Titles":"不仅仅是概念.",
+        "customizeIdea_Title2":"同时,",
+        "customizeIdea_Title2s":"我们也需要理解你的想法.",
+        "customizeIdea_Title3":"此外,",
+        "customizeIdea_Title3s":"了解客户的喜好同样是至关重要的.",
+        "customizeIdea_Title4":"我们相信您同样注重主题颜色.",
+        "customizeIdea_Title4s":"",
+        "customize_Reminder1":"Share your thoughts with us!",
+        "customize_Reminder2":"Get in touch to turn your ideas into reality.",
+
+        "careDeeply":"我们非常重视",
+        "visual":"视觉美学",
+
+        "customisation":"定制化是您迈向",
+        "directPath":"优势的直接通道",
+        "tailoredWebPages":"量身定制的网页和应用程序通过直接满足用户偏好, 提供竞争优势, 增强参与度和满意度.",
+        "preferences":"通过个性化功能和直观界面, 它们简化了用户互动, 推动了用户的留存和忠诚度.",
+
+        "preparing":"准备开始您的网页",
+        "buildAwesome":"为您构建精彩的网站",
+        "buildAwesome2":"",
+        "creatingPage":"搭建网页",
+
+        "buildAwesomeMobile":"为您构建精彩的网站",
+        "buildAwesomeMobile2":"",
+
+        "customisationMobile":"定制化是您迈向",
+        "directMobile":"优势的直接通道  ",
+        "PathMobile":"",
+        "tailoredWebPagesMobile":"量身定制的网页和应用程序通过直接满足用户偏好, 提供竞争优势, 增强参与度和满意度. 通过个性化功能和直观界面, 它们简化了用户互动, 推动了用户的留存和忠诚度."
+
       },
-      "advantageSelfReminderTitle":"不要犹豫！",
-      "advantageSelfReminderDescription":"现在就请求开发您个人独立系统的报价.",
-      "advantageSelfReminderDescription2":"您也可以预约与我们的服务人员进行咨询, 讨论任何开发想法. 我们不收取任何咨询费用.",
-      "enterpriseVideoTitle":"企业商家",
-      "enterpriseVideoDescription":"强大的企业和精良的管理系统绝对是密不可分的,因为它们具备有效管理大量数据的能力.",
-      "advantageEnterpriseTitle":"我们技术对企业的优势",
-      "advantageEnterpriseDescription":"优秀的企业管理涵盖人力资源, 行政, 财务, 以及员工工作进展报告, 考勤和各种员工激励制度. 这就是为什么我们的技术团队开发了一套细致, 精心设计的管理系统, 为所有类型的企业量身定制.",
-      "advantageEnterpriseListTitle":"\"我们为您定制开发\"",
-      "advantageEnterpriseListSubtitle":{
-         "frontendTitle":"前端 / 后端",
-         "attendanceTitle":"考勤系统",
-         "projectTitle":"项目任务",
-         "rewardTitle":"奖励计划",
-         "supportTitle":"技术支持与服务"
-      },
-      "advantageEnterpriseListDescription":{
-       "frontendDescription":"一套复杂的管理系统的前端和后端体现了企业的专业形象. 为了取得更加积极的成果, 我们有专门的技术人员与企业管理进行深入讨论, 定制开发并提供解释.",
-       "attendanceDescription":"我们精心开发了一套轻松的考勤跟踪系统, 为时间管理提供了顺畅便捷的解决方案. 此外, 我们在员工考勤系统中加入了奖励机制, 鼓励员工展现出色的时间管理技能.",
-       "projectDescription":"精确的数据可视化使得项目任务指标, 销售业绩和目标达成能够实时监控, 充当着推动力. 对团队效率, 挑战以及员工责任和贡献的洞察力, 赋予了灵活的调整能力, 推动公司可持续增长.",
-       "rewardDescription":"我们坚信, 通过激发和释放员工的参与度, 赚取积分和解锁徽章, 员工可以享受到独特的公司福利. 此外, 我们的技术开发团队还集成了个性化竞赛和惊喜活动的功能. 通过丰富的功能增强员工的工作体验!",
-       "supportDescription":"这也是我们优先考虑的最重要方面之一. 我们提供最全面的24/5服务, 确保您的系统运行顺畅, 即使您需要添加新功能或额外服务."
-      },
-      "advantageEnterpriseReminderTitle":"不要犹豫！",
-      "advantageEnterpriseReminderDescription":"现在就请求开发您个人独立系统的报价.",
-      "advantageEnterpriseReminderDescription2":"您也可以预约与我们的服务人员进行咨询, 讨论任何开发想法. 我们不收取任何咨询费用."
-    },
 
     "Customize":{
           "customizeVideoTitle":"量身定制",
@@ -142,93 +464,157 @@
         },
 
     "Products":{
-      "productVideoTitle":"开发",
-      "productVideoDescription":"开发必须经过起草框架、了解细节、详细沟通、仔细规划、严格测试,才能成为成品.",
-      "productTechnologyTitle":"通过尖端技术开发的高质量产品",
-      "productTechnologyDescription":"是的,",
-      "productTechnologyDescription2":"我们在这些领域精心开发了软件, 我们与这些行业的企业合作至关重要. 我们致力于",
-      "productTechnologyDescription3":"将我们技术工程师的卓越想法转化为突破性创新, 不断寻求更有效的解决方案, 以满足我们客户的需求. 这种承诺确保我们始终处于技术的前沿, 为客户提供卓越的结果, 推动客户的成功.",
-      "mobileProductTechnologyDescription":"是的,",
-      "mobileProductTechnologyDescription2":"我们在这些领域精心开发了软件,我们与这些行",
-      "mobileProductTechnologyDescription3":"业的企业合作至关重要. 我们致力于将我们技术工程师的卓越想法转化为突破性创新, 不断寻求更有效的解决方案, 以满足我们客户的需求. 这种承诺确保我们始终处于技术的前沿, 为客户提供卓越的结果, 推动客户的成功.",
-      "education":{
-        "educationTitle":"教育",
-        "educationCategories1":"幼儿园",
-        "educationCategories2":"小学",
-        "educationCategories3":"中学",
-        "educationCategories4":"大学",
-        "educationCategories5":"补习中心",
-        "educationImage1":"Kindertown Parent",
-        "educationImage2":"Kindertown Teacher",
-        "educationImage3":"Kindertown Admin",
-        "educationDescription":"一个孩子的学习之旅始于课堂, 使用灵活, 用户友好, 注重隐私, 可访问性和可持续性的工具. 这就是为什么我们开发了这款教育产品, 让家长, 老师和学校所有者更好地了解他们孩子在幼儿园的成长. 此外, 我们正在开发一系列未来面向小学, 初中, 大学和补习中心的教育软件."
+        "productVideoTitle":"DEVELOPED",
+        "productVideoDescription":"Development must go through drafting frameworks, understanding details, detailed communication, careful planning, rigorous testing before it can become a finished product.",
+        "productTechnologyTitle":"High-quality products developed through cutting-edge technology",
+        "productTechnologyDescription":"Yes,",
+        "productTechnologyDescription2":"we have meticulously developed software in these fields, and our",
+        "productTechnologyDescription3":"collaboration with businesses in these sectors is indispensable. We are dedicated to translating the exceptional ideas from our technical engineers into groundbreaking innovations, continually seeking more effective solutions for our customers. This commitment ensures that we stay at the forefront of technology, delivering superior results and driving success for our clients.",
+        "mobileProductTechnologyDescription":"Yes,",
+        "mobileProductTechnologyDescription2":"we have meticulously developed software ",
+        "mobileProductTechnologyDescription3":"in these fields, and our collaboration with businesses in these sectors is indispensable. That's why we translate the most outstanding ideas from our technical engineers into the most innovative creations and find more effective solutions for our customers.",
+        "education":{
+          "educationTitle":"教育机构",
+          "educationCategories1":"幼儿园",
+          "educationCategories2":"小学",
+          "educationCategories3":"中学",
+          "educationCategories4":"大学",
+          "educationCategories5":"补习中心",
+          "educationImage1":"Kindertown Parent",
+          "educationImage2":"Kindertown Teacher",
+          "educationImage3":"Kindertown Admin",
+          "educationDescription":"Kindertown 赋予家长, 教师和学校所有者以灵活, 用户友好的工具来跟踪幼儿园儿童的成长, 优先考虑隐私, 可及性和可持续性.我们还在扩展, 开发针对小学, 中学, 大学和补习中心的教育软件."
+        },
+        
+        "attendance":{
+          "attendanceTitle":"ATTENDANCE",
+          "attendanceCategories1":"Business",
+          "attendanceCategories2":"Company",
+          "attendanceCategories3":"Enterprise",
+          "attendanceCategories4":" Industries",
+          "attendanceImage":"MOCAP",
+          "attendanceDescription":"In today's dynamic corporate landscape, businesses grapple with challenges ranging from inconsistent employee efficiency to talent attrition and cost management. Hence, we've meticulously crafted reward mechanisms and recognition programs to help companies effectively tackle these obstacles. Our Motion Capture \"MOCAP\" not only significantly enhances employee productivity but also boosts morale and elevates output quality. Furthermore, we firmly believe that acknowledging and rewarding employees nurtures a positive organizational culture, where employees feel valued and supported in their roles, thereby aiding in talent retention efforts."
+        },
+
+        "financial":{
+          "financialTitle":"FINANCIAL",
+          "financialCategories1":"MetaTrader 4",
+          "financialCategories2":"MetaTrader 5",
+          "financialCategories3":"cTrader",
+          "financialImage":"Smart Dash",
+          "financialDescription":"Our IT technical team specialises in developing intelligent back-office solutions for MetaQuote (MT4 / MT5) and cTrader white label and main label operators. We excel in customising web design, client frontend, agent interface, admin backend, and commission rebate systems according to the requirements of white label providers and main label operators. Our Smart Dash are designed to perfectly display the data clients want to see, and we prioritise providing the most robust security for client funds and personal information."
+        },
+
+        "management":{
+          "managementTitle":"MANAGEMENT",
+          "managementCategories1":"CopyTrading",
+          "managementCategories2":"Percentage Allocation Management Module (PAMM)",
+          "mobileManagementCategories1":"CopyTrading",
+          "mobileManagementCategories2":"Percentage Allocation Management Module",
+          "mobileManagementCategories3":"(PAMM)",
+          "managementImage":"Financial Board",
+          "managementDescription":"We fully understand that as a highly skilled and renowned trader, managing numerous investors and substantial funds requires not only delivering substantial and objective investment returns but also maintaining strict risk management in investments. Therefore, traders inevitably require a sophisticated and intelligent financial trading fund management system. Our proficient IT team is fully capable of undertaking the development of such a system. We have not only added personalised design to the dashboard but also incorporated simple and easy-to-operate modes, ensuring that investors and traders need not worry about encountering operational difficulties due to lack of understanding."
+        },
+
+        "labelSolutions":{
+          "labelSolutionsTitle":"LABEL SOLUTIONS",
+          "mobileLabelSolutionsTitle1":"LABEL",
+          "mobileLabelSolutionsTitle2":"SOLUTIONS",
+          "labelSolutionsCategories1":"Full Label",
+          "labelSolutionsCategories2":"Integration",
+          "labelSolutionsCategories3":"Licensing",
+          "labelSolutionsCategories4":"CRM Portal",
+          "labelSolutionsCategories5":"Servicing",
+          "labelSolutionsImage1":"MetaTrader 4",
+          "labelSolutionsImage2":"MetaTrader 5",
+          "labelSolutionsImage3":"cTrader",
+          "labelSolutionsDescription":"Not only do we seamlessly integrate the trading platform interface with our intelligent backend, but we also offer Metaquote (MT5) and cTrader white label and main label solutions. The advantage of our one-stop service ensures that you are relieved of many unnecessary hassles and allows you to accelerate the launch of operations, avoiding missing the absolute best timing for operations."
+        },
+
+        "metaEditor":{
+          "metaEditorTitle":"META EDITOR",
+          "metaEditorCategories1":"MQL4 EA",
+          "metaEditorCategories2":"MQL5 EA",
+          "metaEditorCategories3":"cTrader EA",
+          "metaEditorCategories4":"Automate Trading",
+          "metaEditorDescription":"This is undoubtedly great news for traders, as the widespread use of AI is becoming an inevitable trend. Many investment firms and top traders have begun to adopt AI automated trading systems, and we specialise in the development of such intelligent trading systems. We can fully transform the mindset and strategies of top traders into AI trading systems and apply them to trading on MetaTrader 4, MetaTrader 5, and cTrader trading platforms."
+        },
+        
+        "cryptoWallet":{
+          "cryptoWalletTitle":"CRYPTO WALLET",
+          "cryptoWalletCategories1":"Crypto Payment Solution",
+          "cryptoWalletCategories2":"Crypto Payment Gateway",
+          "cryptoWalletImage":"TTPAY",
+          "cryptoWalletDescription":"Many multinational companies conduct business through websites, and even investment firms operate beyond their own countries. Thus, having a comprehensive and highly secure payment system is essential. The TTPAY payment system not only addresses the complexities of cross-border transactions but also significantly enhances security for merchants. Furthermore, applying for a TTPAY payment system account is free and straightforward, providing businesses with an efficient and reliable solution for their payment needs."
+        },
+
+        "productsReminderTitle":"No matter what field or industry you're in.",
+        "productsReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
+        "weBuild": "我们打造出色的产品",
+        "awesome": "",
+        "imaginative": "我们富有想象力的工作室 ",
+        "webDesign": "网页设计",
+
+        "weBuildMobile": "我们打造出色的产品",
+        "product": ""
       },
+
+    "Creating":{
+        "pickWhat":"选择您喜欢的",
+        "powerhouse":"满足您网站和应用",
+        "webAndApp":"需求的强大动力",
+        
+        "powerhouseMobile":"满足您网站和应用",
+        "forYouMobile":"需求的强大动力",
+        "webAndAppMobile":"",
+
+        "e-commerce":"电子商务",
+        "unmatchedConvenience":"电子商务提供无与伦比的便利, 能够实现无缝交易, 广泛的产品选择和轻松的比较购物, 最终使消费者在购买体验中获得可及性和高效性.",
+        "exploreE-commerce":"探索更多电子商务模版",
+
+        "commercial":"商业网页",
+        "commercialWebPage":"商业网页提供许多好处, 例如提高客户可达性, 全天候可用性和动态产品展示. 它提供有价值的分析, 增强品牌可见性, 并简化购买流程, 从而推动销售并培养客户忠诚度.",
+        "exploreCommercial":"探索更多商业网页模版",
+
+        "cmsDashboard":"客户管理系统",
+        "adminDashboard":"创建您自己的管理仪表板可以提供集中控制, 实时数据监控和定制报告. 它增强了决策能力, 简化了工作流程管理, 并通过量身定制的访问控制提高了安全性, 使企业能够更有效地运作并快速应对变化.",
+        "exploreCMS":"探索更多客户管理系统模版",
+
+        "adminDashboardMobile":"创建您自己的管理仪表板可以提供集中控制, 实时数据监控和定制报告. 它增强了决策能力, 简化了工作流程管理, 并通过量身定制的访问控制提高了安全性, 使企业能够更有效地运作并快速应对变化.",
+        "adminDashboardMobile2":"",
+
+
+        "investment":"金融投资",
+        "investmentWebsite":"创建您自己的投资网站可以增强对策略的控制, 实时投资组合跟踪和个性化洞察. 它集成了先进的分析工具, 简化了用户体验, 并提供量身定制的教育资源. 这促进了更好的客户参与, 信任和明智的投资决策, 从而推动财务增长.",
+        "exploreInvestment":"探索更多金融投资网页模版",
+
+        "digitalBoard":"数字区块链",
+        "fintechWebsite":"创建一个具有加密货币, 区块链, NFT或游戏板块功能的金融科技网站, 可以实现实时交易, 安全的资产管理和新的收入来源. 它提供先进的分析, 个性化体验, 并增强安全性和透明度, 从而促进对数字金融的信任.",
+        "exploreDigitalBoard":"探索更多数字区块链模版",
+
+        "fintechWebsiteMobile":"创建一个具有加密货币, 区块链, NFT或游戏板块功能的金融科技网站, 可以实现实时交易, 安全的资产管理和新的收入来源. 它提供先进的分析, 个性化体验, 并增强安全性和透明度, 从而促进对数字金融的信任.",
+        "fintechWebsiteMobile2":"",
+
+        "weDoMore": "我们不仅仅是这些",
+        "noMatter":"无论你处于哪个领域或行业",
+        "industry":"",
+        "discoverUnique":"探索并发现独特",
+
+        "noMatterMobile":"无论你处于哪个领域或行业",
+        "industryMobile":""
+
+      },    
       
-      "attendance":{
-        "attendanceTitle":"考勤",
-        "attendanceCategories1":"商业",
-        "attendanceCategories2":"公司",
-        "attendanceCategories3":"企业",
-        "attendanceCategories4":"工业",
-        "attendanceImage":"MOCAP",
-        "attendanceDescription":"在当今充满活力的企业环境中, 企业面临着从员工效率不稳定到人才流失和成本管理等各种挑战. 因此, 我们精心制定了奖励机制和认可计划, 帮助企业有效应对这些障碍. 我们的动作捕捉技术 (MOCAP) 不仅显著提高了员工的生产力, 还提升了士气和产出质量. 此外, 我们坚信承认和奖励员工培养了积极的组织文化, 在这种文化中, 员工感到自己的价值和角色得到了重视和支持, 从而有助于人才留存工作."
-      },
+    "CreatingExplore":{
+          "whatsOnYourMind": "您的想法是什么",
+          "whatsOnYourMind2": "",
+          "eCommerce": "电子商务",
+          "commercial": "商业网页",
+          "cmsDashboard": "客户管理系统",
+          "investment": "金融投资",
+          "digitalBoard": "数字区块链"
 
-      "financial":{
-        "financialTitle":"金融",
-        "financialCategories1":"MetaTrader 4",
-        "financialCategories2":"MetaTrader 5",
-        "financialCategories3":"cTrader",
-        "financialImage":"Smart Dash",
-        "financialDescription":"我们的IT技术团队专注于为MetaQuote(MT4/MT5)和cTrader白标和主标运营商开发智能后台解决方案. 我们擅长根据白标提供商和主标运营商的要求定制网页设计, 客户前端, 代理商界面, 管理员后端和佣金返利系统. 我们的智能仪表板旨在完美展示客户想要看到的数据, 并优先为客户资金和个人信息提供最强大的安全保障."
       },
-
-      "management":{
-        "managementTitle":"管理",
-        "managementCategories1":"复制交易",
-        "managementCategories2":"百分比分配管理模块 (PAMM)",
-        "mobileManagementCategories1":"跟单系统",
-        "mobileManagementCategories2":"资管系统",
-        "mobileManagementCategories3":"(PAMM)",
-        "managementImage":"Financial Board",
-        "managementDescription":"我们充分理解, 作为一名技术娴熟, 声名显赫的交易员, 管理众多投资者和大量资金不仅需要实现可观和客观的投资回报, 还需要在投资中保持严格的风险管理. 因此, 交易员不可避免地需要一个复杂而智能的金融交易基金管理系统. 我们精通的IT团队完全有能力开发这样的系统. 我们不仅为仪表板增加了个性化设计, 还融入了简单易操作的模式, 确保投资者和交易员无需担心因为缺乏理解而遇到操作困难."
-      },
-
-      "labelSolutions":{
-        "labelSolutionsTitle":"标签解决方案",
-        "mobileLabelSolutionsTitle1":"白标 - 主标",
-        "mobileLabelSolutionsTitle2":"解决方案",
-        "labelSolutionsCategories1":"全面标签",
-        "labelSolutionsCategories2":"集成",
-        "labelSolutionsCategories3":"执照许可",
-        "labelSolutionsCategories4":" 客户管理门户",
-        "labelSolutionsCategories5":" 服务",
-        "labelSolutionsImage1":"MetaTrader 4",
-        "labelSolutionsImage2":"MetaTrader 5",
-        "labelSolutionsImage3":"cTrader",
-        "labelSolutionsDescription":"我们不仅将交易平台界面与智能后台无缝集成, 还提供 Metaquote (MT5) 和cTrader 白标和主标解决方案. 我们一站式服务的优势确保您免除了许多不必要的麻烦, 使您能够加速运营的启动, 避免错过最佳的运营时机."
-      },
-
-      "metaEditor":{
-        "metaEditorTitle":"META EDITOR",
-        "metaEditorCategories1":"MQL4 EA",
-        "metaEditorCategories2":"MQL5 EA",
-        "metaEditorCategories3":"cTrader EA",
-        "metaEditorCategories4":"自动交易",
-        "metaEditorDescription":"对于交易员来说, 这无疑是个好消息, 因为人工智能的广泛应用正在成为不可避免的趋势. 许多投资公司和顶尖交易员已经开始采用人工智能自动交易系统, 而我们专注于开发这种智能交易系统. 我们可以将顶尖交易员的思维方式和策略完全转化为人工智能交易系统, 并将其应用于 MetaTrader 4 / MetaTrader 5 和 cTrader交易平台的交易中."
-      },
-      
-      "cryptoWallet":{
-        "cryptoWalletTitle":"虚拟币支付钱包",
-        "cryptoWalletCategories1":"加密支付解决方案",
-        "cryptoWalletCategories2":"加密支付网关",
-        "cryptoWalletImage":"TTPAY",
-        "cryptoWalletDescription":"许多跨国公司通过网站进行业务, 甚至投资公司也在自己的国家之外开展业务. 因此, 拥有一个全面且高度安全的支付系统至关重要. TTPAY 支付系统不仅解决了跨境交易的复杂性, 还显著提升了商家的安全性. 此外, 申请TTPAY支付系统账户免费且简单, 为企业提供了一个高效可靠的支付解决方案."
-      },
-
-      "productsReminderTitle":"无论您身处哪个领域或行业",
-      "productsReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
-    },
 
     "OwnSite":{
             "ownsiteVideoTitle":"自己的专页",
@@ -280,81 +666,385 @@
     },
 
     "Price":{
-          "priceTitle":"创造价值",
-          "price_SubTitle":"最重要的是您的價值觀, 而不是價格",
-          "price_Description":"一个完整生意发展的道路上需要考虑的不只是资金, 但它绝非是重点, 重点是您对您的生意定下了什么价值观. 您如何展现您生意的魅力, 如何让客户来评估您的价值, 在这里您可以是刚出来社会建立企业的新手或您已是市场上闻名的公司您完全可以找到您所需要的工具和答案.",
-          "website_Topic":"网页设计价格参考",
-          "picture_1":"网页设计",
-          "picture_2":"电子商务",
-          "picture_3":"客户管理",
-          "picture_4":"应用程序",
-          "basicTitle":"基础",
-          "advanceTitle":"企业",
-          "currentPrice":"现在只需",
-          "e-Commerce_Topic":"电子商务网页价格参考",
-          "priceReminderTitle":"无论您身处哪个领域或行业.",
-          "priceReminderDescription":"拥有自己的智能系统是值得的. 不要犹豫, 联系我们获取专为您量身定制的高效解决方案."
-        },
+        "priceTitle":"VALUE",
+        "price_SubTitle":"The most important thing is your values, not the price.",
+        "price_Description":"In the journey of business development, it's essential to consider more than just funding. However, funding is not the main focus. The key lies in the values you set for your business, how you showcase your business's appeal, and how you allow customers to assess your value. Whether you're a newcomer establishing a business or a well-known company in the market, here you can find the tools and answers you need.",
+        "website_Topic":"Website Design Pricing",
+        "picture_1":"Web Design",
+        "picture_2":"e-Commerce",
+        "picture_3":"CMS",
+        "picture_4":"Mobile App",
+        "basicTitle":"Basic",
+        "advanceTitle":"Advance",
+        "currentPrice":"Now only",
+        "e-Commerce_Topic":"e-Commerce Design Pricing",
+        "priceReminderTitle":"No matter what field or industry you're in.",
+        "priceReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
+
+        "startBuild": "开始构建您的业务",
+        "yourBusiness": "",
+
+        "chooseYour":"选择您心仪的建设",
+        "preferredSolution":"网站方案",
+        "forBuilding":"",
+
+        "orderNow":"立即订购从",
+        "requirement":"以上是您希望建立的",
+        "newWebsite":"",
+        "newWebsiteC":"新网站要求.",
+
+        "nowDiscount":"现在折扣",
+        "subtotal":"总计",
+        "ship":"交货:",
+        "weeks":"周",
+        "freeTesting":"免费测试",
+        "what":"你想要",
+        "typeOf":"什么类型",
+        "doYouWant":"的网站?",
+        "doYouWantM":"",
+        "website":"标准网站",
+        "eCommerce":"电子商务",
+
+        "whichIs":"哪个方案",
+        "best":"对你最好?",
+        "foryou":"",
+        "basic":"初创企业的基本解决方案",
+        "advanced":"专业的高级解决方案",
+        
+        "nowYouCan":"现在您可以",
+        "saveMore":"节省更多",
+        "costC": "成本.",
+        "discount":"初创企业折扣 RM1,800.00",
+        "rm1800":"",
+        "professional":"专业网页节省高达 RM2,200.00",
+        "rm2200":"",
+        "customMade":"需要定制?",
+        "letUsKnow":"让我们知道您的想法.",
+
+        "amazingStuff":"我们做惊人的事情",
+        "designAndDevelop":"我们设计和开发创意解决方案",
+        "creativeSolution":"",
+        "exploreTemplate":"探索模板"
+
+      },
 
 
     "Career":{
-      "careerVideoTitle":"就业机会",
-      "careerVideoDescription":"我们不仅仅是在创造产品.我们正在为使用它们的人们设计解决问题的方案.这是我们的专业！",
-      "careerOpportunitiesTitle":"加入我们的团队, 获得激动人心的职业机会",
-      "careerOpportunitiesTitle2":" ",
-      "careerOpportunitiesDescription":"携手 [Current Tech Industries], 赋能您的未来. 加入我们多元化的团队, 参与具有影响力的项目. 探索能够推动成长并产生影响的职业机会. 我们提供具有竞争力的薪酬, 全面的福利, 并为专业发展和创新提供支持. 与我们一同前进, 实现您的最大潜力.",
-      "ItProgrammer":{
-        "ItProgrammerTitle":"IT 程序员",
-        "ItProgrammerDescription":"我们欢迎IT程序员加入我们的团队. 他们应该精通编程, 测试和维护软件应用程序的代码, 能够解决复杂的编程问题, 与团队合作, 并及时了解技术趋势, 以便进行高效的开发和安全的解决方案.",
-        "Skill":{
-          "skillTitle":"技能与经验",
-          "skill_1":"LARAVEL PHP",
-          "skill_2":"REACT JS",
-          "skill_3":"VUE JS",
-          "skill_4":"FLUTTER",
-          "skill_5":"CSS / HTML",
-          "skill_6":"JAVA SCRIPT",
-          "skill_7":"MQL4 & MQL5",
-          "skill_8":"cBot (cTrader)",
-          "experience":"至少1年或以上的相关工作经验."
-        }
+        "careerVideoTitle":"OPPORTUNITIES",
+        "careerVideoDescription":"We're not just creating products. We're crafting solutions to problems for the people who use them. That's our forte!",
+        "careerOpportunitiesTitle":"加入我们的团队, 开启激动人心的职业机会.",
+        "careerOpportunitiesTitle2":"",
+        "careerOpportunitiesDescription":"通过当前科技产业赋能您的未来. 加入我们多元化的团队, 参与有影响力的项目. 探索促进成长并带来改变的职业机",
+        "careerOpportunitiesDescription2":"会. 我们提供具有竞争力的薪资, 全面的福利以及支持专业发展和创新的环境. 与我们一起推进您的职业生涯, 发挥您",
+        "careerOpportunitiesDescription3":"的最大潜力.",
+
+        "careerOpportunitiesTitleMobile":"加入我们的团队,",
+        "careerOpportunitiesTitleMobile2":" 开启激动人心的职业机会.",
+        "careerOpportunitiesDescriptionMobile":"通过当前科技产业赋能您的未来. 加入我们多元化的团队, 参与有影响力的项目. 探索促进成长并带来改变的职业机会. 我们提供具有竞争力的薪资, 全面的福利以及支持专业发展和创新的环境. 与我们一起推进您的职业生涯, 发挥您的最大潜力.",
+
+        "ItProgrammer":{
+          "ItProgrammerTitle":"电脑技术工程师",
+          "ItProgrammerDescription":"技能及至少 (1) 年经验.",
+          "ItProgrammerDescription2":"",
+          "Skill":{
+            "skillTitle":"Skill & Experience",
+            "skill_1":"LARAVEL PHP",
+            "skill_2":"REACT JS",
+            "skill_3":"VUE JS",
+            "skill_4":"FLUTTER",
+            "skill_5":"CSS / HTML",
+            "skill_6":"JAVA SCRIPT",
+            "skill_7":"MQL4 & MQL5",
+            "skill_8":"cBot - cTrader",
+            "experience":"AT LEAST 1 YEAR(S) OF EXPERIENCE."
+          }
+        },
+
+        "UiDesigner":{
+          "UiDesignerTitle":"用户界面与用户体验设计师",
+          "UiDesignerDescription":"技能及至少 (1) 年经验.",
+          "ItProgrammerDescription2":"",
+          "Skill":{
+            "skillTitle":"Skill & Experience",
+            "skill_1":"FIGMA",
+            "skill_2":"PHOTOSHOP",
+            "skill_3":"PS ILLUSTRATOR",
+            "experience":"AT LEAST 1 YEAR(S) OF EXPERIENCE."
+          }
+        },
+
+        "Internship":{
+          "InternshipTitle":"实习生",
+          "InternshipDescription":"具备技能和至少学位.",
+          "ItProgrammerDescription2":"",
+          "Skill":{
+            "skillTitle":"Skill & Experience",
+            "skill_1":"FIGMA",
+            "skill_2":"PHOTOSHOP",
+            "skill_3":"ILLUSTRATOR",
+            "skill_4":"LARAVEL PHP",
+            "skill_5":"REACT JS",
+            "skill_6":"VUE JS",
+            "skill_7":"FLUTTER",
+            "skill_8":"CSS / HTML",
+            "skill_9":"JAVA SCRIPT",
+            "skill_10":"MQL4 & MQL5",
+            "skill_11":"cBot - cTrader",
+            "skill_12":"DEGREE HOLDER."
+          }
+        },
+
+        "careerReminderTitle":"Don't hesitate!",
+        "careerReminderDescription":"Join us on an exciting journey towards endless possibilities and growth. Embrace diverse career opportunities, unleash your potential, and become part of a supportive community that values lifelong learning and personal fulfillment. Let's build a brighter future together.",
+
+        "workTogether":"让我们一起处事",
+        "workTogether2":"",
+        "amazingThings":"我们创造惊人的事物",
+        "exploreInnovate":"我们探索与创新",
+        "graphic":"界面与",
+        "design":"图形设计",
+        "webApp":"网页与",
+        "designW":"应用设计",
+        "development":"应用程序开发",
+        "branding":"品牌",
+        "designB":"设计",
+
+        "letsMobile":"让我们一起处事",
+        "workTogetherMobile":"", 
+
+        "buildFantastic":"构建梦幻",
+        "buildAwesome":"",
+        "buildAwesomeC":"构建精彩",
+        "discoverOurStyle":"探索我们的风格"
+
       },
 
-      "UiDesigner":{
-        "UiDesignerTitle":"UI/UX & 设计员",
-        "UiDesignerDescription":"UI/UX 与平面设计师专注于创建用户友好的界面, 进行研究, 线框图设计, 原型制作, 并与利益相关者合作. 他们旨在通过视觉吸引力的设计和流畅的体验提高用户满意度, 参与度和可访问性.",
-        "Skill":{
-          "skillTitle":"技能与经验",
-          "skill_1":"FIGMA",
-          "skill_2":"PHOTOSHOP",
-          "skill_3":"ILLUSTRATOR",
-          "experience":"至少1年或以上的相关工作经验."
-        }
+    "About": {
+          "solution": "我们有解决方案",
+          "designDevelop": "我们设计和开发",
+          "amazingStuff": "惊人的东西",
+          "knowTheTeam": "了解我们团队",
+
+          "aboutCurrentTech": "关于 CURRENT TECH INDUSTRIES",
+          "establishedIn": "当前科技工业有限公司成立于 2006 年, 总部位于马来西亚吉隆坡, 是一家高科技软件企业, 计划扩展到槟城, 沙巴和",
+          "kualaLumpur": "砂拉越. 我们专注于技术产品的研究, 开发, 生产和销售. 作为一家 “新技术企业”, 我们在多个领域开展项目. 我们以人",
+          "technologyProduct": "才为导向的管理和以诚信为基础的运营吸引了行业精英, 使我们能够整合国内外的先进技术和管理实践. 我们提供全",
+          "productionCapacities": "面的解决方案, 以提升企业管理和生产能力, 帮助企业保持竞争力, 实现稳定增长.",
+          "attractTopTalent": "",
+          
+          "establishedInMobile": "当前科技工业有限公司成立于 2006 年, 总部位于马来西亚吉隆坡, 是一家高科技软件企业, 计划扩展到槟城, 沙巴和砂拉越. 我们专注于技术产品的研究, 开发, 生产和销售. 作为一家 “新技术企业”, 我们在多个领域开展项目. 我们以人才为导向的管理和以诚信为基础的运营吸引了行业精英, 使我们能够整合国内外的先进技术和管理实践. 我们提供全面的解决方案, 以提升企业管理和生产能力, 帮助企业保持竞争力, 实现稳定增长.",
+
+          "designSolution": "设计解决方案",
+          "engineerInnovative": "我们通过尖端技术工程创新解决方案, 以满足现代企",
+          "automation": "业不断发展的需求. 通过结合人工智能, 自动化和数",
+          "efficiency": "据驱动的洞察, 我们创建可扩展的智能系统, 以推动",
+          "seamlessly": "效率和增长. 我们的方法无缝整合数字和物理基础设",
+          "infrastructures": "施, 以提供高性能的结果.",
+          "collaborating": "",
+          "businesses": "",
+          "precision": "",
+          "mengubah": "",
+          "dan": "",
+          "cD1": "与客户合作, 我们量身定制解决方案, 不仅解决当前",
+          "cD2": "的挑战, 还为企业在不断变化的技术环境中做好未来 ",
+          "cD3": "准备. 我们以精准, 灵活的设计, 专注于通过技术转型",
+          "cD4": "行业.",
+
+          "engineerInnovativeMobile": "我们通过尖端技术工程创新解决方案, 以满足现代企业不断发展的需求. 通过结合人工智能, 自动化和数据驱动的洞察, 我们创建可扩展的智能系统, 以推动效率和增长. 我们的方法无缝整合数字和物理基础设施, 以提供高性能的结果.",
+          "engineerInnovativeMobile2": "与客户合作, 我们量身定制解决方案, 不仅解决当前的挑战, 还为企业在不断变化的技术环境中做好未来准备. 我们以精准, 灵活的设计, 专注于通过技术转型行业.",
+
+
+
+          "strategyPlanning": "战略规划之道",
+          "leverage": "利用先进的分析和技术制定与动态市场趋势相一致",
+          "alignWith": "的数据驱动策略. 通过整合实时洞察和人工智能驱动",
+          "decisionMaking": "的预测来简化决策过程, 确保执行的灵活性和精准性. ",
+          "empowerTeams": "通过自动化流程和优化资源管理消除低效, 从而实现",
+          "suitainable": "更快, 更智能的商业成果.",
+          "strategicSuccess": "",
+          "advantage": "",
+          "jangka": "",
+          "cP1": "赋能团队部署可扩展的解决方案, 在创新与实用之间",
+          "cP2": "取得平衡, 推动可持续增长和竞争优势. 持续预测市",
+          "cP3": "场变化, 以技术为基础, 实现长期战略成功.",
+
+          "leverageMobile": "利用先进的分析和技术制定与动态市场趋势相一致的数据驱动策略. 通过整合实时洞察和人工智能驱动的预测来简化决策过程, 确保执行的灵活性和精准性. 通过自动化流程和优化资源管理消除低效, 从而实现更快, 更智能的商业成果.",
+          "leverageMobile2": "赋能团队部署可扩展的解决方案, 在创新与实用之间取得平衡, 推动可持续增长和竞争优势. 持续预测市场变化, 以技术为基础, 实现长期战略成功.",
+
+          "experience": "我们拥有丰富的经验",
+          "6390": "6390",
+          "workHours": "处事时间",
+          "286": "286",
+          "finishWorks": "完成的作品",
+          "1396": "1396",
+          "clientsFollowed": "优质客户",
+          "328250": "328250",
+          "dataStored": "已存储数据",
+
+          "highlyValue": "我们非常重视",
+          "01": "01",
+          "innovative": "创新的",
+          "innoavtionDelivering": "我们推动创新, 提供前沿",
+          "cuttingEdge": "解决方案, 塑造未来.",
+          "shapeTheFuture": "",
+          "02": "02",
+          "intuitive": "直观的",
+          "technology": "我们的技术旨在无缝且易于使用, ",
+          "seamless": "从而提升用户体验.",
+          "userExperience": "",
+          "03": "03",
+          "modern": "时髦",
+          "embracing": "我们拥抱现代趋势, 创造符合未来的",
+          "craftSleek": "流畅解决方案, 满足当今的需求.",
+          "todayNeeds": "",
+
+          "driveInnoavtionMobile": "我们推动创新, 提供前沿",
+          "cuttingEdgeMobile": "解决方案, 塑造未来. ",
+          "shapeTheFutureMobile": "",
+          "technologyMobile": "",
+          "seamlessMobile": "我们的技术旨在无缝且易于使用,",
+          "userExperienceMobile": " 从而提升用户体验.",
+
+          "whyCurrentTech": "为何选择我们?",
+          "because": "因为我们打造",
+          "strongProduct": "强大的产品",
+          "design": "设计",
+          "development": "开发",
+          "launch": "启动",
+          "growth": "增长",
+
+          "ourExpertise": "我们在产品开发方面有着专业的知识",
+          "powerful": "强大 | 独特 | 现代 | 创新 | 响应式 | 不同 | 创意 | 美丽",
+
+          "ourExpertiseMobile": "我们在产品开发方面有着",
+          "ourExpertiseMobile2": "专业的知识",
+          "powerfulMobile": "强大 | 独特 | 现代 | 创新 | 响应式 ",
+          "powerfulMobile2": " 不同 | 创意 | 美丽",
+
+          
+          "exploreProducts": "现在就探索我们的产品",
+          "buildAn": "立即打造一个非凡网站",
+          "amazingSite": "",
+          "productPage": "了解产品"
+
       },
 
-      "Internship":{
-        "InternshipTitle":"实习生",
-        "InternshipDescription":"我们为学生或应届毕业生提供实习机会, 在我们公司参与编程, UI/UX 和平面设计工作, 为他们提供特定领域的实践经验. 实习生参与公司的项目和活动, 同时获得宝贵的技能, 探索潜在的职业道路.",
-        "Skill":{
-          "skillTitle":"技能与经验",
-          "skill_1":"LARAVEL PHP",
-          "skill_2":"REACT JS",
-          "skill_3":"VUE JS",
-          "skill_4":"FLUTTER",
-          "skill_5":"CSS / HTML",
-          "skill_6":"JAVA SCRIPT",
-          "skill_7":"MQL4 & MQL5",
-          "skill_8":"cBot (cTrader)",
-          "skill_9":"FIGMA",
-          "skill_10":"PHOTOSHOP",
-          "skill_11":"ILLUSTRATOR",
-          "skill_12":"至少大专学位程度"
-        }
-      },
+    "Team": {
+        "ourTeam": "我们的团队",
+        "skilledProfessionals": "超过15名专业的精英",
+        "strongTeam": "我们拥有一支强大的团队, 由超过15名专业人士组成, 涵盖 IT, 移动应用, UI/UX 和核心管理四个重要部门. 我们的 IT 团队擅长管理复杂的技术操作, 而移动应用部门则创建高性能, 用户友好的应用程序. UI/UX 团队专注于通过创新设计提供无缝的用户体验, 而核心管理部门则优化组织流程, 以推动战略增长. 这些部门共同使我们能够提供强大且量身定制的解决方案, 促进创新, 满足我们多样化客户群体不断变化的需求.",
+        "innovation": "",
+        
+        "strongTeamMobile": "我们拥有一支强大的团队, 由超过15名专业人士组成, 涵盖 IT, 移动应用, UI/UX 和核心管理四个重要部门. 我们的 IT 团队擅长管理复杂的技术操作, 而移动应用部门则创建高性能, 用户友好的应用程序. UI/UX 团队专注于通过创新设计提供无缝的用户体验, 而核心管理部门则优化组织流程, 以推动战略增长. 这些部门共同使我们能够提供强大且量身定制的解决方案, 促进创新, 满足我们多样化客户群体不断变化的需求.",
 
-      "careerReminderTitle":"不要犹豫！",
-      "careerReminderDescription":"加入我们, 踏上一段充满无限可能和成长的激动人心之旅. 拥抱多样化的职业机会, 释放您的潜力, 成为一个重视终身学习和个人成就的支持性社区的一部分. 让我们共同建设一个更加光明的未来."
+        "teamExpertise": "团队的专业知识",
+        "itEngineering": "电脑技术工程师",
+        "systemArchitecture": "系统架构设计",
+        "development": "开发与维护",
+        "networkSecurity": "网络安全管理",
+        "databaseManagement": "数据库管理",
+        "systemIntegration": "系统集成",
+        "technologyStrategy": "技术战略规划",
+        "processAutomation": "流程自动化优化",
+        "DataAnalysis": "数据分析与处理",
+        "cloudInfrastructure": "云基础设施管理",
+        "support": "支持与故障排除",
+
+        "coolCrew": "我们是酷炫团队",
+        "dynamicItTeam": "我们的IT团队是一支充满活力的专家团队, 能够迅速适应",
+        "excellence": "技术变化. 我们营造了一个鼓励创新和卓越的协作环境, 提",
+        "shapeTheFuture": "供高效, 前沿的解决方案, 体现了我们通过技术改变未来的愿景.",
+        "teknologi": "",
+
+        "dynamicItTeamMobile": "我们的IT团队是一支充满活力的专家团队, 能够迅速适应技术变化. 我们营造了一个鼓励创新和卓越的协作环境, 提供高效, 前沿的解决方案, 体现了我们通过技术改变未来的愿景.",
+
+        "mobileApp": "移动应用软件工程师",
+        "appStore": "应用商店部署与管理",
+        "uiUx": "用户界面与用户体验设计",
+        "CrossPlatform": "跨平台开发",
+        "futureDevelopment": "功能开发",
+        "apiDevelopment": "API开发与集成",
+        "versionCnotrol": "版本控制管理",
+        "inApp": "应用内购买实施",
+        "pushNotifications": "推送通知管理",
+        "userFeedback": "用户反馈与测试",
+
+        "empowering": "赋能出行",
+        "mobileAppTeam": "移动应用部门专注于创建高性能, 用户友好的应用程序. 我",
+        "userFriendly": "们经验丰富的团队利用强大的设计技能和敏捷开发方法, ",
+        "experiences": "提供无缝的用户体验, 并快速适应市场需求. 我们确保跨设",
+        "devices": "备的兼容性和卓越性能, 帮助客户实现商业目标.",
+        "demands": "",
+
+        "mobileAppTeamMobile": "移动应用部门专注于创建高性能, 用户友好的应用程序. 我们经验丰富的团队利用强大的设计技能和敏捷开发方法, 提供无缝的用户体验, 并快速适应市场需求. 我们确保跨设备的兼容性和卓越性能, 帮助客户实现商业目标.",
+
+        "uiUxDesign": "用户界面和用户体验设计师",
+        "userResearch": "用户研究",
+        "informationArchitecture": "信息架构",
+        "wireframing": "线框图和原型设计",
+        "visualDesign": "视觉设计",
+        "interactionDesign": "交互设计",
+        "usabilityTesting": "可用性测试",
+        "responsive": "响应式设计",
+        "designSystem": "设计系统创建",
+        "useJourney": "用户旅程映射",
+        "designFeedback": "设计反馈整合",
+
+        "enterVirtual": "进入虚拟现实",
+        "ourUiUx": "我们的 UI / UX 部门致力于创造卓越的数字体验. 凭借在设计和用户研究方面的专业知识, 我们专注于理解用户需求. 采用以用户为中心的极简设计理念, 我们提升可用性和美学, 同时优化流程, 确保每个项目在视觉吸引力和功能性上都能出色表现.",
+        "centeredDesigns": "",
+        "functionality": "",
+        "minimalist": "",
+        "bentuk": "",
+        "yang": "",
+
+        "ourUiUxMobile": "我们的 UI / UX 部门致力于创造卓越的数字体验. 凭借在设计和用户研究方面的专业知识, 我们专注于理解用户需求. 采用以用户为中心的极简设计理念, 我们提升可用性和美学, 同时优化流程, 确保每个项目在视觉吸引力和功能性上都能出色表现.",
+        
+        "coreManagement": "核心管理层",
+        "strategicPlanning": "战略规划",
+        "performanceManagement": "绩效管理",
+        "resourceAllocation": "资源分配",
+        "financialManagement": "财务管理",
+        "employeeBenefits": "员工福利管理",
+        "communicationStrategy": "沟通策略",
+        "teamBuilding": "团队建设",
+        "decisionMaking": "决策过程",
+        "customerRrelationship": "客户关系管理",
+        "corporateCulture": "企业文化发展",
+
+        "drivingExcellence": "追求卓越",
+        "coreManagementTeam": "核心管理部门优化组织结构和流程, 以保持在快速变化市场中的竞争力. 我们经验丰富的团队通过战略规划和数据驱动的决策推动增长和创新, 增强协作并为公司创造可持续价值.",
+        "strategicPlanningDataDriven": "",
+        "decisions": "",
+
+        "coreManagementTeamMobile": "核心管理部门优化组织结构和流程, 以保持在快速变化市场中的竞争力. 我们经验丰富的团队通过战略规划和数据驱动的决策推动增长和创新, 增强协作并为公司创造可持续价值.",
+        
+        "workTogether": "让我们一起合作",
+        "joinOur": "",
+        "fantastic": "今天加入我们精彩的团队!",
+        "careerPage": "就业机会页面"
+
     },
+
+    "Support": {
+          "inquiry": "询问总会带来令人愉快的惊喜",
+          "hesitation": "不要让犹豫阻止你",
+          "hesitation2C": "与我们联系",
+          "messageSuccessfully": "消息已成功发送给我们.",
+          "sendToUs": "",
+          "yourMessage": "您的消息对我们非常重要. ",
+          "ourCustomerService": "我们的客户服务团队会尽快回复您. ",
+          "thankYou": "感谢您的耐心等待.",
+          "send": "发送",
+
+          "name": "姓名 *",
+          "email": "电邮 *",
+          "message": "你的想法 *",
+
+          "messageSuccessfullyMobile": "消息已成功发送给我们.",
+          "ourCustomerServiceMobile": "我们的客户服务团队会尽快回复您.",
+          "ourCustomerServiceMobile2": ""
+      },  
 
     "WhatsappForm":{
       "whatsappFormTitle":"立刻与我们通信",
@@ -386,7 +1076,203 @@
     },
 
     "Footer":{
-          "socialMediaDescription":"现在就开始与我们联系:"
-        }
+        "socialMediaDescription":"Start to connect with us:",
+        "quickLinks": "快速链接",
+        "legal": "法律",
+        "office": "办事处:",
+        "sunwayOffice": "Sunway Velocity Office, (VO6) Signature 2 55100, Kuala Lumpur MALAYSIA.",
+        "email": "电邮",
+        "marketing": "marketing@currencttech.pro  ",
+        "copyRight": "Copyright  ",
+        "currentTech": "Current Tech Industries",
+        "allRightReserved": "All rights reserved.",
+        "currentTechIndustries": "Current Tech Industries 2024.",
+        "allRightReserve": "All rights reserved."
+      },
+
+    "PrivacyPolicyModal":{
+          "name": "隐私政策",
+          "currentTech": "CURRENT TECH INDUSTRIES SDN BHD",
+          "privacyPolicy": "Privacy Policy (Compliant with Malaysian PDPA)",
+          "effectiveDate": "Effective Date: November 01, 2021",
+          
+          "thankYou": "Thank you for visiting our website.",
+          "weValueYour": "We value your privacy and are committed to protecting your personal information.",
+          "thePrivacyPolicy": "This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our services.",
+          
+          "collectionOfInfo": "1. Collection of Information",
+          "personalData": "Personal Data:",
+          "weMayCollect": "We may collect personal data such as your name, email address, and contact information,",
+          "typicallyWhen": "typically when you register for an account, subscribe to our services, or fill out forms.",
+          "NonPersonalData": "Non-Personal Data:",
+          "collectNonPersonally": "We may collect non-personally identifiable information, including browser type, device information,",
+          "ipAddress": "IP address, date and time of access, to improve our website and services.",
+
+          "financialData": "Financial Data:",
+          "ifOurService": "If our services involve financial transactions, we collect relevant payment information,",
+          "whichIs": "which is processed securely through encryption.",
+          "useOfData": "2. Use of Data",
+          "weUseYou": "We use your information to provide and maintain our services, including account management and transaction",
+          "support": "support, to improve our products, and to send you notifications about products and services you may be ",
+          "interestedIn": "interested in. We ensure to obtain your consent before using your data, as required under the PDPA.",
+          "weProvide": "We provide an option to unsubscribe from marketing communications and explain how users can exercise their ",
+          "pdpaRight": "PDPA rights, including access, correction, and deletion of their personal data.",
+          "sharingAndDisclosure": "3. Sharing and Disclosure of Data",
+          "weDoNotSell": "We do not sell, rent, or otherwise disclose your personal data to third parties, except under the following ",
+          "conditions": "conditions:",
+          "serviceProviders": "Service Providers:",
+          "weMayShare": "We may share information with third-party vendors who assist us in providing services",
+          "paymentProcessors": "(e.g., payment processors, technical support providers).",
+          "theseVendors": "These vendors are obligated to protect your privacy and only have access to data necessary for their functions.",
+          "legalCompliance": "Legal Compliance:",
+          "weMayDisclose": "We may disclose information as required by Malaysian law or regulations, including sharing with regulatory",
+          "authorities": "authorities.",
+          "dataSecurity": "4. Data Security",
+          "weTakeReasonable": "We take reasonable technical and organisational measures to prevent unauthorised access, disclosure,",
+          "alteration": "alteration, or destruction of your personal data. Although we strive to use industry-standard measures, no system ",
+          "canGuarantee": "can guarantee absolute security. Users are advised to consider potential security risks when transmitting data.",
+          "dataRetention": "5. Data Retention",
+          "weRetain": "We retain personal data only as long as necessary for the purposes outlined in this policy or as required by law. ",
+          "onceTheData": "Once the data is no longer needed, we will either delete it or anonymise it.",
+          "yourPrivacyRights": "6. Your Privacy Rights",
+          "incompliance": "In compliance with the PDPA, you have the right to view, correct, and delete your personal data. Please contact us",
+          "usingTheInfo": "using the information provided below to exercise these rights.",
+          "policyUpdates": "7. Policy Updates",
+          "weMayUpdate": "We may update this Privacy Policy periodically. Any changes will be posted on this page, and we will notify you if ",
+          "necessary": "necessary. We recommend reviewing this policy regularly to stay informed.",
+          "contactUs": "8. Contact Us",
+          "companyName": "Company Name:",
+          "companyInfo": "Company Infomation:",
+          "marketing": "marketing@currencttech.pro"
+      },
+
+    "Disclaimer":{
+        "name": "免责声明"
+    },
+
+    "termsAndConditionModal":{
+        "name": "条款与条件"
+    },
+
+    "summary": "摘要",
+    "EDUCATION": "教育机构",
+    "KINDERTOWN": "KINDERTOWN",
+    "eduCategory": "教育机构 | 幼儿园 | 小学 | 中学 | 大学 | 补习中心",
+    "eduDescription": "Kindertown 赋予家长, 教师和学校所有者以灵活, 用户友好的工具来跟踪幼儿园儿童的成长, 优先考虑隐私, 可及性和可持续性.我们还在扩展, 开发针对小学, 中学, 大学和补习中心的教育软件.",
+    "edudescriptionMobile": "Kindertown 赋予家长, 教师和学校所有者以灵活, 用户友好的工具来跟踪幼儿园儿童的成长, 优先考虑隐私, 可及性和可持续性.我们还在扩展, 开发针对小学, 中学, 大学和补习中心的教育软件.",
+    "versions": "版本",
+    "device": "兼容设备",
+    "operatingSystem": "操作系统",
+    "biometric": "生物识别 & 安全",
+    "featureParent": "功能: (家长版)",
+    "featureTeacher": "功能: (教师版)",
+    "featureAdmin": "功能: (管理员版)",
+    "eduSummary": "Kindertown 不仅赋能家长和教师, 还通过提供全面的支持系统来促进学生的成长与发展. 通过准确的出勤追踪, 个性化的任务分配和技能评估, 它确保每个孩子都能获得所需的关注. 学生在一个结构化, 安全的学习环境中受益, 而家长则可以轻松监控他们的学业进展和日常活动. 教师配备智能工具, 可以根据每个学生的需求量身定制学习体验, 营造个性化教育的氛围. Kindertown 创建了一个关怀和指导并存的温馨空间, 让学生在这里茁壮成长.",
+    "eduSummary2": "",
+    "eduSummaryMobile": "Kindertown 不仅赋能家长和教师, 还通过提供全面的支持系统来促进学生的成长与发展. 通过准确的出勤追踪, 个性化的任务分配和技能评估, 它确保每个孩子都能获得所需的关注. 学生在一个结构化, 安全的学习环境中受益, 而家长则可以轻松监控他们的学业进展和日常活动. 教师配备智能工具, 可以根据每个学生的需求量身定制学习体验, 营造个性化教育的氛围. Kindertown 创建了一个关怀和指导并存的温馨空间, 让学生在这里茁壮成长.",
+    "eduSummaryMobile2": "",
+
+    "E-INVOICE": "电子发票",
+    "eInbill": "E-INBILL",
+    "eInvoiceCategory": "电子发票 | 销售点系统 | 食品订购软件",
+    "eInvoiceDescription": "我们提供的不仅仅是一个POS, 支付终端或电子发票. E-inbill解决方案可以根据餐饮, 美容和零售店的需求进行定制. 无论您经营何种类型的业务, 选择E-inbill都是利用您优势的开始.",
+    "eInvoicedescriptionMobile": "我们提供的不仅仅是一个POS, 支付终端或电子发票. E-inbill解决方案可以根据餐饮, 美容和零售店的需求进行定制. 无论您经营何种类型的业务, 选择E-inbill都是利用您优势的开始.",
+    "plan": "配套",
+    "features": "功能 & 规格",
+    "eInvoiceSummary": "无论是小型街头摊贩还是大型餐饮连锁, E-inbill始终支持您的业务. 硬件, 软件, 支付和技术支持统一在一个E-inbill解决方案下. E-inbill框架确保整个生态系统无缝协作. 这就是E-inbill的目标——为您和您的客户提供最佳用户体验.",
+    "eInvoiceSummary2": "",
+    "eInvoiceSummaryMobile": "无论是小型街头摊贩还是大型餐饮连锁, E-inbill始终支持您的业务. 硬件, 软件, 支付和技术支持统一在一个E-inbill解决方案下. E-inbill框架确保整个生态系统无缝协作. 这就是E-inbill的目标——为您和您的客户提供最佳用户体验.",
+    "eInvoiceSummaryMobile2": "",
+
+    "ATTENDANCE": "考勤系统",
+    "motionCapture": "MOTION CAPTURE",
+    "attendenceCategory": "员工考勤 | 商业 | 公司 | 企业 | 工厂",
+    "attendenceDescription": "在当今快节奏的企业环境中, 企业面临着员工效率波动, 人才留存和成本控制等挑战. 这就是为什么我们开发了战略性的奖励和认可计划, 以直接应对这些问题. 我们的动作捕捉 (MOCAP) 系统不仅提高了生产力, 还提升了士气和工作质量. 通过认可和奖励员工, 我们培养了一种积极的文化, 让他们感到被重视和支持, 从而最终增强了留存率.",
+    "attendenceDescription2": "",
+    "attendenceDescription3": "",
+    "attendenceDescriptionMobile": "在当今快节奏的企业环境中, 企业面临着员工效率波动, 人才留存和成本控制等挑战. 这就是为什么我们开发了战略性的奖励和认可计划, 以直接应对这些问题. 我们的动作捕捉 (MOCAP) 系统不仅提高了生产力, 还提升了士气和工作质量. 通过认可和奖励员工, 我们培养了一种积极的文化, 让他们感到被重视和支持, 从而最终增强了留存率.",
+    "featuresEmployee": "功能: (职员版)",
+    "featuresEmployer": "功能: (企业版)",
+    "attendenceSummary": "动作捕捉 (MOCAP) 是一款全面的员工管理系统, 旨在提升生产力和员工满意度. 通过智能仪表板, 员工可以轻松管理考勤, 任务和奖励, 同时享受灵活的工作时间, 绩效图表和生日奖励等功能, 帮助他们充分发挥潜力. 对于雇主而言, MOCAP 提供详细的员工数据, 项目进展和任务跟踪功能, 优化劳动力管理, 提高效率. 通过引入奖励和激励措施, 它还有效降低员工流失率. MOCAP 为所有人创造了一个组织良好, 高效且充满激励的工作环境.",
+    "attendenceSummary2": "",
+    "attendenceSummaryMobile": "动作捕捉 (MOCAP) 是一款全面的员工管理系统, 旨在提升生产力和员工满意度. 通过智能仪表板, 员工可以轻松管理考勤, 任务和奖励, 同时享受灵活的工作时间, 绩效图表和生日奖励等功能, 帮助他们充分发挥潜力. 对于雇主而言, MOCAP 提供详细的员工数据, 项目进展和任务跟踪功能, 优化劳动力管理, 提高效率. 通过引入奖励和激励措施, 它还有效降低员工流失率. MOCAP 为所有人创造了一个组织良好, 高效且充满激励的工作环境.",
+    
+    "FINANCE": "科技金融",
+    "smartCMS": "SMART CMS DASHBOARD",
+    "financeCategory": "多层次结算系统 | 外汇 | 数字货币 | 二元期权",
+    "financeDescription": "我们的技术团队专注于为 MetaQuotes (MT4/MT5) 和 cTrader 白标及主标运营商打造智能的后台解决方案. 我们擅长定制网页设计, 客户前端, 代理界面, 管理员后台和佣金系统, 以满足他们的需求. 我们的智能仪表板提供客户所需的精确数据, 同时确保资金和个人信息的顶级安全.",
+    "financeDescription2": "",
+    "financeDescription3": "",
+    "financeDescriptionMobile": "我们的技术团队专注于为 MetaQuotes (MT4/MT5) 和 cTrader 白标及主标运营商打造智能的后台解决方案. 我们擅长定制网页设计, 客户前端, 代理界面, 管理员后台和佣金系统, 以满足他们的需求. 我们的智能仪表板提供客户所需的精确数据, 同时确保资金和个人信息的顶级安全.",
+    "financeDescriptionMobile2": "",
+    "featuresMember": "功能: (会员版)",
+    "featuresMaster": "功能: (管理员版)",
+    "financeSummary": "智能客户管理系统仪表板旨在为经纪人和投资者提供强大的工具和无缝的功能. 对于经纪人, 它通过主仪表板提供全面的控制, 能够高效管理钱包, 设置绩效费用, 调整返利以及实时交易报告. 投资者则受益于简洁的会员仪表板, 拥有多功能数字钱包, 每日签到奖励, 返利收入和联盟小组结构. 凭借内置的安全措施以及复制交易和 PAMM 系统的集成, 该仪表板确保了一个流畅, 安全且高度参与的交易体验.",
+    "financeSummary2": "",
+    "financeSummaryMobile": "智能客户管理系统仪表板旨在为经纪人和投资者提供强大的工具和无缝的功能. 对于经纪人, 它通过主仪表板提供全面的控制, 能够高效管理钱包, 设置绩效费用, 调整返利以及实时交易报告. 投资者则受益于简洁的会员仪表板, 拥有多功能数字钱包, 每日签到奖励, 返利收入和联盟小组结构. 凭借内置的安全措施以及复制交易和 PAMM 系统的集成, 该仪表板确保了一个流畅, 安全且高度参与的交易体验.",
+    "financeSummaryMobile2": "",
+
+    "STOCKIES": "储存系统",
+    "beverage": "BEVERAGE STORAGE SYSTEM",
+    "stockiesCategory": "食品与饮料 | 酒吧与小酒馆 | 卡拉OK",
+    "stockiesDescription": "我们提供一流的饮料存储系统, 为主要娱乐场所提供无缝的订单跟踪和存储记录解决方案. 我们的系统包括强大的功能, 如会员管理,员工签到和佣金跟踪.",
+    "stockiesDescription2": "",
+    "stockiesDescription3": "",
+    "stockiesDescriptionMobile": "我们提供一流的饮料存储系统, 为主要娱乐场所提供无缝的订单跟踪和存储记录解决方案. 我们的系统包括强大的功能, 如会员管理,员工签到和佣金跟踪.",
+    "stockiesSummary": "我们的 Stockies 饮料存储系统为马来西亚娱乐场所面临的饮料存储挑战提供了全面的解决方案. 凭借库存控制, 低库存警报, 订单跟踪, 会员区域, 员工签到, 佣金管理, 预订和促销等功能, Stockies 简化了运营并提高了效率. 这个强大的系统不仅简化了库存和订单管理, 还提升了客户体验, 使其成为希望提供一流服务的场所不可或缺的资产.",
+    "stockiesSummary2": "",
+    "stockiesSummaryMobile": "我们的 Stockies 饮料存储系统为马来西亚娱乐场所面临的饮料存储挑战提供了全面的解决方案. 凭借库存控制, 低库存警报, 订单跟踪, 会员区域, 员工签到, 佣金管理, 预订和促销等功能, Stockies 简化了运营并提高了效率. 这个强大的系统不仅简化了库存和订单管理, 还提升了客户体验, 使其成为希望提供一流服务的场所不可或缺的资产.",
+    "stockiesSummaryMobile2": "",
+
+    "BROKERAGE": "搭建标商",
+    "brokerage": "BROKERAGE",
+    "brokerageCategory": "主标服务 | 技术集成 | 执照申请 | 后台系统无缝对接",
+    "brokerageDescription": "我们不仅将交易平台界面与智能后台无缝集成, 还提供 MetaTrader 和 cTrader 的全标签解决方案. 我们的一站式服务的优势在于, 您可以免去许多不必要的麻烦, 加快运营的启动, 避免错过最佳的操作时机.",
+    "brokerageDescription2": "",
+    "brokerageDescription3": "",
+    "brokerageDescriptionMobile": "我们不仅将交易平台界面与智能后台无缝集成, 还提供 MetaTrader 和 cTrader 的全标签解决方案. 我们的一站式服务的优势在于, 您可以免去许多不必要的麻烦, 加快运营的启动, 避免错过最佳的操作时机.",
+    "featuresClient": "功能: (MQ 客户端)",
+    "featuresAdmin": "功能: (MQ 管理员)",
+    "featuresCtrader": "功能: (CTRADER 客户端)",
+    "featuresCbroker": "功能: (CBROKER 管理员)",
+    "brokerageSummary": "Metaquotes (MT5) 和 cTrader 解决方案为经纪商, 投资者和代理人提供无缝集成, 高度定制和强大的功能. 凭借高达 1:500 或甚至 1:1000 的杠杆选项, 先进的图表工具和自动交易能力, 这些平台使经纪商能够实时获取数据, 进行组管理和控制流动性. 投资者受益于直观的界面, 强大的交易工具和生物识别登录等安全功能, 而代理人则享受简化的账户管理和符号创建, 确保所有利益相关者都能获得顺畅高效的交易体验.",
+    "brokerageSummary2": "",
+    "brokerageSummaryMobile": "Metaquotes (MT5) 和 cTrader 解决方案为经纪商, 投资者和代理人提供无缝集成, 高度定制和强大的功能. 凭借高达 1:500 或甚至 1:1000 的杠杆选项, 先进的图表工具和自动交易能力, 这些平台使经纪商能够实时获取数据, 进行组管理和控制流动性. 投资者受益于直观的界面, 强大的交易工具和生物识别登录等安全功能, 而代理人则享受简化的账户管理和符号创建, 确保所有利益相关者都能获得顺畅高效的交易体验.",
+    "brokerageSummaryMobile2": "",
+
+    "EA BUILDER": "自动交易",
+    "autoTradingBots": "AUTO TRADING BOTS",
+    "EABuilderCategory": "MQL4 | MQL5 | cALGO C#",
+    "EABuilderDescription": "这无疑是交易者的好消息, 因为人工智能的广泛应用正成为一种不可避免的趋势. 许多投资公司和顶级交易者已经开始采用人工智能自动交易系统, 而我们专注于开发这样的智能交易系统. 我们可以将顶级交易者的思维方式和策略完全转化为人工智能交易系统, 并将其应用于MetaTrader 4, MetaTrader 5 和 cTrader 交易平台的交易中.",
+    "EABuilderDescription2": "",
+    "EABuilderDescription3": "",
+    "EABuilderDescriptionMobile": "这无疑是交易者的好消息, 因为人工智能的广泛应用正成为一种不可避免的趋势. 许多投资公司和顶级交易者已经开始采用人工智能自动交易系统, 而我们专注于开发这样的智能交易系统. 我们可以将顶级交易者的思维方式和策略完全转化为人工智能交易系统, 并将其应用于MetaTrader 4, MetaTrader 5 和 cTrader 交易平台的交易中.",
+    "featuresEaStrategy": "功能: (自动交易策略)",
+    "EABuilderSummary": "智能 EA 自动交易系统为交易者, 投资者和基金经理提供了显著的优势. 它自动执行复杂的策略, 如趋势跟踪, 剥头皮和套利, 同时通过多时间框架和动量分析快速适应市场波动, 以实现精准决策. 这提高了交易效率, 减少了人为干预, 并确保了稳健的风险管理. EA的灵活性还允许个性化设置, 以满足多样化的投资需求, 最终改善整体交易表现.",
+    "EABuilderSummary2": "",
+    "EABuilderSummaryMobile": "智能 EA 自动交易系统为交易者, 投资者和基金经理提供了显著的优势. 它自动执行复杂的策略, 如趋势跟踪, 剥头皮和套利, 同时通过多时间框架和动量分析快速适应市场波动, 以实现精准决策. 这提高了交易效率, 减少了人为干预, 并确保了稳健的风险管理. EA的灵活性还允许个性化设置, 以满足多样化的投资需求, 最终改善整体交易表现.",
+    "EABuilderSummaryMobile2": "",
+
+    "COIN.WALLET": "数字货币",
+    "cryto": "CRYPTO GATEWAY WALLET",
+    "crytoCategory": "USDT TRC-20 | USDT ERC-20 | TRX | ETH | BTC",
+    "crytoDescription": "随着全球商业越来越多地在线进行, 安全高效的支付系统至关重要. TTBVNK 简化了跨境交易, 并增强了商家的安全性. 此外, 申请账户既免费又简单, 为企业提供了可靠的支付解决方案.",
+    "crytoDescription2": "",
+    "crytoDescription3": "",
+    "crytoDescriptionMobile": "随着全球商业越来越多地在线进行, 安全高效的支付系统至关重要. TTBVNK 简化了跨境交易, 并增强了商家的安全性. 此外, 申请账户既免费又简单, 为企业提供了可靠的支付解决方案.",
+    "crytoFeatures": "功能",
+    "crytoSummary": "通过TTBVNK将您的业务扩展到全球. 吸引新客户并通过接受无国界的加密支付来降低处理成本. 开始接受比特币, 以太坊和其他主要加密货币的即时交易. 使用TTBVNK, 我们直观的钱包解决方案无需技术集成, 让您轻松融入数字经济.",
+    "crytoSummary2": "",
+    "crytoSummaryMobile": "通过TTBVNK将您的业务扩展到全球. 吸引新客户并通过接受无国界的加密支付来降低处理成本. 开始接受比特币, 以太坊和其他主要加密货币的即时交易. 使用TTBVNK, 我们直观的钱包解决方案无需技术集成, 让您轻松融入数字经济.",
+    "crytoSummaryMobile2": "",
+
+    "basicWebsite": "基础网站",
+    "basicWebsiteCombination": "基础网站解决方案",
+    "AdvancedWebsite": "专业网站",
+    "AdvancedCombination": "专业网站解决方案",
+    "basicECommerce": "基础电子商务网站",
+    "basicECommerceCombination": "基础电子商务网站",
+    "AdvancedECommerce": "专业电子商务网站",
+    "AdvancedECommerceCombination": "专业电子商务网站"
    
   }

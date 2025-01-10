@@ -21,7 +21,7 @@ const ScrollToTopButton = () => {
 
   return (
     isVisible && (
-      <button onClick={scrollToTop} className="fixed bottom-5 md:bottom-10 right-3 md:right-6 bg-white rounded-full text-lg md:text-2xl text-black py-2 px-4 md:py-2 md:px-4">
+      <button onClick={scrollToTop} className="fixed bottom-5 md:bottom-10 right-3 md:right-6 bg-white rounded-full text-lg md:text-2xl text-black py-2 px-4 md:py-2 md:px-4 w-10 h-10 flex justify-center items-center">
         ↑
       </button>
     )

@@ -42,10 +42,12 @@ const Home = () => {
     useEffect(() => {
         AOS.init({
           duration: 1000, 
-          once: false,  
+          once: true,  
           offset: 100,
         });
       }, []);
+
+    //   {t("")}
 
     return(
         <div className='flex flex-col w-full justify-center gap-[250px] pb-[250px]'>
@@ -64,41 +66,41 @@ const Home = () => {
                     <div className="w-wull max-w-[1200px] flex flex-col items-center">
                         <div className="flex flex-col gap-[30px] md:gap-[50px]">
                             <div className="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
-                                <div className="text-base md:text-[32px] font-normal md:font-medium text-[#557AAA] leading-normal">
-                                    TECHNOLOGY DEFINES TOMORROW
+                                <div className="text-base md:text-2xl lg:text-[32px] font-normal md:font-medium text-[#557AAA] leading-normal">
+                                    {t("Home.technologyDefinesTomorrow")}
                                 </div>
-                                <div className="text-xl md:text-5xl font-bold text-[#153764] leading-normal">
-                                    MAKING YOUR IDEAS POSSIBLE
+                                <div className="text-xl md:text-[34px] lg:text-5xl font-bold text-[#153764] leading-normal">
+                                    {t("Home.makingYourIdeasPossible")}
                                 </div>
                             </div>
                             {/* Website Description */}
-                            <div className="hidden md:block text-2xl font-normal text-[#4B5563]" data-aos="fade-up" data-aos-delay="400">
+                            <div className="hidden md:block md:text-xl lg:text-2xl font-normal text-[#4B5563]" data-aos="fade-up" data-aos-delay="400">
                                 <div>
-                                    Innovation and technology drive a prosperous future. With
+                                    {t("Home.innovationAndTechnology")}
                                 </div>
                                 <div>
-                                    intelligence, automation, and digitisation, industries transform.
+                                    {t("Home.intelligrnceAndAutomation")}
                                 </div>
                                 <div>
-                                    Whether we embrace it or not, technology will reshape the future.
+                                    {t("Home.whetherWeEmbrace")}
                                 </div>
                             </div>
                             {/* Mobile */}
                             <div className='md:hidden text-base text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
                                 <div>
-                                    Innovation and technology drive a
+                                    {t("Home.innowvationAndTechnology")}
                                 </div>
                                 <div>
-                                    prosperous future. With intelligence, 
+                                    {t("Home.prosperousFuture")}
                                 </div>
                                 <div>
-                                    automation, and digitisation, industries 
+                                    {t("Home.automation")}
                                 </div>
                                 <div>
-                                    transform. Whether we embrace it or not, 
+                                    {t("Home.transform")}
                                 </div>
                                 <div>
-                                    technology will reshape the future.
+                                    {t("Home.technology")}
                                 </div>
                             </div>
                         </div>
@@ -122,68 +124,68 @@ const Home = () => {
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[50px]">
                         {/* Main Title */}
                         <div className="text-center text-5xl font-bold text-[#D1D5DB] leading-tight" data-aos="fade-up" data-aos-delay="200">
-                            WHAT WE DO
+                            {t("Home.whatWeDo")}
                         </div>
 
                         {/* Icons Section */}
-                        <div className="flex justify-center items-center gap-[150px] text-sm font-normal text-[#D1D5DB]" data-aos="fade-up" data-aos-delay="200">
+                        <div className="flex justify-center items-center gap-[150px] md:gap-20 xl:gap-[100px] text-sm font-normal text-[#D1D5DB]" data-aos="fade-up" data-aos-delay="200">
                             {/* Icon 1 */}
-                            <div className='flex flex-col items-center gap-[10px]'>
+                            <div className='flex flex-col items-center gap-[10px] md:w-[100px]'>
                                 <AwesomeDesign />
                                 <div>
                                     <div>
-                                        AWESOME 
+                                        {t("Home.awesome")}
                                     </div>
                                     <div>
-                                        DESIGN
+                                        {t("Home.design")}
                                     </div>
                                 </div>
                             </div>
                             {/* Icon 2 */}
-                            <div className='flex flex-col items-center gap-[10px]'>
+                            <div className='flex flex-col items-center gap-[10px] md:w-[100px]'>
                                 <PowerfulFramwork />
                                 <div>
                                     <div>
-                                        POWERFUL
+                                        {t("Home.powerful")}
                                     </div>
                                     <div>
-                                        FRAMEWORK
+                                        {t("Home.framework")}
                                     </div>
                                 </div>
                             </div>
                             {/* Icon 3 */}
-                            <div className='flex flex-col items-center gap-[10px]'>
+                            <div className='flex flex-col items-center gap-[10px] md:w-[100px]'>
                                 <MobileFriendly />
                                 <div>
                                     <div>
-                                        MOBILE
+                                        {t("Home.mobile")}
                                     </div>
                                     <div>
-                                        FRIENDLY
+                                        {t("Home.friendly")}
                                     </div>
                                 </div>
                             </div>
                             {/* Icon 4 */}
-                            <div className='flex flex-col items-center gap-[10px]'>
+                            <div className='flex flex-col items-center gap-[10px] md:w-[100px]'>
                                 <PremiumResources />
                                 <div>
                                     <div>
-                                        PREMIUM
+                                        {t("Home.premium")}
                                     </div>
                                     <div>
-                                        RESOURCES
+                                        {t("Home.resource")}
                                     </div>
                                 </div>
                             </div>
                             {/* Icon 5 */}
-                            <div className='flex flex-col items-center gap-[10px]'>
+                            <div className='flex flex-col items-center gap-[10px] md:w-[100px]'>
                                 <SupportAndUpdate />
                                 <div>
                                     <div>
-                                        SUPPORT
+                                        {t("Home.support")}
                                     </div>
                                     <div>
-                                        & UPDATE
+                                        {t("Home.update")}
                                     </div>
                                 </div>
                             </div>
@@ -199,10 +201,10 @@ const Home = () => {
                     </div>
 
                     {/* Centered Content */}
-                    <div className="absolute top-[2358px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[50px] p-[100px]">
+                    <div className="absolute top-[2358px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[50px] p-[57px]">
                         {/* Main Title */}
-                        <div className="text-center text-2xl font-bold text-[#D1D5DB] leading-tight">
-                            WHAT WE DO
+                        <div className="text-center text-2xl font-bold text-[#D1D5DB] leading-tight w-full">
+                            {t("Home.whatWeDo")}
                         </div>
 
                         {/* Icons Section */}
@@ -212,10 +214,10 @@ const Home = () => {
                                 <AwesomeDesign />
                                 <div>
                                     <div>
-                                        AWESOME 
+                                        {t("Home.awesome")}
                                     </div>
                                     <div>
-                                        DESIGN
+                                        {t("Home.design")}
                                     </div>
                                 </div>
                             </div>
@@ -224,10 +226,10 @@ const Home = () => {
                                 <PowerfulFramwork />
                                 <div>
                                     <div>
-                                        POWERFUL
+                                        {t("Home.powerful")}
                                     </div>
                                     <div>
-                                        FRAMEWORK
+                                        {t("Home.framework")}
                                     </div>
                                 </div>
                             </div>
@@ -236,10 +238,10 @@ const Home = () => {
                                 <MobileFriendly />
                                 <div>
                                     <div>
-                                        MOBILE
+                                        {t("Home.mobile")}
                                     </div>
                                     <div>
-                                        FRIENDLY
+                                        {t("Home.friendly")}
                                     </div>
                                 </div>
                             </div>
@@ -248,10 +250,10 @@ const Home = () => {
                                 <PremiumResources />
                                 <div>
                                     <div>
-                                        PREMIUM
+                                        {t("Home.premium")}
                                     </div>
                                     <div>
-                                        RESOURCES
+                                        {t("Home.resource")}
                                     </div>
                                 </div>
                             </div>
@@ -260,10 +262,10 @@ const Home = () => {
                                 <SupportAndUpdate />
                                 <div>
                                     <div>
-                                        SUPPORT
+                                        {t("Home.support")}
                                     </div>
                                     <div>
-                                        & UPDATE
+                                        {t("Home.update")}
                                     </div>
                                 </div>
                             </div>
@@ -281,134 +283,166 @@ const Home = () => {
                     </div>
                     
                     <div className='flex flex-col gap-[50px] md:gap-[150px]'>
-                        <div className='text-xl md:text-5xl font-bold text-[#153764]' data-aos="fade-up" data-aos-delay="200">
-                            OUR CORE SERVICE
+                        <div className='text-xl md:text-4xl lg:text-5xl font-bold text-[#153764]' data-aos="fade-up" data-aos-delay="200">
+                            {t("Home.coreService")}
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[200px] gap-y-[100px] md:gap-y-[150px]">
+                        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[60px] xl:gap-x-[100px] gap-y-[100px] xl:gap-y-[150px] ">
                             {/* Service 1 */}
-                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="400">
+                            <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="400">
                                 <Player
                                     autoplay
                                     loop
                                     src={CMS} // Pass the Lottie JSON file
-                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video1} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
-                                    CMS SYSTEM
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                    {t("Home.cmsSystem")}
                                 </div>
-                                <div className='text-base md:text-2xl font-normal text-[#4B5563]'>
+                                <div className='text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
                                     <div>
-                                        Empower your business
+                                        {t("Home.empower")}
                                     </div>
                                     <div>
-                                        with bespoke software solutions.
+                                        {t("Home.bespoke")}
                                     </div>
                                 </div>
                             </div>
                             {/* Service 2 */}
-                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="800">
+                            <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="800">
                                 <Player
                                     autoplay
                                     loop
                                     src={Website} // Pass the Lottie JSON file
-                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video2} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
-                                    WEBSITE
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                    {t("Home.website")}
                                 </div>
-                                <div className='text-base md:text-2xl font-normal text-[#4B5563]'>
+                                <div className='text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
                                     <div>
-                                        We build websites end-to-end
+                                        {t("Home.buildWebsite")}
                                     </div>
                                     <div>
-                                        with precision from plan to backend.
+                                        {t("Home.precision")}
                                     </div>
                                 </div>
                             </div>
                             {/* Service 3 */}
-                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="400">
+                            <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="400">
                                 <Player
                                     autoplay
                                     loop
                                     src={Mobile} // Pass the Lottie JSON file
-                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video3} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
-                                    MOBILE APPLICATIONS
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                    {t("Home.mobileApp")}
                                 </div>
-                                <div className='text-base md:text-2xl font-normal text-[#4B5563]'>
+                                <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
                                     <div>
-                                        We transform core ideas into
+                                        {t("Home.transformCoreIdeas")}
                                     </div>
                                     <div>
-                                        innovative applications for mobile.
+                                        {t("Home.innovative")}
+                                    </div>
+                                </div>
+                                <div className='xl:hidden text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
+                                    <div>
+                                        {t("Home.transformCoreIdeasMobile")}
+                                    </div>
+                                    <div>
+                                        {t("Home.transformCoreIdeasMobile2")}
                                     </div>
                                 </div>
                             </div>
                             {/* Service 4 */}
-                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="800">
+                            <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="800">
                                 <Player
                                     autoplay
                                     loop
                                     src={Hr} // Pass the Lottie JSON file
-                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video4} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
-                                    HR MANAGEMENT SYSTEM
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                    {t("Home.hrManagement")}
                                 </div>
-                                <div className='text-base md:text-2xl font-normal text-[#4B5563]'>
+                                <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
                                     <div>
-                                        Unlocks employee potential
+                                        {t("Home.unlocks")}
                                     </div>
                                     <div>
-                                        through intuitive dashboards.
+                                        {t("Home.intuitive")}
+                                    </div>
+                                </div>
+                                <div className='xl:hidden text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
+                                    <div>
+                                        {t("Home.unlocksMobile")}
+                                    </div>
+                                    <div>
+                                        {t("Home.unlocksMobile2")}
                                     </div>
                                 </div>
                             </div>
                             {/* Service 5 */}
-                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="400">
+                            <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="400">
                                 <Player
                                     autoplay
                                     loop
                                     src={Pos} // Pass the Lottie JSON file
-                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video5} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
-                                    POS SYSTEM
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                    {t("Home.posSystem")}
                                 </div>
-                                <div className='text-base md:text-2xl font-normal text-[#4B5563]'>
+                                <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
                                     <div>
-                                        Maximise your business, boosts
+                                        {t("Home.maximise")}
                                     </div>
                                     <div>
-                                        productivity and customer satisfaction.
+                                        {t("Home.productivity")}
+                                    </div>
+                                </div>
+                                <div className='xl:hidden text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
+                                    <div>
+                                        {t("Home.maximiseMobile")}
+                                    </div>
+                                    <div>
+                                        {t("Home.maximiseMobile2")}
                                     </div>
                                 </div>
                             </div>
                             {/* Service 6 */}
-                            <div className='flex flex-col justify-center items-center md:gap-[10px]' data-aos="fade-up" data-aos-delay="800">
+                            <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="800">
                                 <Player
                                     autoplay
                                     loop
                                     src={Support} // Pass the Lottie JSON file
-                                    className='md:w-[500px] md:h-[500px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video6} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-2xl font-bold text-[#557AAA]'>
-                                    SUPPORT & SERVICES
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                    {t("Home.supportAndServices")}
                                 </div>
-                                <div className='text-base md:text-2xl font-normal text-[#4B5563]'>
+                                <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
                                     <div>
-                                        Ensuring your systems operate
+                                        {t("Home.ensuring")}
                                     </div>
                                     <div>
-                                        at peak performance and efficiency.
+                                        {t("Home.performance")}
+                                    </div>
+                                </div>
+                                <div className='xl:hidden text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
+                                    <div>
+                                        {t("Home.ensuringMobile")}
+                                    </div>
+                                    <div>
+                                        {t("Home.ensuringMobile2")}
                                     </div>
                                 </div>
                             </div>
@@ -424,34 +458,35 @@ const Home = () => {
                 </div>
 
                 {/* Sector Of Coverage */}
-                <div className='flex flex-col gap-[150px] md:gap-[200px]' data-aos="fade-up">
+                <div className='flex flex-col gap-[150px] xl:gap-[200px]' data-aos="fade-up">
                     {/* Title */}
-                    <div className='bg-[#D5E7FF] h-auto flex flex-col justify-center gap-[10px] py-[62px] md:py-[170px] px-[60px] md:px-[485px]'>
-                        <div className='flex justify-center text-xl md:text-4xl font-normal text-[#557AAA] leading-normal' data-aos="fade-up" data-aos-delay="200">
-                            OUR UNIQUE PRODUCTS
+                    <div className='bg-[#D5E7FF] h-auto flex flex-col justify-center gap-5 py-[62px] xl:py-[170px] px-[45px] xl:px-[485px]'>
+                        <div className='flex justify-center text-xl md:text-2xl lg:text-3xl xl:text-4xl font-normal text-[#557AAA] leading-normal' data-aos="fade-up" data-aos-delay="200">
+                            {t("Home.uniqueProducts")}
                         </div>
-                        <div className='flex justify-center text-2xl md:text-[64px] font-bold text-[#153764] leading-normal' data-aos="fade-up" data-aos-delay="400">
-                            SECTORS OF COVERAGE
+                        <div className='flex justify-center text-2xl md:text-3xl lg:text-5xl xl:text-[64px] font-bold text-[#153764] leading-normal' data-aos="fade-up" data-aos-delay="400">
+                            {t("Home.coverage")}
                         </div>
                     </div>
 
                     {/* Sectors */}
-                    <div className='flex justify-center items-center px-[25px] md:p-0'>
+                    <div className='flex justify-center items-center px-[25px] md:px-[15px] xl:p-0'>
                         <div className='flex flex-col justify-center gap-[150px] max-w-[1200px]'>
                             {/* Education */}
-                            <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_Education} alt="Education" className='object-cover h-[238px] md:h-[406px]'data-aos="fade-up"/>
-                                <div className='flex flex-col gap-[5px] md:gap-5'>
-                                    <div className='text-black text-xl md:text-[32px]' data-aos="fade-up" data-aos-delay="200">
+                            <div className='flex flex-col md:flex-row gap-[30px] md:gap-10 lg:gap-[50px] text-left'>
+                                <img src={img_Education} alt="Education" className='object-cover h-[238px] md:h-[280px] lg:h-full xl:h-[406px] rounded-[5px]'data-aos="fade-up"/>
+                                <div className='flex flex-col gap-[10px] md:gap-5'>
+                                    <div className='text-black text-xl md:text-2xl lg:text-[32px]' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA]'>
                                             {t("Home.ImgCombinationTitle.educationImgTitle")}
                                         </div>
                                     </div>
-                                    <div className='flex flex-col text-[#4B5563] text-base md:text-2xl' data-aos="fade-up" data-aos-delay="400">
+                                    <div className='flex flex-col text-[#4B5563] text-base md:text-lg lg:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex-flex-col'>
                                             <div className="flex flex-col leading-normal font-normal w-full">
                                                 <div className='hidden md:block'>
-                                                    {t("Home.ImgCombinationDescription.educationImgDescription")}
+                                                    <div>{t("Home.ImgCombinationDescription.educationImgDescription")}</div>
+                                                    <div>{t("Home.ImgCombinationDescription.educationImgDescription2")}</div>
                                                 </div>
                                                 <div className='md:hidden'>
                                                     <div>
@@ -470,18 +505,18 @@ const Home = () => {
                                 </div>
                             </div>
                             {/* Food & Beverage */}
-                            <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_FoodBeverage} alt="F&B" className='object-cover h-[238px] md:h-[406px]' data-aos="fade-up"/>
-                                <div className='flex flex-col gap-[5px] md:gap-5 text-left'>
-                                    <div className='text-black text-xl md:text-[32px]' data-aos="fade-up" data-aos-delay="200">
+                            <div className='flex flex-col md:flex-row gap-[30px] md:gap-10 lg:gap-[50px] text-left'>
+                                <img src={img_FoodBeverage} alt="F&B" className='object-cover h-[238px] md:h-[280px] lg:h-full xl:h-[406px] rounded-[5px]' data-aos="fade-up"/>
+                                <div className='flex flex-col gap-[10px] md:gap-5 text-left'>
+                                    <div className='text-black text-xl md:text-2xl lg:text-[32px]' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA] text-left'>
                                             {t("Home.ImgCombinationTitle.F&BImgTitle")}
                                         </div>
                                     </div>
-                                    <div className='flex flex-col text-[#4B5563] text-base md:text-2xl' data-aos="fade-up" data-aos-delay="400">
+                                    <div className='flex flex-col text-[#4B5563] text-base md:text-lg lg:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex-flex-col'>
                                             {/* Web */}
-                                            <div className="hidden md:flex flex-col font-normal leading-normal">
+                                            <div className="hidden xl:flex flex-col font-normal leading-normal">
                                                 <div>
                                                     {t("Home.ImgCombinationDescription.F&BImgDescription")}
                                                 </div>
@@ -490,6 +525,12 @@ const Home = () => {
                                                 </div>
                                                 <div>
                                                     {t("Home.ImgCombinationDescription.F&BImgDescription3")}
+                                                </div>
+                                            </div>
+                                            {/* md */}
+                                            <div className="hidden xl:hidden md:flex flex-col font-normal leading-normal">
+                                                <div>
+                                                    {t("Home.ImgCombinationDescription.F&BImgDescriptionMd")}
                                                 </div>
                                             </div>
                                             {/* Mobile */}
@@ -509,17 +550,18 @@ const Home = () => {
                                 </div>
                             </div>
                             {/* Wholesale */}
-                            <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_Wholesale} alt="Wholesale" className='object-cover h-[238px] md:h-[406px]' data-aos="fade-up"/>
-                                <div className='flex flex-col gap-[5px] md:gap-5'>
-                                    <div className='text-black text-xl md:text-[32px] text-left' data-aos="fade-up" data-aos-delay="200">
+                            <div className='flex flex-col md:flex-row gap-[30px] md:gap-10 lg:gap-[50px] text-left'>
+                                <img src={img_Wholesale} alt="Wholesale" className='object-cover h-[238px] md:h-[280px] lg:h-full xl:h-[406px] rounded-[5px]' data-aos="fade-up"/>
+                                <div className='flex flex-col gap-[10px] md:gap-5'>
+                                    <div className='text-black text-xl md:text-2xl lg:text-[32px] text-left' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA]'>
                                             {t("Home.ImgCombinationTitle.wholesaleImgTitle")}
                                         </div>
                                     </div>
-                                    <div className='flex flex-col text-[#4B5563] text-base md:text-2xl' data-aos="fade-up" data-aos-delay="400">
+                                    <div className='flex flex-col text-[#4B5563] text-base md:text-lg lg:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex-flex-col text-left'>
-                                            <div className="flex flex-col leading-normal font-normal ">
+                                            {/* Mobile */}
+                                            <div className="hidden xl:flex flex-col leading-normal font-normal ">
                                                 <div>
                                                     {t("Home.ImgCombinationDescription.wholesaleImgDescription")}
                                                 </div>
@@ -530,44 +572,81 @@ const Home = () => {
                                                     {t("Home.ImgCombinationDescription.wholesaleImgDescription3")}
                                                 </div>
                                             </div>
+                                            {/* md */}
+                                            <div className="hidden xl:hidden md:flex flex-col font-normal leading-normal">
+                                                <div>
+                                                    {t("Home.ImgCombinationDescription.wholesaleImgMdDescription")}
+                                                </div>
+                                            </div>
+                                            {/* Mobile */}
+                                            <div className="md:hidden flex flex-col leading-normal font-normal ">
+                                                <div>
+                                                    {t("Home.ImgCombinationDescription.wholesaleImgMobileDescription")}
+                                                </div>
+                                                <div>
+                                                    {t("Home.ImgCombinationDescription.wholesaleImgMobileDescription2")}
+                                                </div>
+                                                <div>
+                                                    {t("Home.ImgCombinationDescription.wholesaleImgMobileDescription3")}
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {/* Logistic */}
-                            <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_Logistic} alt="Logistic" className='object-cover h-[238px] md:h-[406px]' data-aos="fade-up"/>
-                                <div className='flex flex-col gap-[5px] md:gap-5'>
-                                    <div className='text-black text-xl md:text-[32px] text-left' data-aos="fade-up" data-aos-delay="200">
+                            <div className='flex flex-col md:flex-row gap-[30px] md:gap-10 lg:gap-[50px] text-left'>
+                                <img src={img_Logistic} alt="Logistic" className='object-cover h-[238px] md:h-[280px] lg:h-full xl:h-[406px] rounded-[5px]' data-aos="fade-up"/>
+                                <div className='flex flex-col gap-[10px] md:gap-5'>
+                                    <div className='text-black text-xl md:text-2xl lg:text-[32px] text-left' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA]'>
                                             {t("Home.ImgCombinationTitle.logisticImgTitle")}
                                         </div>
                                     </div>
-                                    <div className='flex flex-col text-[#4B5563] text-base md:text-2xl' data-aos="fade-up" data-aos-delay="400">
+                                    <div className='flex flex-col text-[#4B5563] text-base md:text-lg lg:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex flex-col text-left'>
-                                            <div className="flex flex-col leading-normal font-normal ">
+                                            {/* Web */}
+                                            <div className="hidden xl:flex flex-col leading-normal font-normal ">
                                                 <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescription")}</div>
                                                 <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescription2")}</div>
                                                 <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescription3")}</div>
+                                            </div>
+                                            {/* md */}
+                                            <div className="hidden xl:hidden md:flex flex-col font-normal leading-normal">
+                                                <div>
+                                                    {t("Home.ImgCombinationDescription.logisticImgDescriptionMd")}
+                                                </div>
+                                            </div>
+                                            {/* Mobile */}
+                                            <div className="md:hidden flex flex-col leading-normal font-normal ">
+                                                <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescriptionM")}</div>
+                                                <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescriptionM2")}</div>
+                                                <div className='block'>{t("Home.ImgCombinationDescription.logisticImgDescriptionM3")}</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {/* Enterprise */}
-                            <div className='flex flex-col md:flex-row gap-5 md:gap-[50px] text-left'>
-                                <img src={img_Enterprise} alt="Enterprise" className='object-cover h-[238px] md:h-[406px]' data-aos="fade-up"/>
-                                <div className='flex flex-col gap-[5px] md:gap-5'>
-                                    <div className='text-black text-xl md:text-[32px] text-left' data-aos="fade-up" data-aos-delay="200">
+                            <div className='flex flex-col md:flex-row gap-[30px] md:gap-10 lg:gap-[50px] text-left'>
+                                <img src={img_Enterprise} alt="Enterprise" className='object-cover h-[238px] md:h-[280px] lg:h-full xl:h-[406px] rounded-[5px]' data-aos="fade-up"/>
+                                <div className='flex flex-col gap-[10px] md:gap-5'>
+                                    <div className='text-black text-xl md:text-2xl lg:text-[32px] text-left' data-aos="fade-up" data-aos-delay="200">
                                         <div className='flex flex-col font-bold text-[#557AAA]'>
                                             {t("Home.ImgCombinationTitle.enterpriseImgTitle")}
                                         </div>
                                     </div>
-                                    <div className='flex flex-col text-[#666] text-base md:text-2xl' data-aos="fade-up" data-aos-delay="400">
+                                    <div className='flex flex-col text-[#666] text-base md:text-lg lg:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex-flex-col text-left'>
-                                            <div className="flex flex-col leading-normal font-normal w-[353px] md:w-full">
+                                            <div className="hidden md:flex flex-col leading-normal font-normal md:w-full">
                                                 <div>{t("Home.ImgCombinationDescription.enterpriseImgDescription")}</div>
                                                 <div>{t("Home.ImgCombinationDescription.enterpriseImgDescription2")}</div>
+                                                <div>{t("Home.ImgCombinationDescription.enterpriseImgDescription3")}</div>
+                                            </div>
+                                            <div className="md:hidden flex-col leading-normal font-normal md:w-full">
+                                                <div>{t("Home.ImgCombinationDescription.enterpriseImgDescriptionMobile")}</div>
+                                                <div>{t("Home.ImgCombinationDescription.enterpriseImgDescriptionMobile2")}</div>
+                                                <div>{t("Home.ImgCombinationDescription.enterpriseImgDescriptionMobile3")}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -587,10 +666,10 @@ const Home = () => {
                     </div>
                     <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[10px] px-[45px] md:px-0 py-[62px] md:py-0'>
                         <div className='text-xl md:text-[32px] text-[#D1D5DB] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200"> 
-                            WHY CHOOSE US
+                            {t("Home.whyChooseUs")}
                         </div>
                         <div className='text-2xl md:text-5xl text-[#D1D5DB] font-bold leading-normal' data-aos="fade-up" data-aos-delay="400">
-                            WE UNIQUE & DIFFERENT
+                            {t("Home.different")}
                         </div>
                     </div>
                 </div>
@@ -607,21 +686,21 @@ const Home = () => {
                         <div className='absolute h-[1135px] w-[1px] bg-[#153764] ml-[35px]' />
                     </div>
                     {/* content */}
-                    <div className='relative top-0'>
-                        <div className='flex flex-col gap-[90px]' data-aos="fade-up" data-aos-delay="200">
+                    <div className='relative top-[-1px]'>
+                        <div className='flex flex-col gap-[150px]' data-aos="fade-up" data-aos-delay="200">
                             {/* 1 */}
                             <div className='flex gap-5'>
                                 <Pos1M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-full'>
+                                <div className='absolute right-0 flex flex-col justify-center gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-[290px] min-h-[116px]'>
                                     <div className='text-base text-[#153764] font-bold'>
-                                        POS SYSTEM
+                                        {t("homeCircle.posSystem.title")}
                                     </div>
                                     <div className='text-sm text-[#4B5563] font-normal'>
                                         <div className='flex gap-1'>
-                                            With over <div className='text-[#374151] font-medium'>400+</div> premium retail 
+                                            {t("homeCircle.posSystem.descriptionBold")} <div className='text-[#374151] font-medium'>400+</div> {t("homeCircle.posSystem.descriptionBoldMobile2")}
                                         </div>
                                         <div>
-                                            clients using our POS system.
+                                            {t("homeCircle.posSystem.descriptionMobile3")}
                                         </div>
                                     </div>
                                 </div>
@@ -629,19 +708,19 @@ const Home = () => {
                             {/* 2 */}
                             <div className='flex gap-5'>
                                 <Pos2M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-4 text-left w-full'>
+                                <div className='absolute right-0 flex flex-col justify-center gap-[10px] bg-[#E5E7EB] rounded-[10px] p-4 text-left w-[290px] min-h-[116px]'>
                                     <div className='text-base text-[#153764] font-bold'>
-                                        HR & CMS SYSTEM
+                                        {t("homeCircle.hrCmsSystem.title")}
                                     </div>
                                     <div className='text-sm text-[#4B5563] font-normal'>
                                         <div>
-                                            Our management system supports 
+                                            {t("homeCircle.hrCmsSystem.descriptionMobile")}
                                         </div>
                                         <div className='flex gap-1'>
-                                            over <div className='text-[#374151] font-medium'>30+</div> traditional industry firms
+                                            {t("homeCircle.hrCmsSystem.descriptionBoldMobile")} <div className='text-[#374151] font-medium'>30+</div> {t("homeCircle.hrCmsSystem.descriptionBoldMobile2")}
                                         </div>
                                         <div>
-                                             and brokerages.
+                                             {t("homeCircle.hrCmsSystem.descriptionMobile2")}
                                         </div>
                                     </div>
                                 </div>
@@ -649,19 +728,19 @@ const Home = () => {
                             {/* 3 */}
                             <div className='flex gap-5'>
                                 <Pos3M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-full'>
+                                <div className='absolute right-0 flex flex-col justify-center gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-[290px] min-h-[116px]'>
                                     <div className='text-base text-[#153764] font-bold'>
-                                        STOCKS CONTROL
+                                        {t("homeCircle.stockControl.title")}
                                     </div>
                                     <div className='text-sm text-[#4B5563] font-normal'>
                                         <div>
-                                            Wine & alcohol storage system
+                                            {t("homeCircle.stockControl.descriptionMobile")}
                                         </div>
                                         <div className='flex gap-1'>
-                                            <div className='text-[#374151] font-medium'>amazes</div> bars and venues, easing
+                                            {t("homeCircle.stockControl.descriptionBoldMobile2")} <div className='text-[#374151] font-medium'> {t("homeCircle.stockControl.bold")}</div>{t("homeCircle.stockControl.descriptionBoldMobile")}
                                         </div>
                                         <div>
-                                            record-keeping hassles.
+                                            {t("homeCircle.stockControl.descriptionMobile2")}
                                         </div>
                                     </div>
                                 </div>
@@ -669,16 +748,19 @@ const Home = () => {
                             {/* 4 */}
                             <div className='flex gap-5'>
                                 <Pos4M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-full'>
+                                <div className='absolute right-0 flex flex-col justify-center gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-[290px] min-h-[116px]'>
                                     <div className='text-base text-[#153764] font-bold'>
-                                        FOOD ORDERING
+                                        {t("homeCircle.foodOrdering.title")}
                                     </div>
                                     <div className='text-sm text-[#4B5563] font-normal'>
+                                        <div>
+                                            {t("homeCircle.foodOrdering.descriptionMobile3")}
+                                        </div>
                                         <div className='flex gap-1'> 
-                                            Food ordering system <div className='text-[#374151] font-medium'>impresses </div>
+                                             {t("homeCircle.foodOrdering.descriptionMobile")}<div className='text-[#374151] font-medium'>{t("homeCircle.foodOrdering.bold")} </div> {t("homeCircle.foodOrdering.descriptionMobile4")}
                                         </div>
                                         <div>
-                                            restaurants and cafes, simplifying order management effortlessly.
+                                            {t("homeCircle.foodOrdering.descriptionMobile2")}
                                         </div>
                                     </div>
                                 </div>
@@ -686,35 +768,36 @@ const Home = () => {
                             {/* 5 */}
                             <div className='flex gap-5'>
                                 <Pos5M />
-                                <div className='flex flex-col gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-full'>
+                                <div className='absolute right-0 flex flex-col justify-center gap-[10px] bg-[#E5E7EB] rounded-[10px] p-5 text-left w-[290px] min-h-[116px]'>
                                     <div className='text-base text-[#153764] font-bold'>
-                                        e-INVOICE
+                                        {t("homeCircle.eInvoice.title")}
                                     </div>
                                     <div className='text-sm text-[#4B5563] font-normal'>
                                         <div className='flex gap-1'>
-                                            Our e-Invoice system, <div className='text-[#374151] font-medium'>certified</div> 
+                                            {t("homeCircle.eInvoice.descriptionMobile")} <div className='text-[#374151] font-medium'>{t("homeCircle.eInvoice.boldMobile")}</div> 
                                         </div>
                                         <div className='flex gap-1'>
-                                            <div className='text-[#374151] font-medium'>by LHDN. </div>streamlining invoicing
+                                            <div className='text-[#374151] font-medium'>{t("homeCircle.eInvoice.boldMobile2")}</div>{t("homeCircle.eInvoice.descriptionMobile2")}
                                         </div>
                                         <div>
-                                            processes and ensuring compliance effortlessly.
+                                            {t("homeCircle.eInvoice.descriptionMobile3")}
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            {/* 6 */}
                             <div className='flex gap-5'>
                                 <Pos6M />
-                                <div className='bg-[#E5E7EB] rounded-[10px] p-4 text-left w-[250px]'>
+                                <div className='flex flex-col justify-center gap-[10px] bg-[#E5E7EB] rounded-[10px] p-4 text-left w-[290px] min-h-[116px]'>
                                     <div className='text-base text-[#153764] font-bold'>
-                                        FOREX LABEL SOLUTION
+                                        {t("homeCircle.forexLabelSolution.title")}
                                     </div>
                                     <div className='text-sm text-[#4B5563] font-normal'>
                                         <div className='flex gap-1'>
-                                            Over <div className='text-[#374151] font-medium'>10+ brokerages</div> have gained 
+                                            {t("homeCircle.forexLabelSolution.descriptionMobile")} <div className='text-[#374151] font-medium'>{t("homeCircle.forexLabelSolution.bold2")}</div> {t("homeCircle.forexLabelSolution.descriptionMobile2")}
                                         </div>
                                         <div>
-                                            licensing and are operational through our Label solution.
+                                            {t("homeCircle.forexLabelSolution.descriptionMobile3")}
                                         </div>
                                     </div>
                                 </div>
@@ -727,26 +810,40 @@ const Home = () => {
                 <div className='flex flex-col justify-center items-center px-[25px] md:p-0' data-aos="fade-up">
                     <div className='max-w-[1200px] flex flex-col gap-[250px]'>
                         <div className='flex flex-col gap-[10px] md:gap-[30px] items-start text-start'>
-                            <div className='text-xl md:text-5xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="200"> 
-                                OUR MISSION
+                            <div className='text-xl md:text-3xl lg:text-5xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="200"> 
+                                {t("Home.mission")}
                             </div>
-                            <div className='hidden md:block text-base md:text-2xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
+                            {/* Web */}
+                            <div className='hidden lg:block text-2xl text-[#4B5563] font-normal  md:w-[1000px]' data-aos="fade-up" data-aos-delay="400">
                                 <div className="leading-normal">
-                                    Build a tech-driven ROI model, redefining growth strategies with a professional
+                                    {t("Home.roiModal")}
                                 </div>
                                 <div className="leading-normal">
-                                     approach. Activate innovation through unique resource integration and diverse 
+                                     {t("Home.approach")}
                                 </div>
                                 <div className="leading-normal">
-                                    collaborations for exceptional results.
+                                    {t("Home.collaborations")}
                                 </div>
                             </div>
+                            {/* md */}
+                            <div className='hidden lg:hidden md:block text-lg text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
+                                <div className="leading-normal">
+                                    {t("Home.roiModal")}
+                                </div>
+                                <div className="leading-normal">
+                                     {t("Home.approach")}
+                                </div>
+                                <div className="leading-normal">
+                                    {t("Home.collaborations")}
+                                </div>
+                            </div>
+                            {/* Mobile */}
                             <div className='md:hidden text-base text-[#4B5563] font-normal'>
                                 <div>
-                                    Build a tech-driven ROI model, redefining growth strategies with a professional
+                                    {t("Home.buildATech")}
                                 </div>
                                 <div>
-                                    approach. Activate innovation through unique resource integration and diverse collaborations for exceptional results.
+                                    {t("Home.approachMobile")}
                                 </div>
                             </div>
                         </div>
@@ -757,29 +854,36 @@ const Home = () => {
             {/* Contact Us */}
             <div className="flex justify-center">
                 <div className='flex flex-col gap-[50px] max-w-[1200px]'>
-                    <div className='flex flex-col items-center gap-[10px]'>
-                        <div className='text-xl md:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal' data-aos="fade-up" data-aos-delay="600">
-                            NOTHING IS IMPOSSIBLE
+                    <div className='flex flex-col items-center gap-[10px] lg:gap-5'>
+                        {/* Web */}
+                        <div className='text-xl md:text-2xl lg:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal' data-aos="fade-up" data-aos-delay="600">
+                            {t("Home.impossible")}
                         </div>
-                        <div className='hidden md:block text-5xl text-[#153764] font-bold leading-normal' data-aos="fade-up" data-aos-delay="800">
-                            DON’T LET HESITATION HOLD YOU BACK
+                        <div className='hidden md:flex flex-col items-center gap-4 md:text-2xl lg:text-5xl text-[#153764] font-bold leading-normal' data-aos="fade-up" data-aos-delay="800">
+                            <div>
+                                {t("Home.hesitation")}
+                            </div>
+                            <div>
+                                {t("Home.hesitation2")}
+                            </div>
                         </div>
-                        <div className='md:hidden text-2xl text-[#153764] font-bold' data-aos="fade-up" data-aos-delay="800">
+                        {/* Mobile */}
+                        <div className='md:hidden flex flex-col items-center text-2xl text-[#153764] font-bold' data-aos="fade-up" data-aos-delay="800">
                             <div className="leading-normal">
-                                DON’T LET HESITATION 
+                                {t("Home.hesitationMobile")}
                             </div>
                             <div className="leading-normal">
-                                HOLD YOU BACK
+                                {t("Home.hesitationMobile2")}
                             </div>
                         </div>
                     </div>
                     <div>
                         <div className='flex justify-center items-center' data-aos="fade-up" data-aos-delay="1000">
                             <button 
-                                className='w-auto text-base md:text-2xl text-[#153764] font-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)] leading-normal'
+                                className='w-auto text-base md:text-lg lg:text-2xl text-[#153764] font-normal px-[15px] md:px-[30px] py-[10px] rounded-[5px] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)] leading-normal'
                                 onClick={handleContactUsClick}  
                             >
-                                CONTACT US
+                                {t("Home.contactUs")}
                             </button>
                         </div>
 
