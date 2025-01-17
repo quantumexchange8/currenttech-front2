@@ -9,12 +9,13 @@ import TeamM1 from '../Assets/Images/Team/TeamM1.png';
 import TeamM2 from '../Assets/Images/Team/TeamM2.png';
 import TeamM3 from '../Assets/Images/Team/TeamM3.png';
 import TeamM4 from '../Assets/Images/Team/TeamM4.png';
+import ScrollToTopButton from "../Components/ScrollToTopButton"
 import AOS from 'aos';
 import { useTranslation } from 'react-i18next';
 
 const Team = () => {
 
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
 
     useEffect(() => {
         AOS.init({
@@ -41,7 +42,7 @@ const Team = () => {
                 <div className='xl:hidden relative'>
                     <img src={ImageM1} alt="" className='w-full object-cover'/>
                     <div className='absolute top-[78%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl md:text-6xl lg:text-8xl text-[#D1D5DB] font-light'>
-                        <div className='w-[240px] md:w-full'>
+                        <div className='w-[240px] md:w-full text-center leading-normal'>
                             {t("Team.ourTeam")}
                         </div>
                     </div>
@@ -55,16 +56,18 @@ const Team = () => {
                         </div>
                         {/* Web */}
                         <div className='hidden xl:block text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
-                            <div>
+                            <div className='leading-normal'>
                                 {t("Team.strongTeam")}
                             </div> 
-                            <div>
+                            <div className='leading-normal'>
                                 {t("Team.innovation")}
                             </div>
                         </div>
                         {/* Mobile */}
                         <div className='xl:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
-                            {t("Team.strongTeamMobile")}
+                            <div>{t("Team.strongTeamMobile")}</div>
+                            <div>{t("Team.strongTeamMobile2")}</div>
+                            <div>{t("Team.strongTeamMobile3")}</div>
                         </div>
                     </div>
                 </div>
@@ -84,7 +87,7 @@ const Team = () => {
                                         {t("Team.itEngineering")}
                                     </div>
                                 </div>
-                                <div className='flex flex-col xl:flex-row justify-between text-base md:text-xl lg:text-2xl xl:text-xl text-[#4B5563] font-normal pl-3' data-aos="fade-up" data-aos-delay="600">
+                                <div className='flex flex-col xl:flex-row xl:gap-[50px] text-base md:text-xl lg:text-2xl xl:text-xl text-[#4B5563] font-normal pl-3' data-aos="fade-up" data-aos-delay="600">
                                     <ul className='list-disc list-inside leading-[40px] '>
                                         <li>
                                             {t("Team.systemArchitecture")}
@@ -182,7 +185,7 @@ const Team = () => {
                                         {t("Team.mobileApp")}
                                     </div>
                                 </div>
-                                <div className='flex flex-col xl:flex-row justify-between text-base md:text-xl xl:text-xl lg:text-2xl text-[#4B5563] font-normal pl-3' data-aos="fade-up" data-aos-delay="600">
+                                <div className='flex flex-col xl:flex-row xl:gap-[70px] text-base md:text-xl xl:text-xl lg:text-2xl text-[#4B5563] font-normal pl-3' data-aos="fade-up" data-aos-delay="600">
                                     <ul className='list-disc list-inside leading-[40px]'>
                                         <li>
                                             {t("Team.appStore")}
@@ -266,9 +269,9 @@ const Team = () => {
                                     {t("Team.empowering")}
                                 </div>
                                 <div className='text-base md:text-2xl text-[#4B5563] font-normal xl:w-[600px]' data-aos="fade-up" data-aos-delay="600">
-                                    <div>
-                                        {t("Team.mobileAppTeamMobile")}
-                                    </div>
+                                    <div> {t("Team.mobileAppTeamMobile")} </div>
+                                    <div> {t("Team.mobileAppTeamMobile2")} </div>
+                                    <div> {t("Team.mobileAppTeamMobile3")} </div>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +374,8 @@ const Team = () => {
                                     {t("Team.enterVirtual")}
                                 </div>
                                 <div className='text-base md:text-2xl text-[#4B5563] font-normal xl:w-[600px]' data-aos="fade-up" data-aos-delay="600">
-                                    {t("Team.ourUiUxMobile")}
+                                    <div>{t("Team.ourUiUxMobile")}</div>
+                                    <div>{t("Team.ourUiUxMobile2")}</div>
                                 </div>
                             </div>
                         </div>
@@ -494,6 +498,11 @@ const Team = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Scroll To Top Button */}
+                <div className='absolute'>
+                    <ScrollToTopButton />
                 </div>
             </div>
         </div>

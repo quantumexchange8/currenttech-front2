@@ -20,14 +20,10 @@ import { useTranslation } from 'react-i18next';
 
 const Creating = () => {
 
-    const [t, i18n] = useTranslation();
+    const [t] = useTranslation();
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const navigate = useNavigate();
-
-    const handleContactUsClick = () => {
-        setIsModalOpen(true);
-    };
 
     const closeModal = () => {
         setIsModalOpen(false);
@@ -52,7 +48,7 @@ const Creating = () => {
                 <div className='relative'>
                     <div><img src={image1} alt="" className='hidden xl:block w-full object-cover' /></div>
                     <div><img src={imageM1} alt="" className='xl:hidden w-full' /></div>
-                    <div className='absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-16 text-center text-[32px] md:text-6xl xl:text-5xl xl:text-[64px] text-[#D1D5DB] font-light leading-normal'>
+                    <div className='absolute bottom-[6%] left-1/2 transform -translate-x-1/2 -translate-y-16 text-center text-[32px] md:text-6xl xl:text-5xl xl:text-[64px] text-[#D1D5DB] font-light leading-normal'>
                         {t("Creating.pickWhat")}
                     </div>
                 </div>
@@ -115,12 +111,21 @@ const Creating = () => {
                                 <img src={CreatingM2} alt="" className='md:hidden'/>
                             </div>
                             <div className='flex flex-col gap-[50px] w-full xl:w-[500px]'>
-                                <div className='flex flex-col gap-[10px] md:gap-[30px] xl:w-[500px]'>
+                                <div className='hidden xl:flex flex-col gap-[10px] md:gap-[30px] xl:w-[500px]'>
                                     <div className='text-xl md:text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="300">
                                         {t("Creating.commercial")}
                                     </div>
                                     <div className='text-base md:text-xl text-[#4B5563] font-normal xl:w-[500px]' data-aos="fade-up" data-aos-delay="400">
                                         {t("Creating.commercialWebPage")}                            
+                                    </div>
+                                </div>
+                                <div className='xl:hidden flex flex-col gap-[10px] md:gap-[30px] xl:w-[500px]'>
+                                    <div className='text-xl md:text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="300">
+                                        {t("Creating.commercial")}
+                                    </div>
+                                    <div className='text-base md:text-xl text-[#4B5563] font-normal xl:w-[500px]' data-aos="fade-up" data-aos-delay="400">
+                                        <div>{t("Creating.commercialWebPageMobile")}</div>                         
+                                        <div>{t("Creating.commercialWebPageMobile2")}</div>                         
                                     </div>
                                 </div>
                                 <div className='flex justify-start' data-aos="fade-up" data-aos-delay="500">

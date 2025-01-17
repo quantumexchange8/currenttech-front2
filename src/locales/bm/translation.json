@@ -120,7 +120,14 @@
           "descriptionBold": "Sistem e-Invois kami, yang ",
           "descriptionBold2": " ",
           "description": "",
-          "description2": "mempermudah proses pengebilan dan memastikan pematuhan dengan mudah."
+          "description2": "mempermudah proses pengebilan dan memastikan pematuhan dengan mudah.",
+          "boldMobile": "diperakui oleh LHDN, ",
+          "boldMobile2": "",
+          "descriptionMobile": "yang",
+          "descriptionMobile2": "",
+          "descriptionMobile3": "mempermudah proses pengebilan dan memastikan pematuhan dengan mudah.",
+          "descriptionMobile4": "Sistem e-Invois kami,"
+
         },
         "forexLabelSolution": {
           "title": "FOREX LABEL SOLUTION",
@@ -130,7 +137,10 @@
           "descriptionBold2": "telah",
           "description": "memperoleh lesen dan beroperasi melalui penyelesaian Label kami.",
           "description2": "",
-          "description3": ""
+          "description3": "",
+          "descriptionMobile": " Lebih daripada",
+          "descriptionMobile2": " telah ",
+          "descriptionMobile3": " memperoleh lesen dan beroperasi melalui penyelesaian Label kami."
         }
       },
     
@@ -176,12 +186,14 @@
           "educationImgDescriptionM": "Teknologi kami membuka potensi pembelajaran tanpa batas, membantu sekolah mencapai kejayaan di kelas.",
           "educationImgDescriptionM2": "",
           "educationImgDescriptionM3": "",
+          "educationImgDescriptionIpad": "Teknologi kami membuka potensi pembelajaran tanpa batas, membantu sekolah mencapai kejayaan di kelas.",
           "F&BImgDescription": "Aplikasi pesanan dan kaedah pembayaran pelbagai memudahkan pengalaman makan pelanggan.",
           "F&BImgDescription2": "",
           "F&BImgDescription3": "",
           "F&BImgDescriptionMobile": "Aplikasi pesanan dan kaedah pembayaran pelbagai memudahkan pengalaman makan pelanggan.",
           "F&BImgDescriptionMobile2": "",
           "F&BImgDescriptionMobile3": "",
+          "F&BImgDescriptionMd": "Aplikasi pesanan dan kaedah pembayaran pelbagai memudahkan pengalaman makan pelanggan.",
           "F&BImgMobileDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience ",
           "F&BImgMobileDescription2": "for customers, enhancing convenience and satisfaction at every step.",
           "retailImgDescription":"Whether it's managing customer lists, orders, inventory records, or employee attendance, all you need is one comprehensive and intelligent system to streamline operations and enhance efficiency.",
@@ -191,6 +203,7 @@
           "wholesaleImgMobileDescription":"Sistem pintar kami menyediakan penyelesaian untuk perniagaan, memastikan pengurusan kos dan inventori cekap.",
           "wholesaleImgMobileDescription2":"",
           "wholesaleImgMobileDescription3": "",
+          "wholesaleImgMdDescription": "Sistem pintar kami menyediakan penyelesaian untuk perniagaan, memastikan pengurusan kos dan inventori cekap.",
           "logisticImgDescriptionM":"Membina sistem pengangkutan dan logistik cekap kini boleh dicapai dengan kepakaran dan alat kami.",
           "logisticImgDescriptionM2":"",
           "logisticImgDescriptionM3":"",
@@ -202,7 +215,8 @@
           "enterpriseImgDescription3":"",
           "enterpriseImgDescriptionMobile":"Sistem pengurusan efektif meningkatkan komunikasi syarikat dan pekerja sambil memacu kemajuan kerja.",
           "enterpriseImgDescriptionMobile2":"",
-          "enterpriseImgDescriptionMobile3":""
+          "enterpriseImgDescriptionMobile3":"",
+          "enterpriseImgDescriptionIpad":"Sistem pengurusan efektif meningkatkan komunikasi syarikat dan pekerja sambil memacu kemajuan kerja."
         },
         "homeReminderTitle":"No matter what field or industry you're in.",
         "homeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
@@ -241,9 +255,12 @@
         "cmsSystem": "SISTEM CMS",
         "empower": "Memberdayakan perniagaan anda dengan ",
         "bespoke": "penyelesaian perisian yang disesuaikan.",
+        "empowerIpad": "Memberdayakan perniagaan anda dengan penyelesaian perisian yang disesuaikan.",
+        "empowerIpad2": "",
         "website": "LAMAN WEB",
         "buildWebsite": "Kami bina laman web dari reka bentuk ",
         "precision": "hingga backend dengan teliti.",
+        "buildWebsiteIpad": "Kami bina laman web dari reka bentuk hingga backend dengan teliti.",
         "mobileApp": "APLIKASI MOBILE",
         "transformCoreIdeas": "Kami mengubah idea teras menjadi aplikasi",
         "innovative": "inovatif untuk mobile.",
@@ -252,6 +269,8 @@
         "intuitive": "yang intuitif.",
         "posSystem": "SISTEM POS",
         "maximise": "Maksimumkan perniagaan anda, tingkatkan ",
+        "maximiseIpad": "Maksimumkan perniagaan anda, tingkatkan produktiviti dan kepuasan pelanggan.",
+        "maximiseIpad2": "",
         "productivity": "produktiviti dan kepuasan pelanggan.",
         "supportAndServices": "SOKONGAN & KEMASKINI",
         "ensuring": "Kami pastikan sistem anda sentiasa beroperasi ",
@@ -276,10 +295,14 @@
         "roiModal": "Membina model ROI berasaskan teknologi, bebas web. Menyusun strategi pertumbuhan dengan pandangan profesional, menghindari sinergi konvensional. Mengaktifkan potensi inovatif melalui integrasi sumber unik, memanfaatkan kerjasama pelbagai untuk hasil luar biasa.",
         "approach": "",
         "collaborations": "",
+        "buildATech": "Membina model ROI berasaskan teknologi, bebas web. Menyusun strategi pertumbuhan dengan pandangan profesional, menghindari sinergi konvensional. Mengaktifkan potensi inovatif melalui integrasi sumber unik, memanfaatkan kerjasama pelbagai untuk hasil luar biasa.",
+        "approachMobile": "",
 
         "impossible": "TIADA YANG MUSTAHIL",
         "hesitation": "JANGAN BIARKAN KERAGUAN",
         "hesitation2": "MENGHALANG ANDA",
+        "hesitationMobile": "JANGAN BIARKAN KERAGUAN",
+        "hesitationMobile2": "MENGHALANG ANDA",
         "contactUs": "HUBUNGI KAMI"
         
         
@@ -301,16 +324,17 @@
         "advantageListDescription":{
         "websiteDescription":"Dari domain ke reka bentuk web, pasukan kami memastikan hasil selaras dengan visi anda.",
         "websiteDescription2":"",
-        "websiteDescriptionMobile":"From domain registration to web design, our team ensures the final product matches your vision.",
+        "websiteDescriptionMobile":"Dari domain ke reka bentuk web, pasukan kami memastikan hasil selaras dengan visi anda.",
         "websiteDescriptionMobile2":"",
         "managementDescription":"Tidak kira saiz perniagaan anda, sistem pengurusan yang kukuh adalah penting. Kami di sini untuk memastikan operasi anda berjalan lancar.",
         "managementDescription2":"",
-        "managementDescriptionMobile":"No matter your business size, a solid management system is essential. We’re",
-        "managementDescriptionMobile2":" here to keep your operations seamless.",
+        "managementDescriptionIpad":"Tidak kira saiz perniagaan anda, sistem pengurusan yang kukuh adalah penting. Kami di sini untuk memastikan operasi anda berjalan lancar.",
+        "managementDescriptionMobile":"Tidak kira saiz perniagaan anda, sistem pengurusan yang kukuh adalah penting. ",
+        "managementDescriptionMobile2":"Kami di sini untuk memastikan operasi anda berjalan lancar.",
         "paymentDescription":"Perkhidmatan berkualiti untuk perniagaan, dengan saluran pembayaran sedia ada atau integrasi baru.",
         "paymentDescription2":"",
         "paymentDescription3":"",
-        "paymentDescriptionMobile":"This is the service businesses value most, delivered flawlessly. Self-employed clients can use existing payment channels or integrate new solutions with us.",
+        "paymentDescriptionMobile":"Perkhidmatan berkualiti untuk perniagaan, dengan saluran pembayaran sedia ada atau integrasi baru.",
         "paymentDescriptionMobile2":"",
         "paymentDescriptionMobile3":"",
         "supportDescription":"Kami memberi sokongan 24/5 untuk memastikan sistem lancar dan memenuhi keperluan anda."
@@ -322,39 +346,39 @@
         "enterpriseVideoDescription":"Powerful enterprises and robust management systems are absolutely inseparable, as they possess the capability to manage vast amounts of data effectively.",
         "advantageEnterpriseTitle":"The advantage of our technology for Enterprise",
         "advantageEnterpriseDescription":"Excellent enterprise management encompasses human resources, administration, finance, as well as employee work progress reports, attendance, and various employee incentive systems. That's why our technology team has developed a meticulous and carefully designed management system tailored for all types of businesses.",
-        "advantageEnterpriseListTitle":"WE CUSTOMISE FOR YOU",
+        "advantageEnterpriseListTitle":"KAMI SESUAIKAN UNTUK ANDA",
         "advantageEnterpriseListSubtitle":{
           "frontendTitle":"FRONTEND & BACKEND",
-          "attendanceTitle":"ATTENDANCE SYSTEM",
-          "projectTitle":"PROJECT TASK",
-          "rewardTitle":"REWARD PROGRAM",
-          "supportTitle":"SUPPORT & SERVICE"
+          "attendanceTitle":"SISTEM KEHADIRAN",
+          "projectTitle":"TUGAS PROJEK",
+          "rewardTitle":"PROGRAM GANJARAN",
+          "supportTitle":"SOKONGAN & KEMASKINI"
         },
         "advantageEnterpriseListDescription":{
-          "frontendDescription":"A system’s front-end and back-end reflect professionalism.",
-          "frontendDescription2":"Our tech team works closely with management for custom development and clear explanations.",
-          "frontendDescriptionMobile":"A system’s front-end and back-end reflect professionalism. Our tech team works closely with management for custom development and clear explanations.",
+          "frontendDescription":"Antaramuka canggih mencerminkan profesionalisme. Pasukan kami bekerjasama dengan pengurusan untuk pembangunan khusus.",
+          "frontendDescription2":"",
+          "frontendDescriptionMobile":"Antaramuka canggih mencerminkan profesionalisme. Pasukan kami bekerjasama dengan pengurusan untuk pembangunan khusus.",
           "frontendDescriptionMobile2":"",
           "frontendDescriptionMobile3":" ",
-          "attendanceDescription":"Our seamless attendance system simplifies time management,",
-          "attendanceDescription2":"while a reward mechanism encourages employees to excel.",
-          "attendanceDescriptionMobile":"Our seamless attendance system simplifies time management, while a reward mechanism encourages employees to excel.",
+          "attendanceDescription":"Kami membangunkan sistem kehadiran yang lancar dan mekanisme ganjaran untuk menggalakkan pengurusan masa yang cemerlang.",
+          "attendanceDescription2":"",
+          "attendanceDescriptionMobile":"Kami membangunkan sistem kehadiran yang lancar dan mekanisme ganjaran untuk menggalakkan pengurusan masa yang cemerlang.",
           "attendanceDescriptionMobile2":"",
-          "projectDescription":"Data visualisation enables real-time tracking of metrics, sales, and ",
-          "projectDescription2":"goals, driving progress. Insights into team performance support ",
-          "projectDescription3":"agile adjustments for growth.",
-          "projectDescriptionMobile":"Data visualisation enables real-time tracking of metrics, sales, and goals, driving progress. Insights into team performance support agile adjustments for growth.",
+          "projectDescription":"Visualisasi data membolehkan pemantauan masa nyata metrik projek, prestasi jualan, dan kemajuan, serta penyesuaian pantas untuk pertumbuhan mampan.",
+          "projectDescription2":"",
+          "projectDescription3":"",
+          "projectDescriptionMobile":"Visualisasi data membolehkan pemantauan masa nyata metrik projek, prestasi jualan, dan kemajuan, serta penyesuaian pantas untuk pertumbuhan mampan.",
           "projectDescriptionMobile2":"",
           "projectDescriptionMd":"Data visualisation enables real-time tracking of metrics, sales, and goals, driving progress. Insights into team performance support agile adjustments for growth.",
-          "rewardDescription":"We believe employees benefit from engagement, points, and ",
-          "rewardDescription2":"badges. Our tech team integrates personalised contests and ",
-          "rewardDescription3":"surprise activities to enrich the experience.",
-          "rewardDescriptionMobile":"We believe employees benefit from engagement, points, and badges. Our tech team integrates personalised contests and surprise activities to enrich the experience.",
+          "rewardDescription":"Kami menawarkan faedah unik melalui ganjaran, lencana, dan aktiviti menarik, menjadikan pengalaman kerja lebih menyeronokkan! ",
+          "rewardDescription2":"",
+          "rewardDescription3":"",
+          "rewardDescriptionMobile":"Kami menawarkan faedah unik melalui ganjaran, lencana, dan aktiviti menarik, menjadikan pengalaman kerja lebih menyeronokkan!",
           "rewardDescriptionMobile2":"",  
-          "supportDescription":"We prioritise this with 24/5 support and one-on-one tutorials, ",
-          "supportDescription2":"ensuring smooth system operation and easy integration of new",
-          "supportDescription3":"features.",
-          "supportDescriptionMobile":"We prioritise this with 24/5 support and one-on-one tutorials, ensuring smooth system operation and easy integration of new features."
+          "supportDescription":"Kami utamakan sokongan 24/5 dan tutorial peribadi untuk memastikan sistem beroperasi lancar, termasuk apabila menambah ciri baharu.",
+          "supportDescription2":"",
+          "supportDescription3":"",
+          "supportDescriptionMobile":"Kami utamakan sokongan 24/5 dan tutorial peribadi untuk memastikan sistem beroperasi lancar, termasuk apabila menambah ciri baharu."
         },
         "advantageEnterpriseReminderTitle":"Don't hesitate!",
         "advantageEnterpriseReminderDescription":"Request a quote now for developing your personal independent system. ",
@@ -366,21 +390,21 @@
           "customSystems": "",
           "customerManagement": "",
 
-          "advantageMobile": "THE ADVANTAGE FOR ",
-          "advantageMobile2": "SELF-EMPLOYED",
-          "professionalsMd": "For self-employed professionals, technology is key. We specialise in custom systems that enhance your business and simplify customer management.",
-          "professionalsMobile": "For self-employed professionals, technology",
-          "professionalsMobile2": "is key. We specialise in custom systems that enhance your business and simplify customer management."
+          "advantageMobile": "KELEBIHAN UNTUK USAHAWAN ",
+          "advantageMobile2": "BEBAS",
+          "professionalsMd": "Kami pakar dalam teknologi khusus untuk mempermudah perniagaan anda dan meningkatkan hubungan pelanggan.",
+          "professionalsMobile": "Kami pakar dalam teknologi khusus untuk mempermudah perniagaan anda dan meningkatkan hubungan pelanggan.",
+          "professionalsMobile2": ""
 
         },
 
         "enterprise": {
-          "advantage": "THE ADVANTAGE FOR ENTERPRISE",
-          "effective": "Effective enterprise management covers HR, finance, and tracking",
-          "flexible": "systems. Our tech team has crafted a flexible, precise solution for ",
-          "anyBusiness": "any business.",
+          "advantage": "KELEBIHAN UNTUK PERUSAHAAN",
+          "effective": "Pengurusan berkesan merangkumi HR, kewangan, dan pemantauan pekerja. Pasukan kami membangunkan sistem pengurusan fleksibel untuk perniagaan.",
+          "flexible": "",
+          "anyBusiness": "",
 
-          "effectiveMobile": "Effective enterprise management covers HR, finance, and tracking systems. Our tech team has crafted a flexible, precise solution for any business."
+          "effectiveMobile": "Pengurusan berkesan merangkumi HR, kewangan, dan pemantauan pekerja. Pasukan kami membangunkan sistem pengurusan fleksibel untuk perniagaan."
           
         },
 
@@ -392,11 +416,12 @@
 
         "weWillGive": "KAMI AKAN MEMBERI NASIHAT",
         "weWillGive2": "TERBAIK UNTUK ANDA",
-        "weWillGiveMobile": "WE'LL GIVE YOU THE",
-        "weWillGiveMobile2": "BEST ADVICE",
 
-        "noNeedToStressMobile": "NO NEED TO STRESS ABOUT",
-        "noNeedToStressMobile2": "WHERE TO START"
+        "weWillGiveMobile": "KAMI AKAN MEMBERI NASIHAT",
+        "weWillGiveMobile2": "TERBAIK UNTUK ANDA",
+
+        "noNeedToStressMobile": "TAK PERLU RISAU DI MANA",
+        "noNeedToStressMobile2": "NAK MULAKAN"
         
 
 
@@ -410,6 +435,9 @@
       "customizeIdea_Titles":"lebih daripada sekadar idea.",
       "customizeIdea_Title2":"Pada masa yang sama, kami juga perlu",
       "customizeIdea_Title2s":"memahami apa yang anda fikirkan.",
+      "customizeIdea_Title2M":"Pada masa yang sama,",
+      "customizeIdea_Title2M2":"kami juga perlu memahami",
+      "customizeIdea_Title2M3":"apa yang anda fikirkan.",
       "customizeIdea_Title3":"Selain itu, penting untuk mengetahui",
       "customizeIdea_Title3s":"apa yang disukai pelanggan anda.",
       "customizeIdea_Title4":"Kami percaya anda juga sangat",
@@ -430,13 +458,16 @@
       "buildAwesome2":"HEBAT UNTUK ANDA",
       "creatingPage":"MENCIPTAKAN HALAMAN",
 
-      "buildAwesomeMobile":"为您构建精彩的网站",
-      "buildAwesomeMobile2":"",
+      "buildAwesomeMobile":"MENDIRIKAN LAMAN WEB",
+      "buildAwesomeMobile2":"HEBAT UNTUK ANDA",
 
-      "customisationMobile":"定制化是您迈向",
-      "directMobile":"优势的直接通道  ",
-      "PathMobile":"",
-      "tailoredWebPagesMobile":"量身定制的网页和应用程序通过直接满足用户偏好, 提供竞争优势, 增强参与度和满意度. 通过个性化功能和直观界面, 它们简化了用户互动, 推动了用户的留存和忠诚度."
+      "customisationMobile":"PENESUAIAN ADALAH",
+      "directMobile":"PINTU UTAMA ANDA   ",
+      "PathMobile":"MENUJU KELEBIHAN",
+      "tailoredWebPagesMobile":"Laman web dan aplikasi yang disesuaikan meningkatkan penglibatan dengan",
+      "tailoredWebPagesMobile2":"memenuhi keutamaan pengguna, sekali ",
+      "tailoredWebPagesMobile3":"gus meningkatkan kepuasan, pengekalan,",
+      "tailoredWebPagesMobile4":" dan kesetiaan."
 
     },
 
@@ -544,8 +575,8 @@
           "imaginative": "STUDIO KREATIF KAMI",
           "webDesign": "LAMAN WEB",
 
-          "weBuildMobile": "WE BUILD AWESOME",
-          "product": "PRODUCT"
+          "weBuildMobile": "KAMI MEMBINA",
+          "product": "PRODUK HEBAT"
         },
 
     "Creating":{
@@ -553,9 +584,9 @@
       "powerhouse":"PENYANGGA UNTUK KEPERLUAN",
       "webAndApp":"WEB DAN APLIKASI ANDA",
 
-      "powerhouseMobile":"POWERHOUSE",
-      "forYouMobile":"FOR YOUR",
-      "webAndAppMobile":"WEB AND APP NEEDS",
+      "powerhouseMobile":"PENYANGGA UNTUK",
+      "forYouMobile":"KEPERLUAN WEB",
+      "webAndAppMobile":"DAN APLIKASI ANDA",
 
       "e-commerce":"E-COMMERCE",
       "unmatchedConvenience":"e-Commerce menawarkan kemudahan tiada tandingan dengan transaksi lancar, pilihan produk luas, dan perbandingan harga mudah, memberi kuasa kepada pengguna dengan aksesibiliti dan kecekapan.",
@@ -565,12 +596,16 @@
       "commercialWebPage":"Laman web komersial meningkatkan aksesibiliti pelanggan, ketersediaan 24/7, dan paparan produk dinamik. Ia meningkatkan keterlihatan jenama, mempermudah pembelian, dan mendorong jualan, serta membina kesetiaan.",
       "exploreCommercial":"TEROKA COMMERCIAL",
 
+      "commercialWebPageMobile":"Laman web komersial meningkatkan aksesibiliti pelanggan, ketersediaan 24/7, ",
+      "commercialWebPageMobile2":"dan paparan produk dinamik. Ia meningkatkan keterlihatan jenama, mempermudah pembelian, dan mendorong jualan, serta membina kesetiaan.",
+
+
       "cmsDashboard":"CMS DASHBOARD",
       "adminDashboard":"Papan pemuka pentadbir menawarkan kawalan terpusat, data masa nyata, dan laporan tersuai, mempermudah aliran kerja dan meningkatkan keselamatan untuk keputusan perniagaan yang pantas.",
       "exploreCMS":"TEROKA CMS DASHBOARD",
 
-      "adminDashboardMobile":"An admin dashboard offers centralised",
-      "adminDashboardMobile2":"control, real-time data, and custom reports, streamlining workflows and enhancing security for swift business decisions.",
+      "adminDashboardMobile":"Papan pemuka pentadbir menawarkan kawalan terpusat, data masa nyata, dan laporan tersuai, mempermudah aliran kerja dan meningkatkan keselamatan untuk keputusan perniagaan yang pantas.",
+      "adminDashboardMobile2":"",
 
 
       "investment":"INVESTMENT",
@@ -581,8 +616,8 @@
       "fintechWebsite":"Laman web Fintech dengan ciri Crypto, Blockchain, NFT, atau Gaming membolehkan transaksi masa nyata, pengurusan aset selamat, dan aliran pendapatan baru, meningkatkan analitik, keselamatan, dan kepercayaan dalam kewangan digital.",
       "exploreDigitalBoard":"TEROKA DIGITAL BOARD",
 
-      "fintechWebsiteMobile":"A Fintech website with Crypto, Blockchain,",
-      "fintechWebsiteMobile2":"NFT, or Gaming features enables real-time transactions, secure asset management, and new revenue streams, enhancing analytics, security, and trust in digital finance.",
+      "fintechWebsiteMobile":"Laman web Fintech dengan ciri Crypto, Blockchain, NFT, atau Gaming membolehkan transaksi masa nyata, pengurusan aset selamat, dan aliran pendapatan baru, meningkatkan analitik, keselamatan, dan kepercayaan dalam kewangan digital.",
+      "fintechWebsiteMobile2":"",
 
 
       "weDoMore": "KAMI LAKUKAN LEBIH DARIPADA INI",
@@ -590,20 +625,27 @@
       "industry":"ATAU INDUSTRI ANDA",
       "discoverUnique":"TEROKAI KEUNIKAN",
 
-      "noMatterMobile":"NO MATTER WHAT FIELD OR ",
-      "industryMobile":"INDUSTRY YOU'RE IN"
+      "noMatterMobile":"TANPA KIRA BIDANG ",
+      "industryMobile":"ATAU INDUSTRI ANDA"
 
     },
 
     "CreatingExplore":{
         "whatsOnYourMind": "APA YANG TERFIKIR",
         "whatsOnYourMind2": "DI MINDA ANDA",
+        "whatsOnYourMindMobile": "APA YANG TERFIKIR ",
+        "whatsOnYourMindMobile2": "DI MINDA ANDA",
         "eCommerce": "E-COMMERCE",
         "commercial": "COMMERCIAL",
         "cmsDashboard": "CMS DASHBOARD",
         "investment": "INVESTMENT",
-        "digitalBoard": "DIGITAL BOARD"
+        "digitalBoard": "DIGITAL BOARD",
 
+        "eCommerceTemplate": "Templat e-Commerce",
+        "commercialTemplate": "COMMERCIAL Template",
+        "CMSDashboardTemplate": "CMS DASHBOARD Template",
+        "investmentTemplate": "INVESTMENT Template",
+        "digitalBoradTemplate": "DIGITAL BOARD Template"
     },
 
     "OwnSite":{
@@ -662,9 +704,11 @@
       "startBuild": "MULAKAN BINAAN",
       "yourBusiness": "PERNIAGAAN ANDA",
 
-      "chooseYour":"Choose your",
-      "preferredSolution":"preferred solution",
-      "forBuilding":"for building a website",
+      "chooseYour":"",
+      "pilih":"Pilih",
+      "preferredSolution":"solusi kegemaran",
+      "forBuilding":"anda untuk bina",
+      "lamanWeb":"laman web.",
 
       "orderNow":"Tempah sekarang dari ",
       "requirement":"Di atas adalah keperluan untuk",
@@ -678,8 +722,8 @@
       "freeTesting":"Ujian Percuma",
       "what":"",
       "typeOf":"Jenis laman web",
-      "doYouWant":"",
-      "doYouWantM":"apa yang anda inginkan?",
+      "doYouWant":"", 
+      "apaYang":"apa yang anda inginkan?",
       "website":"Laman Web",
       "eCommerce":"e-Commerce",
 
@@ -692,8 +736,8 @@
       "nowYouCan":"Kini anda boleh",
       "saveMore":"jimat lebih banyak",
       "costC": "kos.",
-      "discount":"Diskaun untuk perniagaan ",
-      "rm1800":"permulaan RM1,800.00",
+      "discount":"Diskaun untuk perniagaan permulaan RM1,800.00",
+      "rm1800":"",
       "professional":"Untuk profesional, jimat",
       "rm2200":"sehingga RM2,200.00",
       "customMade":"Perlukan reka bentuk khas?",
@@ -715,9 +759,11 @@
       "careerOpportunitiesDescription2":"",
       "careerOpportunitiesDescription3":"",
 
-      "careerOpportunitiesTitleMobile":"Join Our Team for Exciting Career Opportunities",
-      "careerOpportunitiesTitleMobile2":"",
-      "careerOpportunitiesDescriptionMobile":"Empower your future with Current Tech Industries. Join our diverse team, work on impactful projects, and enjoy competitive salaries, benefits, and growth opportunities in a supportive environment. Advance your career with us.",
+      "careerOpportunitiesTitleMobile":"SERTA PASUKAN KAMI UNTUK",
+      "careerOpportunitiesTitleMobile2":"PELUANG KERJAYA YANG MENARIK",
+      "careerOpportunitiesDescriptionMobile":"Perkasakan masa depan anda dengan  ",
+      "careerOpportunitiesDescriptionMobile2":"Current Tech Industries. Sertai pasukan ",
+      "careerOpportunitiesDescriptionMobile3":"kami yang pelbagai, bekerja pada projek bermakna, dan nikmati gaji, faedah, serta peluang pertumbuhan dalam persekitaran yang menyokong. Majukan kerjaya anda bersama kami.",
 
       "ItProgrammer":{
         "ItProgrammerTitle":"IT PROGRAMMER",
@@ -809,7 +855,9 @@
         "productionCapacities": "meningkatkan pengurusan dan kapasiti pengeluaran syarikat, mendorong pertumbuhan yang ",
         "attractTopTalent": "kompetitif. Diiktiraf sebagai \"Syarikat Teknologi Baru,\" kami menarik bakat terbaik dan mengintegrasikan teknologi maju untuk kejayaan berterusan.",
         
-        "establishedInMobile": "Established in 2006, Current Tech Industries Sdn Bhd is a high-tech software enterprise based in Kuala Lumpur, Malaysia, with plans for expansion. Specialising in R&D, production, and sales of technology products, we offer comprehensive solutions to enhance enterprise management and production capacities, fostering competitive growth. Recognised as a \"New Technology Enterprise,\" we attract top talent and integrate advanced technologies for sustainable success.",
+        "establishedInMobile": "Ditubuhkan pada 2006, Current Tech Industries Sdn Bhd adalah syarikat perisian berteknologi tinggi yang berpusat di Kuala Lumpur, Malaysia, dengan rancangan pengembangan. Kami pakar dalam R&D, pengeluaran, dan penjualan produk teknologi, menawarkan penyelesaian komprehensif untuk meningkatkan pengurusan dan kapasiti pengeluaran syarikat, mendorong pertumbuhan yang kompetitif. Diiktiraf sebagai \"Syarikat Teknologi Baru,\" kami menarik bakat terbaik dan mengintegrasikan teknologi maju untuk kejayaan berterusan.",
+        "aboutCurrentTechMobile": "TENTANG",
+        "aboutCurrentTechMobile2": "CURRENT TECH INDUSTRIES",
 
 
         "designSolution": "KAMI MEREKA SOLUSI",
@@ -828,7 +876,8 @@
         "cD3": "",
         "cD4": "",
 
-        "engineerInnovativeMobile": "We engineer innovative solutions using AI, automation, and data insights to drive efficiency and growth. Our systems seamlessly blend digital and physical infrastructures for high performance. By collaborating with clients, we future-proof businesses and transform industries with precision and agility.",
+        "engineerInnovativeMobile": "Kami menghasilkan penyelesaian inovatif menggunakan AI, automasi, dan analitik ",
+        "engineerInnovativeMobiles": "data untuk meningkatkan kecekapan dan pertumbuhan. Sistem kami menggabungkan infrastruktur digital dan fizikal untuk prestasi tinggi. Dengan berkolaborasi bersama pelanggan, kami mempersiapkan perniagaan untuk masa depan dan mengubah industri dengan ketepatan dan kelincahan.",
         "engineerInnovativeMobile2": "",
 
         "strategyPlanning": "PERANCANGAN STRATEGI",
@@ -844,7 +893,7 @@
         "cP2": "",
         "cP3": "",
 
-        "leverageMobile": "Leverage advanced analytics and AI to align with market trends, streamline decision-making, and optimise resources. Empower teams to deploy scalable solutions for sustainable growth, ensuring long-term strategic success and competitive advantage.",
+        "leverageMobile": "Manfaatkan analitik lanjutan dan AI untuk menyelaraskan dengan tren pasaran, mempermudah pembuatan keputusan, dan mengoptimumkan sumber. Memberdayakan pasukan untuk melaksanakan penyelesaian yang boleh diskalakan bagi pertumbuhan lestari, memastikan kejayaan strategik jangka panjang dan kelebihan kompetitif.",
         "leverageMobile2": "",
 
 
@@ -875,12 +924,12 @@
         "craftSleek": "futuristik untuk memenuhi ",
         "todayNeeds": "permintaan hari ini.",
 
-        "driveInnoavtionMobile": "We drive innovation",
-        "cuttingEdgeMobile": "delivering cutting-edge ",
-        "shapeTheFutureMobile": "solutions that shape the future",
-        "technologyMobile": "Our technology is designed ",
-        "seamlessMobile": "to be seamless and easy to",
-        "userExperienceMobile": " use enhancing user experience",
+        "driveInnoavtionMobile": "Kami mendorong inovasi dengan ",
+        "cuttingEdgeMobile": "menyediakan solusi termaju untuk",
+        "shapeTheFutureMobile": " masa depan.",
+        "technologyMobile": "Teknologi kami direka untuk ",
+        "seamlessMobile": "kemudahan dan pengalaman ",
+        "userExperienceMobile": " pengguna yang lancar.",
 
         "whyCurrentTech": "MENGAPA CURRENT TECH?",
         "because": "KERANA KAMI MENCIPTA",
@@ -893,10 +942,10 @@
         "ourExpertise": "KEPAKARAN KAMI DALAM PEMBANGUNAN PRODUK",
         "powerful": "KUAT | UNIK | MODEN | INOVATIF | RESPONSIF | BERBEZA | KREATIF | CANTIK",
         
-        "ourExpertiseMobile": "OUR EXPERTISE IN",
-        "ourExpertiseMobile2": "PRODUCT DEVELOPMENT",
-        "powerfulMobile": "POWERFUL | UNIQUE | MODERN | INNOVATIVE  ",
-        "powerfulMobile2": "RESPONSIVE | DIFFERENT | CREATIVE | BEAUTIFUL",
+        "ourExpertiseMobile": "KEPAKARAN KAMI DALAM",
+        "ourExpertiseMobile2": "PEMBANGUNAN PRODUK",
+        "powerfulMobile": "KUAT | UNIK | MODEN | INOVATIF | RESPONSIF",
+        "powerfulMobile2": "BERBEZA | KREATIF | CANTIK",
 
         "exploreProducts": "MARI TEROKAI PRODUK KAMI",
         "buildAn": "BINA LAMAN WEB",
@@ -911,7 +960,9 @@
         "strongTeam": "Pasukan yang kuat terdiri daripada lebih 15 profesional dalam bidang IT, Aplikasi Mudah Alih, UI/UX, dan Pengurusan Teras, memacu inovasi dan menyediakan penyelesaian tersuai yang merangsang pertumbuhan serta memenuhi keperluan pelanggan yang berkembang.",
         "innovation": "",
         
-        "strongTeamMobile": "A strong team of 15+ professionals across IT, Mobile App, UI/UX, and Core Management, driving innovation and delivering tailored solutions that fuel growth and meet evolving client needs.",
+        "strongTeamMobile": "Pasukan yang kuat terdiri daripada lebih 15 profesional dalam bidang IT, Aplikasi Mudah Alih, UI/UX, dan Pengurusan Teras, memacu inovasi dan menyediakan penyelesaian ",
+        "strongTeamMobile2": "tersuai yang merangsang pertumbuhan ",
+        "strongTeamMobile3": "serta memenuhi keperluan pelanggan yang berkembang.",
 
         "teamExpertise": "Kepakaran Pasukan",
         "itEngineering": "IT ENGINEERING",
@@ -932,7 +983,7 @@
         "shapeTheFuture": "terkini yang membentuk masa depan melalui ",
         "teknologi": "teknologi.",
 
-        "dynamicItTeamMobile": "A dynamic IT team driving innovation and excellence, delivering cutting-edge solutions that shape the future through technology.",
+        "dynamicItTeamMobile": "Pasukan IT yang dinamik memacu inovasi dan kecemerlangan, menyediakan penyelesaian terkini yang membentuk masa depan melalui teknologi.",
 
         "mobileApp": "MOBILE APP ENGINEERING",
         "appStore": "App Store Deployment",
@@ -952,7 +1003,9 @@
         "devices": "unggul di pelbagai peranti, sambil menyesuaikan",
         "demands": "dengan cepat kepada permintaan pasaran.",
 
-        "mobileAppTeamMobile": "The Mobile App team creates high-performance, user-friendly applications, ensuring seamless experiences and superior performance across devices, while adapting swiftly to market demands.",
+        "mobileAppTeamMobile": "Pasukan Aplikasi Mudah Alih mencipta",
+        "mobileAppTeamMobile2": "aplikasi berprestasi tinggi dan mesra pengguna, memastikan pengalaman lancar dan prestasi unggul di pelbagai peranti, ",
+        "mobileAppTeamMobile3": "sambil menyesuaikan dengan cepat kepada permintaan pasaran.",
 
 
         "uiUxDesign": "UI AND UX DESIGN",
@@ -975,7 +1028,8 @@
         "bentuk": "bentuk minimalis dan penyelidikan pengguna ",
         "yang": "yang mendalam.",
 
-        "ourUiUxMobile": "Our UI/UX team creates exceptional, user-centered designs that blend aesthetics and functionality, enhancing usability through minimalist design and in-depth user research.",
+        "ourUiUxMobile": "Pasukan UI/UX kami mencipta reka bentuk ",
+        "ourUiUxMobile2": "luar biasa yang berpusatkan pengguna, menggabungkan estetik dan fungsionaliti, meningkatkan kebolehgunaan melalui reka bentuk minimalis dan penyelidikan pengguna yang mendalam.",
         
         "coreManagement": "CORE MANAGEMENT",
         "strategicPlanning": "Strategic Planning",
@@ -994,7 +1048,7 @@
         "strategicPlanningDataDriven": "pertumbuhan melalui perancangan strategik, ",
         "decisions": "keputusan berasaskan data, dan proses yang dioptimumkan, memastikan daya saing yang berterusan dan penciptaan nilai.",
         
-        "coreManagementTeamMobile": "The Core Management team drives growth through strategic planning, data-driven decisions, and optimised processes, ensuring sustained competitiveness and value creation.",
+        "coreManagementTeamMobile": "Pasukan Pengurusan Teras memacu pertumbuhan melalui perancangan strategik, keputusan berasaskan data, dan proses yang dioptimumkan, memastikan daya saing yang berterusan dan penciptaan nilai.",
 
         "workTogether": "MARI BERTENAGA BERSAMA",
         "joinOur": "JOM SERTAI PASUKAN",
@@ -1018,9 +1072,12 @@
           "email": "EMAIL *",
           "message": "MESSAGE *",
 
-          "messageSuccessfullyMobile": "Message has been successfully sent to us.",
-          "ourCustomerServiceMobile": "Our customer service team will respond to",
-          "ourCustomerServiceMobile2": "you as soon as possible."
+          "messageSuccessfullyMobile": "Mesej anda telah berjaya dihantar kepada kami.",
+          "ourCustomerServiceMobile": " akan memberikan maklum balas kepada ",
+          "ourCustomerServiceMobile2": "anda secepat mungkin.",
+          "hesitationMobile": "Jangan biarkan keraguan menghalang anda daripada menghubungi kami.",
+          "hesitationMobile2": "",
+          "yourMessageMobile": "Mesej anda sangat penting bagi kami. Pasukan perkhidmatan pelanggan kami"
 
       },
 
@@ -1055,11 +1112,11 @@
 
     "Footer":{
         "socialMediaDescription":"Start to connect with us:",
-        "quickLinks": "QUICK LINKS:",
-        "legal": "LEGAL:",
-        "office": "OFFICE:",
+        "quickLinks": "QUICK LINKS",
+        "legal": "LEGAL",
+        "office": "OFFICE",
         "sunwayOffice": "Sunway Velocity Office, (VO6) Signature 2 55100, Kuala Lumpur MALAYSIA.",
-        "email": "EMAIL:",
+        "email": "EMAIL",
         "marketing": "marketing@currencttech.pro  ",
         "copyRight": "Copyright  ",
         "currentTech": "Current Tech Industries",
@@ -1067,6 +1124,14 @@
         "currentTechIndustries": "Current Tech Industries 2024.",
         "allRightReserve": "All rights reserved."
       },
+
+      "DisclaimerModal":{
+            "name": "DISCLAIMER"
+        },
+
+        "termsAndConditionModal":{
+            "name": "TERMS & CONDITION"
+        },
 
 
       "summary": "RINGKASAN",
@@ -1089,15 +1154,15 @@
 
       "E-INVOICE": "E-INVOICE",
       "eInbill": "E-INBILL",
-      "eInvoiceCategory": "Pendidikan | Tadika | Sekolah Rendah | Sekolah Menengah | Universiti | Pusat Tuisyen",
+      "eInvoiceCategory": "E invoice | Sistem POS | Perisian Pesanan",
       "eInvoiceDescription": "E-inbill lebih daripada POS dan e-invois. Disesuaikan untuk F&B, kecantikan, dan runcit, ia kunci kepada kelebihan perniagaan anda.",
       "eInvoicedescriptionMobile": "E-inbill lebih daripada POS dan e-invois. Disesuaikan untuk F&B, kecantikan, dan runcit, ia kunci kepada kelebihan perniagaan anda.",
       "plan": "PELAN",
       "features": "CIRI-CIRI & SPEC",
       "eInvoiceSummary": "E-inbill menyokong perniagaan dari pelbagai saiz, dari peniaga jalanan hingga rangkaian besar. Perkakasan, perisian, pembayaran, dan sokongan digabungkan dalam satu penyelesaian lancar, memastikan pengalaman terbaik untuk anda dan pelanggan anda.",
       "eInvoiceSummary2": "",
-      "eInvoiceSummaryMobile": "E-inbill menyokong perniagaan dari pelbagai saiz, dari peniaga jalanan hingga rangkaian besar. Perkakasan, perisian, pembayaran, dan sokongan digabungkan dalam satu penyelesaian lancar, memastikan pengalaman terbaik untuk anda dan pelanggan anda.",
-      "eInvoiceSummaryMobile2": "",
+      "eInvoiceSummaryMobile": "E-inbill menyokong perniagaan dari ",
+      "eInvoiceSummaryMobile2": "pelbagai saiz, dari peniaga jalanan hingga rangkaian besar. Perkakasan, perisian, pembayaran, dan sokongan digabungkan dalam satu penyelesaian lancar, memastikan pengalaman terbaik untuk anda dan pelanggan anda.",
 
       "ATTENDANCE": "KEHADIRAN",
       "motionCapture": "MOTION CAPTURE",
@@ -1124,8 +1189,9 @@
       "featuresMaster": "CIRI-CIRI: (MASTER DASHBOARD)",
       "financeSummary": "Smart CMS Dashboard memberi kuasa kepada broker dan pelabur dengan alat yang kuat. Broker mengawal melalui papan pemuka utama, mengurus dompet, yuran, dan laporan masa nyata. Pelabur menikmati papan pemuka elegan dengan dompet digital, ganjaran, dan struktur afiliasi. Dengan keselamatan terbina dan integrasi copy trading serta PAMM, ia memastikan pengalaman perdagangan yang selamat dan menarik.",
       "financeSummary2": "",
-      "financeSummaryMobile": "Smart CMS Dashboard memberi kuasa kepada broker dan pelabur dengan alat yang kuat. Broker mengawal melalui papan pemuka utama, mengurus dompet, yuran, dan laporan masa nyata. Pelabur menikmati papan pemuka elegan dengan dompet digital, ganjaran, dan struktur afiliasi. Dengan keselamatan terbina dan integrasi copy trading serta PAMM, ia memastikan pengalaman perdagangan yang selamat dan menarik.",
-      "financeSummaryMobile2": "",
+      "financeSummaryMobile": "Smart CMS Dashboard memberi kuasa ",
+      "financeSummaryMobile2": "kepada broker dan pelabur dengan alat ",
+      "financeSummaryMobile3": "yang kuat. Broker mengawal melalui papan pemuka utama, mengurus dompet, yuran, dan laporan masa nyata. Pelabur menikmati papan pemuka elegan dengan dompet digital, ganjaran, dan struktur afiliasi. Dengan keselamatan terbina dan integrasi copy trading serta PAMM, ia memastikan pengalaman perdagangan yang selamat dan menarik.",
 
       "STOCKIES": "STOCKIES",
       "beverage": "BEVERAGE STORAGE SYSTEM",
@@ -1136,14 +1202,15 @@
       "stockiesDescriptionMobile": "Kami menawarkan sistem penyimpanan minuman premium dengan penjejakan pesanan dan rekod penyimpanan tanpa gangguan. Ciri utama termasuk pengurusan keahlian, pendaftaran pekerja, dan penjejakan komisen.",
       "stockiesSummary": "Stockies Beverage Storage System menawarkan penyelesaian komprehensif untuk tempat hiburan di Malaysia. Dengan kawalan inventori, amaran stok rendah, penjejakan pesanan, serta ciri seperti kawasan keahlian, pendaftaran pekerja, dan pengurusan komisen, ia mempermudah operasi dan meningkatkan kecekapan, meningkatkan perkhidmatan dan pengalaman pelanggan.",
       "stockiesSummary2": "",
-      "stockiesSummaryMobile": "Stockies Beverage Storage System menawarkan penyelesaian komprehensif untuk tempat hiburan di Malaysia. Dengan kawalan inventori, amaran stok rendah, penjejakan pesanan, serta ciri seperti kawasan keahlian, pendaftaran pekerja, dan pengurusan komisen, ia mempermudah operasi dan meningkatkan kecekapan, meningkatkan perkhidmatan dan pengalaman pelanggan.",
-      "stockiesSummaryMobile2": "",
+      "stockiesSummaryMobile": "Stockies Beverage Storage System menawarkan penyelesaian komprehensif untuk tempat hiburan di Malaysia. Dengan kawalan inventori, amaran stok rendah, penjejakan pesanan, serta ciri seperti ",
+      "stockiesSummaryMobile2": "kawasan keahlian, pendaftaran pekerja, ",
+      "stockiesSummaryMobile3": "dan pengurusan komisen, ia mempermudah operasi dan meningkatkan kecekapan, meningkatkan perkhidmatan dan pengalaman pelanggan.",
 
       "BROKERAGE": "PEWALAAN",
       "brokerage": "BROKERAGE",
       "brokerageCategory": "Full label solution | Integration | Licensing | CMS | Servicing",
-      "brokerageDescription": "Kami mengintegrasikan platform perdagangan dengan backend pintar kami, menawarkan penyelesaian label MetaTrader dan cTrader sepenuhnya. Perkhidmatan sehenti kami menghapuskan kerumitan, mempercepatkan operasi, dan memastikan anda tidak terlepas waktu yang ideal.",
-      "brokerageDescription2": "",
+      "brokerageDescription": "Kami mengintegrasikan platform perdagangan dengan backend pintar kami, menawarkan penyelesaian label MetaTrader dan cTrader sepenuhnya. Perkhidmatan sehenti kami menghapuskan kerumitan, mempercepatkan operasi, dan memastikan anda tidak ",
+      "brokerageDescription2": "terlepas waktu yang ideal.",
       "brokerageDescription3": "",
       "brokerageDescriptionMobile": "Kami mengintegrasikan platform perdagangan dengan backend pintar kami, menawarkan penyelesaian label MetaTrader dan cTrader sepenuhnya. Perkhidmatan sehenti kami menghapuskan kerumitan, mempercepatkan operasi, dan memastikan anda tidak terlepas waktu yang ideal.",
       "featuresClient": "CIRI-CIRI: (MQ CLIENT TERMINAL)",
@@ -1165,8 +1232,8 @@
       "featuresEaStrategy": "CIRI-CIRI: (EA STRATEGY)",
       "EABuilderSummary": "Sistem auto-perdagangan EA pintar mengautomasikan strategi kompleks seperti mengikuti tren, scalping, dan arbitrase, menyesuaikan dengan fluktuasi pasaran untuk keputusan yang tepat. Ia meningkatkan kecekapan, mengurangkan campur tangan manusia, memastikan pengurusan risiko yang kukuh, dan menawarkan tetapan peribadi untuk prestasi perdagangan yang lebih baik.",
       "EABuilderSummary2": "",
-      "EABuilderSummaryMobile": "Sistem auto-perdagangan EA pintar mengautomasikan strategi kompleks seperti mengikuti tren, scalping, dan arbitrase, menyesuaikan dengan fluktuasi pasaran untuk keputusan yang tepat. Ia meningkatkan kecekapan, mengurangkan campur tangan manusia, memastikan pengurusan risiko yang kukuh, dan menawarkan tetapan peribadi untuk prestasi perdagangan yang lebih baik.",
-      "EABuilderSummaryMobile2": "",
+      "EABuilderSummaryMobile": "Sistem auto-perdagangan EA pintar mengautomasikan strategi kompleks seperti mengikuti tren, scalping, dan arbitrase, menyesuaikan dengan fluktuasi pasaran ",
+      "EABuilderSummaryMobile2": "untuk keputusan yang tepat. Ia meningkatkan kecekapan, mengurangkan campur tangan manusia, memastikan pengurusan risiko yang kukuh, dan menawarkan tetapan peribadi untuk prestasi perdagangan yang lebih baik.",
 
       "COIN.WALLET": "COIN.WALLET",
       "cryto": "CRYPTO GATEWAY WALLET",

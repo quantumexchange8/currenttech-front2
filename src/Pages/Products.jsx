@@ -10,6 +10,7 @@ import ScrollToTopButton from '../Components/ScrollToTopButton';
 const Products = () => {
     const { t } = useTranslation();
     const [selectedProduct, setSelectedProduct] = useState('EDUCATION');
+    const [animationKey, setAnimationKey] = useState(0); // Unique key to force re-render
 
     const currentProduct = productData.find((product) => product.name === selectedProduct);
 
@@ -21,16 +22,17 @@ const Products = () => {
         });
     }, []);
 
+    // Force animations to restart on product change
     useEffect(() => {
-        AOS.refresh();
+        setAnimationKey((prev) => prev + 1); // Increment the key to re-render
     }, [selectedProduct]);
 
     return (
         <div className='flex flex-col w-full justify-center gap-[150px] md:gap-[200px] pt-[50px[ md:pt-[80px] pb-[200px] md:pb-[250px]'>
             {/* Top Image */}
             <div className='w-full relative'>
-                <img src={image1} alt='Special Image 1' className='hidden xl:block w-full object-cover' />
-                <img src={imageM1} alt='Special Image 1' className='xl:hidden w-full' />
+                <img src={image1} alt='Special 1' className='hidden xl:block w-full object-cover' />
+                <img src={imageM1} alt='Special 1' className='xl:hidden w-full' />
                 <div className='hidden xl:block absolute bottom-[20%] left-1/2 transform -translate-x-1/2 text-[#D1D5DB] md:text-3xl lg:text-4xl xl:text-[64px] text-center font-light w-full'>
                     <div className='leading-normal'>{t("Products.weBuild")}</div>
                     <div className='leading-normal'>{t("Products.awesome")}</div>
@@ -43,7 +45,7 @@ const Products = () => {
             </div>
 
             {/* Title */}
-            <div className='flex flex-col items-center gap-[30px]'>
+            <div className='flex flex-col items-center gap-5 xl:gap-10'>
                 <div className='text-2xl md:text-5xl lg:text-[64px] text-[#153764] font-normal leading-normal'>
                     {t("Products.imaginative")}
                 </div>
@@ -60,7 +62,7 @@ const Products = () => {
                     <button
                         key={product.name}
                         className={`text-xl font-semibold leading-normal ${selectedProduct === product.name ? 'text-[#153764]' : 'text-[#557AAA]'}`}
-                        onClick={() => [setSelectedProduct(product.name), window.scrollTo({ top: 1200, behavior: 'smooth'})]}
+                        onClick={() => [setSelectedProduct(product.name), window.scrollTo({ top: 1200, behavior: 'instant'})]}
                     >
                         {t(product.name)}
                     </button>
@@ -74,7 +76,7 @@ const Products = () => {
                     <button
                         key={product.name}
                         className={`text-xl font-semibold leading-normal ${selectedProduct === product.name ? 'text-[#153764]' : 'text-[#557AAA]'}`}
-                        onClick={() => [setSelectedProduct(product.name), window.scrollTo({ top: 1000, behavior: 'smooth'})]}
+                        onClick={() => [setSelectedProduct(product.name), window.scrollTo({ top: 2000, behavior: 'smooth'})]}
                     >
                         {t(product.name)}
                     </button>
@@ -82,13 +84,13 @@ const Products = () => {
                 </div>
             </div>
             {/* Md */}
-            <div className='sticky top-[80px] z-10 hidden lg:hidden md:flex justify-center items-center w-full bg-[#E5E7EB] h-auto py-[35px]' >
-                <div className='w-full flex flex-wrap justify-center gap-10'>
+            <div className='sticky top-[80px] z-10 hidden lg:hidden sm:flex justify-center items-center w-full bg-[#E5E7EB] h-auto py-[35px] px-[25px]' >
+                <div className='grid grid-cols-4 w-full justify-center gap-10'>
                     {productData.map((product) => (
                     <button
                         key={product.name}
                         className={`text-xl font-semibold leading-normal ${selectedProduct === product.name ? 'text-[#153764]' : 'text-[#557AAA]'}`}
-                        onClick={() => [setSelectedProduct(product.name), window.scrollTo({ top: 900, behavior: 'smooth'})]}
+                        onClick={() => [setSelectedProduct(product.name), window.scrollTo({ top: 1700, behavior: 'smooth'})]}
                     >
                         {t(product.name)}
                     </button>
@@ -96,7 +98,21 @@ const Products = () => {
                 </div>
             </div>
             {/* Mobile */}
-            <div className='md:hidden sticky top-[50px] z-10 flex justify-center items-center p-[25px] w-full bg-[#E5E7EB]'>
+            <div className='xs:hidden s:block sm:hidden sticky top-[50px] z-10 flex justify-center items-center py-[25px] px-[13px] w-full bg-[#E5E7EB]'>
+                <div className='grid grid-cols-4 justify-center gap-y-5 gap-x-[15px]'>
+                    {productData.map((product) => (
+                    <button
+                        key={product.name}
+                        className={`text-sm font-semibold leading-normal ${selectedProduct === product.name ? 'text-[#153764]' : 'text-[#557AAA]'}`}
+                        onClick={() => [setSelectedProduct(product.name), window.scrollTo({ top: 1000, behavior: 'smooth' })]}
+                    >
+                        {t(product.name)}
+                    </button>
+                    ))}
+                </div>
+            </div>
+            {/* Mobile */}
+            <div className='hidden s:hidden xs:flex justify-center items-center  sticky top-[50px] z-10 p-[25px] w-full bg-[#E5E7EB]'>
                 <div className='flex flex-wrap justify-center gap-5'>
                     {productData.map((product) => (
                     <button
@@ -109,13 +125,14 @@ const Products = () => {
                     ))}
                 </div>
             </div>
+            
 
             {/* Content */}
-            <div className='flex flex-col gap-[100px]'>
+            <div key={animationKey} className='flex flex-col gap-[100px] xl:gap-[200px]'>
                 {/* Product Image */}
                 <div className='flex justify-center items-center px-[25px]' data-aos="fade-up">
                     <div className='max-w-[1200px]'>
-                        <img src={require(`../Assets/Images/Product/${currentProduct.image}`)} />
+                        <img src={require(`../Assets/Images/Product/${currentProduct.image}`)} alt="" />
                     </div>
                 </div>
 
@@ -126,8 +143,8 @@ const Products = () => {
                         {/* Product Title */}
                         <div className='flex flex-col gap-[30px] md:gap-[50px]'>
                             <div className=' flex flex-col gap-[10px]' data-aos="fade-up" data-aos-delay="200">
-                                <div className='text-xl md:text-4xl text-[rgb(21,55,100)] font-bold text-shadow-custom'>{t(currentProduct.title)}</div>
-                                <div className='text-sm md:text-xl text-[#557AAA] font-normal'>{t(currentProduct.category)}</div>
+                                <div className='text-xl md:text-4xl text-[rgb(21,55,100)] font-bold text-shadow-custom leading-normal'>{t(currentProduct.title)}</div>
+                                <div className='text-sm md:text-xl text-[#557AAA] font-medium leading-normal'>{t(currentProduct.category)}</div>
                             </div>
                             {/* Web */}
                             <div className='hidden md:block' data-aos="fade-up" data-aos-delay="400">
@@ -137,8 +154,8 @@ const Products = () => {
                             </div>
                             {/* Mobile */}
                             <div className='md:hidden' data-aos="fade-up" data-aos-delay="400">
-                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-normal'>{t(currentProduct.description)}</div>
-                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-normal'>{t(currentProduct.description)}</div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-normal'>{t(currentProduct.descriptionMobile)}</div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal leading-normal'>{t(currentProduct.descriptionMobile2)}</div>
                             </div>
                         </div>
 
@@ -146,17 +163,17 @@ const Products = () => {
                         <div className='flex flex-col gap-[50px] md:gap-20'>
                             {currentProduct.specifications && Object.keys(currentProduct.specifications).map((section) => (
                             <div className='flex flex-col gap-[10px]'  data-aos="fade-up" data-aos-delay="200" key={section}>
-                                <div className='text-base md:text-2xl text-[#557AAA] font-normal'>
+                                <div className='text-base md:text-2xl text-[#557AAA] font-normal leading-normal'>
                                     {t(currentProduct.sectionTitles[section])}
                                 </div>
-                                <div className='flex flex-wrap gap-[10px] md:gap-5 w-[379px] md:w-full'>
+                                <div className='flex flex-wrap gap-[10px] md:gap-5 w-full md:w-full'>
                                 {Array.isArray(currentProduct.specifications[section]) ? (
                                     currentProduct.specifications[section].map((item, index) => (
                                     <div
                                     key={index}
                                     className='py-[5px] md:py-[10px] px-[10px] md:px-5 rounded-[5px] bg-gradient-to-b from-[#EAF3FF] to-[#BBD7FE] shadow-custom text-sm md:text-xl text-[#4B5563] font-normal leading-normal'
                                     >
-                                        <div>
+                                        <div className=' leading-normal'>
                                             {item}
                                         </div>
                                     </div>
@@ -173,7 +190,7 @@ const Products = () => {
 
                         {/* Summary */}
                         <div className='flex flex-col gap-[10px]' data-aos="fade-up" data-aos-delay="200">
-                            <div className='text-base md:text-2xl text-[#557AAA] font-normal'>{t("summary")}</div>
+                            <div className='text-base md:text-2xl text-[#557AAA] font-normal'>{t("summary")}:</div>
                             {/* Web */}
                             <div className='hidden md:block'>
                                 <div className='text-2xl text-[#4B5563] font-normal leading-normal'>{t(currentProduct.summary)}</div>
@@ -181,8 +198,9 @@ const Products = () => {
                             </div>
                             {/* Mobile */}
                             <div className='md:hidden'>
-                                <div className='text-base text-[#4B5563] font-normal'>{t(currentProduct.summaryMobile)}</div>
-                                <div className='text-base text-[#4B5563] font-normal'>{t(currentProduct.summaryMobile2)}</div>
+                                <div className='text-base text-[#4B5563] font-normal leading-normal'>{t(currentProduct.summaryMobile)}</div>
+                                <div className='text-base text-[#4B5563] font-normal leading-normal'>{t(currentProduct.summaryMobile2)}</div>
+                                <div className='text-base text-[#4B5563] font-normal leading-normal'>{t(currentProduct.summaryMobile3)}</div>
                             </div>
                         </div>
                     </div>

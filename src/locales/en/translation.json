@@ -61,7 +61,7 @@
             "descriptionMobile": "Use advanced technology to ",
             "descriptionMobile2": "enhance productivity and ",
             "descriptionMobile3": "streamline processes for improved work quality.",
-            "descriptionMobile4": "work quality.",
+            "descriptionMobile4": "",
             "descriptionMd": "Use advanced technology to enhance productivity and streamline processes for improved work quality."
           }
         },
@@ -127,7 +127,8 @@
             "boldMobile2": "by LHDN.",
             "descriptionMobile": " Our e-Invoice system,",
             "descriptionMobile2": " streamlining invoicing",
-            "descriptionMobile3": " processes and ensuring compliance effortlessly."
+            "descriptionMobile3": " processes and ensuring compliance effortlessly.",
+            "descriptionMobile4": ""
           },
           "forexLabelSolution": {
             "title": "FOREX LABEL SOLUTION",
@@ -186,6 +187,7 @@
             "educationImgDescriptionM": "Unlocking endless learning potential. Our",
             "educationImgDescriptionM2": "technology empowers schools to achieve",
             "educationImgDescriptionM3": "greatness in the classroom.",
+            "educationImgDescriptionIpad": "Unlocking endless learning potential. Our technology empowers schools to achieve greatness in the classroom.",
             "F&BImgDescription": "Ordering apps and diverse payment",
             "F&BImgDescription2": "methods ensure a seamless, delightful",
             "F&BImgDescription3": "dining experience.",
@@ -215,7 +217,8 @@
             "enterpriseImgDescription3":"",
             "enterpriseImgDescriptionMobile":"An effective enterprise system enhances communication and drives employee progress.",
             "enterpriseImgDescriptionMobile2":"",
-            "enterpriseImgDescriptionMobile3":""
+            "enterpriseImgDescriptionMobile3":"",
+            "enterpriseImgDescriptionIpad":"An effective enterprise system enhances communication and drives employee progress."
           },
           "homeReminderTitle":"No matter what field or industry you're in.",
           "homeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
@@ -253,10 +256,13 @@
           "coreService": "OUR CORE SERVICE",
           "cmsSystem": "CMS SYSTEM",
           "empower": "Empower your business",
+          "empowerIpad": "Empower your business ",
+          "empowerIpad2": "with bespoke software solutions.",
           "bespoke": "with bespoke software solutions.",
           "website": "WEBSITE",
           "buildWebsite": "We build websites end-to-end",
           "precision": "with precision from plan to backend.",
+          "buildWebsiteIpad": "We build websites end-to-end with precision from plan to backend.",
           "mobileApp": "MOBILE APPLICATIONS",
           "transformCoreIdeas": "We transform core ideas into",
           "innovative": "innovative applications for mobile.",
@@ -269,6 +275,7 @@
           "supportAndServices": "SUPPORT & SERVICES",
           "ensuring": "Ensuring your systems operate",
           "performance": "at peak performance and efficiency.",
+          "maximiseIpad": "Maximise your business, boosts productivity and customer satisfaction.",
 
           "transformCoreIdeasMobile": "We transform core ideas into",
           "transformCoreIdeasMobile2": "innovative applications for mobile.",
@@ -321,6 +328,7 @@
           "websiteDescriptionMobile2":"",
           "managementDescription":"No matter your business size, a solid management system is",
           "managementDescription2":"essential. We’re here to keep your operations seamless.",
+          "managementDescriptionIpad":"No matter your business size, a solid management system is essential. We’re here to keep your operations seamless.",
           "managementDescriptionMobile":"No matter your business size, a solid management system is essential. We’re",
           "managementDescriptionMobile2":" here to keep your operations seamless.",
           "paymentDescription":"This is the service businesses value most, delivered flawlessly.",
@@ -427,6 +435,9 @@
           "customizeIdea_Titles":"is more than just ideas.",
           "customizeIdea_Title2":"At the same time, we also need to",
           "customizeIdea_Title2s":"understand what you're thinking.",
+          "customizeIdea_Title2M":"At the same time, we also need to",
+          "customizeIdea_Title2M2":"understand what you're thinking.",
+          "customizeIdea_Title2M3":"",
           "customizeIdea_Title3":"Furthermore, it's essential to",
           "customizeIdea_Title3s":"know what your customers like.",
           "customizeIdea_Title4":"We believe you care just as",
@@ -454,7 +465,10 @@
           "customisationMobile":"CUSTOMISATION",
           "directMobile":"IS YOUR DIRECT",
           "PathMobile":"PATH TO ADVANTAGE",
-          "tailoredWebPagesMobile":"Tailored web pages and apps enhance engagement by catering to user preferences, boosting satisfaction, retention, and loyalty."
+          "tailoredWebPagesMobile":"Tailored web pages and apps enhance engagement by catering to user preferences, boosting satisfaction, retention, and loyalty.",
+          "tailoredWebPagesMobile2":"",
+          "tailoredWebPagesMobile3":"",
+          "tailoredWebPagesMobile4":""
 
         },
 
@@ -571,6 +585,9 @@
           "commercialWebPage":"A commercial web page boosts customer accessibility, 24/7 availability, and dynamic product displays. It enhances brand visibility, streamlines purchases, and drives sales, fostering loyalty.",
           "exploreCommercial":"EXPLORE COMMERCIAL",
 
+          "commercialWebPageMobile":"A commercial web page boosts customer accessibility, 24/7 availability, and dynamic product displays. It enhances brand visibility, streamlines purchases, and drives sales, fostering loyalty.",
+          "commercialWebPageMobile2":"",
+
           "cmsDashboard":"CMS DASHBOARD",
           "adminDashboard":"An admin dashboard offers centralised control, real-time data, and custom reports, streamlining workflows and enhancing security for swift business decisions.",
           "exploreCMS":"EXPLORE CMS DASHBOARD",
@@ -604,12 +621,19 @@
       "CreatingExplore":{
             "whatsOnYourMind": "WHAT'S ON YOUR MIND",
             "whatsOnYourMind2": "",
+            "whatsOnYourMindMobile": "WHAT'S ON ",
+            "whatsOnYourMindMobile2": "YOUR MIND",
             "eCommerce": "E-COMMERCE",
             "commercial": "COMMERCIAL",
             "cmsDashboard": "CMS DASHBOARD",
             "investment": "INVESTMENT",
-            "digitalBoard": "DIGITAL BOARD"
+            "digitalBoard": "DIGITAL BOARD",
 
+            "eCommerceTemplate": "e-Commerce Template",
+            "commercialTemplate": "COMMERCIAL Template",
+            "CMSDashboardTemplate": "CMS DASHBOARD Template",
+            "investmentTemplate": "INVESTMENT Template",
+            "digitalBoradTemplate": "DIGITAL BOARD Template"
         },
 
       "OwnSite":{
@@ -681,8 +705,11 @@
           "yourBusiness": "YOUR BUSINESS",
 
           "chooseYour":"Choose your",
+          "pilih":"",
           "preferredSolution":"preferred solution",
           "forBuilding":"for building a website",
+          "lamanWeb":"",
+
 
           "orderNow":"Order now from",
           "requirement":"The above are the requirements for",
@@ -697,7 +724,7 @@
           "what":"What",
           "typeOf":"type of website",
           "doYouWant":"do you want?",
-          "doYouWantM":"",
+          "apaYang":"",
           "website":"Website",
           "eCommerce":"e-Commerce",
 
@@ -736,7 +763,8 @@
           "careerOpportunitiesTitleMobile":"Join Our Team for Exciting Career Opportunities",
           "careerOpportunitiesTitleMobile2":"",
           "careerOpportunitiesDescriptionMobile":"Empower your future with Current Tech Industries. Join our diverse team, work on impactful projects, and enjoy competitive salaries, benefits, and growth opportunities in a supportive environment. Advance your career with us.",
-
+          "careerOpportunitiesDescriptionMobile2":"",
+          "careerOpportunitiesDescriptionMobile3":"",
           "ItProgrammer":{
             "ItProgrammerTitle":"IT PROGRAMMER",
             "ItProgrammerDescription":"Skill & at lease 1 Year(s) experience.",
@@ -828,7 +856,8 @@
             "attractTopTalent": "we attract top talent and integrate advanced technologies for sustainable success.",
             
             "establishedInMobile": "Established in 2006, Current Tech Industries Sdn Bhd is a high-tech software enterprise based in Kuala Lumpur, Malaysia, with plans for expansion. Specialising in R&D, production, and sales of technology products, we offer comprehensive solutions to enhance enterprise management and production capacities, fostering competitive growth. Recognised as a \"New Technology Enterprise,\" we attract top talent and integrate advanced technologies for sustainable success.",
-
+            "aboutCurrentTechMobile": "ABOUT CURRENT TECH INDUSTRIES",
+            "aboutCurrentTechMobile2": "",
 
             "designSolution": "WE DESIGN SOLUTIONS",
             "engineerInnovative": "We engineer innovative solutions using AI, ",
@@ -847,6 +876,7 @@
             "cD4": "",
 
             "engineerInnovativeMobile": "We engineer innovative solutions using AI, automation, and data insights to drive efficiency and growth. Our systems seamlessly blend digital and physical infrastructures for high performance. By collaborating with clients, we future-proof businesses and transform industries with precision and agility.",
+            "engineerInnovativeMobiles": "  ",
             "engineerInnovativeMobile2": "",
 
             "strategyPlanning": "STRATEGY PLANNING",
@@ -930,6 +960,8 @@
             "innovation": "innovation and delivering tailored solutions that fuel growth and meet evolving client needs.",
             
             "strongTeamMobile": "A strong team of 15+ professionals across IT, Mobile App, UI/UX, and Core Management, driving innovation and delivering tailored solutions that fuel growth and meet evolving client needs.",
+            "strongTeamMobile2": "",
+            "strongTeamMobile3": "",
 
             "teamExpertise": "Team's Expertise",
             "itEngineering": "IT ENGINEERING",
@@ -971,6 +1003,8 @@
             "demands": "demands.",
 
             "mobileAppTeamMobile": "The Mobile App team creates high-performance, user-friendly applications, ensuring seamless experiences and superior performance across devices, while adapting swiftly to market demands.",
+            "mobileAppTeamMobile2": "",
+            "mobileAppTeamMobile3": "",
 
 
             "uiUxDesign": "UI AND UX DESIGN",
@@ -994,6 +1028,7 @@
             "yang": "",
 
             "ourUiUxMobile": "Our UI/UX team creates exceptional, user-centered designs that blend aesthetics and functionality, enhancing usability through minimalist design and in-depth user research.",
+            "ourUiUxMobile2": "",
             
             "coreManagement": "CORE MANAGEMENT",
             "strategicPlanning": "Strategic Planning",
@@ -1038,7 +1073,10 @@
 
             "messageSuccessfullyMobile": "Message has been successfully sent to us.",
             "ourCustomerServiceMobile": "Our customer service team will respond to",
-            "ourCustomerServiceMobile2": "you as soon as possible."
+            "ourCustomerServiceMobile2": "you as soon as possible.",
+            "hesitationMobile": "Don't let hesitation keep you from reaching out to us.",
+            "hesitationMobile2": "",
+            "yourMessageMobile": "Your message is of utmost importance to us."
 
         },
 
@@ -1076,7 +1114,7 @@
           "legal": "LEGAL",
           "office": "OFFICE",
           "sunwayOffice": "Sunway Velocity Office, (VO6) Signature 2 55100, Kuala Lumpur MALAYSIA.",
-          "email": "EMAIL:",
+          "email": "EMAIL",
           "marketing": "marketing@currencttech.pro  ",
           "copyRight": "Copyright  ",
           "currentTech": "Current Tech Industries",
@@ -1146,7 +1184,7 @@
             "marketing": "marketing@currencttech.pro"
         },
 
-        "Disclaimer":{
+        "DisclaimerModal":{
             "name": "DISCLAIMER"
         },
 
@@ -1211,6 +1249,7 @@
         "financeSummary2": "",
         "financeSummaryMobile": "Smart CMS Dashboard empowers brokers and investors with powerful tools. Brokers gain control through the master dashboard, managing wallets, fees, and real-time reports. Investors enjoy a sleek dashboard with digital wallets, rewards, and affiliate structures. With built-in security and integration of copy trading and PAMM, it ensures a secure, engaging trading experience.",
         "financeSummaryMobile2": "",
+        "financeSummaryMobile3": "",
 
         "STOCKIES": "STOCKIES",
         "beverage": "BEVERAGE STORAGE SYSTEM",
@@ -1223,6 +1262,8 @@
         "stockiesSummary2": "",
         "stockiesSummaryMobile": "Stockies Beverage Storage System offers a comprehensive solution for Malaysia's entertainment venues. With inventory control, low-stock alerts, order tracking, and features like membership areas, employee check-ins, and commission management, it streamlines operations and enhances efficiency, elevating both service and customer experience.",
         "stockiesSummaryMobile2": "",
+        "stockiesSummaryMobile3": "",
+
 
         "BROKERAGE": "BROKERAGE",
         "brokerage": "BROKERAGE",
@@ -1248,9 +1289,9 @@
         "EABuilderDescription3": "",
         "EABuilderDescriptionMobile": "The rise of AI in trading is an inevitable trend. We specialise in developing intelligent trading systems that transform top traders' strategies into AI-driven solutions, seamlessly integrating with MetaTrader 4, MetaTrader 5, and cTrader platforms.",
         "featuresEaStrategy": "FEATURES: (EA STRATEGY)",
-        "EABuilderSummary": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "EABuilderSummary": "The intelligent EA auto-trading system automates complex strategies like trend following, scalping, and arbitrage, adapting to market fluctuations for precise decisions. It boosts efficiency, reduces human intervention, ensures strong risk management, and offers personalised settings for improved trading performance.",
         "EABuilderSummary2": "",
-        "EABuilderSummaryMobile": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "EABuilderSummaryMobile": "The intelligent EA auto-trading system automates complex strategies like trend following, scalping, and arbitrage, adapting to market fluctuations for precise decisions. It boosts efficiency, reduces human intervention, ensures strong risk management, and offers personalised settings for improved trading performance.",
         "EABuilderSummaryMobile2": "",
 
         "COIN.WALLET": "COIN.WALLET",
@@ -1261,9 +1302,9 @@
         "crytoDescription3": "",
         "crytoDescriptionMobile": "TTBVNK simplifies cross-border payments, enhancing security for merchants. With easy, free account setup, it offers a reliable and efficient payment solution for businesses.",
         "crytoFeatures": "FEATURES:",
-        "crytoSummary": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "crytoSummary": "Scale globally with TTBVNK. Accept instant crypto payments in Bitcoin, Ethereum, and more, with no technical integration. Our intuitive wallet makes joining the digital economy effortless.",
         "crytoSummary2": "",
-        "crytoSummaryMobile": "MetaQuotes (MT5) and cTrader offer seamless integration, customisation, and powerful features for brokers, investors, and agents. With leverage up to 1:500 or 1:1000, advanced charting, and automated trading, brokers gain real-time data and liquidity control. Investors enjoy intuitive tools and secure logins, while agents benefit from streamlined account management, ensuring a smooth trading experience for all.",
+        "crytoSummaryMobile": "Scale globally with TTBVNK. Accept instant crypto payments in Bitcoin, Ethereum, and more, with no technical integration. Our intuitive wallet makes joining the digital economy effortless.",
         "crytoSummaryMobile2": "",
 
 

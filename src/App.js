@@ -24,7 +24,7 @@ function App() {
     <div>
         <div className="">
           <Topbar />
-          {/* <ScrollToTop /> */}
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="advantage" element={<Advantage />} />

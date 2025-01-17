@@ -45,7 +45,7 @@ const Price = () => {
                 <div>
                     <img src={ImageM1}alt="" className='w-full'/>
                 </div>
-                <div className='absolute w-full top-[65%] left-1/2 transform -translate-x-1/2 text-[32px] md:text-[64px] text-[#D1D5DB] font-light'>
+                <div className='absolute w-full bottom-[17%] left-1/2 transform -translate-x-1/2 text-[32px] md:text-[64px] text-[#D1D5DB] font-light'>
                     <div>
                         {t("Price.startBuild")}
                     </div>
@@ -60,16 +60,19 @@ const Price = () => {
                 <div className='text-2xl text-[#557AAA] font-semibold'>
                     {t("Price.chooseYour")}
                 </div>
-                <div className='text-2xl text-[#153764] font-semibold'>
-                    {t("Price.preferredSolution")}
+                <div className='flex gap-1 justify-center text-2xl text-[#557AAA] font-semibold leading-normal'>
+                    {t("Price.pilih")} <div className='text-[#153764]'> {t("Price.preferredSolution")}</div>
                 </div>
-                <div className='text-2xl text-[#557AAA] font-semibold'>
+                <div className='text-2xl text-[#557AAA] font-semibold leading-normal'>
                     {t("Price.forBuilding")}
+                </div>
+                <div className='text-2xl text-[#557AAA] font-semibold leading-normal'>
+                    {t("Price.lamanWeb")}
                 </div>
             </div>
 
             {/* Body */}
-            <div className='flex flex-col gap-[250px] px-[25px] md:p-0'>
+            <div className='flex flex-col gap-[250px] px-[24px] md:p-0'>
                 {/* Content */}
                 {/* Web */}
                 <div className='hidden xl:flex justify-center gap-[100px]'>
@@ -155,9 +158,6 @@ const Price = () => {
                                     <div className='text-xl text-[#153764] font-bold'>{t("Price.typeOf")}</div>
                                     {t("Price.doYouWant")}                                            
                                 </div>
-                                <div className='text-left'>
-                                    {t("Price.doYouWantM")}                                            
-                                </div>
                             </div>
                             <button onClick={() => setSelectedWebsiteType('Website')} className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedWebsiteType === 'Website' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
@@ -239,18 +239,23 @@ const Price = () => {
                     <div className='flex flex-col gap-[100px] md:px-5'>
                         {/* Website */}
                         <div className='flex flex-col gap-5 w-full' data-aos="fade-up" deta-aos-delay="200">
-                            <div className='flex gap-[6px] text-base text-[#557AAA] font-bold'>
-                                {t("Price.what")} 
-                                <div className='text-base text-[#153764] font-bold'>{t("Price.typeOf")}</div>
-                                {t("Price.doYouWant")}
+                            <div>
+                                <div className='flex gap-[6px] text-base text-[#557AAA] font-bold'>
+                                    {t("Price.what")} 
+                                    <div className='text-base text-[#153764] font-bold'>{t("Price.typeOf")}</div>
+                                    {t("Price.doYouWant")}
+                                </div>
+                                <div className='flex gap-[6px] text-base text-[#557AAA] font-bold'>
+                                    {t("Price.apaYang")}
+                                </div>
                             </div>
-                            <button onClick={() => [setSelectedWebsiteType('Website'), window.scrollTo({top: 950,behavior: 'smooth'})]} className={`text-base flex justify-between w-full px-[30px] py-[23px] md:py-[25px] rounded-[10px] ${selectedWebsiteType === 'Website' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                            <button onClick={() => setSelectedWebsiteType('Website')} className={`text-base flex justify-between w-full px-[30px] py-[23px] md:py-[25px] rounded-[10px] ${selectedWebsiteType === 'Website' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
                                     {t("Price.website")}
                                 </div>
                                 {selectedWebsiteType === 'Website' ? <PWebsiteM /> : <PWebsiteGM />}
                             </button>
-                            <button onClick={() => [setSelectedWebsiteType('e-Commerce'), window.scrollTo({top: 950,behavior: 'smooth'})]}  className={`text-base flex justify-between w-full px-[30px] py-[23px] md:py-[25px] rounded-[10px] ${selectedWebsiteType === 'e-Commerce' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                            <button onClick={() => setSelectedWebsiteType('e-Commerce')}  className={`text-base flex justify-between w-full px-[30px] py-[23px] md:py-[25px] rounded-[10px] ${selectedWebsiteType === 'e-Commerce' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
                                     {t("Price.eCommerce")}
                                 </div>
@@ -264,12 +269,12 @@ const Price = () => {
                                 <div className='text-base text-[#153764] font-bold'>{t("Price.best")}</div>
                                 {t("Price.foryou")}
                             </div>
-                            <button onClick={() => [setSelectedSolutionType('Basic'), window.scrollTo({top: 1250,behavior: 'smooth'})]} className={`text-base flex justify-between px-[30px] py-[23px] md:py-[25px] rounded-[10px] ${selectedSolutionType === 'Basic' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                            <button onClick={() => setSelectedSolutionType('Basic')} className={`text-base flex justify-between px-[23px] py-[23px] md:py-[25px] rounded-[10px] ${selectedSolutionType === 'Basic' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
                                     {t("Price.basic")}
                                 </div>
                             </button>
-                            <button onClick={() => [setSelectedSolutionType('Advanced'), window.scrollTo({top: 1250,behavior: 'smooth'})]}  className={`text-base flex justify-between px-[26px] py-[23px] md:py-[25px] rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
+                            <button onClick={() => setSelectedSolutionType('Advanced')}  className={`text-base flex justify-between px-[23px] py-[23px] md:py-[25px] rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
                                     {t("Price.advanced")}
                                 </div>
@@ -295,15 +300,18 @@ const Price = () => {
                                     <div>
                                         {t("Price.professional")}
                                     </div>
+                                    <div>
+                                        {t("Price.rm2200")}
+                                    </div>
                                 </div>
                                 {selectedSolutionType === 'e-commerce' ? <BasicM /> : <BasicGM />}
                             </div>
                             <button className='text-base flex justify-between items-center w-full xl:max-w-[500px] px-[30px] py-5 rounded-[10px] bg-[#D1D5DB]'>
                                 <div className='flex flex-col gap-[5px] text-left'>
-                                    <div className='text-xl text-[#153764] font-medium'>
+                                    <div className='text-base text-[#153764] font-medium'>
                                         {t("Price.customMade")}
                                     </div>
-                                    <div className='text-base text-[#6B7280] font-normal'>
+                                    <div className='text-sm text-[#6B7280] font-normal'>
                                         {t("Price.letUsKnow")}
                                     </div>
                                 </div>

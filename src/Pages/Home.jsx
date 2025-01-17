@@ -27,7 +27,7 @@ import Mobile from "../Assets/Lottie/social-network.json";
 
 const Home = () => {
 
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -47,8 +47,6 @@ const Home = () => {
         });
       }, []);
 
-    //   {t("")}
-
     return(
         <div className='flex flex-col w-full justify-center gap-[250px] pb-[250px]'>
             <div className='flex flex-col w-full justify-center text-center gap-[150px] md:gap-[200px]'>
@@ -65,7 +63,7 @@ const Home = () => {
                     </div>
                     <div className="w-wull max-w-[1200px] flex flex-col items-center">
                         <div className="flex flex-col gap-[30px] md:gap-[50px]">
-                            <div className="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
+                            <div className="flex flex-col gap-[10px] xl:gap-6" data-aos="fade-up" data-aos-delay="200">
                                 <div className="text-base md:text-2xl lg:text-[32px] font-normal md:font-medium text-[#557AAA] leading-normal">
                                     {t("Home.technologyDefinesTomorrow")}
                                 </div>
@@ -74,19 +72,19 @@ const Home = () => {
                                 </div>
                             </div>
                             {/* Website Description */}
-                            <div className="hidden md:block md:text-xl lg:text-2xl font-normal text-[#4B5563]" data-aos="fade-up" data-aos-delay="400">
-                                <div>
+                            <div className="hidden xl:block md:text-xl lg:text-2xl font-normal text-[#4B5563]" data-aos="fade-up" data-aos-delay="400">
+                                <div className="leading-normal">
                                     {t("Home.innovationAndTechnology")}
                                 </div>
-                                <div>
+                                <div className="leading-normal">
                                     {t("Home.intelligrnceAndAutomation")}
                                 </div>
-                                <div>
+                                <div className="leading-normal">
                                     {t("Home.whetherWeEmbrace")}
                                 </div>
                             </div>
                             {/* Mobile */}
-                            <div className='md:hidden text-base text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
+                            <div className='xl:hidden text-base md:text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
                                 <div>
                                     {t("Home.innowvationAndTechnology")}
                                 </div>
@@ -117,7 +115,7 @@ const Home = () => {
                 <div className="hidden md:block relative leading-tight">
                     {/* Background Image */}
                     <div data-aos="fade-up">
-                        <img src={image5} alt="Image 5" className="w-full h-[500px] object-cover" />
+                        <img src={image5} alt="" className="w-full h-[500px] object-cover" />
                     </div>
 
                     {/* Centered Content */}
@@ -128,7 +126,7 @@ const Home = () => {
                         </div>
 
                         {/* Icons Section */}
-                        <div className="flex justify-center items-center gap-[150px] md:gap-20 xl:gap-[100px] text-sm font-normal text-[#D1D5DB]" data-aos="fade-up" data-aos-delay="200">
+                        <div className="flex justify-center items-center gap-[150px] md:gap-14 xl:gap-[150px] text-sm font-normal text-[#D1D5DB]" data-aos="fade-up" data-aos-delay="200">
                             {/* Icon 1 */}
                             <div className='flex flex-col items-center gap-[10px] md:w-[100px]'>
                                 <AwesomeDesign />
@@ -197,7 +195,7 @@ const Home = () => {
                 <div className="md:hidden leading-tight">
                     {/* Background Image */}
                     <div data-aos="fade-up">
-                        <img src={imageM1} alt="Image 5" className="w-full h-[1020px]" />
+                        <img src={imageM1} alt="" className="w-full h-[1020px]" />
                     </div>
 
                     {/* Centered Content */}
@@ -274,7 +272,7 @@ const Home = () => {
                 </div>
 
                 {/* Our Core Service */}
-                <div className='flex flex-col items-center gap-[100px] leading-tight px-[25px] md:p-0'>
+                <div className='flex flex-col items-center gap-[100px] md:gap-[150px] leading-tight px-[25px] md:p-0'>
                     <div className='hidden md:block' data-aos="fade-up">
                         <VerticalLine />
                     </div>
@@ -287,7 +285,7 @@ const Home = () => {
                             {t("Home.coreService")}
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[60px] xl:gap-x-[100px] gap-y-[100px] xl:gap-y-[150px] ">
+                        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[60px] xl:gap-x-[100px] gap-y-[100px] xl:gap-y-[150px] px-3">
                             {/* Service 1 */}
                             <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="400">
                                 <Player
@@ -297,20 +295,29 @@ const Home = () => {
                                     className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video1} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal'>
                                     {t("Home.cmsSystem")}
                                 </div>
-                                <div className='text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
-                                    <div>
+                                {/* Web and Mobile */}
+                                <div className='md:hidden xl:block text-base lg:text-2xl font-normal text-[#4B5563] leading-normal'>
+                                    <div className="leading-normal">
                                         {t("Home.empower")}
                                     </div>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.bespoke")}
+                                    </div>
+                                </div>
+                                <div className='hidden md:block xl:hidden text-base lg:text-2xl font-normal text-[#4B5563] leading-normal'>
+                                    <div className="leading-normal">
+                                        {t("Home.empowerIpad")}
+                                    </div>
+                                    <div className="leading-normal">
+                                        {t("Home.empowerIpad2")}
                                     </div>
                                 </div>
                             </div>
                             {/* Service 2 */}
-                            <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="800">
+                            <div className='flex flex-col justify-center items-center gap-[10px] md:justify-start' data-aos="fade-up" data-aos-delay="800">
                                 <Player
                                     autoplay
                                     loop
@@ -318,15 +325,20 @@ const Home = () => {
                                     className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video2} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal'>
                                     {t("Home.website")}
                                 </div>
-                                <div className='text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
-                                    <div>
+                                <div className='md:hidden xl:block text-base lg:text-2xl font-normal text-[#4B5563]'>
+                                    <div className="leading-normal">
                                         {t("Home.buildWebsite")}
                                     </div>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.precision")}
+                                    </div>
+                                </div>
+                                <div className='hidden md:block xl:hidden text-base lg:text-2xl font-normal text-[#4B5563] leading-normal'>
+                                    <div className="leading-normal">
+                                        {t("Home.buildWebsiteIpad")}
                                     </div>
                                 </div>
                             </div>
@@ -339,22 +351,22 @@ const Home = () => {
                                     className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video3} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal'>
                                     {t("Home.mobileApp")}
                                 </div>
-                                <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
-                                    <div>
+                                <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563] leading-normal'>
+                                    <div className="leading-normal">
                                         {t("Home.transformCoreIdeas")}
                                     </div>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.innovative")}
                                     </div>
                                 </div>
-                                <div className='xl:hidden text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
-                                    <div>
+                                <div className='xl:hidden text-base lg:text-2xl font-normal text-[#4B5563]'>
+                                    <div className="leading-normal">
                                         {t("Home.transformCoreIdeasMobile")}
                                     </div>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.transformCoreIdeasMobile2")}
                                     </div>
                                 </div>
@@ -368,18 +380,18 @@ const Home = () => {
                                     className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video4} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal' >
                                     {t("Home.hrManagement")}
                                 </div>
                                 <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.unlocks")}
                                     </div>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.intuitive")}
                                     </div>
                                 </div>
-                                <div className='xl:hidden text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
+                                <div className='xl:hidden text-base  lg:text-2xl font-normal text-[#4B5563]'>
                                     <div>
                                         {t("Home.unlocksMobile")}
                                     </div>
@@ -397,28 +409,33 @@ const Home = () => {
                                     className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
                                 />
                                 {/* <video src={video5} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
-                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
+                                <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal'>
                                     {t("Home.posSystem")}
                                 </div>
                                 <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.maximise")}
                                     </div>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.productivity")}
                                     </div>
                                 </div>
-                                <div className='xl:hidden text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
-                                    <div>
+                                <div className='md:hidden text-base lg:text-2xl font-normal text-[#4B5563] leading-normal'>
+                                    <div className="leading-normal">
                                         {t("Home.maximiseMobile")}
                                     </div>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.maximiseMobile2")}
+                                    </div>
+                                </div>
+                                <div className='hidden md:block xl:hidden text-base lg:text-2xl font-normal text-[#4B5563] leading-normal'>
+                                    <div className="leading-normal">
+                                        {t("Home.maximiseIpad")}
                                     </div>
                                 </div>
                             </div>
                             {/* Service 6 */}
-                            <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="800">
+                            <div className='flex flex-col justify-center items-center gap-[10px] md:justify-start' data-aos="fade-up" data-aos-delay="800">
                                 <Player
                                     autoplay
                                     loop
@@ -429,19 +446,19 @@ const Home = () => {
                                 <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
                                     {t("Home.supportAndServices")}
                                 </div>
-                                <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
-                                    <div>
+                                <div className='hidden xl:block text-base md:text-lg lg:text-2xl font-normal text-[#4B5563] leading-normal'>
+                                    <div className="leading-normal">
                                         {t("Home.ensuring")}
                                     </div>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.performance")}
                                     </div>
                                 </div>
-                                <div className='xl:hidden text-base md:text-lg lg:text-2xl font-normal text-[#4B5563]'>
-                                    <div>
+                                <div className='xl:hidden text-base lg:text-2xl font-normal text-[#4B5563]'>
+                                    <div className="leading-normal">
                                         {t("Home.ensuringMobile")}
                                     </div>
-                                    <div>
+                                    <div className="leading-normal">
                                         {t("Home.ensuringMobile2")}
                                     </div>
                                 </div>
@@ -460,7 +477,7 @@ const Home = () => {
                 {/* Sector Of Coverage */}
                 <div className='flex flex-col gap-[150px] xl:gap-[200px]' data-aos="fade-up">
                     {/* Title */}
-                    <div className='bg-[#D5E7FF] h-auto flex flex-col justify-center gap-5 py-[62px] xl:py-[170px] px-[45px] xl:px-[485px]'>
+                    <div className='bg-[#D5E7FF] h-auto flex flex-col justify-center gap-[10px] xl:gap-6 py-[62px] xl:py-[170px] px-[45px] xl:px-[485px]'>
                         <div className='flex justify-center text-xl md:text-2xl lg:text-3xl xl:text-4xl font-normal text-[#557AAA] leading-normal' data-aos="fade-up" data-aos-delay="200">
                             {t("Home.uniqueProducts")}
                         </div>
@@ -484,10 +501,11 @@ const Home = () => {
                                     <div className='flex flex-col text-[#4B5563] text-base md:text-lg lg:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex-flex-col'>
                                             <div className="flex flex-col leading-normal font-normal w-full">
-                                                <div className='hidden md:block'>
+                                                <div className='hidden xl:block'>
                                                     <div>{t("Home.ImgCombinationDescription.educationImgDescription")}</div>
                                                     <div>{t("Home.ImgCombinationDescription.educationImgDescription2")}</div>
                                                 </div>
+                                                {/* mobile */}
                                                 <div className='md:hidden'>
                                                     <div>
                                                         {t("Home.ImgCombinationDescription.educationImgDescriptionM")}
@@ -497,6 +515,12 @@ const Home = () => {
                                                     </div>
                                                     <div>
                                                         {t("Home.ImgCombinationDescription.educationImgDescriptionM3")}
+                                                    </div>
+                                                </div>
+                                                {/* iPad */}
+                                                <div className='hidden md:block xl:hidden'>
+                                                    <div>
+                                                        {t("Home.ImgCombinationDescription.educationImgDescriptionIpad")}
                                                     </div>
                                                 </div>
                                             </div>
@@ -638,15 +662,21 @@ const Home = () => {
                                     </div>
                                     <div className='flex flex-col text-[#666] text-base md:text-lg lg:text-2xl' data-aos="fade-up" data-aos-delay="400">
                                         <div className='flex-flex-col text-left'>
-                                            <div className="hidden md:flex flex-col leading-normal font-normal md:w-full">
+                                            {/* Web */}
+                                            <div className="hidden xl:flex flex-col leading-normal font-normal md:w-full">
                                                 <div>{t("Home.ImgCombinationDescription.enterpriseImgDescription")}</div>
                                                 <div>{t("Home.ImgCombinationDescription.enterpriseImgDescription2")}</div>
                                                 <div>{t("Home.ImgCombinationDescription.enterpriseImgDescription3")}</div>
                                             </div>
+                                            {/* Mobile */}
                                             <div className="md:hidden flex-col leading-normal font-normal md:w-full">
                                                 <div>{t("Home.ImgCombinationDescription.enterpriseImgDescriptionMobile")}</div>
                                                 <div>{t("Home.ImgCombinationDescription.enterpriseImgDescriptionMobile2")}</div>
                                                 <div>{t("Home.ImgCombinationDescription.enterpriseImgDescriptionMobile3")}</div>
+                                            </div>
+                                            {/* iPad */}
+                                            <div className="hidden md:block xl:hidden flex-col leading-normal font-normal md:w-full">
+                                                <div>{t("Home.ImgCombinationDescription.enterpriseImgDescriptionIpad")}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -659,12 +689,12 @@ const Home = () => {
                 {/* We Unique & Different */}
                 <div className='relative' data-aos="fade-up">
                     <div className='hidden md:flex'>
-                        <img src={image6} alt="Image 6" className='w-full object-cover h-[500px]' data-aos="fade-up" data-aos-delay="200"/>
+                        <img src={image6} alt="" className='w-full object-cover h-[500px]' data-aos="fade-up" data-aos-delay="200"/>
                     </div>
                     <div className='md:hidden'>
-                        <img src={imageM2} alt="Image 6" className='w-full object-cover h-[200px]' data-aos="fade-up" data-aos-delay="200"/>
+                        <img src={imageM2} alt="" className='w-full object-cover h-[200px]' data-aos="fade-up" data-aos-delay="200"/>
                     </div>
-                    <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[10px] px-[45px] md:px-0 py-[62px] md:py-0'>
+                    <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-6 px-[45px] md:px-0 py-[62px] md:py-0'>
                         <div className='text-xl md:text-[32px] text-[#D1D5DB] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200"> 
                             {t("Home.whyChooseUs")}
                         </div>
@@ -773,13 +803,16 @@ const Home = () => {
                                         {t("homeCircle.eInvoice.title")}
                                     </div>
                                     <div className='text-sm text-[#4B5563] font-normal'>
+                                        <div>
+                                            {t("homeCircle.eInvoice.descriptionMobile4")}
+                                        </div>
                                         <div className='flex gap-1'>
                                             {t("homeCircle.eInvoice.descriptionMobile")} <div className='text-[#374151] font-medium'>{t("homeCircle.eInvoice.boldMobile")}</div> 
                                         </div>
                                         <div className='flex gap-1'>
                                             <div className='text-[#374151] font-medium'>{t("homeCircle.eInvoice.boldMobile2")}</div>{t("homeCircle.eInvoice.descriptionMobile2")}
                                         </div>
-                                        <div>
+                                        <div className="w-[246px]">
                                             {t("homeCircle.eInvoice.descriptionMobile3")}
                                         </div>
                                     </div>
@@ -809,12 +842,12 @@ const Home = () => {
                 {/* Our Mission */}
                 <div className='flex flex-col justify-center items-center px-[25px] md:p-0' data-aos="fade-up">
                     <div className='max-w-[1200px] flex flex-col gap-[250px]'>
-                        <div className='flex flex-col gap-[10px] md:gap-[30px] items-start text-start'>
+                        <div className='flex flex-col gap-[10px] md:gap-[30px] items-start text-start md:px-4 xl:p-0'>
                             <div className='text-xl md:text-3xl lg:text-5xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="200"> 
                                 {t("Home.mission")}
                             </div>
                             {/* Web */}
-                            <div className='hidden lg:block text-2xl text-[#4B5563] font-normal  md:w-[1000px]' data-aos="fade-up" data-aos-delay="400">
+                            <div className='hidden lg:block text-2xl text-[#4B5563] font-normal xl:w-[1000px]' data-aos="fade-up" data-aos-delay="400">
                                 <div className="leading-normal">
                                     {t("Home.roiModal")}
                                 </div>
@@ -856,14 +889,14 @@ const Home = () => {
                 <div className='flex flex-col gap-[50px] max-w-[1200px]'>
                     <div className='flex flex-col items-center gap-[10px] lg:gap-5'>
                         {/* Web */}
-                        <div className='text-xl md:text-2xl lg:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal' data-aos="fade-up" data-aos-delay="600">
+                        <div className='text-xl text-[#557AAA] font-normal md:font-medium leading-normal' data-aos="fade-up" data-aos-delay="600">
                             {t("Home.impossible")}
                         </div>
-                        <div className='hidden md:flex flex-col items-center gap-4 md:text-2xl lg:text-5xl text-[#153764] font-bold leading-normal' data-aos="fade-up" data-aos-delay="800">
-                            <div>
+                        <div className='hidden md:flex flex-col items-center  md:text-3xl lg:text-5xl text-[#153764] font-bold leading-normal' data-aos="fade-up" data-aos-delay="800">
+                            <div className="leading-normal">
                                 {t("Home.hesitation")}
                             </div>
-                            <div>
+                            <div className="leading-normal">
                                 {t("Home.hesitation2")}
                             </div>
                         </div>

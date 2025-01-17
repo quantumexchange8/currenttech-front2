@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Cus1 from "../Assets/Images/Special/2.png";
 import Cus1Mobile from "../Assets/Images/Special/M2.png";
 import Cus2Mobile from "../Assets/Images/Special/M3.png";
 import Cus3Mobile from "../Assets/Images/Special/M4.png";
 import Explore1 from "../Assets/Images/Special/3.png";
 import Emoji from "../Assets/Images/Special/4.png";
-import MobileEmoji from "../Assets/Images/mobileEmoji.svg";
-import MobileColour from "../Assets/Images/mobileColour.svg";
-import ConnectorLine4 from "../Assets/Images/ConnectorLine4.svg";
-import ConnectorLine5 from "../Assets/Images/ConnectorLine5.svg";
 import { useTranslation } from 'react-i18next';
 import image1 from '../Assets/Images/Special/1.png';
 import imageM1 from '../Assets/Images/Special/M1.png';
@@ -17,7 +13,7 @@ import 'aos/dist/aos.css';
 import ScrollToTopButton from '../Components/ScrollToTopButton';
 
 const Special = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     useEffect(() => {
             AOS.init({
@@ -32,19 +28,19 @@ const Special = () => {
             {/* Top Image */}
             {/* Web */}
             <div className='hidden xl:block w-full relative'>
-                <img src={image1} alt="Special Image 1" className='w-full'/>
-                <div className='flex flex-col md:gap-2 lg:gap-10 absolute inset-0 top-[60%] left-0 p-4 transform -translate-y-1/2 text-[#D1D5DB] text-[32px] md:text-4xl lg:text-[64px] text-center font-light w-full leading-normal'>
-                    <div>
+                <img src={image1} alt="Special 1" className='w-full'/>
+                <div className='flex flex-col absolute inset-0 top-[60%] left-0 p-4 transform -translate-y-1/2 text-[#D1D5DB] text-[32px] md:text-4xl lg:text-[64px] text-center font-light w-full leading-normal'>
+                    <div className='leading-normal'>
                         {t("Special.careDeeply")}
                     </div>
-                    <div>
+                    <div className='leading-normal'>
                         {t("Special.visual")}
                     </div>
                 </div>
             </div>
             {/* Mobile */}
             <div className='xl:hidden w-full relative'>
-                <img src={imageM1} alt="Special Image Mobile 1" className='w-full'/>
+                <img src={imageM1} alt="Special Mobile 1" className='w-full'/>
                 <div className='absolute top-3/4 left-0 p-4 transform -translate-y-1/2 text-[#D1D5DB] text-[32px] md:text-[64px] text-center font-light w-full leading-normal'>
                     <div>
                         {t("Special.careDeeply")}
@@ -77,7 +73,7 @@ const Special = () => {
                     </div>
                 </div>
                 {/* Mobile */}
-                <div className='md:hidden flex flex-col gap-[30px] text-center max-w-[1200px] w-full'> 
+                <div className='md:hidden flex flex-col items-center gap-[30px] text-center max-w-[1200px] w-full'> 
                     <div className="flex flex-col bg-text-gradient bg-clip-text text-transparent text-[32px] font-normal " data-aos="fade-up">
                         <div>
                             {t("Special.customisationMobile")}
@@ -93,6 +89,15 @@ const Special = () => {
                         <div>
                             {t("Special.tailoredWebPagesMobile")}
                         </div>
+                        <div>
+                            {t("Special.tailoredWebPagesMobile2")}
+                        </div>
+                        <div>
+                            {t("Special.tailoredWebPagesMobile3")}
+                        </div>
+                        <div>
+                            {t("Special.tailoredWebPagesMobile4")}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,8 +106,8 @@ const Special = () => {
             <div className='w-full flex flex-col items-center justify-center md:px-5 '>
                 <div className='max-w-[1200px] flex flex-col gap-[250px]'>
                     {/* Content */}
-                    <div className='flex flex-col gap-[50px] md:gap-[150px] mb-[50px] md:mb-0 mx-5 md:mx-0'>   
-                        <div className='flex flex-col gap-[30px] md:gap-[50px]'>
+                    <div className='flex flex-col gap-[50px] md:gap-[150px] mb-[50px] md:mb-0 md:mx-0'>   
+                        <div className='flex flex-col gap-[30px] md:gap-[50px] px-[25px] xl:p-0'>
                             {/* Text 1 */}
                             <div className="flex flex-col text-xl md:text-2xl lg:text-4xl text-[#557AAA] font-normal w-full lg:w-[661px] text-left" data-aos="fade-up" data-aos-delay="400">
                                 <div className='leading-normal'>
@@ -115,7 +120,7 @@ const Special = () => {
 
                             <div className='flex flex-col gap-[100px] lg:gap-0'>
                                 <img src={Cus1} alt="" className='hidden md:block' data-aos="fade-up" data-aos-delay="600"/>
-                                <img src={Cus1Mobile} alt="" className='block md:hidden' data-aos="fade-up" data-aos-delay="600"/>
+                                <img src={Cus1Mobile} alt="" className='block md:hidden w-full' data-aos="fade-up" data-aos-delay="600"/>
 
                                 {/* web */}
                                 <div className='hidden md:block'>
@@ -129,6 +134,7 @@ const Special = () => {
                                                 {t("Special.customizeIdea_Title2s")}
                                             </div>
                                         </div>
+                                        
                                     </div>
 
                                     {/* Explore */}
@@ -155,7 +161,7 @@ const Special = () => {
 
                                     {/* Text4 */}
                                     <div className='relative' data-aos="fade-up" data-aos-delay="400">                    
-                                        <div className="absolute md:top-[-460px] lg:top-[-600px] xl:top-[-710px] md:text-2xl lg:text-4xl font-normla text-right text-[#557AAA] w-full">
+                                        <div className="absolute md:bottom-[-460px] lg:bottom-[610px] md:text-2xl lg:text-4xl font-normla text-right text-[#557AAA] w-full">
                                             <div className='leading-normal'>
                                                 {t("Special.customizeIdea_Title4")}
                                             </div>
@@ -171,8 +177,9 @@ const Special = () => {
                                 {/* mobile */}
                                 <div className='flex flex-col md:hidden gap-[30px]'>
                                     <div className='text-[#557AAA] text-xl font-normal text-right'data-aos="fade-up">
-                                        <div>{t("Special.customizeIdea_Title2")}</div>
-                                        <div>{t("Special.customizeIdea_Title2s")}</div>
+                                        <div>{t("Special.customizeIdea_Title2M")}</div>
+                                        <div>{t("Special.customizeIdea_Title2M2")}</div>
+                                        <div>{t("Special.customizeIdea_Title2M3")}</div>
                                     </div>
 
                                     <div>
@@ -207,7 +214,7 @@ const Special = () => {
                     <div className="flex flex-col justify-center items-center">
                         <div className="max-w-[1200px] flex flex-col gap-[250px]">
                             <div className="flex flex-col gap-[50px]">
-                                <div className="flex flex-col md:gap-[10px] lg:gap-5" data-aos="fade-up" data-aos-delay="200">
+                                <div className="flex flex-col gap-[10px] lg:gap-5" data-aos="fade-up" data-aos-delay="200">
                                     <div className="text-base md:text-2xl lg:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal">{t("Special.preparing")}</div>
                                     {/* Web */}
                                     <div className="hidden md:block md:text-3xl lg:text-5xl text-[#153764] font-bold">

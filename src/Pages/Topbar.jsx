@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import { Menu, Transition, Dialog } from '@headlessui/react'
+import { Menu, Transition } from '@headlessui/react'
 import { Chinese, Earphone, English, Lang, Malay, Menus, MenusM } from '../Components/Outline';
 import LogoSvg from '../Assets/Images/Topbar/currentTechLogo.png';
 import { Link, useLocation } from "react-router-dom";
@@ -10,78 +10,38 @@ import { useTranslation } from 'react-i18next';
 const Topbar = () => {
     const location = useLocation();
     const [openButton, setOpenButton] = useState(false);
-    const [selectedButton, setSelectedButton] = useState(null);
+    const [selectedButton] = useState(null);
     const { t, i18n } = useTranslation();
-    const [isAdvantageExpanded, setIsAdvantageExpanded] = useState(false);
-    const [isProductExpanded, setIsProductExpanded] = useState(false);
-    const [langIsOpen, setLangIsOpen] = useState(false);
-    const [menuIsOpen, setMenuIsOpen] = useState(false);
-
-    const handleButtonClick = (button) => {
-        setOpenButton(true);
-        setSelectedButton(button);
-    };
-
-    const toggleLanguage = (langCode) => { // Define the language when the button clicked
+    const toggleLanguage = (langCode) => { 
         i18n.changeLanguage(langCode);
         localStorage.setItem('i18nextLng', langCode);
-        setLangIsOpen(false);
         closeMenuModal();
     };
 
-    const toggleAdvantage = (e) => {
-        e.preventDefault();  // Prevent the Advantages menu from closing
-        setIsAdvantageExpanded(!isAdvantageExpanded);
-      };
-
-      const toggleProducts = (e) => {
-        e.preventDefault();  // Prevent the Products menu from closing
-        setIsProductExpanded(!isProductExpanded);
-      };
-
-      const resetState = () => {
-        setIsAdvantageExpanded(false);  //Set Expanded status into False
-        setIsProductExpanded(false);
-      };
-
-      const openLangModal = () => {
-        setLangIsOpen(true);
-    };
-
-    const closeLangModal = () => {
-        setLangIsOpen(false);
-        resetState();
-    };
-
-      const openMenuModal = () => {
-        setMenuIsOpen(true);
-    };
-
     const closeMenuModal = () => {
-        setMenuIsOpen(false);
-        resetState();
+        setOpenButton(false);
     };
 
     return (
         <div className='flex flex-col'> 
-            <div className="md:h-[80px] h-[50px] w-full fixed z-50 bg-[#FFF] flex justify-center backdrop-blur-sm">
-                <div className="w-full md:w-[1500px] max-w-[1500px] md:px-8 flex justify-between items-center md:gap-[50px]">
+            <div className="xl:h-[80px] h-[50px] w-full fixed z-50 bg-[#FFF] flex justify-center backdrop-blur-sm">
+                <div className="w-full xl:w-[1500px] max-w-[1500px] xl:px-8 flex justify-between items-center xl:gap-[50px]">
                     {/* LogoSvg only shown on web version */}
-                    <div className='hidden md:flex'>
+                    <div className='hidden xl:flex'>
                         <Link to="/">
                             <img src={LogoSvg} alt="icon" className='md:w-[150px] h-[40px]'/>
                         </Link>
                     </div>
 
                     {/* LogoSvg between Earphone and Lang on mobile version */}
-                    <div className='md:hidden flex w-full justify-between items-center px-[25px] '>
+                    <div className='xl:hidden flex w-full justify-between items-center px-[25px] '>
                         {/* Logo */}
                         <Link to="/">
                             <img src={LogoSvg} alt="icon" className='w-[113px] h-[30px]' />
                         </Link>
 
                         {/* Menu */}
-                        <div className="md:hidden justify-center items-center gap-[30px] cursor-pointer">
+                        <div className="xl:hidden flex justify-center items-center gap-[30px] cursor-pointer">
                             <Menu as="div" className="relative text-left">
                                 <Menu.Button className="flex justify-center items-center rounded-md text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
                                     <div className="transition duration-300 ease-in-out transform hover:scale-110">
@@ -98,7 +58,7 @@ const Topbar = () => {
                                     leaveFrom="transform opacity-100 scale-100"
                                     leaveTo="transform opacity-0 scale-95"
                                 >
-                                    <Menu.Items className="absolute flex flex-col justify-center items-center gap-[30px] mt-[30px] md:mt-[50px] pt-[30px] pb-10 md:p-[50px] rounded-[5px] bg-gradient-to-b from-[#EAF3FF] to-[#BBD7FE] text-2xl font-normal text-center right-0 w-[340px] z-50">
+                                    <Menu.Items className="fixed flex flex-col justify-center items-center gap-5 p-[30px] md:p-[50px] rounded-[5px] bg-gradient-to-b from-[#EAF3FF] to-[#BBD7FE] text-xl font-normal text-center w-[300px] z-50 left-1/2 transform -translate-x-1/2 mt-[30px] shadow-lg">
                                         {/* Home Page */}
                                         <Menu.Item>
                                             {({ active }) => (
@@ -289,7 +249,7 @@ const Topbar = () => {
                                             )}
                                         </Menu.Item>
 
-                                        <div className="flex justify-center gap-[30px] md:gap-4 mt-5">
+                                        <div className="flex justify-center gap-[30px] md:gap-4 ">
                                             {/* English Icon */}
                                             <button className="transform hover:scale-110 transition duration-300 ease-in-out" onClick={() => toggleLanguage('en')}>
                                                 <English />
@@ -313,11 +273,11 @@ const Topbar = () => {
 
 
                     {/* Earphone and Lang icons on web version*/}
-                    <div className='hidden md:flex gap-[50px] items-center'>
+                    <div className='hidden xl:flex gap-[50px] items-center'>
                         {/* Earphone */}
-                        <div className='transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer' onClick={() => handleButtonClick('gmail')}>
+                        <a href='/support' className='transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer'>
                             <Earphone />
-                        </div>
+                        </a>
                         
                         {/* Language */}
                         <div className='hidden md:flex justify-center gap-[30px] cursor-pointer'>

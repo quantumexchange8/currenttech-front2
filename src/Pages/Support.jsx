@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 const Support = () => {
 
     const [isSubmitted, setIsSubmitted] = useState(false);
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
@@ -40,11 +40,13 @@ const Support = () => {
             <div className="absolute inset-0 md:top-[-160px] flex flex-col justify-center xl:items-start gap-[50px] px-[25px] md:px-0 xl:pl-[163px]">
                 {/* Heading */}
                 <div className="flex flex-col gap-[10px]">
-                    <div className="text-sm md:text-2xl text-[#D1D5DB] font-normal leading-normal" data-aos="fade-up">
+                    <div className="text-sm md:text-2xl text-[#D1D5DB] font-normal leading-normal w-[266px] xl:w-full" data-aos="fade-up">
                         {t("Support.inquiry")}
                     </div>
                     <div className="text-2xl md:text-5xl text-[#D1D5DB] font-light leading-normal " data-aos="fade-up" data-aos-delay="200">
-                        <div className='leading-normal'>{t("Support.hesitation")} <div>{t("Support.hesitation2C")} </div></div>
+                        <div className='hidden xl:block leading-normal'>{t("Support.hesitation")} <div>{t("Support.hesitation2C")} </div></div>
+                        <div className='xl:hidden leading-normal'>{t("Support.hesitationMobile")} </div>
+                        <div className='xl:hidden leading-normal'>{t("Support.hesitationMobile2")} </div>
                     </div>
                 </div>
 
@@ -86,7 +88,7 @@ const Support = () => {
                         {/* Mobile */}
                         <div className="md:hidden flex flex-col gap-8 text-base text-left text-[#D1D5DB] font-normal">
                             <div data-aos="fade-up" data-aos-delay="400">
-                                <div>{t("Support.yourMessage")}</div>
+                                <div>{t("Support.yourMessageMobile")}</div>
                                 <div> {t("Support.ourCustomerServiceMobile")}</div>
                                 <div>{t("Support.ourCustomerServiceMobile2")}</div>
                             </div>
@@ -125,7 +127,7 @@ const Support = () => {
                         <div className="flex justify-end">
                             <button
                                 onClick={handleFormSubmit}
-                                className="text-base md:text-xl text-[#4B5563] font-normal shadow-custom px-5 py-[5px] rounded-[5px] bg-[linear-gradient(180deg,#EAF3FF_0%,#BBD7FE_72%)]"
+                                className="text-base md:text-xl text-[#4B5563] font-normal shadow-custom px-6 xl:px-5 py-2 xl:py-[5px] rounded-[5px] bg-[linear-gradient(180deg,#EAF3FF_0%,#BBD7FE_72%)]"
                             >
                                 {t("Support.send")}
                             </button>

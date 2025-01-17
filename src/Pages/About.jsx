@@ -6,10 +6,11 @@ import {Workhours, FinishWork, ClientsFollowed, DataStore, Design, Development, 
 import AOS from 'aos';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import ScrollToTopButton from '../Components/ScrollToTopButton';
 
 const About = () => {
 
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
 
     useEffect(() => {
         AOS.init({
@@ -20,13 +21,12 @@ const About = () => {
     }, []);
 
     return (
-
         <div className="flex flex-col gap-[250px] pt-[50px] md:pt-[80px] pb-[250px]">
             <div className="flex flex-col gap-[150px] md:gap-[200px] justify-center items-center">
                 {/* Top Image */}
                 <div className='relative w-full'>
-                    <img src={Image1} alt="About Image 1" className='hidden xl:block w-full object-cover' />
-                    <img src={ImageM1} alt="About Image 1" className='xl:hidden w-full object-cover' />
+                    <img src={Image1} alt="About 1" className='hidden xl:block w-full object-cover' />
+                    <img src={ImageM1} alt="About 1" className='xl:hidden w-full object-cover' />
                     {/* Web */}
                     <div className='absolute hidden xl:flex flex-col gap-[50px] top-[35%] left-[16%]'>
                         <div className='flex flex-col gap-[10px]'>
@@ -43,22 +43,20 @@ const About = () => {
                             </div>
                         </div>
                         <div>
-                        <a 
-                            href='/team' 
-                            className='inline-flex items-center bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] py-[10px] px-[30px] rounded-[5px] text-2xl text-[#153764] font-normal'>
-                            {t("About.knowTheTeam")}
-                        </a>
-
+                            <a href='/team' 
+                                className='inline-flex items-center bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] py-[10px] px-[30px] rounded-[5px] text-2xl text-[#153764] font-normal'>
+                                {t("About.knowTheTeam")}
+                            </a>
                         </div>
                     </div>
                     {/* Mobile */}
-                    <div className='xl:hidden absolute flex flex-col gap-[50px] top-[38%] left-[6%] w-auto'>
-                        <div className='flex flex-col gap-[10px] w-auto '>
-                            <div className='text-base md:text-4xl text-[#D1D5DB] font-medium leading-normal'>
+                    <div className="xl:hidden absolute flex flex-col gap-[50px] top-[38%] left-[6%] w-auto">
+                        <div className='flex flex-col gap-[10px]'>
+                            <div className='text-base text-[#D1D5DB] font-medium leading-normal'>
                                 {t("About.solution")}
                             </div>
-                            <div className='flex flex-col text-2xl md:text-6xl text-[#D1D5DB] font-bold'>
-                                <div className=' leading-normal'>
+                            <div className='flex flex-col text-2xl text-[#D1D5DB] font-bold leading-normal'>
+                                <div>
                                     {t("About.designDevelop")}
                                 </div>
                                 <div>
@@ -66,12 +64,14 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] w-[157px] md:w-[221px] rounded-[5px] py-[10px] px-[15px]'>
-                            <a href='/team' className='flex justify-center text-base md:text-2xl text-[#153764] font-normal'>
+                        <div>
+                            <a href='/team' 
+                                className='inline-flex items-center bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] py-[10px] px-[15px] rounded-[5px] text-base text-[#153764] font-normal'>
                                 {t("About.knowTheTeam")}
                             </a>
                         </div>
                     </div>
+
                 </div>
 
                 {/* About Current Tech Industries */}
@@ -79,8 +79,12 @@ const About = () => {
                     <div className='flex flex-col gap-[100px] xl:gap-[150px] max-w-[1200px] md:w-full'>
                         {/* Paragraph 1 */}
                         <div className='flex flex-col gap-[30px]'>
-                            <div className='text-xl md:text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
+                            <div className='hidden xl:block text-xl md:text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
                                 {t("About.aboutCurrentTech")}
+                            </div>
+                            <div className='flex flex-col xl:hidden text-xl md:text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
+                                <div>{t("About.aboutCurrentTechMobile")}</div>
+                                <div>{t("About.aboutCurrentTechMobile2")}</div>
                             </div>
                             {/* Web */}
                             <div className='hidden xl:block text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
@@ -166,7 +170,8 @@ const About = () => {
                                 <div className='xl:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                                     <div className='flex flex-col gap-8'>
                                         <div>
-                                            {t("About.engineerInnovativeMobile")}
+                                            <div>{t("About.engineerInnovativeMobile")}</div>
+                                            <div>{t("About.engineerInnovativeMobiles")}</div>
                                         </div>
                                         <div>
                                             {t("About.engineerInnovativeMobile2")}
@@ -240,8 +245,8 @@ const About = () => {
                     <div className='w-full'>
                         {/* Background Image */}
                         <div className='w-full' data-aos="fade-up" data-aos-delay="400">
-                            <img src={Image2} alt="Image 2" className="hidden xl:block w-full h-[500px] object-cover" />
-                            <img src={ImageM2} alt="Image Mobile 2" className="xl:hidden w-full h-[1054px] object-cover" />
+                            <img src={Image2} alt='' className="hidden xl:block w-full h-[500px] object-cover" />
+                            <img src={ImageM2} alt='' className="xl:hidden w-full h-[1054px] object-cover" />
                         </div>
 
                         {/* Centered Content */}
@@ -313,8 +318,8 @@ const About = () => {
                     </div>
                     <div className='flex flex-col xl:flex-row justify-between gap-[100px] xl:gap-0' data-aos="fade-up" data-aos-delay="800">
                         {/* 1 */}
-                        <div className='flex flex-col gap-[30px]'>
-                            <div className='text-5xl md:text-[64px] text-[#153764] font-bold'>
+                        <div className='flex flex-col gap-[30px] w-[330px]'>
+                            <div className='text-5xl md:text-[64px] text-[#153764] font-bold leading-normal'>
                                 {t("About.01")}
                             </div>
                             <div className='flex flex-col gap-[10px]'>
@@ -348,8 +353,8 @@ const About = () => {
                             </div>
                         </div>
                         {/* 2 */}
-                        <div className='flex flex-col gap-[30px]'>
-                            <div className='text-5xl md:text-[64px] text-[#153764] font-bold'>
+                        <div className='flex flex-col gap-[30px] w-[330px]'>
+                            <div className='text-5xl md:text-[64px] text-[#153764] font-bold leading-normal'>
                                 {t("About.02")}
                             </div>
                             <div className='flex flex-col gap-[10px]'>
@@ -383,8 +388,8 @@ const About = () => {
                             </div>
                         </div>
                         {/* 3 */}
-                        <div className='flex flex-col gap-[30px]'>
-                            <div className='text-5xl md:text-[64px] text-[#153764] font-bold'>
+                        <div className='flex flex-col gap-[30px] w-[330px]'>
+                            <div className='text-5xl md:text-[64px] text-[#153764] font-bold leading-normal'>
                                 {t("About.03")}
                             </div>
                             <div className='flex flex-col gap-[10px]'>
@@ -416,7 +421,7 @@ const About = () => {
                         </div>
                         {/* Icons */}
                         <div className='flex flex-col gap-[50px] md:gap-[100px]'>
-                            <div className='flex flex-col md:gap-4 text-[32px] md:text-5xl text-[#153764] text-center font-bold leading-normal' data-aos="fade-up" data-aos-delay="700">
+                            <div className='flex flex-col md:gap-4 text-2xl md:text-5xl text-[#153764] text-center font-bold leading-normal' data-aos="fade-up" data-aos-delay="700">
                                 <div>
                                     {t("About.because")}
                                 </div>
@@ -581,6 +586,11 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/* Scroll To Top Button */}
+            <div className='absolute'>
+                <ScrollToTopButton />
             </div>
         </div>
     )

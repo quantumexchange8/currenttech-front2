@@ -35,7 +35,7 @@ export const productData = [
         summaryMobile:
             'eduSummaryMobile',
         summaryMobile2:
-            ' eduSummaryMobile2',
+            'eduSummaryMobile2',
     },
     {
         image: 'product2.png',
@@ -80,7 +80,7 @@ export const productData = [
         description: "attendenceDescription",
         description2: "",
         description3: " ",
-        descriptionMobile: "In today’s fast-paced world, businesses face challenges like efficiency, retention, and cost control. Our Motion Capture (MOCAP) system tackles these by boosting productivity, morale, and work quality, fostering a positive culture that enhances retention.",
+        descriptionMobile: "attendenceDescriptionMobile",
         specifications: {
             versions: ['Mocap employee', 'Mocap employer'],
             devices: ['Mobile phone', 'PC', 'Mac'],
@@ -137,11 +137,13 @@ export const productData = [
         summary:
             'financeSummary',
         summary2:
-            '',
+            'financeSummary2',
         summaryMobile:
             'financeSummaryMobile',
         summaryMobile2:
-            '',
+            'financeSummaryMobile2',
+        summaryMobile3:
+            'financeSummaryMobile3',
     },
     {
         image: 'product5.png',
@@ -175,7 +177,9 @@ export const productData = [
         summaryMobile:
             "stockiesSummaryMobile",
         summaryMobile2:
-            '',
+            'stockiesSummaryMobile2',
+        summaryMobile3:
+            'stockiesSummaryMobile3',
     },
     {
         image: 'product6.png',
@@ -183,7 +187,7 @@ export const productData = [
         title: 'brokerage',
         category: 'brokerageCategory',
         description: "brokerageDescription",
-        description2: "",
+        description2: "brokerageDescription2",
         description3: "",
         descriptionMobile: "brokerageDescriptionMobile",
         specifications: {

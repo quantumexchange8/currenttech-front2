@@ -128,7 +128,8 @@
           "boldMobile2": "",
           "descriptionMobile": "我们的电子发票系统经过",
           "descriptionMobile2": "轻松简化开票流程并确保合规性.",
-          "descriptionMobile3": ""
+          "descriptionMobile3": "",
+          "descriptionMobile4": ""
         },
         "forexLabelSolution": {
           "title": "外汇标签解决方案",
@@ -187,12 +188,14 @@
           "educationImgDescriptionM": "解锁无限学习潜力. 我们的尖端技术",
           "educationImgDescriptionM2": "使学校能够在课堂上取得惊人的成就.",
           "educationImgDescriptionM3": "",
+          "educationImgDescriptionIpad": "解锁无限学习潜力. 我们的尖端技术使学校能够在课堂上取得惊人的成就.",
           "F&BImgDescription": "点餐应用程序和各种支付方式在为顾客提供无",
           "F&BImgDescription2": "缝愉悦的用餐体验中发挥着至关重要的作用.",
           "F&BImgDescription3": "",
           "F&BImgDescriptionMobile": "点餐应用程序和各种支付方式在为顾客提供",
           "F&BImgDescriptionMobile2": "无缝愉悦的用餐体验中发挥着至关重要的作用.",
           "F&BImgDescriptionMobile3": "",
+          "F&BImgDescriptionMd": "点餐应用程序和各种支付方式在为顾客提供无缝愉悦的用餐体验中发挥着至关重要的作用.",
           "F&BImgMobileDescription": "While savouring delicious and enticing meals, both ordering applications and various payment methods play a crucial role in delivering a seamless and delightful dining experience ",
           "F&BImgMobileDescription2": "for customers, enhancing convenience and satisfaction at every step.",
           "wholesaleImgDescription":"我们的智能系统专注于为企业和零售商提供定",
@@ -201,9 +204,11 @@
           "wholesaleImgMobileDescription":"我们的智能系统专注于为企业和零售商提供定制化",
           "wholesaleImgMobileDescription2":"的采购解决方案, 确保成本效益和高效的库存管理.",
           "wholesaleImgMobileDescription3": "",
+          "wholesaleImgMdDescription": "我们的智能系统专注于为企业和零售商提供定制化的采购解决方案, 确保成本效益和高效的库存管理.",
           "logisticImgDescriptionM":"建立高效的运输, 物流和供应链系统不再是一个艰巨的",
           "logisticImgDescriptionM2":"任务; 这是一个可以通过我们的专业知识和工具完全实",
           "logisticImgDescriptionM3":"现的目标.",
+          "logisticImgDescriptionMd":"建立高效的运输, 物流和供应链系统不再是一个艰巨的任务; 这是一个可以通过我们的专业知识和工具完全实现的目标.",
           "logisticImgDescription":"建立高效的运输, 物流和供应链系统不再是一个",
           "logisticImgDescription2":"艰巨的任务; 这是一个可以通过我们的专业知识",
           "logisticImgDescription3":"和工具完全实现的目标.",
@@ -212,7 +217,9 @@
           "enterpriseImgDescription3":"作的进展。",
           "enterpriseImgDescriptionMobile":"一个有效的企业管理系统的特点在于能够增强公司",
           "enterpriseImgDescriptionMobile2":"与员工之间的沟通, 同时积极促进他们工作的进展.",
-          "enterpriseImgDescriptionMobile3":""
+          "enterpriseImgDescriptionMobile3":"",
+          "enterpriseImgDescriptionIpad":"一个有效的企业管理系统的特点在于能够增强公司与员工之间的沟通, 同时积极促进他们工作的进展."
+
         },
         "homeReminderTitle":"No matter what field or industry you're in.",
         "homeReminderDescription":"having your own intelligent system is worth it. Don't hesitate to contact us for efficient solutions tailored just for you.",
@@ -252,9 +259,12 @@
         "cmsSystem": "客户管理管理系统",
         "empower": "用定制软件解决方案赋能您的业务,",
         "bespoke": "以及妥善管理您的优质客户群.",
+        "empowerIpad": "用定制软件解决方案赋能您的业务",
+        "empowerIpad2": "以及妥善管理您的优质客户群.",
         "website": "网站",
         "buildWebsite": "我们打造各类网站, 采用分阶段的方法,",
         "precision": "从规划和界面设计到后端开发, 精确执行.",
+        "buildWebsiteIpad": "我们打造各类网站, 采用分阶段的方法, 从规划和界面设计到后端开发, 精确执行.",
         "mobileApp": "移动应用程序",
         "transformCoreIdeas": "我们将核心创意转化为创新的移动应用.",
         "innovative": "",
@@ -276,6 +286,8 @@
         "maximiseMobile2": "提升生产力与客户满意度.",
         "ensuringMobile": "确保您的系统始终保持",
         "ensuringMobile2": "最佳效率.",
+        "maximiseIpad": "最大化您的业务, 提升生产力与客户满意度.",
+
 
 
 
@@ -285,9 +297,9 @@
         "whyChooseUs": "为何选择我们",
         "different": "我们的独特和与众不同",
         "mission": "我们的使命",
-        "roiModal": "我们以客观地构建一个不依赖网络的技术驱动投资回报模型. 以专业的视角重新定义综合增长策",
-        "approach": "略, 避免传统的协同效应. 通过独特的资源整合流程激发潜力和创新能量. 利用多样化的合作关系",
-        "collaborations": "打造高效的体验矩阵, 实现卓越的成果.",
+        "roiModal": "我们以客观地构建一个不依赖网络的技术驱动投资回报模型. 以专业的视角重新定义综合增长策略, 避免传统的协同效应. 通过独特的资源整合流程激发潜力和创新能量. 利用多样化的合作关系打造高效的体验矩阵, 实现卓越的成果.",
+        "approach": "",
+        "collaborations": "",
         "buildATech": "我们以客观地构建一个不依赖网络的技术驱动投资回报模型. 以专业的视角重新定义综合增长策略, 避免传统的协同效应. 通过独特的资源整合流程激发潜力和创新能量. 利用多样化的合作关系打造高效的体验矩阵, 实现卓越的成果.",
         "approachMobile": "",
 
@@ -319,6 +331,7 @@
         "websiteDescriptionMobile2":"确保最终产品与您的愿景完美契合.",
         "managementDescription":"无论您的企业规模如何, 健全的管理系统都是必不可少的. 我们在这里确保您",
         "managementDescription2":"的运营顺畅无阻.",
+        "managementDescriptionIpad":"",
         "managementDescriptionMobile":"无论您的企业规模如何, 健全的管理系统都是必不可少的. 我们在这里确保您的运营顺畅无阻.",
         "managementDescriptionMobile2":"",
         "paymentDescription":"这是企业最看重的服务, 我们提供得非常出色. 自雇客户可以选择现有的支付",
@@ -421,6 +434,9 @@
         "customizeIdea_Titles":"不仅仅是概念.",
         "customizeIdea_Title2":"同时,",
         "customizeIdea_Title2s":"我们也需要理解你的想法.",
+        "customizeIdea_Title2M":"同时,",
+        "customizeIdea_Title2M2":"我们也需要理解你的想法.",
+        "customizeIdea_Title2M3":"",
         "customizeIdea_Title3":"此外,",
         "customizeIdea_Title3s":"了解客户的喜好同样是至关重要的.",
         "customizeIdea_Title4":"我们相信您同样注重主题颜色.",
@@ -447,7 +463,12 @@
         "customisationMobile":"定制化是您迈向",
         "directMobile":"优势的直接通道  ",
         "PathMobile":"",
-        "tailoredWebPagesMobile":"量身定制的网页和应用程序通过直接满足用户偏好, 提供竞争优势, 增强参与度和满意度. 通过个性化功能和直观界面, 它们简化了用户互动, 推动了用户的留存和忠诚度."
+        "tailoredWebPagesMobile":"量身定制的网页和应用程序通过直接满足用户偏好, 提供竞争优势, 增强参与度和满意度. 通过个性化功能和直观界面, 它们简化了用户互动, 推动了用户的留存和忠诚度.",
+        "tailoredWebPagesMobile2":"",
+        "tailoredWebPagesMobile3":"",
+        "tailoredWebPagesMobile4":""
+
+
 
       },
 
@@ -576,6 +597,9 @@
         "commercialWebPage":"商业网页提供许多好处, 例如提高客户可达性, 全天候可用性和动态产品展示. 它提供有价值的分析, 增强品牌可见性, 并简化购买流程, 从而推动销售并培养客户忠诚度.",
         "exploreCommercial":"探索更多商业网页模版",
 
+        "commercialWebPageMobile":"商业网页提供许多好处, 例如提高客户可达性, 全天候可用性和动态产品展示. 它提供有价值的分析, 增强品牌可见性, 并简化购买流程, 从而推动销售并培养客户忠诚度.",
+        "commercialWebPageMobile2":"",
+
         "cmsDashboard":"客户管理系统",
         "adminDashboard":"创建您自己的管理仪表板可以提供集中控制, 实时数据监控和定制报告. 它增强了决策能力, 简化了工作流程管理, 并通过量身定制的访问控制提高了安全性, 使企业能够更有效地运作并快速应对变化.",
         "exploreCMS":"探索更多客户管理系统模版",
@@ -608,11 +632,19 @@
     "CreatingExplore":{
           "whatsOnYourMind": "您的想法是什么",
           "whatsOnYourMind2": "",
+          "whatsOnYourMindMobile": "您的想法是什么",
+          "whatsOnYourMindMobile2": "",
           "eCommerce": "电子商务",
           "commercial": "商业网页",
           "cmsDashboard": "客户管理系统",
           "investment": "金融投资",
-          "digitalBoard": "数字区块链"
+          "digitalBoard": "数字区块链",
+
+          "eCommerceTemplate": "电子商务模版",
+          "commercialTemplate": "商业网页模版",
+          "CMSDashboardTemplate": "客户管理系统模版",
+          "investmentTemplate": "金融投资模版",
+          "digitalBoradTemplate": "数字区块链模版"
 
       },
 
@@ -685,6 +717,7 @@
         "yourBusiness": "",
 
         "chooseYour":"选择您心仪的建设",
+        "pilih":"",
         "preferredSolution":"网站方案",
         "forBuilding":"",
 
@@ -701,7 +734,7 @@
         "what":"你想要",
         "typeOf":"什么类型",
         "doYouWant":"的网站?",
-        "doYouWantM":"",
+        "apaYang":"",
         "website":"标准网站",
         "eCommerce":"电子商务",
 
@@ -741,6 +774,8 @@
         "careerOpportunitiesTitleMobile":"加入我们的团队,",
         "careerOpportunitiesTitleMobile2":" 开启激动人心的职业机会.",
         "careerOpportunitiesDescriptionMobile":"通过当前科技产业赋能您的未来. 加入我们多元化的团队, 参与有影响力的项目. 探索促进成长并带来改变的职业机会. 我们提供具有竞争力的薪资, 全面的福利以及支持专业发展和创新的环境. 与我们一起推进您的职业生涯, 发挥您的最大潜力.",
+        "careerOpportunitiesDescriptionMobile2":"",
+        "careerOpportunitiesDescriptionMobile3":"",
 
         "ItProgrammer":{
           "ItProgrammerTitle":"电脑技术工程师",
@@ -833,6 +868,8 @@
           "attractTopTalent": "",
           
           "establishedInMobile": "当前科技工业有限公司成立于 2006 年, 总部位于马来西亚吉隆坡, 是一家高科技软件企业, 计划扩展到槟城, 沙巴和砂拉越. 我们专注于技术产品的研究, 开发, 生产和销售. 作为一家 “新技术企业”, 我们在多个领域开展项目. 我们以人才为导向的管理和以诚信为基础的运营吸引了行业精英, 使我们能够整合国内外的先进技术和管理实践. 我们提供全面的解决方案, 以提升企业管理和生产能力, 帮助企业保持竞争力, 实现稳定增长.",
+          "aboutCurrentTechMobile": "关于 CURRENT TECH INDUSTRIES",
+          "aboutCurrentTechMobile2": "",
 
           "designSolution": "设计解决方案",
           "engineerInnovative": "我们通过尖端技术工程创新解决方案, 以满足现代企",
@@ -936,6 +973,8 @@
         "innovation": "",
         
         "strongTeamMobile": "我们拥有一支强大的团队, 由超过15名专业人士组成, 涵盖 IT, 移动应用, UI/UX 和核心管理四个重要部门. 我们的 IT 团队擅长管理复杂的技术操作, 而移动应用部门则创建高性能, 用户友好的应用程序. UI/UX 团队专注于通过创新设计提供无缝的用户体验, 而核心管理部门则优化组织流程, 以推动战略增长. 这些部门共同使我们能够提供强大且量身定制的解决方案, 促进创新, 满足我们多样化客户群体不断变化的需求.",
+        "strongTeamMobile2": "",
+        "strongTeamMobile3": "",
 
         "teamExpertise": "团队的专业知识",
         "itEngineering": "电脑技术工程师",
@@ -977,6 +1016,8 @@
         "demands": "",
 
         "mobileAppTeamMobile": "移动应用部门专注于创建高性能, 用户友好的应用程序. 我们经验丰富的团队利用强大的设计技能和敏捷开发方法, 提供无缝的用户体验, 并快速适应市场需求. 我们确保跨设备的兼容性和卓越性能, 帮助客户实现商业目标.",
+        "mobileAppTeamMobile2": "",
+        "mobileAppTeamMobile3": "",
 
         "uiUxDesign": "用户界面和用户体验设计师",
         "userResearch": "用户研究",
@@ -999,6 +1040,7 @@
         "yang": "",
 
         "ourUiUxMobile": "我们的 UI / UX 部门致力于创造卓越的数字体验. 凭借在设计和用户研究方面的专业知识, 我们专注于理解用户需求. 采用以用户为中心的极简设计理念, 我们提升可用性和美学, 同时优化流程, 确保每个项目在视觉吸引力和功能性上都能出色表现.",
+        "ourUiUxMobile2": "",
         
         "coreManagement": "核心管理层",
         "strategicPlanning": "战略规划",
@@ -1043,7 +1085,10 @@
 
           "messageSuccessfullyMobile": "消息已成功发送给我们.",
           "ourCustomerServiceMobile": "我们的客户服务团队会尽快回复您.",
-          "ourCustomerServiceMobile2": ""
+          "ourCustomerServiceMobile2": "",
+          "hesitationMobile": "不要让犹豫阻止你",
+          "hesitationMobile2": "与我们联系",
+          "yourMessageMobile": "您的消息对我们非常重要."
       },  
 
     "WhatsappForm":{
@@ -1079,7 +1124,7 @@
         "socialMediaDescription":"Start to connect with us:",
         "quickLinks": "快速链接",
         "legal": "法律",
-        "office": "办事处:",
+        "office": "办事处",
         "sunwayOffice": "Sunway Velocity Office, (VO6) Signature 2 55100, Kuala Lumpur MALAYSIA.",
         "email": "电邮",
         "marketing": "marketing@currencttech.pro  ",
@@ -1146,7 +1191,7 @@
           "marketing": "marketing@currencttech.pro"
       },
 
-    "Disclaimer":{
+    "DisclaimerModal":{
         "name": "免责声明"
     },
 
@@ -1223,6 +1268,8 @@
     "stockiesSummary2": "",
     "stockiesSummaryMobile": "我们的 Stockies 饮料存储系统为马来西亚娱乐场所面临的饮料存储挑战提供了全面的解决方案. 凭借库存控制, 低库存警报, 订单跟踪, 会员区域, 员工签到, 佣金管理, 预订和促销等功能, Stockies 简化了运营并提高了效率. 这个强大的系统不仅简化了库存和订单管理, 还提升了客户体验, 使其成为希望提供一流服务的场所不可或缺的资产.",
     "stockiesSummaryMobile2": "",
+    "stockiesSummaryMobile3": "",
+
 
     "BROKERAGE": "搭建标商",
     "brokerage": "BROKERAGE",

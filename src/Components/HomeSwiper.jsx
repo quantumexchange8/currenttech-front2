@@ -25,7 +25,7 @@ const HomeSwiper = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[932px] xl:h-[1080px] pt-[50px] md:pt-[80px] overflow-hidden">
+    <div className="relative w-full h-[932px] xl:h-[1080px] pt-[50px] xl:pt-[80px] overflow-hidden">
       <div className="relative w-full h-full">
         {imagesWithText.map((item, index) => {
           const translation = t(item.key, { returnObjects: true });
@@ -44,21 +44,19 @@ const HomeSwiper = () => {
                 alt={translation.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-1/2 left-0 flex flex-col gap-[10px] w-full text-center text-white transform -translate-y-1/2 px-[20px]">
+              {/* Centered Text */}
+              <div className="absolute top-1/2 left-0 flex flex-col gap-4 w-full text-center text-white transform -translate-y-1/2 px-[20px] h-[200px] xl:h-auto">
                 <div className="text-2xl md:text-4xl xl:text-5xl font-bold leading-normal">
                   {translation.title}
                 </div>
-                <div className="w-full px-[10px]">
-                  <div className="hidden lg:block text-2xl font-normal text-[#D1D5DB] w-full">
+                <div className="w-full px-[10px] flex flex-col items-center">
+                  <div className="hidden xl:block text-2xl font-normal text-[#D1D5DB] w-full">
                     {translation.description1}
                   </div>
-                  <div className="hidden lg:block text-2xl font-normal text-[#D1D5DB] leading-normal w-full">
+                  <div className="hidden xl:block text-2xl font-normal text-[#D1D5DB] leading-normal w-full">
                     {translation.description2}
                   </div>
-                  <div className="hidden lg:hidden md:block text-xl font-normal text-[#D1D5DB] leading-normal w-full">
-                    {translation.descriptionMd}
-                  </div>
-                  <div className="md:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-full">
+                  <div className="xl:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-[360px]">
                     <div>{translation.descriptionMobile}</div>
                     <div>{translation.descriptionMobile2}</div>
                     <div>{translation.descriptionMobile3}</div>

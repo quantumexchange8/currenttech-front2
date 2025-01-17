@@ -1,9 +1,7 @@
-import React, {useContext, useState} from 'react';
+import React from 'react';
 import logo from '../Assets/Images/Footer/Logo.png';
 import logoMobile from '../Assets/Images/Footer/LogoMobile.png';
 import { FooterWhatsApp, FooterGmail, FooterFacebook, FooterFacebookM, FooterInstagram, FooterInstagramM, MobileGmail, MobileWhatsApp } from '../Components/Brand.jsx';
-import Modal from '../Components/Modal';
-import Footer_MobileInstagram from '../Assets/Images/FooterMobileInstagram.svg'
 // import { LanguageContext } from "../LanguagesContext";
 import { useTranslation } from 'react-i18next';
 import PrivacyPolicyModal from '../Components/PrivacyPolicyModal.jsx';
@@ -11,21 +9,8 @@ import DisclaimerModal from '../Components/DisclaimerModal.jsx';
 import TermsAndConditionModal from '../Components/TermsAndConditionModal.jsx';
 
 const Footer = () => {
-    const { t, i18n } = useTranslation();
-    const [openButton, setOpenButton] = useState(false);
-    const [selectedButton, setSelectedButton] = useState(null);
-
-    const [privacyModal, setPrivacyModal] = useState(false);
+    const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
-
-    const handleButtonClick = (button) => {
-        setOpenButton(true);
-        setSelectedButton(button);
-    };
-
-    const handlePrivacyButton = () => {
-        setPrivacyModal(true);
-    }
 
     return (
         <div className="w-full py-[46px] md:py-[70px] bg-[#E5E7EB] flex justify-center items-center">
@@ -133,7 +118,7 @@ const Footer = () => {
                             </div>
                             <div className='flex gap-[10px]'>
                                 <div className='text-[#153764] text-xl font-bold'>
-                                    {t("Footer.email")}
+                                    {t("Footer.email")}:
                                 </div>
                                 <a href='mailto:marketing@currencttech.pro' className='text-[#557AAA] text-xl font-normal '>
                                     {t("Footer.marketing")}
@@ -308,7 +293,7 @@ const Footer = () => {
                                 <a href="/special">
                                     {t("mobileTopbar.specialPage")}
                                 </a>
-                                <a href="/product">
+                                <a href="/products">
                                     {t("mobileTopbar.productsPage")}
                                 </a>
                                 <a href="/creating">

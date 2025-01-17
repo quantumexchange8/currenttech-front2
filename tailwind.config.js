@@ -24,6 +24,8 @@ module.exports = {
       'xs': '390px',
       // => @media (min-width: 393px) { ... }
 
+      's': '430px',
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
