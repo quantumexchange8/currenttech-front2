@@ -285,14 +285,14 @@ const Home = () => {
                             {t("Home.coreService")}
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[60px] xl:gap-x-[100px] gap-y-[100px] xl:gap-y-[150px] px-3">
+                        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[60px] xl:gap-x-[100px] gap-y-[100px] xl:gap-y-[150px] px-3 xl:p-0">
                             {/* Service 1 */}
                             <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="400">
                                 <Player
                                     autoplay
                                     loop
                                     src={CMS} // Pass the Lottie JSON file
-                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[500px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video1} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal'>
@@ -322,7 +322,7 @@ const Home = () => {
                                     autoplay
                                     loop
                                     src={Website} // Pass the Lottie JSON file
-                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[500px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video2} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal'>
@@ -348,7 +348,7 @@ const Home = () => {
                                     autoplay
                                     loop
                                     src={Mobile} // Pass the Lottie JSON file
-                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[500px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video3} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal'>
@@ -377,7 +377,7 @@ const Home = () => {
                                     autoplay
                                     loop
                                     src={Hr} // Pass the Lottie JSON file
-                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[500px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video4} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal' >
@@ -406,7 +406,7 @@ const Home = () => {
                                     autoplay
                                     loop
                                     src={Pos} // Pass the Lottie JSON file
-                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[500px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video5} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA] leading-normal'>
@@ -440,7 +440,7 @@ const Home = () => {
                                     autoplay
                                     loop
                                     src={Support} // Pass the Lottie JSON file
-                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[400px]' // Set dimensions
+                                    className='w-[300px] md:w-[250px] lg:w-[350px] xl:w-[500px] h-[300px] md:h-[250px] lg:h-[350px] xl:h-[500px]' // Set dimensions
                                 />
                                 {/* <video src={video6} className='w-[300px] md:w-[500px] h-[300px] md:h-[500px]' /> */}
                                 <div className='text-base md:text-lg lg:text-2xl font-bold text-[#557AAA]'>
@@ -889,7 +889,7 @@ const Home = () => {
                 <div className='flex flex-col gap-[50px] max-w-[1200px]'>
                     <div className='flex flex-col items-center gap-[10px] lg:gap-5'>
                         {/* Web */}
-                        <div className='text-xl text-[#557AAA] font-normal md:font-medium leading-normal' data-aos="fade-up" data-aos-delay="600">
+                        <div className='text-xl xl:text-[32px] text-[#557AAA] font-normal md:font-medium leading-normal' data-aos="fade-up" data-aos-delay="600">
                             {t("Home.impossible")}
                         </div>
                         <div className='hidden md:flex flex-col items-center  md:text-3xl lg:text-5xl text-[#153764] font-bold leading-normal' data-aos="fade-up" data-aos-delay="800">

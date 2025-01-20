@@ -26,7 +26,7 @@ const Team = () => {
     }, []);
 
     return (
-        <div className='flex flex-col pt-[50px] md:pt-[80px] pb-[250px]'>
+        <div className='flex flex-col pt-[50px] xl:pt-[80px] pb-[250px]'>
             <div className='flex flex-col gap-[150px] md:gap-[200px] w-full'>
                 {/* Top Image */}
                 {/* Web */}
@@ -64,10 +64,14 @@ const Team = () => {
                             </div>
                         </div>
                         {/* Mobile */}
-                        <div className='xl:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
+                        <div className='md:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                             <div>{t("Team.strongTeamMobile")}</div>
                             <div>{t("Team.strongTeamMobile2")}</div>
                             <div>{t("Team.strongTeamMobile3")}</div>
+                        </div>
+                        {/* iPad */}
+                        <div className='hidden md:block xl:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
+                            <div>{t("Team.strongTeamIpad")}</div>
                         </div>
                     </div>
                 </div>
@@ -258,7 +262,7 @@ const Team = () => {
                             </div>
                         </div>
                         {/* Mobile */}
-                        <div className='xl:hidden flex justify-center relative'>
+                        <div className='md:hidden flex justify-center relative'>
                             {/* Image */}
                             <div className='relative w-full' data-aos="fade-up" data-aos-delay="800">
                                 <img src={TeamM2} alt="" className='w-full max-h-[600px] object-cover'/>
@@ -272,6 +276,22 @@ const Team = () => {
                                     <div> {t("Team.mobileAppTeamMobile")} </div>
                                     <div> {t("Team.mobileAppTeamMobile2")} </div>
                                     <div> {t("Team.mobileAppTeamMobile3")} </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* iPad */}
+                        <div className='hidden md:flex justify-center xl:hidden relative'>
+                            {/* Image */}
+                            <div className='relative w-full' data-aos="fade-up" data-aos-delay="800">
+                                <img src={TeamM2} alt="" className='w-full max-h-[600px] object-cover'/>
+                            </div>
+                            {/* Text */}
+                            <div className='absolute inset-0 flex flex-col gap-[10px] md:gap-5 justify-center z-10 px-[25px]'>
+                                <div className='text-xl md:text-4xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.empowering")}
+                                </div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal xl:w-[600px]' data-aos="fade-up" data-aos-delay="600">
+                                    <div> {t("Team.mobileAppTeamIpad")} </div>
                                 </div>
                             </div>
                         </div>
@@ -363,7 +383,7 @@ const Team = () => {
                             </div>
                         </div>
                         {/* Mobile */}
-                        <div className='xl:hidden flex justify-center relative'>
+                        <div className='md:hidden flex justify-center relative'>
                             {/* Image */}
                             <div className='relative w-full' data-aos="fade-up" data-aos-delay="400">
                                 <img src={TeamM3} alt="" className='w-full max-h-[600px] object-cover'/>
@@ -376,6 +396,22 @@ const Team = () => {
                                 <div className='text-base md:text-2xl text-[#4B5563] font-normal xl:w-[600px]' data-aos="fade-up" data-aos-delay="600">
                                     <div>{t("Team.ourUiUxMobile")}</div>
                                     <div>{t("Team.ourUiUxMobile2")}</div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Mobile */}
+                        <div className='hidden md:flex justify-center xl:hidden relative'>
+                            {/* Image */}
+                            <div className='relative w-full' data-aos="fade-up" data-aos-delay="400">
+                                <img src={TeamM3} alt="" className='w-full max-h-[600px] object-cover'/>
+                            </div>
+                            {/* Text */}
+                            <div className='absolute inset-0 flex flex-col gap-[10px] md:gap-5 justify-center px-[25px]'>
+                                <div className='text-xl md:text-4xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="500">
+                                    {t("Team.enterVirtual")}
+                                </div>
+                                <div className='text-base md:text-2xl text-[#4B5563] font-normal xl:w-[600px]' data-aos="fade-up" data-aos-delay="600">
+                                    <div>{t("Team.ourUiUxIpad")}</div>
                                 </div>
                             </div>
                         </div>

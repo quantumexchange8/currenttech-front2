@@ -21,7 +21,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className="flex flex-col gap-[250px] pt-[50px] md:pt-[80px] pb-[250px]">
+        <div className="flex flex-col gap-[250px] pt-[50px] xl:pt-[80px] pb-[250px]">
             <div className="flex flex-col gap-[150px] md:gap-[200px] justify-center items-center">
                 {/* Top Image */}
                 <div className='relative w-full'>
@@ -82,7 +82,7 @@ const About = () => {
                             <div className='hidden xl:block text-xl md:text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
                                 {t("About.aboutCurrentTech")}
                             </div>
-                            <div className='flex flex-col xl:hidden text-xl md:text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
+                            <div className='flex flex-col md:flex-row md:gap-1 xl:hidden text-xl md:text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up">
                                 <div>{t("About.aboutCurrentTechMobile")}</div>
                                 <div>{t("About.aboutCurrentTechMobile2")}</div>
                             </div>
@@ -167,7 +167,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 {/* Mobile */}
-                                <div className='xl:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
+                                <div className='md:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                                     <div className='flex flex-col gap-8'>
                                         <div>
                                             <div>{t("About.engineerInnovativeMobile")}</div>
@@ -175,6 +175,17 @@ const About = () => {
                                         </div>
                                         <div>
                                             {t("About.engineerInnovativeMobile2")}
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* iPad */}
+                                <div className='hidden md:block xl:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
+                                    <div className='flex flex-col gap-8'>
+                                        <div>
+                                            <div>{t("About.engineerInnovativeIpad")}</div>
+                                        </div>
+                                        <div>
+                                            {t("About.engineerInnovativeIpad2")}
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +263,7 @@ const About = () => {
                         {/* Centered Content */}
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[50px] px-[25px] md:px-0">
                             {/* Main Title */}
-                            <div className='text-center text-[#D1D5DB] leading-normal text-2xl md:text-5xl font-bold lean' data-aos="fade-up" data-aos-delay="500">
+                            <div className='text-center text-[#D1D5DB] leading-normal text-2xl md:text-5xl font-bold' data-aos="fade-up" data-aos-delay="500">
                                 {t("About.experience")}
                             </div>
 
@@ -316,14 +327,14 @@ const About = () => {
                     <div className='text-xl md:text-[32px] text-[#557AAA] font-normal leading-normal'  data-aos="fade-up" data-aos-delay="600">
                         {t("About.highlyValue")}
                     </div>
-                    <div className='flex flex-col xl:flex-row justify-between gap-[100px] xl:gap-0' data-aos="fade-up" data-aos-delay="800">
+                    <div className='flex flex-col xl:flex-row justify-between gap-[100px] xl:gap-0 md:items-center' data-aos="fade-up" data-aos-delay="800">
                         {/* 1 */}
                         <div className='flex flex-col gap-[30px] w-[330px]'>
                             <div className='text-5xl md:text-[64px] text-[#153764] font-bold leading-normal'>
                                 {t("About.01")}
                             </div>
                             <div className='flex flex-col gap-[10px]'>
-                                <div className='text-xl md:text-3xl xl:text-2xl text-[#557AAA] font-normal leading-normal'>
+                                <div className='text-xl md:text-2xl text-[#557AAA] font-normal leading-normal'>
                                     {t("About.innovative")}
                                 </div>
                                 {/* Web */}
@@ -339,7 +350,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 {/* Mobile */}
-                                <div className='xl:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal'>
+                                <div className='xl:hidden text-base md:text-lg text-[#4B5563] font-normal leading-normal'>
                                     <div>
                                         {t("About.driveInnoavtionMobile")}
                                     </div>
@@ -358,7 +369,7 @@ const About = () => {
                                 {t("About.02")}
                             </div>
                             <div className='flex flex-col gap-[10px]'>
-                                <div className='text-xl md:text-3xl xl:text-2xl text-[#557AAA] font-normal leading-normal'>
+                                <div className='text-xl md:text-2xl text-[#557AAA] font-normal leading-normal'>
                                     {t("About.intuitive")}
                                 </div>
                                 {/* Web */}
@@ -374,7 +385,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 {/* Mobile */}
-                                <div className='xl:hidden text-base md:text-2xl text-[#4B5563] font-normal leading-normal'>
+                                <div className='xl:hidden text-base md:text-lg text-[#4B5563] font-normal leading-normal'>
                                     <div>
                                         {t("About.technologyMobile")}
                                     </div>
@@ -393,10 +404,10 @@ const About = () => {
                                 {t("About.03")}
                             </div>
                             <div className='flex flex-col gap-[10px]'>
-                                <div className='text-xl md:text-3xl xl:text-2xl text-[#557AAA] font-normal leading-normal'>
+                                <div className='text-xl md:text-2xl text-[#557AAA] font-normal leading-normal'>
                                     {t("About.modern")}
                                 </div>
-                                <div className='text-base md:text-2xl xl:text-xl text-[#4B5563] font-normal leading-normal'>
+                                <div className='text-base md:text-lg xl:text-xl text-[#4B5563] font-normal leading-normal'>
                                     <div>
                                         {t("About.embracing")}
                                     </div>
@@ -552,7 +563,7 @@ const About = () => {
                                 {t("About.ourExpertiseMobile2")}
                             </div>
                         </div>
-                        <div className='hidden md:flex text-sm md:text-xl text-[#557AAA] font-normal md:font-light leading-normal'>
+                        <div className='hidden md:flex text-sm md:text-xl text-[#557AAA] font-normal md:font-light leading-normal md:px-4 xl:p-0'>
                             {t("About.powerful")}
                         </div>
                         <div className='md:hidden text-sm md:text-xl text-[#557AAA] font-normal md:font-light leading-normal'>

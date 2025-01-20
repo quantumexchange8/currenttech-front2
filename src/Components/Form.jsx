@@ -42,8 +42,8 @@ export default function TabComponent({ selectedButton }) {
   }, [selectedButton, isMobile, t]);
 
   return (
-    <div className="w-full max-w-md flex flex-col md:gap-[30px]">
-      <div className='flex flex-col items-center gap-[20px] md:gap-[10px]'>
+    <div className="w-full max-w-xl flex flex-col xl:gap-[30px]">
+      <div className='flex flex-col items-center gap-[20px] xl:gap-[10px]'>
         <div className="text-black text-center text-xl font-bold">
           {title}
         </div>
@@ -58,7 +58,7 @@ export default function TabComponent({ selectedButton }) {
         {selectedButton === 'whatsapp' && (
           <div>
             {isMobile ? (
-              <div className='flex flex-col items-center gap-[20px] mt-[20px] md:hidden'>
+              <div className='flex flex-col items-center gap-[20px] mt-[20px] xl:hidden'>
                 <div className='flex border border-dashed border-[#000] rounded-[5px] gap-4 w-[220px] h-[60px] justify-center'>
                   <div className='flex flex-col justify-center'>
                     <FormWhatsApp />
@@ -72,7 +72,7 @@ export default function TabComponent({ selectedButton }) {
                 </div>
               </div>
             ) : (
-              <div className='hidden md:flex flex-col items-center gap-[30px]'>
+              <div className='hidden xl:flex flex-col items-center gap-[30px]'>
                 <div className='flex border border-dashed border-[#000] rounded-[5px] gap-4 w-[220px] h-[60px] justify-center'>
                   <div className='flex flex-col justify-center'>
                     <FormWhatsApp />
@@ -90,7 +90,7 @@ export default function TabComponent({ selectedButton }) {
         {selectedButton === 'gmail' && (
           <div>
             {isMobile ? (
-              <div className='flex flex-col items-center gap-[50px] mt-[20px] md:hidden'>
+              <div className='flex flex-col items-center gap-[50px] mt-[20px] xl:hidden'>
                 <div className="text-black text-center text-sm font-medium leading-[1.20]">
                   {content}
                 </div>

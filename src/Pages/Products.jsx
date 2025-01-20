@@ -28,7 +28,7 @@ const Products = () => {
     }, [selectedProduct]);
 
     return (
-        <div className='flex flex-col w-full justify-center gap-[150px] md:gap-[200px] pt-[50px[ md:pt-[80px] pb-[200px] md:pb-[250px]'>
+        <div className='flex flex-col w-full justify-center gap-[150px] md:gap-[200px] pt-[50px[ xl:pt-[80px] pb-[200px] md:pb-[250px]'>
             {/* Top Image */}
             <div className='w-full relative'>
                 <img src={image1} alt='Special 1' className='hidden xl:block w-full object-cover' />
@@ -70,7 +70,7 @@ const Products = () => {
                 </div>
             </div>
             {/* Lg */}
-            <div className='sticky top-[80px] z-10 hidden xl:hidden lg:flex justify-center items-center w-full bg-[#E5E7EB] h-auto py-[35px] lg:px-2' >
+            <div className='sticky top-[50px] z-10 hidden xl:hidden lg:flex justify-center items-center w-full bg-[#E5E7EB] h-auto py-[35px] lg:px-2' >
                 <div className='w-[1200px] flex justify-between'>
                     {productData.map((product) => (
                     <button
@@ -84,7 +84,7 @@ const Products = () => {
                 </div>
             </div>
             {/* Md */}
-            <div className='sticky top-[80px] z-10 hidden lg:hidden sm:flex justify-center items-center w-full bg-[#E5E7EB] h-auto py-[35px] px-[25px]' >
+            <div className='sticky top-[50px] z-10 hidden lg:hidden sm:flex justify-center items-center w-full bg-[#E5E7EB] h-auto py-[35px] px-[25px]' >
                 <div className='grid grid-cols-4 w-full justify-center gap-10'>
                     {productData.map((product) => (
                     <button

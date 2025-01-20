@@ -33,17 +33,17 @@ const PrivacyPolicyModal = () => {
         aria-describedby="privacy-policy-content"
         sx={{
             '& .MuiDialog-paper': {
-              width: {
-                xs: '383px', 
-                sm: '400px', 
-                md: '1000px', 
-                xl: '1552px', 
-              },
-              maxWidth: '100%', 
-              borderRadius: '20px',
-              margin: {
-                xs: 0,
-              },
+                width: {
+                    xs: '380px', 
+                    sm: '700px', 
+                    md: '900px', 
+                    xl: '1536px', 
+                    },
+                maxWidth: '100%', 
+                borderRadius: '20px',
+                margin: {
+                    xs: 0,
+                },
             },
           }}
       >
@@ -63,7 +63,7 @@ const PrivacyPolicyModal = () => {
             >
               <div className="flex justify-end"><CloseM /></div>
             </button>
-            <div className="w-[300px]">{t("PrivacyPolicyModal.currentTech")}</div>
+            <div className="w-[300px] md:w-full">{t("PrivacyPolicyModal.currentTech")}</div>
           </div>
         </DialogTitle>
 
@@ -79,7 +79,7 @@ const PrivacyPolicyModal = () => {
                 </div>
                 {/* Welcome */}
                 {/* Web */}
-                <div className="hidden md:block text-2xl text-[#4B5563] font-normal">
+                <div className="hidden xl:block text-2xl text-[#4B5563] font-normal">
                     <div>
                         Welcome to our company's website and services.
                     </div>
@@ -95,7 +95,7 @@ const PrivacyPolicyModal = () => {
                 </div>
 
                 {/* Mobile */}
-                <div className="md:hidden text-sm text-[#4B5563] font-normal">
+                <div className="xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal">
                     Welcome to our company’s website and services. The following Terms & Conditions (hereinafter referred to as "these Terms") govern your access to and use of our website, software, applications, and related services. By accessing or using our website or services, you acknowledge that you have read, understood, and agree to be bound by these Terms. Please read carefully.
                 </div>
                 
@@ -108,7 +108,7 @@ const PrivacyPolicyModal = () => {
                                 Use of Services
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                         Our company provides IT services, including software development, technical consulting, and data processing. 
@@ -130,7 +130,7 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     Our company provides IT services, including software development, technical consulting, and data processing. Users must comply with all applicable laws and regulations while using our services and must not use our services for illegal purposes or beyond reasonable limits.
                                 </li>
@@ -145,7 +145,7 @@ const PrivacyPolicyModal = () => {
                                 User Responsibilities
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                         You agree to provide accurate, truthful, complete, and up-to-date personal information and update this 
@@ -167,7 +167,7 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     You agree to provide accurate, truthful, complete, and up-to-date personal information and update this information in the event of any changes. Our company is not liable for any issues arising from the provision of false or inaccurate information.
                                 </li>
@@ -182,7 +182,7 @@ const PrivacyPolicyModal = () => {
                                 Intellectual Property
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                         All content on our website and within our services, including but not limited to text, images, software, code, 
@@ -207,7 +207,7 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     All content on our website and within our services, including but not limited to text, images, software, code, designs, and logos, is the property of our company or our licensors and is protected under Malaysian intellectual property laws. Without prior written consent from our company, no part of our website or services may be used, copied, modified, distributed, or published.
                                 </li>
@@ -222,7 +222,7 @@ const PrivacyPolicyModal = () => {
                                 Changes and Termination of Services
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                         Our company reserves the right to modify, suspend, or terminate all or part of the services at any time without 
@@ -245,13 +245,18 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
-                                <li>
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
+                                <li className="md:hidden">
                                     <div>
                                         Our company reserves the right to modify, suspend, or terminate all or part of the
                                     </div> 
                                     <div>
                                         services at any time without prior notice. Our company is not responsible for any loss or inconvenience resulting from changes, suspension, or termination of the services.
+                                    </div>
+                                </li>
+                                <li className="hidden md:block">
+                                    <div>
+                                        Our company reserves the right to modify, suspend, or terminate all or part of the services at any time without prior notice. Our company is not responsible for any loss or inconvenience resulting from changes, suspension, or termination of the services.
                                     </div>
                                 </li>
                                 <li>
@@ -265,7 +270,7 @@ const PrivacyPolicyModal = () => {
                                 Payments and Fees
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                         Users who utilise our paid services must make timely payments as required. All fees are quoted in Malaysian
@@ -284,7 +289,7 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     Users who utilise our paid services must make timely payments as required. All fees are quoted in Malaysian Ringgit (MYR), and payment terms are specified in the relevant service agreement.
                                 </li>
@@ -299,10 +304,10 @@ const PrivacyPolicyModal = () => {
                                 Technical Risks and Data Security
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
-                                        Users acknowledge and agree that using our company’s services involves certain technical risks related to data 
+                                        Users acknowledge and agree that using our company's services involves certain technical risks related to data 
                                     </div>
                                     <div>
                                         transmission, storage, and security. While our company takes reasonable measures to safeguard user data, we 
@@ -321,7 +326,7 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     Users acknowledge and agree that using our company’s services involves certain technical risks related to data transmission, storage, and security. While our company takes reasonable measures to safeguard user data, we cannot provide absolute protection against all network or data security issues.
                                 </li>
@@ -336,7 +341,7 @@ const PrivacyPolicyModal = () => {
                                 Limitation of Liability
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                     To the fullest extent permitted by law, our company shall not be liable for any indirect, incidental, special, or 
@@ -358,7 +363,7 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     To the fullest extent permitted by law, our company shall not be liable for any indirect, incidental, special, or consequential damages arising from the use or inability to use our website or services, even if our company has been advised of the possibility of such damages.
                                 </li>
@@ -373,7 +378,7 @@ const PrivacyPolicyModal = () => {
                                 Privacy and Data Protection
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                     Our company strictly adheres to the Personal Data Protection Act (PDPA) of Malaysia and is committed to
@@ -395,7 +400,7 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     Our company strictly adheres to the Personal Data Protection Act (PDPA) of Malaysia and is committed to protecting users’ personal privacy. For details on data collection, usage, sharing, and protection, please refer to our Privacy Policy.
                                 </li>
@@ -410,7 +415,7 @@ const PrivacyPolicyModal = () => {
                                 Third-Party Links
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                     Our website and services may contain links to third-party websites or services. These links are provided solely for 
@@ -432,14 +437,19 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
-                                <li>
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
+                                <li className="md:hidden"> 
                                     <div>
                                         Our website and services may contain links to third-party websites or services. These links
                                     </div> 
                                     <div>
                                         are provided solely for user convenience, and our company is not responsible for the content, privacy policies, or practices of any third-party sites.
                                     </div>
+                                </li>
+                                <li className="hidden md:block"> 
+                                    <div>
+                                        Our website and services may contain links to third-party websites or services. These links are provided solely for user convenience, and our company is not responsible for the content, privacy policies, or practices of any third-party sites.
+                                    </div> 
                                 </li>
                                 <li>
                                     Accessing third-party content is at the user’s own risk, and any interactions or transactions with third parties are solely between the user and the third party.
@@ -452,7 +462,7 @@ const PrivacyPolicyModal = () => {
                                 Governing Law and Dispute Resolution
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                     These Terms are governed by and construed in accordance with the laws of Malaysia. Any disputes arising from 
@@ -474,8 +484,16 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
-                                <li>
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
+                                <li className="md:hidden">
+                                    <div>
+                                        These Terms are governed by and construed
+                                    </div> 
+                                    <div>
+                                        in accordance with the laws of Malaysia. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of Malaysian courts.
+                                    </div>
+                                </li>
+                                <li className="hidden md:block">
                                     <div>
                                         These Terms are governed by and construed
                                     </div> 
@@ -494,7 +512,7 @@ const PrivacyPolicyModal = () => {
                                 Amendments to the Terms
                             </div>
                             {/* Web */}
-                            <ul className="list-disc list-outside hidden md:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
+                            <ul className="list-disc list-outside hidden xl:flex flex-col gap-6 text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     <div>
                                     Our company reserves the right to modify or update these Terms at any time without prior notice. Any
@@ -511,7 +529,7 @@ const PrivacyPolicyModal = () => {
                                 </li>
                             </ul>
                             {/* Mobile */}
-                            <ul className="md:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm text-[#4B5563] font-normal">
+                            <ul className="xl:hidden list-disc list-outside flex flex-col gap-6 pl-2 text-sm md:text-2xl text-[#4B5563] font-normal">
                                 <li>
                                     Our company reserves the right to modify or update these Terms at any time without prior notice. Any modifications will become effective immediately upon posting on our website. Continued use of our services following any changes constitutes acceptance of the updated Terms. Users are encouraged to review these Terms periodically to stay informed about any updates.
                                 </li>

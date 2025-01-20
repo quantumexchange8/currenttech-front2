@@ -452,6 +452,9 @@
           "directPath":"DIRECT PATH TO ADVANTAGE",
           "tailoredWebPages":"Tailored web pages and apps enhance engagement by catering to user ",
           "preferences":"preferences, boosting satisfaction, retention, and loyalty.",
+          "tailoredWebPagesIpad":"Tailored web pages and apps enhance engagement by catering to user ",
+          "tailoredWebPagesIpad2":"preferences, boosting satisfaction, retention, and loyalty.",
+
 
           "preparing":"PREPARING YOUR WEBPAGE",
           "buildAwesome":"BUILD AWESOME WEBSITE FOR YOU",
@@ -765,6 +768,8 @@
           "careerOpportunitiesDescriptionMobile":"Empower your future with Current Tech Industries. Join our diverse team, work on impactful projects, and enjoy competitive salaries, benefits, and growth opportunities in a supportive environment. Advance your career with us.",
           "careerOpportunitiesDescriptionMobile2":"",
           "careerOpportunitiesDescriptionMobile3":"",
+          "careerOpportunitiesTitleIpad":"Join Our Team for Exciting Career Opportunities",
+          
           "ItProgrammer":{
             "ItProgrammerTitle":"IT PROGRAMMER",
             "ItProgrammerDescription":"Skill & at lease 1 Year(s) experience.",
@@ -878,6 +883,8 @@
             "engineerInnovativeMobile": "We engineer innovative solutions using AI, automation, and data insights to drive efficiency and growth. Our systems seamlessly blend digital and physical infrastructures for high performance. By collaborating with clients, we future-proof businesses and transform industries with precision and agility.",
             "engineerInnovativeMobiles": "  ",
             "engineerInnovativeMobile2": "",
+            "engineerInnovativeIpad": "We engineer innovative solutions using AI, automation, and data insights to drive efficiency and growth. Our systems seamlessly blend digital and physical infrastructures for high performance. By collaborating with clients, we future-proof businesses and transform industries with precision and agility.",
+            "engineerInnovativeIpad2": "",
 
             "strategyPlanning": "STRATEGY PLANNING",
             "leverage": "Leverage advanced analytics and AI to",
@@ -962,6 +969,7 @@
             "strongTeamMobile": "A strong team of 15+ professionals across IT, Mobile App, UI/UX, and Core Management, driving innovation and delivering tailored solutions that fuel growth and meet evolving client needs.",
             "strongTeamMobile2": "",
             "strongTeamMobile3": "",
+            "strongTeamIpad": "A strong team of 15+ professionals across IT, Mobile App, UI/UX, and Core Management, driving innovation and delivering tailored solutions that fuel growth and meet evolving client needs.",
 
             "teamExpertise": "Team's Expertise",
             "itEngineering": "IT ENGINEERING",
@@ -1005,6 +1013,7 @@
             "mobileAppTeamMobile": "The Mobile App team creates high-performance, user-friendly applications, ensuring seamless experiences and superior performance across devices, while adapting swiftly to market demands.",
             "mobileAppTeamMobile2": "",
             "mobileAppTeamMobile3": "",
+            "mobileAppTeamIpad": "The Mobile App team creates high-performance, user-friendly applications, ensuring seamless experiences and superior performance across devices, while adapting swiftly to market demands.",
 
 
             "uiUxDesign": "UI AND UX DESIGN",
@@ -1029,6 +1038,7 @@
 
             "ourUiUxMobile": "Our UI/UX team creates exceptional, user-centered designs that blend aesthetics and functionality, enhancing usability through minimalist design and in-depth user research.",
             "ourUiUxMobile2": "",
+            "ourUiUxIpad": "Our UI/UX team creates exceptional, user-centered designs that blend aesthetics and functionality, enhancing usability through minimalist design and in-depth user research.",
             
             "coreManagement": "CORE MANAGEMENT",
             "strategicPlanning": "Strategic Planning",
@@ -1137,14 +1147,19 @@
             "thankYou": "Thank you for visiting our website.",
             "weValueYour": "We value your privacy and are committed to protecting your personal information.",
             "thePrivacyPolicy": "This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our services.",
+
+            "weValueYourIpad": "We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our services.",
+
             
             "collectionOfInfo": "1. Collection of Information",
             "personalData": "Personal Data:",
             "weMayCollect": "We may collect personal data such as your name, email address, and contact information,",
+            "weMayCollectIpad": "We may collect personal data such as your name, email address, and contact information, typically when you register for an account, subscribe to our services, or fill out forms.",
             "typicallyWhen": "typically when you register for an account, subscribe to our services, or fill out forms.",
             "NonPersonalData": "Non-Personal Data:",
             "collectNonPersonally": "We may collect non-personally identifiable information, including browser type, device information,",
             "ipAddress": "IP address, date and time of access, to improve our website and services.",
+            
 
             "financialData": "Financial Data:",
             "ifOurService": "If our services involve financial transactions, we collect relevant payment information,",

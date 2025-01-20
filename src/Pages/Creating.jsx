@@ -42,7 +42,7 @@ const Creating = () => {
     }, []);
 
     return (
-        <div className="flex flex-col pt-[50px] md:pt-20 pb-[250px] w-full">
+        <div className="flex flex-col pt-[50px] xl:pt-20 pb-[250px] w-full">
             <div className='flex flex-col gap-[150px] md:gap-[200px]'>
                 {/* Top Image */}
                 <div className='relative'>
@@ -111,7 +111,7 @@ const Creating = () => {
                                 <img src={CreatingM2} alt="" className='md:hidden'/>
                             </div>
                             <div className='flex flex-col gap-[50px] w-full xl:w-[500px]'>
-                                <div className='hidden xl:flex flex-col gap-[10px] md:gap-[30px] xl:w-[500px]'>
+                                <div className='hidden md:flex flex-col gap-[10px] md:gap-[30px] xl:w-[500px]'>
                                     <div className='text-xl md:text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="300">
                                         {t("Creating.commercial")}
                                     </div>
@@ -119,7 +119,7 @@ const Creating = () => {
                                         {t("Creating.commercialWebPage")}                            
                                     </div>
                                 </div>
-                                <div className='xl:hidden flex flex-col gap-[10px] md:gap-[30px] xl:w-[500px]'>
+                                <div className='md:hidden flex flex-col gap-[10px] md:gap-[30px] xl:w-[500px]'>
                                     <div className='text-xl md:text-2xl text-[#557AAA] font-bold' data-aos="fade-up" data-aos-delay="300">
                                         {t("Creating.commercial")}
                                     </div>

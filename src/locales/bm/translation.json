@@ -68,7 +68,7 @@
     "homeCircle": {
         "posSystem": {
           "title": "SISTEM POS",
-          "descriptionBold": "Dengan lebih daripada",
+          "descriptionBold": "Dengan lebih daripada ",
           "descriptionBold2": "",
           "description2": "pelanggan runcit premium",
           "description3": "menggunakan sistem POS ",
@@ -452,6 +452,8 @@
       "directPath":"UTAMA ANDA MENUJU KELEBIHAN",
       "tailoredWebPages":"Laman web dan aplikasi yang disesuaikan meningkatkan penglibatan dengan memenuhi ",
       "preferences":"keutamaan pengguna, sekali gus meningkatkan kepuasan, pengekalan, dan kesetiaan.",
+      "tailoredWebPagesIpad":"Laman web dan aplikasi yang disesuaikan meningkatkan penglibatan dengan memenuhi keutamaan pengguna, sekali gus meningkatkan kepuasan, pengekalan, dan kesetiaan.",
+      "tailoredWebPagesIpad2":"",
 
       "preparing":"MENYIAPKAN LAMAN WEB ANDA",
       "buildAwesome":"MENDIRIKAN LAMAN WEB",
@@ -764,6 +766,7 @@
       "careerOpportunitiesDescriptionMobile":"Perkasakan masa depan anda dengan  ",
       "careerOpportunitiesDescriptionMobile2":"Current Tech Industries. Sertai pasukan ",
       "careerOpportunitiesDescriptionMobile3":"kami yang pelbagai, bekerja pada projek bermakna, dan nikmati gaji, faedah, serta peluang pertumbuhan dalam persekitaran yang menyokong. Majukan kerjaya anda bersama kami.",
+      "careerOpportunitiesTitleIpad":"SERTA PASUKAN KAMI UNTUK PELUANG KERJAYA YANG MENARIK",
 
       "ItProgrammer":{
         "ItProgrammerTitle":"IT PROGRAMMER",
@@ -879,6 +882,8 @@
         "engineerInnovativeMobile": "Kami menghasilkan penyelesaian inovatif menggunakan AI, automasi, dan analitik ",
         "engineerInnovativeMobiles": "data untuk meningkatkan kecekapan dan pertumbuhan. Sistem kami menggabungkan infrastruktur digital dan fizikal untuk prestasi tinggi. Dengan berkolaborasi bersama pelanggan, kami mempersiapkan perniagaan untuk masa depan dan mengubah industri dengan ketepatan dan kelincahan.",
         "engineerInnovativeMobile2": "",
+        "engineerInnovativeIpad": "Kami menghasilkan penyelesaian inovatif menggunakan AI, automasi, dan analitik data untuk meningkatkan kecekapan dan pertumbuhan. Sistem kami menggabungkan infrastruktur digital dan fizikal untuk prestasi tinggi. Dengan berkolaborasi bersama pelanggan, kami mempersiapkan perniagaan untuk masa depan dan mengubah industri dengan ketepatan dan kelincahan.",
+        "engineerInnovativeIpad2": "",
 
         "strategyPlanning": "PERANCANGAN STRATEGI",
         "leverage": "Manfaatkan analitik lanjutan dan AI untuk ",
@@ -963,6 +968,7 @@
         "strongTeamMobile": "Pasukan yang kuat terdiri daripada lebih 15 profesional dalam bidang IT, Aplikasi Mudah Alih, UI/UX, dan Pengurusan Teras, memacu inovasi dan menyediakan penyelesaian ",
         "strongTeamMobile2": "tersuai yang merangsang pertumbuhan ",
         "strongTeamMobile3": "serta memenuhi keperluan pelanggan yang berkembang.",
+        "strongTeamIpad": "Pasukan yang kuat terdiri daripada lebih 15 profesional dalam bidang IT, Aplikasi Mudah Alih, UI/UX, dan Pengurusan Teras, memacu inovasi dan menyediakan penyelesaian tersuai yang merangsang pertumbuhan serta memenuhi keperluan pelanggan yang berkembang.",
 
         "teamExpertise": "Kepakaran Pasukan",
         "itEngineering": "IT ENGINEERING",
@@ -1006,6 +1012,7 @@
         "mobileAppTeamMobile": "Pasukan Aplikasi Mudah Alih mencipta",
         "mobileAppTeamMobile2": "aplikasi berprestasi tinggi dan mesra pengguna, memastikan pengalaman lancar dan prestasi unggul di pelbagai peranti, ",
         "mobileAppTeamMobile3": "sambil menyesuaikan dengan cepat kepada permintaan pasaran.",
+        "mobileAppTeamIpad": "Pasukan Aplikasi Mudah Alih mencipta aplikasi berprestasi tinggi dan mesra pengguna, memastikan pengalaman lancar dan prestasi unggul di pelbagai peranti, sambil menyesuaikan dengan cepat kepada permintaan pasaran.",
 
 
         "uiUxDesign": "UI AND UX DESIGN",
@@ -1030,6 +1037,7 @@
 
         "ourUiUxMobile": "Pasukan UI/UX kami mencipta reka bentuk ",
         "ourUiUxMobile2": "luar biasa yang berpusatkan pengguna, menggabungkan estetik dan fungsionaliti, meningkatkan kebolehgunaan melalui reka bentuk minimalis dan penyelidikan pengguna yang mendalam.",
+        "ourUiUxIpad": "Pasukan UI/UX kami mencipta reka bentuk luar biasa yang berpusatkan pengguna, menggabungkan estetik dan fungsionaliti, meningkatkan kebolehgunaan melalui reka bentuk minimalis dan penyelidikan pengguna yang mendalam.",
         
         "coreManagement": "CORE MANAGEMENT",
         "strategicPlanning": "Strategic Planning",

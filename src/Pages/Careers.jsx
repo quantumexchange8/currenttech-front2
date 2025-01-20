@@ -25,7 +25,7 @@ const Careers = () => {
     }, []);
 
     return(
-        <div className='flex flex-col w-full justify-center text-center gap-[150px] md:gap-[200px] lg: xl: pt-[50px] md:pt-[80px] pb-[250px]'>
+        <div className='flex flex-col w-full justify-center text-center gap-[150px] md:gap-[200px] pt-[50px] xl:pt-[80px] pb-[250px]'>
             {/* Top Image */}
             {/* Web */}
             <div className='hidden xl:block relative'>
@@ -77,18 +77,23 @@ const Careers = () => {
                     </div>
                     {/* Mobile */}
                     <div className='xl:hidden flex flex-col gap-[30px] '>
-                        <div className='flex flex-col text-xl md:text-4xl text-[#557AAA] font-bold text-left leading-normal' data-aos="fade-up">
-                            <div className='block leading-normal'>
+                        <div className='xl:hidden flex flex-col text-xl md:text-4xl text-[#557AAA] font-bold text-left leading-normal' data-aos="fade-up">
+                            <div className='md:hidden leading-normal'>
                                 <div>{t("Career.careerOpportunitiesTitleMobile")}</div>
                                 <div>{t("Career.careerOpportunitiesTitleMobile2")}</div>
                             </div>
-                        </div>
-                        <div className='flex flex-col leading-normal font-normal text-[#4B5563] text-base md:text-xl lg:text-2xl text-left' data-aos="fade-up" data-aos-delay="200">
-                            <div className='leading-normal'>
-                                {t("Career.careerOpportunitiesDescriptionMobile")}
+                            <div className='hidden md:block leading-normal'>
+                                <div>{t("Career.careerOpportunitiesTitleIpad")}</div>
                             </div>
-                            <div className='leading-normal'>
-                                {t("Career.careerOpportunitiesDescriptionMobile2")}
+                        </div>
+                        <div className='flex flex-col leading-normal font-normal text-[#4B5563] text-base md:text-lg lg:text-2xl text-left' data-aos="fade-up" data-aos-delay="200">
+                            <div className='flex flex-col md:flex-row leading-normal md:gap-1'>
+                                <div className='leading-normal'>
+                                    {t("Career.careerOpportunitiesDescriptionMobile")}
+                                </div>
+                                <div className='leading-normal'>
+                                    {t("Career.careerOpportunitiesDescriptionMobile2")}
+                                </div>
                             </div>
                             <div className='leading-normal'>
                                 {t("Career.careerOpportunitiesDescriptionMobile3")}
@@ -108,7 +113,7 @@ const Careers = () => {
                         </div>
                         <img src={Career1} alt="" className='hidden md:flex object-cover w-[380px] md:w-full xl:w-[1000px] h-[266px] md:h-[600px] lg:h-[700px] rounded-[5px] md:rounded-[10px]' data-aos="fade-up" data-aos-delay="400"/>
                         <div className='relative' data-aos="fade-up" data-aos-delay="600">
-                            <div className='md:absolute xl:relative md:top-[-200px] xl:top-[100px] md:left-[26px] lg:left-[130px] xl:left-[-200px] flex flex-col items-center xl:items-start gap-[20px] md:gap-[30px] text-left bg-[#D5E7FF] rounded-[10px] p-[30px] md:p-[50px] w-full md:w-[700px] h-auto shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
+                            <div className='md:absolute xl:relative md:top-[-200px] xl:top-[100px] md:left-[90px] air:left-[110px] lg:left-[200px] xl:left-[-200px] flex flex-col items-center xl:items-start gap-[20px] md:gap-[30px] text-left bg-[#D5E7FF] rounded-[10px] p-[30px] md:p-[50px] w-full md:w-[540px] xl:w-[700px] h-auto shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
                                 <div className='flex flex-col gap-[20px] md:gap-[30px]'>
                                     <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                         <div className='text-xl md:text-4xl text-[#557AAA] font-bold leading-normal'>
@@ -149,7 +154,7 @@ const Careers = () => {
 
                 {/* Career 2 */}
                 <div className='xl:flex xl:justify-center'>
-                    <div className='relative flex flex-col xl:flex-row gap-[30px] md:gap-0 max-w-[1500px] md:h-[620px] lg:h-[700px]'>
+                    <div className='relative flex flex-col xl:flex-row gap-[30px] md:gap-0 max-w-[1500px] md:h-[710px] lg:h-[810px]'>
                         {/* Mobile */}
                         <div className='md:hidden flex justify-center items-center'>
                             <img src={Career2} alt="" className='object-cover w-[380px] md:w-full xl:w-[1000px] h-[266px] md:h-[600px] lg:h-[700px] rounded-[5px] md:rounded-[10px]' data-aos="fade-up" data-aos-delay="400"/>
@@ -157,7 +162,7 @@ const Careers = () => {
                         {/* web */}
                         <img src={Career2} alt="" className='hidden md:block object-cover w-[380px] md:w-full xl:w-[1000px] h-[266px] md:h-[600px] lg:h-[700px] rounded-[5px] md:rounded-[10px]' data-aos="fade-up" data-aos-delay="400"/>
                         <div className='relative' data-aos="fade-up" data-aos-delay="400">
-                            <div className='md:absolute xl:relative md:top-[-200px] xl:top-[100px] md:left-[26px] lg:left-[130px] xl:left-[-200px] flex flex-col items-center xl:items-start gap-[20px] md:gap-[30px] text-left bg-[#D5E7FF] rounded-[10px] p-[30px] md:p-[50px] w-full md:w-[700px] h-auto shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
+                            <div className='md:absolute xl:relative md:top-[-200px] xl:top-[100px] md:left-[90px] air:left-[110px] lg:left-[200px] xl:left-[-200px] flex flex-col items-center xl:items-start gap-[20px] md:gap-[30px] text-left bg-[#D5E7FF] rounded-[10px] p-[30px] md:p-[50px] w-full md:w-[540px] xl:w-[700px] h-auto shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
                                 <div className='w-[285px] md:w-[432px] flex flex-col gap-[20px]'>
                                     <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                         <div className='text-xl md:text-4xl text-[#557AAA] font-bold leading-normal'>
@@ -191,13 +196,13 @@ const Careers = () => {
 
                 {/* Career 3 */}
                 <div className='xl:flex xl:justify-center'>
-                    <div className='relative flex flex-col xl:flex-row gap-[30px] md:gap-0 max-w-[1500px] md:h-[650px] lg:h-[700px]'>
+                    <div className='relative flex flex-col xl:flex-row gap-[30px] md:gap-0 max-w-[1500px] md:h-[800px] lg:h-[900px]'>
                         <div className='md:hidden flex justify-center items-center'>
                             <img src={Career3} alt="" className='object-cover w-[380px] md:w-full xl:w-[1000px] h-[266px] md:h-[600px] lg:h-[700px] rounded-[5px] md:rounded-[10px]' data-aos="fade-up" data-aos-delay="400"/>
                         </div>
                         <img src={Career3} alt="" className='hidden md:block object-cover w-[380px] md:w-full xl:w-[1000px] h-[266px] md:h-[600px] lg:h-[700px] rounded-[5px] md:rounded-[10px]' data-aos="fade-up" data-aos-delay="400"/>
                         <div className='relative' data-aos="fade-up" data-aos-delay="400">
-                            <div className='md:absolute xl:relative md:top-[-200px] xl:top-[100px] md:left-[26px] lg:left-[130px] xl:left-[-200px] flex flex-col items-center xl:items-start gap-[20px] md:gap-[30px] text-left bg-[#D5E7FF] rounded-[10px] p-[30px] md:p-[50px] w-full md:w-[700px] h-auto shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
+                            <div className='md:absolute xl:relative md:top-[-200px] xl:top-[100px] md:left-[90px] air:left-[110px] lg:left-[200px] xl:left-[-200px] flex flex-col items-center xl:items-start gap-[20px] md:gap-[30px] text-left bg-[#D5E7FF] rounded-[10px] p-[30px] md:p-[50px] w-full md:w-[540px] xl:w-[700px] h-auto shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]'>
                                 <div className='flex flex-col gap-5 w-[305px] md:w-full'>
                                     <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                         <div className='text-xl md:text-4xl text-[#557AAA] font-bold leading-normal'>
@@ -217,7 +222,7 @@ const Careers = () => {
                                         </div>
                                     </div>
                                     {/* Web */}
-                                    <div className='hidden md:flex justify-between pl-3 text-sm md:text-xl text-[#4B5563] font-normal'>
+                                    <div className='hidden xl:flex justify-between pl-3 text-sm md:text-xl text-[#4B5563] font-normal'>
                                         <ul className=' list-disc list-inside leading-normal'>
                                             <li>{t("Career.Internship.Skill.skill_1")}</li>
                                             <li>{t("Career.Internship.Skill.skill_2")}</li>
@@ -237,7 +242,7 @@ const Careers = () => {
                                         </ul>
                                     </div>
                                     {/* Mobile */}
-                                    <div className='md:hidden flex justify-between pl-3 text-sm md:text-xl text-[#4B5563] font-normal'>
+                                    <div className='xl:hidden flex justify-between pl-3 text-sm md:text-xl text-[#4B5563] font-normal'>
                                         <ul className=' list-disc list-inside leading-normal'>
                                             <li>{t("Career.Internship.Skill.skill_1")}</li>
                                             <li>{t("Career.Internship.Skill.skill_2")}</li>
@@ -276,7 +281,7 @@ const Careers = () => {
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col gap-[60px]">
                             {/* Main Title */}
                             <div className="flex flex-col items-center gap-5 text-center text-[#D1D5DB] leading-normal" data-aos="fade-up" data-aos-delay="400">
-                                <div className='text-base md:text-[32px] font-normal leading-normal w-[223px] xl:w-full'>
+                                <div className='text-base md:text-[32px] font-normal leading-normal w-[223px] md:w-full'>
                                     {t("Career.amazingThings")}
                                 </div>
                                 <div className='text-xl md:text-5xl font-bold leading-normal'>

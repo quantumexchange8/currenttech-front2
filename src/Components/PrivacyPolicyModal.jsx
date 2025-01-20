@@ -35,8 +35,8 @@ const PrivacyPolicyModal = () => {
           '& .MuiDialog-paper': {
             width: {
               xs: '380px', 
-              sm: '400px', 
-              md: '1000px', 
+              sm: '700px', 
+              md: '900px', 
               xl: '1536px', 
             },
             maxWidth: '100%', 
@@ -57,20 +57,20 @@ const PrivacyPolicyModal = () => {
               <div><Close /></div>
             </button>
           </div>
-          <div className="xl:hidden flex flex-col justify-between gap-4 xl:px-[32px] text-xl text-[#153764] font-bold ">
+          <div className="xl:hidden flex flex-col justify-between gap-4 md:px-4 xl:px-[32px] text-xl text-[#153764] font-bold ">
             <button
               onClick={closeModal}
             >
               <div className="flex justify-end"><CloseM /></div>
             </button>
-            <div className="w-[300px]">{t("PrivacyPolicyModal.currentTech")}</div>
+            <div className="w-[300px] md:w-full">{t("PrivacyPolicyModal.currentTech")}</div>
           </div>
         </DialogTitle>
 
         {/* Dialog Content */}
         <DialogContent dividers sx={{ padding: '15px' }}>
           {/* Modal Content */}
-          <div className="flex flex-col gap-6 md:gap-8 xl:px-10">
+          <div className="flex flex-col gap-6 md:gap-8 md:px-4 xl:px-10">
             {/* Privacy Policy Header */}
             <div className="text-sm md:text-2xl text-[#557AAA] font-bold">
               <div>{t("PrivacyPolicyModal.privacyPolicy")}</div>
@@ -78,10 +78,16 @@ const PrivacyPolicyModal = () => {
             </div>
 
             {/* Thank You Section */}
-            <div className="text-sm md:text-2xl text-[#4B5563] font-normal">
+            {/* Web and Mobile */}
+            <div className="md:hidden xl:block text-sm md:text-2xl text-[#4B5563] font-normal">
               <div>{t("PrivacyPolicyModal.thankYou")}</div>
               <div>{t("PrivacyPolicyModal.weValueYour")}</div>
               <div>{t("PrivacyPolicyModal.thePrivacyPolicy")}</div>
+            </div>
+            {/* iPad */}
+            <div className="hidden md:block xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal">
+              <div>{t("PrivacyPolicyModal.thankYou")}</div>
+              <div>{t("PrivacyPolicyModal.weValueYourIpad")}</div>
             </div>
 
             {/* Points Section */}
@@ -96,12 +102,19 @@ const PrivacyPolicyModal = () => {
                     <li className="text-sm md:text-2xl text-[#557AAA] font-medium">
                       {t("PrivacyPolicyModal.personalData")}
                     </li>
-                    <div className="text-sm md:text-2xl text-[#4B5563] font-normal ">
+                    {/* Mobile and Web */}
+                    <div className="md:hidden xl:block text-sm md:text-2xl text-[#4B5563] font-normal ">
                       <div>
                         {t("PrivacyPolicyModal.weMayCollect")}
                       </div>
                       <div>
                         {t("PrivacyPolicyModal.typicallyWhen")}
+                      </div>
+                    </div>
+                    {/* iPad */}
+                    <div className="hidden md:block text-sm md:text-2xl text-[#4B5563] font-normal ">
+                      <div>
+                        {t("PrivacyPolicyModal.weMayCollectIpad")}
                       </div>
                     </div>
                   </ul>
@@ -111,7 +124,7 @@ const PrivacyPolicyModal = () => {
                       {t("PrivacyPolicyModal.NonPersonalData")}
                     </li>
                     {/* Web */}
-                    <div className="hidden md:block text-2xl text-[#4B5563] font-normal">
+                    <div className="hidden xl:block text-2xl text-[#4B5563] font-normal">
                       <div>
                         {t("PrivacyPolicyModal.collectNonPersonally")}
                       </div>
@@ -120,7 +133,7 @@ const PrivacyPolicyModal = () => {
                       </div>
                     </div>
                     {/* Mobile */}
-                    <div className="md:hidden text-sm text-[#4B5563] font-normal">
+                    <div className="xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal">
                       <div>
                         We may collect non-personally identifiable information, including browser type, device information, IP address, date and time of access, to improve our website and services.
                       </div>
@@ -132,7 +145,7 @@ const PrivacyPolicyModal = () => {
                       {t("PrivacyPolicyModal.financialData")}
                     </li>
                     {/* Web */}
-                    <div className="hidden md:block text-2xl text-[#4B5563] font-normal">
+                    <div className="hidden xl:block text-2xl text-[#4B5563] font-normal">
                       <div>
                         {t("PrivacyPolicyModal.ifOurService")}
                       </div>
@@ -141,7 +154,7 @@ const PrivacyPolicyModal = () => {
                       </div>
                     </div>
                     {/* Mobile */}
-                    <div className="md:hidden text-sm text-[#4B5563] font-normal">
+                    <div className="xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal">
                       <div>
                         If our services involve financial transactions, we collect relevant payment information, which is processed securely through encryption.
                       </div>
@@ -155,10 +168,10 @@ const PrivacyPolicyModal = () => {
                   {t("PrivacyPolicyModal.useOfData")}
                 </div>
                 {/* Web */}
-                <ul className="hidden md:flex flex-col gap-8 list-disc list-outside pl-8 text-2xl text-[#4B5563] font-normal">
+                <ul className="hidden xl:flex flex-col gap-8 list-disc list-outside pl-8 text-2xl text-[#4B5563] font-normal">
                   <li>
                     <div>
-                        {t("PrivacyPolicyModal.weUseYou")}
+                      {t("PrivacyPolicyModal.weUseYou")}
                     </div>
                     <div>
                       {t("PrivacyPolicyModal.support")}
@@ -177,7 +190,7 @@ const PrivacyPolicyModal = () => {
                   </li>
                 </ul>
                 {/* Mobile */}
-                <ul className="md:hidden flex flex-col gap-6 md:gap-8 list-disc list-outside pl-5 text-sm text-[#4B5563] font-normal">
+                <ul className="xl:hidden flex flex-col gap-6 md:gap-8 list-disc list-outside pl-5 md:pl-8 text-sm md:text-2xl text-[#4B5563] font-normal">
                   <li>
                     <div>
                       We use your information to provide and maintain our services, including account management and transaction support, to improve our products, and to send you notifications about products and services you may be interested in. We ensure to obtain your consent before using your data, as required under the PDPA.
@@ -198,7 +211,7 @@ const PrivacyPolicyModal = () => {
                 
                 <div className="flex flex-col gap-6 md:gap-8">
                   {/* Web */}
-                  <div className="hidden md:block pl-8 text-2xl text-[#4B5563] font-normal">
+                  <div className="hidden xl:block pl-8 text-2xl text-[#4B5563] font-normal">
                     <div>
                       {t("PrivacyPolicyModal.weDoNotSell")}
                     </div>
@@ -207,7 +220,7 @@ const PrivacyPolicyModal = () => {
                     </div>
                   </div>
                   {/* Mobile */}
-                  <div className="md:hidden pl-5 text-sm text-[#4B5563] font-normal w-[345px]" >
+                  <div className="xl:hidden pl-5 md:pl-8 text-sm md:text-2xl text-[#4B5563] font-normal w-[345px] md:w-full" >
                     <div>
                       We do not sell, rent, or otherwise disclose your personal data to third parties, except under the following conditions:
                     </div>
@@ -245,7 +258,7 @@ const PrivacyPolicyModal = () => {
                         {t("PrivacyPolicyModal.legalCompliance")}
                       </div>
                       {/* Web */}
-                      <div className="hidden md:block text-2xl text-[#4B5563] font-normal">
+                      <div className="hidden xl:block text-2xl text-[#4B5563] font-normal">
                         <div>
                           {t("PrivacyPolicyModal.weMayDisclose")}
                         </div>
@@ -254,7 +267,7 @@ const PrivacyPolicyModal = () => {
                         </div>
                       </div>
                       {/* Mobile */}
-                      <div className="md:hidden text-sm text-[#4B5563] font-normal">
+                      <div className="xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal">
                         We may disclose information as required by Malaysian law or regulations, including sharing with regulatory authorities.
                       </div>
                     </li>
@@ -267,7 +280,7 @@ const PrivacyPolicyModal = () => {
                   {t("PrivacyPolicyModal.dataSecurity")}
                 </div>
                 {/* Web */}
-                <div className="hidden md:block text-2xl text-[#4B5563] font-normal pl-8">
+                <div className="hidden xl:block text-2xl text-[#4B5563] font-normal pl-8">
                   <div>
                     {t("PrivacyPolicyModal.weTakeReasonable")}
                   </div>
@@ -279,7 +292,7 @@ const PrivacyPolicyModal = () => {
                   </div>
                 </div>
                 {/* Mobile */}
-                <div className="md:hidden text-sm text-[#4B5563] font-normal pl-5">
+                <div className="xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal pl-5 md:pl-8">
                   We take reasonable technical and organisational measures to prevent unauthorised access, disclosure, alteration, or destruction of your personal data. Although we strive to use industry-standard measures, no system can guarantee absolute security. Users are advised to consider potential security risks when transmitting data.
                 </div>
               </div>
@@ -289,7 +302,7 @@ const PrivacyPolicyModal = () => {
                   {t("PrivacyPolicyModal.dataRetention")}
                 </div>
                 {/* Web */}
-                <div className="hidden md:block text-2xl text-[#4B5563] font-normal pl-8">
+                <div className="hidden xl:block text-2xl text-[#4B5563] font-normal pl-8">
                   <div>
                     {t("PrivacyPolicyModal.weRetain")}
                   </div>
@@ -298,7 +311,7 @@ const PrivacyPolicyModal = () => {
                   </div>
                 </div>
                 {/* Mobile */}
-                <div className="md:hidden text-sm text-[#4B5563] font-normal pl-5">
+                <div className="xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal pl-5 md:pl-8">
                   We retain personal data only as long as necessary for the purposes outlined in this policy or as required by law. Once the data is no longer needed, we will either delete it or anonymise it.
                 </div>
               </div>
@@ -308,7 +321,7 @@ const PrivacyPolicyModal = () => {
                   {t("PrivacyPolicyModal.yourPrivacyRights")}
                 </div>
                 {/* Web */}
-                <div className="hidden md:block text-2xl text-[#4B5563] font-normal pl-8">
+                <div className="hidden xl:block text-2xl text-[#4B5563] font-normal pl-8">
                   <div>
                     {t("PrivacyPolicyModal.incompliance")}
                   </div>
@@ -317,7 +330,7 @@ const PrivacyPolicyModal = () => {
                   </div>
                 </div>
                 {/* Mobile */}
-                <div className="md:hidden text-sm text-[#4B5563] font-normal pl-5">
+                <div className="xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal pl-5 md:pl-8">
                   In compliance with the PDPA, you have the right to view, correct, and delete your personal data. Please contact us using the information provided below to exercise these rights.
                 </div>
               </div>
@@ -327,7 +340,7 @@ const PrivacyPolicyModal = () => {
                   {t("PrivacyPolicyModal.policyUpdates")}
                 </div>
                 {/* Web */}
-                <div className="hidden md:block text-2xl text-[#4B5563] font-normal pl-8">
+                <div className="hidden xl:block text-2xl text-[#4B5563] font-normal pl-8">
                   <div>
                     {t("PrivacyPolicyModal.weMayUpdate")}
                   </div>
@@ -336,7 +349,7 @@ const PrivacyPolicyModal = () => {
                   </div>
                 </div>
                 {/* Mobile */}
-                <div className="md:hidden text-sm text-[#4B5563] font-normal pl-5">
+                <div className="xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal pl-5 md:pl-8">
                   We may update this Privacy Policy periodically. Any changes will be posted on this page, and we will notify you if necessary. We recommend reviewing this policy regularly to stay informed.
                 </div>
               </div>
@@ -347,7 +360,7 @@ const PrivacyPolicyModal = () => {
                 </div>
                 <ul className="flex flex-col gap-4 md:gap-1 list-disc list-outside text-sm md:text-2xl text-[#4B5563] font-normal pl-5 md:pl-8">
                   <li>
-                    <div className="flex flex-col md:flex-row md:gap-1"> 
+                    <div className="flex flex-col xl:flex-row xl:gap-1"> 
                       <div>
                         {t("PrivacyPolicyModal.companyName")}
                       </div> 
@@ -357,7 +370,7 @@ const PrivacyPolicyModal = () => {
                     </div>
                   </li>
                   <li>
-                    <div className="flex flex-col md:flex-row md:gap-1"> 
+                    <div className="flex flex-col xl:flex-row xl:gap-1"> 
                       <div>
                         {t("PrivacyPolicyModal.companyInfo")}
                       </div> 

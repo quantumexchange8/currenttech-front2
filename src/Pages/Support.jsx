@@ -29,7 +29,7 @@ const Support = () => {
     })
 
     return(
-        <div className="pt-[50px] md:pt-[80px] relative">
+        <div className="pt-[50px] xl:pt-[80px] relative">
             {/* Background Image */}
             <div className="relative">
                 <img src={Image1} alt="" className="hidden xl:block w-full object-cover" />
@@ -37,10 +37,10 @@ const Support = () => {
             </div>
 
             {/* Centered Content */}
-            <div className="absolute inset-0 md:top-[-160px] flex flex-col justify-center xl:items-start gap-[50px] px-[25px] md:px-0 xl:pl-[163px]">
+            <div className="absolute inset-0 md:top-[-160px] flex flex-col justify-center xl:items-start gap-[50px] px-[25px] xl:px-0 xl:pl-[163px]">
                 {/* Heading */}
                 <div className="flex flex-col gap-[10px]">
-                    <div className="text-sm md:text-2xl text-[#D1D5DB] font-normal leading-normal w-[266px] xl:w-full" data-aos="fade-up">
+                    <div className="text-sm md:text-2xl text-[#D1D5DB] font-normal leading-normal w-[266px] md:w-full xl:w-full" data-aos="fade-up">
                         {t("Support.inquiry")}
                     </div>
                     <div className="text-2xl md:text-5xl text-[#D1D5DB] font-light leading-normal " data-aos="fade-up" data-aos-delay="200">

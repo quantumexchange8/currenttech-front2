@@ -24,7 +24,7 @@ const Special = () => {
           }, []);
 
     return (
-        <div className='flex flex-col gap-[150px] md:gap-[200px] w-full justify-center text-center pt-[50p] md:pt-[80px] pb-[250px]'>
+        <div className='flex flex-col gap-[150px] md:gap-[200px] w-full justify-center text-center pt-[50p] xl:pt-[80px] pb-[250px]'>
             {/* Top Image */}
             {/* Web */}
             <div className='hidden xl:block w-full relative'>
@@ -55,7 +55,7 @@ const Special = () => {
             <div className='flex justify-center px-[25px]'>
                 {/* Web */}
                 <div className='hidden md:flex flex-col gap-[30px] justify-center items-center text-center max-w-[1200px] w-full'> 
-                    <div className="flex flex-col bg-text-gradient bg-clip-text text-transparent md:text-3xl lg:text-5xl font-normal leading-normal" data-aos="fade-up">
+                    <div className="flex flex-col bg-text-gradient bg-clip-text text-transparent md:text-3xl xl:text-5xl font-normal leading-normal" data-aos="fade-up">
                         <div className='leading-normal'>
                             {t("Special.customisation")}
                         </div>
@@ -63,12 +63,22 @@ const Special = () => {
                             {t("Special.directPath")}
                         </div>
                     </div>
-                    <div className='md:text-lg lg:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
+                    {/* Web */}
+                    <div className='hidden xl:block md:text-lg lg:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
                         <div>
                             {t("Special.tailoredWebPages")}
                         </div>
                         <div>
                             {t("Special.preferences")}
+                        </div>
+                    </div>
+                    {/* iPad */}
+                    <div className='hidden md:block xl:hidden md:text-lg lg:text-2xl text-[#4B5563] font-normal leading-normal' data-aos="fade-up" data-aos-delay="200">
+                        <div>
+                            {t("Special.tailoredWebPagesIpad")}
+                        </div>
+                        <div>
+                            {t("Special.tailoredWebPagesIpad2")}
                         </div>
                     </div>
                 </div>
@@ -118,7 +128,7 @@ const Special = () => {
                                 </div>
                             </div>
 
-                            <div className='flex flex-col gap-[100px] lg:gap-0'>
+                            <div className='flex flex-col gap-[100px] md:gap-0'>
                                 <img src={Cus1} alt="" className='hidden md:block' data-aos="fade-up" data-aos-delay="600"/>
                                 <img src={Cus1Mobile} alt="" className='block md:hidden w-full' data-aos="fade-up" data-aos-delay="600"/>
 
@@ -161,7 +171,7 @@ const Special = () => {
 
                                     {/* Text4 */}
                                     <div className='relative' data-aos="fade-up" data-aos-delay="400">                    
-                                        <div className="absolute md:bottom-[-460px] lg:bottom-[610px] md:text-2xl lg:text-4xl font-normla text-right text-[#557AAA] w-full">
+                                        <div className="absolute md:top-[-420px] lg:top-[-550px] xl:top-[-690px] md:text-2xl lg:text-4xl font-normla text-right text-[#557AAA] w-full">
                                             <div className='leading-normal'>
                                                 {t("Special.customizeIdea_Title4")}
                                             </div>
@@ -170,8 +180,6 @@ const Special = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    
                                 </div>
                                 
                                 {/* mobile */}

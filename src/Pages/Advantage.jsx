@@ -111,7 +111,7 @@ const Advantage = () => {
                                                 </div>
                                             </div>
                                             {/* Web */}
-                                            <div className='hidden xl:block text-sm md:text-2xl text-[#4B5563] text-left'>
+                                            <div className='hidden md:block text-sm md:text-xl xl:text-2xl text-[#4B5563] text-left'>
                                                 <div className='flex flex-col font-normal w-[290px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                     <div>
                                                         {t("Advantage.advantageListDescription.websiteDescription")}
@@ -122,7 +122,7 @@ const Advantage = () => {
                                                 </div>
                                             </div>
                                             {/* Mobile */}
-                                            <div className='xl:hidden text-base md:text-2xl text-[#4B5563] text-left'>
+                                            <div className='md:hidden text-base  text-[#4B5563] text-left'>
                                                 <div className='flex flex-col font-normal leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                     <div>
                                                         {t("Advantage.advantageListDescription.websiteDescriptionMobile")}
@@ -156,7 +156,7 @@ const Advantage = () => {
                                                     </div>
                                                 </div>
                                                 {/* ipad */}
-                                                <div className='hidden md:block xl:hidden text-2xl text-[#4B5563] text-left'>
+                                                <div className='hidden md:block xl:hidden text-xl text-[#4B5563] text-left'>
                                                     <div className='flex flex-col font-normal leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                         <div>
                                                             {t("Advantage.advantageListDescription.managementDescriptionIpad")}
@@ -187,7 +187,7 @@ const Advantage = () => {
                                                 </div>
                                             </div>
                                             <div className='flex flex-col gap-[10px] md:gap-[30px]'>
-                                                <div className='hidden md:block text-sm  md:text-xl text-[#4B5563] text-left'>
+                                                <div className='hidden md:block text-sm  md:text-xl xl:text-2xl text-[#4B5563] text-left'>
                                                     <div className='flex flex-col font-normal w-[303px] md:w-full leading-normal' data-aos="fade-up" data-aos-delay="800">
                                                         <div>
                                                             {t("Advantage.advantageListDescription.paymentDescription")}

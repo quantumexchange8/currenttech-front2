@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import PrivacyPolicyModal from '../Components/PrivacyPolicyModal.jsx';
 import DisclaimerModal from '../Components/DisclaimerModal.jsx';
 import TermsAndConditionModal from '../Components/TermsAndConditionModal.jsx';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -92,18 +93,18 @@ const Footer = () => {
                 <div className='hidden md:flex flex-col items-center gap-[21px]'>
                     {/* Social Media */}
                     <div className='flex gap-5'>
-                        <a href="#">
+                        <Link to="https://www.facebook.com/currenttechindustries">
                             <FooterFacebook />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="https://www.instagram.com/currenttechindustries/">
                             <FooterInstagram />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="">
                             <FooterWhatsApp />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="">
                             <FooterGmail />
-                        </a>
+                        </Link>
                     </div>
                     {/* Office */}
                     <div className='flex flex-col items-center gap-[10px]'>
@@ -229,18 +230,18 @@ const Footer = () => {
                 </div>
                 {/* Social Icon */}
                 <div className='flex gap-5'>
-                    <a href="#">
+                    <Link to="https://www.facebook.com/currenttechindustries">
                         <FooterFacebookM />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="https://www.instagram.com/currenttechindustries/">
                         <FooterInstagramM />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="#">
                         <MobileWhatsApp />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="#">
                         <MobileGmail />
-                    </a>
+                    </Link>
                 </div>
                 {/* Copyright */}
                 <div className='flex flex-col justify-center items-center text-sm text-[#557AAA] font-medium'>
@@ -342,18 +343,18 @@ const Footer = () => {
                 </div>
                 {/* Social Icon */}
                 <div className='flex gap-5'>
-                    <a href="#">
+                    <Link to="https://www.facebook.com/currenttechindustries">
                         <FooterFacebookM />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="https://www.instagram.com/currenttechindustries/">
                         <FooterInstagramM />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="#">
                         <MobileWhatsApp />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="#">
                         <MobileGmail />
-                    </a>
+                    </Link>
                 </div>
                 {/* Copyright */}
                 <div className='flex flex-col justify-center items-center text-sm text-[#557AAA] font-medium'>

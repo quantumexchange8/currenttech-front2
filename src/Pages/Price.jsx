@@ -24,7 +24,7 @@ const Price = () => {
     }, []);
 
     return(
-        <div className='flex flex-col w-full justify-center text-center gap-[150px] md:gap-[200px] pt-[50px] md:pt-[80px] pb-[250px]'>
+        <div className='flex flex-col w-full justify-center text-center gap-[150px] md:gap-[200px] pt-[50px] xl:pt-[80px] pb-[250px]'>
             {/* Top Image */}
             {/* Web */}
             <div className='hidden xl:block relative'>
@@ -296,7 +296,7 @@ const Price = () => {
                                 {selectedSolutionType === 'Basic' ? <BasicM /> : <BasicGM />}
                             </div>
                             <div  className={`text-base flex justify-between items-center w-full xl:max-w-[500px] px-[30px] py-5 rounded-[10px] ${selectedSolutionType === 'Advanced' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
-                                <div className='text-left'>
+                                <div className='text-left md:flex gap-1'>
                                     <div>
                                         {t("Price.professional")}
                                     </div>
