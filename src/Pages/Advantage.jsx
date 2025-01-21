@@ -509,8 +509,9 @@ const Advantage = () => {
                         <div className='md:hidden flex justify-center items-center sticky top-[49px] w-full bg-white z-40' >
                             <div className=" h-auto md:h-auto xl:h-auto w-full max-w-[500px] p-5">
                                 <div className='flex flex-col items-center'>
-                                    <div className="xl:hidden flex gap-5 xl:gap-8 bottom-[-25px] md:bottom-[-30px]">
-                                        <button className="flex items-center gap-3" onClick={() => [handleSelectType('Independent'), window.scrollTo({ top: 1050, behavior: 'smooth'})]}>
+                                    <div className="xl:hidden flex justify-between w-full bottom-[-25px] md:bottom-[-30px]">
+                                        <div className=' w-[1px] h-[50px] md:h-[70px] bg-white'></div>
+                                        <button className="flex items-center justify-center gap-3 min-w-[163px]" onClick={() => [handleSelectType('Independent'), window.scrollTo({ top: 1050, behavior: 'smooth'})]}>
                                             <div className="hidden md:block">
                                             {selectedType === 'Independent' ? <Independent /> : <IndependentG />}
                                             </div>
@@ -528,7 +529,7 @@ const Advantage = () => {
                                             </div>
                                         </button>
                                         <div className=' w-[1px] h-[50px] md:h-[70px] bg-[#9CA3AF]'></div>
-                                        <button className="flex items-center gap-3" onClick={() => [handleSelectType('Enterprise'), window.scrollTo({ top: 1050, behavior: 'smooth'})]}>
+                                        <button className="flex items-center justify-center gap-3 min-w-[163px]" onClick={() => [handleSelectType('Enterprise'), window.scrollTo({ top: 1050, behavior: 'smooth'})]}>
                                             <div className="hidden md:block">
                                                 {selectedType === 'Enterprise' ? <Enterprise /> : <EnterpriseG />}
                                             </div>
@@ -545,6 +546,7 @@ const Advantage = () => {
                                                 {t('Advantage.enterpriseA')}
                                             </div>
                                         </button>
+                                        <div className=' w-[1px] h-[50px] md:h-[70px] bg-white'></div>
                                     </div>
                                     <div className="w-full xl:w-[500px] h-[1px] bg-[#9CA3AF]" />
                                 </div>
@@ -554,8 +556,9 @@ const Advantage = () => {
                         <div className='hidden xl:hidden md:flex justify-center items-center sticky top-[49px] w-full bg-white z-40' >
                             <div className=" h-auto md:h-auto xl:h-auto w-full max-w-[500px] p-5">
                                 <div className='flex flex-col items-center'>
-                                    <div className="xl:hidden flex gap-5 xl:gap-8 bottom-[-25px] md:bottom-[-30px]">
-                                        <button className="flex items-center gap-3" onClick={() => [handleSelectType('Independent'), window.scrollTo({ top: 650, behavior: 'smooth'})]}>
+                                    <div className="xl:hidden flex justify-between w-full bottom-[-25px] md:bottom-[-30px]">
+                                        <div className=' w-[1px] h-[50px] md:h-[70px] bg-white'></div>
+                                        <button className="flex items-center justify-center gap-3 min-w-[212px]" onClick={() => [handleSelectType('Independent'), window.scrollTo({ top: 650, behavior: 'smooth'})]}>
                                             <div className="hidden md:block">
                                             {selectedType === 'Independent' ? <Independent /> : <IndependentG />}
                                             </div>
@@ -573,7 +576,7 @@ const Advantage = () => {
                                             </div>
                                         </button>
                                         <div className=' w-[1px] h-[50px] md:h-[70px] bg-[#9CA3AF]'></div>
-                                        <button className="flex items-center gap-3" onClick={() => [handleSelectType('Enterprise'), window.scrollTo({ top: 650, behavior: 'smooth'})]}>
+                                        <button className="flex items-center justify-center gap-3 min-w-[212px]" onClick={() => [handleSelectType('Enterprise'), window.scrollTo({ top: 650, behavior: 'smooth'})]}>
                                             <div className="hidden md:block">
                                                 {selectedType === 'Enterprise' ? <Enterprise /> : <EnterpriseG />}
                                             </div>
@@ -590,6 +593,7 @@ const Advantage = () => {
                                                 {t('Advantage.enterpriseA')}
                                             </div>
                                         </button>
+                                        <div className=' w-[1px] h-[50px] md:h-[70px] bg-white'></div>
                                     </div>
                                     <div className="w-full xl:w-[500px] h-[1px] bg-[#9CA3AF]" />
                                 </div>

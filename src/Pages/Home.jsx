@@ -62,7 +62,7 @@ const Home = () => {
                         <VerticalLineM />
                     </div>
                     <div className="w-wull max-w-[1200px] flex flex-col items-center">
-                        <div className="flex flex-col gap-[30px] md:gap-[50px]">
+                        <div className="flex flex-col gap-[30px] md:gap-[50px] md:px-4 xl:px-0">
                             <div className="flex flex-col gap-[10px] xl:gap-6" data-aos="fade-up" data-aos-delay="200">
                                 <div className="text-base md:text-2xl lg:text-[32px] font-normal md:font-medium text-[#557AAA] leading-normal">
                                     {t("Home.technologyDefinesTomorrow")}
