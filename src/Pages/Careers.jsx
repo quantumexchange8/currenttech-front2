@@ -207,7 +207,7 @@ const Careers = () => {
                                     <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                         <div className='text-xl md:text-4xl text-[#557AAA] font-bold leading-normal'>
                                             {t("Career.Internship.InternshipTitle")}
-                                        </div>
+                                        </div> 
                                         <div className='flex gap-3 md:gap-[30px]'>
                                             <div className='hidden md:block'>
                                                 <Internship />

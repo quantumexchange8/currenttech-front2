@@ -84,7 +84,7 @@ const Home = () => {
                                 </div>
                             </div>
                             {/* Mobile */}
-                            <div className='xl:hidden text-base md:text-xl text-[#4B5563] font-normal' data-aos="fade-up" data-aos-delay="400">
+                            <div className='xl:hidden text-base md:text-xl text-[#4B5563] font-normal w-[368px] md:w-full' data-aos="fade-up" data-aos-delay="400">
                                 <div>
                                     {t("Home.innowvationAndTechnology")}
                                 </div>
@@ -285,7 +285,7 @@ const Home = () => {
                             {t("Home.coreService")}
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[60px] xl:gap-x-[100px] gap-y-[100px] xl:gap-y-[150px] px-3 xl:p-0">
+                        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[60px] xl:gap-x-[200px] gap-y-[100px] xl:gap-y-[150px] px-3 xl:p-0">
                             {/* Service 1 */}
                             <div className='flex flex-col justify-center items-center gap-[10px]' data-aos="fade-up" data-aos-delay="400">
                                 <Player

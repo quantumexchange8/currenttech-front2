@@ -30,7 +30,7 @@ const Customize = () => {
 
     const handleButtonClick = (button) => {
         setOpenButton(true);
-        setSelectedButton(button);
+        setSelectedButton(button); 
     };
 
     return (

@@ -152,7 +152,7 @@ const CreatingExplore = () => {
     }, []);
 
     return (
-        <div className='flex justify-center items-center pt-[50px] md:pt-[80px] pb-[200px]'>
+        <div className='flex justify-center items-center pt-[50px] xl:pt-[80px] pb-[200px]'>
             <div className='w-full flex flex-col gap-[150px] md:gap-[200px]'>
                 {/* Top Image */}
                 <div className='relative'>

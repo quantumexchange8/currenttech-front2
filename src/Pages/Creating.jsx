@@ -33,7 +33,7 @@ const Creating = () => {
         navigate('/creating_explore', { state: { exploreType: type } });
       };
 
-    useEffect(() => {
+    useEffect(() => { 
         AOS.init({
             duration: 1000, 
             once: true,  
@@ -229,7 +229,7 @@ const Creating = () => {
                                 <div className="flex flex-col gap-[10px]" data-aos="fade-up" data-aos-delay="400">
                                     <div className="text-base md:text-[32px] text-[#557AAA] text-center font-medium leading-normal">{t("Creating.weDoMore")}</div>
                                     {/* Web */}
-                                    <div className="hidden md:block text-5xl text-[#153764] font-bold leading-normal">
+                                    <div className="hidden md:block text-center text-5xl text-[#153764] font-bold leading-normal">
                                         <div>
                                             {t("Creating.noMatter")}
                                         </div>

@@ -112,7 +112,7 @@ const PrivacyPolicyModal = () => {
                       </div>
                     </div>
                     {/* iPad */}
-                    <div className="hidden md:block text-sm md:text-2xl text-[#4B5563] font-normal ">
+                    <div className="hidden md:block xl:hidden text-sm md:text-2xl text-[#4B5563] font-normal ">
                       <div>
                         {t("PrivacyPolicyModal.weMayCollectIpad")}
                       </div>

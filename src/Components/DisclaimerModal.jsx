@@ -37,7 +37,7 @@ const PrivacyPolicyModal = () => {
               xs: '380px', 
               sm: '700px', 
               md: '900px', 
-              xl: '1536px', 
+              xl: '1565px', 
             },
             maxWidth: '100%', 
             borderRadius: '20px',
