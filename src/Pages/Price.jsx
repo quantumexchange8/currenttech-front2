@@ -158,6 +158,9 @@ const Price = () => {
                                     <div className='text-xl text-[#153764] font-bold'>{t("Price.typeOf")}</div>
                                     {t("Price.doYouWant")}                                            
                                 </div>
+                                <div className='flex gap-[6px]'>
+                                    {t("Price.apaYang")}                                          
+                                </div>
                             </div>
                             <button onClick={() => setSelectedWebsiteType('Website')} className={`text-xl flex justify-between max-w-[500px] px-[30px] py-[25px] rounded-[10px] ${selectedWebsiteType === 'Website' ? 'font-semibold text-[#153764] bg-[linear-gradient(180deg,_#EAF3FF_0%,_#BBD7FE_72%)] shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25)]' : 'text-[#9CA3AF] font-normal bg-none border'}`}>
                                 <div>
@@ -308,10 +311,10 @@ const Price = () => {
                             </div>
                             <button className='text-base flex justify-between items-center w-full xl:max-w-[500px] px-[30px] py-5 rounded-[10px] bg-[#D1D5DB]'>
                                 <div className='flex flex-col gap-[5px] text-left'>
-                                    <div className='text-base text-[#153764] font-medium'>
+                                    <div className='text-xl text-[#153764] font-medium'>
                                         {t("Price.customMade")}
                                     </div>
-                                    <div className='text-sm text-[#6B7280] font-normal'>
+                                    <div className='text-base text-[#6B7280] font-normal'>
                                         {t("Price.letUsKnow")}
                                     </div>
                                 </div>

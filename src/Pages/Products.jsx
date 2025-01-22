@@ -68,7 +68,7 @@ const Products = () => {
                     </button>
                     ))}
                 </div>
-            </div> 
+            </div>
             {/* Lg */}
             <div className='sticky top-[50px] z-10 hidden xl:hidden lg:flex justify-center items-center w-full bg-[#E5E7EB] h-auto py-[35px] lg:px-2' >
                 <div className='w-[1200px] flex justify-between'>

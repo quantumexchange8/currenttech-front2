@@ -207,7 +207,7 @@ const Careers = () => {
                                     <div className='flex flex-col gap-[10px] md:gap-[30px]'>
                                         <div className='text-xl md:text-4xl text-[#557AAA] font-bold leading-normal'>
                                             {t("Career.Internship.InternshipTitle")}
-                                        </div> 
+                                        </div>
                                         <div className='flex gap-3 md:gap-[30px]'>
                                             <div className='hidden md:block'>
                                                 <Internship />
@@ -290,7 +290,7 @@ const Careers = () => {
                             </div>
 
                             {/* Icons Section */}
-                            <div className="flex flex-col md:flex-row justify-center items-center gap-[100px] md:gap-[80px] xl:gap-[150px] text-sm font-light text-[#D1D5DB]" data-aos="fade-up" data-aos-delay="400">
+                            <div className="flex flex-col md:flex-row justify-center items-center gap-[100px] md:gap-[80px] xl:gap-[150px] text-base xl:text-sm font-light text-[#D1D5DB]" data-aos="fade-up" data-aos-delay="400">
                                 {/* Icon 1 */}
                                 <div className='flex flex-col items-center gap-[10px]'>
                                     <GraphicDesign />

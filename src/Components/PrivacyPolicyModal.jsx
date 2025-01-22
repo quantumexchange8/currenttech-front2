@@ -29,8 +29,6 @@ const PrivacyPolicyModal = () => {
         fullWidth
         maxWidth="lg"
         scroll="paper"
-        aria-labelledby="privacy-policy-title"
-        aria-describedby="privacy-policy-content"
         sx={{
           '& .MuiDialog-paper': {
             width: {
@@ -48,7 +46,7 @@ const PrivacyPolicyModal = () => {
         }}
       >
         {/* Dialog Title */}
-        <DialogTitle id="privacy-policy-title" className="text-[#153764] font-bold flex flex-col gap-2 md:gap-4" sx={{ fontFamily: 'Poppins, sans-serif', padding: '15px' }}>
+        <DialogTitle id="privacy-policy-title" className="text-[#153764] font-bold flex flex-col gap-2 md:gap-4" sx={{ fontFamily: 'Poppins, sans-serif', padding: '20px 15px' }}>
           <div className="hidden xl:flex justify-between items-center xl:px-[32px] text-[40px] text-[#153764] font-bold ">
             {t("PrivacyPolicyModal.currentTech")}
             <button
@@ -57,13 +55,13 @@ const PrivacyPolicyModal = () => {
               <div><Close /></div>
             </button>
           </div>
-          <div className="xl:hidden flex flex-col justify-between gap-4 md:px-4 xl:px-[32px] text-xl text-[#153764] font-bold ">
+          <div className="xl:hidden flex justify-between gap-4 md:px-4 xl:px-[32px] text-xl text-[#153764] font-bold ">
+            <div className="w-[300px] md:w-full">{t("PrivacyPolicyModal.currentTech")}</div>
             <button
               onClick={closeModal}
             >
               <div className="flex justify-end"><CloseM /></div>
             </button>
-            <div className="w-[300px] md:w-full">{t("PrivacyPolicyModal.currentTech")}</div>
           </div>
         </DialogTitle>
 

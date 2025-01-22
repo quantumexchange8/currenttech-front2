@@ -250,7 +250,7 @@ const Advantage = () => {
                     <div className='w-full flex flex-col justify-center items-center gap-[50px] md:gap-[150px]'>
                         <div className='max-w-full flex flex-col gap-[100px] md:gap-[150px]'>
                             {/* Advantage */}
-                            <div className='flex flex-col  gap-[50px] md:px-5 lg:px-[102px] xl:p-0'>
+                            <div className='flex flex-col  gap-[50px] lg:px-[102px] xl:p-0'>
                                 <img src={image3} alt='' className='object-cover rounded-[10px] w-[380px] md:w-full h-[238px] md:h-[500px]' data-aos="fade-up" data-aos-delay="200"/>
                                 <div className='flex flex-col gap-[10px] md:gap-[30px] text-left'>
                                     <div className='text-xl md:text-2xl text-[#557AAA] font-bold leading-normal' data-aos="fade-up" data-aos-delay="200">
@@ -286,7 +286,7 @@ const Advantage = () => {
                         
                             {/* We Customise for you */}
                             <div> 
-                                <div className='flex flex-col gap-[50px] md:gap-[50px] md:px-5 lg:px-[102px] xl:p-0'>
+                                <div className='flex flex-col gap-[50px] md:gap-[50px] lg:px-[102px] xl:p-0'>
                                     {/* Title */}
                                     <div className='text-xl md:text-[32px] font-bold text-left text-[#153764] leading-normal' data-aos="fade-up" data-aos-delay="400">
                                         {t("Advantage.advantageEnterpriseListTitle")}

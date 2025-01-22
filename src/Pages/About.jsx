@@ -22,13 +22,13 @@ const About = () => {
 
     return (
         <div className="flex flex-col gap-[250px] pt-[50px] xl:pt-[80px] pb-[250px]">
-            <div className="flex flex-col gap-[150px] md:gap-[200px] justify-center items-center">
+            <div className="flex flex-col gap-[200px] justify-center items-center">
                 {/* Top Image */}
                 <div className='relative w-full'>
                     <img src={Image1} alt="About 1" className='hidden xl:block w-full object-cover' />
                     <img src={ImageM1} alt="About 1" className='xl:hidden w-full object-cover' />
                     {/* Web */}
-                    <div className='absolute hidden xl:flex flex-col gap-[50px] top-[35%] left-[16%]'>
+                    <div className='absolute hidden md:flex flex-col gap-[50px] top-[35%] left-[16%]'>
                         <div className='flex flex-col gap-[10px]'>
                             <div className='text-2xl text-[#D1D5DB] font-normal leading-normal'>
                                 {t("About.solution")}
@@ -50,7 +50,7 @@ const About = () => {
                         </div>
                     </div>
                     {/* Mobile */}
-                    <div className="xl:hidden absolute flex flex-col gap-[50px] top-[38%] left-[6%] w-auto">
+                    <div className="md:hidden absolute flex flex-col gap-[50px] top-[38%] left-[6%] w-auto">
                         <div className='flex flex-col gap-[10px]'>
                             <div className='text-base text-[#D1D5DB] font-medium leading-normal'>
                                 {t("About.solution")}

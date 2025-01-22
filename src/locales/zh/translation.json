@@ -69,7 +69,7 @@
     "homeCircle": {
         "posSystem": {
           "title": "POS 销售点系统",
-          "descriptionBold": "超过",
+          "descriptionBold": "超过 ",
           "descriptionBold2": "家优质零售",
           "description2": "客户正在使用我们的 POS",
           "description3": "销售点系统.",
@@ -119,7 +119,7 @@
         "eInvoice": {
           "title": "电子发票",
           "bold": "",
-          "bold2": "LHDN认证,",
+          "bold2": "LHDN 认证,",
           "descriptionBold": "",
           "descriptionBold2": "轻松简化开票",
           "description": "我们的电子发票系统经过",

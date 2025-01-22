@@ -1076,9 +1076,9 @@
           "thankYou": "Terima kasih atas kesabaran anda.",
           "send": "HANTAR",
 
-          "name": "NAME *",
-          "email": "EMAIL *",
-          "message": "MESSAGE *",
+          "name": "NAMA *",
+          "email": "EMEL *",
+          "message": "MESEJ *",
 
           "messageSuccessfullyMobile": "Mesej anda telah berjaya dihantar kepada kami.",
           "ourCustomerServiceMobile": " akan memberikan maklum balas kepada ",

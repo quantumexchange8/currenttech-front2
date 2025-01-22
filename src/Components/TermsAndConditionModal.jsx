@@ -34,7 +34,7 @@ const PrivacyPolicyModal = () => {
         sx={{
             '& .MuiDialog-paper': {
                 width: {
-                    xs: '380px', 
+                    xs: '384px', 
                     sm: '700px', 
                     md: '900px', 
                     xl: '1545px', 
@@ -48,32 +48,32 @@ const PrivacyPolicyModal = () => {
           }}
       >
         {/* Dialog Title */}
-        <DialogTitle id="privacy-policy-title" className="text-[#153764] font-bold flex flex-col gap-2 md:gap-4" sx={{ fontFamily: 'Poppins, sans-serif', padding: '15px' }}>
+        <DialogTitle id="privacy-policy-title" className="text-[#153764] font-bold flex flex-col gap-2 md:gap-4" sx={{ fontFamily: 'Poppins, sans-serif', padding: '20px 15px' }}>
           <div className="hidden xl:flex justify-between items-center xl:px-[32px] text-[40px] text-[#153764] font-bold ">
             {t("PrivacyPolicyModal.currentTech")}
             <button
-              onClick={closeModal}
+                onClick={closeModal}
             >
-              <div><Close /></div>
+                <div><Close /></div>
             </button>
-          </div>
-          <div className="xl:hidden flex flex-col justify-between gap-4 xl:px-[32px] text-xl text-[#153764] font-bold ">
-            <button
-              onClick={closeModal}
-            >
-              <div className="flex justify-end"><CloseM /></div>
-            </button>
+        </div>
+        <div className="xl:hidden flex justify-between gap-4 md:px-4 xl:px-[32px] text-xl text-[#153764] font-bold ">
             <div className="w-[300px] md:w-full">{t("PrivacyPolicyModal.currentTech")}</div>
-          </div>
+            <button
+            onClick={closeModal}
+            >
+            <div className="flex justify-end"><CloseM /></div>
+            </button>
+        </div>
         </DialogTitle>
 
         {/* Dialog Content */}
         <DialogContent dividers sx={{ padding: '15px' }}>
             {/* Modal Content */}
-            <div className="flex flex-col gap-6 md:gap-8 xl:px-10">
+            <div className="flex flex-col gap-6 md:gap-8 md:px-4 xl:px-10">
                 {/* Terms & Conditions */}
                 <div className="text-sm md:text-2xl text-[#557AAA] font-bold leading-normal">
-                    <div>
+                    <div className="w-[350px] md:w-full">
                         Terms & Conditions (Effective Date: November 01, 2021)
                     </div>
                 </div>

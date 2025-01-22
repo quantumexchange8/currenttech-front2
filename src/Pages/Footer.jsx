@@ -52,7 +52,7 @@ const Footer = () => {
                                         <a href='/price'>
                                             {t("mobileTopbar.pricePage")}
                                         </a>
-                                        <a href='/career'>
+                                        <a href='/careers'>
                                             {t("mobileTopbar.careerPage")}
                                         </a>
                                         <a href='/about'>

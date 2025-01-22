@@ -411,10 +411,10 @@ const Team = () => {
                                     {t("Team.enterVirtual")}
                                 </div>
                                 <div className='text-base md:text-2xl text-[#4B5563] font-normal xl:w-[600px]' data-aos="fade-up" data-aos-delay="600">
-                                    <div>{t("Team.ourUiUxIpad")}</div> 
+                                    <div>{t("Team.ourUiUxIpad")}</div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
 
                         {/* CORE MANAGEMENT */}
                         <div className='flex flex-col gap-[50px] justify-center md:items-center bg-[#D5E7FF] w-full py-[50px] md:py-[100px] px-[25px] xl:px-0'>

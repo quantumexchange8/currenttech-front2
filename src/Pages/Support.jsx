@@ -47,7 +47,7 @@ const Support = () => {
                         <div className='hidden xl:block leading-normal'>{t("Support.hesitation")} <div>{t("Support.hesitation2C")} </div></div>
                         <div className='xl:hidden leading-normal'>{t("Support.hesitationMobile")} </div>
                         <div className='xl:hidden leading-normal'>{t("Support.hesitationMobile2")} </div>
-                    </div> 
+                    </div>
                 </div>
 
                 {/* Conditional Rendering: Form or Success Message */}

@@ -33,7 +33,7 @@ const Creating = () => {
         navigate('/creating_explore', { state: { exploreType: type } });
       };
 
-    useEffect(() => { 
+    useEffect(() => {
         AOS.init({
             duration: 1000, 
             once: true,  
@@ -56,7 +56,7 @@ const Creating = () => {
                 <div className='flex justify-center'>
                     <div className='flex flex-col gap-[30px] text-center md:max-w-[1200px] md:w-auto'> 
                         {/* Web */}
-                        <div className="hidden md:flex flex-col bg-text-gradient bg-clip-text text-transparent md:text-5xl font-normal leading-normal" data-aos="fade-up">
+                        <div className="hidden md:flex flex-col bg-text-gradient bg-clip-text text-transparent md:text-5xl xl:text-[64px] font-normal leading-normal" data-aos="fade-up">
                             <div className='leading-normal'>
                                 {t("Creating.powerhouse")}
                             </div>
