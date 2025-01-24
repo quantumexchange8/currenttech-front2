@@ -4,20 +4,56 @@ import ImageM1 from '../Assets/Images/Support/M1.png';
 import {Tick, TickM} from '../Components/Outline';
 import AOS from 'aos';
 import { useTranslation } from 'react-i18next';
-
+import axios from 'axios';
 
 const Support = () => {
 
     const [isSubmitted, setIsSubmitted] = useState(false);
     const {t} = useTranslation();
 
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-        setIsSubmitted(true);
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
 
-        setTimeout(() => {
-        setIsSubmitted(false);
-        }, 7000);
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+
+        const brevoApi = process.env.REACT_APP_BREVO_API_KEY;
+
+        console.log('api', brevoApi);
+
+        try {
+            
+            await axios.post("https://api.brevo.com/v3/smtp/email", {
+                sender: { name: formData.name, email: formData.email },
+                to: [{ email: "yinzhen.koo@gmail.com" }], // Replace with the recipient email
+                subject: `Support Request from ${formData.name}`,
+                htmlContent: `<p><strong>Message:</strong> ${formData.message}</p>`,
+            }, {
+                headers: {
+                    "Content-Type": "application/json",
+                    "api-key": brevoApi, // Ensure this key is set in your .env file
+                },
+            });
+            
+            console.log('formData', formData);
+
+            setIsSubmitted(true);
+            setTimeout(() => setIsSubmitted(false), 7000);
+        } catch (error) {
+            console.error('Error sending email:', error);
+            alert('Failed to send message. Please try again later.');
+        }
     };
 
     useEffect(() => {
@@ -100,6 +136,7 @@ const Support = () => {
                 ) : (
                     // Form
                     <form
+                        onSubmit={handleFormSubmit}
                         className="flex flex-col gap-[30px] md:gap-[50px] bg-[#E5E7EB] bg-opacity-80 md:bg-opacity-100 px-10 pt-[50px] pb-[30px] md:p-[50px] rounded-[10px] w-full max-w-[600px]"
                         data-aos="fade-up"
                         data-aos-delay="400"
@@ -108,25 +145,37 @@ const Support = () => {
                         <div className="flex flex-col gap-[30px] md:gap-[50px]">
                             <input
                                 type="text"
-                                placeholder={t("Support.name")}
+                                name="name"
+                                placeholder={t('Support.name')}
+                                value={formData.name}
+                                onChange={handleInputChange}
                                 className="w-full py-2 px-5 md:p-3 bg-[#E5E7EB] bg-opacity-0 border border-[#9CA3AF] rounded focus:outline-none"
+                                required
                             />
                             <input
                                 type="email"
-                                placeholder={t("Support.email")}
+                                name="email"
+                                placeholder={t('Support.email')}
+                                value={formData.email}
+                                onChange={handleInputChange}
                                 className="w-full py-2 px-5 md:p-3 bg-[#E5E7EB] bg-opacity-0 border border-[#9CA3AF] rounded focus:outline-none"
+                                required
                             />
                             <textarea
-                                placeholder={t("Support.message")}
+                                name="message"
+                                placeholder={t('Support.message')}
                                 rows="4"
+                                value={formData.message}
+                                onChange={handleInputChange}
                                 className="w-full py-2 px-5 md:p-3 bg-[#E5E7EB] bg-opacity-0 border border-[#9CA3AF] rounded focus:outline-none"
+                                required
                             />
                         </div>
 
                         {/* Submit Button */}
                         <div className="flex justify-end">
                             <button
-                                onClick={handleFormSubmit}
+                                type="submit"
                                 className="text-base md:text-xl text-[#4B5563] font-normal shadow-custom px-6 xl:px-5 py-2 xl:py-[5px] rounded-[5px] bg-[linear-gradient(180deg,#EAF3FF_0%,#BBD7FE_72%)]"
                             >
                                 {t("Support.send")}

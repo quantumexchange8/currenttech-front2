@@ -481,7 +481,7 @@ const Advantage = () => {
             {/* Top Image */}
             <div className="relative">
                 <img src={image1} alt="Advantage 1" className="hidden md:block w-full object-cover" />
-                <img src={imageM1} alt="Advantage 1" className="md:hidden w-full h-[800px] md:h-[1000px]" />
+                <img src={imageM1} alt="Advantage 1" className="md:hidden w-full h-[800px] md:h-[1000px] object-cover" />
                 <div className="absolute top-[43%] xl:top-[40%] left-[5%] xl:left-[20%] text-left flex flex-col gap-[10px]">
                     {/* Web */}
                     <div className="hidden md:block text-2xl text-[#D1D5DB] font-normal leading-normal">{t("Advantage.noNeedToStress")}</div>

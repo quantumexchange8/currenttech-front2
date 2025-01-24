@@ -50,13 +50,13 @@ const HomeSwiper = () => {
                   {translation.title}
                 </div>
                 <div className="w-full px-[10px] flex flex-col items-center">
-                  <div className="hidden xl:block text-2xl font-normal text-[#D1D5DB] w-full">
+                  <div className="hidden sm:block sm:text-base md:text-2xl font-normal text-[#D1D5DB] w-full">
                     {translation.description1}
                   </div>
-                  <div className="hidden xl:block text-2xl font-normal text-[#D1D5DB] leading-normal w-full">
+                  <div className="hidden sm:block sm:text-base md:text-2xl font-normal text-[#D1D5DB] leading-normal w-full">
                     {translation.description2}
                   </div>
-                  <div className="xl:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-[360px]">
+                  <div className="sm:hidden text-xl font-normal text-[#D1D5DB] leading-normal w-[360px]">
                     <div>{translation.descriptionMobile}</div>
                     <div>{translation.descriptionMobile2}</div>
                     <div>{translation.descriptionMobile3}</div>
