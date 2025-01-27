@@ -30,8 +30,6 @@ const Support = () => {
 
         const brevoApi = process.env.REACT_APP_BREVO_API_KEY;
 
-        console.log('api', brevoApi);
-
         try {
             
             await axios.post("https://api.brevo.com/v3/smtp/email", {
@@ -46,9 +44,8 @@ const Support = () => {
                 },
             });
             
-            console.log('formData', formData);
-
             setIsSubmitted(true);
+            setFormData({ name: "", email: "", message: "" });
             setTimeout(() => setIsSubmitted(false), 7000);
         } catch (error) {
             console.error('Error sending email:', error);
