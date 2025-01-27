@@ -36,7 +36,7 @@ const Support = () => {
             
             await axios.post("https://api.brevo.com/v3/smtp/email", {
                 sender: { name: formData.name, email: formData.email },
-                to: [{ email: "yinzhen.koo@gmail.com" }], // Replace with the recipient email
+                to: [{ email: "marketing@currencttech.pro" }], // Replace with the recipient email
                 subject: `Support Request from ${formData.name}`,
                 htmlContent: `<p><strong>Message:</strong> ${formData.message}</p>`,
             }, {
