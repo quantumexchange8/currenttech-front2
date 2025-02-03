@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from '../Assets/Images/Footer/Logo.png';
+// import logo from '../Assets/Images/Footer/Logo.png';
 import logoMobile from '../Assets/Images/Footer/LogoMobile.png';
+import currenttechLogo from '../Assets/Images/Footer/currenttech_logo.png';
 import { FooterWhatsApp, FooterGmail, FooterFacebook, FooterFacebookM, FooterInstagram, FooterInstagramM, MobileGmail, MobileWhatsApp } from '../Components/Brand.jsx';
 // import { LanguageContext } from "../LanguagesContext";
 import { useTranslation } from 'react-i18next';
@@ -20,7 +21,7 @@ const Footer = () => {
                 <div className='flex justify-center gap-[141px]'> 
                     {/* Logo Web */}
                     <div className='hidden md:block'>
-                        <img src={logo} alt="Company Logo" className='w-[100px] h-[70px]' />
+                        <img src={currenttechLogo} alt="Company Logo" />
                     </div>
                     {/*LINKS */}
                     <div className='hidden md:flex gap-[150px]'>

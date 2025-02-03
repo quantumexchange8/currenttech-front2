@@ -1,7 +1,8 @@
 import React, { useState, Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react'
 import { Chinese, Earphone, English, Lang, Malay, Menus, MenusM } from '../Components/Outline';
-import LogoSvg from '../Assets/Images/Topbar/currentTechLogo.png';
+// import LogoSvg from '../Assets/Images/Topbar/currentTechLogo.png';
+import LogoNewSvg from '../Assets/Images/Topbar/currentTechLogoNew.png';
 import { Link, useLocation } from "react-router-dom";
 import Modal from '../Components/Modal';
 // import { LanguageContext } from "../LanguagesContext";
@@ -29,7 +30,7 @@ const Topbar = () => {
                     {/* LogoSvg only shown on web version */}
                     <div className='hidden xl:flex'>
                         <Link to="/">
-                            <img src={LogoSvg} alt="icon" className='md:w-[150px] h-[40px]'/>
+                            <img src={LogoNewSvg} alt="icon" />
                         </Link>
                     </div>
 
@@ -37,7 +38,7 @@ const Topbar = () => {
                     <div className='xl:hidden flex w-full justify-between items-center px-[25px] '>
                         {/* Logo */}
                         <Link to="/">
-                            <img src={LogoSvg} alt="icon" className='w-[113px] h-[30px]' />
+                            <img src={LogoNewSvg} alt="icon" className='w-[113px] h-[30px]' />
                         </Link>
 
                         {/* Menu */}
