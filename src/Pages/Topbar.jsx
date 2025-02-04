@@ -250,7 +250,7 @@ const Topbar = () => {
                                             )}
                                         </Menu.Item>
 
-                                        <div className="flex justify-center gap-[30px] md:gap-4 ">
+                                        <div className="flex justify-center gap-[30px] md:gap-4 pt-4">
                                             {/* English Icon */}
                                             <button className="transform hover:scale-110 transition duration-300 ease-in-out" onClick={() => toggleLanguage('en')}>
                                                 <English />
