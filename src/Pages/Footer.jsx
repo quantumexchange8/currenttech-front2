@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from '../Assets/Images/Footer/Logo.png';
-import logoMobile from '../Assets/Images/Footer/LogoMobile.png';
+// import logoMobile from '../Assets/Images/Footer/LogoMobile.png';
 import currenttechLogo from '../Assets/Images/Footer/currenttech_logo.png';
 import { FooterWhatsApp, FooterGmail, FooterFacebook, FooterFacebookM, FooterInstagram, FooterInstagramM, MobileGmail, MobileWhatsApp } from '../Components/Brand.jsx';
 // import { LanguageContext } from "../LanguagesContext";
@@ -139,7 +139,7 @@ const Footer = () => {
             <div className='hidden xl:hidden md:flex flex-col justify-center items-center gap-7'>
                 {/* Logo Mobile */}
                 <div className='md:hidden'>
-                    <img src={logoMobile} alt="Company Logo" className='w-[100px] h-[70px]' />
+                    <img src={currenttechLogo} alt="Company Logo" className='max-w-[100px]' />
                 </div>
                 {/* Office */}
                 <div className='flex flex-col justify-center items-center gap-4'>
@@ -254,7 +254,7 @@ const Footer = () => {
             <div className='md:hidden flex flex-col justify-center items-center gap-10'>
                 {/* Logo Mobile */}
                 <div className='md:hidden'>
-                    <img src={logoMobile} alt="Company Logo" className='w-[100px] h-[70px]' />
+                    <img src={currenttechLogo} alt="Company Logo" className='max-w-[100px]' />
                 </div>
                 {/* Office */}
                 <div className='flex flex-col justify-center items-center gap-8'>
